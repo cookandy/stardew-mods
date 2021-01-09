@@ -1,0 +1,13 @@
+{
+  "BushStyle": "flower",
+  "JojaVariant": "standard",
+  "CommunityCenterVariant": "standard",
+  "UseFlowerValleyDigspot": "false",
+  "LogBridgeEnabled": "false",
+  "FlowerValleyDoorsEnabled": "true",
+  "FarmBuildingsEnabled": "true",
+  "FoliageEnabled": "true",
+  "TranslationEnabled": "true",
+  "EnableIslandBuildingRecolor": "false",
+  "EnableIslandPlantsRecolor": "false"
+}

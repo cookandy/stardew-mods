@@ -1,0 +1,12 @@
+{
+	"Format": "1.3",
+	"Changes": [
+		{
+			"LogName": "fence1",
+			"Action": "Load",
+			"Target": "LooseSprites/fence1",
+			"FromFile": "assets/{{season}}/fence1.png",
+            "When":{"Season": "spring, summer, fall, winter"}
+		}
+]
+}

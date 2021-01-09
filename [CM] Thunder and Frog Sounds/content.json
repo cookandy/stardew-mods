@@ -1,0 +1,77 @@
+﻿{
+	"Music" : [
+    //thunder sound
+    {
+		"Id": "thunder",
+		"File": "thunder_far2.wav",
+		"Loop": false,
+		"Ambient": true,
+		"Preload": true,
+        "Conditions": "r .4",
+	},
+    {
+		"Id": "thunder",
+		"File": "thunder_far3.wav",
+		"Loop": false,
+		"Ambient": true,
+		"Preload": true,
+        "Conditions": "r .3",
+	},
+    {
+		"Id": "thunder",
+		"File": "thunder_far1.wav",
+		"Loop": false,
+		"Ambient": true,
+		"Preload": true,
+	},
+    {
+		"Id": "thunder_small",
+		"File": "thunder_close1.wav",
+		"Loop": false,
+		"Ambient": true,
+		"Preload": true,
+        "Conditions": "r .2",
+	},
+    {
+		"Id": "thunder_small",
+		"File": "thunder_close2.wav",
+		"Loop": false,
+		"Ambient": true,
+		"Preload": true,
+	},
+    
+    //rare frog sound
+    {
+		"Id": "croak",
+		"File": "frog_croak1.wav",
+		"Loop": false,
+		"Ambient": true,
+		"Preload": true,
+	},
+    
+    //frog sounds
+    {
+		"Id": "rainsound",
+		"File": "frog_croak3.wav",
+		"Loop": false,
+		"Ambient": true,
+		"Preload": true,
+        "Conditions": "r .7",
+	},
+    {
+		"Id": "rainsound",
+		"File": "frog_croak4.wav",
+		"Loop": false,
+		"Ambient": true,
+		"Preload": true,
+        "Conditions": "r .3",
+	},
+    {
+		"Id": "rainsound",
+		"File": "frog_croak2.wav",
+		"Loop": false,
+		"Ambient": true,
+		"Preload": true,
+	}  
+	]
+}

@@ -1,0 +1,269 @@
+{
+    "Changes": [
+
+        // Gunther
+
+        {
+            "LogName": "Movie Theater Gunther",
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_Tilesheet, Maps/MovieTheaterJoja_Tilesheet_international",
+            "FromFile": "Characters/Gunther/Gunther_{{Season}}_Base.png",
+            "When":
+            {                   
+                "HasMod |contains=Candidus42.ImagEd": false
+            },
+            "ToArea":
+            {
+                "X": 208,
+                "Y": 192,
+                "Width": 16,
+                "Height": 32
+            },
+            "FromArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 32
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },        
+
+        // Marnie
+
+        {
+            "LogName": "Cursors Marnie Spring & Winter",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "Cursors/Marnie/Marnie_{{Season}}_Outdoor{{WeatherVariant}}_{{Random:1, 2 |key=MarnieSpringWinterVariant}}.png",
+            "When":
+            {
+                "Season": "spring, winter",
+                "HasFile:{{FromFile}}": true,
+            },
+            "ToArea":
+            {
+                "X": 558,
+                "Y": 1423,
+                "Width": 60,
+                "Height": 28
+            },
+            "PatchMode": "Replace",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Cursors Marnie Summer & Fall",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "Cursors/Marnie/Marnie_{{Season}}_Outdoor{{WeatherVariant}}_{{Random:1, 2, 3 |key=MarnieSummerFallVariant}}.png",
+            "When":
+            {
+                "Season": "summer, fall",
+                "HasFile:{{FromFile}}": true,
+            },
+            "ToArea":
+            {
+                "X": 558,
+                "Y": 1423,
+                "Width": 60,
+                "Height": 28
+            },
+            "PatchMode": "Replace",
+            "Update": "OnLocationChange"
+        },
+
+        // Pam
+
+        {
+            "LogName": "Cursors Pam",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "Cursors/Pam/Pam_{{Season}}_Outdoor{{WeatherVariant}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+            "ToArea":
+            {
+                "X": 384,
+                "Y": 1311,
+                "Width": 15,
+                "Height": 19
+            },
+            "PatchMode": "Replace",
+            "Update": "OnLocationChange"
+        },
+
+        // Morris
+
+        {
+            "LogName": "Cursors Morris - Success Banner",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "Cursors/Morris/SuccessBanner/Morris_{{season}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "MorrisEnabled": "true",
+            },
+            "ToArea":
+            {
+                "X": 48,
+                "Y": 1390,
+                "Width": 17,
+                "Height": 34
+            },
+            "PatchMode": "Replace",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Cursors Morris - Shock",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "Cursors/Morris/Shock/Morris_{{season}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "MorrisEnabled": "true",
+            },
+            "ToArea":
+            {
+                "X": 96,
+                "Y": 1312,
+                "Width": 32,
+                "Height": 48
+            },
+            "PatchMode": "Replace",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Cursors Morris - Construction Spring, Summer, & Fall",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "Cursors/Morris/Construction/Morris_{{season}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "Season": "spring, summer, fall",
+                "MorrisEnabled": "true",
+            },
+            "ToArea":
+            {
+                "X": 389,
+                "Y": 1405,
+                "Width": 37,
+                "Height": 35
+            },
+            "PatchMode": "Replace",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Cursors Morris - Construction Winter",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "Cursors/Morris/Construction/Morris_{{season}}{{WeatherVariant}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "Season": "winter",
+                "MorrisEnabled": "true",
+            }, 
+            "ToArea":
+            {
+                "X": 389,
+                "Y": 1405,
+                "Width": 37,
+                "Height": 35
+            },
+            "PatchMode": "Replace",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Movie Theater - Morris",
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheaterJoja_Tilesheet, Maps/MovieTheaterJoja_Tilesheet_international",
+            "FromFile": "Cursors/Morris/MovieTheater/Morris_{{season}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,                
+                "MorrisEnabled": "true",
+            }, 
+            "ToArea":
+            {
+                "X": 16,
+                "Y": 224,
+                "Width": 16,
+                "Height": 32
+            },
+            "PatchMode": "Replace",
+            "Update": "OnLocationChange"
+        },
+
+        // Sebastian
+
+        {
+            "LogName": "Cursors Sebastian",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "Cursors/Sebastian/Sebastian_Helmet.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+            "ToArea":
+            {
+                "X": 405,
+                "Y": 1854,
+                "Width": 47,
+                "Height": 33
+            },
+            "PatchMode": "Replace",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Cursors Sebastian - Flower Valley",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "Cursors/Sebastian/Sebastian_Helmet_FlowerValley.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "HasMod": "kaya.floralvalley"
+            },
+            "ToArea":
+            {
+                "X": 405,
+                "Y": 1854,
+                "Width": 47,
+                "Height": 33
+            },
+            "PatchMode": "Replace",
+            "Update": "OnLocationChange"
+        },
+
+        // Shane
+
+        {
+            "LogName": "Cursors Shane",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "Cursors/Shane/Shane_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2 |key=ShaneVariant}}.png",
+            "When":
+            {
+                "Season": "spring",
+                "Weather": "rain, storm",
+                "HasFile:{{FromFile}}": true,
+            },
+            "ToArea":
+            {
+                "X": 533,
+                "Y": 1864,
+                "Width": 20,
+                "Height": 28
+            },
+            "PatchMode": "Replace",
+            "Update": "OnLocationChange"
+        },
+    ]
+}

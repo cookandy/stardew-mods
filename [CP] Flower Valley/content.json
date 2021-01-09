@@ -1,0 +1,818 @@
+{
+    "Format": "1.19.0",
+    "ConfigSchema":
+    {
+        "BushStyle":
+        {
+            "AllowValues": "greenfall, redfall, snow, flower",
+            "Default": "flower",
+            "Description": "Changes the appearance of the bushes."
+        },
+        "JojaVariant":
+        {
+            "AllowValues": "standard, greenhouse",
+            "Default": "standard",
+            "Description": "Changes the appearance of the closed Joja buidling."
+        },
+        "CommunityCenterVariant":
+        {
+            "AllowValues": "standard, largerroof",
+            "Default": "standard",
+            "Description": "Changes the appearance of the completed community center."
+        },
+        "UseFlowerValleyDigspot":
+        {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Description": "Enables the flower valley digspot. Default is false."
+        },
+        "LogBridgeEnabled":
+        {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Description": "Enables log bridges. Default is false."
+        },
+        "FlowerValleyDoorsEnabled":
+        {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Enables flower valley doors. Default is true."
+        },
+        "FarmBuildingsEnabled": // Primarily for those who use Gweniaczek's buildings
+        {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Enables the farm buildings, primarily for those who use Gweniaczek's buildings."
+        },
+        "FoliageEnabled": //Primairly for those who use DustyBeauty's Foliage Recolor
+        {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Enables the foliage, primarily for those who use Gweniaczek's buildings."
+        },
+        "TranslationEnabled":
+        {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Enables non-English signs, if using a langauge besides English set to false if you want the signs to remain in English."
+        },
+        "EnableIslandBuildingRecolor":
+        {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Description": "Enables Flower Valley building color scheme on the island. Default is false."
+        },
+        "EnableIslandPlantsRecolor":
+        {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Description": "Recolors two of the island plants into a more muted palette to match Flower Valley. Default is false."
+        },
+    },
+
+    "Changes": [
+
+        {
+            "LogName": "Town Edits - Trash-b-Gone",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_town",
+            "FromFile": "mapassets/decorations/{{season}}_trash.png",
+            "ToArea":
+            {
+                "X": 240,
+                "Y": 0,
+                "Width": 16,
+                "Height": 32
+            },
+        },
+        {
+            "LogName": "Town Edits - Maps",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_town",
+            "FromFile": "mapassets/{{season}}_town.png",
+            "PatchMode": "Overlay",
+        },
+        {
+            "LogName": "Town Edits - Community Center (No Joja)",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_town",
+            "FromFile": "mapassets/{{season}}_communitycenter.png",
+            "ToArea":
+            {
+                "X": 192,
+                "Y": 640,
+                "Width": 192,
+                "Height": 160
+            },
+            "When":
+            {
+                "IsCommunityCenterComplete": true,
+            },
+        },
+
+        // Alternative Styles - Joja Greenhouse
+
+        {
+            "LogName": "Town Edits - Joja Greenhouse Maps",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_town",
+            "FromFile": "mapassets/{{season}}_townvarient.png",
+            "FromArea":
+            {
+                "X": 0,
+                "Y": 832,
+                "Width": 192,
+                "Height": 160
+            },
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 832,
+                "Width": 192,
+                "Height": 160
+            },
+            "When":
+            {
+                "JojaVariant": "greenhouse"
+            },
+        },
+        {
+            "LogName": "Town Edits - Joja Greenhouse Content",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_town",
+            "FromFile": "mapassets/{{season}}_townvarient.png",
+            "FromArea":
+            {
+                "X": 256,
+                "Y": 832,
+                "Width": 256,
+                "Height": 160
+            },
+            "ToArea":
+            {
+                "X": 256,
+                "Y": 832,
+                "Width": 256,
+                "Height": 160
+            },
+            "When":
+            {
+                "JojaVariant": "greenhouse"
+            },
+        },
+
+        // Alternative Styles - Community Center Larger Roof
+
+        {
+            "LogName": "Town Edits - Larger Roof Community Center",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_town",
+            "FromFile": "mapassets/{{season}}_townvarient.png",
+            "FromArea":
+            {
+                "X": 192,
+                "Y": 640,
+                "Width": 192,
+                "Height": 160
+            },
+            "ToArea":
+            {
+                "X": 192,
+                "Y": 640,
+                "Width": 192,
+                "Height": 160
+            },
+            "When":
+            {
+                "CommunityCenterVariant": "largerroof",
+                "IsCommunityCenterComplete": true,
+            },
+        },
+
+        // Town Tree
+
+        {
+            "LogName": "Town Edits - Town Tree",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_town",
+            "FromFile": "mapassets/{{season}}_towntree.png",
+            "FromArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 64,
+                "Height": 80
+            },
+            "ToArea":
+            {
+                "X": 224,
+                "Y": 384,
+                "Width": 64,
+                "Height": 80
+            },
+            "When":
+            {
+                "FoliageEnabled": "true"
+            },
+        },
+        {
+            "LogName": "Town Edits - Town Tree",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_town",
+            "FromFile": "mapassets/{{season}}_towntree.png",
+            "FromArea":
+            {
+                "X": 16,
+                "Y": 80,
+                "Width": 32,
+                "Height": 32
+            },
+            "ToArea":
+            {
+                "X": 240,
+                "Y": 464,
+                "Width": 32,
+                "Height": 32
+            },
+            "When":
+            {
+                "FoliageEnabled": "true"
+            },
+        },
+        {
+            "LogName": "Town Edits - Town Tree",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_town",
+            "FromFile": "mapassets/{{season}}_towntree.png",
+            "FromArea":
+            {
+                "X": 64,
+                "Y": 0,
+                "Width": 48,
+                "Height": 80
+            },
+            "PatchMode": "Overlay",
+            "ToArea":
+            {
+                "X": 288,
+                "Y": 384,
+                "Width": 48,
+                "Height": 80
+            },
+            "When":
+            {
+                "FoliageEnabled": "true"
+            },
+        },
+
+        //Sewer Lid
+
+        {
+            "LogName": "Town Edits - Sewer Lid",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_town",
+            "FromFile": "mapassets/{{season}}_town.png",
+            "FromArea":
+            {
+                "X": 256,
+                "Y": 0,
+                "Width": 32,
+                "Height": 32
+            },
+            "ToArea":
+            {
+                "X": 256,
+                "Y": 0,
+                "Width": 32,
+                "Height": 32
+            },
+        },
+
+        // Mailboxes
+
+        {
+            "LogName": "Town Edits - Mail Box",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_town",
+            "FromFile": "mapassets/decorations/mailbox_{{season}}.png",
+            "ToArea":
+            {
+                "X": 144,
+                "Y": 0,
+                "Width": 16,
+                "Height": 32
+            },
+        },
+
+        // Town Center Piece (tree, pumpkins, etc.)
+
+        {
+            "LogName": "Town Edits - Town Center Piece Summer & Winter",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_town",
+            "FromFile": "mapassets/{{season}}_centerpiece.png",
+            "ToArea":
+            {
+                "X": 368,
+                "Y": 432,
+                "Width": 48,
+                "Height": 80
+            },
+            "When":
+            {
+                "Season": "summer, winter"
+            }
+        },
+
+        // outdoorTileSheets
+
+        {
+            "LogName": "Outdoor Edits",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "mapassets/{{season}}_outdoorsTileSheet.png",
+            "PatchMode": "Overlay",
+        },
+
+        // Outdoor Edits Cont.
+
+        {
+            "LogName": "Outdoor Edits - Trees Maps",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "mapassets/{{season}}_outdoorsTileSheet_trees.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 208,
+                "Height": 96
+            },
+            "When":
+            {
+                "FoliageEnabled": true,
+            },
+        },
+        {
+            "LogName": "Outdoor Edits - Back flower",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "mapassets/decorations/{{season}}_backflower.png",
+            "PatchMode": "Overlay",
+            "When":
+            {
+                "FoliageEnabled": true,
+            },
+        },
+
+        // Mail Boxes
+
+        {
+            "LogName": "Outdoor Edits - Mailbox",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "mapassets/decorations/mailbox_{{season}}.png",
+            "ToArea":
+            {
+                "X": 80,
+                "Y": 1232,
+                "Width": 16,
+                "Height": 32
+            },
+        },
+
+        //Bus Stop
+
+        {
+            "LogName": "Outdoor Edits - Bus Stop",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "mapassets/decorations/busstop_{{season}}.png",
+            "ToArea":
+            {
+                "X": 112,
+                "Y": 656,
+                "Width": 16,
+                "Height": 32
+            },
+        },
+
+        //Big Trees
+
+        {
+            "LogName": "Outdoor Edits - Big Tree Maps",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "mapassets/{{season}}_towntree.png",
+            "FromArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 64,
+                "Height": 96
+            },
+            "ToArea":
+            {
+                "X": 96,
+                "Y": 0,
+                "Width": 64,
+                "Height": 96
+            },
+            "When":
+            {
+                "FoliageEnabled": "true"
+            }
+        },
+
+        // Trunk Replacement
+
+        {
+            "LogName": "Outdoor Edits - Trunk Maps",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "mapassets/decorations/{{season}}_backflower.png",
+            "FromArea":
+            {
+                "X": 112,
+                "Y": 96,
+                "Width": 32,
+                "Height": 16
+            },
+            "ToArea":
+            {
+                "X": 112,
+                "Y": 96,
+                "Width": 32,
+                "Height": 16
+            },
+            "When":
+            {
+                "FoliageEnabled": "true"
+            }
+        },
+
+        // Log Bridge Alternate
+
+        {
+            "LogName": "Log Bridge Alternate P1",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "mapassets/{{season}}_bridge.png",
+            "FromArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 112,
+                "Height": 16
+            },
+            "ToArea":
+            {
+                "X": 64,
+                "Y": 496,
+                "Width": 112,
+                "Height": 16
+            },
+            "When":
+            {
+                "LogBridgeEnabled": "true"
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Log Bridge Alternate P2",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "mapassets/{{season}}_bridge.png",
+            "FromArea":
+            {
+                "X": 80,
+                "Y": 16,
+                "Width": 32,
+                "Height": 64
+            },
+            "ToArea":
+            {
+                "X": 144,
+                "Y": 512,
+                "Width": 32,
+                "Height": 64
+            },
+            "When":
+            {
+                "LogBridgeEnabled": "true"
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Log Bridge Alternate P3",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "mapassets/{{season}}_bridge.png",
+            "FromArea":
+            {
+                "X": 96,
+                "Y": 80,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea":
+            {
+                "X": 160,
+                "Y": 576,
+                "Width": 16,
+                "Height": 16
+            },
+            "When":
+            {
+                "LogBridgeEnabled": "true"
+            },
+            "PatchMode": "Overlay"
+        },
+
+        // Cursors
+
+        {
+            "LogName": "Cursors",
+            "Action": "EditImage",
+            "Target": "Loosesprites/cursors",
+            "FromFile": "tilesheetassets/cursors.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 704,
+                "Height": 2256
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Cursors - Shipping Bin Lid",
+            "Action": "EditImage",
+            "Target": "Loosesprites/cursors",
+            "FromFile": "tilesheetassets/shippingbin_lid.png",
+            "ToArea":
+            {
+                "X": 128,
+                "Y": 208,
+                "Width": 512,
+                "Height": 48
+            },
+            "When":
+            {
+                "FarmBuildingsEnabled": "true"
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Cursors - Doors",
+            "Action": "EditImage",
+            "Target": "LooseSprites/cursors",
+            "FromFile": "tilesheetassets/doors.png",
+            "ToArea":
+            {
+                "X": 512,
+                "Y": 145,
+                "Width": 180,
+                "Height": 47
+            },
+            "When":
+            {
+                "FlowerValleyDoorsEnabled": "true"
+            },
+        },
+
+        // Dig Spot
+
+        {
+            "LogName": "Dig Spot",
+            "Action": "EditImage",
+            "Target": "Loosesprites/cursors",
+            "FromFile": "tilesheetassets/digspot.png",
+            "ToArea":
+            {
+                "X": 368,
+                "Y": 32,
+                "Width": 64,
+                "Height": 16
+            },
+            "When":
+            {
+                "UseFlowerValleyDigspot": "true"
+            }
+        },
+
+        // Map Replacements
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/SewerTiles",
+            "FromFile": "mapassets/SewerTiles.png",
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/bugLandTiles",
+            "FromFile": "mapassets/bugLandTiles.png",
+        },
+
+        // Beach
+
+        {
+            "LogName": "Beach Edits - Content",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_beach",
+            "FromFile": "mapassets/{{season}}_beach.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 272,
+                "Height": 496
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Beach Edits - Content",
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_beach",
+            "FromFile": "mapassets/{{season}}_beach.png",
+            "FromArea":
+            {
+                "X": 0,
+                "Y": 160,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 160,
+                "Width": 16,
+                "Height": 16
+            },
+        },
+
+        // Bushes 
+
+        {
+            "Action": "EditImage",
+            "Target": "tilesheets/bushes",
+            "FromFile": "tilesheetassets/bushes{{BushStyle}}.png",
+            "When":
+            {
+                "BushStyle": "greenfall, redfall, snow, flower",
+                "FoliageEnabled": true,
+            }
+        },
+
+        // Trees
+
+        {
+            "Action": "EditImage",
+            "Target": "terrainfeatures/tree1_{{season}}",
+            "FromFile": "tilesheetassets/tree1_{{season}}.png",
+            "When":
+            {
+                "FoliageEnabled": true,
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "terrainfeatures/tree2_{{season}}",
+            "FromFile": "tilesheetassets/tree2_{{season}}.png",
+            "When":
+            {
+                "FoliageEnabled": true,
+            }
+        },
+
+        // Tree 3
+
+        {
+            "Action": "EditImage",
+            "Target": "terrainfeatures/tree3_{{season}}",
+            "FromFile": "tilesheetassets/{{TargetWithoutPath}}.png",
+            "When":
+            {
+                "Season": "fall, winter",
+                "FoliageEnabled": true,
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "terrainfeatures/tree3_spring",
+            "FromFile": "tilesheetassets/{{TargetWithoutPath}}.png",
+            "When":
+            {
+                "Season": "spring, summer",
+                "FoliageEnabled": true,
+            }
+        },
+
+        // Buildings 
+
+        {
+            "LogName": "Buildings",
+            "Action": "EditImage",
+            "Target": "Buildings/houses, Buildings/Barn, Buildings/Big Barn, Buildings/Big Coop, Buildings/Big Shed, Buildings/Coop, Buildings/Deluxe Barn, Buildings/Deluxe Coop, Buildings/Greenhouse, Buildings/Earth Obelisk, Buildings/Gold Clock, Buildings/Log Cabin, Buildings/Mill, Buildings/Plank Cabin, Buildings/Shed, Buildings/Silo, Buildings/Slime Hutch, Buildings/Stable, Buildings/Stone Cabin, Buildings/Water Obelisk, Buildings/Well",
+            "FromFile": "buildingassets/{{TargetWithoutPath}}_{{season}}.png",
+            "When":
+            {
+                "FarmBuildingsEnabled": true
+            }
+        },
+        {
+            "LogName": "Buildings",
+            "Action": "EditImage",
+            "Target": "Buildings/Junimo Hut, Buildings/Shipping Bin, Buildings/Desert Obelisk, Buildings/Island Obelisk",
+            "FromFile": "buildingassets/{{TargetWithoutPath}}.png",
+            "When":
+            {
+                "FarmBuildingsEnabled": true
+            }
+        },        
+
+        // Island Recolor
+
+        {
+            "LogName": "Island - Sea Plants",
+            "Action": "EditImage",
+            "Target": "Maps/island_tilesheet_1",
+            "FromFile": "mapassets/island_plants.png",
+            "When":
+            {
+                "EnableIslandPlantsRecolor": true,
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Island",
+            "Action": "EditImage",
+            "Target": "Maps/island_tilesheet_1",
+            "FromFile": "mapassets/island_tilesheet_1.png",
+            "When":
+            {
+                "EnableIslandBuildingRecolor": true,
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Island Shipping Bin",
+            "Action": "EditImage",
+            "Target": "Maps/island_tilesheet_1",
+            "FromFile": "buildingassets/IslandShipping Bin.png",
+            "FromArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 32,
+                "Height": 32
+            },
+            "ToArea":
+            {
+                "X": 192,
+                "Y": 720,
+                "Width": 32,
+                "Height": 32
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Farm Obelisk",
+            "Action": "EditImage",
+            "Target": "Maps/Farm Obelisk",
+            "FromFile": "buildingassets/Farm Obelisk.png",
+        },
+        {
+            "LogName": "Suspension Bridge",
+            "Action": "EditImage",
+            "Target": "LooseSprites/SuspensionBridge",
+            "FromFile": "mapassets/SuspensionBridge.png",
+            "When":
+            {
+                "EnableIslandBuildingRecolor": true,
+            },
+        },
+
+        // Sebastian Mountain Tiles
+
+        {
+            "LogName": "Sebastian Mountain Tiles",
+            "Action": "EditImage",
+            "Target": "Maps/sebastianMountainTiles",
+            "FromFile": "mapassets/sebastianMountainTiles.png",            
+        },
+
+        // Translations
+
+        {
+            "LogName": "Translations",
+            "Action": "Include",
+            "FromFile": "data/Translations.json",
+            "When":
+            {
+                "Language |contains=en": false,
+                "TranslationEnabled": true,
+            }
+        },
+    ]
+}

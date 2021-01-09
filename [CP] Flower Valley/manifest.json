@@ -1,0 +1,31 @@
+{
+    "Name": "Flower Valley for ContentPatcher",
+    "Author": "KAYA/jina2ya (original) paradigmnomad (port) turtiny (cabins & log bridge)",
+    "Description": "A port of KAYA's Flower Valley - Town and Farm Buildings Redone for Content Patcher",
+    "Version": "4.3.1",
+    "MinimumApiVersion": "3.7.0",
+    "UniqueID": "kaya.floralvalley",
+    "ContentPackFor":
+    {
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "1.18.0"
+    },
+    "Dependencies": [
+    {
+        "UniqueID": "minervamaga.CP.eemieMapRecolour",
+        "IsRequired": false,
+    },
+    {
+        "UniqueID": "minervamaga.CP.ATDSV",
+        "IsRequired": false,
+    }, 
+{
+        "UniqueID": "stardewfoliageredone",
+        "IsRequired": false,
+    },
+{
+        "UniqueID": "stardewfoliageredonereshade",
+        "IsRequired": false,
+    }, ],
+    "UpdateKeys": ["Nexus:2064"],
+}

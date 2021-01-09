@@ -1,0 +1,657 @@
+{
+	"Format": "1.19.0",
+    "DynamicTokens": [
+
+        // Standard Dynamic Tokens Weather
+
+        {
+            "Name": "IndoorVariant", // Indoors
+            "Value": "_Indoor",
+            "When":
+            {
+                "IsOutdoors": "false"
+            }
+        },
+        {
+            "Name": "IndoorVariant", // Outdoors
+            "Value": "_Outdoor",
+            "When":
+            {
+                "IsOutdoors": "true"
+            }
+        },
+
+        {
+            "Name": "WeatherVariant", // Indoors/Outdoors
+            "Value": "_Sun",
+            "When":
+            {
+                "Season": "spring, summer, fall, winter",
+                "Weather": "sun, wind",
+            },
+        },
+        {
+            "Name": "WeatherVariant", // Rain Indoors/Outdoors
+            "Value": "_Rain",
+            "When":
+            {
+                "Season": "spring, summer, fall",
+                "Weather": "rain, storm",
+            },
+        },
+        {
+            "Name": "WeatherVariant", // Snow Indoors/Outdoors
+            "Value": "_Snow",
+            "When":
+            {
+                "Season": "winter",
+                "Weather": "snow",
+            },
+        },
+
+        // Standard Dynamic Tokens Other
+
+        {
+            "Name": "Festival",
+            "Value": "EggFestival",
+            "When":
+            {
+                "DayEvent": "egg festival",
+                "LocationName": "town, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "FlowerDance",
+            "When":
+            {
+                "DayEvent": "flower dance",
+                "LocationName": "Forest, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "IceFestival",
+            "When":
+            {
+                "DayEvent": "festival of ice",
+                "LocationName": "Forest, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "Luau",
+            "When":
+            {
+                "DayEvent": "luau",
+                "LocationName": "Beach, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "MoonlightJellies",
+            "When":
+            {
+                "DayEvent": "dance of the moonlight jellies",
+                "LocationName": "Beach, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "SpiritsEve",
+            "When":
+            {
+                "DayEvent": "spirit's eve",
+                "LocationName": "town, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "SVFair",
+            "When":
+            {
+                "DayEvent": "stardew valley fair",
+                "LocationName": "town, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "WinterStar",
+            "When":
+            {
+                "DayEvent": "feast of the winter star",
+                "LocationName": "town, temp"
+            }
+        },
+		
+		{
+			"Name": "SophiaMakeup",
+			"Value": "_Makeup",
+			"When": { "DayOfWeek": "Friday, Saturday, Sunday" }
+		},		
+	],
+
+"ConfigSchema": {
+				
+		"OlderSophia": {
+			"AllowValues": "true, false",
+			"Default": "false"
+		},		
+						
+	},
+
+	"Changes": [
+
+//Characters 
+
+
+        {
+            "LogName": "regular characters season",
+            "Action": "EditImage",
+            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite, Characters/Susan, Characters/Victor",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+            "Update": "OnLocationChange",                
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		
+        {
+            "LogName": "regular characters season/outdoor",
+            "Action": "EditImage",
+            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite, Characters/Susan, Characters/Victor",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",    
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		
+        {
+            "LogName": "regular characters season/outdoor/weather",
+            "Action": "EditImage",
+            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite, Characters/Susan, Characters/Victor",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}{{WeatherVariant}}.png",
+            "Update": "OnLocationChange",    
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+
+// Portraits
+
+        {
+            "LogName": " Portraits regular season",
+            "Action": "EditImage",
+            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Scarlett, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+            "Update": "OnLocationChange",     
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+
+        {
+            "LogName": "Portraits regular season/outdoor",
+            "Action": "EditImage",
+            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Scarlett, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",    
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+
+        {
+            "LogName": "Portraits regular season/outdoor/weather",
+            "Action": "EditImage",
+            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Scarlett, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}{{WeatherVariant}}.png",
+            "Update": "OnLocationChange",    
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		
+//Sophia's Makeup Portraits
+
+		{
+		  "LogName": "Sophia Makeup season",		
+		  "Action": "EditImage",
+		  "Target": "Portraits/Sophia",
+		  "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{SophiaMakeup}}.png",
+          "Update": "OnLocationChange",    
+		  "When":
+				{
+                "HasFile:{{FromFile}}": true,
+				}    
+		
+		},
+			
+		{
+		  "LogName": "Sophia Makeup season/ outdoor",		
+		  "Action": "EditImage",
+		  "Target": "Portraits/Sophia",
+		  "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}{{SophiaMakeup}}.png",
+          "Update": "OnLocationChange",    
+		  "When":
+				{
+                "HasFile:{{FromFile}}": true,
+				}    
+		
+		},
+
+		{
+		  "LogName": "Sophia Makeup season/ outdoor/ weather",		
+		  "Action": "EditImage",
+		  "Target": "Portraits/Sophia",
+          "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}{{WeatherVariant}}{{SophiaMakeup}}.png",
+          "Update": "OnLocationChange",    
+		  "When":
+				{
+                "HasFile:{{FromFile}}": true,
+				}
+		},
+		
+
+
+
+// Vanilla Edits
+	//Morris Vanilla Edit
+
+		{
+		  "LogName": "Morris Vanilla Portrait",		
+		  "Action": "EditImage",
+		  "Target": "Portraits/Morris",
+		  "FromFile": "assets/Portraits/MorrisTod/MorrisTod_{{Season}}.png", 
+          "Update": "OnLocationChange",              
+		  "When":
+				{
+                "HasFile:{{FromFile}}": true,
+				}
+		},
+
+		{
+		  "LogName": "Morris Vanilla Sprite",		
+		  "Action": "EditImage",
+		  "Target": "Characters/Morris",
+		  "FromFile": "assets/Characters/MorrisTod/MorrisTod_{{Season}}.png",
+          "Update": "OnLocationChange",            		  
+		  "When":
+				{
+                "HasFile:{{FromFile}}": true,
+				}
+		},
+
+
+	//Gunther
+        {
+            "LogName": "Gunther Vanilla Portait",
+            "Action": "EditImage",
+            "Target": "Portraits/Gunther",
+            "FromFile": "assets/Portraits/GuntherSilvian/GuntherSilvian_{{Season}}.png",
+            "Update": "OnLocationChange",            
+		    "When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+        {
+            "LogName": "Gunther Vanilla Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Gunther",
+            "FromFile": "assets/Characters/GuntherSilvian/GuntherSilvian_{{Season}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+
+
+	//Marlon
+        {
+            "LogName": "Marlon Vanilla Portait",
+            "Action": "EditImage",
+            "Target": "Portraits/Marlon",
+            "FromFile": "assets/Portraits/MarlonFay/Marlon_{{Season}}.png",
+            "Update": "OnLocationChange",            
+		    "When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+        {
+            "LogName": "Marlon Vanilla Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Marlon",
+            "FromFile": "assets/Characters/MarlonFay/MarlonFay_{{Season}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+
+
+
+// Work Joja		
+
+    {
+      //Claire's Joja Sprites
+      "Action": "EditImage",
+      "Target": "Characters/Claire",
+      "FromFile": "assets/Characters/Claire/Claire_Joja.png",
+      "When": { "LocationName": "JojaMart" },
+      "Update": "OnLocationChange"
+    },
+
+    {
+      //Claire's Joja Portrait
+      "Action": "EditImage",
+      "Target": "Portraits/Claire",
+      "FromFile": "assets/Portraits/Claire/Claire_Joja.png",
+      "When": { "LocationName": "JojaMart" },
+      "Update": "OnLocationChange"
+    },
+
+    {
+      //Martin's Joja Sprites
+      "Action": "EditImage",
+      "Target": "Characters/Martin",
+      "FromFile": "assets/Characters/Martin/Martin_Joja.png",
+      "When": { "LocationName": "JojaMart" },
+      "Update": "OnLocationChange"
+    },
+
+    {
+      //Martin's Joja Portrait
+      "Action": "EditImage",
+      "Target": "Portraits/Martin",
+      "FromFile": "assets/Portraits/Martin/Martin_Joja.png",
+      "When": { "LocationName": "JojaMart" },
+      "Update": "OnLocationChange"
+    },
+
+
+ // Theater Martin
+ 
+{
+      //Martin's Theater Portrait
+      "Action": "EditImage",
+      "Target": "Portraits/Martin",
+      "FromFile": "assets/Portraits/Martin/Martin_Theater.png",
+      "When": { "Spouse |contains=Claire": false, "DayOfWeek": "Tuesday, Saturday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Martin's Theater Portrait 2
+      "Action": "EditImage",
+      "Target": "Portraits/Martin",
+      "FromFile": "assets/Portraits/Martin/Martin_Theater.png",
+      "When": { "Spouse": "Claire", "DayOfWeek": "Tuesday, Friday, Saturday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Martin's Theater Sprites
+      "Action": "EditImage",
+      "Target": "Characters/Martin",
+      "FromFile": "assets/Characters/Martin/Martin_Theater.png",
+      "When": { "Spouse |contains=Claire": false, "DayOfWeek": "Tuesday, Saturday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Martin's Theater Sprites 2
+      "Action": "EditImage",
+      "Target": "Characters/Martin",
+      "FromFile": "assets/Characters/Martin/Martin_Theater.png",
+      "When": { "Spouse": "Claire", "DayOfWeek": "Tuesday, Friday, Saturday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+
+
+// Theater Claire
+
+{
+      //Claire's Theater Portrait
+      "Action": "EditImage",
+      "Target": "Portraits/Claire",
+      "FromFile": "assets/Portraits/Claire/Claire_Theater.png",
+      "When": { "Spouse |contains=Claire": false, "DayOfWeek": "Monday, Wednesday, Thursday, Friday, Sunday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Claire's Theater Portrait 2
+      "Action": "EditImage",
+      "Target": "Portraits/Claire",
+      "FromFile": "assets/Portraits/Claire/Claire_Theater.png",
+      "When": { "Spouse": "Claire", "DayOfWeek": "Monday, Wednesday, Thursday, Sunday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Claire's Theater Sprites
+      "Action": "EditImage",
+      "Target": "Characters/Claire",
+      "FromFile": "assets/Characters/Claire/Claire_Theater.png",
+      "When": { "Spouse |contains=Claire": false, "DayOfWeek": "Monday, Wednesday, Thursday, Friday, Sunday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Claire's Theater Sprites 2
+      "Action": "EditImage",
+      "Target": "Characters/Claire",
+      "FromFile": "assets/Characters/Claire/Claire_Theater.png",
+      "When": { "Spouse": "Claire", "DayOfWeek": "Monday, Wednesday, Thursday, Sunday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+		
+// Festivals
+        {
+            "LogName": "Festival Character Sprites",
+            "Action": "EditImage",
+            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Sandy, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite, Characters/Susan, Characters/Victor",
+            "FromFile": "assets/Characters/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+            "Update": "OnLocationChange", 
+            "When":
+            {
+				"HasFile:{{FromFile}}": true, 		
+			},
+        },
+
+        {
+            "LogName": "Festival Character Portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Sandy, Portraits/Scarlett, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
+            "FromFile": "assets/Portraits/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+            "Update": "OnLocationChange", 
+			"When":
+            {
+				"HasFile:{{FromFile}}": true, 	 
+			},
+        },
+
+
+
+// Aerobics
+
+       {
+            "LogName": "Aerobics",
+            "Action": "EditImage",
+            "Target": "Characters/Olivia, Portraits/Olivia, Characters/Claire, Portraits/Claire",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Aerobics.png",
+            "Update": "OnLocationChange",            
+		    "When":
+            {
+				"HasFile:{{FromFile}}": true, 	 
+                "DayOfWeek": "Tuesday",
+                "LocationName": "SeedShop",
+				"Weather": "sun, wind, snow"
+            }
+        },	
+
+// Sophia's Older Portrait Overlay
+
+        {
+            "LogName": "Sophia Older Overlay",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia",
+            "FromFile": "assets/Portraits/Sophia/Sophia_Older_Overlay.png",
+			"Update": "OnLocationChange",			
+            "When":
+            {
+                "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday",
+				"OlderSophia": "true",
+                "HasFile:{{FromFile}}": true,				
+            },
+            "PatchMode": "Overlay"
+        },
+
+
+        {
+            "LogName": "Sophia Older Overlay Makeup",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia",
+            "FromFile": "assets/Portraits/Sophia/Sophia_Older_MU_Overlay.png",
+			"Update": "OnLocationChange",
+            "When":
+            {
+                "DayOfWeek": "Friday, Saturday, Sunday",
+				"OlderSophia": "true",
+                "HasFile:{{FromFile}}": true,				
+            },
+            "PatchMode": "Overlay"
+        },
+		
+        {
+            "LogName": "Sophia Sunglasses Overlay",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia",
+            "FromFile": "assets/Portraits/Sophia/Sophia_glasses_older_overlay.png",
+			"Update": "OnLocationChange",
+            "When":
+            {
+                "Weather": "sun, wind",
+				"Season": "summer",
+                "IsOutdoors": "true",
+				"OlderSophia": "true",
+                "HasFile:{{FromFile}}": true,	
+				"DayEvent |contains=dance of the moonlight jellies": "false"				
+            },
+            "PatchMode": "Overlay"
+        },		
+
+		
+//Season Extras
+										
+		
+	    {
+          "LogName": "Map Edit Season Extras",		
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_z_extras",
+          "Update": "OnLocationChange",
+		  "FromFile": "assets/Maps/Seasonal_c_{{season}}.png",
+          "ToArea": { "X": 96, "Y": 736, "Width": 16, "Height": 32 },
+	      "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+		
+
+//Cursors from SVE
+
+      { 
+         "LogName": "Map Edit Cursors for SVE (Morris Joja win/ Morris builder)",
+         "Action": "EditImage",
+         "Target": "Maps/VanillaCursors",
+         "Update": "OnLocationChange",
+		 "FromFile": "assets/Maps/Cursors_{{season}}.png",
+         "FromArea": { "X": 0, "Y": 1387, "Width": 114, "Height": 34 },
+         "ToArea": { "X": 0, "Y": 1387, "Width": 114, "Height": 34 },
+	     "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+
+      {  
+         "LogName": "Map Edit Cursors for SVE 2 (Morris Joja win/ Morris builder)",	  
+	     "Action": "EditImage",
+         "Target": "Maps/VanillaCursors",
+         "Update": "OnLocationChange",
+		 "FromFile": "assets/Maps/Cursors_{{season}}.png",
+         "FromArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 },
+         "ToArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 },
+	     "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+			
+      { 	 
+         "LogName": "Map Edit Cursors for SVE 3 (Morris Joja win/ Morris builder)",
+	     "Action": "EditImage",
+         "Target": "Maps/VanillaCursors",
+         "Update": "OnLocationChange",
+		 "FromFile": "assets/Maps/Cursors_{{season}}.png",
+         "FromArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 32 },
+         "ToArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 32 },
+	     "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+
+//Cursors from Vanilla Game
+
+      {
+         "LogName": "Map Edit Cursors for Vanilla (Morris Joja win/ Morris builder)",
+	     "Action": "EditImage",
+         "Target": "LooseSprites/Cursors",
+         "Update": "OnLocationChange",
+		 "FromFile": "assets/Maps/Cursors_{{Season}}.png",
+         "FromArea": { "X": 0, "Y": 1387, "Width": 114, "Height": 34 },
+         "ToArea": { "X": 0, "Y": 1387, "Width": 114, "Height": 34 }},
+
+      {  
+         "LogName": "Map Edit Cursors for Vanilla 2 (Morris Joja win/ Morris builder)",	  
+	     "Action": "EditImage",
+         "Target": "LooseSprites/Cursors",
+         "Update": "OnLocationChange",
+		 "FromFile": "assets/Maps/Cursors_{{Season}}.png",
+         "FromArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 },
+         "ToArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 }},
+
+      { 
+         "LogName": "Map Edit Cursors for Vanilla 3 (Morris Joja win/ Morris builder)",
+	     "Action": "EditImage",
+         "Target": "LooseSprites/Cursors",
+         "FromFile": "assets/Maps/Cursors_{{Season}}.png",
+         "FromArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 32 },
+         "ToArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 32 }},
+
+
+// Map edit Movie theaters
+
+        {
+            "LogName": "Movie Joja Morris",
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+            "Update": "OnLocationChange",
+			"FromFile": "assets/Maps/Seasonal_c_{{Season}}.png",
+            "ToArea":
+            {
+                "X": 16,
+                "Y": 224,
+                "Width": 16,
+                "Height": 32
+            }
+        },
+
+        {
+            "LogName": "Movie Joja Marlon",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+			"Target": "Maps/MovieTheaterJoja_TileSheet",
+            "FromFile": "assets/Maps/MarlonTheater_{{Season}}.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 192,
+                "Width": 16,
+                "Height": 32
+            }
+        },
+      
+	]
+}

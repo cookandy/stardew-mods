@@ -1,0 +1,30 @@
+{
+	"Name": "Medieval_buildings",
+	"Author": "Gweniaczek",
+	"Version": "1.15",
+	"Description": "Medieval buildings set inspired by Eemie and Flower Valley",
+	"UniqueID": "Gweniaczek.Medieval_buildings",
+	"UpdateKeys": ["Nexus:4542"],
+	"ContentPackFor": 
+		{
+		"UniqueID": "Pathoschild.ContentPatcher",
+		},
+	"Dependencies": [
+		{
+		"UniqueID": "kaya.floralvalley",
+		"IsRequired": false,
+		},	
+		{
+		"UniqueID": "minervamaga.CP.ATDSV",
+		"IsRequired": false,
+		},
+		{
+		"UniqueID": "Lita.StarblueValley",
+		"IsRequired": false,
+		},
+		{
+		"UniqueID": "stardewfoliageredone",
+		"IsRequired": false,
+		},
+	],
+}

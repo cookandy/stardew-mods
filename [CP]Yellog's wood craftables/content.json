@@ -1,0 +1,121 @@
+{
+	"Format": "1.3",
+	"Changes": [
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 32, "Y": 32, "Width": 96, "Height": 32 },
+         "ToArea": { "X": 32, "Y": 32, "Width": 96, "Height": 32 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 0, "Y": 64, "Width": 80, "Height": 32 },
+         "ToArea": { "X": 0, "Y": 64, "Width": 80, "Height": 32 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 0, "Y": 96, "Width": 32, "Height": 32 },
+         "ToArea": { "X": 0, "Y": 96, "Width": 32, "Height": 32 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 16, "Y": 416, "Width": 16, "Height": 32 },
+         "ToArea": { "X": 16, "Y": 416, "Width": 16, "Height": 32 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 32, "Y": 448, "Width": 32, "Height": 32 },
+         "ToArea": { "X": 32, "Y": 448, "Width": 32, "Height": 32 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 48, "Y": 640, "Width": 16, "Height": 32 },
+         "ToArea": { "X": 48, "Y": 640, "Width": 16, "Height": 32 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 80, "Y": 640, "Width": 32, "Height": 32 },
+         "ToArea": { "X": 80, "Y": 640, "Width": 32, "Height": 32 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 80, "Y": 128, "Width": 32, "Height": 32 },
+         "ToArea": { "X": 80, "Y": 128, "Width": 32, "Height": 32 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 96, "Y": 224, "Width": 32, "Height": 32 },
+         "ToArea": { "X": 96, "Y": 224, "Width": 32, "Height": 32 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 0, "Y": 512, "Width": 32, "Height": 32 },
+         "ToArea": { "X": 0, "Y": 512, "Width": 32, "Height": 32 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 16, "Y": 32, "Width": 16, "Height": 32 },
+         "ToArea": { "X": 16, "Y": 32, "Width": 16, "Height": 32 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 32, "Y": 512, "Width": 96, "Height": 32 },
+         "ToArea": { "X": 32, "Y": 512, "Width": 96, "Height": 32 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/craftables",
+         "FromFile": "assets/craftables_{{season}}.png",
+         "FromArea": { "X": 0, "Y": 672, "Width": 96, "Height": 64 },
+         "ToArea": { "X": 0, "Y": 672, "Width": 96, "Height": 64 },
+		 "Enabled": true
+		},
+		{
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/springobjects.png",
+         "FromArea": { "X": 48, "Y": 288, "Width": 16, "Height": 16 },
+         "ToArea": { "X": 48, "Y": 288, "Width": 16, "Height": 16 },
+		 "Enabled": true
+		}
+
+
+
+ 
+	]
+}

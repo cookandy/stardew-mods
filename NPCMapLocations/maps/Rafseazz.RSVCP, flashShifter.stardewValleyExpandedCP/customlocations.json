@@ -1,0 +1,42 @@
+{
+  "CustomMapLocations": {
+    "RidgesideVillage": [
+      {
+        "MapX": 1,
+        "MapY": 221,
+		"TileX": 0,
+		"TileY": 0
+      },
+      {
+        "MapX": 200,
+        "MapY": 480,
+		"TileX": 149,
+		"TileY": 129
+      },
+    ]
+  },
+  
+  "CustomMapTooltips": {
+    "RidgesideVillage": {
+      "X": 30,
+      "Y": 221,
+      "Width": 170,
+      "Height": 200,
+      "PrimaryText": "Ridgeside Village"
+    },
+	"BloomingHillsFarm": {
+      "X": 0,
+      "Y": 229,
+      "Width": 68,
+      "Height": 152,
+      "PrimaryText": "Blooming Hill Farm"
+    },
+	"NightingaleOrchard": {
+      "X": 0,
+      "Y": 381,
+      "Width": 124,
+      "Height": 98,
+      "PrimaryText": "Nightingale Orchard"
+    }
+  }
+}

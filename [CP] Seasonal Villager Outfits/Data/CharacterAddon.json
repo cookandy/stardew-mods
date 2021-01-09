@@ -1,0 +1,329 @@
+{
+    "Changes": [
+
+        // Emily Tattoos
+
+        {
+            "LogName": "Emily Maternity Tattoos",
+            "Action": "EditImage",
+            "Target": "Characters/Emily, Portraits/Emily",
+            "FromFile": "{{Target}}/Tattoos/Emily_Maternity.png",
+            "When":
+            {
+                "Spouse": "Emily",
+                "Pregnant": "Emily",
+                "HasFile:{{FromFile}}": true,
+                "EmilyTattoos": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Emily Aerobics Tattoos",
+            "Action": "EditImage",
+            "Target": "Characters/Emily, Portraits/Emily",
+            "FromFile": "{{Target}}/Tattoos/Emily_Aerobics.png",
+            "When":
+            {
+                "DayOfWeek": "Tuesday",
+                "LocationName": "SeedShop",
+                "HasFile:{{FromFile}}": true,
+                "EmilyTattoos": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Emily Festival Tattoos",
+            "Action": "EditImage",
+            "Target": "Characters/Emily, Portraits/Emily",
+            "FromFile": "{{Target}}/Tattoos/Festivals/Emily_{{Festival}}.png",
+            "When":
+            {
+                "DayEvent": "flower dance, luau, feast of the winter star, dance of the moonlight jellies",
+                "HasFile:{{FromFile}}": true,
+                "EmilyTattoos": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Emily Swim Tattoos",
+            "Action": "EditImage",
+            "Target": "Characters/Emily, Portraits/Emily",
+            "FromFile": "{{Target}}/Tattoos/EmilySwim_Normal.png",
+            "When":
+            {
+                "LocationName": "beach",
+                "Season": "summer",
+                "DayEvent |contains=Luau, Dance of the Moonlight Jellies": false,
+                "SwimSuitsEnabled": "true",
+                "HasFile:{{FromFile}}": true,
+                "EmilyTattoos": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Emily Swim Tattoos - Surfing Festival",
+            "Action": "EditImage",
+            "Target": "Characters/Emily, Portraits/Emily",
+            "FromFile": "{{Target}}/Tattoos/EmilySwim_Normal.png",
+            "When":
+            {
+                "LocationName": "beach, temp",
+                "Season": "summer",
+                "Day": "5",
+                "HasMod": "spacechase0.SurfingFestival",
+                "SwimSuitsEnabled": "true",
+                "HasFile:{{FromFile}}": true,
+                "EmilyTattoos": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Emily Beach Tattoos",
+            "Action": "EditImage",
+            "Target": "Characters/Emily_Beach, Portraits/Emily_Beach",
+            "FromFile": "{{Target}}/Tattoos/EmilySwim_{{Random:Beach, null |key=EmilyVanillaModdedBeach}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "EmilyTattoos": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Harvey Mustache
+
+        {
+            "LogName": "Harvey - Mustache Overlay",
+            "Action": "EditImage",
+            "Target": "Characters/Harvey, Portraits/Harvey",
+            "FromFile": "{{Target}}/Harvey_{{HarveyFacialHair}}Overlay.png, {{Target}}/Harvey_{{HarveyEyeColor}}Eye_Overlay.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "DayEvent |contains=egg festival, festival of ice, luau, dance of the moonlight jellies, spirit's eve, stardew valley fair, feast of the winter star": false                
+            },
+            "PatchMode": "Overlay"
+        },
+
+        // Harvey Beach
+
+        {
+            "LogName": "Harvey - Mustache Overlay",
+            "Action": "EditImage",
+            "Target": "Characters/Harvey_Beach, Portraits/Harvey_Beach",
+            "FromFile": "{{TargetPathOnly}}/Swimsuits/Beach/Harvey_{{HarveyFacialHair}}Overlay.png, {{TargetPathOnly}}/Swimsuits/Beach/Harvey_{{HarveyEyeColor}}Eye_Overlay.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,           
+            },
+            "PatchMode": "Overlay"
+        },
+
+        // Maru Glasses
+
+        {
+            "LogName": "Maru Glasses",
+            "Action": "EditImage",
+            "Target": "Characters/Maru",
+            "FromFile": "{{Target}}/Maru_Glasses.png",
+            "When":
+            {
+                "MaruGlasses": true
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Maru Hospital Glasses",
+            "Action": "EditImage",
+            "Target": "Characters/Maru_Hospital",
+            "FromFile": "{{Target}}/Maru_Glasses.png",
+            "When":
+            {
+                "MaruGlasses": true
+            },
+            "PatchMode": "Overlay"
+        },
+
+        // Sebastian Glasses
+
+        {
+            "LogName": "Sebastian Glasses - Spring, Fall & Winter",
+            "Action": "EditImage",
+            "Target": "Characters/Sebastian, Portraits/Sebastian",
+            "FromFile": "{{Target}}/Glasses/Sebastian_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3 |key=SebastianSpringFallWinterVariant}}.png",
+            "When":
+            {
+                "Season": "spring, fall, winter",
+                "HasFile:{{FromFile}}": true,
+                "SebastianGlasses": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Sebastian Glasses - Summer",
+            "Action": "EditImage",
+            "Target": "Characters/Sebastian, Portraits/Sebastian",
+            "FromFile": "{{Target}}/Glasses/Sebastian_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3. 4 |key=SebastianSummerVariant}}.png",
+            "When":
+            {
+                "Season": "summer",
+                "HasFile:{{FromFile}}": true,
+                "SebastianGlasses": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Sebastian Glasses - Spirit's Eve",
+            "Action": "EditImage",
+            "Target": "Characters/Sebastian, Portraits/Sebastian",
+            "FromFile": "{{Target}}/Glasses/Festivals/Sebastian_Glasses_Overlay_{{Festival}}_{{Random:1, 2, 3 |key=SebastianSpiritsEveIceVariant}}.png",
+            "When":
+            {
+                "DayEvent": "spirit's eve",
+                "HasFile:{{FromFile}}": true,
+                "SebastianGlasses": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Sebastian Glasses - Other Festivals",
+            "Action": "EditImage",
+            "Target": "Characters/Sebastian, Portraits/Sebastian",
+            "FromFile": "{{Target}}/Glasses/Festivals/Sebastian_Glasses_Overlay_{{Festival}}.png",
+            "When":
+            {
+                "DayEvent": "Egg Festival, flower dance, stardew valley fair, luau",
+                "HasFile:{{FromFile}}": true,
+                "SebastianGlasses": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Swim
+        
+        {
+            "LogName": "Sebastian Swim Glasses",
+            "Action": "EditImage",
+            "Target": "Characters/Sebastian, Portraits/Sebastian",
+            "FromFile": "{{Target}}/Glasses/SebastianSwim_Normal.png",
+            "When":
+            {
+                "LocationName": "beach",
+                "Season": "summer",
+                "DayEvent |contains=Luau, Dance of the Moonlight Jellies": false,
+                "SwimSuitsEnabled": "true",
+                "HasFile:{{FromFile}}": true,
+                "SebastianGlasses": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Sebastian Swim Glasses - Surfing Festival",
+            "Action": "EditImage",
+            "Target": "Characters/Sebastian, Portraits/Sebastian",
+            "FromFile": "{{Target}}/Glasses/SebastianSwim_Normal.png",
+            "When":
+            {
+                "LocationName": "beach, temp",
+                "Season": "summer",
+                "Day": "5",
+                "HasMod": "spacechase0.SurfingFestival",
+                "SwimSuitsEnabled": "true",
+                "HasFile:{{FromFile}}": true,
+                "SebastianGlasses": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Sebastian Beach Glasses",
+            "Action": "EditImage",
+            "Target": "Characters/Sebastian_Beach, Portraits/Sebastian_Beach",
+            "FromFile": "{{Target}}/Glasses/SebastianSwim_{{Random:Beach, null |key=SebastianVanillaModdedBeach}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "SebastianGlasses": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Wedding
+
+        {
+            "LogName": "Sebastian Wedding Glasses",
+            "Action": "EditImage",
+            "Target": "Characters/Sebastian",
+            "FromFile": "Characters/Glasses/{{Wedding}}/Sebastian_{{WeddingStyle}}.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 384,
+                "Width": 48,
+                "Height": 32
+            },
+            "When":
+            {
+                "WeddingStyle": "VCSO, DesertDove, Vanilla, SCS",
+                "SebastianGlasses": true
+            },
+            "PatchMode": "Overlay",
+        },
+
+        // Sebastian Piercings
+
+        {
+            "LogName": "Sebastian Piercings",
+            "Action": "EditImage",
+            "Target": "Portraits/Sebastian",
+            "FromFile": "{{Target}}/Piercings/Sebastian_Piercings_Overlay_General.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "SebastianPiercings": true
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Sebastian Piercings - Rain",
+            "Action": "EditImage",
+            "Target": "Portraits/Sebastian",
+            "FromFile": "{{Target}}/Piercings/Sebastian_Piercings_Overlay_Rain.png",
+            "When":
+            {
+                "IsOutdoors": true,
+                "Weather": "rain, storm, snow",
+                "HasFile:{{FromFile}}": true,
+                "SebastianPiercings": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Sebastian Piercings - Festivals",
+            "Action": "EditImage",
+            "Target": "Portraits/Sebastian",
+            "FromFile": "{{Target}}/Piercings/Festivals/Sebastian_Piercings_Overlay_{{Festival}}_{{Random:1, 2, 3 |key=SebastianSpiritsEveIceVariant}}.png",
+            "When":
+            {
+                "DayEvent": "spirit's eve, festival of ice",
+                "HasFile:{{FromFile}}": true,
+                "SebastianPiercings": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+    ]
+}

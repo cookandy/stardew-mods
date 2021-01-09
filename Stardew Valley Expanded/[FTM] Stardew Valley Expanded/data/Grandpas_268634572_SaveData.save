@@ -1,0 +1,187 @@
+{
+  "WeatherForYesterday": "Snow",
+  "LNOSCounter": {
+    "Beach forage area 3": 1,
+    "Summit forage area 2": 1,
+    "LostWoods forage area 1": 1,
+    "LostWoods forage area 2": 1,
+    "LostWoods forage area 3": 1,
+    "LostWoods forage area 4": 1,
+    "Forest West forage area 3": 1,
+    "Forest West forage area 4": 1,
+    "Forest West forage area 5": 1,
+    "Forest West forage area 7": 1,
+    "Forest West forage area 8": 1,
+    "Forest West forage area 9": 3,
+    "Forest West forage area 10": 1,
+    "Aurora Vineyard Doll": 1,
+    "Aurora Vineyard Newspaper": 1,
+    "Treasure Chest Spawns": 8,
+    "Forest Sword Spawn": 1,
+    "Rapier Spawn": 1,
+    "Grandpa's Shed Logs": 2
+  },
+  "ExistingObjectLocations": {},
+  "SavedObjects": [
+    {
+      "MapName": "Railroad",
+      "Name": "weapon:Rapier",
+      "Tile": "15, 26",
+      "Type": "Item",
+      "ID": 49,
+      "DaysUntilExpire": 47,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "weapon",
+        "Name": "Rapier"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "ForestWest",
+      "Name": "weapon:Forest Sword",
+      "Tile": "60, 148",
+      "Type": "Item",
+      "ID": 15,
+      "DaysUntilExpire": 47,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "weapon",
+        "Name": "Forest Sword"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "ForestWest",
+      "Name": null,
+      "Tile": "53, 30",
+      "Type": "Forage",
+      "ID": 167,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "ForestWest",
+      "Name": null,
+      "Tile": "64, 19",
+      "Type": "Forage",
+      "ID": 168,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "ForestWest",
+      "Name": null,
+      "Tile": "70, 26",
+      "Type": "Forage",
+      "ID": 168,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "ForestWest",
+      "Name": null,
+      "Tile": "47, 27",
+      "Type": "Forage",
+      "ID": 168,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "ForestWest",
+      "Name": null,
+      "Tile": "10, 5",
+      "Type": "Forage",
+      "ID": 724,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "ForestWest",
+      "Name": null,
+      "Tile": "102, 89",
+      "Type": "Forage",
+      "ID": 109,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "ForestWest",
+      "Name": null,
+      "Tile": "61, 150",
+      "Type": "Forage",
+      "ID": 109,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "ForestWest",
+      "Name": null,
+      "Tile": "59, 147",
+      "Type": "Forage",
+      "ID": 109,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "ForestWest",
+      "Name": null,
+      "Tile": "76, 147",
+      "Type": "Forage",
+      "ID": 109,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "LostWoods",
+      "Name": null,
+      "Tile": "22, 76",
+      "Type": "Forage",
+      "ID": 104,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Beach",
+      "Name": null,
+      "Tile": "3, 6",
+      "Type": "Forage",
+      "ID": 372,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "LostWoods",
+      "Name": null,
+      "Tile": "7, 92",
+      "Type": "LargeObject",
+      "ID": 622,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    }
+  ]
+}

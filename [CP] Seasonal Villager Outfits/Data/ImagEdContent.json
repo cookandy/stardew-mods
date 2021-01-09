@@ -1,0 +1,158 @@
+{
+    "Changes": [
+
+        // Birdie
+
+        {
+            "LogName": "Birdie - ImagEd Shirt",
+            "Action": "EditImage",
+            "Target": "Characters/Birdie, Portraits/Birdie",
+            "FromFile": "{{Candidus42.ImagEd/Recolor: Tanpoponoko.SeasonalOutfits, {{Target}}, {{Target}}/{{TargetWithoutPath}}_ShirtGreyscale.png, {{Target}}/{{TargetWithoutPath}}_ShirtMask.png, {{Random:#80ED99, #8661C1, #DA344D, #EAD94C, #F4743B, #34E4EA |key=BirdieImagEd}}, DesaturateLuma }}",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "HasMod": "Candidus42.ImagEd",
+                "EnableImagEdContent": true
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Birdie - ImagEd Bowtie",
+            "Action": "EditImage",
+            "Target": "Characters/Birdie, Portraits/Birdie",
+            "FromFile": "{{Candidus42.ImagEd/Recolor: Tanpoponoko.SeasonalOutfits, {{Target}}, {{Target}}/{{TargetWithoutPath}}_BowtieGreyscale.png, {{Target}}/{{TargetWithoutPath}}_BowtieMask.png, {{Random:#80ED99, #8661C1, #DA344D, #EAD94C, #F4743B, #34E4EA |key=BirdieImagEd}}, DesaturateLuma }}",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "HasMod": "Candidus42.ImagEd",
+                "EnableImagEdContent": true
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Birdie - ImagEd Starfish",
+            "Action": "EditImage",
+            "Target": "Portraits/Birdie",
+            "FromFile": "{{Candidus42.ImagEd/Recolor: Tanpoponoko.SeasonalOutfits, {{Target}}, {{Target}}/{{TargetWithoutPath}}_StarfishGreyscale.png, {{Target}}/{{TargetWithoutPath}}_StarfishMask.png, {{Random:#80ED99, #8661C1, #DA344D, #EAD94C, #F4743B, #34E4EA |key=BirdieImagEd}}, DesaturateLuma }}",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "HasMod": "Candidus42.ImagEd",
+                "EnableImagEdContent": true
+            },
+            "PatchMode": "Overlay"
+        },
+
+        // Gunther
+
+        {
+            "LogName": "Gunther - ImagEd",
+            "Action": "EditImage",
+            "Target": "Characters/Gunther, Portraits/Gunther",
+            "FromFile": "{{Candidus42.ImagEd/Recolor: Tanpoponoko.SeasonalOutfits, {{Target}}, {{Target}}/{{TargetWithoutPath}}_Greyscale.png, {{Target}}/{{TargetWithoutPath}}_Mask.png, {{Random:#80ED99, #8661C1, #DA344D, #EAD94C, #F4743B, #34E4EA |key=GuntherImagEd}}, DesaturateLuma }}",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "HasMod": "Candidus42.ImagEd",
+                "EnableImagEdContent": true
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Gunther Hat - ImagEd",
+            "Action": "EditImage",
+            "Target": "Characters/Gunther, Portraits/Gunther",
+            "FromFile": "{{Target}}/Gunther_Hat.png",
+            "When":
+            {
+                "HasMod": "Candidus42.ImagEd",
+                "EnableImagEdContent": true
+            },
+            "PatchMode": "Overlay"
+        },
+
+        // Gunther Cursors
+
+        {
+            "LogName": "Movie Theater Gunther - ImageEd",
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_Tilesheet, Maps/MovieTheaterJoja_Tilesheet_international",
+            "FromFile": "{{Candidus42.ImagEd/Recolor: Tanpoponoko.SeasonalOutfits, Characters/Gunther, Characters/Gunther/Gunther_Greyscale.png, Characters/Gunther/Gunther_Mask.png, {{Random:#80ED99, #8661C1, #DA344D, #EAD94C, #F4743B, #34E4EA |key=GuntherImagEd}}, DesaturateLuma }}",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "HasMod": "Candidus42.ImagEd",
+                "EnableImagEdContent": true
+            },
+            "ToArea":
+            {
+                "X": 208,
+                "Y": 192,
+                "Width": 16,
+                "Height": 32
+            },
+            "FromArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 32
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Krobus
+
+        {
+            "LogName": "Krobus Main - ImagEd",
+            "Action": "EditImage",
+            "Target": "Characters/Krobus, Portraits/Krobus",
+            "FromFile": "{{Candidus42.ImagEd/Recolor: Tanpoponoko.SeasonalOutfits, {{Target}}, {{Target}}/{{KrobusStyle}}/Krobus_UmbrellaGreyscale.png, {{Target}}/{{KrobusStyle}}/Krobus_UmbrellaMask.png, {{Random:#80ED99, #8661C1, #DA344D, #EAD94C, #F4743B, #34E4EA |key=KrobusImagEd}}, DesaturateLuma }}",
+            "When":
+            {
+                "Season": "spring, summer, fall",
+                "Weather": "rain, storm",
+                "HasFile:{{FromFile}}": true,
+                "HasMod": "Candidus42.ImagEd",
+                "LocationName": "farm",
+                "EnableImagEdContent": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Krobus Winter - ImagEd",
+            "Action": "EditImage",
+            "Target": "Characters/Krobus, Portraits/Krobus",
+            "FromFile": "{{Candidus42.ImagEd/Recolor: Tanpoponoko.SeasonalOutfits, {{Target}}, {{Target}}/{{KrobusStyle}}/Krobus_ScarfGreyscale.png, {{Target}}/{{KrobusStyle}}/Krobus_ScarfMask.png, {{Random:#80ED99, #8661C1, #DA344D, #EAD94C, #F4743B, #34E4EA |key=KrobusImagEd}}, DesaturateLuma }}",
+            "When":
+            {
+                "Season": "winter",
+                "Weather": "snow",
+                "HasFile:{{FromFile}}": true,
+                "HasMod": "Candidus42.ImagEd",
+                "LocationName": "farm",
+                "EnableImagEdContent": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Safari Guy
+
+        {
+            "LogName": "Safari Guy - ImagEd",
+            "Action": "EditImage",
+            "Target": "Characters/SafariGuy, Portraits/SafariGuy",
+            "FromFile": "{{Candidus42.ImagEd/Recolor: Tanpoponoko.SeasonalOutfits, {{Target}}, {{Target}}/{{TargetWithoutPath}}_Greyscale.png, {{Target}}/{{TargetWithoutPath}}_Mask.png, {{Random:#80ED99, #8661C1, #DA344D, #EAD94C, #F4743B, #34E4EA |key=SafariGuyImagEd}}, DesaturateLuma }}",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "HasMod": "Candidus42.ImagEd",
+                "EnableImagEdContent": true
+            },
+            "PatchMode": "Overlay"
+        },
+    ]
+}

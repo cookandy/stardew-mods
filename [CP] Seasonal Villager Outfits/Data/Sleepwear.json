@@ -1,0 +1,40 @@
+{
+    "Changes": [
+        
+        {
+            "LogName": "Sleepwear",
+            "Action": "EditImage",
+            "Target": "Characters/{{spouse}}, Portraits/{{spouse}}",
+            "FromFile": "{{TargetPathOnly}}/{{Random: Sleepwear, null, null, null, null |key=Sleepwear}}/{{spouse}}_Sleepwear.png",
+            "When":
+            {
+                "LocationName": "Cabin, FarmHouse",
+                "Time": "{{Range: 0600, 1100}}",
+                "Pregnant |contains=Abigail, Emily, Haley, Leah, Maru, Penny": false,
+                "EnableSleepwear": true,
+                "HasFile:{{FromFile}}": true,
+            },
+            "Update": "OnTimeChange, OnLocationChange"
+        },        
+
+        // Sleepwear Pendants
+
+        {
+            "LogName": "Sleepwear Mermaid Pendants",
+            "Action": "EditImage",
+            "Target": "Portraits/{{spouse}}",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/{{spouse}}_{{Random: Sleepwear, null, null, null, null |key=Sleepwear}}.png",
+            "When":
+            {
+                "LocationName": "Cabin, FarmHouse",
+                "Time": "{{Range: 0600, 1100}}",
+                "Pregnant |contains=Abigail, Emily, Haley, Leah, Maru, Penny": false,
+                "EnableSleepwear": true,
+                "HasFile:{{FromFile}}": true,
+                "EnableMermaidPendants": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnTimeChange, OnLocationChange"
+        },
+    ]
+}

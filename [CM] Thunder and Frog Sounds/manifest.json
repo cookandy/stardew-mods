@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Thunder and Frog Sounds",
+  "Author": "Chrisdegod",
+  "Version": "1.0.1",
+  "Description": "Replaces some sounds played on rainy days",
+  "UniqueID": "Chrisdegod.ThunderAndFrogSounds",
+  "UpdateKeys": [ "Nexus:7450" ],
+  "ContentPackFor": {
+    "UniqueID": "Platonymous.CustomMusic",
+    "MinimumVersion": "1.0.6"
+  }
+}

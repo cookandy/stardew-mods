@@ -1,0 +1,338 @@
+{
+    "Changes": [
+
+        // Mermaid Pendants
+
+        {
+            "LogName": "Mermaid Pendant #1",
+            "Action": "EditImage",
+            "Target": "Portraits/{{MermaidPendantOverlay_Relationship}}",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/{{MermaidPendantOverlay_Relationship}}_{{Season}}{{IndoorVariant}}{{WeatherVariant}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Mermaid Pendant #2",
+            "Action": "EditImage",
+            "Target": "Portraits/{{MermaidPendantOverlay_Relationship}}",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/{{MermaidPendantOverlay_Relationship}}_{{Season}}{{WeatherVariant}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay"
+        },
+
+        // Abigail Portraits Mermaid Pendant
+
+        {
+            "LogName": "Abigail Spring & Winter - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Abigail",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Abigail_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3, 4 |key=AbigailSpringWinterVariant}}.png",
+            "When":
+            {
+                "Season": "spring, winter",
+                "HasFile:{{FromFile}}": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Abigail Summer - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Abigail",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Abigail_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3, 4, 5 |key=AbigailSummerVariant}}.png",
+            "When":
+            {
+                "Season": "summer",
+                "HasFile:{{FromFile}}": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Abigail Fall - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Abigail",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Abigail_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3 |key=AbigailFallVariant}}.png",
+            "When":
+            {
+                "Season": "fall",
+                "HasFile:{{FromFile}}": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Alex Portrait Mermaid Pendant
+
+        {
+            "LogName": "Alex Spring, Summer, Fall - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Alex",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Alex_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2 |key=AlexSpringSummerFallVariant}}.png",
+            "When":
+            {
+                "Season": "spring, summer, fall",
+                "HasFile:{{FromFile}}": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Elliott Portrait Mermaid Pendant
+
+        {
+            "LogName": "Elliott Summer & Fall - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Elliott",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Elliott_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2 |key=ElliottSummerFallVariant}}.png",
+            "When":
+            {
+                "Season": "summer, fall",
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        
+        // Emily Portrait Mermaid Pendant
+
+        {
+            "LogName": "Emily Spring, Summer & Fall - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Emily",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Emily_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3 |key=EmilySpringSummerFallVariant}}.png",
+            "When":
+            {
+                "Season": "spring, summer, fall",
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Emily Winter - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Emily",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Emily_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2 |key=EmilyWinterVariant}}.png",
+            "When":
+            {
+                "Season": "winter",
+                "HasFile:{{FromFile}}": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Haley Portrait Mermaid Pendant
+
+        {
+            "LogName": "Haley Spring, Summer & Winter - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Haley",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Haley_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3 |key=HaleySpringSummerWinterVariant}}.png",
+            "When":
+            {
+                "Season": "spring, summer, winter",
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Haley Fall  - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Haley",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Haley_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:Updo, Down |key=HaleyFallHairstyle}}_{{Random:Red, Blue |key=HaleyFallColor}}.png",
+            "When":
+            {
+                "Season": "fall",
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Harvey Portrait Mermaid Pendant
+
+        {
+            "LogName": "Harvey Spring & Fall - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Harvey_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2 |key=HarveySpringFallVariant}}.png",
+            "When":
+            {
+                "Season": "spring, fall",
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Leah Mermaid Pendant
+
+        {
+            "LogName": "Leah Spring & Summer - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Leah_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2 |key=LeahSpringSummerVariant}}.png",
+            "When":
+            {
+                "Season": "spring, summer",
+                "HasFile:{{FromFile}}": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Leah Fall - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Leah_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:Red, Brown, Black |key=LeahFallVariant}}.png",
+            "When":
+            {
+                "Season": "fall",
+                "HasFile:{{FromFile}}": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Maru Portraits Mermaid Pendant
+
+        {
+            "LogName": "Maru Spring & Summer - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Maru",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Maru_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3 |key=MaruSpringSummerVariant}}.png",
+            "When":
+            {
+                "Season": "spring, summer",
+                "HasFile:{{FromFile}}": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Maru Fall - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Maru",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Maru_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3, 4 |key=MaruFallVariant}}.png",
+            "When":
+            {
+                "Season": "fall",
+                "HasFile:{{FromFile}}": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Maru Winter - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Maru",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Maru_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2 |key=MaruWinterVariant}}.png",
+            "When":
+            {
+                "Season": "winter",
+                "HasFile:{{FromFile}}": true
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Penny Portraits Mermaid Pendant
+
+        {
+            "LogName": "Penny Spring & Fall - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Penny",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Penny_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3, 4, 5 |key=PennySpringFallVariant}}.png",
+            "When":
+            {
+                "Season": "spring, fall",
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Penny Summer & Winter - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Penny",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Penny_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2 |key=PennySummerWinterVariant}}.png",
+            "When":
+            {
+                "Season": "summer, winter",
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Sam Mermaid Pendant       
+
+        {
+            "LogName": "Sam Summer - Mermaid Pendant",
+            "Action": "EditImage",
+            "Target": "Portraits/Sam",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Sam_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2 |key=SamSummerVariant}}.png",
+            "When":
+            {
+                "Season": "summer",
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Sebastian Portraits Mermaid Pendant
+
+        {
+            "LogName": "Sebastian Spring, Fall & Winter",
+            "Action": "EditImage",
+            "Target": "Portraits/Sebastian",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Sebastian_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3 |key=SebastianSpringFallWinterVariant}}.png",
+            "When":
+            {
+                "Season": "spring, fall, winter",
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Sebastian Summer",
+            "Action": "EditImage",
+            "Target": "Portraits/Sebastian",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Sebastian_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3. 4 |key=SebastianSummerVariant}}.png",
+            "When":
+            {
+                "Season": "summer",
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+
+        // Shane Portraits Mermaid Pendant
+
+        {
+            "LogName": "Shane All Seasons",
+            "Action": "EditImage",
+            "Target": "Portraits/Shane",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/Shane_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2 |key=ShaneVariant}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+    ]
+}

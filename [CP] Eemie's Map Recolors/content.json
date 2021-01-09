@@ -1,0 +1,622 @@
+{
+	"Format": "1.11",
+
+	"ConfigSchema": {
+
+		"SpringColor": {
+			"AllowValues": "Green, Pink",
+			"Default": "Pink"
+			},
+		"FallColor": {
+			"AllowValues": "Green, Orange",
+			"Default": "Green"
+			},
+		"DirtColor": {
+			"AllowValues": "Classic, Light",
+			"Default": "Classic"
+			},
+		"UseFallBushes": {
+			"AllowValues": "true, false",
+			"Default": true
+			},
+		"UseEemiePine": {
+			"AllowValues": "true, false",
+			"Default": true
+			},
+		"GrassVariant": {
+			"AllowValues": "Eemie, AliEemie, AliVibrant, AliNormal, AliAlternate, AliAlternateVibrant, disable",
+			"Default": "AliEemie"
+			},
+		"UseWorldMapRecolor": {
+			"AllowValues": "true, false",
+			"Default": true
+			},
+		"Petbowl": {
+			"AllowValues": "vanilla, void, dirt, grass, darkgrass",
+			"Default": "vanilla"
+			},
+	},
+
+	"Changes": [
+
+		//Cursors - same for all versions
+		{
+		"LogName": "Cursors Overlay",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/Cursors.png",
+		},
+
+		//Dirt - same for all versions
+		{
+		"LogName": "Hoe Dirt",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/hoeDirt",
+		"FromFile": "assets/hoeDirt_{{DirtColor}}.png",
+			"FromArea": {"X":0, "Y":0, "Width":128, "Height":64},
+			"ToArea": {"X":0, "Y":0, "Width":128, "Height":64},
+		},
+		{
+		"LogName": "Hoe Dirt",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/hoeDirtDark",
+		"FromFile": "assets/hoeDirtDark_{{DirtColor}}.png",
+			"FromArea": {"X":0, "Y":0, "Width":128, "Height":64},
+			"ToArea": {"X":0, "Y":0, "Width":128, "Height":64},
+		},
+
+		//Festivals
+
+		{
+		"LogName": "Festival Tiles",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Festivals, Maps/Festivals",
+		"FromFile": "assets/Festivals_overlay.png",
+		},
+
+		{
+		"LogName": "Marnie Overlay",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Characters/Marnie",
+		"FromFile": "assets/Marnie_overlay.png",
+		},
+
+		//Desert
+
+		{
+		"LogName": "Desert Tiles",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "DesertTiles, Maps/DesertTiles",
+		"FromFile": "assets/DesertTiles.png",
+		},
+
+		{
+		"LogName": "Desert Tiles Extended",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "DesertTiles_Extended, Maps/DesertTiles_Extended",
+		"FromFile": "assets/DesertTiles_Extended.png",
+		},
+
+		{
+		"LogName": "Desert Trader",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "LooseSprites/temporary_sprites_1",
+		"FromFile": "assets/temporary_sprites_1.png",
+		},
+
+		//Beach
+
+		{
+		"LogName": "Beach Tiles",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "{{season}}_beach, Maps/{{season}}_beach",
+		"FromFile": "assets/{{season}}_beach.png",
+		},
+
+		//Summer & Winter
+
+		{
+		"LogName": "Summer/Winter Outdoors Base",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "{{season}}_outdoorsTileSheet, Maps/{{season}}_outdoorsTileSheet",
+		"FromFile": "assets/{{season}}_outdoorsTileSheet.png",
+		"When": {
+			"season": "summer, winter"
+			}
+		},
+
+		{
+		"LogName": "Summer/Winter Outdoors Pine",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "{{season}}_outdoorsTileSheet, Maps/{{season}}_outdoorsTileSheet",
+		"FromFile": "assets/{{season}}_outdoorsTileSheet_trees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"When": {
+			"UseEemiePine": true,
+			"season": "summer, winter"
+			}
+		},
+
+		{
+		"LogName": "Summer/Winter Outdoors No Pine",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "{{season}}_outdoorsTileSheet, Maps/{{season}}_outdoorsTileSheet",
+		"FromFile": "assets/{{season}}_outdoorsTileSheet_trees.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 160, "Height": 96 },
+		"ToArea": { "X": 0, "Y": 0, "Width": 160, "Height": 96 },
+		"When": {
+			"UseEemiePine": false,
+			"season": "summer, winter"
+			}
+		},
+
+		//no winter outdoors 2
+		{
+		"LogName": "Summer Outdoors 2",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "{{season}}_outdoorsTileSheet2, Maps/{{season}}_outdoorsTileSheet2",
+		"FromFile": "assets/{{season}}_outdoorsTileSheet2.png",
+		"When": {
+			"season": "summer"
+			}
+		},
+
+		//All seasons grave tiles
+		{
+		"LogName": "Spring & Summer Grave Tiles",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "{{season}}_monsterGraveTiles, Maps/{{season}}_monsterGraveTiles",
+		"FromFile": "assets/{{season}}_monsterGraveTiles.png",
+		"When": {
+			"season": "spring, summer"
+			}
+		},
+
+		{
+		"LogName": "Fall Grave Tiles",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "{{season}}_monsterGraveTiles, Maps/{{season}}_monsterGraveTiles",
+		"FromFile": "assets/{{season}}_monsterGraveTiles_{{FallColor}}.png",
+		"When": {
+			"season": "fall"
+			}
+		},
+
+		//Town
+
+		{
+		"LogName": "SummerTown",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "{{season}}_town, Maps/{{season}}_town",
+		"FromFile": "assets/{{season}}_town.png",
+		"When": {
+			"season": "summer"
+			}
+		},
+
+		//Spring
+		{
+		"LogName": "Spring Outdoors Base",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "spring_outdoorsTileSheet, Maps/spring_outdoorsTileSheet",
+		"FromFile": "assets/spring_outdoorsTileSheet_{{SpringColor}}.png",
+		},
+
+		{
+		"LogName": "Spring Outdoors Pine",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "spring_outdoorsTileSheet, Maps/spring_outdoorsTileSheet",
+		"FromFile": "assets/spring_outdoorsTileSheet_{{SpringColor}}trees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"When": {
+			"UseEemiePine": true
+			}
+		},
+
+		{
+		"LogName": "Spring Outdoors No Pine",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "spring_outdoorsTileSheet, Maps/spring_outdoorsTileSheet",
+		"FromFile": "assets/spring_outdoorsTileSheet_{{SpringColor}}trees.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 160, "Height": 96 },
+		"ToArea": { "X": 0, "Y": 0, "Width": 160, "Height": 96 },
+		"When": {
+			"UseEemiePine": false
+			}
+		},
+
+		{
+		"LogName": "Spring Outdoors 2",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "spring_outdoorsTileSheet2, Maps/spring_outdoorsTileSheet2",
+		"FromFile": "assets/spring_outdoorsTileSheet2.png",
+		},
+
+		{
+		"LogName": "Spring Town",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "spring_town, Maps/spring_town",
+		"FromFile": "assets/spring_town_{{SpringColor}}.png",
+		},
+
+		//Fall
+		{
+		"LogName": "Fall Outdoors Base",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "fall_outdoorsTileSheet, Maps/fall_outdoorsTileSheet",
+		"FromFile": "assets/fall_outdoorsTileSheet_{{FallColor}}.png",
+		},
+
+		{
+		"LogName": "Fall Outdoors Pine",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "fall_outdoorsTileSheet, Maps/fall_outdoorsTileSheet",
+		"FromFile": "assets/fall_outdoorsTileSheet_{{FallColor}}trees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"When": {
+			"UseEemiePine": true
+			}
+		},
+
+		{
+		"LogName": "Fall Outdoors No Pine",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "fall_outdoorsTileSheet, Maps/fall_outdoorsTileSheet",
+		"FromFile": "assets/fall_outdoorsTileSheet_{{FallColor}}trees.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 160, "Height": 96 },
+		"ToArea": { "X": 0, "Y": 0, "Width": 160, "Height": 96 },
+		"When": {
+			"UseEemiePine": false
+			}
+		},
+
+		{
+		"LogName": "Fall Outdoors 2",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "fall_outdoorsTileSheet2, Maps/fall_outdoorsTileSheet2",
+		"FromFile": "assets/fall_outdoorsTileSheet2_{{FallColor}}.png",
+		},
+
+		{
+		"LogName": "Fall Town",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "fall_town, Maps/fall_town",
+		"FromFile": "assets/fall_town_{{FallColor}}.png",
+		},
+
+
+		//Non-winter light dirt overlay - thanks to mstmst123/마이쥬망고맛 from Naver for allowing it to be used!
+
+		{
+		"LogName": "Light Dirt Overlay Outdoors",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "{{season}}_outdoorsTileSheet, Maps/{{season}}_outdoorsTileSheet",
+		"FromFile": "assets/lightDirtOverlay.png",
+		"When": {
+			"DirtColor:Light": true,
+			"Season:winter": false
+			}
+		},
+
+		{
+		"LogName": "Light Dirt Overlay Town",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "{{season}}_town, Maps/{{season}}_town",
+		"FromFile": "assets/lightDirtOverlay_town.png",
+		"When": {
+			"DirtColor:Light": true,
+			"Season:winter": false
+			}
+		},
+
+
+		//Petbowl
+		{
+			"LogName": "Pet Bowl - Void",
+			"Action": "EditImage",
+			"Target": "{{season}}_outdoorsTileSheet, Maps/{{season}}_outdoorsTileSheet",
+			"FromFile": "assets/petbowls/petbowl.png",
+			"ToArea": { "X": 208, "Y": 1232, "Width": 32, "Height": 16 },
+			"When": {
+				"Petbowl": "void"
+			}
+		},
+
+		{
+			"LogName": "Pet Bowl - Spring/Summer/Winter",
+			"Action": "EditImage",
+			"Target": "{{season}}_outdoorsTileSheet, Maps/{{season}}_outdoorsTileSheet",
+			"FromFile": "assets/petbowls/petbowl_{{petbowl}}_{{season}}.png",
+			"ToArea": { "X": 208, "Y": 1232, "Width": 32, "Height": 16 },
+			"When": {
+				"Petbowl": "dirt, grass, darkgrass",
+				"Season": "spring, summer, winter"
+			}
+		},
+
+		{
+			"LogName": "Pet Bowl - Fall",
+			"Action": "EditImage",
+			"Target": "{{season}}_outdoorsTileSheet, Maps/{{season}}_outdoorsTileSheet",
+			"FromFile": "assets/petbowls/petbowl_{{petbowl}}_{{season}}{{FallColor}}.png",
+			"ToArea": { "X": 208, "Y": 1232, "Width": 32, "Height": 16 },
+			"When": {
+				"Petbowl": "dirt, grass, darkgrass",
+				"Season": "fall"
+			}
+		},
+
+		//Witch Swamp
+
+		{
+		"LogName": "Witch Swamp Tiles",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "witchSwampTiles, Maps/witchSwampTiles",
+		"FromFile": "assets/witchSwampTiles.png",
+		},
+
+		//Trees
+
+		{
+		"LogName": "Palm Tree",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree_palm",
+		"FromFile": "assets/tree_palm.png",
+		},
+
+		{
+		"LogName": "Tree 1 Spring",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree1_spring",
+		"FromFile": "assets/tree1_spring_{{SpringColor}}.png",
+		},
+
+		{
+		"LogName": "Tree 1 Summer/Winter",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree1_{{season}}",
+		"FromFile": "assets/tree1_{{season}}.png",
+		"When": {
+			"season": "summer, winter"
+			}
+		},
+
+		{
+		"LogName": "Tree 1 Fall",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree1_fall",
+		"FromFile": "assets/tree1_fall_{{FallColor}}.png",
+		},
+
+		{
+		"LogName": "Tree 2 Spring",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree2_spring",
+		"FromFile": "assets/tree2_spring_{{SpringColor}}.png",
+		},
+
+		{
+		"LogName": "Tree 2 Summer/Winter",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree2_{{season}}",
+		"FromFile": "assets/tree2_{{season}}.png",
+		"When": {
+			"season": "summer, winter"
+			}
+		},
+
+		{
+		"LogName": "Tree 2 Fall",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree2_fall",
+		"FromFile": "assets/tree2_fall_{{FallColor}}.png",
+		},
+
+		{
+		"LogName": "Pine Tree (tree 3) Spring",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree3_spring",
+		"FromFile": "assets/tree3_spring_{{SpringColor}}.png",
+		"When": {
+			"UseEemiePine": true,
+			"season": "spring"
+			}
+		},
+
+		{
+		"LogName": "Pine Tree (tree 3) Summer",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree3_spring",
+		"FromFile": "assets/tree3_summer.png",
+		"When": {
+			"UseEemiePine": true,
+			"season": "summer"
+			}
+		},
+
+		{
+		"LogName": "Pine Tree (tree 3) Fall",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree3_fall",
+		"FromFile": "assets/tree3_fall_{{FallColor}}.png",
+		"When": {
+			"UseEemiePine": true
+			}
+		},
+
+		{
+		"LogName": "Pine Tree (tree 3) Winter",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree3_winter",
+		"FromFile": "assets/tree3_winter.png",
+		"When": {
+			"UseEemiePine": true,
+			}
+		},
+
+		//Bushes
+		{
+		"LogName": "Bushes",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "TileSheets/bushes",
+		"FromFile": "assets/bushes_standard.png",
+		"When": {
+			"season": "spring, summer, fall"
+			}
+		},
+
+		{
+		"LogName": "Red Fall Bushes",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "TileSheets/bushes",
+		"FromFile": "assets/bushes_red.png",
+		"When": {
+			"UseFallBushes": true,
+			"season": "fall"
+			}
+		},
+
+		//Grass
+		{
+		"LogName": "Grass Variants",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/grass",
+		"FromFile": "assets/grass_{{GrassVariant}}.png",
+		"When": {
+			"GrassVariant:disable": false
+			}
+		},
+
+		//Spring Objects
+
+		{
+		"LogName": "Spring Objects",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/springobjects.png",
+		},
+
+		//Expanded Maps - orange fall is vanilla, no need to replace
+
+		{
+		"LogName": "Expanded Access Ladders",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "{{season}}_ladder, Maps/{{season}}_ladder",
+		"FromFile": "assets/{{season}}_ladder.png",
+		"When": {
+			"HasMod:Allayna.Extended": true,
+			"FallColor": "green"
+			}
+		},
+
+		//Small Beach Farm
+
+		{
+		"LogName": "Small Beach Farm Compat - Summer/Winter",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Mods/Pathoschild.SmallBeachFarm/{{season}}_smallBeachFarm",
+		"FromFile": "assets/smallBeachCompat/{{season}}_smallBeachFarm.png",
+		"When": {
+			"HasMod:Pathoschild.SmallBeachFarm": true,
+			"season": "summer, winter"
+			}
+		},
+
+		{
+		"LogName": "Small Beach Farm Compat - Spring",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Mods/Pathoschild.SmallBeachFarm/{{season}}_smallBeachFarm",
+		"FromFile": "assets/smallBeachCompat/{{season}}_smallBeachFarm_{{SpringColor}}.png",
+		"When": {
+			"HasMod:Pathoschild.SmallBeachFarm": true,
+			"season": "spring"
+			}
+		},
+
+		{
+		"LogName": "Small Beach Farm Compat - Fall",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Mods/Pathoschild.SmallBeachFarm/{{season}}_smallBeachFarm",
+		"FromFile": "assets/smallBeachCompat/{{season}}_smallBeachFarm_{{FallColor}}.png",
+		"When": {
+			"HasMod:Pathoschild.SmallBeachFarm": true,
+			"season": "fall"
+			}
+		},
+
+		//World Map
+		{
+		"LogName": "World Map Not Spring",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "LooseSprites/map",
+		"FromFile": "assets/map_{{season}}.png",
+		"When": {
+			"UseWorldMapRecolor": true,
+			"HasMod:Bouhm.NPCMapLocations": false,
+			"season": "summer, fall, winter"
+			},
+		},
+
+		{
+		"LogName": "World Map Spring",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "LooseSprites/map",
+		"FromFile": "assets/map_spring_{{SpringColor}}.png",
+		"When": {
+			"UseWorldMapRecolor": true,
+			"HasMod:Bouhm.NPCMapLocations": false,
+			"season": "spring"
+			},
+		},
+	]
+}

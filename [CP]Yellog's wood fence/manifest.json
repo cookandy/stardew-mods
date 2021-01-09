@@ -1,0 +1,13 @@
+{
+  "Name": "[CP]Yellog's wood fence",
+  "Author": "Yellog",
+  "Version": "1.4.0",
+  "Description": "Do not distribute other sites and corrections without the original author's permission.",
+  "UniqueID": "Yellog.YWB1",
+  "MinimumApiVersion": "2.6",
+  "MinimumGameVersion": "1.3.27",
+  "ContentPackFor":{
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+  "UpdateKeys": [ "Nexus:2958" ]
+}

@@ -1,0 +1,29 @@
+{
+   "Name": "Seasonal Outfits - SVE",
+   "Author": "Poltergeister and Tanpoponoko",
+   "Version": "1.4.2",
+   "Description": "Seasonal Outfits for Stardew Valley Expanded in the Vanilla style.",
+   "UniqueID": "Poltergeister.SeasonalOutfitsSVE",
+   "UpdateKeys": [ "Nexus:5975" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+   "Dependencies": [
+   {
+	  "UniqueID": "FlashShifter.StardewValleyExpandedALL",
+	  "IsRequired": true
+   },
+   {
+	  "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+	  "IsRequired": true
+   },
+   {
+	  "UniqueID": "Hesper.RusticCountrysideTownInterior",
+	  "IsRequired": false
+   },
+   {
+	  "UniqueID": "Tanpoponoko.SeasonalOutfits",
+	  "IsRequired": false
+   },
+]
+}

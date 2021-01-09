@@ -1,0 +1,16 @@
+{
+  "SeasonalEdits": "true",
+  "ReplaceDefaultFences": "false",
+  "ReplaceHardwoodFences": "false",
+  "ImmersiveShadows": "true",
+  "CanWalkOverBeachTidepools": "false",
+  "SmallerDesertMap": "false",
+  "RemoveObjectsFromGrandpasShed": "false",
+  "LowerProfitMargins": "false",
+  "BalancedCrafting": "false",
+  "HarderBuildingConstruction": "false",
+  "StrongerMonsters": "false",
+  "OlderSophiaPortraits": "false",
+  "VanillaSandyPortraits": "false",
+  "MatureEvents": "true"
+}

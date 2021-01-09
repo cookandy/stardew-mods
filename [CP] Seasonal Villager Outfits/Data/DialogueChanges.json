@@ -1,0 +1,53 @@
+{
+    "Changes": [
+
+        {
+            "LogName": "Demetrius - Ice Festival",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8.xnb",
+            "Entries":
+            {
+                "Demetrius": "It's fascinating how skills from different disciplines can transfer over.$bOh, I'm talking about Robin's ice carving and wood carving skills.$h",
+            },
+            "When":
+            {
+                "EnableDialogueChanges": true,
+            }
+        },
+        {
+            "LogName": "Haley - Night Market",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Haley",
+            "Entries":
+            {
+                "winter_16.001": "Brrr.... I put on an extra layer and it's still cold...$s",
+            },    
+            "When":
+            {
+                "EnableDialogueChanges": true,
+            }     
+        },
+        {
+            "LogName": "Shane - Resort",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries":
+            {
+                "Resort": "Okay, this sand is piping hot. I regret not bringing some flip flops.$s",
+            },        
+            "When":
+            {
+                "EnableDialogueChanges": true,
+            } 
+        },
+        {
+            "LogName": "Sebastian - Bike Work", //This changes the portrait that is shown when Sebastian is working on his bike to match his character sprite.
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSebastian",
+            "Entries":
+            {
+                "patio_Sebastian": "Need something? I'll just be over here working on my bike for a while.$8",
+            },       
+        },
+    ]
+}
