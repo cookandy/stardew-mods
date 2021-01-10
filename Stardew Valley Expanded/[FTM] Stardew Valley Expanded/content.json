@@ -183,9 +183,15 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "Years": [],
-          "Seasons": [],
-          "Days": [],
+          "Years": [
+            "1"
+          ],
+          "Seasons": [
+            "Spring"
+          ],
+          "Days": [
+            "1"
+          ],
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
@@ -301,7 +307,7 @@
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
-          "18,25;9,14"
+          "20,27;6,20"
         ],
         "StrictTileChecking": "High",
         "SpawnTiming": {
@@ -357,9 +363,15 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "Years": [],
-          "Seasons": [],
-          "Days": [],
+          "Years": [
+            "1"
+          ],
+          "Seasons": [
+            "Spring"
+          ],
+          "Days": [
+            "1"
+          ],
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
@@ -2041,9 +2053,15 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "Years": [],
-          "Seasons": [],
-          "Days": [],
+          "Years": [
+            "1"
+          ],
+          "Seasons": [
+            "Spring"
+          ],
+          "Days": [
+            "1"
+          ],
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
@@ -2099,9 +2117,15 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "Years": [],
-          "Seasons": [],
-          "Days": [],
+          "Years": [
+            "1"
+          ],
+          "Seasons": [
+            "Spring"
+          ],
+          "Days": [
+            "1"
+          ],
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
@@ -2249,45 +2273,6 @@
     "Areas": [
       {
         "ObjectTypes": [
-          "Log"
-        ],
-        "FindExistingObjectLocations": false,
-        "PercentExtraSpawnsPerSkillLevel": 0,
-        "RelatedSkill": "Foraging",
-        "UniqueAreaID": "Grandpa's Shed Logs",
-        "MapName": "GrandpasShedOutside",
-        "MinimumSpawnsPerDay": 2,
-        "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": [],
-        "ExcludeTerrainTypes": [],
-        "IncludeCoordinates": [
-          "21,17;21,17",
-          "23,17;23,17"
-        ],
-        "ExcludeCoordinates": [],
-        "StrictTileChecking": "High",
-        "SpawnTiming": {
-          "StartTime": 600,
-          "EndTime": 600,
-          "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": null,
-          "OnlySpawnIfAPlayerIsPresent": false,
-          "SpawnSound": ""
-        },
-        "ExtraConditions": {
-          "Years": [],
-          "Seasons": [],
-          "Days": [],
-          "WeatherYesterday": [],
-          "WeatherToday": [],
-          "WeatherTomorrow": [],
-          "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 2
-        },
-        "DaysUntilSpawnsExpire": null
-      },
-      {
-        "ObjectTypes": [
           "Meteorite"
         ],
         "FindExistingObjectLocations": false,
@@ -2324,6 +2309,51 @@
           "WeatherTomorrow": [],
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "ObjectTypes": [
+          "Log"
+        ],
+        "FindExistingObjectLocations": false,
+        "PercentExtraSpawnsPerSkillLevel": 0,
+        "RelatedSkill": "Foraging",
+        "UniqueAreaID": "Grandpas Shed Logs",
+        "MapName": "GrandpasShedOutside",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "21,17;21,17",
+          "23,17;23,17"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [
+            "1"
+          ],
+          "Seasons": [
+            "Spring"
+          ],
+          "Days": [
+            "1"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 2
         },
         "DaysUntilSpawnsExpire": null
       },

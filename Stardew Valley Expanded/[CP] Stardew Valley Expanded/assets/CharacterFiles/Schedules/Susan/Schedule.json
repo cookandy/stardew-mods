@@ -9,7 +9,7 @@
 //Eats food, purchases seeds from Pierre's, comes back to farm, shipping bin, eats, sleeps
 "spring_Thu": "610 SusanHouse 26 15 0/800 SeedShop 14 20 0/1400 Railroad 62 52 2 Susan_Farm2/1420 Railroad 58 56 1 Susan_Farm1/1440 Railroad 54 52 2 Susan_Farm2/1500 Railroad 49 57 1 Susan_Farm1/1520 Railroad 43 52 2 Susan_Farm2/1540 Railroad 40 55 1 Susan_Farm1/1600 Railroad 44 51 0/1700 Railroad 34 54 0/1830 SusanHouse 27 15 0/2100 SusanHouse 24 6 1 Susan_Sleep",
 //Eats food, Emerald Farm activities, shipping bin, goes to saloon, comes back home and sleeps
-"spring_Fri": "700 SusanHouse 25 15 0/840 Railroad 49 56 1 Susan_Farm1/900 Railroad 49 54 1 Susan_Farm1/920 Railroad 51 52 2 Susan_Farm2/940 Railroad 54 52 2 Susan_Farm2/1000 Railroad 57 54 3 Susan_Farm3/1020 Railroad 57 57 3 Susan_Farm3/1040 Railroad 58 58 1 Susan_Farm1/1100 Railroad 59 52 2 Susan_Farm2/1120 Railroad 61 52 2 Susan_Farm2/1140 Railroad 64 52 2 Susan_Farm2/1200 Railroad 65 50 1/1220 Railroad 60 50 0/1240 Railroad 60 50 0/1300 Railroad 14 51 0/1400 Saloon 11 20 0/1930 SusanHouse 24 6 2",
+"spring_Fri": "700 SusanHouse 25 15 0/840 Railroad 49 56 1 Susan_Farm1/900 Railroad 49 54 1 Susan_Farm1/920 Railroad 51 52 2 Susan_Farm2/940 Railroad 54 52 2 Susan_Farm2/1000 Railroad 57 54 3 Susan_Farm3/1020 Railroad 57 57 3 Susan_Farm3/1040 Railroad 58 58 1 Susan_Farm1/1100 Railroad 59 52 2 Susan_Farm2/1120 Railroad 61 52 2 Susan_Farm2/1140 Railroad 64 52 2 Susan_Farm2/1200 Railroad 65 50 1/1220 Railroad 60 50 0/1240 Railroad 60 50 0/1300 Railroad 44 51 0/1400 Saloon 1 22 2/1930 SusanHouse 24 6 2",
 //Eats food, visits summit, comes back home to craft objects, eats, sleeps
 "spring_Sat": "830 SusanHouse 27 15 0/930 Summit 9 14 0/1400 SusanHouse 3 19 0 Susan_Craft/2100 SusanHouse 24 15 0/2210 SusanHouse 24 6 1 Susan_Sleep",
 //Eats food, waters plants inside house, visits Pierre's comes back to eat, then goes to bed
@@ -25,7 +25,7 @@
 //Eats food, purchases seeds from Pierre's, comes back to farm, shipping bin, eats, sleeps
 "summer_Thu": "610 SusanHouse 26 15 0/800 SeedShop 14 20 0/1400 Railroad 62 52 2 Susan_Farm2/1420 Railroad 58 56 1 Susan_Farm1/1440 Railroad 54 52 2 Susan_Farm2/1500 Railroad 49 57 1 Susan_Farm1/1520 Railroad 43 52 2 Susan_Farm2/1540 Railroad 40 55 1 Susan_Farm1/1600 Railroad 44 51 0/1700 Railroad 34 54 0/1830 SusanHouse 27 15 0/2100 SusanHouse 24 6 1 Susan_Sleep",
 //Eats food, Emerald Farm activities, shipping bin, goes to saloon, comes back home and sleeps
-"summer_Fri": "700 SusanHouse 27 15 0/840 Railroad 49 56 1 Susan_Farm1/900 Railroad 49 54 1 Susan_Farm1/920 Railroad 51 52 2 Susan_Farm2/940 Railroad 54 52 2 Susan_Farm2/1000 Railroad 57 54 3 Susan_Farm3/1020 Railroad 57 57 3 Susan_Farm3/1040 Railroad 58 58 1 Susan_Farm1/1100 Railroad 59 52 2 Susan_Farm2/1120 Railroad 61 52 2 Susan_Farm2/1140 Railroad 64 52 2 Susan_Farm2/1200 Railroad 65 50 1/1220 Railroad 60 50 0/1240 Railroad 60 50 0/1300 Railroad 14 51 0/1400 Saloon 11 20 0/1930 SusanHouse 24 6 2",
+"summer_Fri": "700 SusanHouse 27 15 0/840 Railroad 49 56 1 Susan_Farm1/900 Railroad 49 54 1 Susan_Farm1/920 Railroad 51 52 2 Susan_Farm2/940 Railroad 54 52 2 Susan_Farm2/1000 Railroad 57 54 3 Susan_Farm3/1020 Railroad 57 57 3 Susan_Farm3/1040 Railroad 58 58 1 Susan_Farm1/1100 Railroad 59 52 2 Susan_Farm2/1120 Railroad 61 52 2 Susan_Farm2/1140 Railroad 64 52 2 Susan_Farm2/1200 Railroad 65 51 1/1220 Railroad 60 50 0/1240 Railroad 60 50 0/1300 Railroad 44 51 0/1400 Saloon 1 22 2/1930 SusanHouse 24 6 2",
 //Eats food, visits summit, comes back home to craft objects, eats, sleeps
 "summer_Sat": "830 SusanHouse 25 15 0/930 Summit 9 14 0/1400 SusanHouse 3 19 0 Susan_Craft/2100 SusanHouse 24 15 0/2210 SusanHouse 24 6 1 Susan_Sleep",
 //Eats food, waters plants inside house, visits Pierre's comes back to eat, then goes to bed
@@ -41,7 +41,7 @@
 //Eats food, purchases seeds from Pierre's, comes back to farm, shipping bin, eats, sleeps
 "fall_Thu": "610 SusanHouse 27 15 0/800 SeedShop 14 20 0/1400 Railroad 62 52 2 Susan_Farm2/1420 Railroad 58 56 1 Susan_Farm1/1440 Railroad 54 52 2 Susan_Farm2/1500 Railroad 49 57 1 Susan_Farm1/1520 Railroad 43 52 2 Susan_Farm2/1540 Railroad 40 55 1 Susan_Farm1/1600 Railroad 44 51 0/1700 Railroad 34 54 0/1830 SusanHouse 25 15 0/2100 SusanHouse 24 6 1 Susan_Sleep",
 //Eats food, Emerald Farm activities, shipping bin, goes to saloon, comes back home and sleeps
-"fall_Fri": "700 SusanHouse 25 15 0/840 Railroad 49 56 1 Susan_Farm1/900 Railroad 49 54 1 Susan_Farm1/920 Railroad 51 52 2 Susan_Farm2/940 Railroad 54 52 2 Susan_Farm2/1000 Railroad 57 54 3 Susan_Farm3/1020 Railroad 57 57 3 Susan_Farm3/1040 Railroad 58 58 1 Susan_Farm1/1100 Railroad 59 52 2 Susan_Farm2/1120 Railroad 61 52 2 Susan_Farm2/1140 Railroad 64 52 2 Susan_Farm2/1200 Railroad 65 50 1/1220 Railroad 60 50 0/1240 Railroad 60 50 0/1300 Railroad 14 51 0/1400 Saloon 11 20 0/1930 SusanHouse 24 6 2",
+"fall_Fri": "700 SusanHouse 25 15 0/840 Railroad 49 56 1 Susan_Farm1/900 Railroad 49 54 1 Susan_Farm1/920 Railroad 51 52 2 Susan_Farm2/940 Railroad 54 52 2 Susan_Farm2/1000 Railroad 57 54 3 Susan_Farm3/1020 Railroad 57 57 3 Susan_Farm3/1040 Railroad 58 58 1 Susan_Farm1/1100 Railroad 59 52 2 Susan_Farm2/1120 Railroad 61 52 2 Susan_Farm2/1140 Railroad 64 52 2 Susan_Farm2/1200 Railroad 65 50 1/1220 Railroad 60 50 0/1240 Railroad 60 50 0/1300 Railroad 44 51 0/1400 Saloon 1 22 2/1930 SusanHouse 24 6 2",
 //Eats food, visits summit, comes back home to craft objects, eats, sleeps
 "fall_Sat": "830 SusanHouse 26 15 0/930 Summit 9 14 0/1400 SusanHouse 3 19 0 Susan_Craft/2100 SusanHouse 24 15 0/2210 SusanHouse 24 6 1 Susan_Sleep",
 //Eats food, waters plants inside house, visits Pierre's comes back to eat, then goes to bed
@@ -57,7 +57,7 @@
 //Eats food, visits library to read, returns home to eat, write in manifest, and sleep
 "winter_Thu": "700 SusanHouse 26 15 0/800 ArchaeologyHouse 16 5 0 Susan_Read/1400 SusanHouse 27 15 0/1900 SusanHouse 2 6 0/2100 SusanHouse 24 6 1 Susan_Sleep",
 //Eats food, crafts, gazes from a bridge in town, goes to saloon, goes to sleep after returning home
-"winter_Fri": "800 SusanHouse 24 15 0/900 SusanHouse 3 19 0 Susan_Craft/1100 Town 94 13 2/1500 Saloon 11 20 0/2130 SusanHouse 24 6 1 Susan_Sleep",
+"winter_Fri": "800 SusanHouse 24 15 0/900 SusanHouse 3 19 0 Susan_Craft/1100 Town 94 13 2/1500 Saloon 1 22 2/2130 SusanHouse 24 6 1 Susan_Sleep",
 //Eats food, visits library to read books, returns home to sleep, crafts, and sleeps
 "winter_Sat": "710 SusanHouse 27 15 0/800 ArchaeologyHouse 16 5 0 Susan_Read/1430 SusanHouse 24 15 0/1930 SusanHouse 3 19 0 Susan_Craft/2130 SusanHouse 24 6 1 Susan_Sleep",
 //Eats foods, goes up to the summit, comes back home to craft, eats, sleeps
