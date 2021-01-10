@@ -748,7 +748,7 @@
           "Neutral": 5,
           "GoodLuck": 10
         },
-        "Range": 100,
+        "Range": 10,
         "RangeLevelModifier": {
           "Min": {
             "Level": 0,
@@ -1437,9 +1437,9 @@
   "Monsters": {
     "ChanceForHalfMonsterCount": {
       "Value": {
-        "BadLuck": 0,
-        "Neutral": 0,
-        "GoodLuck": 50
+        "BadLuck": 40,
+        "Neutral": 60,
+        "GoodLuck": 80
       },
       "Range": 100,
       "RangeLevelModifier": {
@@ -1455,9 +1455,9 @@
     },
     "ChanceForUnbuffedMonster": {
       "Value": {
-        "BadLuck": 0,
-        "Neutral": 25,
-        "GoodLuck": 75
+        "BadLuck": 40,
+        "Neutral": 60,
+        "GoodLuck": 80
       },
       "Range": 100,
       "RangeLevelModifier": {
