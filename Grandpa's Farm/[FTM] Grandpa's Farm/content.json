@@ -91,6 +91,54 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          20,
+          16
+        ],
+        "SummerItemIndex": [
+          259,
+          257
+        ],
+        "FallItemIndex": [
+          420,
+          422
+        ],
+        "WinterItemIndex": [
+          414,
+          418
+        ],
+        "UniqueAreaID": "Grove spawns",
+        "MapName": "GrandpasGrove",
+        "MinimumSpawnsPerDay": 4,
+        "MaximumSpawnsPerDay": 6,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
       }
     ],
     "PercentExtraSpawnsPerForagingLevel": 2,
@@ -153,9 +201,15 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "Years": [],
-          "Seasons": [],
-          "Days": [],
+          "Years": [
+            "1"
+          ],
+          "Seasons": [
+            "Spring"
+          ],
+          "Days": [
+            "1"
+          ],
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
