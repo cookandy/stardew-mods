@@ -49,7 +49,7 @@ This repository contains my SMAPI mods for Stardew Valley. See the individual mo
 | [Grandpa's Farm](https://www.nexusmods.com/stardewvalley/mods/3753) | Grandpa's Farm for [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753). | `1.12.5` | |
 | [Imaged](https://www.nexusmods.com/stardewvalley/mods/7218) | Provides non-interactive image recoloring. | `1.1` | |
 | [JSON Assets](https://www.nexusmods.com/stardewvalley/mods/1720) | Successor to Custom Crops. | `1.7.3` | |
-| [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541) | See live info about whatever's under your cursor. | `1.31.0` | Changed hotkey. See [wiki](https://github.com/cookandy/stardew-mods/wiki/LookupAnything) |
+| [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541) | See live info about whatever's under your cursor. | `1.31.1` | Changed hotkey. See [wiki](https://github.com/cookandy/stardew-mods/wiki/LookupAnything) |
 | [Lunar Disturbances](https://www.nexusmods.com/stardewvalley/mods/2208) | Adds a moon overhead, which enables events such as a solar eclipse, a blood moon for rare occasions. | `1.4.1` | Currenntly not working with `1.5` |
 | [Mod Update Menu](https://www.nexusmods.com/stardewvalley/mods/2536) | Adds an in game menu to the title screen letting you know if you need to update your mods or SMAPI. | `1.6.0` | |
 | [Non-Destructive NPCs](https://www.nexusmods.com/stardewvalley/mods/5176) | Makes NPCs not destroy objects placed by the player in their paths. | `1.0.0` | |
