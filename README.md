@@ -79,7 +79,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Medieval Buildings](https://www.nexusmods.com/stardewvalley/mods/4542) | Medieval Modern buildings | `1.15` |
 | [Seasonal Outfits - SVE](https://www.nexusmods.com/stardewvalley/mods/5975) | Gives the NPCs of Stardew Valley Expanded seasonal clothing. | `1.4.2` |
 | [Seasonal Villager Outfits](https://www.nexusmods.com/stardewvalley/mods/2449) | An outfit for every season! | `2.3.2` |
-| [Stardew Valley Dialogue Expansion](https://www.nexusmods.com/stardewvalley/mods/2544) | Adds about 2500 new lines of dialogue across all 33 characters who have a heart level. | `2.0.0` | [Unoffical update](http://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/post-23438) |
+| [Stardew Valley Dialogue Expansion](https://www.nexusmods.com/stardewvalley/mods/2544) | Adds about 2500 new lines of dialogue across all 33 characters who have a heart level. | `2.0.2` | |
 | [Yellog's wood craftables](https://www.nexusmods.com/stardewvalley/mods/3063)| Craftables | `1.3` | [1] |
 | [Yellog's wood fence](https://www.nexusmods.com/stardewvalley/mods/2958) | Wood fence | `1.0` | [1] |
 
