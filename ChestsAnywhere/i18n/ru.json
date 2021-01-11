@@ -1,0 +1,37 @@
+{
+    // default chest names
+    "default-name.fridge": "Холодильник",
+    "default-name.other": "{{name}} #{{number}}",
+    "default-name.shipping-bin.store": "отправленные предметы",
+    "default-name.shipping-bin.take": "принятые предметы",
+
+    // default category names
+    "default-category.owned-cabin": "В данном домике проживает {{owner}}.",
+    "default-category.unowned-cabin": "Домик (пустой)",
+    "default-category.duplicate": "{{locationName}} №{{number}}",
+
+    // edit-chest labels
+    "label.location": "Локация",
+    "label.location.tile": "Клетка {{x}}, {{y}}",
+    "label.name": "Имя",
+    "label.category": "Категория",
+    "label.order": "Порядок",
+    "label.hide-chest": "Скрыть этот сундук",
+    "label.hide-chest-hidden": "Скрыть этот сундук (вам нужно найти сундук, чтобы отменить это!)",
+    "label.automate-store": "(Автоматизировать) класть предметы в этот сундук",
+    "label.automate-store-first": "(Автоматизировать) Сначала класть предметы в этот сундук",
+    "label.automate-take": "(Автоматизировать) брать предметы из этого сундука",
+    "label.automate-take-first": "(Автоматизировать) Сначала брать предметы из этого сундука",
+
+    // button labels
+    "button.edit-chest": "Редактировать сундук",
+    "button.sort-inventory": "Сортировать инвентарь",
+    "button.save": "Сохранить",
+    "button.reset": "Сброс",
+
+    // errors
+    "errors.disabled-from-here": "Вы не можете получить доступ к сундукам отсюда.",
+    "errors.no-chests": "У вас отсутствуют сундуки.",
+    "errors.no-chests-in-location": "У вас отсутствуют сундуки в данной локации.",
+    "errors.no-chests-in-range": "У вас отсутствуют сундуки в радиусе действия."
+}
