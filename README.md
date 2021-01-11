@@ -1,4 +1,4 @@
-This repository contains my SMAPI mods for Stardew Valley. See the individual mods for documentation and release notes.
+This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Modding:Index) for Stardew Valley. See the individual mods for documentation and release notes.
 
 # Table of Contents
 
@@ -18,16 +18,16 @@ This repository contains my SMAPI mods for Stardew Valley. See the individual mo
 
 ## Instructions
 
-1. Install Stardew Valley (via Steam)
+1. Install [Stardew Valley](https://www.stardewvalley.net/) (via Steam)
 2. Install [SMAPI](https://smapi.io/)
-3. Go into `Mods` directory
-    1. Mac `/Users/<user>/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS/Mods`
-4. Run `git clone https://github.com/cookandy/stardew-mods.git .` 
+3. Open a terminal and `cd` into the `Mods` directory within the [game directory](https://stardewcommunitywiki.com/Modding:Player_Guide/Getting_Started#Find_your_game_folder)
+4. Run `git clone https://github.com/cookandy/stardew-mods.git .` to clone this repo into your `Mods` directory
+5. Start Stardew Valley and enjoy!
 
 ## List of Mods
 
 | Name      | Description | Version    | Notes     |
-| :------------- | :---------- | :---------- | ----------- |
+| :------------- | :---------- | :---------- | :----------- |
 |  [Advanced Save Backup](https://www.nexusmods.com/stardewvalley/mods/435) | Automatically backs up your saves when loading the game and every night when you sleep.  | `1.9.0`    | |
 | [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) |  Place a chest next to a machine (like a furnace or crystalarium), and the machine will automatically pull raw items from the chest and push processed items into it.	| `1.19.1` | |
 | [Better Artisan Goods Icons](https://www.nexusmods.com/stardewvalley/mods/2080) | This mod makes jelly, pickles, wine, juice, and honey icons be based on the fruit, vegetable, or flower used to make them. | `1.5.0` | |
@@ -71,19 +71,21 @@ This repository contains my SMAPI mods for Stardew Valley. See the individual mo
 ## List of Content Patcher Additions
 
 | Name      | Description | Version    | Notes     |
-| :------------- | :---------- | :---------- | ----------- |
-| [Eemie's Map Recolors](https://www.moddrop.com/stardew-valley/mods/580620-eemies-just-a-new-map-recolour-content-patcher-edition) | Map Recolor | `1.7.2` | Used by Flower Valley
+| :------------- | :---------- | :---------- | :----------- |
+| [Eemie's Map Recolors](https://www.moddrop.com/stardew-valley/mods/580620-eemies-just-a-new-map-recolour-content-patcher-edition) | Map Recolor | `1.7.2` | [1] |
 | [Flower Valley](https://www.nexusmods.com/stardewvalley/mods/2064) | Town and Farm Buildings ReDesign | `4.3.1` |
-| [Flowery Bin](https://www.nexusmods.com/stardewvalley/mods/4760) | A bin with various options of Darkwood, Birch, Joja, And plus a few more. | `1.13.5` | Used by Flower Valley
+| [Flowery Bin](https://www.nexusmods.com/stardewvalley/mods/4760) | A bin with various options of Darkwood, Birch, Joja, And plus a few more. | `1.13.5` | [1] |
 | [Medieval Buildings](https://www.nexusmods.com/stardewvalley/mods/4542) | Medieval Modern buildings | `1.15` |
 | [Seasonal Outfits - SVE](https://www.nexusmods.com/stardewvalley/mods/5975) | Gives the NPCs of Stardew Valley Expanded seasonal clothing. | `1.4.2` |
 | [Seasonal Villager Outfits](https://www.nexusmods.com/stardewvalley/mods/2449) | An outfit for every season! | `2.3.2` |
 | [Stardew Valley Dialogue Expansion](https://www.nexusmods.com/stardewvalley/mods/2544) | Adds about 2500 new lines of dialogue across all 33 characters who have a heart level. | `2.0.0` | [Unoffical update](http://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/post-23438) |
-| [Yellog's wood craftables](https://www.nexusmods.com/stardewvalley/mods/3063)| Craftables | `1.3` | Used by Flower Valley 
-| [Yellog's wood fence](https://www.nexusmods.com/stardewvalley/mods/2958) | Wood fence | `1.0` | Used by Flower Valley 
+| [Yellog's wood craftables](https://www.nexusmods.com/stardewvalley/mods/3063)| Craftables | `1.3` | [1] |
+| [Yellog's wood fence](https://www.nexusmods.com/stardewvalley/mods/2958) | Wood fence | `1.0` | [1] |
+
+- [1] Used by Flower Valley
 
 ## List of Custom Music Additions 
 
 | Name      | Description | Version    | Notes     |
-| :------------- | :---------- | :---------- | ----------- |
-[Thunder and Frog Sounds](https://www.nexusmods.com/stardewvalley/mods/7450) | Replaces the thunder and frog sounds to be more pleasing to the ears and a bit more realistic. | `1.0.1` | |
+| :------------- | :---------- | :---------- | :----------- |
+| [Thunder and Frog Sounds](https://www.nexusmods.com/stardewvalley/mods/7450) | Replaces the thunder and frog sounds to be more pleasing to the ears and a bit more realistic. | `1.0.1` | |
