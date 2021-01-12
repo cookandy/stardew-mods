@@ -43,7 +43,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Event Reepeater](https://www.nexusmods.com/stardewvalley/mods/3642) | Add depth to your stories with the option to Repeat events over and over as you need them. | `5.3.0` | |
 | [Expanded Preconditions Utility](https://www.nexusmods.com/stardewvalley/mods/6529) | A utility mod built on top of the game's preconditions system to offer a conditions system any mod can use | `1.0.1`| |
 | [Fall 28 Snow Day](https://www.nexusmods.com/stardewvalley/mods/486) | Makes snow fall on the last day of Fall. | `1.7.1` | |
-| [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) | A spawning framework that allows players and modders to spawn customizable features from Stardew's farm types. | `1.13.0` | |
+| [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) | A spawning framework that allows players and modders to spawn customizable features from Stardew's farm types. | `1.13.1` | |
 | [Festival of the Mundane](https://www.nexusmods.com/stardewvalley/mods/4630) | The Shadows have their own Spirit's Eve festival in the sewers. Come visit them and see what it's about. | `1.1.2` | |
 | [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) | A config menu framework for mods. | `1.2.1` | |
 | [Gift Taste Helper](https://www.nexusmods.com/stardewvalley/mods/229) | Displays a helpful tooltip that shows an NPC's favourite gifts when hovering over their birthday on the calendar or the social page. | `2.9.1` | |
