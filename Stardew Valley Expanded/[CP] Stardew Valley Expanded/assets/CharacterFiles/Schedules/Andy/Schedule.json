@@ -29,7 +29,7 @@
   //Sleeps in, goes to kitchen, does various activities inside house and outside on farm, visits the cliff, returns home to eat, lounge around, and sleep
   "winter_Thu": "900 AndyHouse 9 6 1 Andy_Sleep/920 AndyHouse 20 6 0/1030 AndyHouse 5 6 0/1200 Forest 35 102 3 Andy_Drink3/1900 Forest 63 70 0/2300 AndyHouse 17 15 1 Andy_Drink3/2500 AndyHouse 9 6 1 Andy_Sleep",
   //Sleeps in, goes to kitchen, does various activities inside house and outside on farm, visits the cliff, returns home to eat, lounge around, and sleep
-  "winter_Fri": "910 AndyHouse 9 6 1 Andy_Sleep/1000 AndyHouse 20 6 0/1050 AndyHouse 5 6 0/1210 Forest 86 54 3/1600 Saloon 3 23 3 Andy_Drink2/2330 AndyHouse 9 6 1 Andy_Sleep",
+  "winter_Fri": "910 AndyHouse 9 6 1 Andy_Sleep/1000 AndyHouse 20 6 0/1050 AndyHouse 5 6 0/1210 Forest 86 54 3/1600 Saloon 3 23 3 Andy_Drink1/2330 AndyHouse 9 6 1 Andy_Sleep",
   //Wakes up early, goes to kitchen, forages around the forest, puts forage in shipping bin, goes to the saloon, returns home to sleep
   "winter_Sat": "730 AndyHouse 9 6 1 Andy_Sleep/750 AndyHouse 20 6 0/900 Forest 68 38 0/1100 Forest 71 34 0/1200 Forest 79 33 0/1300 Forest 91 25 0/1400 Saloon 3 23 3 Andy_Drink1/2130 AndyHouse 9 6 1 Andy_Sleep",
   //Wakes up early, goes to kitchen, goes to Yoba shrine, hangs out near the town river, returns home to eat and sleep

@@ -8,7 +8,7 @@
 //visits memorial
 "Thu": "610 ArchaeologyHouse 3 12 2/630 Town 101 98 2/740 ArchaeologyHouse 5 8 2/1800 Town 110 27 0/2100 GunthersRoom 18 9 0",
 //visits saloon
-"Fri": "610 ArchaeologyHouse 3 12 2/630 Town 101 98 2/740 ArchaeologyHouse 5 8 2/1800 Saloon 1 22 2/2200 GunthersRoom 18 9 0",
+"Fri": "610 ArchaeologyHouse 3 12 2/630 Town 101 98 2/740 ArchaeologyHouse 5 8 2/1800 Saloon 11 20 0/2200 GunthersRoom 18 9 0",
 //visits bench by river
 "Sat": "610 ArchaeologyHouse 3 12 2/630 Town 101 98 2/740 ArchaeologyHouse 5 8 2/1800 Town 88 103 2/1950 GunthersRoom 18 9 0",
 //visits saloon - counter
@@ -22,7 +22,7 @@
 "fall_Sat": "630 ArchaeologyHouse 5 8 2/1800 Town 47 88 0/2030 GunthersRoom 18 9 0",
 
 //visits saloon
-"winter_Thu": "630 ArchaeologyHouse 5 8 2/1800 Saloon 1 22 2/2200 GunthersRoom 18 9 0",
+"winter_Thu": "630 ArchaeologyHouse 5 8 2/1800 Saloon 11 20 0/2200 GunthersRoom 18 9 0",
 //"winter_17": work on night market schedule
 
 //visits saloon

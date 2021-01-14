@@ -3,7 +3,17 @@
 
   "ConfigSchema": {
 
-      "GrandpasFarm_SandboxLayout": {
+      "SandboxLayout": {
+      "AllowValues": "true, false",
+      "Default": "false"
+   },
+   
+      "RemoveFences": {
+      "AllowValues": "true, false",
+      "Default": "false"
+   },
+   
+      "GrassCropField": {
       "AllowValues": "true, false",
       "Default": "false"
    },
@@ -46,7 +56,7 @@
     //Load tilesheets
     {
       "Action": "Load",
-      "Target": "Maps/z_petbowl, Maps/z_FarmCliff_Shadow, Maps/GrandpasGrove_Shadows1, Maps/GrandpasGrove_Shadows2",
+      "Target": "Maps/z_petbowl, Maps/z_FarmCliff_Shadow, Maps/GrandpasGrove_Shadows1, Maps/GrandpasGrove_Shadows2, Maps/z_FarmCliff_Copper, Maps/z_FarmCliff_Iron, Maps/z_FarmCliff_Gold, Maps/z_FarmCliff_Gems, Maps/z_FarmCliff_Blank",
       "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",
     },
 
@@ -55,14 +65,34 @@
       "Action": "Load",
       "Target": "Maps/Farm,Maps",
       "FromFile": "assets/Maps/GrandpasFarm.tbin",
-	  "When": { "GrandpasFarm_SandboxLayout": "false" }
+	  "When": { "SandboxLayout": "false" }
     },
 	
+	//Load grandpa's farm
 	{
       "Action": "Load",
       "Target": "Maps/Farm,Maps",
       "FromFile": "assets/Maps/GrandpasFarm_SandboxLayout.tbin",
-	  "When": { "GrandpasFarm_SandboxLayout": "true" }
+	  "When": { "SandboxLayout": "true" }
+    },
+	
+	
+	//Configurations
+	
+    { //Remove Static Fences
+      "Action": "EditMap",
+      "Target": "Maps/Farm,Maps",
+      "FromFile": "assets/MapPatches/GrandpasFarm_RemoveFences.tbin",
+      "ToArea": { "X": 35, "Y": 35, "Width": 35, "Height": 50 },
+      "When": { "FarmType": "Standard", "RemoveFences": "true", "SandboxLayout": "false" }
+    },
+	
+    { //Grass crop field
+      "Action": "EditMap",
+      "Target": "Maps/Farm,Maps",
+      "FromFile": "assets/MapPatches/GrandpasFarm_GrassCropField.tbin",
+      "ToArea": { "X": 74, "Y": 51, "Width": 40, "Height": 30 },
+      "When": { "FarmType": "Standard", "GrassCropField": "true", "SandboxLayout": "false" }
     },
 	
     { //heavy debris config 1
@@ -70,15 +100,15 @@
       "Target": "Maps/Farm,Maps",
       "FromFile": "assets/MapPatches/GrandpasFarm_HeavyDebris.tbin",
       "ToArea": { "X": 0, "Y": 0, "Width": 120, "Height": 97 },
-      "When": { "FarmType": "Standard", "HeavyDebris": "true", "GrandpasFarm_SandboxLayout": "false" }
+      "When": { "FarmType": "Standard", "HeavyDebris": "true", "SandboxLayout": "false" }
     },
 	
-    { //heavy debris config 2
+    { //heavy debris config 2 - fence area
       "Action": "EditMap",
       "Target": "Maps/Farm,Maps",
-      "FromFile": "assets/MapPatches/GrandpasFarm_SandboxLayout_HeavyDebris.tbin",
-      "ToArea": { "X": 0, "Y": 0, "Width": 120, "Height": 97 },
-      "When": { "FarmType": "Standard", "HeavyDebris": "true", "GrandpasFarm_SandboxLayout": "true" }
+      "FromFile": "assets/MapPatches/GrandpasFarm_RemoveFences_HeavyDebris.tbin",
+      "ToArea": { "X": 35, "Y": 35, "Width": 35, "Height": 50 },
+      "When": { "FarmType": "Standard", "HeavyDebris": "true", "RemoveFences": "true", }
     },
 	
 	//Load greenhouse
@@ -140,25 +170,25 @@
       "Target": "Maps/Farm,Maps",
       "FromFile": "assets/MapPatches/GrandpasFarm_Forest_Joja.tbin",
       "ToArea": { "X": 66, "Y": 85, "Width": 5, "Height": 15 },
-      "When": { "HasSeenevent": "5553210", "FarmType": "Standard" }
+      "When": { "HasSeenEvent": "5553210", "FarmType": "Standard" }
     },
 	{
       "Action": "EditMap",
       "Target": "Maps/Farm,Maps",
       "MapProperties": { "Light": "95 49 4 87 93 4 67 95 4" },
-      "When": { "HasSeenevent": "5553210", "FarmType": "Standard" }
+      "When": { "HasSeenEvent": "5553210", "FarmType": "Standard" }
     },
     {
       "Action": "EditMap",
       "Target": "Maps/Farm,Maps",
       "MapProperties": { "DayTiles": "AlwaysFront 67 93 907" },
-      "When": { "HasSeenevent": "5553210", "FarmType": "Standard", }
+      "When": { "HasSeenEvent": "5553210", "FarmType": "Standard", }
     },
     {
       "Action": "EditMap",
       "Target": "Maps/Farm,Maps",
       "MapProperties": { "NightTiles": "AlwaysFront 67 93 908" },
-      "When": { "HasSeenevent": "5553210", "FarmType": "Standard" }
+      "When": { "HasSeenEvent": "5553210", "FarmType": "Standard" }
     },
 	
 	//Patches backwoods staircase
@@ -303,6 +333,32 @@
 	 "ToArea": { "X": 0, "Y": 0, "Width": 120, "Height": 97 }
     },
 	
+	//Makes gem appearances dynamic to players mining level
+    {
+     "Action": "EditImage",
+	 "Target": "Maps/z_FarmCliff_Copper",
+	 "FromFile": "Assets/Tilesheets/z_FarmCliff_Blank.png",
+	 "When": { "SkillLevel:Mining": "1, 2" }
+    },
+	{
+     "Action": "EditImage",
+	 "Target": "Maps/z_FarmCliff_Iron",
+	 "FromFile": "Assets/Tilesheets/z_FarmCliff_Blank.png",
+	 "When": { "SkillLevel:Mining": "1, 2, 3, 4, 5" }
+    },
+	{
+     "Action": "EditImage",
+	 "Target": "Maps/z_FarmCliff_Gold",
+	 "FromFile": "Assets/Tilesheets/z_FarmCliff_Blank.png",
+	 "When": { "SkillLevel:Mining": "1, 2, 3, 4, 5, 6, 7" }
+    },
+	{
+     "Action": "EditImage",
+	 "Target": "Maps/z_FarmCliff_Gems",
+	 "FromFile": "Assets/Tilesheets/z_FarmCliff_Blank.png",
+	 "When": { "SkillLevel:Mining": "1, 2, 3, 4, 5, 6, 7, 9" }
+    },
+	
 	//Patches world map
 	{
       "Action": "EditImage",
@@ -312,6 +368,33 @@
       "ToArea": { "X": 58, "Y": 51, "Width": 91, "Height": 59 },
       "When": { "FarmType": "Standard" }
     },
+	//Grass Crop Field Configuration
+	{
+      "Action": "EditImage",
+      "Target": "LooseSprites/map",
+      "FromFile": "Assets/Maps/WorldMaps/Configurations/{{Season}}_GrassCropField.png",
+      "PatchMode": "Overlay",
+      "ToArea": { "X": 110, "Y": 85, "Width": 28, "Height": 11 },
+      "When": { "FarmType": "Standard", "GrassCropField": "true", "SandboxLayout": "false" }
+    },
+	//Remove Fences Configuration
+	{
+      "Action": "EditImage",
+      "Target": "LooseSprites/map",
+      "FromFile": "Assets/Maps/WorldMaps/Configurations/{{Season}}_RemoveFences.png",
+      "PatchMode": "Overlay",
+      "ToArea": { "X": 89, "Y": 71, "Width": 17, "Height": 24 },
+      "When": { "FarmType": "Standard", "RemoveFences": "true", "SandboxLayout": "false" }
+    },
+	//Sandbox Layout Configuration
+	{
+      "Action": "EditImage",
+      "Target": "LooseSprites/map",
+      "FromFile": "Assets/Maps/WorldMaps/Configurations/{{Season}}_SandboxLayout.png",
+      "PatchMode": "Overlay",
+      "ToArea": { "X": 89, "Y": 67, "Width": 35, "Height": 30 },
+      "When": { "FarmType": "Standard", "SandboxLayout": "true" }
+    },
 	
     //Voids dirt under petbowl
     {
@@ -319,7 +402,8 @@
       "Target": "Maps/{{season}}_outdoorsTileSheet",
       "FromFile": "assets/Tilesheets/z_petbowl.png",
       "ToArea": { "X": 208, "Y": 1232,"Width": 32, "Height": 16 },
-      "When": { "FarmType": "Standard" }
+      "When": { "FarmType": "Standard" },
+	  "Update": "OnLocationChange"
     },
 	
     //Changes standard farm icon to grandpa

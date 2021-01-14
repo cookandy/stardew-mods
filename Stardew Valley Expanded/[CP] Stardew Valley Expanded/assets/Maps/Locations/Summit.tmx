@@ -2,7 +2,6 @@
 <map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="30" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="24" nextobjectid="47">
  <properties>
   <property name="Outdoors" value="T"/>
-  <property name="Raining" value="T"/>
   <property name="Warp" value="10 30 Railroad 32 0 11 30 Railroad 32 0 12 30 Railroad 32 0"/>
  </properties>
  <tileset firstgid="1" name="zuntitled tile sheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
@@ -2039,36 +2038,6 @@
  <tileset firstgid="10666" name="untitled tile sheet2" tilewidth="16" tileheight="16" tilecount="256" columns="16">
   <image source="spring_outdoorsTileSheet2.png" width="256" height="256"/>
  </tileset>
- <imagelayer id="14" name="Cloud2" offsetx="-407" offsety="-165">
-  <image source="BigCloud.png"/>
-  <properties>
-   <property name="AutoScrollX" value="-7"/>
-   <property name="DrawBefore" value="Back"/>
-   <property name="ParallaxX" value="150"/>
-   <property name="ParallaxY" value="150"/>
-   <property name="WrapAround" value="X"/>
-  </properties>
- </imagelayer>
- <imagelayer id="13" name="SmallClouds" offsetx="88" offsety="-110">
-  <image source="SmallClouds.png"/>
-  <properties>
-   <property name="AutoScrollX" value="-2"/>
-   <property name="DrawBefore" value="Back"/>
-   <property name="ParallaxX" value="130"/>
-   <property name="ParallaxY" value="150"/>
-   <property name="WrapAround" value="X"/>
-  </properties>
- </imagelayer>
- <imagelayer id="11" name="Cloud" offsetx="23.1359" offsety="-63.72">
-  <image source="BigCloud.png"/>
-  <properties>
-   <property name="AutoScrollX" value="-4"/>
-   <property name="DrawBefore" value="Back"/>
-   <property name="ParallaxX" value="120"/>
-   <property name="ParallaxY" value="150"/>
-   <property name="WrapAround" value="X"/>
-  </properties>
- </imagelayer>
  <layer id="1" name="Back" width="30" height="30">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -2160,7 +2129,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,10652,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10652,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,10652,0,0,0,0,0,0,0,0,0,0,0,0,10652,0,0,10652,10652,0,0,0,0,0,0,
+0,0,0,0,0,0,10652,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10652,0,0,0,10652,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,10652,0,0,0,0,0,0,0,0,0,10652,0,0,0,0,10652,0,0,0,0,0,0,
 0,0,0,0,0,10652,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

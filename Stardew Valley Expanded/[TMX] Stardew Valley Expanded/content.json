@@ -770,6 +770,7 @@
     {
       "name": "ShearwaterBridge",
       "file": "assets/Maps/ShearwaterBridge.tbin"
+	  //"conditions": "LC not Luau.hasMod('LemurKat.EastScarpe.CP')"
     },
     {
       "name": "ForestWest",
@@ -939,11 +940,6 @@
 	{
       "name": "GuntherExpedition2",
       "file": "assets/Maps/GuntherExpedition2.tbin"
-    },
-    {
-      "name": "Summit",
-      "file": "assets/Maps/Summit.tmx",
-      "addLocation": false
     },
 	{
       "name": "GrampletonFields_Small",

@@ -1,12 +1,12 @@
 {
 	"Name": "Grampleton Orange Chicken",
 	"Description": "Golden and crispy chicken. Served with fresh rice.",
-	"Category": "Fruit",
+	//"Category": "Fruit",
 	"Edibility": 65,
 	"EdibleIsDrink": false,
 	"EdibleBuffs": 
 	{
-        "Farming": 2,
+        "Farming": 3,
         "Fishing": 0,
         "Mining": 0,
         "Luck": 0,

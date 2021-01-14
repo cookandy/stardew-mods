@@ -22,7 +22,6 @@
 	"Price": 700,
 	"IsColored": false,
 	"CanPurchase": true,
-    "PurchaseFrom": "Gus",
     "PurchasePrice": 3500,
 	"GiftTastes":
 	{
