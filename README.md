@@ -48,7 +48,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Festival of the Mundane](https://www.nexusmods.com/stardewvalley/mods/4630) | The Shadows have their own Spirit's Eve festival in the sewers. Come visit them and see what it's about. | `1.1.2` | |
 | [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) | A config menu framework for mods. | `1.2.1` | |
 | [Gift Taste Helper](https://www.nexusmods.com/stardewvalley/mods/229) | Displays a helpful tooltip that shows an NPC's favourite gifts when hovering over their birthday on the calendar or the social page. | `2.9.1` | |
-| [Grandpa's Farm](https://www.nexusmods.com/stardewvalley/mods/3753) | Grandpa's Farm for [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753). | `1.12.5` | |
+| [Grandpa's Farm](https://www.nexusmods.com/stardewvalley/mods/3753) | Grandpa's Farm for [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753). | `1.12.6` | |
 | [Imaged](https://www.nexusmods.com/stardewvalley/mods/7218) | Provides non-interactive image recoloring. | `1.1` | |
 | [JSON Assets](https://www.nexusmods.com/stardewvalley/mods/1720) | Successor to Custom Crops. | `1.7.4` | |
 | [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541) | See live info about whatever's under your cursor. | `1.32` | Changed hotkey. See [wiki](https://github.com/cookandy/stardew-mods/wiki/LookupAnything) |
@@ -62,7 +62,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Running Late](https://www.nexusmods.com/stardewvalley/mods/3518) | Changes the digital clock on the HUD to update every in-game minute instead of every 10. | `1.2.0` | |
 | [Skull Cavern Elevator](https://www.nexusmods.com/stardewvalley/mods/963) | Adds an elevator to the Skull Cavern. | `1.3.1` | |
 | [SpaceCore](https://www.nexusmods.com/stardewvalley/mods/1348) | Required by a few mods. | `1.5.2` | |
-| [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) | This expansion features 26 new locations, 160 new character events, 12 new NPCs, a new village, 800 location messages, and more. | `1.12.5` | Some options changed. See [wiki](https://github.com/cookandy/stardew-mods/wiki/SVE)|
+| [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) | This expansion features 26 new locations, 160 new character events, 12 new NPCs, a new village, 800 location messages, and more. | `1.12.6` | Some options changed. See [wiki](https://github.com/cookandy/stardew-mods/wiki/SVE)|
 | [StardewHack](https://www.nexusmods.com/stardewvalley/mods/3213) | Library mod used by my other mods. Doesn't do much on its own. | `3.0` | |
 | [TMXL Map Toolkit](https://www.nexusmods.com/stardewvalley/mods/1820) | Toolkit for adding/editing/replacing maps and creating buildables. | `1.22.0` | |
 | [Tractor Mod](https://www.nexusmods.com/stardewvalley/mods/1401) | Buy a tractor to more efficiently work with crops, clear twigs and rocks, etc. | `4.12.2` | |
