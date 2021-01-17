@@ -1,0 +1,73 @@
+{
+  "WeatherForYesterday": "Snow",
+  "LNOSCounter": {},
+  "ExistingObjectLocations": {},
+  "SavedObjects": [
+    {
+      "MapName": "GrandpasGrove",
+      "Name": null,
+      "Tile": "40, 23",
+      "Type": "Forage",
+      "ID": 418,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "GrandpasGrove",
+      "Name": null,
+      "Tile": "30, 16",
+      "Type": "Forage",
+      "ID": 414,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "GrandpasGrove",
+      "Name": null,
+      "Tile": "34, 22",
+      "Type": "Forage",
+      "ID": 418,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "GrandpasGrove",
+      "Name": null,
+      "Tile": "33, 25",
+      "Type": "Forage",
+      "ID": 418,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "GrandpasGrove",
+      "Name": null,
+      "Tile": "34, 37",
+      "Type": "Forage",
+      "ID": 418,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "GrandpasGrove",
+      "Name": null,
+      "Tile": "30, 39",
+      "Type": "Forage",
+      "ID": 418,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    }
+  ]
+}

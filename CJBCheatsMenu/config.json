@@ -6,7 +6,7 @@
   "GrowRadius": 1,
   "DefaultTab": "PlayerAndTools",
   "MoveSpeed": 3,
-  "InfiniteHealth": true,
+  "InfiniteHealth": false,
   "InfiniteStamina": false,
   "InstantCooldowns": false,
   "MaxDailyLuck": false,
