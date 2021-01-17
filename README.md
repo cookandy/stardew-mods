@@ -60,6 +60,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Quest Framework](https://www.nexusmods.com/stardewvalley/mods/6414) | Framework for work with quests like create custom quests, define custom quest types and handle quests. | `1.2.1` | |
 | [Ridgeside Village](https://www.nexusmods.com/stardewvalley/mods/7286) | Adds 24 new NPCs, a new location, forage, custom music, and more. | `1.1.4` |
 | [Running Late](https://www.nexusmods.com/stardewvalley/mods/3518) | Changes the digital clock on the HUD to update every in-game minute instead of every 10. | `1.2.0` | |
+| [ShopTileFramework](https://www.nexusmods.com/stardewvalley/mods/5005) | A Framework mod that allows modders to add custom shops to the game, as well as edit vanilla shop. | `1.0.9` | |
 | [Skull Cavern Elevator](https://www.nexusmods.com/stardewvalley/mods/963) | Adds an elevator to the Skull Cavern. | `1.3.1` | |
 | [SpaceCore](https://www.nexusmods.com/stardewvalley/mods/1348) | Required by a few mods. | `1.5.3` | |
 | [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) | This expansion features 26 new locations, 160 new character events, 12 new NPCs, a new village, 800 location messages, and more. | `1.12.6` | Some options changed. See [wiki](https://github.com/cookandy/stardew-mods/wiki/SVE)|
