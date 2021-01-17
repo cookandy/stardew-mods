@@ -72,4 +72,17 @@
 	"danceRejection": "Uhmm... I'm sorry but I'm too afraid to dance...$s",
 	"divorced": "Why did you do that... Please don't talk to me...$s",
 	
+//Resort
+ "Resort_Entering": "Oh, wow! It’s so pretty! And so hot...",
+  "Resort_Leaving": "I’m pretty sure I got sunburned… I’ll need to get some aloe at home.",
+  "Resort_Leaving_2": "Everyone looks so happy, it’s kind of sad that we have to leave.",
+  "Resort_Shore": "Is the tide going in or out? I can’t tell...",
+  "Resort_Shore_2": "Wow...  look at how blue the water is, @! The way we classify a color is completely up to cultural interpretation, so there’s no objective ‘blue’, but that comes pretty close!",
+  "Resort_Umbrella": "I think this is my favorite spot in the entire resort",
+  "Resort_Umbrella_2": "It’d be impossible to read without this umbrella, I’m glad there’s some shade.",
+  "Resort_Umbrella_3": "Why do waves sound so soothing? It’d be so easy to fall asleep...",
+  "Resort_Wander": "I’m not really a beach person, but I’m glad I came out here! I’m also really glad I’m wearing sandals. This sand is really hot.",
+  "Resort_Bar": "I’m so thirsty! I can’t wait to get some lemonade.",
+  "Resort": "Hi, @! Are you enjoying yourself?",
+	
 }

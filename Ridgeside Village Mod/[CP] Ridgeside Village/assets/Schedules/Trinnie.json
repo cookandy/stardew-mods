@@ -8,6 +8,6 @@
 	"Tue": "610 Town 101 92 1 square_2_2_2/1100 ArchaeologyHouse 11 11 1 trinnie_read/1400 Town 86 100 2 square_1_2_3/1600 BertHouse 13 5 3/2100 BertHouse2ndFloor 18 5 0 trinnie_sleep",
 	"Wed": "GOTO Tue",
 	"Fri": "GOTO Tue",
-	"Mon": "900 RidgesideVillage 80 59 3/1200 RidgesideVillage 80 73 1/1600 RidgesideVillage 125 108 2/1800 BertHouse 13 5 3/2100 BertHouse2ndFloor 18 5 0 trinnie_sleep",
+	"Mon": "900 RidgesideVillage 79 59 3/1200 RidgesideVillage 80 73 1/1600 RidgesideVillage 125 108 2/1800 BertHouse 13 5 3/2100 BertHouse2ndFloor 18 5 0 trinnie_sleep",
 	
 }

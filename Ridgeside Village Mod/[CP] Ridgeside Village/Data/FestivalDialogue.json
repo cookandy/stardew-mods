@@ -1,0 +1,487 @@
+{
+"Changes": [
+	
+//------------------------
+// FESTIVAL DIALOGUE      
+//------------------------
+
+	//Egg Festival----------------------
+	
+		{
+			"LogName": "EggFestival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": {
+			
+			//Non-Dateables
+				"Aguar": "I keep warning Lenny and Lewis, but they never listen...$s#$e#What?#$e#What do you want?#$e#Stop eavesdropping!$a",
+				"Bert": "Mmm, it doesn’t get much better than this!$h#$e#Bright sun, cool breeze, and good eggs!$h",
+				"Ezekiel": "The egg festival has been a tradition since the old times#$b#Nothing beats tradition I always say#$b#What I don’t get is, of all the traditions to make... Why EGGS?!$a",
+				"Freddie": "Mmm, these deviled eggs get better every year.$h",
+				"Jio": "Bright colors are harder to hide well, and yet, the eggs are brightly colored...",
+				"Keahi": "It’s not cheating to ask people to let you win, is it?$u",
+				"Kiwi": "Egg?$u#$e#Egg.$h",
+				"Lenny": "You know, I get what Lewis said about acting my age, but...$s#$e#I could still win the Egg Hunt if I wanted to.$h",
+				"Lola": "I bet I could find those eggs before you do! Haha$h#$b#I’ve got a sharp eye you know. From all the years of training#$b#But of course you guys are the ones who’ll play the game.",
+				"Olga": "My my, that Bert and his jokes*face palms herself*",
+				"Pika": "Gus and I have been preparing for this since last night!#$b#It’s good to catch a break even for now",
+				"Richard": "The festival has brought in a lot of people from around town!$h#$b#I hope they all go to the Cabin Hotel for some refreshments after this!",
+				"Trinnie": "I don’t know how, but Keahi’s gonna cheat, I know he is...$a",
+				"Yuuma": "I see the festival has started#$b#I hope my brother doesn’t tire himself too much$s",
+			
+			//Dateables
+				"Alissa": "I feel giddy inside! I was really looking forward to this.#$b#I find joy in finding eggs in all kinds of places$h",
+				"Alissa_spouse": "Oh honey, would you grab me a basket for the egg hunt?$h",
+				"Corine": "I love this dress$h#$b#But I feel extremely shy with everybody around$h",
+				"Corine_spouse": "Do you like my dress @? I’m wearing it especially for you!$l",
+				"Flor": "Social contact helps us cope with stress and major life changes.#$b#I hope this festival makes you feel welcomed in the community",
+				"Flor_spouse": "Love, I’m craving for eggs.#$b#Would you get me some?$h#$e#But first give me a kiss*pouts her lips for a kiss*",
+				"Ian": "Good thing I had time to clean up and change after I helped set up the place.",
+				"Ian_spouse": "I see you’re admiring my handiwork there?#$b#I’ll have you know that you’re still the best spectacle there is in here.",
+				"Jeric": "The surrounding’s just so enticing eh?#$b#Much like you are, I’m sure",
+				"Jeric_spouse": "I’ve been looking all over for you darling!#$b#My whole life that is$h#$e#I’m so glad I found you$l",
+				"Kenneth": "Awww$s#$b#I wasn’t able to get some egg pie! Pika’s was all out!",
+				"Kenneth_spouse": "I’m willing to share an egg pie with you$l#$b#Hehe, you should consider that as a compliment because the egg pie is my absolute favorite!",
+				"Maddie": "Ugh!$a#$b#I should be at the research facility working on something more useful than this$s",
+				"Maddie_spouse": "Hi @!*kisses you*#$b#Would you like to share some devilled eggs with me?",
+				"Philip": "The egg hunt is a great way to exercise your body#$b#It delivers oxygen and nutrients to your tissues and helps your heart work more efficiently.",
+				"Philip_spouse": "All this movement during the egg hunt, yet my heart moves only for you$l",
+				"Shiro": "So many people out here today$h#$b#I just hope my brother loosens up and gives himself a break.$s",
+				"Shiro_spouse": "I’m really happy that you’re here$l#$b#Thank you @$h",
+				"Ysabelle": "So, what do you think of my dress?$h#$b#It looks chic doesn’t it?",
+				"Ysabelle_spouse": "I picked this dress for you! Do you like it?#$b#And I want an honest answer alright?$a",
+			},
+		},
+		
+	//Flowerdance----------------------
+	
+		{
+			"LogName": "FlowerDance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": {
+			
+			//Non-Dateables
+				"Aguar": "Yes, I came.#$b#Maddie indicated there would be food.$h",
+				"Bert": "I’m no ballerina, but I think I’ll do Olga proud.#$e#At least I won’t step on her toes$h",
+				"Ezekiel": "This flowerdance is just an excuse for young ones to be lazy and get away from work$a#$b#No one dare try to make a move on my little girl!$a#$e#Or else someone’s going to his own funeral!$a",
+				"Freddie": "I’m still a devil on the dancefloor, after all these years!$h",
+				"Jio": "Despite all the movement and noise, the forest doesn’t mind.$h",
+				"Keahi": "Look, look!#$e#Aren’t my dance moves cool!$h",
+				"Kiwi": "Kiwi watch.#$e#Kiwi like dancing.$h",
+				"Lenny": "Are you gonna ask someone to be your partner?#$e#Go for it!$h",
+				"Lola": "Oh my husband told you about our little adventure did he?#$b#Hihi, that was just an example of how adventurous we are*gives you a wink*$h",
+				"Olga": "I’m going to find that husband of mine and make him dance with me!$a",
+				"Pika": "My wahine used to enjoy these kinds of events.#$b#She was the reason why I attended these in the first place.",
+				"Richard": "Seeing Ysa smile like that just makes my day$h",
+				"Trinnie": "I’m really pretty, aren’t I, @?$4#$e#I’m going to be the flower queen some day!$h",
+				"Yuuma": "I see everybody’s enjoying themselves",
+			
+			//Dateables
+				"Alissa": "I really like this dress that Auntie Olga brought for me. It makes me feel light$h",
+				"Alissa_spouse": "*twirls*Doesn’t my dress look pretty?",
+				"Corine": "I really missed seeing all my friends!$h#$b#It’s a great relief to see them here all in one place!",
+				"Corine_spouse": "Oh darling you must meet my friends!$h",
+				"Flor": "I believe that it’s beyond my capacity to perform the skills needed for this activity.",
+				"Flor_spouse": "Hey @?...Would you like to dance?#$e#Uhm, I may not be good at these things.#$b#But at least I want to try it out with you$l",
+				"Ian": "Hello mate!^Hello Lassie#$b#Wonderful day for a dance isn’t it?",
+				"Ian_spouse": "My oh my, what do we have here?#h#$b#Would you care to join me for a dance?$l",
+				"Jeric": "So many beautiful things to see here$h",
+				"Jeric_spouse": "You look handsome baby^You look radiant my queen$h#$b#Would you care as to grace me with a dance?",
+				"Kenneth": "Seeing everybody happy is just a treat for me.$h#$b#I hope that this positive energy will continue in the valley$h",
+				"Kenneth_spouse": "*hugs you from behind*There you are!$h#$b#Care to dance?",
+				"Maddie": "Dancing is just a waste of energy.#$b#I’ve got better things to do$a",
+				"Maddie_spouse": "Hello @! I missed you!Have you seen my dress?$h",
+				"Philip": "When one dances, they use their core.#$b#It means their abdominal muscles are at work",
+				"Philip_spouse": "I know another way of dance that we could do!#$b#*whispers in your ear*We shall do it tonight in the bedroom$l",
+				"Shiro": "I’m glad that Yuuma’s mingling with other people.#$b#It must be exhausting to look after me at times$s",
+				"Shiro_spouse": "I'm pretty sure I have enough energy to carry you in my arms while we dance.$h",
+				"Ysabelle": "I’ll be the Belle of the ball later$h#$b#Just look at my moves and it’ll blow you away!",
+				"Ysabelle_spouse": "Hey hun, watch me later as I put on a show for you$h#$b#And maybe, I’ll put on a private show for you later on*wink*$l",
+			},
+		},
+		
+	//Luau----------------------
+	
+		{
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": {
+			
+			//Non-Dateables
+				"Aguar": "Seawater is useless for my research.$a#$b#The Gem Sea has been contaminated by sea vessels and sewage.$s",
+				"Bert": "Keahi’s already tried to toss coral and empty shells in the pot.$u#$e#Gotta keep my eye out, make sure he’s not a bad influence on Trinnie!$a",
+				"Ezekiel": "Look at them lazy bones!$a#$b#All the people got nothing better to do than to cook and eat.#$e#Take a look at them pigs tss.",
+				"Freddie": "I’ve known the governor for 30 years, and he hasn’t changed a bit.",
+				"Jio": "Kiwi would like some soup. Pardon me.$h",
+				"Keahi": "The shell was Trinnie’s idea, but I still got yelled at!$a#$e#Not fair.$s#$e#And I left my slime at home!$u",
+				"Kiwi": "Soup taste good?$u#$e#Kiwi ask Jio to bring soup.$h",
+				"Lenny": "How can Lewis be stressed when that soup smells so good?$h",
+				"Lola": "The governor actually forgot about me!$s#$b#That old man!#$b#I can’t believe after the travels we’ve been with together he forgot about me",
+				"Olga": "We gotta keep our fingers crossed and hope that the gov’ner appreciates our efforts$u",
+				"Pika": "My wahine used to to love coming to the Luau.#$b#She felt like it was connecting us to our roots.",
+				"Richard": "It's important to establish and maintain good relations with important people.#$b#Ofcourse, you have to be genuine about it too!$h",
+				"Trinnie": "I didn’t know the shell was empty...$s#$e#Dad always says seafood makes good stew.$h",
+				"Yuuma": "Are the ingredients of this soup actually healthy?#$b#I must check the contents of this before I give some to Shiro",
+			
+			//Dateables
+				"Alissa": "My farm’s crops have been so good this year that I actually think that the soup would be better this year!$h",
+				"Alissa_spouse": "I’ve been looking for you all over the place!$a#$b#I’m so nervous about the soup I might pee my pants love.$u",
+				"Corine": "This festival brings everyone together and gives us a chance to bond$h",
+				"Corine_spouse": "Hey love, did you know Papa got so excited?#$b#He told me he wanted to give us some of his special dish?#$b#He says it’s so much better than the soup! But you have to keep it a secret",
+				"Flor": "I guess the uncontrolled variable would be the ingredients and the controlled variable would be the amount that’s being placed.",
+				"Flor_spouse": "I’ve finished assessing the contents of the soup and I believe that you will really enjoy this$h",
+				"Ian": "Before I went here, I had to go to Philip to have my hand checked because the bowl slipped my hand$u ",
+				"Ian_spouse": "*kisses you*I’m so proud of you and for your produce!$h",
+				"Jeric": "I still feel so grateful for everything that the governor has done for me. I hope he’s going to be proud$h",
+				"Jeric_spouse": "Would you be okay if I introduce you to the governor?#$b#I’m sure he’d like to know the person who makes me laugh and smile everyday",
+				"Kenneth": "I see you brought some fresh produce!$h#$b#Surely the governor will be satisfied with us this year.",
+				"Kenneth_spouse": "Please don’t stay too close to the water?#$e#I worry that the electric wires might break and hit the water.#$b#I have to keep you safe okay?$l",
+				"Maddie": "It seems unsanitary to eat from just anything#$e#I mean it doesn’t have any proper ingredients and everyone just gets to add anything?$u#$b#Like uhh. EW NO$a",
+				"Maddie_spouse": "Uhh, hehe would you want me to make you a soup just for you?#$b#I still think this is ehmm.. too mixed up for my taste.#$b#But whatever makes you happy dear!",
+				"Philip": "Soup is actually a good way to get the needed water soluble vitamins and minerals that our body needs#$b#But then, we should still eat properly even if it isn’t Luau day.",
+				"Philip_spouse": "After the potluck, would you like to take a swim?#$b#We’ll go underwater and maybe... you would want to have fun at the beach?*winks*",
+				"Shiro": "Ahh fresh air. I needed this.#$b#I was actually worried I couldn’t come here today",
+				"Shiro_spouse": "My my!$h#$b#Don’t you look gorgeous! You look like a breath of fresh air$l",
+				"Ysabelle": "Maybe I should recommend to Mayor Lewis next time that I perform for this Luau#$b#After all, this festivity’s more complete with entertainment$h",
+				"Ysabelle_spouse": "You’ve worked up quite the appetite love#$b#Would you want me to feed you?#$b#With a kiss perhaps?",
+			},
+		},
+
+	//Jellies----------------------
+	
+		{
+			"LogName": "Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": {
+			
+			//Non-Dateables
+				"Aguar": "Ridgeside’s rivers feed directly into the ocean...#$b#Perhaps it explains the Lunaloos...$u#$e$%Mr. Aguar seems to be deeply absorbed in thought.]",
+				"Bert": "We’ve been married for twenty years and I still get nervous before givin’ her a gift...$4",
+				"Ezekiel": "I remember my dear Helen would always drag me up to watch the jellies migrate#$b#She just knew how to brighten me up.",
+				"Freddie": "I’ll never get tired of this sight.#$b#Jellyfish aglow, Lola in the moonlight...#$b#It’s enough to take an old man’s breath away.$h",
+				"Jio": "As the jellyfish move, so does the moonlight move with them, and power follows in their path.",
+				"Keahi": "Jellyfish are so cool!$u#$b#Do you think I can catch one!?$h",
+				"Kiwi": "Hello jelly friends!$h",
+				"Lenny": "It gets prettier every year.$h#$e#Maybe Lewis will finally relax for a second.$s",
+				"Lola": "Right now I wish that Freddie and I were jellyfishes so that we’d be free to travel all we want",
+				"Olga": "I’m actually on my way to see Bert.$h#$b#He told me we should meet at the shoreline.",
+				"Pika": "The Jellyfishes remind me of all the jell-os that Keahi made for his mom when she was sick$s#$b#It just shows how much Keahi has taken after me",
+				"Richard": "Thank the universe that the weather’s good right now.#$b#It gives me a time to breathe away from all the stress.",
+				"Trinnie": "I’m not sleepy!$s#$e#I’m gonna stay up and see the muhgreting jellyfishies!$h",
+				"Yuuma": "I’ve been looking forward to this festival for a while now$h#$b#This is one of the only festivities that I know Shiro would enjoy and he could actually immerse with us.",
+			
+			//Dateables
+				"Alissa": "I’m so ecstatic to see the glowing jellies in a while! I just find their glow so fascinating!",
+				"Alissa_spouse": "Do you think I could ask the Mayor if he’d allow me to be the one to light the fire?#$b#I reaaaaallly want to do it love!#$b#What??? Not that it!!$l#$b#But if you insist hihi$l",
+				"Corine": "Ahhh, a well-deserved break from all the farming and foraging that you do$h#$b#I hope you enjoy ",
+				"Corine_spouse": "I’m enjoying this festival better than I did before because I have you to share it with$l",
+				"Flor": "Did you know that the tentacles of the jellyfish aren’t involved in swimming?#$b#I read about those in uhmm. Bogarts,uhh history.",
+				"Flor_spouse": "Doesn’t the migrating scyphozoan just amaze you?#$b#It’s a magical feeling.#$e#You know @? I’ve been enjoying a lot more because you’re here.$l.",
+				"Ian": "At last! I could actually relax$h#$b#I’m looking forward to seeing the jellies float by later!",
+				"Ian_spouse": "You must be my lucky star$h#$b#You shine even brighter than the jellies and I’m lucky to have you.$l",
+				"Jeric": "I touched a jellyfish!!! I couldn’t believe it!#$b#It was glowing in my hand! It felt amazing!!",
+				"Jeric_spouse": "Baby I know a place just behind the shed.#$b#I’m going to wait for you there. Knock twice alright? *Winks*$l",
+				"Kenneth": "It’s like the festival is giving mother nature a break from electricity#$b#It warms my heart that we could unplug even just for a while$h",
+				"Kenneth_spouse": "I was alone in the dark, but now you’ve come along...#$b#You light up my life, like how the jellyfish lights up the shore.$l",
+				"Maddie": "I should either be getting sleep already or working on my research$s#$b#*Sigh*But Mr.Aguar insists on going and I worry for his health",
+				"Maddie_spouse": "The night just seems so romantic isn’t it?$h#$b#The lights glowing from the jellyfishes and the fire makes the experience so delightful.$h",
+				"Philip": "The jellies are composed of two structures which is called the external epidermis and the internal epidermis#$b#This is actually much like the skin and muscles of humans",
+				"Philip_spouse": "Notice how the bodies of those jellies move?#$b#*comes to your ear and whispers*I bet I could move like that for you in the bedroom tonight*winks*",
+				"Shiro": "It’s nice to see that Yuumi has the time to relax even for a while.#$b#He worries about me too much. I just wish I wasn’t such a burden to him",
+				"Shiro_spouse": "You see the shining across the sky? As well as the glow of the jellies here in the shore?#$b#That’s how much you light up my life$l",
+				"Ysabelle": "Staying up late like this isn’t good for my beauty sleep$s#$b#But I really want to see the jellyfish!!",
+				"Ysabelle_spouse": "Hun...*smiles at you mischieviously*Would you want me to wriggle and writhe like a jellyfish with you under the sheets?*wink*",
+			},
+		},
+
+	//SVFair----------------------
+	
+		{
+			"LogName": "SVFair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": {
+			
+			//Non-Dateables
+				"Aguar": "The fish Willy has displayed appear to have been healthy before they were caught.#$b#This reflects well on the water quality.",
+				"Bert": "We’re gonna participate next year, just you wait and see.#$e#Whenever Alissa’s ready!$h",
+				"Ezekiel": "These festivals are taking up a lot of time!#$b#What’s so great about the fair anyways?",
+				"Freddie": "Fine display, @.$h#$e#You should be proud of yourself.$h",
+				"Jio": "You see nothing.$a",
+				"Keahi": "I only have enough for 50 tokens...$s",
+				"Kiwi": "Play?#$b#Shee!$u#$e#Kiwi play!$h",
+				"Lenny": "Lewis always says the judges should remain totally neutral, but nice work, @.$h",
+				"Lola": "Hi dear! Your produce looks good huh. Well, good luck to you!",
+				"Olga": "I admire how Trinnie came up with an idea on how to save up for today’s festivities on her own$h#$b#Makes me feel that I’m actually doing something right.",
+				"Pika": "I hope people enjoy the food that I prepared for today!#$b#I really poured my heart out for this one$h",
+				"Richard": "I really enjoy festivities like this.#$b#These festivals always bring in lots of customers.",
+				"Trinnie": "I wanna play the slingshot game!#$e#I’m gonna be better than Keahi!$h",
+				"Yuuma": "These types of activities are a little bit strenuous for Shiro#$b#I worry for him$s",
+			
+			//Dateables
+				"Alissa": "I’ve never actually tried to play these games before...#$b#I never really had a chance to outgrow my shyness when I was a kid.",
+				"Alissa_spouse": "The displays look fantastic! Everybody’s really bringing it on this year!",	
+				"Corine": "Today’s the day you show off your produce!$h#$b#Did you choose the best of the best?",
+				"Corine_spouse": "They said that we must bring the best of the best for today’s festivities!#$b#I believe that you are the best that’s why you’re here with me right now$h",
+				"Flor": "The key to winning these games is to observe then conquer!",
+				"Flor_spouse": "We play several games throughout our lives.#$b#I believe I’ve already won the game of life when you found me$l",
+				"Ian": "*yawns*I feel sleepy. But at least the festival’s a success!$h",
+				"Ian_spouse": "I’m sorry I fell asleep on you last night dear!$s#$b#Preparing for the fair just got so intense that Ms. Lenny and I didn’t realize it was so late.",
+				"Jeric": "Did you see my display? It looks great doesn’t it?#$b#I really put a lot of effort in it. I hope I win",
+				"Jeric_spouse": "I like showing you off just as much as I do my produce.#$b#But you’re the best prize of them all.$l",
+				"Kenneth": "I’m glad that you’re enjoying the festival @!It was really all Mayor Lewis’ hard work. I just helped with some stuff.$h",
+				"Kenneth_spouse": "I hope you’d allow me to escort you around!$h#$b#I know some hidden spots where we could take a break *winks*",
+				"Maddie": "Remember to spend your money wisely!#$e#These festivities are giving you a poor excuse to spend your money.$a",
+				"Maddie_spouse": "OOOH!$h#$b#I wanna try those booths! Can I come with you??$h",
+				"Philip": "Have you seen Alex?#$b#I’ve been looking for him, we still have something to settle.$h",
+				"Philip_spouse": "Before Alex and I have our annual muscle game later, can I get a big kiss from you?$l",
+				"Shiro": "I’m actually kind of tired$s#$b#Don’t mind me here. Have fun okay?$h",
+				"Shiro_spouse": "I’m sorry if I can’t do a lot of things because of my condition.$s#$b#It must be hard for you to take care of me#$e#Thank you for sticking with me",
+				"Ysabelle": "I went to Gus’ stand earlier! His burgers are DIVINE!!",
+				"Ysabelle_spouse": "Hey love, let’s go around the square and look at the grange displays",
+			},
+		},
+		
+	//SpiritEve----------------------
+	
+		{
+			"LogName": "SpiritEve",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": {
+			
+			//Non-Dateables
+				"Aguar": "Not now.$4#$e#I can't be distracted.$4",
+				"Bert": "I swear, Evelyn’s pies get better every year!$h#$e#Mm mm, it’s enough to make a grown man cry!$s",
+				"Ezekiel": "No one can make me wear a costume!#$e#No one’s the boss of me!$a",
+				"Freddie": "Lola and I met on Spirit’s Eve, decades ago.$h#$e#She was wearing this sleek catsuit number.$u#$b#The moment I saw her, I knew I was going to marry that woman.$h",
+				"Jio": "Can you feel that in the air?$4#$e#There’s much to be wary of, this night.",
+				"Keahi": "Boo!$u#$e#Ha ha, did I scare you?$h",
+				"Kiwi": "Hee hee.$h#$b#You see friends?$u#$e#Kiwi friends here!$h",
+				"Lenny": "My back will be hurting for weeks, but I think we did a pretty nice job setting all this up!$h#$e#Mind you, I had nothing to do with the maze.$u",
+				"Lola": "When Freddie and I first met, he had this bad-boy bike rider costume really took my breath aaway#$b#But when he saw me I think his world actually stopped hihihi$h",
+				"Olga": "I decided to join in with the dressing up!#$b#I’m dressing up as a witch! Hikhikhik*laughs in a witchly manner*",
+				"Pika": "Aloha my friend! So what do you think of my costume??#$b#Pretty neat huh?Hahaha$h#$b#Imagine your local chef cutting you in half then serving you for breakfast!",
+				"Richard": "I tried my best decorating the hotel. But the only authentic decoration I have are my cobwebs$s",
+				"Trinnie": "Keahi didn’t notice my costume...$s#$b#Stupid Keahi!$s#$e#I’m not sharing my candy!$a",
+				"Yuuma": "I actually feel excited for the festivities today!#$b#But uhm...I still really have to take care of my big brother.",
+			
+			//Dateables
+				"Alissa": "Do you think everyone’s staring at me?$u#$b#I think they are! I look silly$s",
+				"Alissa_spouse": "Do you think I look silly love?#$e#Really? You like it? *Twirls for you*",
+				"Corine": "I’m so glad Ysa agreed to dress up!$h#$b#She looks so beautiful in her tutu!*sigh*I hope she reconnects with her passion once more$s#$b#I only wish for her to be happy",
+				"Corine_spouse": "Hey hubby!^Hey wifey!#$b#Do you like my look?$h",
+				"Flor": "Even if I think these are superstitious beliefs, I still find dressing up exciting$l ",
+				"Flor_spouse": "Hey... uhm. Ah. I’m dressed up as a damsel in distress, are you my knight in shining armor?$l",
+				"Ian": "Did you see the ‘monsters’ in their cages?#$b#Yikes! It gives me the creeps$u",
+				"Ian_spouse": "Do you see those cages over there?*leans over to whisper in your ear* I want to put you in that cage and maybe we can have some 'fun' *smirks*$l",
+				"Jeric": "So do you like my costume? I just altered my past costumes to make this one$h ",
+				"Jeric_spouse": "I heard there’s a maze around here. What do you say we play hide and seek?#$b#You count, I’ll hide and leave a trail of my clothes for you to find me?*winks*",
+				"Kenneth": "Lenny and Ian sure did a good job at sprucing up the place!",
+				"Kenneth_spouse": "My, you look more radiant than the most beautiful blossom here. I’m so lucky to have you$l",
+				"Maddie": "Eugh$u#$b#Playing make believes just a waste of my time#$e#I never really learned how to when I was young.$s#$b#I was too busy learning the Dewey Decimal System",
+				"Maddie_spouse": "Hey @! Uhm... What do you think of the costume I have on?$l",
+				"Philip": "Dressing up as the blonde Jin Kazama makes me feel so... transformed! HAHA I like it!$h",
+				"Philip_spouse": "I lost my way in the maze before.#$b#Aren’t you glad that you found me?$l#$b#But I could certainly get lost again if you want. *winks*.",
+				"Shiro": "They decorated the place really well$h#$b#It makes me think about the festivities I joined when I was you$h#$b#I was actually so energetic and would run up to people and scare them to death!$h",
+				"Shiro_spouse": "You’re gonna give me a heart attack with what you’re wearing love!#$b#You look so damn fine baby!#$e#I know what I’m saying may be out of character but you just look so good. I’m actually in love with you all over again$l",
+				"Ysabelle": "Wearing this tutu brings back so many fond memories$h#$b#I’m trying to go back in touch with my passion for dance$s#$b#I just feel a little scared right now.$s",
+				"Ysabelle_spouse": "Let’s role play together! I’m a cop#$b#And you’re a bad... BAD, fugitive. I’m here to punish you...",
+			},
+		},
+		
+	//IceFest----------------------
+	
+		{
+			"LogName": "IceFest",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": {
+			
+			//Non-Dateables
+				"Aguar": "Hmmm.#$e#%Mr. Aguar is staring intensely at the candy cane.",
+				"Bert": "Remember my advice?#$b#Stay on your toes, become one with the rod, y’hear me?$h",
+				"Ezekiel": "Get ready to place your bets on me ‘cuz I’ll win this contest. That’s for sure!$h",
+				"Freddie": "Hey there, @!$h#$e#Staying warm?",
+				"Jio": "Yesterday was quiet and peaceful.#$e#Today, the ice creaks under the strain.$s",
+				"Keahi": "This snow is hard to make into shapes.$s#$e#Dad says it’s not wet enough! How can snow be... not wet?$u",
+				"Kiwi": "Kiwi try to catch fish.$h#$e#Kiwi has big head and little arms.$a#$b#Not catch.$s",
+				"Lenny": "Lewis has always liked this festival more than I ever did, so I’ll just sit back and let him run it.",
+				"Lola": "Freddie tells me I should bundle up!#$b#He sometimes worries too much but he means well.#$b#He just loves me so much. I’m so lucky$h",
+				"Olga": "I’m bundled up in coats and sweaters!#$b#Achoo! ACHOO!#$b#Ugh, My husband isn't even taking the initiative to get me some Hot Chocolate. Achoo!$a",
+				"Pika": "I remember the Ice festival last year.#$b#I tried my hand at fishing and I must say, I’m happy with being a cook HAHAHA$h",
+				"Richard": "I always remember my Angelica whenever I see the kids make snow angels$s#$b#I have so many fond memories of her that could last me the rest of my lifetime.",
+				"Trinnie": "I keep trying to make snow wings for my snow penguin and they keep falling off...$s",
+				"Yuuma": "I wonder if I could ask Phillip about what we could do for Shiro#$b#Maybe we could make up a device that would help him move a lot better.",
+			
+			//Dateables
+				"Alissa": "It’s a great day for Ice fishing!#$b#I just hope that the sun won’t melt the ice.",
+				"Alissa_spouse": "I brought hot cocoa for us!#$b#Would you want me to pour you some?$h",
+				"Corine": "Hello! It’s a nice day to do some ice fishing isn’t it?$h#$b#Remember to put your safety first alright??",
+				"Corine_spouse": "Best of luck for the competition @!$h#$b#I’m rooting for you!#$e#You’ll get a big kiss from me after!$l",
+				"Flor": "Hello there, Are you ready for the Ice fishing contest today?#$b#You should try using wax worms or maggots as bait. I read that they catch good fish",
+				"Flor_spouse": "*kisses you*Good luck for the Ice fishing competition!$l",
+				"Ian": "Beautiful day today isn’t it?$h#$b#I helped with the preparations today. Ms. Lenny asked for me#$b#But right now, I’m on my way to make some snowmen!$h#$b#Yay for a break!",
+				"Ian_spouse": "Why don’t you sit on the snow, I’ll try to make you a snow sculpture$l",
+				"Jeric": "I’m confident that I’ll win the competition later!#$b#Hah! I’m still the best Ice fisher there is",
+				"Jeric_spouse": "Have you ever done it on the snow before?*winks*",
+				"Kenneth": "This festival releases the fish because they know that we’ve got no use for them for now.#$b#It’ll just go bad if we don’t do it.",
+				"Kenneth_spouse": "All those fish I caught, yet my favorite catch is you*wink*$l",
+				"Maddie": "Y’all know that one could die with hypothermia right??RIGHT?#$b#I just don’t understand the point of all this$a ",
+				"Maddie_spouse": "Husband!^Wife!#$b#Could you come here and give me a hug?$s#$b#I’m freezing right now.",
+				"Philip": "Do you know that nerve impulses are sent to muscles so that they could generate extra metabolic heat through shivering$h#$b#Haha oh I’m sorry, I’m just blabbering PT stuf",
+				"Philip_spouse": "During cold weather it’s better to snuggle with no clothes on to generate body heat*wink*$h",
+				"Shiro": "Attending these festival just reminds me of what lost#$b#I wish I just stayed home",
+				"Shiro_spouse": "Hey love, can I ask for a hug?#$b#I feel so cold#$e#You feel so much warmer. Thank you so much$l",
+				"Ysabelle": "The ice sculptures remind me of marble statues over at the ballet theatre at home when I was young$h",
+				"Ysabelle_spouse": "Baby, *goes over your ear and whispers* Sculpt me like one of your French girls$l",
+			},
+		},
+		
+	//WinterStar----------------------
+	
+		{
+			"LogName": "WinterStar",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+			
+			//Non-Dateables
+				"Aguar": "Merry yuletide season to all!#$b#May we have more prosperous research to come in the following year!$h",
+				"Bert": "I was right, @.$h#$e#Her smile’s worth the cost of that dollhouse and more.$h",
+				"Ezekiel": "The only good thing about this festival is the food!#$b#Oh and of course my daughter.#$b#But the rest of it is just BAH Humbug!",
+				"Freddie": "Happy Winter Star, @!$h#$e#Here’s hoping you get most of what you want and everything you need!$h",
+				"Jio": "Kiwi enjoys these days.$h",
+				"Keahi": "Presents!$u#$e#I love presents!$h",
+				"Kiwi": "Kiwi is present now!$4#$e#Shee!$h",
+				"Lenny": "How’s that song go?#$b#Chestnuts roasting on an open pyre...$4#$b#Wait, that’s not right.$h",
+				"Lola": "Happy Winterstar festival to you @!#$b#I hope the upcoming year brings you much joy and abundance$h",
+				"Olga": "Are you enjoying today’s festivities?$h#$b#I’m excited to hear about the first Winter star!",
+				"Pika": "I know my wahine’s that winter star who’s shining from above#$b#I just hope that he’s proud of me and our Keahi!$h",
+				"Richard": "This year has been good to everyone!#$b#My wish before the year ends is that my darling Ysa connects with her passion once again.#$e#I just want that and nothing else$h",
+				"Trinnie": "%Trinnie is transfixed by the ornate dollhouse she’s just unwrapped. She doesn’t even notice you.",
+				"Yuuma": "Before this year ends, I hope that the stars will bless Shiro#$b#I hope for his happiness and health.",
+			
+			//Dateables
+				"Alissa": "Tis the season to be jolly! Fa la la la la la la la la!$h",
+				"Alissa_spouse": "Hey Mister!^Hey Missy!#$b#You owe me a kiss! I was waiting for you under the mistletoe earlier!",
+				"Corine": "Have you already thought of things that you’re grateful for?#$b#I hope you have an even better new year$h",
+				"Corine_spouse": "You’re a great blessing and I can’t imagine life without you$l#$b#Thank you for making the year and the next years a great one$h",
+				"Flor": "Have you heard the story of the Winter star?#$b#Willy tells the story beautifully.",
+				"Flor_spouse": "Happy holidays to you love, may the next year bring us bountiful produce and a happy family.$h#$e#Thank you for being here with me",
+				"Ian": "The Feast of the Winterstar has  been one of the best festivities we have! I really enjoyed decorating the tree with the Mayor and Ms. Lenny$h",
+				"Ian_spouse": "I think it’d be fun to grow a pine tree on our farm.#$b#We could decorate it every winter and have fun with our kids when we decide to have them right?$h",
+				"Jeric": "This year was a bountiful harvest!$h#$b#Hopefully the next year would bring in more crops and produce!#$e#If ever you need help with your farm, don’t hesitate to tell me alright?",
+				"Jeric_spouse": "I’ve been dreaming of a family of my own$l#$b#You gave me that dream. I know it’s just us two for now, but we’re still considered a family right?",
+				"Kenneth": "Oh dear, I hope that the many lights on the tree won’t cause  a power surge.$u",
+				"Kenneth_spouse": "Baby, you light up my world like nobody else.$l#$b#Being the way that you are is enough and everyone else in the room can see it.$l#$bI’m the luckiest guy here$h ",
+				"Maddie": "I’m looking forward for this festival to end#$b#UGH$a",
+				"Maddie_spouse": "Thank you @, for making this drab world less annoying$l#$b#I hope the new year would bring us bliss$h",
+				"Philip": "I hope you have a joyful new year!#$b#Always remember to take care of yourself and exercise okay?#$e#You wouldn’t want to get sick and immobile now would we?",
+				"Philip_spouse": "Your hand fits in mine like it’s made just for me. It went in my mind that it must’ve been meant to be. It all just makes sense because you’re here with me now$l",
+				"Shiro": "You know what @? It’s important to make the most out of every moment#$e#Live you’re your life to the fullest while you’re still complete.#$b#You never know what might go missing one day.$s",
+				"Shiro_spouse": "I’ve lived. You know?#$b#I can’t say that I’ve lived a full life.But I’ve lived.$s#$e#I almost died, I’m still sick... I lost all hope before because it was so hard.#$b#But you are here despite all that. And I’m glad you stuck with me through it all.#$b#I’m so lucky to have you. I’m so grateful for you$h",
+				"Ysabelle": "I hope someone gives me new pointes$s#$b#My old one’s a little too unsteady for me",
+				"Ysabelle_spouse": "I’m so happy that you’re here with me love!$h#$b#You’re the best gift I have ever received!$l#$e#I hope the next years would be more bountiful and maybe, we could have a little one of our own$h",
+			},
+		},
+	//EmberOfResolutions----------------------
+	
+		{
+			"LogName": "EmberOfResolutions",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"Entries": {
+			
+			//Non-Dateables
+				"Aguar": "Why'd we have to spend the cold midnight here near the mountain top?$a#$b#Who thought of this?!$a#$e#Hmph... Oh well. It's my fault for even attending.",
+				"Bert": "Midnight's getting closer ain't that right @?$h#$b#Hope ya had a nice year.#$e#I bought the finest log I bought from Robin to surprise Olga!$h",
+				"Ezekiel": "All I ask for the new year is more time here in this life.$s#$b#I ehr--$s#$b#Hey! What are you looking at!?$a",
+				"Freddie": "Can you believe it @? A few hours from now and we'll be in a whole new year, a new season.#$b#It just amazes me for some reason.",
+				"Jio": "Hmmm... The last day of the year huh...#$b#Even if it's just a day like any other, it is quite special in some way for everyone.",
+				"Keahi": "Hey hey hey! I found this awesome stick as we were hiking up here!#$b#Look! It even nails in it!$h#$e#Huh? This is not a stick? It's a plank?#$b#Okay then. I'm the only who bought a plank! I'm awesome!$h#$e#What is Trinnie looking at me for.#$b#I think she wants to take away my plank!$a",
+				"Kiwi": "Kiwi likes to see the fire grow.$h#$b#Kiwi likes fire hee hee.$h",
+				"Lenny": "It's lovely to see everyone gathered here.#$b#How are you enjoying the night @?#$e#I find it really touching for everyone to hike up this ridge every year.#$b#Hmmm... Next time we should have a huge party before the bonfire huh?$h",
+				"Lola": "Oh my. It's so cold up here. I hope you're doing better than me @.$h#$b#Freddie bought two more extra sweaters.#$b#If you feel cold you can borrow one okay?$h",
+				"Olga": "A happy new year to you @. Us farmers have to do our best for the new season now.$h#$e#Bert spent extra money again just to buy hardwood log.$s#$b#Oh that Bert.$l",
+				"Pika": "Did you taste the buffet already @? It's better to eat now than later under this cold you know.#$b#We're lucky it didn't snow heavily.$h#$e#You should try the pie. It's a joint effort of Gus and mine!$h",
+				"Richard": "The night is simply marvelous.#$b#I also love to see the sunrise after we all go back home.#$e#Angelika and I used to spend the first hours of the new year on top of the balcony.#$b#And there we wait for the sunrise.#$b#Oh how lovely that feeling was...$h",
+				"Trinnie": "Papa gave me this log. He said we'll need to take care of it until the bonfire is lit.#$b#So I gave this log a face! See! It's a girl.#$b#Her name is Woodita, and she's my new year guide!.$h#$e#What's that Woodita? Keahi will confess to me this new year?!$u#$b#OOOHHH!!!$l",
+				"Yuuma": "I hope Shiro is okay after that hike.$s#$b#He really insisted for us to attend this year.#$b#Hmph. He should be more careful!$a#$e#%Yuuma is whispering to himself#$b#I'm excited to see the big-big bonfire.$h",
+		
+			//Dateables
+				"Alissa": "There's just something in this night that makes me feel at peace.$h#$b#Especially when the fire is lit. It's like my heart would melt and I'd burst into song.$h#$e#Ehr! I mean, I'm just happy everyone's here.$h",
+				"Alissa_spouse": "Happy new year to you darling.$l#$b#It was just like yesterday when you heard me singing in the orchard and I ran away from you.$h#$b#You don't know how giddy I was that day. It's like I couldn't even sleep.$l",
+				"Corine": "I bet I could climb up some slopes here. Hmmm.#$b#Oh hey! Sorry I was just thinking of another weird idea.$h#$e#Maybe I should ask Ysa? Hmmm... Maybe even ask Abigail?$h",
+				"Corine_spouse": "A very happy new year to you love!$h#$b#Hey... hug me close as the fire burns bright tonight okay?$l#$b#Teehee < $l",
+				"Flor": "Cold... Hmmm... It is cold up here.#$b#Such an interesting tradition. I wonder how this whole event came to be?#$e#Do you have any idea @? Maybe we could think of theories.#$b#I believe that the founder of this festival was a closet pyromaniac and only wanted an excuse to create a giant bonfire.#$b#I'm interested to know that person's psyche.$h",
+				"Flor_spouse": "Hey love... It's cold... Hold me closer please...$l#$b#That's nice...$h#$e#Oh uhmm... Happy new year to you!$h#$b#I'm really happy that I'm spending the rest of my life waking up to you and our family...$l#$e#Also... This is a huge opportunity to study marriage and what changes every year! Ohhh I can't wait love!$h",
+				"Ian": "Phew. It was a bit of a struggle to bring these tables up here.$h#$b#Oh well. As long as everyone gets to enjoy it. It's alright.#$e#I really want to make a snowman. But I think we'll start soon.#$b#I'll make a snowman later then.$h",
+				"Ian_spouse": "There you are!$h#$b#Happy happy happy new year!$h *giggles*$h#$b#I'm just so happy that I got you and you got me.$l#$b#Thanks for everything hon.$h#$e#Hey. I bought a huge log to burn! I hope that impresses you!$h",
+				"Jeric": "Another year, another hustle. Wooh boy!$h#$b#I hope things go well! Same to you as well @!#$e#Hmmm... I think I'll invest on strawberries this year.$h",
+				"Jeric_spouse": "Happy new year baby. Come here and give your man a kiss now?$l#$b#Haha! But on a serious note. I'm grateful.$h#$b#Thanks for being there for me. I'll be there for you no matter what.$4#$e#And hey! Doesn't this place feel like a good date spot soon?$h",
+				"Kenneth": "I love these moments where Pika and Gus collaborate.$h#$b#I gotta go grab me a doggy bag for that pie!$h",
+				"Kenneth_spouse": "Hey hon. Happy new year!$h#$b#This might sound uhmm.. corny? But okay, here I go.#$b#You're the light of my life, Uhmm... One that shines brighter than the bonfire that will ignite tonight.$l#$b#Haha! How's that?$h",
+				"Maddie": "Why do they have to burn all this wood? Isn't this a bit impractical?$4#$e#*sighs* Oh well. I can see that it brings smiles.#$b#I'll keep my mouth shut tonight.",
+				"Maddie_spouse": "Hey you...$l#$b#%Maddie kissed you#$b#Happy new year you dork.$l#$e#Now... Come hug me close...$8#$b#It's cold!$8#$e#Better. You are useful huh?$l#$b#Teehee <$h",
+				"Philip": "*shiver* $u#$b#I hope it doesn't snow. Hypothermia is not a joke.$s#$b#I better go check on the elderly.#$e#Oh hey @.#$b#I hope you're not getting cold as much as *shiver* me.$u",
+				"Philip_spouse": "OOoooOOooh! It's really cold! *shiver*$u#$b#Oh man, I think I'm looking like a dork right now huh?$h#$b#Well this dork wishes you a happy new year.$l#$b#Now come give me a hug please?$h#$e#*shivering*$u",
+				"Shiro": "Ah. I do love the cold.$h#$b#It's quite nostalgic to when I was surfing before.$h#$e#I hope Yuuma's handling the cold better.$h#$b#I dragged him up here so I'll feel guilty if he doesn't enjoy.$h",
+				"Shiro_spouse": "Happy new year hon.$l#$b#That day when I woke up after I collapsed and you were there by my bedside some time ago I think was the very moment I fell madly inlove with you.$l#$b#I'm happy that you're here.$h",
+				"Ysabelle": "Corine has been looking at the slopes for a while now.$6#$b#I hope she won't get any weird ideas again and ask me to climb that like last year!$6#$e#Oh well. If she does, I'll do it anyway.$h#$b#It's a little bit quite fun.$h#$e#Also grandpa would allow us to have some of the imported cocoa he has stored if we get covered in snow.$h",
+				"Ysabelle_spouse": "Hey baby, Happy new year!$l#$b#I'm really happy that you found me by the ridge pond that day...$h#$b#It was at that moment that I think I started to fall for you.$l#$b#Teehee <, You're quite the charmer aren't you now?h#$e#Hey. Let's share a coat by the bonfire later okay baby?#$b#Maybe even ask grandpa if we can spend the sunrise in the hotel balcony!$h",
+			},
+		},
+		
+	//Ridgeside Gathering----------------------
+	
+		{
+			"LogName": "Ridgeside Gathering",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"Entries": {
+			
+			//Non-Dateables
+				"Aguar": "It feels crowded here in the village whenever the townspeople visit.",
+				"Bert": "There's a number of menu choices whenever Gus and Pika work together!#$b#It's exciting!$h",
+				"Ezekiel": "I wonder what are those kids doing over there?#$b#No better make a move on my daughter!$a",
+				"Freddie": "The place feels so festive!$h#$b#I hope you're enjoying @.",
+				"Jio": "The locals seem to be very fond of festivities.#$b#It's the second one this season.",
+				"Keahi": "I'm selling some wild fruits I picked up yesterday!$h#$b#Boys rule! WOOH!$h",
+				"Kiwi": "Hup hup#$b#Kiwi can front flip whole day.",
+				"Lenny": "I'm glad everyone's having fun!$h#$b#I do hope that the kids won't start another food fight though. It was a hefty price to pay.$s#$b#Though to be honest, I'd go wild in a food fight too!$h",
+				"Lola": "Evelyn and I have a lot to catch up on!$h#$b#We rarely see each other.$h",
+				"Olga": "I hope the kids are having fun.#$b#I also wish Trinnie won't start another food fight.$u",
+				"Pika": "Oh hey @! Nice seeing you!$h#$b#If you want order go and visit the counter.",
+				"Richard": "This local gathering is a huge boost to tourism.#$b#I'm glad that Lenny thought of this.$h",
+				"Trinnie": "I'm pretty sure these plants of mine will sell!$h#$b#Girls rule!$h",
+				"Yuuma": "Everyone has bought something to sell.#$b#I wonder who started this whole competition between the boys and girls though.",
+
+		//Dateables
+				"Alissa": "Come and buy our goods now @!$h#$b#I promise that you won't regret it!#$e#Sorry Jeric, But we'll win.$a",
+				"Alissa_spouse": "Darling! Help us win now!$h#$b#Lookie here! We don't have this plant at home don't we?$h",
+				"Corine": "Look at the their stall! It looks run down!$h#$b#Sorry boys, but we'll win this one.$h#$e#Hey Abby! Want to go take a peek on what they're selling?$h",
+				"Corine_spouse": "I'll love you no matter who you help win this year love.#$b#But of course, I just won't talk to you for the next few days if they win.$h",
+				"Flor": "I'm interested in what the stalls on the other side sell.#$b#But the ladies tell me I stay here. Hmmm... I'm quite confused.$s",
+				"Flor_spouse": "Uhmm... I bought some of my old books to sell.#$b#I wonder if someone will buy them.#$e#Hey Elliott, here's the sculpture design I've been telling you about!$h",
+				"Ian": "Phew, This wood sculpture is almost done.$h#$b#But it's not as good as Leah's though.#$b#Oh well. I still hope someone buys it.$h",
+				"Ian_spouse": "Are you having fun hon?#$b#I'm sorry but I have to finish this sculpture first. I'll join you in a while.",
+				"Jeric": "Come right up and see the best stall there is!$h#$b#Blood, sweat and tears were involved in making this stall!$h#$e#Pst! Hey Shane! Why did you forget the decorations!$a",
+				"Jeric_spouse": "Hey baby, do me a favor and spy on their wares would ya?$h#$b#Haha! I'm just kidding. I'm not threatened at all!$h",
+				"Kenneth": "I'm interested to see Maru's little robot over there.#$b#I'll go take a quick look later.#$e#Oh! I should show Sam the new amplifier I've been working on!$h",
+				"Kenneth_spouse": "Have you visited Pika and Gus's stall hon? They're selling lots of food!$h#$b#I'll go catch up as soon as I sell some stuff here.$h",
+				"Maddie": "This little bear clock is soooo cute!$9#$b#I want to buy it!$h#$e#Hey Leah! Did you make this?$h",
+				"Maddie_spouse": "Hun, There's so much good stuff!$h#$b#I'll be giving you a list of my wants later okay?$6#$b#I'm just kidding haha. I've already bought the things I want.$h",
+				"Philip": "The stalls are selling interesting stuff!$h#$e#Uh oh! I forgot to remind Shane about the decorations for the stall!$u",
+				"Philip_spouse": "I wonder if I can buy some barbels to bring back home.#$b#Is that alright hun?$h",
+				"Shiro": "I'm curious to what the girls are selling.#$b#But I think the guys will judge me if I went over and bought some of their stuff.$h#$e#I wonder if what's Sebastian is tinkering over there though.",
+				"Shiro_spouse": "I hope you're enjoying the gathering @.#$b#I'm a bit excited for the concert later though, I promise I won't dance too hard now.$h",
+				"Ysabelle": "Smile for the camera!$h#$b#Another one!$h#$e#Hey Haley, I love this new camera of yours!$h#$b#Show me the pictures after they're done okay?$h",
+				"Ysabelle_spouse": "Are you having fun baby?#$b#Come here! Take a picture with us!$h#$e#Here's another one! Let me kiss you in the cheek for this pose!$h",
+			},
+		},
+]
+}

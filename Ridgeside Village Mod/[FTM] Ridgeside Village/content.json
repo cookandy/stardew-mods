@@ -1,8 +1,8 @@
 {
   "ForageSpawnEnabled": true,
-  "LargeObjectSpawnEnabled": false,
-  "OreSpawnEnabled": false,
-  "MonsterSpawnEnabled": false,
+  "LargeObjectSpawnEnabled": true,
+  "OreSpawnEnabled": true,
+  "MonsterSpawnEnabled": true,
   "Forage_Spawn_Settings": {
     "Areas": [
       {
@@ -95,9 +95,126 @@
           283
         ],
         "UniqueAreaID": "RSV Ridge Forage",
-        "MapName": "RSVTheRidge",
+        "MapName": "Ridge",
         "MinimumSpawnsPerDay": 20,
         "MaximumSpawnsPerDay": 30,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          74,
+          373,
+          103,
+          168,
+          499
+        ],
+        "SummerItemIndex": [
+          74,
+          373,
+          103,
+          168,
+          499
+        ],
+        "FallItemIndex": [
+          74,
+          373,
+          103,
+          168,
+          499
+        ],
+        "WinterItemIndex": [
+          74,
+          373,
+          103,
+          168,
+          499
+        ],
+        "UniqueAreaID": "RSV RidgeForest Treasures",
+        "MapName": "RidgeForest",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          "Ridge Cherry",
+          "Mountain Arugula",
+          16,
+          20
+        ],
+        "SummerItemIndex": [
+          "Mountain Chico",
+          "Ridge Wild Apple",
+          396,
+          398
+        ],
+        "FallItemIndex": [
+          "Autumn Drop Berry",
+          "Highland Chard",
+          406,
+          408
+        ],
+        "WinterItemIndex": [
+          "Frost Clump Berry",
+          "Ridgeside Clementine",
+          414,
+          418,
+          283
+        ],
+        "UniqueAreaID": "RSV RidgeForest Forage",
+        "MapName": "RidgeForest",
+        "MinimumSpawnsPerDay": 30,
+        "MaximumSpawnsPerDay": 50,
         "IncludeTerrainTypes": [
           "Grass"
         ],
@@ -152,18 +269,20 @@
     "Areas": [
       {
         "ObjectTypes": [
-          "Stump"
+          "Log"
         ],
         "FindExistingObjectLocations": true,
         "PercentExtraSpawnsPerSkillLevel": 0,
         "RelatedSkill": "Foraging",
-        "UniqueAreaID": "Farm large object area 1",
-        "MapName": "Farm",
-        "MinimumSpawnsPerDay": 999,
-        "MaximumSpawnsPerDay": 999,
+        "UniqueAreaID": "Ridge Log",
+        "MapName": "Ridge",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
-        "IncludeCoordinates": [],
+        "IncludeCoordinates": [
+          "24,14/28,16"
+        ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
@@ -195,12 +314,12 @@
         "MiningLevelRequired": null,
         "StartingSpawnChance": null,
         "LevelTenSpawnChance": null,
-        "UniqueAreaID": "Farm ore area 1",
-        "MapName": "Farm",
-        "MinimumSpawnsPerDay": 1,
-        "MaximumSpawnsPerDay": 5,
+        "UniqueAreaID": "RSV RidgeForest Ores",
+        "MapName": "RidgeForest",
+        "MinimumSpawnsPerDay": 15,
+        "MaximumSpawnsPerDay": 35,
         "IncludeTerrainTypes": [
-          "Quarry"
+          "All"
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
@@ -294,144 +413,104 @@
           {
             "MonsterName": "shadow brute",
             "Settings": {
+              "SpawnWeight": 2,
+              "HP": 1000,
+              "Damage": 20,
+              "DodgeChance": 10,
               "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 8
+              "Sprite": "Characters/Monsters/RSVBeast1",
+              "Loot": [
+                "Spiritual Essence"
+              ]
+            }
+          },
+          {
+            "MonsterName": "shadow brute",
+            "Settings": {
+              "SpawnWeight": 1,
+              "HP": 1550,
+              "Damage": 35,
+              "DodgeChance": 10,
+              "RelatedSkill": "Combat",
+              "Sprite": "Characters/Monsters/RSVBeast2",
+              "Loot": [
+                "Spiritual Essence"
+              ]
+            }
+          },
+          {
+            "MonsterName": "shadow brute",
+            "Settings": {
+              "SpawnWeight": 1,
+              "HP": 2000,
+              "Damage": 65,
+              "DodgeChance": 10,
+              "RelatedSkill": "Combat",
+              "Sprite": "Characters/Monsters/RSVBeast3",
+              "Loot": [
+                "Spiritual Essence"
+              ]
             }
           },
           {
             "MonsterName": "wilderness golem",
             "Settings": {
-              "SpawnWeight": 4
+              "SpawnWeight": 4,
+              "RelatedSkill": "Combat",
+              "Loot": [
+                "Spiritual Essence"
+              ]
             }
           },
           {
-            "MonsterName": "purple slime",
+            "MonsterName": "ghost",
             "Settings": {
+              "SpawnWeight": 2,
+              "HP": 100,
+              "Damage": 30,
+              "DodgeChance": 30,
               "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 10,
-              "SpawnWeight": 2
+              "Sprite": "Characters/Monsters/RSVCorruptSpirit",
+              "Loot": [
+                "Spiritual Essence"
+              ]
             }
           },
           {
-            "MonsterName": "red slime",
+            "MonsterName": "ghost",
             "Settings": {
+              "SpawnWeight": 2,
               "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 8,
-              "MaximumSkillLevel": 9,
-              "SpawnWeight": 2
-            }
-          },
-          {
-            "MonsterName": "blue slime",
-            "Settings": {
-              "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 4,
-              "MaximumSkillLevel": 7,
-              "SpawnWeight": 2
+              "Loot": [
+                "Spiritual Essence"
+              ]
             }
           },
           {
             "MonsterName": "green slime",
             "Settings": {
-              "RelatedSkill": "Combat",
-              "MaximumSkillLevel": 3,
-              "SpawnWeight": 2
+              "SpawnWeight": 5,
+              "RelatedSkill": "Combat"
             }
           }
         ],
-        "UniqueAreaID": "Farm monster area 1",
-        "MapName": "Farm",
-        "MinimumSpawnsPerDay": 5,
-        "MaximumSpawnsPerDay": 8,
+        "UniqueAreaID": "RSV RidgeForest Monsters",
+        "MapName": "RidgeForest",
+        "MinimumSpawnsPerDay": 100,
+        "MaximumSpawnsPerDay": 300,
         "IncludeTerrainTypes": [
-          "Dirt",
-          "Diggable",
-          "Grass"
+          "All"
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "StartTime": 1900,
-          "EndTime": 2550,
+          "StartTime": 600,
+          "EndTime": 2600,
           "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": 1,
-          "OnlySpawnIfAPlayerIsPresent": true,
-          "SpawnSound": ""
-        },
-        "ExtraConditions": {
-          "Years": [],
-          "Seasons": [],
-          "Days": [],
-          "WeatherYesterday": [],
-          "WeatherToday": [],
-          "WeatherTomorrow": [],
-          "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": null
-        },
-        "DaysUntilSpawnsExpire": null
-      },
-      {
-        "MonsterTypes": [
-          {
-            "MonsterName": "iridium bat",
-            "Settings": {
-              "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 10,
-              "SpawnWeight": 4
-            }
-          },
-          {
-            "MonsterName": "serpent",
-            "Settings": {
-              "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 10,
-              "SpawnWeight": 3
-            }
-          },
-          {
-            "MonsterName": "lava bat",
-            "Settings": {
-              "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 8,
-              "SpawnWeight": 4
-            }
-          },
-          {
-            "MonsterName": "frost bat",
-            "Settings": {
-              "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 5,
-              "SpawnWeight": 2
-            }
-          },
-          {
-            "MonsterName": "bat",
-            "Settings": {
-              "SpawnWeight": 2
-            }
-          }
-        ],
-        "UniqueAreaID": "Farm monster area 2",
-        "MapName": "Farm",
-        "MinimumSpawnsPerDay": 2,
-        "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": [
-          "Dirt",
-          "Diggable",
-          "Grass"
-        ],
-        "ExcludeTerrainTypes": [],
-        "IncludeCoordinates": [],
-        "ExcludeCoordinates": [],
-        "StrictTileChecking": "Maximum",
-        "SpawnTiming": {
-          "StartTime": 1900,
-          "EndTime": 2550,
-          "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": 1,
-          "OnlySpawnIfAPlayerIsPresent": true,
+          "MaximumSimultaneousSpawns": 100,
+          "OnlySpawnIfAPlayerIsPresent": false,
           "SpawnSound": ""
         },
         "ExtraConditions": {
@@ -467,8 +546,6 @@
     "FarmTypes": [],
     "FarmerNames": [],
     "SaveFileNames": [],
-    "OtherMods": {
-      "Rafseazz.LunnaCP": true
-    }
+    "OtherMods": {}
   }
 }

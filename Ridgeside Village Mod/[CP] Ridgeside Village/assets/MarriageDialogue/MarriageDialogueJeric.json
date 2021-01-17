@@ -1,101 +1,130 @@
 {    
-    "spouseRoom_Jeric": "I wonder if I can buy more issues and display them here.. The upcoming fasion shows can go here too..$h#$b#Oh hey babe, I was just planning on my interior here.$h#$e#Now.. Where do I put these greenthumb magazines?$h",
-    "patio_Jeric": "These relaxing patio days are something I always look forward for!$h#$b#It gives such good vibes.$h#$e#Hey babe, join me and relax now!#$b#Come now, we can lay here and do some cloud watching too.",
-	
-    "Rainy_Day_0": "Oh hey, Goodmorning there babe.$h#$b#The rain woke me up early. So I thought I could try and cook up some breakfast for you. [195] .#$e#I hope you like it babe! Those eggs are from my farm you know?",
-    "Rainy_Day_1": "Hey babe, it’s a rainy day today. Wanna just stay inside?$l#$b#We can have some quality time together today.$h#$e#Or some other stuff?$l#$e#By stuff I meant indoor farming!$h#$b#What were you thinking huh?$6#$b#I mean, I’d be willing to hear what you have in mind.$l",
-    "Rainy_Day_2": "Ah, rainy days are such a blessing for us farmer ain’t it right babe?$h#$b#I mean I love watering my plants and crops and all. But it sure is nice to get some free time.",
-    "Rainy_Day_3": "If you’re planning to go out today, bring an umbrella or coat okay babe?$h#$b#You can even use mine if you want too, You know, so if ever you miss me?$h#$e#Wah, I’m actually just saying that because I’ll be the one who’ll miss you.$h",
-    "Rainy_Day_4": "*Yawn*$s#$b#I’m sorry babe, The rain is making me real drowsy.$s#$b#Hey, how about a goodmorning kiss to wake me up a little huh?$h",
-    "Rainy_Day_Jeric": "Hey babe, Watch out for the puddles when you go out okay?$h#$b#You might trip and all, You’re a little clumsy you know?#$e#Hey hey! I was just kidding!$h#$b#The real clumsy one’s me, Coz I keep on falling for you.$l#$e#Too cheesy?#h",
-	
-    "Rainy_Night_0": "Ey you’re back home! How’s your day babe?#$b#The rain gave me a lot of free time. But it was quite productive still.#$e#Hey, wanna grab a bite now?$h",
-    "Rainy_Night_1": "Whoop whoop! This rainy day was a good one babe!$h#$b#I sealed a good deal at the online farmer’s market!$h#$b#Got some good income coming soon.$h#$e#Why don’t you reward your good husband some love tonight huh babe?$l",
-    "Rainy_Night_2": "I’m glad you’re back home babe. Take a rest now okay?#$b#I’m sure you worked hard even under the rain. I’m real proud of you.$h",
-    "Rainy_Night_3": "One of my chickens escaped the coop while I was cleaning earlier!$u#$b#I had to chase her down in the rain!$h#$e#It was quite fun though. Maybe we should chase each other in the rain too huh babe?",
-    "Rainy_Night_4": "Hey babe. You all good? I’m glad you’re home.$h#$b#Farm life’s tiring right babe? Phew/$h#$e#But the farmhouse life right here right now ain’t so bad. Especially with you.$l",
-    "Rainy_Night_5": "*Yawn* Phew I’m beat. Even in rainy days, I still have to open shop.$h#$b#Did good today though. How about you babe? How was your day?#$e#I hope it was fine.$h",
-    "Rainy_Night_Jeric": "Ah, the raindrop tapping on our roof is a bit noisy huh babe?#$e#Well.. If you want, wanna get noisy in bed too$l",
-	
-    "Indoor_Day_0": "It’s a good day today isn’t babe?$h#$b#Hey, if you ever feel tired. I’ll be here for you okay?",
-    "Indoor_Day_1": "I’ve taken care of some indoor chores early. I hope that helps lighten up your workload babe.#$b#I’ll be heading out to my farm and shop in a minute as well. See you later back home.$h",
-    "Indoor_Day_2": "*Yawn* Goodmorning babe..$h#$b#Phew.. I don’t know why I’m so tired.#$b#Ahhh.. I’m going to do some stretching first.",
-    "Indoor_Day_3": "Hey babe, looking fine this early in the morning already?#$b#Boy am I lucky.$l#$e#You better take care of yourself out there okay? I’ll do the same so won’t worry too.",
-    "Indoor_Day_4": "Hey babe! Have you seen the latest issue of the model runway magazine? The new collection looks dope!$h#$e#I read the latest one, It just arrived a little earlier this morning.#$b#I didn’t wanna wake you up because you looked so comfy.",
-    "Indoor_Day_Jeric": "Ahh, another day, another hustle.#$b#Ain’t that right babe?$h#$e#Hey, before we head off to work, wanna go do some ‘work’ early first huh babe?$l#$b#Hehe, come here you! *kisses you.*$l",
-	
-    "Indoor_Night_0": "Hey babe, you’re home early! You missed me too much didn’t you??$6#$b#Haha I thought so too. Don’t worry babe I missed you even more!$7#$b#Why don’t you come here and sit on my lap and give your dashing husband a kiss on the lips *pouts to kiss you$l",
-    "Indoor_Night_1": "I’ve been waiting for you to come home!$h#$b#I bought food from Pika’s babe.#$e#I was thinking maybe we could eat dinner and cuddle under the sheets in our birthday suits after?$l",
-    "Indoor_Night_2": "How was your day babe?#$b#I see you’re very tired$s#$b#Never fear! The magic hands of your wonderful husband is here to save your night!$7#$b#Why don’t you plop on over here at the bed and let me work my hands on your body?$7",
-    "Indoor_Night_3": "Phew! I had a tiring day!$s#$b#I hope you had a good one babe. Mine wasn’t really that good.$s#$e#But I’m glad I’m here back home with you now. I feel so much better.$h",
-    "Indoor_Night_4": "The king is finally back!^The queen is finally back!#$b#Well goodevening your majesty? I hope you’re doing fine now?$h#$b#Wahaha I’m just kidding love. I tried going all royal on you. It sounded pretty weird huh?$h#$e#But hey now, I missed you. So come gimme a hug and kiss now?$l ",
-    "Indoor_Night_Jeric": "I’m glad you’re back home babe? Are you hungry?#$b#I’m sorry I already ate, Pika was cooking such a tasty dish I had to go buy!$h#$b#Of course I bought some for you. Here babe, enjoy! [224] $h",
-	
-    "Outdoor_0": "I’m planning to go to the beach and maybeee try out some of those workouts that Philip recommended$6#$b#I wanna bulk up so that you’d keep on drooling over me$7#$b#Sounds good right?$7#$b#Wanna join me? Or maybe you can’t keep up haha $6",
-    "Outdoor_1": "I’ve got a great idea on how to make fertilizer!$h#$B#I think Alissa was the one who told me about this trick haha#$b#Maybe I misjudged her or maybe I’m just too competitive but oh well$h#$b#Would you like me to show you how?$7",
-    "Outdoor_2": "I’m going around town to maybe scout the competition babe$6#$b#Want to come with me?#$b#Maybe we can also make a plan to pull a prank on the others$6#$b#Hahahaha one that won’t harm their crops of course $h",
-    "Outdoor_3": "Hey babe, are you good at fishing?#$b#Can you teach me how to be better at it?$l#$b#I mean, I know how. But I just really wanna be great at it. The Governor enjoys fishing, and I think I’d like to bond with him through it.$l ",
-    "Outdoor_4": "Let’s go over to the ridge babe?#$b#I have a great idea for a picnic there$s",
-	
-    "funLeave_Jeric": "I’m off to my farm and shop now babe. I’ll be seeing you later alright?$h#$e#Hey if you ever feel lonely or just miss me, come by okay? I’d sure love to see you whenever.#$e#Ofcourse, I got such a catch for a spouse.$h",
-    "funReturn_Jeric": "Phew! Today was such a tiring day!$h#$b#I might relax for a while before dinner. I’m a little beat.#$e#Hey, babe? How about some ‘energy’ kiss right here a little near my lips eh?$h#$b#By ‘a little near’ ofcourse I meant ON my lips hehe.$h",
-	
-	"OneKid_0": "Oh hey babe look! %kid1 was just taking their first steps! Ain’t this cute!?$h#$e#Oh wow, I can’t believe I’m a dad!$h",
-	"OneKid_1": "It’s okay babe, I can look after %kid1 today. I know you have a busy day ahead.#$e#Now where’s the little whittle farmer!?$h",
-	"OneKid_2": "Hey babe check this out.#$b#%Jeric threw a paper ball on %kid1#$b#WOAH SEE! %kid1 almost caught it!$h#$e#I think we have a little star player for a kid babe!$h",
-	"OneKid_3": "Woah there, I still can’t believe that I’m a dad for reals!$h#$e#Hey babe, I think %kid1 got my looks. See how good looking that little kid is?$h#$b#I’m just kidding babe, Of course both of our looks were inherited, I mean, I could recognize those eyes anywhere.#$e#Those are the eyes I fell so hard for, along other stuff about you babe.$l",
-	
-    "TwoKids_0": "Woah hey look at our kids babe!$h#$b#%kid1 and %kid2 look good! How could they not! I mean look at you! You’re a catch!$h#$e#Boy am I a lucky guy!$h",
-    "TwoKids_1": "Up to this day I just can’t believe that I’m a dad. I mean like. Woah.#$e#I’m sorry babe, I’m just so happy that we have such a wonderful family. I mean, what more could I ask for?$l#$e$I love you so much babe, you know that right?$l",
-    "TwoKids_2": "Now where did %kid2 go?$a#$b#I swear, that kid really knows how to hide. I was trying to feed %kid2 some of our vegetable crops!#$e#Woah boy, here we go. Hey %kid1!! Help me find your little sibling now!$h",
-    "TwoKids_3": "Hey babe. %kid1 and %kid2 are both asleep now.$h#$b#Wanna go hop into bed?$l#$e#Hehe, It’s our chance! A small window!$h",
-	
-    "Good_1": "Oh babe you’d never believe what happened on my day today!$l#$b#Mayor Lewis and Miss Lenny talked to me about maybe doing a showcase of our best crops!$h#$b#They said our farm has one of the best produce this year!$h#$b#We’re so good babe! We the best!$6",
-    "Good_2": "Damn boy!^Damn girl!$6#$b#You look so fine and ravishing I might just take you right here right now!$6#$b#I don’t care if anyone may see us, I just want to take you in and treat you like you deserve$7",
-    "Good_3": "Would you want me to teach you how to ride a horse babe?$h#$b#I mean, you’re already good at riding me…$6#$b#But I can show you a thing or two about riding horses$h#$b#I can actually also teach you how to form a bond with them like how I did with Turbo$s",
-    "Good_4": "It seems amazing how the world works. Right babe?$l#$b#I mean, I actually didn’t think I’d get married before.#$b#I thought I was going to be that hot bachelor who’ll die out in his early 40’s$h#$b#But you actually gave meaning and purpose to my life$l#$b#You make me want to grow old and think about the future. And I love you for that! MUAH*kisses you*$l",
-    "Good_5": "Some handsome dude went by the shop the other day.^Some pretty lady went by the shop the other day.#$b#Hey woah now! Don’t get so suspicious al of the sudden!$h#$b#Don’t worry, I’m all yours babe. You don’t have to worry about anything!$h#$e#You’re too amazing to let go.$h#$b#Trust me, I’m a hundred percent loyal! Even add up an extra ten percent!$h",
-    "Good_6": "I’ve asked Kenneth about more sprinkler designs. Those things are such huge help right babe?#$b#I have heard about an Iridium Sprinkler too. I wonder how to get one though.#$e#Nah, I think it’ll be too expensive.#$e#But it could be worth it though.$6",
-    "Good_7": "Maybe I should bring Turbo here in your farm too huh babe?#$b#Nah, I don’t think he’ll like it. He loves his current stable at the moment.#$e#I kind of miss him sometimes though, Especially when I get lazy and I don’t wanna hike back to the ridge.",
-    "Good_8": "Hmm.. Sometimes I get a little intimidated by your farm babe. It’s really such an amazing place!$h#$e#But just a little though, My farm still has its own unique pizzaz! Whaha!$h#$e#Wanna make another competition!?$h", 
-    "Good_9": "I’ve been starting to grow some new crops babe! It’s been so exciting!$h#$b#I’ve recently been searching stuff about Giant Crops too. They’re possible to get you know!?$h#$e#Oh boy, I’m so excited!$h",
-    "Neutral_0": "I planted some new crops by my farm today babe. I hope they turn out good.#$b#It’s my first time farming them.",
-    "Neutral_1": "*Yawn*#$b#Boy am I sleepy..$s",
-    "Neutral_2": "%Jeric is busy reading some magazines.#$b#Oh sorry babe! I was occupied!$h",
-    "Neutral_3": "Sometimes when I’ve finished my chores, I just like to sleep on some hay.",
-    "Neutral_4": "I tried to make a new omelette recipe. Still ain’t good though.$h",
-    "Neutral_5": "Hey you’ve been so busy lately. Please don’t forget me now?",
-    "Neutral_6": "I got some letters from the governor the other day. He was asking about my life. It was a good letter.",
-    "Neutral_7": "Hey now, come talk to me from time to time when you can okay?#$b#You’ve been so busy lately..$s",
-    "Neutral_8": "I’m sorry I have no time to talk babe. I’m off to work. See you later.",
-    "Neutral_9": "I’m a bit hungry. Maybe I’ll go grab a bite later.$s",
-    "Bad_0": "Uhg.. You’ve gone a bit boring @.$s",
-    "Bad_1": "I didn’t move from the city for this.. This is not a good life @..",
-    "Bad_2": "I wish I can spend a few more hours back at my farm..$s#$b#Or maybe even stay there for a while..$s",
-    "Bad_3": "Uhg, You wouldn’t mind me hitting it off with other fellas huh?#$b#I mean, you don’t even talk to me anymore.$s",
-    "Bad_4": "What are we @? Is this even all worth it?$s",
-    "Bad_5": "Maybe it was just infatuation that made us marry each other huh?$s#$b#This sucks…$s",
-    "Bad_6": "I’m gonna say it. You’ve been rubbish towards me you know @?!$a#$b#I hate this..$a",
-    "Bad_7": "I don’t really wanna talk with you at the moment @..$s",
-    "Bad_8": "I wish I got to know you more before committing.. This is not the married life I expected..$s",
-    "Bad_9": "Woah! Take a look at this magazine model!$h#$b#Oh, you’re here.. Hey, why do you care?$a",
-	
-//Day before Festivals	
-	"spring_12": "This year, Mayor Lewis bought some chicken eggs from Alissa’s farm and mine.#$b#Hmmm I kind of feel bad. Is the quality of my products going bad babe?$s",
-	"spring_23": "I’m going to sweep you off your feet babe$7#$b#Just wait and see.. Your jaw’s definitely going to drop$6",
-	"summer_10": "Would you like to help me pick out the best crop to bring tomorrow @?#$b#I’m a bit nervous about picking this year’s crop. I want it to be the best for the Governor. After all I owe him so much$l",
-	"summer_27": "Hmmm I know a great spot beneath the trees of the beach.#$b#Want to slip out during the festival and make out under the stars?$7",
-	"fall_15": "We’re going to have the best display out of all the others tomorrow!$h#$b#Let’s team up and make a concept so that our presentation would be so enticing that they’ll definitely pick ours as number one$6",
-	"fall_26": "Hmm.. I’m thinking of going as a knight in shining armor tomorrow.#$b#YOUR handsome knight in shining armor babe$7#$b#Maybe I’ll get lucky and save my beautiful spouse from a fiery dragon$6",
-	"winter_7": "I’m ready for tomorrow’s event!$h#$b#I’ve been practicing since last year haha, I was actually so bad before that I almost fell in the hole $l#$b#Good thing I have great reflexes$6",
-	"winter_14": "Last competition for the year babe!$6#$b#Let’s hustle and give our all for this one$h",
-	"winter_24": "This year was one of the best$h#$b#I had the best spouse ever and our crops have been blooming and golden this year!$6#$b#Let’s hope for an even better one for the next babe!$h#$b#MWAH $l",
-	
-//Seasonal
-	"spring_1": "Hi ho hi ho it’s off to tend crops I go!$h#$b#See you later babe! Have a great exploring ahead! BUT first give me a kiss for luck!$6",
-	"summer_1": "Time to change the crops for this season!#$b#Do you think that we should invest in more fertilizers or sprinklers this time around?#$e#Hmmm, I also think sprinklers would be best for the summer!$h#$b#Thanks babe! You’re the best! You deserve a kiss come here you!$6#$b#Haha any excuse to give you a kiss babe! You know you can’t get enough of my lips too$7",
-	"fall_1": "I have a secret technique on how to grow sweet gem berry babe, want me to teach you?#$b#Come on! I’m giving you the opportunity of a lifetime here$6#$b#You’re going to learn from the best farmer around who happens to be your husband! How lucky can you get$7",
-	"winter_1": "Ayay, here we go again with the winter season$s#$b#This is the slowest season for our kind babe$s#$b#But nevertheless, I’m actually starting to enjoy it because it simply means more quality time with you$l#$e#And the cold actually makes you want to make skin-to-skin contact with me soooo…. You know what that means right?$7",
+
+///Spring
+	"spring_1": "Let’s get to planting, huh babe?$6",
+	"spring_12": "Lewis bought eggs from both me and Alissa this year for the egg hunt.$s#$b#I gotta step up my game if he thinks her and I are on the same level.$6",
+	"spring_23": "I’m gonna sweep you off your feet tomorrow.$7",
+
+///Summer
+	"summer_1": "I’m thinking of going in on starfruit this year.#$b#Or red cabbage. What do you think babe?",
+	"summer_10": "I need your help picking something out for the Luau tomorrow, @.#$b#Gotta pick the finest, every time.$7",
+	"summer_27": "I know a great spot near the trees on the beach.$6#$b#Bring a towel, we can just chill tomorrow night.$7",
+
+///Fall
+	"fall_1": "I’ve got a craving for sweet gem berries this year.$l#$b#Couldn’t tell you why.$7#$e#@, think we could fit them into the plans this year?$6",
+	"fall_15": "We’re going to have the best display out of all of them, tomorrow!$6#$b#We’ve got the best produce in the valley.$7",
+	"fall_26": "Should probably pick something other than what I wore last year…$u#$b#but you fell for me, so I know I looked good in it.$6#$b#Tried and true, huh?$h",
+
+///Winter
+	"winter_1": "It’s winter, once again.#$e#Looks like we’ll be stuck indoors for the next few weeks.$6$#b#Alone. Just the two of us.$6#$b#We’re gonna have such a good time this winter, aren’t we?$l",
+	"winter_7": "I’m ready for tomorrow’s event!$h#$e#I’ve been practicing since last year, I was so bad last year that I nearly fell into the water!$u#$b#Good thing I have great reflexes.$6",
+	"winter_14": "Let’s go visit the merchants together!$h#$b#I’ll buy you anything you want from the market.$l",
+	"winter_15": "Oh! Right in time for our date, babe.$h#$b#Should we take a submarine trip together?$l",
+	"winter_16": "Have you watched the mermaid show?#$e#It’s breathtaking.$h#$b#But not as breathtaking as you!$l",
+	"winter_17": "I bought some furniture tonight.#$b#Don’t worry babe, we both know I have excellent taste and our house could use a little redecoration.$7",
+	"winter_24": "This year was one of the best I’ve ever had!$h#$e#I have the best spouse ever and our crops have been ripe and blooming this year!$h#$b#Let’s hope next year is even better.$h",
+
+///Room
+"spouseRoom_Jeric": "Hmmm… if this goes here, I’ve got good light for Pinstagram shots, but I gotta fit the bookshelf in somewhere…#$e#Oh, hey babe, I was just planning out this workroom.$h#$b#Gotta find the right balance, you know?$6",
+
+///Patio
+"patio_Jeric": "Sometimes you gotta just chill.$6#$e#This is the perfect place.#$b#Come sit with me for a sec.$l",
+
+///Rainy Day 
+"Rainy_Day_0": "Oh hey, did you sleep well?#$b#The rain woke me up early so I whipped up some breakfast for you. [195]$l",
+"Rainy_Day_1": "Hey babe, it’s a rainy day today.#$b#Wanna just stay inside?#$e#We could use some quality time.$l",
+"Rainy_Day_2": "Rainy days mean less work all around.$h#$b#Might as well take the day off, huh?$6",
+"Rainy_Day_3": "Oh, I grabbed your old raincoat for some alterations.#$b#You can use mine, it’s in the front closet.",
+"Rainy_Day_4": "It’s too hard to get up. Let’s go back to bed.$l",
+"Rainy_Day_Jeric": "Hey babe, be careful out there, okay?#$b#Mud can get real slick.$u",
+
+///Rainy Night
+"Rainy_Night_0": "The rain gave me a lot of free time, but I still managed to accomplish a bit.#$b#Hey, wanna grab a bite somewhere?",
+"Rainy_Night_1": "Whoop whoop! Today was a good day, babe!$h#$e#Pika bought all the eggs and butter I had in the store, and didn’t try to get a bulk discount.$h#$b#More money in the bank!$h",
+"Rainy_Night_2": "I’m glad you’re back home, babe.$h#$b#I just wanna kick back and relax with you tonight.$l",
+"Rainy_Night_3": "One of my chickens escaped while I was cleaning the coop and I had to chase it in the rain.$u#$b#Made me look crazy, running after a wet hen, but I caught her in the end.$h",
+"Rainy_Night_4": "Hey, babe. Take it easy tonight, you deserve to relax.$7",
+"Rainy_Night_5": "Phew, I’m beat! Even on rainy days there’s a lot to do.$s",
+"Rainy_Night_Jeric": "I like the sound of rain on our roof.#$b#It helps me fall asleep.",
+
+///Indoor Day
+"Indoor_Day_0": "Looks like it’ll be a good day, huh?#$b#If there’s anything I can do to help, just let me know! I’m here for you.$h",
+"Indoor_Day_1": "I’ll be heading out to my farm and shop in a minute, here.#$b#Gonna be a busy day.#$e#See you tonight! Love you!$l",
+"Indoor_Day_2": "Good morning, babe... I can’t wake up.$s#$b#Today is gonna be rough.$u",
+"Indoor_Day_3": "Hey babe.$h#$b#Daang, you’re looking fine. I’m a lucky man.$6",
+"Indoor_Day_4": "Hey, babe! Have you seen any pictures of Telfar Clemens’ show?#$b#The new collection looks dope!$h",
+"Indoor_Day_Jeric": "One of these days I’m gonna sit down and actually work on my designs for more than a few minutes…#$b#but not today.$s",
+
+//Indoor Night
+"Indoor_Night_0": "Hey babe, you’re home early!$h#$b#Missed me that much, huh?$6",
+"Indoor_Night_1": "I picked up dinner from Pika’s.#$b#Let’s make it a date night, yeah?$7",
+"Indoor_Night_2": "How was your day, babe?#$b#You seem tired.$s#$b#Come here, let me help you relax...$6",
+"Indoor_Night_3": "Phew! I had a long day today!$u#$b#Lots of work to do tomorrow, too.$s",
+"Indoor_Night_4": "The king is finally back!^The queen is finally back!$h#$b#Anything you need me to do, your highness?$6",
+"Indoor_Night_Jeric": "I’m glad you’re back home, babe. Are you hungry?#$b#I got you, because I am the best husband ever.#$b#Here! [224]$h",
+
+///Outdoors
+"Outdoor_0": "I’m gonna hit up the beach soon.#$b#Philip said something about running in sand being really good for your glutes.$7",
+"Outdoor_1": "I’ve got a great idea on how to make fertilizer!#$e#I think Alissa was the one who told me about this trick.#$b#She really does know her stuff when it comes to farming.$h#$b#It’ll stink though.$u",
+"Outdoor_2": "I’m heading into town to check how the other farms are doing, make sure we’re still the best.$6#$e#Nothing wrong with a bit of friendly competition!$7#$b#Want to come with me?",
+"Outdoor_3": "Hey babe, are you good at fishing?#$b#Is there a way to get better at it?#$e#The governor really likes fishing, so I want to get better at it.$l",
+"Outdoor_4": "Hey I had an idea!$h#$b#Let’s pack a lunch and go visit the ridge.#$e#Picnic time!$h",
+
+//Leaving
+"funLeave_Jeric": "I’m off to my farm and shop now.#$b#I’ll see you later, babe.$7",
+
+//Returning
+"funReturn_Jeric": "Man, today was long. I’m glad to be back home!$l", 
+
+//One kid
+"OneKid_0": "Oh, babe, when %kid1 is sleeping we should catch up on that show we were watching.", 
+"OneKid_1": "It’s okay babe, I can look after %kid1 while you work on the farm today.$h", 
+"OneKid_2": "Babe, %kid1 is such a smart kid, a lot like you.$l", 
+"OneKid_3": "I still can’t believe that I’m a father.$l#$b#I’m going to work hard to be as good as the Governor was to me.$h",
+
+//Two kids
+"TwoKids_0": "Woah, hey look at our kids, babe!$h#$e#%kid2 looks a lot like me, I wonder if they will get into modeling too, right babe?$7",
+"TwoKids_1": "This still sometimes feels unreal. I have my own family.$l#$b#I love you babe.",
+"TwoKids_2": "I found %kid1 and %kid2 trying to climb on my motorcycle the other day.$u#$e#I can’t wait for them to get big enough for me to teach them how to ride.$l",
+"TwoKids_3": "Hey babe! Look at our kids, aren't they looking gorgeous?$6#$b#I designed those outfits myself!$h",
+
+
+//Relationship-dependent
+///Good
+"Good_0": "Hey babe, wanna go on a ride later tonight?$6#$e#The view of the valley is amazing, even better if I get to share it with you.$l",
+"Good_1": "Hey babe, Mayor Lewis and Miss Lenny came here earlier and asked if they could showcase our farms in an article about the valley.$h#$b#How cool is that?$h",
+"Good_2": "I got that itch under my skin that means I’m about to have a great idea.$6#$b#I’ve gotta find time to sew today.$h",
+"Good_3": "Never thought, back in Zuzu, that I’d see a chicken in my whole life, and here I am with a buncha my own.$h",
+"Good_4": "It’s funny how life works, right?#$e#I mean, I never thought I would get married, but then you moved here and we clicked right from the start.$l",
+"Good_5": "I’ve got some ideas for clothes for you, especially with the festivals coming up…#$b#You got time for me to take measurements?",
+"Good_6": "I was talking to Kenneth the other day and he showed me a couple of sprinkler designs.#$b#I’m probably gonna craft some, just to save a bit of time.",
+"Good_7": "I was thinking about bringing Turbo here, but he is very fond of his stable.#$b#I don’t want him to be upset about leaving.$s",
+"Good_8": "You really hit the jackpot with this farm.$h#$b#It’s like it was always supposed to be yours.$6",
+"Good_9": "Have you heard about giant crops?#$b#I’ve heard word about it but I’ve never actually seen one.#$e#You should try and grow one!",
+
+///Neutral
+"Neutral_0": "I planted some new crops by my farm today.#$b#I hope they turn out good. #$b#It’s my first time using them.",
+"Neutral_1": "*Yawn* Boy am I sleepy...",
+"Neutral_2": "%Jeric is reading a fashion magazine.#$b#Oh sorry, @. I was occupied. What’s up?",
+"Neutral_3": "Sometimes when I’ve finished my chores, I just like to take a quick nap in the stable.#$b#Feels rustic, I guess.",
+"Neutral_4": "I tried to make a new omelette recipe.#$e#It turned out alright.",
+"Neutral_5": "Hey, you’ve been so busy lately.$s#$b#Anything I can do to help around the farm?",
+"Neutral_6": "I got some letters from the governor the other day.#$b#He was asking about what’s been going on with me lately.#$e#I ought to talk to him more.$s",
+"Neutral_7": "I might submit some of the clothing designs I’ve been working on to this competition in Zuzu.$l#$b#The winner gets a slot at Fashion Week next fall!$h",
+"Neutral_8": "I’m sorry, I have no time to talk today.#$b#I’m off to work. I’ll make it up to you later!$7",
+"Neutral_9": "I’m a bit hungry. Maybe I’ll go grab a bite later.",
+
+///Bad
+"Bad_0": "I’ve heard that marriage is supposed to feel liberating.$a#$Then... what’s this?$s",
+"Bad_1": "I’ve been thinking of what it would be like to move back to the city.$s#$b#Couldn’t tell you why.$s",
+"Bad_2": "I wish I could spend just a few more hours back at my farm...$s#$b#Just to feel a bit more free.$s",
+"Bad_3": "Ugh, you even care if I started hitting up someone else, huh?$a#$b#I mean, you don’t even talk to me anymore.$a",
+"Bad_4": "What are we, @?$s#$b#You never want to talk or do anything.$s#$e#If you’re unhappy with me just say it.$a",
+"Bad_5": "Either we got married too soon, or this was a bad idea from the start.$a",
+"Bad_6": "Sometimes I wonder if you even know I’m here.$s#$b#I feel like I’m being treated like trash.$a",
+"Bad_7": "I can’t seem to get anything right.$s#$b#All the outfits I’ve sewn recently look like garbage.$a",
+"Bad_8": "I haven’t checked on my farm in days.$s#$b#I bet all my crops have withered by now.$a",
+"Bad_9": "I can’t bring myself to sit down and design outfits anymore.$a#$e#I feel so uninspired.$s#$b#Why do I feel like that’s got something to do with you?$a",
 
 
 }

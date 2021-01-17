@@ -4,6 +4,7 @@
   "Version": "1.0.3",
   "Description": "RSV Music",
   "UniqueID": "Rafseazz.RSVCM",
+  "UpdateKeys": [ "Nexus:???" ],
   "ContentPackFor": {
     "UniqueID": "Platonymous.CustomMusic",
     "MinimumVersion": "1.0.3"

@@ -4,60 +4,84 @@
 		"Id": "AlissaConcert",
 		"File": "AlissaConcert.ogg",
 		"Loop": false,
+		"Preload": true
 	},
 	{
 		"Id": "AlissaVocals",
 		"File": "AlissaVocals.ogg",
 		"Loop": false,
+		"Preload": true
 	},
 	{
 		"Id": "AlissaWithPiano",
 		"File": "AlissaWithPiano.ogg",
 		"Loop": false,
+		"Preload": true
 	},
 	{
 		"Id": "AlissaTheme",
 		"File": "AlissaTheme.ogg",
+		"Preload": true
 	},
 	{
 		"Id": "CorineTheme",
 		"File": "CorineTheme.ogg",
+		"Preload": true
 	},
 	{
 		"Id": "FlorTheme",
 		"File": "FlorTheme.ogg",
+		"Preload": true
 	},
 	{
 		"Id": "IanTheme",
 		"File": "IanTheme.ogg",
+		"Preload": true
 	},
 	{
 		"Id": "JericTheme",
 		"File": "JericTheme.ogg",
+		"Preload": true
 	},
 	{
 		"Id": "KennethTheme",
 		"File": "KennethTheme.ogg",
+		"Preload": true
 	},
 	{
 		"Id": "MaddieTheme",
 		"File": "MaddieTheme.ogg",
+		"Preload": true
 	},
 	{
 		"Id": "PhilipTheme",
 		"File": "PhilipTheme.ogg",
+		"Preload": true
 	},
 	{
 		"Id": "ShiroTheme",
 		"File": "ShiroTheme.ogg",
+		"Preload": true
 	},
 	{
 		"Id": "YsabelleTheme",
 		"File": "YsabelleTheme.ogg",
+		"Preload": true
 	},
 	{
 		"Id": "YsaDance",
 		"File": "YsaDance.ogg",
-	}
+		"Preload": true
+	},
+	{
+		"Id": "EmberNight",
+		"File": "EmberNight.ogg",
+		"Preload": true
+	},
+	{
+		"Id": "FallInRidgeside",
+		"File": "FallInRidgeside.ogg",
+		"Preload": true
+	},
 	]
 }

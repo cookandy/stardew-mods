@@ -72,4 +72,17 @@
 	"danceRejection": "Oh sorry @. I have to tend to some tables.",
 	"divorced": "Don't talk to me. You wasted my time.$a",
 	
+//Resort
+ "Resort_Entering": "It’s been so long since I’ve left the valley. I’ve almost forgotten what being on a boat feels like!",
+  "Resort_Leaving": "It was nice while it lasted. But tomorrow, it’s back to the usual, work and errands. I do feel refreshed, though!",
+  "Resort_Leaving_2": "I’m going to miss the salt on the air. It reminds me of home. I should write another letter to my family, soon.",
+  "Resort_Shore": "Is it really alright to enjoy myself like this? I just keep thinking about all the work I’m missing out on...",
+  "Resort_Shore_2": "Harvey tells me I’ve been stressing too much lately. I think this will help.",
+  "Resort_Umbrella": "The sound of the ocean is one of my favorite things. It makes me feel so calm, like I could just walk into the waves and live without a care. Haha, sorry, was that a weird thing to say?",
+  "Resort_Umbrella_2": "I don’t like to be in the sun when I can avoid it. I can’t tan. I just burn. That’s how I got all of these freckles, haha!",
+  "Resort_Umbrella_3": "I wonder if they need another person to help clean. I should ask whoever’s in charge.",
+  "Resort_Wander": "Am I lost? I may not look like it, but I’m good at finding my way around new places!",
+  "Resort_Bar": "Hey, @! Can you believe Gus runs bother the bar and the saloon? What an awesome guy!",
+  "Resort": "I wonder if I could take some coconuts home. They’re super tasty, and the fiber is great for starting a fire!",
+	
 }

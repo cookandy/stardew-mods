@@ -72,4 +72,17 @@
 	"danceRejection": "I'm sorry but I'm going to have to say No @. I have to look after Shiro.",
 	"divorced": "Don't talk to me. You.. you... Uhg!.$a",
 	
+//Resort
+ "Resort_Entering": "Oh, wow! I know what I’m going to do first. Time for a swim!",
+ "Resort_Leaving": "No… So soon? Ahhh, I’ll be sure to come back here whenever I have the time!",
+ "Resort_Leaving_2": "I’m really grateful that I had the time to loosen up today. I don’t get much time to relax as I’d like, to be honest.",
+ "Resort_Shore": "%Philip has his face turned to the sky and his eyes closed. He looks very happy. Better not bother him",
+ "Resort_Shore_2": "Destressing is just as important as getting enough sleep, you know. Too much cortisol can wreak havoc on your body. So slow down and enjoy this!",
+ "Resort_Umbrella": "I definitely did not put on enough sunscreen, so I’ll be staying under this umbrella for a bit.",
+"Resort_Umbrella_2": "I used to love making sand castles when I was little. I kind of want to give it a shot again.",
+ "Resort_Umbrella_3": "Going to the beach is such a great way to soak up tons of vitamin sea. Get it?",
+ "Resort_Wander": "This island looks like something out of a comic… like I could step into a jungle and find a whole lost civilization.",
+ "Resort_Bar": "~If you like Pina Coladas! And getting caught in the rain!~ Ah, I saw pina coladas on their menu and that song popped into my head. You know, the one from the Watchers of the Milky Way?",
+ "Resort": "Talk about relieving some stress! This is an amazing way to spend a day off.",
+	
 }

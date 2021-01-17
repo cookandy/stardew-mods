@@ -72,4 +72,17 @@
 	"danceRejection": "Sorry @. But I can't get too tired. Remember?$h",
 	"divorced": "You trying to kill me or something? You wasted my time...$s",
 	
+//Resort
+	"Resort_Entering": "",
+	"Resort_Leaving": "",
+	"Resort_Leaving_2": "",
+	"Resort_Shore": "",
+	"Resort_Shore_2": "",
+	"Resort_Umbrella": "",
+	"Resort_Umbrella_2": "",
+	"Resort_Umbrella_3": "",
+	"Resort_Wander": "",
+	"Resort_Bar": "",
+	"Resort": "",
+	
 }

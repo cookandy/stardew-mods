@@ -72,4 +72,17 @@
 	"danceRejection": "Ugh I don’t do dances, it’s just a waste of energy.",
 	"divorced": "Hah! What happened to ‘Till death do us part?’ Excuse me, that vow became null and void when you decided to sin you jackass$a",
 	
+//Resort
+	"Resort_Entering": "",
+	"Resort_Leaving": "",
+	"Resort_Leaving_2": "",
+	"Resort_Shore": "",
+	"Resort_Shore_2": "",
+	"Resort_Umbrella": "",
+	"Resort_Umbrella_2": "",
+	"Resort_Umbrella_3": "",
+	"Resort_Wander": "",
+	"Resort_Bar": "",
+	"Resort": "",
+	
 }

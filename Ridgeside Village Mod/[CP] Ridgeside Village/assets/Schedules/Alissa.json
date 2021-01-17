@@ -8,6 +8,8 @@
 	"Sat": "610 RidgesideVillage 15 93 3 square_1_4_3/1000 SeedShop 5 21 3/1300 AnimalShop 3 16 3/1800 AlissaHouse 11 5 9 alissa_sleep",
 	"Thu": "GOTO Sat",
 	"Fri": "610 RidgesideVillage 15 93 3 square_1_4_3/1000 Mountain 58 35 1/1800 AlissaHouse 11 5 9 alissa_sleep",
+	"winter_Sat": "GOTO winter",
+	"winter_Fri": "GOTO winter",
 	
 	//Marriage Schedule
 	"marriage_Mon": "610 RidgesideVillage 15 93 3 square_1_4_3/1200 RidgesideVillage 41 113 2 square_8_2_2/1500 RidgesideVillage 59 108 1/1800 BusStop -1 23 3",

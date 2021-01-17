@@ -72,4 +72,18 @@
 	"danceRejection": "Oh dear, I’m sorry but I have to decline for I don’t know you that well yet.",
 	"divorced": "What you did to me is unacceptable!#$e#You’re not worth my time so please stop wasting it.$a",
 	
+//Resort
+	"Resort_Entering": "Ahhh, a chance to soak up some sunshine and relax! This is my kind of getaway.",
+	"Resort_Leaving": "Awwww. Must we leave so soon? I must tell grandfather about this place! I think it'll be a great reason for him to get away from the village for a while!",
+	"Resort_Leaving_2": "This place is definitely for keeps. I must return here soon. With some company maybe?",
+	"Resort_Shore": "The sky's above, the sand's below. I feel at peace here. The sea’s calling out to me.",
+	"Resort_Shore_2": "I wonder how many seashells I'd find here. They're like the love letters of the ocean.",
+	"Resort_Umbrella": "Ahhhh, a day for relaxation. Isn't it wonderful?",
+	"Resort_Umbrella_2": "The ocean is everything I want to be. Beautiful, exciting, wild, and free.",
+	"Resort_Umbrella_3": "I could never in a million years get tired of this view.",
+	"Resort_Wander": "I'm looking for that perfect, quiet spot, with a breathtaking view. Have a cold drink in my hand, with a warm sea breeze on my skin, and the sound of the waves crashing. Ahhh, that would be the BEST!",
+	"Resort_Bar": "There's nothing else you need at the beach but a tequila and a tan!",
+	"Resort": "Ahhhh! Home is where the sea is, haha! I hope I get to work on my tan!",
+
+	
 }

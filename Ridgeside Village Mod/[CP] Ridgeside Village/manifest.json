@@ -1,7 +1,7 @@
 {
 	"Name": "Ridgeside Village",
 	"Author": "Rafseazz",
-	"Version": "1.1.4",
+	"Version": "1.2.0",
 	"Description": "Adds a new village in the west.",
 	"UniqueID": "Rafseazz.RSVCP",
 	"MinimumApiVersion": "3.0.0",
@@ -28,7 +28,7 @@
 	   },
 	   {
 		"UniqueID": "Rafseazz.RSVJA",
-		"IsRequired": true,
+		"IsRequired": false,
 	   },
 	   {
 		"UniqueID": "MoreFish",
@@ -37,6 +37,14 @@
 	   {
 		"UniqueID": "FlashShifter.StardewValleyExpandedCP",
 		"IsRequired": false,
+	   },
+	   {
+		"UniqueID": "misscoriel.eventrepeater",
+		"IsRequired": true,
+	   },
+	   {
+		"UniqueID": "SuperAardvark.AntiSocial",
+		"IsRequired": true,
 	   },
    ]
 }
