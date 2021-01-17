@@ -29,7 +29,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | Name      | Description | Version    | Notes     |
 | :------------- | :---------- | :---------- | :----------- |
 |  [Advanced Save Backup](https://www.nexusmods.com/stardewvalley/mods/435) | Automatically backs up your saves when loading the game and every night when you sleep.  | `1.9.0`    | |
-| [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) |  Place a chest next to a machine (like a furnace or crystalarium), and the machine will automatically pull raw items from the chest and push processed items into it.	| `1.19.1` | |
+| [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) |  Place a chest next to a machine (like a furnace or crystalarium), and the machine will automatically pull raw items from the chest and push processed items into it.	| `1.20.0` | |
 | [Better Artisan Goods Icons](https://www.nexusmods.com/stardewvalley/mods/2080) | This mod makes jelly, pickles, wine, juice, and honey icons be based on the fruit, vegetable, or flower used to make them. | `1.5.0` | |
 | [Better Ranching](https://www.nexusmods.com/stardewvalley/mods/859) | Prevents doomed milking/shearing attempts and adds an indicator when animals can be petted, milked, or sheared.	| `1.8.0` | |
 | [Bigger Backpack](https://www.nexusmods.com/stardewvalley/mods/1845) | Buy a bigger backpack at Pierre's for only 50,000g. | `3.0` | |
