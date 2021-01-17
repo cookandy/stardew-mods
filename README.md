@@ -33,7 +33,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Better Artisan Goods Icons](https://www.nexusmods.com/stardewvalley/mods/2080) | This mod makes jelly, pickles, wine, juice, and honey icons be based on the fruit, vegetable, or flower used to make them. | `1.5.0` | |
 | [Better Ranching](https://www.nexusmods.com/stardewvalley/mods/859) | Prevents doomed milking/shearing attempts and adds an indicator when animals can be petted, milked, or sheared.	| `1.8.0` | |
 | [Bigger Backpack](https://www.nexusmods.com/stardewvalley/mods/1845) | Buy a bigger backpack at Pierre's for only 50,000g. | `3.0` | |
-| [Chests Anywhere](https://www.nexusmods.com/stardewvalley/mods/518) | Access your chests, dressers, fridge, shipping bin, and Junimo huts from anywhere and organise them your way. | `1.20.2` | |
+| [Chests Anywhere](https://www.nexusmods.com/stardewvalley/mods/518) | Access your chests, dressers, fridge, shipping bin, and Junimo huts from anywhere and organise them your way. | `1.20.4` | |
 | [CJB Cheats Menu](https://www.nexusmods.com/stardewvalley/mods/4) | A simple in-game cheats menu with lots of cheats. | `1.27.0` | |
 | [CJB Item Spawner](https://www.nexusmods.com/stardewvalley/mods/93) | An easy-to-use in-game item spawner menu. | `2.0.2` | |
 | [Climates of Ferngill](https://www.nexusmods.com/stardewvalley/mods/604) | Expands the climate system to be more robust, adding custom weathers. | `1.5.12` | Currenntly not working with `1.5`
