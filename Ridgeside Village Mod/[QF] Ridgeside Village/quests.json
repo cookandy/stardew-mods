@@ -798,7 +798,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "spring fall",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -806,7 +806,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "summer winter",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -814,7 +814,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "spring fall",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -822,7 +822,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "summer winter",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -830,7 +830,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "spring fall",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -838,7 +838,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "summer winter",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -846,7 +846,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "spring fall",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -854,7 +854,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "summer winter",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -862,7 +862,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "spring fall",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -870,7 +870,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "summer winter",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -878,7 +878,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "spring fall",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -886,7 +886,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "summer winter",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -894,7 +894,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "spring fall",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -902,7 +902,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "summer winter",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -910,7 +910,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "spring fall",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -918,7 +918,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "summer winter",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -926,7 +926,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "spring fall",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -934,7 +934,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "summer winter",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -942,7 +942,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "spring fall",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -950,7 +950,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "summer winter",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -958,7 +958,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "spring fall",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -966,7 +966,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "summer winter",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -974,7 +974,7 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "spring fall",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	{
@@ -982,22 +982,31 @@
 	"OfferedBy": "Board:RSVQuestBoard",
 	"When": {
 		"Seasons": "summer winter",
-		"Random": 20,
+		"Random": 10,
 		}
 	},
 	
 //NinjaBoard Quests
 	{
 	"QuestName": "mysticfalls_1",
-	"OfferedBy": "Board:RSVNinjaBoard"
+	"OfferedBy": "Board:RSVNinjaBoard",
+	"When": {
+		"QuestNeverCompleted": "yes"
+		}
 	},
 	{
 	"QuestName": "mysticfalls_2",
-	"OfferedBy": "Board:RSVNinjaBoard"
+	"OfferedBy": "Board:RSVNinjaBoard",
+	"When": {
+		"QuestNeverCompleted": "yes"
+		}
 	},
 	{
 	"QuestName": "mysticfalls_3",
-	"OfferedBy": "Board:RSVNinjaBoard"
+	"OfferedBy": "Board:RSVNinjaBoard",
+	"When": {
+		"QuestNeverCompleted": "yes"
+		}
 	},
 	
 //Unlock Minecarft Offer
@@ -1009,7 +1018,8 @@
         "Text": "Dear @,^For the restoration of the minecart at the ridge, We first need 50 pieces of Wood. You can hand them over to me whenever you have them all ready.^^- Lenny"
       },
       "When": {
-        "EventSeen": "75160189"
+        "EventSeen": "75160189",
+		"QuestNeverCompleted": "yes"
       }
     },
 	
