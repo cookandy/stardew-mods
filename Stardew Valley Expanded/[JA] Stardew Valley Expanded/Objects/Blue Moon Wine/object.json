@@ -21,7 +21,7 @@
     },
 	"Price": 700,
 	"IsColored": false,
-	"CanPurchase": true,
+	"CanPurchase": false,
     "PurchasePrice": 3500,
 	"GiftTastes":
 	{

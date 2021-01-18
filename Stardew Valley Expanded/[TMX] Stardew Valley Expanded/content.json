@@ -1341,13 +1341,6 @@
       "position": [ 41, 76 ],
 	  "conditions": "e 1000009",
     },
-	{
-      "name": "TownEast",
-      "file": "assets/MapPatches/TownEast_BridgeOpen.tbin",
-      "sourceArea": [ 0, 0, 1, 4 ],
-      "position": [ 39, 20 ],
-	  "conditions": "e 1054932",
-    },
 ],
 
 

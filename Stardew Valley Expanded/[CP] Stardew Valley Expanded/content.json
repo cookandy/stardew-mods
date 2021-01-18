@@ -327,7 +327,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasSeenEvent": "2554901", "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false, "FarmType":"Standard" },
 	 "Entries": {
-	 "2554902/H/w sunny/t 600 800": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1100/speak Robin \"Good morning @!$0#$b#I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1000/faceDirection Robin 1 true/pause 1300/faceDirection Robin 0 true/pause 500/speak Robin \"If you have a moment, you can watch as I inspect the shed.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation Town/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the necessary materials.$0#$b#It'd be a fun project to challenge myself!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that storage chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this shed project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
+	 "2554902/H/w sunny/t 600 800": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1100/speak Robin \"Good morning @!$0#$b#I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1000/faceDirection Robin 1 true/pause 1300/faceDirection Robin 0 true/pause 500/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation Town/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
 	 
 	 },
 },
@@ -337,7 +337,7 @@
 	 "Target": "data/events/BusStop",
 	 "When": { "HasSeenEvent": "2554901", "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
 	 "Entries": {
-	 "2554902/H/w sunny/t 600 1150": "continue/-300 -300/farmer 9 23 1 Robin 23 23 3/skippable/move farmer 5 0 1 true/move Robin -7 0 3 true/viewport 14 22 true/pause 2000/speak Robin \"Good morning @!$0#$b#Good timing. I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1100/speak Robin \"If you have a moment, you can watch as I inspect the shed.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the necessary materials.$0#$b#It'd be a fun project to challenge myself!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that storage chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this shed project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
+	 "2554902/H/w sunny/t 600 1150": "continue/-300 -300/farmer 9 23 1 Robin 23 23 3/skippable/move farmer 5 0 1 true/move Robin -7 0 3 true/viewport 14 22 true/pause 2000/speak Robin \"Good morning @!$0#$b#Good timing. I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1100/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
 	 
 	 },
 },
@@ -347,7 +347,7 @@
 	 "Target": "data/events/BusStop",
 	 "When": { "HasSeenEvent": "2554901", "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
 	 "Entries": {
-	 "2554902/H/w sunny/t 1200 1600": "continue/-300 -300/farmer 9 23 1 Robin 23 23 3/skippable/move farmer 5 0 1 true/move Robin -7 0 3 true/viewport 14 22 true/pause 2000/speak Robin \"Good afternoon @!$0#$b#Good timing. I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1100/speak Robin \"If you have a moment, you can watch as I inspect the shed.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the necessary materials.$0#$b#It'd be a fun project to challenge myself!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that storage chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this shed project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
+	 "2554902/H/w sunny/t 1200 1600": "continue/-300 -300/farmer 9 23 1 Robin 23 23 3/skippable/move farmer 5 0 1 true/move Robin -7 0 3 true/viewport 14 22 true/pause 2000/speak Robin \"Good afternoon @!$0#$b#Good timing. I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1100/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
 	 
 	 },
 },
@@ -357,7 +357,7 @@
 	 "Target": "data/events/farm",
 	 "When": { "HasSeenEvent": "2554901", "HasMod": "flashshifter.GrandpasFarm", "FarmType |contains=Standard": false },
 	 "Entries": {
-	 "2554902/H/w sunny/t 600 800": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1100/speak Robin \"Good morning @!$0#$b#I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1000/faceDirection Robin 1 true/pause 1300/faceDirection Robin 0 true/pause 500/speak Robin \"If you have a moment, you can watch as I inspect the shed.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation Town/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the necessary materials.$0#$b#It'd be a fun project to challenge myself!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that storage chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this shed project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
+	 "2554902/H/w sunny/t 600 800": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1100/speak Robin \"Good morning @!$0#$b#I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1000/faceDirection Robin 1 true/pause 1300/faceDirection Robin 0 true/pause 500/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation Town/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
 	 
 	 },
 },
@@ -367,7 +367,7 @@
 	 "Target": "data/events/farm",
 	 "When": { "HasSeenEvent":"2554901", "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false },
 	 "Entries": {
-	 "2554902/H/w sunny/t 600 800": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1100/speak Robin \"Good morning @!$0#$b#I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1000/faceDirection Robin 1 true/pause 1300/faceDirection Robin 0 true/pause 500/speak Robin \"If you have a moment, you can watch as I inspect the shed.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation Town/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the necessary materials.$0#$b#It'd be a fun project to challenge myself!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that storage chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this shed project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
+	 "2554902/H/w sunny/t 600 800": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1100/speak Robin \"Good morning @!$0#$b#I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1000/faceDirection Robin 1 true/pause 1300/faceDirection Robin 0 true/pause 500/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation Town/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
 	 
 	 },
 },
@@ -385,7 +385,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasSeenEvent": "2554902" },
 	 "Entries": {
-	 "2554903/k 2554904": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1000/speak Robin \"Hey @!$1#$b#The storage chest is in the shed. You'll place hardwood inside it.$0\"/pause 1000/speak Robin \"After you've gathered the hardwood, mind writing a manifest for me - detailing the hardwood specifications? It'll really help me out!$0#$b#I'll pick up the manifest when you've completed the task!$1\"/pause 500/end dialogue Robin \"I'll pick up that hardwood manifest at your farm when you've completed the task!$1\""
+	 "2554903/k 2554904": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1000/speak Robin \"Hey @!$1#$b#The storage chest is in the shed. You'll place hardwood inside it.$0\"/pause 1000/speak Robin \"After you've gathered the hardwood, mind writing a manifest for me - detailing the hardwood specifications? It'll really help me out!$0#$b#I'll pick up the manifest when you're finished!$1\"/pause 500/end dialogue Robin \"I'll pick up that hardwood manifest at your farm when you're finished!$1\""
 	 
 	 },
 },
@@ -395,7 +395,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false },
 	 "Entries": {
-	 "2554904/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/skippable/pause 1000/speak Robin \"You got the hardwood and completed the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's also a lot of rusted metal to replace.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll place another storage chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but the rusted metal has to be replaced.$0#$e#Don't forget that paperwork!$1\"",              
+	 "2554904/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/skippable/pause 1000/speak Robin \"You got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
 	 
 	 },
 },
@@ -405,7 +405,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false  },
 	 "Entries": {
-	 "2554904/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...$2\"/pause 1000/speak Robin \"Oh, you got the hardwood and completed the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's also a lot of rusted metal to replace.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll place another storage chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but the rusted metal has to be replaced.$0#$e#Don't forget that paperwork!$1\"",              
+	 "2554904/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...$2\"/pause 1000/speak Robin \"Oh, you got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
 	 
 	 },
 },
@@ -415,7 +415,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasMod": "flashshifter.GrandpasFarm" },
 	 "Entries": {
-	 "2554904/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/skippable/pause 1000/speak Robin \"You got the hardwood and completed the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's also a lot of rusted metal to replace.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll place another storage chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but the rusted metal has to be replaced.$0#$e#Don't forget that paperwork!$1\"",              
+	 "2554904/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/skippable/pause 1000/speak Robin \"You got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
 	 
 	 },
 },
@@ -425,7 +425,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasMod": "flashshifter.GrandpasFarm" },
 	 "Entries": {
-	 "2554904/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...$2\"/pause 1000/speak Robin \"Oh, you got the hardwood and completed the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's also a lot of rusted metal to replace.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll place another storage chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but the rusted metal has to be replaced.$0#$e#Don't forget that paperwork!$1\"",              
+	 "2554904/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...$2\"/pause 1000/speak Robin \"Oh, you got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
 	 
 	 },
 },
@@ -435,7 +435,7 @@
 	 "Target": "data/events/GrandpasShedOutside",
 	 "When": { "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false },
 	 "Entries": {
-	 "2554904/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"You got the hardwood and completed the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's also a lot of rusted metal to replace.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll place another storage chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but the rusted metal has to be replaced.$0#$e#Don't forget that paperwork!$1\"",              
+	 "2554904/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"You got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
 	 
 	 },
 },
@@ -445,11 +445,10 @@
 	 "Target": "data/events/GrandpasShedOutside",
 	 "When": { "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false },
 	 "Entries": {
-	 "2554904/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"*yawn*...$2\"/pause 1000/speak Robin \"Oh, you got the hardwood and completed the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's also a lot of rusted metal to replace.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll place another storage chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but the rusted metal has to be replaced.$0#$e#Don't forget that paperwork!$1\"",              
+	 "2554904/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"*yawn*...$2\"/pause 1000/speak Robin \"Oh, you got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
 	 
 	 },
 },
-
 
 
 {       //GRANDPAS SHED QUEST LINE - event #5 - Completed iron bar requirement - IF2R
@@ -457,7 +456,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false },
 	 "Entries": {
-	 "2554905/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"These iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to restore the shed!$1\"",
+	 "2554905/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"These iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
 	 
 	 },
 },
@@ -467,7 +466,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false },
 	 "Entries": {
-	 "2554905/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...It's a bit late.$2\"/pause 1000/speak Robin \"Oh, these iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to restore the shed!$1\"",
+	 "2554905/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...It's a bit late.$2\"/pause 1000/speak Robin \"Oh, these iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
 	 
 	 },
 },
@@ -477,7 +476,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasMod": "flashshifter.GrandpasFarm" },
 	 "Entries": {
-	 "2554905/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"These iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to restore the shed!$1\"",
+	 "2554905/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"These iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
 	 
 	 },
 },
@@ -487,7 +486,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasMod": "flashshifter.GrandpasFarm" },
 	 "Entries": {
-	 "2554905/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...It's a bit late.$2\"/pause 1000/speak Robin \"Oh, these iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to restore the shed!$1\"",
+	 "2554905/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...It's a bit late.$2\"/pause 1000/speak Robin \"Oh, these iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
 	 
 	 },
 },
@@ -497,7 +496,7 @@
 	 "Target": "data/events/GrandpasShedOutside",
 	 "When": { "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false },
 	 "Entries": {
-	 "2554905/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"These iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to restore the shed!$1\"",
+	 "2554905/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"These iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
 	 
 	 },
 },
@@ -507,7 +506,7 @@
 	 "Target": "data/events/GrandpasShedOutside",
 	 "When": { "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false },
 	 "Entries": {
-	 "2554905/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"*yawn*...It's a bit late.$2\"/pause 1000/speak Robin \"Oh, these iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to restore the shed!$1\"",
+	 "2554905/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"*yawn*...It's a bit late.$2\"/pause 1000/speak Robin \"Oh, these iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
 	 
 	 },
 },
@@ -518,7 +517,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false },
 	 "Entries": {
-	 "2554906/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"Hey @! You collected all of the materials I requested! Incredible work!$1\"/pause 1000/speak Robin \"I'll start restoring the shed today!$0#$b#It just might be completed tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
+	 "2554906/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"Hey @! You collected all of the materials I requested! Incredible work!$1\"/pause 1000/speak Robin \"I'll start restoring the shed today!$0#$b#I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
 	 
 	 },
 },
@@ -528,7 +527,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false },
 	 "Entries": {
-	 "2554906/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...Couldn't have waited until tomorrow morning, huh.$2\"/pause 1000/speak Robin \"Oh, hey! You collected all of the materials I requested!$0\"/pause 1000/speak Robin \"I'll start restoring the shed first thing tomorrow.$0\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
+	 "2554906/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...Couldn't have waited until tomorrow morning, huh.$2\"/pause 1000/speak Robin \"Oh, hey! You collected all of the materials I requested!$0\"/pause 1000/speak Robin \"I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
 	 
 	 },
 },
@@ -538,7 +537,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasMod": "flashshifter.GrandpasFarm" },
 	 "Entries": {
-	 "2554906/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"Hey @! You collected all of the materials I requested! Incredible work!$1\"/pause 1000/speak Robin \"I'll start restoring the shed today!$0#$b#It just might be completed tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
+	 "2554906/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"Hey @! You collected all of the materials I requested! Incredible work!$1\"/pause 1000/speak Robin \"I'll start restoring the shed today!$0#$b#I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
 	 
 	 },
 },
@@ -548,7 +547,7 @@
 	 "Target": "data/events/Farm",
 	 "When": { "HasMod": "flashshifter.GrandpasFarm" },
 	 "Entries": {
-	 "2554906/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...Couldn't have waited until tomorrow morning, huh.$2\"/pause 1000/speak Robin \"Oh, hey! You collected all of the materials I requested!$0\"/pause 1000/speak Robin \"I'll start restoring the shed first thing tomorrow.$0\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
+	 "2554906/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...Couldn't have waited until tomorrow morning, huh.$2\"/pause 1000/speak Robin \"Oh, hey! You collected all of the materials I requested!$0\"/pause 1000/speak Robin \"I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
 	 
 	 },
 },
@@ -558,7 +557,7 @@
 	 "Target": "data/events/GrandpasShedOutside",
 	 "When": { "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false  },
 	 "Entries": {
-	 "2554906/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"Hey @! You collected all of the materials I requested! Incredible work!$0\"/pause 1000/speak Robin \"I'll start restoring the shed today!$0#$b#It just might be completed tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
+	 "2554906/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"Hey @! You collected all of the materials I requested! Incredible work!$0\"/pause 1000/speak Robin \"I'll start restoring the shed today!$0#$b#I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
 	 
 	 },
 },
@@ -568,12 +567,12 @@
 	 "Target": "data/events/GrandpasShedOutside",
 	 "When": { "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false  },
 	 "Entries": {
-	 "2554906/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"*yawn*...Couldn't have waited until tomorrow morning, huh.$2\"/pause 1000/speak Robin \"Oh, hey! You collected all of the materials I requested!$0\"/pause 1000/speak Robin \"I'll start restoring the shed first thing tomorrow.$0\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
+	 "2554906/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"*yawn*...Couldn't have waited until tomorrow morning, huh.$2\"/pause 1000/speak Robin \"Oh, hey! You collected all of the materials I requested!$0\"/pause 1000/speak Robin \"I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
 	 
 	 },
 },
 
-{       //GRANDPAS SHED QUEST LINE - Fixed shed map patch
+{       //GRANDPAS SHED QUEST LINE - Fixed shed map patch - IF2R
      "Action": "EditMap",
      "Target": "Maps/Farm",
      "FromFile": "Assets/Maps/GrandpasShed/FarmShedFixed.tbin",
@@ -581,11 +580,11 @@
      "ToArea": { "X": 138, "Y": 23, "Width": 12, "Height": 12 }
 },
 
-{       //GRANDPAS SHED QUEST LINE - Fixed shed map patch - Player isn't playing on IF2R
+{       //GRANDPAS SHED QUEST LINE - Fixed shed map patch - no IF2R
      "Action": "EditMap",
      "Target": "Maps/GrandpasShedOutside",
      "FromFile": "Assets/Maps/GrandpasShed/GrandpasShedFixed2.tbin",
-	 "When": { "GrandpaShedComplete": true, "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false },
+	 "When": { "GrandpaShedComplete": true },
      "ToArea": { "X": 16, "Y": 6, "Width": 12, "Height": 12 }
 },
 
@@ -594,11 +593,11 @@
 	 "Target": "data/events/GrandpasShed",
 	 "When": { "HasSeenEvent": "2554906" },
 	 "Entries": {
-	 "2554907": "none/-500 -500/farmer -200 -200 0 Robin 13 13 0/skippable/viewport 16 9 true/playMusic jaunty/pause 2500/playSound doorClose/warp farmer 16 16/pause 300/move farmer 0 -2 0 true/pause 300/faceDirection Robin 1 true/pause 600/emote farmer 16/pause 200/speak Robin \"Hey @!$1\"/pause 200/faceDirection farmer 3 true/pause 700/speak Robin \"So... what do you think?$0#$b#You may have noticed the added window panes to the roof.#$b#It'd make a great space to grow plants up there.\"/pause 500/jump farmer/pause 1000/speak Robin \"My work wouldn't have been possible without the materials you've gathered.$1#$b#I actually had a lot of fun and learned some new things.$0\"/pause 1000/faceDirection Robin 0/pause 750/speak Robin \"There was leftover hardwood, so I crafted casks for the heck of it!$1#$b#This bottom floor would be great for aging wine...$0\"/pause 750/faceDirection Robin 1 true/pause 700/speak Robin \"Well, enjoy the refurbished shed @!$1\"/pause 500/end dialogue Robin \"Those plants upstairs in theshed came from Susan. She thought you'd appreciate plants in the greenhouse space!$1#$e#Mmm, I wonder if she wants a greenhouse built?$0\""
+	 "2554907": "none/-500 -500/farmer -200 -200 0 Robin 13 13 0/skippable/viewport 16 9 true/playMusic jaunty/pause 2500/playSound doorClose/warp farmer 16 16/pause 300/move farmer 0 -2 0 true/pause 300/faceDirection Robin 1 true/pause 600/emote farmer 16/pause 200/speak Robin \"Hey @!$1\"/pause 200/faceDirection farmer 3 true/pause 700/speak Robin \"So... what do you think?$0#$b#You may have seen new window panes on the roof.#$b#There's a great space to grow plants up there now.\"/pause 500/jump farmer/pause 1000/speak Robin \"I couldn't have fixed it up without all the materials you gathered.$1#$b#I actually had a lot of fun and learned some new things.$0\"/pause 1000/faceDirection Robin 0/pause 750/speak Robin \"There was some leftover hardwood, so I crafted a few casks for the heck of it!$1#$b#This bottom floor would be great for aging wine...$0\"/pause 750/faceDirection Robin 1 true/pause 700/speak Robin \"Well, enjoy the refurbished shed @!$1\"/pause 500/end dialogue Robin \"Oh, I almost forgot! There are some plants upstairs already, a gift from Susan. She thought you'd appreciate some plants to get your greenhouse started!$1#$e#Mmm, I wonder if she wants a greenhouse of her own?$0\""
 	 },
 },
 
-/*     //Sitting data
+/*     //Sitting data   - - to do
 {   
 	 "Action": "EditData",
 	 "Target": "Data/ChairTiles",
@@ -612,19 +611,19 @@
 {   
 	 "Action": "EditData",
 	 "Target": "Data/ObjectContextTags",
-	 "Entries": { 
-	  "{{spacechase0.JsonAssets/ObjectId:Butterfish}}": "color_yellow, fish_river, fish_talk_stiff, fish_butterfish",
-	  "{{spacechase0.JsonAssets/ObjectId:Puppyfish}}": "color_brown, fish_river, fish_talk_stiff, fish_puppyfish",
-	  "{{spacechase0.JsonAssets/ObjectId:Minnow}}": "color_gray, fish_river, fish_minnow",
-	  "{{spacechase0.JsonAssets/ObjectId:Clownfish}}": "color_orange, fish_ocean, season_summer, fish_clownfish",
-	  "{{spacechase0.JsonAssets/ObjectId:Starfish}}": "color_red, fish_ocean, fish_upright, fish_starfish",
-	  "{{spacechase0.JsonAssets/ObjectId:Void Eel}}": "color_black, fish_semi_rare, fish_swamp, season_all, fish_carnivorous, fish_talk_stiff, fish_void_eel",
-	  "{{spacechase0.JsonAssets/ObjectId:King Salmon}}": "color_white, color_gray, fish_river, fish_talk_stiff, fish_king_salmon",
-	  "{{spacechase0.JsonAssets/ObjectId:Frog}}": "color_green, fish_frog",
-	  "{{spacechase0.JsonAssets/ObjectId:Razor Trout}}": "color_blue, fish_talk_stiff, fish_razor_trout, fish_carnivorous",
+	 "Entries": {  
+	  "Butterfish": "color_yellow, fish_river, fish_talk_stiff, fish_butterfish",
+	  "Puppyfish": "color_brown, fish_river, fish_talk_stiff, fish_puppyfish",
+	  "Minnow": "color_gray, fish_river, fish_minnow",
+	  "Clownfish": "color_orange, fish_ocean, season_summer, fish_clownfish",
+	  "Starfish": "color_red, fish_ocean, fish_upright, fish_starfish",
+	  "Void Eel": "color_black, fish_semi_rare, fish_swamp, season_all, fish_carnivorous, fish_talk_stiff, fish_void_eel",
+	  "King Salmon": "color_white, fish_river, fish_talk_stiff, fish_king_salmon",
+	  "Frog": "color_green, fish_river",
+	  "Razor Trout": "color_blue, fish_talk_stiff, fish_razor_trout, fish_carnivorous",
 	  "{{spacechase0.JsonAssets/ObjectId:Void Shard}}": "color_black",
 	  "{{spacechase0.JsonAssets/ObjectId:Void Pebble}}": "color_black",
-	  "{{spacechase0.JsonAssets/ObjectId:Rusty Sword}}": "color_brown",
+	  "{{spacechase0.JsonAssets/ObjectId:Rusty Blade}}": "color_brown",
 	  "{{spacechase0.JsonAssets/ObjectId:Hero Elixir}}": "color_red, potion_item",
 	  "{{spacechase0.JsonAssets/ObjectId:Haste Elixir}}": "color_blue, potion_item",
 	  "{{spacechase0.JsonAssets/ObjectId:Armor Elixir}}": "color_green, potion_item",
@@ -643,20 +642,17 @@
 	}
 },
   
-    //Fish and Artifact location data
+  
+ //Fish and Artifact location data
 {
   "Action": "EditData",
   "Target": "Data/Locations",
   "Entries": {
-  "Town": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 137 -1 132 -1 143 -1 145 -1 153 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 138 -1 132 -1 144 -1 145 -1 153 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 139 -1 137 -1 132 -1 140 -1 143 -1 153 -1 706 -1 699 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 707 -1 699 -1/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
+  
   "ForestWest": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:King Salmon}} -1 145 -1 143 -1 132 -1 136 -1 144 -1 704 -1/{{spacechase0.JsonAssets/ObjectId:King Salmon}} -1 {{spacechase0.JsonAssets/ObjectId:Butterfish}} -1 {{spacechase0.JsonAssets/ObjectId:Puppyfish}} -1 704 -1 138 -1 143 -1 132 -1 136 -1/140 -1 704 -1 139 -1 143 -1 699 -1 132 -1 136 -1/707 -1 144 -1 136 -1 132 -1/109 1 120 .4 121 .3 119 .4 115 .3 114 .15 581 .3 582 .3 583 .3",      
   "Farm": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 145 -1 143 -1 153 -1 137 -1 706 -1 132 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 138 -1 145 -1 153 -1 144 -1 706 -1 132 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 139 -1 699 -1 143 -1 153 -1 137 -1 706 -1 140 -1 132 -1/699 -1 153 -1 707 -1 141 -1 144 -1 132 -1/382 .35 770 .2 390 .75 330 1",
   "Summit": "-1/-1/-1/-1/-1/-1/-1/-1/109 1 120 .3 121 .3 119 .3 115 .3 114 .2 581 .2 582 .1 583 .3",
-  "Forest": "16 .9 22 .9/396 .6 402 .9/404 .9 410 .9/418 .9 414 .9 283 .5/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 153 -1 145 0 143 0 137 1 132 0 706 0 702 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 153 -1 145 0 144 -1 138 0 132 0 706 0 704 0 702 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 143 0 153 -1 140 -1 139 0 137 1 132 0 706 0 702 0 699 0 269 1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 699 0 143 0 153 -1 144 -1 141 -1 140 -1 132 0 707 0 702 0 269 1/378 .08 579 .1 588 .1 102 .15 390 .25 330 1",
-  "Mountain": "20 .7 16 .5/396 .5 398 .8/404 .4 406 .4 408 .9/414 .85 418 .9 283 .5/{{spacechase0.JsonAssets/ObjectId:Frog}} -1 {{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 142 -1 153 -1 702 -1 700 -1 163 -1/{{spacechase0.JsonAssets/ObjectId:Frog}} -1 {{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 142 -1 153 -1 138 -1 702 -1 700 -1 698 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 140 -1 142 -1 153 -1 702 -1 700 -1 269 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 140 -1 141 -1 153 -1 707 -1 702 -1 700 -1 698 -1 269 -1/382 .06 581 .1 378 .1 102 .15 390 .25 330 1",
   "TownEast": "-1/-1/-1/-1/-1/-1/-1/-1/100 .4 101 .3 103 .2 105 .31 106 1 107 .55 114 .21",
-  "BugLand": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 796 -1 142 -1 153 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 796 -1 142 -1 153 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 796 -1 142 -1 153 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 796 -1 142 -1 153 -1 157 -1/-1",
-  "WitchSwamp": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 795 -1 153 -1 143 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 795 -1 153 -1 143 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 795 -1 153 -1 143 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 795 -1 153 -1 143 -1 157 -1/-1",
   "SpriteSpring": "-1/-1/-1/-1/-1/-1/-1/-1/109 .3 120 1 121 .4 119 .3 115 .4 114 .3",
   "GrampletonFields": "-1/-1/-1/-1/-1/-1/-1/-1/109 1 120 .4 121 .31 119 .21 115 .32 114 .25",
   "DeepCave": "-1/-1/-1/-1/156 -1 158 -1/156 -1 158 -1/156 -1 158 -1/156 -1 158 -1/-1",
@@ -672,6 +668,11 @@
   "Target": "Data/Locations",
   "When": { "HasMod |contains=MoreFish": false },
   "Entries": {
+  "Town": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 137 -1 132 -1 143 -1 145 -1 153 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 138 -1 132 -1 144 -1 145 -1 153 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 139 -1 137 -1 132 -1 140 -1 143 -1 153 -1 706 -1 699 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 707 -1 699 -1/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
+  "BugLand": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 796 -1 142 -1 153 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 796 -1 142 -1 153 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 796 -1 142 -1 153 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 796 -1 142 -1 153 -1 157 -1/-1",
+  "Forest": "16 .9 22 .9/396 .6 402 .9/404 .9 410 .9/418 .9 414 .9 283 .5/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 153 -1 145 0 143 0 137 1 132 0 706 0 702 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 153 -1 145 0 144 -1 138 0 132 0 706 0 704 0 702 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 143 0 153 -1 140 -1 139 0 137 1 132 0 706 0 702 0 699 0 269 1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 699 0 143 0 153 -1 144 -1 141 -1 140 -1 132 0 707 0 702 0 269 1/378 .08 579 .1 588 .1 102 .15 390 .25 330 1",
+  "Mountain": "20 .7 16 .5/396 .5 398 .8/404 .4 406 .4 408 .9/414 .85 418 .9 283 .5/{{spacechase0.JsonAssets/ObjectId:Frog}} -1 {{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 142 -1 153 -1 702 -1 700 -1 163 -1/{{spacechase0.JsonAssets/ObjectId:Frog}} -1 {{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 142 -1 153 -1 138 -1 702 -1 700 -1 698 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 140 -1 142 -1 153 -1 702 -1 700 -1 269 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 140 -1 141 -1 153 -1 707 -1 702 -1 700 -1 698 -1 269 -1/382 .06 581 .1 378 .1 102 .15 390 .25 330 1",
+  "WitchSwamp": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 795 -1 153 -1 143 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 795 -1 153 -1 143 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 795 -1 153 -1 143 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 795 -1 153 -1 143 -1 157 -1/-1",
   "Beach": "372 .9 718 .1 719 .3 723 .3/372 .9 394 .5 718 .1 719 .3 723 .3/372 .9 718 .1 719 .3 723 .3/372 .4 392 .8 718 .05 719 .2 723 .2/{{spacechase0.JsonAssets/ObjectId:Starfish}} -1 267 -1 129 -1 131 -1 147 -1 148 -1 152 -1 708 -1/267 -1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} -1 {{spacechase0.JsonAssets/ObjectId:Starfish}} -1 128 -1 130 -1 146 -1 149 -1 150 -1 152 -1 155 -1 708 -1 701 -1/{{spacechase0.JsonAssets/ObjectId:Starfish}} -1 129 -1 131 -1 148 -1 150 -1 152 -1 154 -1 155 -1 705 -1 701 -1/708 -1 130 -1 131 -1 146 -1 147 -1 150 -1 151 -1 152 -1 154 -1 705 -1/384 .08 589 .09 102 .15 390 .25 330 1",
   "IslandSouth": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Starfish}} -1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} -1 155 -1 130 -1 128 -1 267 -1 837 -1/{{spacechase0.JsonAssets/ObjectId:Starfish}} -1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} -1 155 -1 130 -1 128 -1 267 -1 837 -1/{{spacechase0.JsonAssets/ObjectId:Starfish}} -1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} -1 155 -1 130 -1 128 -1 267 -1 837 -1/{{spacechase0.JsonAssets/ObjectId:Starfish}} -1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} -1 155 -1 130 -1 128 -1 267 -1 837 -1/791 .05 292 .05 774 .1 749 1",
   "IslandWest": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Starfish}} 1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} 1 149 1 155 1 130 1 128 1 267 1 837 1 701 2 838 2 269 2/{{spacechase0.JsonAssets/ObjectId:Starfish}} 1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} 1 149 1 155 1 130 1 128 1 267 1 837 1 701 2 838 2 269 2/{{spacechase0.JsonAssets/ObjectId:Starfish}} 1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} 1 149 1 155 1 130 1 128 1 267 1 837 1 701 2 838 2 269 2/{{spacechase0.JsonAssets/ObjectId:Starfish}} 1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} 1 149 1 155 1 130 1 128 1 267 1 837 1 701 2 838 2 269 2/791 .05 292 .05 774 .1 749 1",
@@ -693,12 +694,12 @@
   "Action": "EditData",
   "Target": "Data/Locations",
   "Entries": {
-  "Town": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Razor Trout}} -1 137 -1 132 -1 143 -1 145 -1 153 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Razor Trout}} -1 138 -1 132 -1 144 -1 145 -1 153 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Razor Trout}} -1 139 -1 137 -1 132 -1 140 -1 143 -1 153 -1 706 -1 699 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Razor Trout}} -1 132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 707 -1 699 -1/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
+ "Town": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Razor Trout}} -1 137 -1 132 -1 143 -1 145 -1 153 -1 706 -1 1073 -1 1086 -1 1088 -1 1092 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Razor Trout}} -1 138 -1 132 -1 144 -1 145 -1 153 -1 706 -1 701 -1 1073 -1 1086 -1 1092 -1 1063 -1 1087 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Razor Trout}} -1 139 -1 137 -1 132 -1 140 -1 143 -1 153 -1 706 -1 699 -1 701 -1 1086 -1 1092 -1 1087 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Razor Trout}} -1 132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 707 -1 699 -1 1089 -1/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
   "ShearwaterBridge": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Razor Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Butterfish}} -1 {{spacechase0.JsonAssets/ObjectId:Puppyfish}} -1 143 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Puppyfish}} -1 {{spacechase0.JsonAssets/ObjectId:Butterfish}} -1 138 -1 144 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Butterfish}} -1 {{spacechase0.JsonAssets/ObjectId:Puppyfish}} -1 139 -1 699 -1 143 -1 706 -1 140 -1 269 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 699 -1 153 -1 707 -1 141 -1 144 -1 132 -1 269 -1/100 1 101 .31 103 .8 105 .7 106 .1 107 .65 114 .1",
 	  },
   "When": { "HasMod":"MoreFish", "HasSeenEvent": "5553210" } //patches Razor Trout
-},
-
+}, 
+  
         //FISH DATA
 
 {
@@ -764,48 +765,46 @@
 
 
 	 //FISH POND DATA
-	 
+	  
 {    //BUTTERFISH
 	"Action": "EditData",
 	"Target": "Data/FishPondData",
 	"Entries": { 
-	"fish_butterfish": {
-	"RequiredTags": [ "fish_butterfish" ],
+	"Butterfish": {
+	"RequiredTags": [ "item_butterfish" ],
 	"SpawnTime": -1,
 	"ProducedItems": [
 	{
 	"RequiredPopulation": 10,	
-	"Chance": 0.40,
-	"ItemID": 729,
-	"MinQuantity": 2,
-	"MaxQuantity": 4
+	"Chance": 0.15,
+	"ItemID": "{{spacechase0.JsonAssets/ObjectId:Glazed Butterfish}}",
+	"MinQuantity": 1,
+	"MaxQuantity": 3
 	},
 	{
 	"RequiredPopulation": 6,
-	"Chance": 0.45,
+	"Chance": 0.20,
 	"ItemID": 214,
-	"MinQuantity": 2,
+	"MinQuantity": 1,
 	"MaxQuantity": 2
 	},
 	{
 	"RequiredPopulation": 3,
-	"Chance": 0.50,
-	"ItemID": 214,
+	"Chance": 0.30,
+	"ItemID": 198,
 	"MinQuantity": 1,
-	"MaxQuantity": 1
+	"MaxQuantity": 2
 	},
 	{
 	"RequiredPopulation": 0,
-	"Chance": 0.70,
-	"ItemID": 774,
+	"Chance": 1.0,
+	"ItemID": 812,
 	"MinQuantity": 1,
-	"MaxQuantity": 3
+	"MaxQuantity": 1
 	}
   ],
 	"PopulationGates": {
-	"2": [ "340 2" ],
-	"4": [ "724 4" ],
-	"8": [ "724 6" ],
+	"6": [ "340 5" ]
 	  },
    },
  },
@@ -815,37 +814,37 @@
 	"Action": "EditData",
 	"Target": "Data/FishPondData",
 	"Entries": { 
-	"fish_puppyfish": {
-	"RequiredTags": [ "fish_puppyfish" ],
+	"Puppyfish": {
+	"RequiredTags": [ "item_puppyfish" ],
 	"SpawnTime": -1,
 	"ProducedItems": [
 	{
 	"RequiredPopulation": 10,	
-	"Chance": 0.50,
+	"Chance": 0.15,
 	"ItemID": 709,
-	"MinQuantity": 10,
-	"MaxQuantity": 25
+	"MinQuantity": 5,
+	"MaxQuantity": 20
 	},
 	{
 	"RequiredPopulation": 6,
-	"Chance": 0.50,
+	"Chance": 0.20,
 	"ItemID": 30,
-	"MinQuantity": 40,
-	"MaxQuantity": 60
+	"MinQuantity": 20,
+	"MaxQuantity": 40
 	},
 	{
 	"RequiredPopulation": 3,
-	"Chance": 0.80,
-	"ItemID": 294,
-	"MinQuantity": 10,
-	"MaxQuantity": 25
+	"Chance": 0.40,
+	"ItemID": 580,
+	"MinQuantity": 1,
+	"MaxQuantity": 7
 	},
 	{
 	"RequiredPopulation": 0,
-	"Chance": 0.90,
-	"ItemID": 172,
-	"MinQuantity": 2,
-	"MaxQuantity": 6
+	"Chance": 1.00,
+	"ItemID": 812,
+	"MinQuantity": 1,
+	"MaxQuantity": 1
 	}
   ],
 	"PopulationGates": {
@@ -861,43 +860,35 @@
 	"Action": "EditData",
 	"Target": "Data/FishPondData",
 	"Entries": { 
-	"fish_razor_fish": {
-	"RequiredTags": [ "fish_razor_fish" ],
+	"Razor Trout": {
+	"RequiredTags": [ "item_razor_trout" ],
 	"SpawnTime": -1,
 	"ProducedItems": [
 	{
 	"RequiredPopulation": 10,	
-	"Chance": 0.50,
-	"ItemID": 709,
-	"MinQuantity": 10,
-	"MaxQuantity": 25
+	"Chance": 0.20,
+	"ItemID": 288,
+	"MinQuantity": 1,
+	"MaxQuantity": 5
 	},
 	{
 	"RequiredPopulation": 6,
-	"Chance": 0.50,
-	"ItemID": 30,
-	"MinQuantity": 40,
-	"MaxQuantity": 60
-	},
-	{
-	"RequiredPopulation": 3,
-	"Chance": 0.80,
-	"ItemID": 294,
-	"MinQuantity": 10,
-	"MaxQuantity": 25
+	"Chance": 0.20,
+	"ItemID": 287,
+	"MinQuantity": 1,
+	"MaxQuantity": 5
 	},
 	{
 	"RequiredPopulation": 0,
-	"Chance": 0.90,
-	"ItemID": 172,
-	"MinQuantity": 2,
-	"MaxQuantity": 6
+	"Chance": 1.0,
+	"ItemID": 812,
+	"MinQuantity": 1,
+	"MaxQuantity": 2
 	}
   ],
 	"PopulationGates": {
-	"2": [ "774 5" ],
-	"4": [ "774 10" ],
-	"8": [ "774 20" ],
+
+	"6": [ "167 100" ],
 	  },
    },
  },
@@ -907,42 +898,42 @@
 	"Action": "EditData",
 	"Target": "Data/FishPondData",
 	"Entries": { 
-	"fish_clownfish": {
-	"RequiredTags": [ "fish_clownfish" ],
+	"Clownfish": {
+	"RequiredTags": [ "item_clownfish" ],
 	"SpawnTime": -1,
 	"ProducedItems": [
 	{
 	"RequiredPopulation": 10,	
-	"Chance": 0.80,
+	"Chance": 0.20,
 	"ItemID": 394,
-	"MinQuantity": 1,
-	"MaxQuantity": 3
-	},
-	{
-	"RequiredPopulation": 5,
-	"Chance": 0.70,
-	"ItemID": 397,
-	"MinQuantity": 1,
-	"MaxQuantity": 3
-	},
-	{
-	"RequiredPopulation": 3,
-	"Chance": 0.60,
-	"ItemID": 393,
 	"MinQuantity": 1,
 	"MaxQuantity": 2
 	},
 	{
-	"RequiredPopulation": 0,
-	"Chance": 0.50,
-	"ItemID": 393,
+	"RequiredPopulation": 5,
+	"Chance": 0.30,
+	"ItemID": 397,
 	"MinQuantity": 1,
-	"MaxQuantity": 1
+	"MaxQuantity": 5
+	},
+	{
+	"RequiredPopulation": 3,
+	"Chance": 0.40,
+	"ItemID": 393,
+	"MinQuantity": 2,
+	"MaxQuantity": 5
+	},
+	{
+	"RequiredPopulation": 0,
+	"Chance": 1.0,
+	"ItemID": 812,
+	"MinQuantity": 1,
+	"MaxQuantity": 2
 	}
   ],
 	"PopulationGates": {
-	"2": [ "393 2" ],
-	"8": [ "393 3", "774 3", "397 1" ],
+	"2": [ "393 3" ],
+	"6": [ "393 6" ],
 	  },
    },
  },
@@ -952,8 +943,8 @@
 	"Action": "EditData",
 	"Target": "Data/FishPondData",
 	"Entries": { 
-	"fish_minnow": {
-	"RequiredTags": [ "fish_minnow" ],
+	"Minnow": {
+	"RequiredTags": [ "item_minnow" ],
 	"SpawnTime": -1,
 	"ProducedItems": [
 	{
@@ -972,10 +963,10 @@
 	},
 	{
 	"RequiredPopulation": 0,
-	"Chance": 0.50,
-	"ItemID": 774,
+	"Chance": 1.0,
+	"ItemID": 812,
 	"MinQuantity": 1,
-	"MaxQuantity": 1
+	"MaxQuantity": 3
 	}
   ],
 	"PopulationGates": {
@@ -990,27 +981,27 @@
 	"Action": "EditData",
 	"Target": "Data/FishPondData",
 	"Entries": { 
-	"fish_starfish": {
-	"RequiredTags": [ "fish_starfish" ],
+	"Starfish": {
+	"RequiredTags": [ "item_starfish" ],
 	"SpawnTime": -1,
 	"ProducedItems": [
 	{
 	"RequiredPopulation": 10,	
-	"Chance": 0.75,
+	"Chance": 0.65,
 	"ItemID": 116,
 	"MinQuantity": 4,
 	"MaxQuantity": 10
 	},
 	{
 	"RequiredPopulation": 5,
-	"Chance": 0.43,
+	"Chance": 0.33,
 	"ItemID": 116,
 	"MinQuantity": 2,
 	"MaxQuantity": 5
 	},
 	{
 	"RequiredPopulation": 0,
-	"Chance": 0.33,
+	"Chance": 0.23,
 	"ItemID": 116,
 	"MinQuantity": 1,
 	"MaxQuantity": 3
@@ -1029,36 +1020,43 @@
 	"Action": "EditData",
 	"Target": "Data/FishPondData",
 	"Entries": { 
-	"fish_void_eel": {
-	"RequiredTags": [ "fish_void_eel" ],
+	"Void Eel": {
+	"RequiredTags": [ "item_void_eel" ],
 	"SpawnTime": -1,
 	"ProducedItems": [
 	{
 	"RequiredPopulation": 10,	
-	"Chance": 0.65,
-	"ItemID": 305,
-	"MinQuantity": 3,
-	"MaxQuantity": 10
+	"Chance": 0.01,
+	"ItemID": "{{spacechase0.JsonAssets/ObjectId:Void Shard}}",
+	"MinQuantity": 1,
+	"MaxQuantity": 1
+	},
+	{
+	"RequiredPopulation": 7,	
+	"Chance": 0.04,
+	"ItemID": "{{spacechase0.JsonAssets/ObjectId:Void Pebble}}",
+	"MinQuantity": 1,
+	"MaxQuantity": 1
 	},
 	{
 	"RequiredPopulation": 5,
-	"Chance": 0.66,
-	"ItemID": 769,
-	"MinQuantity": 15,
-	"MaxQuantity": 45
+	"Chance": 0.2,
+	"ItemID": 305,
+	"MinQuantity": 1,
+	"MaxQuantity": 4
 	},
 	{
 	"RequiredPopulation": 0,
-	"Chance": 0.66,
+	"Chance": 0.90,
 	"ItemID": 769,
 	"MinQuantity": 1,
-	"MaxQuantity": 15
+	"MaxQuantity": 20
 	}
   ],
 	"PopulationGates": {
-	"2": [ "767 10", "769 20" ],
-	"4": [ "768 20", "769 50"],
-	"8": [ "769 20", "{{spacechase0.JsonAssets/ObjectId:Void Pebble}}" ],
+	"2": [ "767 5", "769 15" ],
+	"7": [ "768 20", "769 50"],
+	"10": [ "{{spacechase0.JsonAssets/ObjectId:Void Pebble}} 1" ],
 	  },
    },
  },
@@ -1068,35 +1066,35 @@
 	"Action": "EditData",
 	"Target": "Data/FishPondData",
 	"Entries": { 
-	"fish_king_salmon": {
-	"RequiredTags": [ "fish_king_salmon" ],
+	"King Salmon": {
+	"RequiredTags": [ "item_king_salmon" ],
 	"SpawnTime": -1,
 	"ProducedItems": [
 	{
 	"RequiredPopulation": 10,	
-	"Chance": 0.63,
-	"ItemID": 774,
+	"Chance": 0.04,
+	"ItemID": 749,
 	"MinQuantity": 1,
+	"MaxQuantity": 4
+	},
+	{
+	"RequiredPopulation": 6,
+	"Chance": 0.02,
+	"ItemID": 749,
+	"MinQuantity": 6,
 	"MaxQuantity": 6
 	},
 	{
-	"RequiredPopulation": 3,
-	"Chance": 0.50,
-	"ItemID": 774,
-	"MinQuantity": 1,
-	"MaxQuantity": 3
-	},
-	{
 	"RequiredPopulation": 0,
-	"Chance": 0.50,
-	"ItemID": 774,
+	"Chance": 1.0,
+	"ItemID": 812,
 	"MinQuantity": 1,
 	"MaxQuantity": 1
 	}
   ],
 	"PopulationGates": {
-	"2": [ "685 40" ],
-	"8": [ "685 80", "153 8" ],
+	"6": [ "296 30", "153 20" ],
+	"10": [ "410 20", "296 20", "72 3" ],
 	  },
    },
  },
@@ -1106,35 +1104,35 @@
 	"Action": "EditData",
 	"Target": "Data/FishPondData",
 	"Entries": { 
-	"fish_frog": {
-	"RequiredTags": [ "fish_frog" ],
+	"Frog": {
+	"RequiredTags": [ "item_frog" ],
 	"SpawnTime": -1,
 	"ProducedItems": [
 	{
 	"RequiredPopulation": 10,	
-	"Chance": 0.63,
-	"ItemID": 774,
+	"Chance": 0.01,
+	"ItemID": 680,
 	"MinQuantity": 1,
-	"MaxQuantity": 6
+	"MaxQuantity": 1
 	},
 	{
-	"RequiredPopulation": 3,
-	"Chance": 0.50,
-	"ItemID": 774,
-	"MinQuantity": 1,
-	"MaxQuantity": 3
+	"RequiredPopulation": 6,
+	"Chance": 0.20,
+	"ItemID": 766,
+	"MinQuantity": 10,
+	"MaxQuantity": 20
 	},
 	{
 	"RequiredPopulation": 0,
-	"Chance": 0.50,
-	"ItemID": 774,
+	"Chance": 1.00,
+	"ItemID": 812,
 	"MinQuantity": 1,
 	"MaxQuantity": 1
 	}
   ],
 	"PopulationGates": {
-	"2": [ "685 40" ],
-	"8": [ "685 80", "153 8" ],
+	"6": [ "684 10" ],
+	"10": [ "684 25", "774 10" ],
 	  },
    },
  },
@@ -1144,14 +1142,14 @@
 	"Action": "EditData",
 	"Target": "Data/FishPondData",
 	"MoveEntries": [
-    { "ID": "fish_butterfish", "ToPosition": "Top" },
-	{ "ID": "fish_puppyfish", "AfterID": "fish_butterfish" },
-	{ "ID": "fish_clownfish", "AfterID": "fish_puppyfish" },
-	{ "ID": "fish_minnow", "AfterID": "fish_clownfish" },
-	{ "ID": "fish_starfish", "AfterID": "fish_minnow" },
-	{ "ID": "fish_void_eel", "AfterID": "fish_starfish" },
-	{ "ID": "fish_king_salmon", "AfterID": "fish_void_eel" },
-	{ "ID": "fish_frog", "AfterID": "fish_king_salmon" }
+    { "ID": "item_butterfish", "ToPosition": "Top" },
+	{ "ID": "item_puppyfish", "AfterID": "item_butterfish" },
+	{ "ID": "item_clownfish", "AfterID": "item_puppyfish" },
+	{ "ID": "item_minnow", "AfterID": "item_clownfish" },
+	{ "ID": "item_starfish", "AfterID": "item_minnow" },
+	{ "ID": "item_void_eel", "AfterID": "item_starfish" },
+	{ "ID": "item_king_salmon", "AfterID": "item_void_eel" },
+	{ "ID": "item_frog", "AfterID": "item_king_salmon" }
   ]
 },
 
@@ -1693,7 +1691,78 @@
   }
  }
 },
-		
+
+
+/*
+{
+    "Action": "EditData",
+    "Target": "Data/Events/BlueMoonVineyard",
+    "Entries": {
+    "0505050/f Sophia 1500": "continue/-500 -500/farmer -100 -100 2 Sophia -101 -101 2/pause 1000/speak Sophia \"Test.$1\"/pause 500/end",
+	}
+},
+
+{
+  "Action": "EditData",
+  "Target": "Data/SpecialOrders",
+  //"When": { "HasSeenEvent": "50505050", },
+  "Entries": {
+  "Sophia": {
+    "Name": "Test1",
+    "Requester": "Sophia",
+    "Duration": "Week",
+    "Repeatable": "False",
+    "RequiredTags": "",
+    "OrderType": "",
+    "SpecialRule": "",
+    "Text": "Test2",
+    "ItemToRemoveOnEnd": null,
+    "MailToRemoveOnEnd": null,
+    "RandomizedElements": null,
+    "Objectives": [
+      {
+        "Type": "Collect",
+        "Text": "Test3",
+        "RequiredCount": "30",
+        "Data": {
+          "AcceptedContextTags": "item_Cloth"
+        }
+      },
+      {
+        "Type": "Donate",
+        "Text": "Test4",
+        "RequiredCount": "30",
+        "Data": {
+          "DropBox": "SophiaCloth",
+          "DropBoxGameLocation": "BlueMoonVineyard",
+          "DropBoxIndicatorLocation": "23.5 16",
+          "AcceptedContextTags": "item_Cloth"
+        }
+      }
+    ],
+    "Rewards": [
+      {
+        "Type": "Money",
+        "Data": {
+          "Amount": "2000"
+        }
+      },
+     {
+        "Type": "Mail",
+        "Data": {
+          "MailReceived": "robinDeluxeBed"
+        }
+      },
+      {
+        "Type": "Friendship",
+        "Data": {}
+      }
+    ]
+  },
+ }
+},
+*/
+
 
 {    //ADD MAIL
    "Action": "EditData",
@@ -2521,7 +2590,7 @@
 	 "Target": "Maps/ShearwaterBridge",
 	 "FromFile": "Assets/Maps/MapPatches/ShearwaterBridge_Leaves.tbin",
 	 "When": { "Season": "Fall", "SeasonalEdits": true },
-	 "ToArea": { "X": 0, "Y": 0, "Width": 80, "Height": 40 }
+	 "ToArea": { "X": 0, "Y": 0, "Width": 60, "Height": 40 }
 },
 {
      "Action": "EditMap",
@@ -2730,6 +2799,7 @@
 	 "When": { "HasMod": "flashshifter.GrampletonFieldsTMX", "HasMod |contains=LemurKat.EastScarpe.CP": false },
      "ToArea": { "X": 4, "Y": 17, "Width": 1, "Height": 2 }
 },
+
 {    //Patches Grampleton Fields sign - East Scarpe installed
      "Action": "EditMap",
      "Target": "Maps/ShearwaterBridge",
@@ -2744,6 +2814,15 @@
      "FromFile": "Assets/Maps/MapPatches/WizardBasement_GrampletonFields.tbin",
 	 "When": { "HasMod": "flashshifter.GrampletonFieldsTMX" },
      "ToArea": { "X": 20, "Y": 18, "Width": 1, "Height": 1 }
+},
+
+{    //Removes warping ability until players see wizard basement event
+     "Action": "EditMap",
+     "Target": "Maps/GrampletonFields",
+     "FromFile": "Assets/Maps/MapPatches/GrampletonFields_NoWarp.tbin",
+	 "When": { "HasMod": "flashshifter.GrampletonFieldsTMX", "HasSeenevent |contains=1000035": false },
+     "ToArea": { "X": 154, "Y": 30, "Width": 1, "Height": 1 },
+	 "Update": "OnLocationChange"
 },
 
 {    //Patches Grampleton Fields railroad tracks warp
@@ -2769,20 +2848,14 @@
 	 "When": { "HasMod": "flashshifter.GrampletonFieldsTMX", "HasFlag |contains=landslideDone": false },
      "ToArea": { "X": 86, "Y": 8, "Width": 1, "Height": 1 }
 },
-
+/*
 {    //Patches Grampleton Fields mine cart warp to East Scarpe
      "Action": "EditMap",
      "Target": "Maps/GrampletonFields",
      "FromFile": "Assets/Maps/MapPatches/GrampletonFields_MineCart_EastScarpe.tbin",
 	 "When": { "HasMod": "flashshifter.GrampletonFieldsTMX", "HasMod": "LemurKat.EastScarpe.CP" },
      "ToArea": { "X": 0, "Y": 110, "Width": 7, "Height": 4 }
-},
-
-
-
-
-
-
+},*/
 
 {    //Fixes glitched shadows for the Joja Theater
      "Action": "EditMap",
@@ -11114,7 +11187,7 @@
 	"Target": "data/events/town",
 	"When": { "HasSeenEvent": "3219872", "HasSeenEvent |contains=191393": false, "HasFlag |contains=ccMovieTheater": false },
 	"Entries": { 
-    "3219873/e 3219871/f Claire 1500/w sunny/t 1100 1500": "springtown/-500 -500/farmer -100 -100 1 Claire -200 -200 2 Caroline -101 -101 2 Lewis 30 56 2 Sam 32 64 3 Sebastian 30 64 1 Pierre 46 48 0 Abigail 31 65 0 Alex 53 69 0 Haley 54 69 0 Evelyn 62 57 0 Olivia 43 60 1 Emily 44 59 2 Robin 47 57 2 Marnie 47 59 0 Jodi 45 60 3/addTemporaryActor ClaireJoja 16 32 38 58 2/showFrame ClaireJoja 35/positionOffset Emily -20 15/positionOffset Olivia -20 15/positionOffset Jodi -20 15/positionOffset Marnie -15 0/positionOffset Robin -11 -5/pause 800/skippable/viewport 43 59 true/pause 1750/shake Olivia 500/pause 300/speak Olivia \"Did Caroline forget about aerobics class today?...$2\"/pause 800/shake Jodi 500/pause 300/speak Jodi \"Maybe she got caught up with gardening in her greenhouse.$0\"/pause 1000/playSound doorClose/warp Caroline 44 57/pause 225/faceDirection Robin 3 true/pause 220/faceDirection Marnie 3 true/pause 100/faceDirection Emily 1 true/pause 130/faceDirection Olivia 0 true/pause 200/faceDirection Emily 0 true/pause 120/faceDirection Jodi 0 true/pause 200/showFrame ClaireJoja 31/pause 300/showFrame ClaireJoja 27/shake Caroline 500/pause 300/speak Caroline \"Sorry about the locked door, ladies!$1#$b#Let's go work up a sweat!$1\"/pause 400/globalFade/viewport -1000 -1000/warp Emily -200 -200/warp Jodi -200 -200/warp Robin -200 -200/warp Marnie -200 -200/warp Olivia -200 -200/warp Caroline -200 -200/playSound doorClose/pause 600/playSound doorClose/pause 500/playSound doorClose/pause 1500/warp ClaireJoja 44 59/warp farmer 32 59/showFrame ClaireJoja 8 true/positionOffset ClaireJoja 10 -15/viewport 43 59 true/move farmer 10 0 1 true/pause 2200/speak Claire \"Aerobics?...$8\"/pause 1250/showFrame ClaireJoja 12 true/pause 500/speak Claire \"Oh. Hello, @.$9\"/pause 800/showFrame ClaireJoja 8/pause 800/speak Claire \"I overheard some ladies in town...$8#$b#There's an aerobics class?$9\"/pause 650/speak Claire \"$q -1 null#It looks like a lot of fun...#$r -1 0 claire_event1#Yeah. They meet up once a week.#$r -1 0 claire_event2#Does it interest you?#$r -1 0 claire_event3#It's really nothing special.\"/pause 1000/showFrame ClaireJoja 12/pause 800/speak Claire \"Your community has so much personality...$9#$b#A very different feeling from my home in the countryside.$11\"/pause 1000/speak Claire \"$q -1 null#There aren't many people out there...#$r -1 0 claire_event4#You should get more involved here.#$r -1 0 claire_event5#Sounds like a peaceful life.\"/pause 650/showFrame ClaireJoja 0/pause 500/showFrame ClaireJoja 34/pause 700/speak Claire \"I... I don't know. I'm just an outsider.$10\"/pause 900/emote farmer 40/pause 300/speak Claire \"Um. Give it a chance?...$8\"/pause 1350/showFrame ClaireJoja 0 true/pause 1000/showFrame ClaireJoja 12 true/pause 1000/speak Claire \"I'll think about it...$9\"/pause 1000/speak Claire \"Well, I'm going to finish reading this screenplay before my break is over.$9#$b#It was a pleasure talking to you.$11\"/pause 500/emote farmer 32/pause 250/faceDirection farmer 2 true/pause 200/faceDirection farmer 3 true/pause 250/move farmer -7 0 3 true/pause 750/globalFade/viewport -1000 -1000 true/halt/warp ClaireJoja 44 59/warp farmer -50 -50/viewport 43 59 true/pause 1750/showFrame ClaireJoja 8 true/pause 1250/shake ClaireJoja 375/pause 1000/move ClaireJoja 0 -2 0/pause 750/warp ClaireJoja -51 -51/playSound doorClose/addConversationTopic claireAerobics/pause 1500/globalFade/viewport -1000 -1000/friendship Claire 50/pause 1000/end dialogue Claire \"I joined the aerobics class! Everyone in there has been really sweet$1#$b#I don't work Tuesdays... so it fits right into my schedule.$5#$e#Marnie mentioned the festivals you have here. They sound like fun!$1\"" 
+    "3219873/e 3219871/f Claire 1500/w sunny/t 1100 1500": "springtown/-500 -500/farmer -100 -100 1 Claire -200 -200 2 Caroline -101 -101 2 Lewis 30 56 2 Sam 32 64 3 Sebastian 30 64 1 Pierre 46 48 0 Abigail 31 65 0 Alex 53 69 0 Haley 54 69 0 Evelyn 62 57 0 Olivia 43 60 1 Emily 44 59 2 Robin 47 57 2 Marnie 47 59 0 Jodi 45 60 3/addTemporaryActor ClaireJoja 16 32 38 58 2/showFrame ClaireJoja 35/positionOffset Emily -20 15/positionOffset Olivia -20 15/positionOffset Jodi -20 15/positionOffset Marnie -15 0/positionOffset Robin -11 -5/pause 800/skippable/viewport 43 59 true/pause 1750/shake Olivia 500/pause 300/speak Olivia \"Did Caroline forget about aerobics class today?...$2\"/pause 800/shake Jodi 500/pause 300/speak Jodi \"Maybe she got caught up with gardening in her greenhouse.$0\"/pause 1000/playSound doorClose/warp Caroline 44 57/pause 225/faceDirection Robin 3 true/pause 220/faceDirection Marnie 3 true/pause 100/faceDirection Emily 1 true/pause 130/faceDirection Olivia 0 true/pause 200/faceDirection Emily 0 true/pause 120/faceDirection Jodi 0 true/pause 200/showFrame ClaireJoja 31/pause 300/showFrame ClaireJoja 27/shake Caroline 500/pause 300/speak Caroline \"Sorry about the locked door, ladies!$1#$b#Let's go work up a sweat!$1\"/pause 400/globalFade/viewport -1000 -1000/warp Emily -200 -200/warp Jodi -200 -200/warp Robin -200 -200/warp Marnie -200 -200/warp Olivia -200 -200/warp Caroline -200 -200/playSound doorClose/pause 600/playSound doorClose/pause 500/playSound doorClose/pause 1500/warp ClaireJoja 44 59/warp farmer 32 59/showFrame ClaireJoja 8 true/positionOffset ClaireJoja 10 -15/viewport 43 59 true/move farmer 10 0 1 true/pause 2200/speak Claire \"Aerobics?...$8\"/pause 1250/showFrame ClaireJoja 12 true/pause 500/speak Claire \"Oh. Hello, @.$9\"/pause 800/showFrame ClaireJoja 8/pause 800/speak Claire \"I overheard some ladies in town...$8#$b#There's an aerobics class?$9\"/pause 650/speak Claire \"$q -1 null#It looks like a lot of fun...#$r -1 0 claire_event1#Yeah. They meet up once a week.#$r -1 0 claire_event2#Does it interest you?#$r -1 0 claire_event3#It's really nothing special.\"/pause 1000/showFrame ClaireJoja 12/pause 800/speak Claire \"Your community has so much personality...$9#$b#A very different feeling from my home in the countryside.$11\"/pause 1000/speak Claire \"$q -1 null#There aren't many people out there...#$r -1 0 claire_event4#You should get more involved here.#$r -1 0 claire_event5#Sounds like a peaceful life.\"/pause 650/showFrame ClaireJoja 0/pause 500/showFrame ClaireJoja 34/pause 700/speak Claire \"I... I don't know. I'm just an outsider.$10\"/pause 900/emote farmer 40/pause 300/speak Claire \"Um. Give it a chance?...$8\"/pause 1350/showFrame ClaireJoja 0 true/pause 1000/showFrame ClaireJoja 12 true/pause 1000/speak Claire \"I'll think about it...$9\"/pause 1000/speak Claire \"Well, I'm going to finish reading this screenplay before my break is over.$9#$b#It was a pleasure talking to you.$11\"/pause 500/emote farmer 32/pause 250/faceDirection farmer 2 true/pause 200/faceDirection farmer 3 true/pause 250/move farmer -7 0 3 true/pause 750/globalFade/viewport -1000 -1000 true/halt/warp ClaireJoja 44 59/warp farmer -50 -50/viewport 43 59 true/pause 1750/showFrame ClaireJoja 8 true/pause 1250/shake ClaireJoja 375/pause 1000/move ClaireJoja 0 -2 0/pause 750/warp ClaireJoja -51 -51/playSound doorClose/addConversationTopic claireAerobics/pause 1500/globalFade/viewport -1000 -1000/friendship Claire 50/pause 1000/end dialogue Claire \"I joined the aerobics class! Everyone in there has been really sweet.$1#$b#I don't work Tuesdays... so it fits right into my schedule.$5#$e#Marnie mentioned the festivals you have here. They sound like fun!$1\"" 
 	},
 },
 
@@ -11123,7 +11196,7 @@
 	"Target": "data/events/town",
 	"When": { "HasSeenEvent": "3219872", "HasFlag":"ccMovieTheater" },
 	"Entries": { 
-    "3219873/e 3219871/e 191393/f Claire 1500/w sunny/t 1100 1500": "springtown/-500 -500/farmer -100 -100 1 Claire -200 -200 2 Caroline -101 -101 2 Lewis 30 56 2 Sam 32 64 3 Sebastian 30 64 1 Pierre 46 48 0 Abigail 31 65 0 Alex 53 69 0 Haley 54 69 0 Evelyn 62 57 0 Olivia 43 60 1 Emily 44 59 2 Robin 47 57 2 Marnie 47 59 0 Jodi 45 60 3/addTemporaryActor ClaireTheater 16 32 38 58 2/showFrame ClaireTheater 35/positionOffset Emily -20 15/positionOffset Olivia -20 15/positionOffset Jodi -20 15/positionOffset Marnie -15 0/positionOffset Robin -11 -5/pause 800/skippable/viewport 43 59 true/pause 1750/shake Olivia 500/pause 300/speak Olivia \"Did Caroline forget about aerobics class today?...$2\"/pause 800/shake Jodi 500/pause 300/speak Jodi \"Maybe she got caught up with gardening in her greenhouse.$0\"/pause 1000/playSound doorClose/warp Caroline 44 57/pause 225/faceDirection Robin 3 true/pause 220/faceDirection Marnie 3 true/pause 100/faceDirection Emily 1 true/pause 130/faceDirection Olivia 0 true/pause 200/faceDirection Emily 0 true/pause 120/faceDirection Jodi 0 true/pause 200/showFrame ClaireTheater 31/pause 300/showFrame ClaireTheater 27/shake Caroline 500/pause 300/speak Caroline \"Sorry about the locked door, ladies!$1#$b#Let's go work up a sweat!$1\"/pause 400/globalFade/viewport -1000 -1000/warp Emily -200 -200/warp Jodi -200 -200/warp Robin -200 -200/warp Marnie -200 -200/warp Olivia -200 -200/warp Caroline -200 -200/playSound doorClose/pause 600/playSound doorClose/pause 500/playSound doorClose/pause 1500/warp ClaireTheater 44 59/warp farmer 32 59/showFrame ClaireTheater 8 true/positionOffset ClaireTheater 10 -15/viewport 43 59 true/move farmer 10 0 1 true/pause 2200/speak Claire \"Aerobics?...$12\"/pause 1250/showFrame ClaireTheater 12 true/pause 500/speak Claire \"Oh. Hello, @.$13\"/pause 800/showFrame ClaireTheater 8/pause 800/speak Claire \"I overheard some ladies in town...$12#$b#There's an aerobics class?$13\"/pause 650/speak Claire \"$q -1 null#It looks like a lot of fun...#$r -1 0 claire_event22#Yeah. They meet up once a week.#$r -1 0 claire_event23#Does it interest you?#$r -1 0 claire_event24#It's really nothing special.\"/pause 1000/showFrame ClaireTheater 12/pause 800/speak Claire \"Your community has so much personality...$13#$b#A very different feeling from my home in the countryside.$15\"/pause 1000/speak Claire \"$q -1 null#There aren't many people out there...#$r -1 0 claire_event25#You should get more involved here.#$r -1 0 claire_event26#Sounds like a peaceful life.\"/pause 650/showFrame ClaireTheater 0/pause 500/showFrame ClaireTheater 34/pause 700/speak Claire \"I... I don't know. I'm just an outsider.$13\"/pause 900/emote farmer 40/pause 300/speak Claire \"Um. Give it a chance?...$12\"/pause 1350/showFrame ClaireTheater 0 true/pause 1000/showFrame ClaireTheater 12 true/pause 1000/speak Claire \"I'll think about it...$13\"/pause 1000/speak Claire \"Well, I'm going to finish reading this screenplay before my break is over.$13#$b#It was a pleasure talking to you.$15\"/pause 500/emote farmer 32/pause 250/faceDirection farmer 2 true/pause 200/faceDirection farmer 3 true/pause 250/move farmer -7 0 3 true/pause 750/globalFade/viewport -1000 -1000 true/halt/warp ClaireTheater 44 59/warp farmer -50 -50/viewport 43 59 true/pause 1750/showFrame ClaireTheater 8 true/pause 1250/shake ClaireTheater 375/pause 1000/move ClaireTheater 0 -2 0/pause 750/warp ClaireTheater -51 -51/playSound doorClose/addConversationTopic claireAerobics/pause 1500/globalFade/viewport -1000 -1000/friendship Claire 50/pause 1000/end dialogue Claire \"I joined the aerobics class! Everyone in there has been really sweet$1#$b#I don't work Tuesdays... so it fits right into my schedule.$5#$e#Marnie mentioned the festivals you have here. They sound like fun!$1\"" 
+    "3219873/e 3219871/e 191393/f Claire 1500/w sunny/t 1100 1500": "springtown/-500 -500/farmer -100 -100 1 Claire -200 -200 2 Caroline -101 -101 2 Lewis 30 56 2 Sam 32 64 3 Sebastian 30 64 1 Pierre 46 48 0 Abigail 31 65 0 Alex 53 69 0 Haley 54 69 0 Evelyn 62 57 0 Olivia 43 60 1 Emily 44 59 2 Robin 47 57 2 Marnie 47 59 0 Jodi 45 60 3/addTemporaryActor ClaireTheater 16 32 38 58 2/showFrame ClaireTheater 35/positionOffset Emily -20 15/positionOffset Olivia -20 15/positionOffset Jodi -20 15/positionOffset Marnie -15 0/positionOffset Robin -11 -5/pause 800/skippable/viewport 43 59 true/pause 1750/shake Olivia 500/pause 300/speak Olivia \"Did Caroline forget about aerobics class today?...$2\"/pause 800/shake Jodi 500/pause 300/speak Jodi \"Maybe she got caught up with gardening in her greenhouse.$0\"/pause 1000/playSound doorClose/warp Caroline 44 57/pause 225/faceDirection Robin 3 true/pause 220/faceDirection Marnie 3 true/pause 100/faceDirection Emily 1 true/pause 130/faceDirection Olivia 0 true/pause 200/faceDirection Emily 0 true/pause 120/faceDirection Jodi 0 true/pause 200/showFrame ClaireTheater 31/pause 300/showFrame ClaireTheater 27/shake Caroline 500/pause 300/speak Caroline \"Sorry about the locked door, ladies!$1#$b#Let's go work up a sweat!$1\"/pause 400/globalFade/viewport -1000 -1000/warp Emily -200 -200/warp Jodi -200 -200/warp Robin -200 -200/warp Marnie -200 -200/warp Olivia -200 -200/warp Caroline -200 -200/playSound doorClose/pause 600/playSound doorClose/pause 500/playSound doorClose/pause 1500/warp ClaireTheater 44 59/warp farmer 32 59/showFrame ClaireTheater 8 true/positionOffset ClaireTheater 10 -15/viewport 43 59 true/move farmer 10 0 1 true/pause 2200/speak Claire \"Aerobics?...$12\"/pause 1250/showFrame ClaireTheater 12 true/pause 500/speak Claire \"Oh. Hello, @.$13\"/pause 800/showFrame ClaireTheater 8/pause 800/speak Claire \"I overheard some ladies in town...$12#$b#There's an aerobics class?$13\"/pause 650/speak Claire \"$q -1 null#It looks like a lot of fun...#$r -1 0 claire_event22#Yeah. They meet up once a week.#$r -1 0 claire_event23#Does it interest you?#$r -1 0 claire_event24#It's really nothing special.\"/pause 1000/showFrame ClaireTheater 12/pause 800/speak Claire \"Your community has so much personality...$13#$b#A very different feeling from my home in the countryside.$15\"/pause 1000/speak Claire \"$q -1 null#There aren't many people out there...#$r -1 0 claire_event25#You should get more involved here.#$r -1 0 claire_event26#Sounds like a peaceful life.\"/pause 650/showFrame ClaireTheater 0/pause 500/showFrame ClaireTheater 34/pause 700/speak Claire \"I... I don't know. I'm just an outsider.$13\"/pause 900/emote farmer 40/pause 300/speak Claire \"Um. Give it a chance?...$12\"/pause 1350/showFrame ClaireTheater 0 true/pause 1000/showFrame ClaireTheater 12 true/pause 1000/speak Claire \"I'll think about it...$13\"/pause 1000/speak Claire \"Well, I'm going to finish reading this screenplay before my break is over.$13#$b#It was a pleasure talking to you.$15\"/pause 500/emote farmer 32/pause 250/faceDirection farmer 2 true/pause 200/faceDirection farmer 3 true/pause 250/move farmer -7 0 3 true/pause 750/globalFade/viewport -1000 -1000 true/halt/warp ClaireTheater 44 59/warp farmer -50 -50/viewport 43 59 true/pause 1750/showFrame ClaireTheater 8 true/pause 1250/shake ClaireTheater 375/pause 1000/move ClaireTheater 0 -2 0/pause 750/warp ClaireTheater -51 -51/playSound doorClose/addConversationTopic claireAerobics/pause 1500/globalFade/viewport -1000 -1000/friendship Claire 50/pause 1000/end dialogue Claire \"I joined the aerobics class! Everyone in there has been really sweet.$1#$b#I don't work Tuesdays... so it fits right into my schedule.$5#$e#Marnie mentioned the festivals you have here. They sound like fun!$1\"" 
 	},
 },
 
@@ -13235,7 +13308,7 @@
     "Target": "Data/Events/farm",
 	"When": { "HasFlag": "ccMovieTheaterJoja" },
     "Entries": {
-    "6665291/f MorrisTod 2500/e 6665290/w sunny/H": "continue/-500 -500/farmer -30 -30 0 Pierre -29 -29 0/skippable/pause 1500/speak Pierre \"Good morning, @.$1\"/pause 1000/speak Pierre \"The Pelican Town mayoral election is being held in a couple days. I understand it's a late notice, but...$0#$b#Until yesterday, no one else was running against Lewis.$2\"/pause 700/emote farmer 8/pause 150/speak Pierre \"Oh, who's running against Lewis?$0#$b#Morris, of course...$2\"/pause 700/speak Pierre \"You should think about who you'll vote for...$0\"/pause 500/end dialogue Lewis \"It's been many years since anyone has contended against my position as Mayor.$0#$e#With what transpired with the community center... *sigh*$2#$b#Morris may be an actual contender...$0\""
+    "6665291/f MorrisTod 2500/e 6665290/w sunny/H": "continue/-500 -500/farmer -30 -30 0 Pierre -29 -29 0/skippable/pause 1500/speak Pierre \"Good morning, @.$1\"/pause 1000/speak Pierre \"The Pelican Town mayoral election is being held in a couple days. I understand it's late notice, but...$0#$b#Until yesterday, no one else was running against Lewis.$2\"/pause 700/emote farmer 8/pause 150/speak Pierre \"Oh, who's running against Lewis now?$0#$b#Morris, of course...$2\"/pause 700/speak Pierre \"You should think carefully about who you'll vote for...$0\"/pause 500/end dialogue Lewis \"It's been many years since anyone has contested against my position as Mayor.$0#$e#After what transpired with the community center... *sigh*$2#$b#Morris may be an actual contender...$0\""
 	},
 },
 
@@ -13243,7 +13316,7 @@
     "Action": "EditData",
     "Target": "Data/Events/town",
     "Entries": {
-    "6665292/e 6665291/w sunny/t 900 1700/H": "none/-500 -500/farmer 28 77 0 Morris 28 67 2 Jodi 25 67 1 Kent 25 68 1 Pam 31 67 3 Andy 30 69 0 Demetrius 27 70 0 Robin 28 70 0 Gus 31 68 3/positionOffset Gus -14 25/positionOffset Robin -3 -4/positionOffset Demetrius 3 4/positionOffset Andy -10 20/positionOffset Pam -8 20/positionOffset Kent 7 10/animate Morris false true 4000 0 4 0 12/pause 750/playMusic springtown/pause 600/skippable/viewport 28 75 true/viewport move 0 -1 5000 true/move farmer 0 -5 0 true/pause 900/speak Morris \"Pelican town's leadership for the past two decades have lead to the decay of the public's health and well-being!$3#$b#Destroyed bridges, a faulty busline, abandoned buildings, mismanaged festivals!$3#$b#With my leadership, Joja has fixed all of these problems!$5\"/pause 500/speak Morris \"If elected Mayor, I promise a new age of infrastructure!$0#$b#Paved lit roads! Public works projects! Electric grids! Next generation transporation!$4#$b#Elect me, Morris Tod, for Mayor! Let's pave a way to greatness here in Stardew Valley!$1\"/pause 1000/shake Andy 400/textAboveHead Andy \"You said it!\"/pause 500/shake Jodi 400/textAboveHead Jodi \"You have my vote!\"/pause 1080/shake Demetrius 300/textAboveHead Demetrius \"Inspiring speech!\"/pause 400/faceDirection Robin 3 true/pause 600/globalFade/viewport -1000 -1000/warp Demetrius -100 -100/warp Robin -100 -100/warp Andy -100 -100/warp Kent 21 73/warp Jodi 23 73/faceDirection Jodi 3 true/warp Pam 33 65/faceDirection Pam 1 true/warp Gus 35 65/stopAnimation Morris/faceDirection Morris 2 true/pause 300/viewport 28 69 true/pause 400/move farmer 0 -3 0 true/pause 650/speak Morris \"Ah, @! I saw you in the crowd during my speech!$0#$b#I've come to realize the only way to truly make change here is to be elected Mayor!$1#$b#I believe the odds are in my favor, if these crowd sizes show any merit!$4\"/pause 700/speak Morris \"Apologies for cutting our conversation short.$0#$b#I must continue on the campaign trail!$1\"/pause 400/end dialogue Morris \"I saw Lewis today. He seemed quite nervous!$1#$e#@, If I win this election, I promise I'll make the valley a place everyone can truly call home.$0\""  
+    "6665292/e 6665291/w sunny/t 900 1700/H": "none/-500 -500/farmer 28 77 0 Morris 28 67 2 Jodi 25 67 1 Kent 25 68 1 Pam 31 67 3 Andy 30 69 0 Demetrius 27 70 0 Robin 28 70 0 Gus 31 68 3/positionOffset Gus -14 25/positionOffset Robin -3 -4/positionOffset Demetrius 3 4/positionOffset Andy -10 20/positionOffset Pam -8 20/positionOffset Kent 7 10/animate Morris false true 4000 0 4 0 12/pause 750/playMusic springtown/pause 600/skippable/viewport 28 75 true/viewport move 0 -1 5000 true/move farmer 0 -5 0 true/pause 900/speak Morris \"Pelican town's leadership for the past two decades has lead to the decay of the public's health and well-being!$3#$b#Destroyed bridges, a faulty bus line, abandoned buildings, mismanaged festivals!$3#$b#Under my leadership, Joja has fixed all of these problems!$5\"/pause 500/speak Morris \"If elected Mayor, I promise a new age of infrastructure!$0#$b#Paved lit roads! Public works projects! Electric grids! Next generation transportation!$4#$b#Elect me, Morris Tod, for Mayor! Let's pave a way to greatness here in Stardew Valley!$1\"/pause 1000/shake Andy 400/textAboveHead Andy \"You said it!\"/pause 500/shake Jodi 400/textAboveHead Jodi \"You have my vote!\"/pause 1080/shake Demetrius 300/textAboveHead Demetrius \"Inspiring speech!\"/pause 400/faceDirection Robin 3 true/pause 600/globalFade/viewport -1000 -1000/warp Demetrius -100 -100/warp Robin -100 -100/warp Andy -100 -100/warp Kent 21 73/warp Jodi 23 73/faceDirection Jodi 3 true/warp Pam 33 65/faceDirection Pam 1 true/warp Gus 35 65/stopAnimation Morris/faceDirection Morris 2 true/pause 300/viewport 28 69 true/pause 400/move farmer 0 -3 0 true/pause 650/speak Morris \"Ah, @! I saw you in the crowd during my speech!$0#$b#I've come to realize the only way to truly make change here is to be elected Mayor!$1#$b#I believe the odds are in my favor, judging by the size of this crowd!$4\"/pause 700/speak Morris \"Apologies for cutting our conversation short.$0#$b#I must continue on the campaign trail!$1\"/pause 400/end dialogue Morris \"I saw Lewis today. He seemed quite nervous!$1#$e#@, If I win this election, I promise I'll make the valley a place everyone can truly call home.$0\""  
 	},
 },
 
@@ -13252,7 +13325,7 @@
     "Target": "data/events/town",
 	"When": { "HasSeenEvent": "6665292" },
     "Entries": {
-    "6665293/w sunny/t 800 1700/H": "none/-200 -200/farmer 29 69 0 Andy 26 68 0 Susan 27 68 0 Pierre 30 68 0 Caroline 31 68 0 Abigail 32 68 0 Gus 25 69 0 Sam 26 69 0 MarlonFay 33 106 2 Linus 28 41 2 Sebastian 94 12 0 Kent 27 69 0 Jodi 28 69 0 Marnie 30 69 0 Leah 32 69 0 Willy 26 70 0 Elliott 27 70 0 Robin 29 70 0 Demetrius 30 70 0 Maru 31 70 0 Pam 24 71 0 Sophia 26 71 0 Victor 27 71 0 Olivia 28 71 0 Emily 29 71 0 Penny 33 71 0 Clint 28 72 0 Alex 31 72 0 Haley 32 72 0 Evelyn 25 73 0 George 26 73 0 Harvey 29 73 0 Shane 32 74 0 Morris 28 64 2 GuntherSilvian 29 65 2 Gunther -100 -100 0 Lewis 30 64 2/broadcastEvent/addConversationTopic election/skippable/addTemporaryActor VotingBooth1 32 64 21 64 2 false/addTemporaryActor VotingBooth2 32 64 24 64 2 false/positionOffset VotingBooth2 32 0/positionOffset Andy -15 -25/positionOffset Susan -13 -20/positionOffset Pierre -10 0/positionOffset Caroline -12 0/positionOffset Abigail -5 -4/positionOffset Willy -16 0/positionOffset Elliott 12 -3/positionOffset Gus -20 -20/positionOffset Robin -13 -10/positionOffset Demetrius -10 0/positionOffset Evelyn -25 -25/positionOffset Pam 20 -30/positionOffset George -25 -23/positionOffset Penny -28 -15/positionOffset Alex -26 -15/positionOffset Haley -20 -20/positionOffset Harvey -6 12/positionOffset Shane -25 -25/positionOffset Jodi 0 -20/pause 750/playMusic sweet/pause 500/viewport 29 75 true/viewport move 0 -1 7000/pause 3500/speak Gunther \"Greetings, everyone! My name is Gunther Silvian. Welcome to the Pelican Town mayoral election!$1#$b#The Voters Committee has tasked me with overseeing this year's election...$5#$b#The two candidates are Lewis and Morris!$5\"/pause 800/faceDirection GuntherSilvian 3 true/pause 500/speak Gunther \"To the left are two voting booths, where you'll all cast your votes! They will be counted once everyone has voted!$1\"/pause 800/faceDirection GuntherSilvian 2 true/pause 500/speak Gunther \"Well then, let the voting commence!$5\"/pause 500/globalFade/viewport -1000 -1000/warp GuntherSilvian 23 64/warp Maru 22 65/warp Gus 22 66/warp Leah 22 67/warp Shane 22 68/warp Abigail 22 69/warp Pam 22 70/warp Penny 22 71/warp Sam 22 72/warp farmer 25 65/warp Elliott 25 66/warp Emily 25 67/warp Clint 25 68/warp Harvey 25 69/warp Willy -100 -100/warp Susan 25 70/warp Andy 25 71/warp Jodi 25 72/warp Kent 25 73/warp Olivia 27 64/warp Sophia 29 72/warp Victor 29 70/faceDirection Victor 2 true/warp George 30 60/faceDirection George 1 true/warp Evelyn 32 60/faceDirection Evelyn 3 true/warp Demetrius 34 65/faceDirection Demetrius 1 true/warp Robin 36 65/faceDirection Robin 3 true/warp Lewis 31 68/faceDirection Lewis 1 true/warp Marnie 32 67/faceDirection Marnie 2 true/warp Pierre 33 68/faceDirection Pierre 3 true/warp Caroline 32 69/warp Alex 35 73/faceDirection Alex 3 true/warp Haley 34 73/faceDirection Haley 1 true/faceDirection Olivia 1 true/warp Morris 29 64/faceDirection Morris 3 true/positionOffset Maru -32 0/positionOffset Gus -32 0/positionOffset Leah -32 0/positionOffset Shane -32 0/positionOffset Abigail -32 0/positionOffset Pam -32 0/positionOffset Penny -32 0/positionOffset Sam -32 0/positionOffset farmer 0 16/positionOffset Sophia -10 -30/positionOffset Victor -8 0/warp Sam 22 70/warp Pam 22 72/positionOffset Pam -32 0/positionOffset Sam -32 0/positionOffset Gus -20 0/positionOffset Leah 12 0/positionOffset Shane -8 0/positionOffset Abigail 5 3/positionOffset Pam -15 0/positionOffset Penny 6 0/positionOffset Sam -7 0/positionOffset Emily 19 0/positionOffset Clint 5 0/positionOffset Harvey -10 0/positionOffset Susan 8 0/positionOffset Andy 20 0/positionOffset Jodi -15 0/positionOffset Kent -5 0/warp Olivia 26 64/warp Haley 28 73/speed Olivia 1/move Olivia 2 0 1 true/move Haley 6 0 1 true/viewport 33 66 true/viewport move -1 0 9000/pause 500/textAboveHead Pierre \"Looks promising, Lewis!\"/shake Pierre 400/pause 500/faceDirection Emily 1 true/pause 500/textAboveHead Haley \"Done voting!\"/pause 500/faceDirection Susan 1 true/pause 200/faceDirection Susan 2 true/pause 400/shake Andy 500/textAboveHead Andy \"This line movin' any faster?\"/pause 400/shake Morris 300/textAboveHead Morris \"Ah, Olivia.\"/pause 500/faceDirection Emily 0 true/pause 750/faceDirection Susan 1 true/pause 200/faceDirection Susan 0 true/pause 1250/globalFade/viewport -1000 -1000/pause 1250/message \"I cast my vote...\"/pause 1000/playSound newRecipe/pause 1400/warp Morris 28 64/faceDirection Morris 2 true/warp Lewis 30 64/faceDirection Lewis 2 true/warp GuntherSilvian 29 65/faceDirection GuntherSilvian 2 true/warp Kent 26 68/warp Jodi 27 68/warp farmer 28 68/warp Marnie 32 68/faceDirection Marnie 0 true/warp Caroline 31 68/faceDirection Pierre 30 68 true/warp Shane 25 69/warp Elliott 26 69/warp Andy 27 69/warp Susan 28 69/warp Pam 29 69/warp Penny 30 69/warp Abigail 31 69/warp Sam 32 69/warp Demetrius 27 70/faceDirection Demetrius 0 true/faceDirection Robin 0 true/warp Robin 28 70/warp Emily 30 70/warp Alex 32 70/warp Haley 33 70/faceDirection Alex 0 true/faceDirection Haley 0 true/faceDirection George 0 true/faceDirection Evelyn 0 true/warp George 25 71/warp Evelyn 26 71/warp Maru 28 71/warp Harvey 29 71/warp Leah 31 71/warp Sophia 27 72/warp Victor 28 73/warp Olivia 29 73/faceDirection Olivia 0 true/faceDirection Victor 0 true/warp Clint 30 72/warp Willy 33 72/warp Gus 32 72/warp Pierre 30 68/faceDirection Pierre 0 true/positionOffset Kent -20 -20/positionOffset Jodi -20 -15/positionOffset Shane -4 20/positionOffset Demetrius -20 0/positionOffset Robin -20 0/positionOffset Victor 25 0/positionOffset Olivia 25 3/positionOffset Gus -12 30/positionOffset Willy 4 15/positionOffset Sam 32 0/positionOffset Sophia 5 -15/positionOffset Pam 0 15/positionOffset Clint 15 -5/viewport 29 67 true/pause 1250/speak Gunther \"Alright everybody. The votes have been counted, and I have the results!...$5\"/pause 500/stopMusic/pause 650/showFrame GuntherSilvian 16/pause 400/showFrame GuntherSilvian 19/playSound newRecipe/shake GuntherSilvian 400/pause 1150/speak Gunther \"The winner is...$5\"/pause 1500/speak Gunther \"Morris!$1\"/playMusic wedding/screenFlash 1/specificTemporarySprite jojaCeremony/pause 250/faceDirection GuntherSilvian 0 true/pause 100/emote Leah 16 true/pause 150/move GuntherSilvian -3 0 2 true/pause 200/showFrame Lewis 18 true/shake Lewis 300/pause 150/faceDirection Maru 1 true/pause 300/faceDirection Harvey 3 true/shake Andy 350/textAboveHead Andy \"Yes!\"/pause 150/emote Caroline 16 true/pause 200/faceDirection Susan 3 true/pause 200/shake Marnie 500/emote Sophia 16 true/pause 250/emote Willy 16 true/pause 100/shake Pierre 500/textAboveHead Pierre \"Wh-what!?\"/pause 350/faceDirection Caroline 3 true/pause 200/speed Morris 1/move Morris 0 1 2/textAboveHead Clint \"Huh?\"/shake Clint 400/speed Morris 1/faceDirection Susan 0 true/move Morris 1 0 2/pause 200/textAboveHead Morris \"*Ahem*\"/pause 350/faceDirection Caroline 0 true/pause 600/faceDirection Maru 0 true/pause 300/faceDirection Harvey 0 true/pause 250/speak Morris \"I'm truly honored! Thank you, citizens of Stardew Valley!$1#$b#I promise to live up to the title of Mayor!$1\"/pause 650/globalFade/viewport -1000 -1000/pause 1500/message \"Big changes are coming to Stardew Valley...\"/pause 1500/end dialogue MorrisTod \"The election went as I expected! I've gained the trust of Pelican Town's citizens.$0#$b#Now, we develop the region! With Joja's resources and my connections, I assure you everyone's lives will benefit!$1\"" 
+    "6665293/w sunny/t 800 1700/H": "none/-200 -200/farmer 29 69 0 Andy 26 68 0 Susan 27 68 0 Pierre 30 68 0 Caroline 31 68 0 Abigail 32 68 0 Gus 25 69 0 Sam 26 69 0 MarlonFay 33 106 2 Linus 28 41 2 Sebastian 94 12 0 Kent 27 69 0 Jodi 28 69 0 Marnie 30 69 0 Leah 32 69 0 Willy 26 70 0 Elliott 27 70 0 Robin 29 70 0 Demetrius 30 70 0 Maru 31 70 0 Pam 24 71 0 Sophia 26 71 0 Victor 27 71 0 Olivia 28 71 0 Emily 29 71 0 Penny 33 71 0 Clint 28 72 0 Alex 31 72 0 Haley 32 72 0 Evelyn 25 73 0 George 26 73 0 Harvey 29 73 0 Shane 32 74 0 Morris 28 64 2 GuntherSilvian 29 65 2 Gunther -100 -100 0 Lewis 30 64 2/broadcastEvent/addConversationTopic election/skippable/addTemporaryActor VotingBooth1 32 64 21 64 2 false/addTemporaryActor VotingBooth2 32 64 24 64 2 false/positionOffset VotingBooth2 32 0/positionOffset Andy -15 -25/positionOffset Susan -13 -20/positionOffset Pierre -10 0/positionOffset Caroline -12 0/positionOffset Abigail -5 -4/positionOffset Willy -16 0/positionOffset Elliott 12 -3/positionOffset Gus -20 -20/positionOffset Robin -13 -10/positionOffset Demetrius -10 0/positionOffset Evelyn -25 -25/positionOffset Pam 20 -30/positionOffset George -25 -23/positionOffset Penny -28 -15/positionOffset Alex -26 -15/positionOffset Haley -20 -20/positionOffset Harvey -6 12/positionOffset Shane -25 -25/positionOffset Jodi 0 -20/pause 750/playMusic sweet/pause 500/viewport 29 75 true/viewport move 0 -1 7000/pause 3500/speak Gunther \"Greetings, everyone! My name is Gunther Silvian. Welcome to the Pelican Town mayoral election!$1#$b#The Voters Committee has tasked me with overseeing this year's election...$5#$b#The two candidates are Lewis and Morris!$5\"/pause 800/faceDirection GuntherSilvian 3 true/pause 500/speak Gunther \"To the left are two voting booths, where you'll all cast your votes! They will be counted once everyone has voted!$1\"/pause 800/faceDirection GuntherSilvian 2 true/pause 500/speak Gunther \"Well then, let the voting commence!$5\"/pause 500/globalFade/viewport -1000 -1000/warp GuntherSilvian 23 64/warp Maru 22 65/warp Gus 22 66/warp Leah 22 67/warp Shane 22 68/warp Abigail 22 69/warp Pam 22 70/warp Penny 22 71/warp Sam 22 72/warp farmer 25 65/warp Elliott 25 66/warp Emily 25 67/warp Clint 25 68/warp Harvey 25 69/warp Willy -100 -100/warp Susan 25 70/warp Andy 25 71/warp Jodi 25 72/warp Kent 25 73/warp Olivia 27 64/warp Sophia 29 72/warp Victor 29 70/faceDirection Victor 2 true/warp George 30 60/faceDirection George 1 true/warp Evelyn 32 60/faceDirection Evelyn 3 true/warp Demetrius 34 65/faceDirection Demetrius 1 true/warp Robin 36 65/faceDirection Robin 3 true/warp Lewis 31 68/faceDirection Lewis 1 true/warp Marnie 32 67/faceDirection Marnie 2 true/warp Pierre 33 68/faceDirection Pierre 3 true/warp Caroline 32 69/warp Alex 35 73/faceDirection Alex 3 true/warp Haley 34 73/faceDirection Haley 1 true/faceDirection Olivia 1 true/warp Morris 29 64/faceDirection Morris 3 true/positionOffset Maru -32 0/positionOffset Gus -32 0/positionOffset Leah -32 0/positionOffset Shane -32 0/positionOffset Abigail -32 0/positionOffset Pam -32 0/positionOffset Penny -32 0/positionOffset Sam -32 0/positionOffset farmer 0 16/positionOffset Sophia -10 -30/positionOffset Victor -8 0/warp Sam 22 70/warp Pam 22 72/positionOffset Pam -32 0/positionOffset Sam -32 0/positionOffset Gus -20 0/positionOffset Leah 12 0/positionOffset Shane -8 0/positionOffset Abigail 5 3/positionOffset Pam -15 0/positionOffset Penny 6 0/positionOffset Sam -7 0/positionOffset Emily 19 0/positionOffset Clint 5 0/positionOffset Harvey -10 0/positionOffset Susan 8 0/positionOffset Andy 20 0/positionOffset Jodi -15 0/positionOffset Kent -5 0/warp Olivia 26 64/warp Haley 28 73/speed Olivia 1/move Olivia 2 0 1 true/move Haley 6 0 1 true/viewport 33 66 true/viewport move -1 0 9000/pause 500/textAboveHead Pierre \"Looks promising, Lewis!\"/shake Pierre 400/pause 500/faceDirection Emily 1 true/pause 500/textAboveHead Haley \"Done voting!\"/pause 500/faceDirection Susan 1 true/pause 200/faceDirection Susan 2 true/pause 400/shake Andy 500/textAboveHead Andy \"This line movin' any faster?\"/pause 400/shake Morris 300/textAboveHead Morris \"Ah, Olivia.\"/pause 500/faceDirection Emily 0 true/pause 750/faceDirection Susan 1 true/pause 200/faceDirection Susan 0 true/pause 1250/globalFade/viewport -1000 -1000/pause 1250/message \"I cast my vote...\"/pause 1000/playSound newRecipe/pause 1400/warp Morris 28 64/faceDirection Morris 2 true/warp Lewis 30 64/faceDirection Lewis 2 true/warp GuntherSilvian 29 65/faceDirection GuntherSilvian 2 true/warp Kent 26 68/warp Jodi 27 68/warp farmer 28 68/warp Marnie 32 68/faceDirection Marnie 0 true/warp Caroline 31 68/faceDirection Pierre 30 68 true/warp Shane 25 69/warp Elliott 26 69/warp Andy 27 69/warp Susan 28 69/warp Pam 29 69/warp Penny 30 69/warp Abigail 31 69/warp Sam 32 69/warp Demetrius 27 70/faceDirection Demetrius 0 true/faceDirection Robin 0 true/warp Robin 28 70/warp Emily 30 70/warp Alex 32 70/warp Haley 33 70/faceDirection Alex 0 true/faceDirection Haley 0 true/faceDirection George 0 true/faceDirection Evelyn 0 true/warp George 25 71/warp Evelyn 26 71/warp Maru 28 71/warp Harvey 29 71/warp Leah 31 71/warp Sophia 27 72/warp Victor 28 73/warp Olivia 29 73/faceDirection Olivia 0 true/faceDirection Victor 0 true/warp Clint 30 72/warp Willy 33 72/warp Gus 32 72/warp Pierre 30 68/faceDirection Pierre 0 true/positionOffset Kent -20 -20/positionOffset Jodi -20 -15/positionOffset Shane -4 20/positionOffset Demetrius -20 0/positionOffset Robin -20 0/positionOffset Victor 25 0/positionOffset Olivia 25 3/positionOffset Gus -12 30/positionOffset Willy 4 15/positionOffset Sam 32 0/positionOffset Sophia 5 -15/positionOffset Pam 0 15/positionOffset Clint 15 -5/viewport 29 67 true/pause 1250/speak Gunther \"All right, everybody. The votes have been counted, and I have the results for you now!...$5\"/pause 500/stopMusic/pause 650/showFrame GuntherSilvian 16/pause 400/showFrame GuntherSilvian 19/playSound newRecipe/shake GuntherSilvian 400/pause 1150/speak Gunther \"The winner is...$5\"/pause 1500/speak Gunther \"Morris!$1\"/playMusic wedding/screenFlash 1/specificTemporarySprite jojaCeremony/pause 250/faceDirection GuntherSilvian 0 true/pause 100/emote Leah 16 true/pause 150/move GuntherSilvian -3 0 2 true/pause 200/showFrame Lewis 18 true/shake Lewis 300/pause 150/faceDirection Maru 1 true/pause 300/faceDirection Harvey 3 true/shake Andy 350/textAboveHead Andy \"Yes!\"/pause 150/emote Caroline 16 true/pause 200/faceDirection Susan 3 true/pause 200/shake Marnie 500/emote Sophia 16 true/pause 250/emote Willy 16 true/pause 100/shake Pierre 500/textAboveHead Pierre \"Wh-what!?\"/pause 350/faceDirection Caroline 3 true/pause 200/speed Morris 1/move Morris 0 1 2/textAboveHead Clint \"Huh?\"/shake Clint 400/speed Morris 1/faceDirection Susan 0 true/move Morris 1 0 2/pause 200/textAboveHead Morris \"*Ahem*\"/pause 350/faceDirection Caroline 0 true/pause 600/faceDirection Maru 0 true/pause 300/faceDirection Harvey 0 true/pause 250/speak Morris \"I'm truly honored! Thank you, citizens of Stardew Valley!$1#$b#I promise to live up to the title of Mayor!$1\"/pause 650/globalFade/viewport -1000 -1000/pause 1500/message \"Big changes are coming to Stardew Valley...\"/pause 1500/end dialogue MorrisTod \"The election went as I expected! I've gained the trust of Pelican Town's citizens.$0#$b#Now, we develop the region! With Joja's resources and my connections, I assure you everyone's lives will benefit!$1\"" 
     //CUT EVENT CODE    I was going to go into a lot more here... but thought it was too awkward to implement. For your reading pleasure:        pause 850/shake Sophia 400/pause 400/speed Sophia 3/move Sophia -1 0 3/speed Sophia 3/move Sophia 0 1 2/pause 300/showFrame Sophia 32 true/pause 300/faceDirection Victor 3 true/shake Pierre 1000/pause 400/faceDirection Caroline 3/pause 250/emote Caroline 16 true/pause 250/move Victor -1 0 3/pause 150/faceDirection farmer 1 true/pause 360/move Pierre -1 0 3/move Pierre 0 -1 0 true/pause 300/faceDirection farmer 0 true/pause 300/stopMusic/speak Pierre \"I demand a recount of those votes!$3\"/pause 200/shake Demetrius 200/emote Demetrius 16 true/pause 125/faceDirection GuntherSilvian 1 true/pause 100/shake Caroline 200/emote Caroline 16 true/pause 100/showFrame Lewis 0 true/pause 125/move Marnie 0 -1 3/emote Marnie 16 true/pause 100/emote Harvey 16 true/pause 225/faceDirection Sophia 1 true/pause 200/faceDirection Sophia 0 true/pause 300/faceDirection Victor 0 true/pause 300/faceDirection Gus 0 true/pause 300/faceDirection Willy 0 true/emote Gus 16 true/pause 150/emote Demetrius 16 true/pause 250/speak Morris \"...$2\"/pause 400/move GuntherSilvian 2 0 1/move GuntherSilvian 0 0 2/speak Gunther \"Although it was close, the results are clear as a polished gem stone, Mr. Williams.$5\"/pause 200/speak Abigail \"But... what will happen to our store?$2\"/pause 300/faceDirection Caroline 2 true/pause 200/speak Caroline \"I don't know, sweetie...$2\"/pause 500/textAboveHead George \"What's all this ruckus!?\"/shake George 400/pause 500/faceDirection Evelyn 3 true/pause 500/shake Pierre 500/pause 400/speak Pierre \"Morris! You and your Joja cronies will ruin our community!$3\"/speak Morris \"Everyone, I assure you that-$2\"/pause 150/faceDirection Caroline 3 true/pause 100/faceDirection Evelyn 0 true/speak Pierre \"No! I won't hear any of this!$3\"/move Lewis 0 1 2/speak Lewis \"Pierre. Allow Morris to get a word in.$0\"/speak Pierre \"...$4\"/pause 1250/speak Pierre \"Fine.$2#$b#But don't expect to win me or my family over, Morris.$3\"/pause 500/faceDirection Pierre 1 true/pause 200/faceDirection Pierre 2 true/pause 350/move Pierre 0 1 2/move Pierre 0 0 1/pause 150/faceDirection Pierre 0 true/pause 200/faceDirection Caroline 0 true/pause 300/faceDirection Marnie 2 true/pause 200/move Marnie 0 1 2/pause 75/faceDirection Marnie 3 true/pause 150/faceDirection Marnie 0 true/pause 100/move GuntherSilvian -3 0 2/pause 750/speed Morris 1/move Morris 0 1 2/pause 750/showFrame Morris 28 true/pause 600/showFrame Morris 29 true/pause 75/playSound dwop/pause 500/showFrame Morris 30/pause 1000/playMusic musicboxsong/pause 200/speak Morris \"When I established Joja Mart in Pelican Town, under the direction of the Governor, my goals were nothing short of self-serving.$8#$b#My only desire was to work myself up in the ranks of Joja Co., and live an affluent life in the city.$8#$b#But since rebuilding Stardew Valley's infrastructure, making new friendships, and spending the majority of my time in this thriving town...$7#$b#I've come to realize how important community is.$7#$b#I'm not asking for forgiveness... but a second chance to prove I can be better.$7\"/pause 750/shake Morris 500/pause 250/speak Morris \"I'm through with putting profits over people...$7#$b#I've found a new purpose! And that is improving the lives of all of you, and presenting opportunity!$8#$b#Starting with several major announcements!...$9\"/pause 1000/speak Morris \"Pierre! Get up here!$9\"/pause 400/emote Pierre 40 true/pause 250/faceDirection Caroline 3 true/pause 400/move Pierre 0 -1 0/faceDirection Caroline 0 true/pause 500"  
    }
 },
@@ -13371,20 +13444,20 @@
 	 "When": { "HasSeenEvent": "6665293"},
 	 "Entries": {
 	 "Wed10": "Have you grown the new Joja crops? They're magically modified organisms.$0#$e#Although the seeds are expensive, the return on investment is nothing to scoff at!$1",
-	 "summer_Mon10": "Joja Emporium is a wild success!$1#$e#More tourists come by the day!$4",
-	 "summer_Tue10": "Hmm... what should the next development project be for the city.$0#$e#%Morris is pondering.",
-	 "summer_Thu10": "I feel as if I'll never gain the trust of certain individuals...$2#$e#Some of the things I've done are unforgivable...$2#$e#But it's never too late to change.$0",
+	 "summer_Mon10": "Joja Emporium is a wild success!$1#$e#More tourists are flocking into town by the day!$4",
+	 "summer_Tue10": "Hmm... what should my next development project be for the city...?$0#$e#%Morris is pondering.",
+	 "summer_Thu10": "I feel as if I'll never gain the trust of certain individuals in town...$2#$e#I guess some of the things I've done are unforgivable...$2#$e#But I like to believe it's never too late to change.$0",
 	 "summer_Fri10": "Good day, @.$1#$e#Busy as always I see!$0",
-	 "summer_Sun10": "Being Mayor is a lot of work. Countless mounds of paper work!$3#$e#Nothing I'm not used to. Being a manager trained me for my true destiny!$1",
+	 "summer_Sun10": "Being Mayor is a lot of work. Countless mounds of paperwork!$3#$e#Nothing I'm not used to. Being a manager trained me for my true destiny!$1",
 	 "fall_Mon10": "I rather enjoy fall in Stardew Valley.$1#$b#How do I put it? There's more... depth and appreciation to the season compared to the city.$0",
 	 "fall_Tue10": "Ah, I'm looking forward to lobster bisque this weekend.$1",
-	 "fall_Wed10": "I never thought I'd become a Mayor. Strange how life works, isn't it?$0",
+	 "fall_Wed10": "I never thought I'd become a mayor. Strange how life works, isn't it?$0",
 	 "fall_Thu10": "Perhaps I should open a suggestion box...$0",
 	 "fall_Fri10": "Ah, @! How are the new roads?$0#$b#A good friend of mine is a contractor. Certainly made securing the development project a breeze in the wind!$1",
 	 "fall_Sat10": "The city council is an interesting group of people...$0",
 	 "fall_Sun10": "Good day, @.$0",
 	 "winter_Tue10": "Pierre's store is struggling. I must find a way to help...$2#$e#Perhaps if Joja Mart sold different products? Stopped selling seeds?$0#$e#No, no. I'd never convince corporate...$3",
-	 "winter_Thu10": "I had to 'pull some strings' to remain as a manager for Joja Mart, while also serving as Mayor.#$e#I'm friends with powerful people. Perhaps I'll introduce you one day...$4",
+	 "winter_Thu10": "I had to 'pull some strings' to remain as a manager for Joja Mart - while also serving as Mayor.#$e#I'm friends with powerful people. Perhaps I'll introduce you to a few one day...$4",
 	 "winter_Fri10": "Although Lewis and I don't meet eye to eye on policy, there is much I can learn from him.$1",
 	 "winter_Sat10": "I'm bone-tired lately. I should take a vacation soon...",
 	 "winter_Sun10": "I have a responsibility for the general welfare of Pelican Town.$0#$b#If you think of any improvements, do please inform me!$1#$e#Yes, yes. I'm aware of Pierre's store struggling.$0",
@@ -13407,8 +13480,9 @@
 	 "Action": "EditData",
 	 "Target": "characters/dialogue/lewis",
 	 "Entries": {
-     "election": "*sigh* Being Mayor for as long as I was... you get caught up with yourself and lose sight of your duties to the public...$2#$b#I believe Morris will be a good Mayor, and bring positive change to the valley.$2#$e#I still get to plan and host festivals as the event coordinater!$1#$e#I'll look at this as an opportunity to focus on myself, retire, and spend time with those I care about.$0#$e#Hmm. I wonder if Marnie would be interested in going to the saloon tonight.$1",
-     },
+     "election": "*sigh* Being Mayor for as long as I was... you can get caught up in your ego and and lose sight of your duties to the public...$2#$b#I believe Morris will be a good Mayor, and bring positive change to the valley.$2#$e#At least I still get to plan and host festivals as the event coordinator!$1#$e#I'll look at this retirement as an opportunity to focus on myself and spend time with those I care about.$0#$e#Hmm. I wonder if Marnie would be interested in going to the saloon tonight.$1",
+     "jojaEmporium": "Joja Emporium sure is an impressive building.$0#$e#I feel as if Pelican Town gets more modernized by the day.$0"
+	 },
 },
 {
 	 "Action": "EditData",
@@ -13439,14 +13513,14 @@
 	 "Target": "characters/dialogue/clint",
 	 "Entries": {
      "election": "So... Morris is Mayor now...$2#$e#I wonder how Lewis is doing...$0",
-	 "jojaEmporium": "There's a parking lot behind my house.$2#$e#I'll miss that park...$2"
+	 "jojaEmporium": "There's a parking lot behind my house now.$2#$e#I'll miss that park...$2"
      },
 },
 {
 	 "Action": "EditData",
 	 "Target": "characters/dialogue/demetrius",
 	 "Entries": {
-     "election": "Joja Co. has a poor history respecting the environment. And now Morris is our Mayor...$2#$e#Robin is worried her carpentry trade will be replaced with a cheaper alternative...$2",
+     "election": "Joja Co. has a history of treating the environment poorly. And now Morris is our Mayor...$2#$e#Robin is worried her carpentry trade will be replaced with a cheaper alternative...$2",
      },
 },
 {
@@ -13488,7 +13562,8 @@
 	 "Action": "EditData",
 	 "Target": "characters/dialogue/gus",
 	 "Entries": {
-     "election": "A more developed Pelican Town could excite tourism and help the saloon financially!$1",
+     "election": "A more developed Pelican Town could bring in more tourists and help the saloon financially!$1",
+	 "jojaEmporium": "Joja Emporium is bringing tourists to the saloon!$1"
      },
 },
 {
@@ -13539,7 +13614,7 @@
 	 "Action": "EditData",
 	 "Target": "characters/dialogue/marnie",
 	 "Entries": {
-     "election": "Lewis needs our support more than ever, @.$2#$e#I'll bake one of his favorite meals to chear him up...$2",
+     "election": "Lewis needs our support more than ever, @.$2#$e#I'll bake one of his favorite meals to cheer him up...$2",
 	 "jojaEmporium": "There's a road beside our property now.$0#$e#It looks nice, but I prefer a natural dirt road...$2"
      },
 },
@@ -13619,7 +13694,7 @@
 	 "Action": "EditData",
 	 "Target": "characters/dialogue/olivia",
 	 "Entries": {
-	 "jojaEmporium": "The emporium rooftop is lavish! I must dine there again with Morris.$3#$e#He has a charming personality...$1"
+	 "jojaEmporium": "The emporium rooftop is so lavish! I must dine there again with Morris.$3#$e#He has a charming personality...$1"
      },
 },
 {
@@ -13628,7 +13703,7 @@
 	 "When": { "Spouse": "Olivia" },
 	 "Entries": {
      "election": "Oh, dear! Morris won the mayoral election!$1#$b#Let us celebrate with a glass of wine!$3",
-	 "jojaEmporium": "The emporium rooftop is lavish! We must dine up there, dear.$3"
+	 "jojaEmporium": "The emporium rooftop is absolutely lavish! We must dine up there sometime, dear.$3"
      },
 },
 {
@@ -13642,21 +13717,21 @@
 	 "Action": "EditData",
 	 "Target": "characters/dialogue/marlonfay",
 	 "Entries": {
-     "election": "Good day, @.$0#$e#No. I don't carry any opinions about the election results...$0",
+     "election": "Good day, @.$0#$e#No. I don't have an opinion about the election results... it's irrelevant to my work.$0",
      },
 },
 {
 	 "Action": "EditData",
 	 "Target": "characters/dialogue/susan",
 	 "Entries": {
-     "election": "Things couldn't be worse, dear. Morris is our Mayor now...$2#$e#I will never forgive Joja for trapping me behind boulders.$3",
+     "election": "Things couldn't be worse, dear. Morris is our Mayor now...$2#$e#I will never forgive Joja for trapping me behind those boulders for so long.$3",
      },
 },
 {
 	 "Action": "EditData",
 	 "Target": "characters/dialogue/gunthersilvian",
 	 "Entries": {
-     "election": "It was a close election, but the results were as clear as a polished gem stone.$5",
+     "election": "It was a close election, but the results were as clear as a polished gem.$5",
      },
 },
 {
@@ -16067,7 +16142,7 @@
 	 "Action": "EditData",
 	 "Target": "data/events/towneast",
 	 "Entries": { 
-     "1000024/t 800 1700/y 2/w sunny": "sweet/-500 -500/farmer 9 21 1 Lewis 15 17 0/pause 300/viewport 16 17 true/skippable/move farmer 4 0 0/pause 300/emote farmer 8/pause 300/move farmer 0 -4 1/pause 400/move Lewis 0 0 3/pause 400/emote Lewis 16/speak Lewis \"Ah, hello, @.$0#$b#I was just on my way back from Grampleton. It's quite the walk across Grampleton Fields.$1#$b#I had some business with Mayor Kendra.$0\"/pause 550/move Lewis 0 0 0/pause 1000/move Lewis 0 0 3/pause 300/speak Lewis \"This field has been abandoned for a while. It used to be the community garden before we relocated it near the library.$0#$b#With no one taking care of the field, it's seen better days.$2#$b#It's a shame this is the first thing travelers from Grampleton see when they visit Pelican Town...$2\"/pause 600/move Lewis 0 0 0/pause 300/emote Lewis 40/pause 300/emote Lewis 16/pause 150/move Lewis 0 0 3/pause 250/speak Lewis \"I know you have your hands full with %farm Farm, but if you were to fix up this plot of land, you could use it to grow whatever you like.$1#$b#I tried offering it to Andy, but he said he didn't want a 'handout' from me.$2#$b#What do you say, @?$0\"/speak Lewis \"$q -1 null#Do you want this plot of land?#$r -1 0 lewis_event1#I can clean up and utilize this crop field.#$r -1 0 lewis_event2#Sorry. I'm overwhelmed with my own farm.\"/pause 1000/move Lewis 0 0 2/pause 850/move Lewis 0 0 3/pause 1050/speak Lewis \"Well, I have a pile of paperwork.$2#$b#Have a nice day, @!$1\"/pause 200/globalFade/viewport -1000 -1000/pause 300/end dialogueWarpOut Lewis \"I should note the soil at that crop field isn't the best...$2#$b#Crops may take longer to grow.$0\"",
+     "1000024/t 600 1800/y 2/w sunny": "sweet/-500 -500/farmer 9 21 1 Lewis 15 17 0/pause 300/viewport 16 17 true/skippable/move farmer 4 0 0/pause 300/emote farmer 8/pause 300/move farmer 0 -4 1/pause 400/move Lewis 0 0 3/pause 400/emote Lewis 16/speak Lewis \"Ah, hello, @.$0#$b#I was just on my way back from Grampleton. It's quite the walk across Grampleton Fields.$1#$b#I had some business with Mayor Kendra.$0\"/pause 550/move Lewis 0 0 0/pause 1000/move Lewis 0 0 3/pause 300/speak Lewis \"This field has been abandoned for a while. It used to be the community garden before we relocated it near the library.$0#$b#With no one taking care of the field, it's seen better days.$2#$b#It's a shame this is the first thing travelers from Grampleton see when they visit Pelican Town...$2\"/pause 600/move Lewis 0 0 0/pause 300/emote Lewis 40/pause 300/emote Lewis 16/pause 150/move Lewis 0 0 3/pause 250/speak Lewis \"I know you have your hands full with %farm Farm, but if you were to fix up this plot of land, you could use it to grow whatever you like.$1#$b#I tried offering it to Andy, but he said he didn't want a 'handout' from me.$2#$b#What do you say, @?$0\"/speak Lewis \"$q -1 null#Do you want this plot of land?#$r -1 0 lewis_event1#I can clean up and utilize this crop field.#$r -1 0 lewis_event2#Sorry. I'm overwhelmed with my own farm.\"/pause 1000/move Lewis 0 0 2/pause 850/move Lewis 0 0 3/pause 1050/speak Lewis \"Well, I have a pile of paperwork.$2#$b#Have a nice day, @!$1\"/pause 200/globalFade/viewport -1000 -1000/pause 300/end dialogue Lewis \"I know you'll make some good use out of the land, @.$0\"",
 	 },
 },
 
