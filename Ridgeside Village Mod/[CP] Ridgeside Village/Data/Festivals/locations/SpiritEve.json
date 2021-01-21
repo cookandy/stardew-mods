@@ -329,13 +329,13 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Alissa 22 65 right",
+         "Value": "Alissa 22 67 right",
          "Delimiter": "/"
 		},
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Bert 24 64 down",
+         "Value": "Bert 24 66 down",
          "Delimiter": "/"
 		},
 		{
@@ -419,7 +419,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Olga 23 64 down",
+         "Value": "Olga 23 66 down",
          "Delimiter": "/"
 		},
 		{

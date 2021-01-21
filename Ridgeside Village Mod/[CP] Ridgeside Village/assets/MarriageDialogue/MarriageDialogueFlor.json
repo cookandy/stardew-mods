@@ -1,102 +1,131 @@
 
 {	
-    "spouseRoom_Flor": "I hope the sheer number of my notes, books, folders and binders don't bother you hon..$12#$b#Uhhm.. It's fine right?$h#$e#Now where did I put those thesis drafts...",
-	"patio_Flor": "The air here is so relaxing.. I love this farm..$h#$b#I love the farmer even more..$l#$e#It's such a relaxing spot to read and study!$h",
-            	
-    "Rainy_Day_0": "Hey hon, why don’t we have some coffee and snuggle up before you tend to your other errands$l#$e#Don’t get too wet, alright?$h#$b#",
-    "Rainy_Day_1": "@, can I borrow your jacket? Or can you just hug me a while?#$b#I feel really cold right now and I guess I just want a hug$l",
-    "Rainy_Day_2": "Did you know that you can actually use your crops to detect the wind direction for the prediction of the wind.#$e#Easterly winds suggest bad weather while westerly winds suggest good weather.$h#$b#It’s quite fascinating how people come up with ideas to predict things.$h#$e#But honestly, I believe that things that surprise us are what makes it all better$l",
-    "Rainy_Day_3": "Would you like me to get some hot soup from Pika’s dear? I heard it’s good for this kind of weather$h#$e#Uhm.. uh maybe we could share it too$l#$b#Or I could feed it to you if you’d like$l",
-    "Rainy_Day_4": "Hey @, would you like me to accompany you on your errands today?#$b#I could hold your hand while we walk.$l#$b#OH uh or uhm I could just stand beside you hehe.",
-	"Rainy_Day_Flor": "It’s raining cats and dogs right now.#$b#Oh, by that I mean it’s really raining hard.#$e#I’ll just stay in and read a good book now.$h#$b#Uhm.. uhh. Would you like to join me @?",
-            	
-    "Rainy_Night_0": "Oh you’re home hon!$h#$b#I read a great book today at the library. It was about the Nutcracker. I saw Ysa practicing one of the pieces for its Ballet rendition and I got curious about it.#$e#I’ll definitely ask her about it. Hihi, But, enough about that how was your day?",
-    "Rainy_Night_1": "Hey @, I missed you today…$#b# Uhmm can I ask for a hug?.. A tight one maybe?$l",
-    "Rainy_Night_2": "Oh dear you’re soaking wet!$a#$b#You know that I hate it when you get sick $s#$b#Uhh.. Why don’t you come here, and I’ll uhmm… Wipe the rain off you.$l",
-    "Rainy_Night_3": "’Shall I compare thee to a summer’s day, Thou art more lovely and more temperate. Rough winds do sha-’ #$b#Oh hey hon! Did you just get home? I’m sorry I just got caught up while reading this book about old sonnets.#$e#It amazes me how one could express their feelings through words.. #$b#I myself find it difficult to uh.. uhm to do so.$l#$e#I’m just glad I’m comfortable enough to tell you that uh.. ",
-    "Rainy_Night_4": "Have you finished all your work today hon?.. I hope you did now. You should really get some rest.#$b#Uhmm.. Why don’t you come here hon?.. You can rest in my arms if you want..$l#$e#I love feeling you against me..$12 ",
-    "Rainy_Night_5": "I hope you didn’t get too wet hon. By the way I prepared dinner.$h#$b#Hey.. Don’t forget to wash your hands okay? You’ve been out in the mud for so long.#$e#There, all nice and clean! Uhm.. You look good hon..$l",
-	"Rainy_Night_Flor": "Such a weather forces the majority to stay indoors.#$b#Personally.. Uhmm.. I don’t really mind, especially when you’re here.$l#$b#I’m glad you’re home hon.. I missed you..$12",
-            	
-    "Indoor_Day_0": "Uhmm.. Goodmorning hun!$l#$b#I hope you have a wonderful day today. Uhm.. I will try my best too!$h#$e#I've started a new research, It's going along well.$h",
-    "Indoor_Day_1": "Oh hon, Goodmorning.$h#$b#I've been thinking about what Marnie told me the other day, she said I looked pretty without my glasses.#$e#The problem is I can't really see very well when I wear them though, so it's really impractical.#$b#How about you hon? What do you think?",
-    "Indoor_Day_2": "Moring behaviour is consitently shown to be more leaning on being lazy on most people.#$b#How about me? Oh, I think uhmm..#$b#I think I am lazy in the mornings..$l#$e#Huh? Why? Well.. Uhmm.. It's because I don't want to go out of bed with you..$12",
-    "Indoor_Day_3": "Uhm.. Goodmorning hon. Are you all set for work?#$b#I've studied a bit more on a new subject last night, I'm excited to conduct a new research.$h#$e#I've been thinking though, I haven't really practiced my profession so much and have stuck to literature and researches rather than practice.#$b#I really should try new methods soon.",
-    "Indoor_Day_4": "Uhmm @... Come here please?..$12#$b#%Flor gave you a long sweet kiss and gentle kiss on the lips.#$e#There.. My morning is complete..$l#$b#Take care out there okay hon??$h",
-	"Indoor_Day_Flor": "Do you not hate it that I'm still like a little shy even though we're married @?$12#$b#I mean, aren't you bothered by it?#$e#You're not? Ohh.. Uhmm$12#$b#Now I'm even more shy!$12",
-            	
-    "Indoor_Night_0": "Uhmm... Welcome home hon!$h#$b#How was your day?? I'm excited to know about your encounters.$h#$e#I do wish to join in your adventures some day, Would that be fine hon?#$b#Yieepee! Uhm... I'd be happy where ever we go together honestly..$l",
-    "Indoor_Night_1": "Teehee < $12#$b#Oh, I was just recalling the past.$h#$b#It's because, at this same time, when we were still in the courting phase..$12#$b#I would be in my room at the hotel trying to study.. But instead I get too occupied of thinking of you..$12#$b#So instead I ended up giggling for minutes.$12",
-    "Indoor_Night_2": "I wonder what if I build a therapy center here? Maybe I can ask Harvey and Lewis about it..#$b#That would be interesting won't it hon?$h#$e#Truth be told though.. Uhmm.. I'm not really practiced with handling patients, I've been more inclined as a research OT.$h",
-    "Indoor_Night_3": "You're back home.. I missed you hon..$l#$b#Please give me a hug?$12#$e#That's a lot better. Teehee. < $12",
-    "Indoor_Night_4": "I've been waiting for you! You've been out for so long!$a#$b#Uhm.. Was that good hon? I tried to be a little different to surprise you.$h#$e#Phew, it's hard to be a bit more vocal.",
-    "Indoor_Night_Flor": "I'm glad you're back home hon. Come here. I know you're tired.$h#$b#I'll massage you if you want.$l#$e#And uhmm.. Maybe even more later hon? I have uhmm..$l#$b#I have a surprise for you..$12#$e#Later!$a",
-            	
-    "Outdoor_0": "Don't mind me hon. I just want to soak up some sunlight. Vitamin D is essential you know?$h#$b#Ah, this is nice..$h",
-    "Outdoor_1": "Uhm.. Hey hon.. Please take care out there okay?$l#$b#And uhmm.. I just want to say, You look so attractive when uhmmm..$12#$b#..when you're all sweaty from work..$12",
-    "Outdoor_2": "The farm looks organized and well taken care of hon. This is amazing.$h#$b#I'm very much proud of you!#$e#Alright, I'll do my best on my work too!$h",
-    "Outdoor_3": "Uhmm hey.. You don't mind that I don't help much in the farm?$s#$b#..Uhmm coz I feel I may be a hassle to you @..$s#$e#But hey, No. I'll do my best to cheer for you from the patio.$h#$b#Go hon go! Teehee <$l",
-    "Outdoor_4": "Don't forget your sunscreen lotion hon.#$b#Uhm.. If you want, I can rub some on you?$l#$e#Uhm.. I mean, I won't mind..$12",
-            	
-	"funLeave_Flor": "I'm off for a stroll hon. I'll see you later back home okay?$h#$b#Uhmm.. Do you need anything for me to buy?#$b#Maybe I can help you a bit with work too in that way.$h",
-	"funReturn_Flor": "I had a wonderful and relaxing stroll hon. It was quite pleasant.$h#$b#Uhmm hey.. I can't wait to snuggle with you back home.$l#$b#So.. Uhm... Hurry back okay?$12",
-            	
-    "OneKid_0": "%kid1 was really knowledgable with her shapes!. I'm so proud!$h#$b#So this is what it feels like to be a mother huh.",
-    "OneKid_1": "Phew, Taking care of one kid is a bit tiring huh? Imagine if we had two!$u#$b#Phew.. I need a breather for a second.$h",
-    "OneKid_2": "Uhm.. %kid1 said 'Mama' earlier..$l#$b#Hon... I'm so happy..$l#$b#I'm really really happy...$l",
-    "OneKid_3": "Don't forget to spend time with %kid1 okay hon?$h#$b#I bet they miss you whenever you leave for work.$h",
-            	
-    "TwoKids_0": "I fell asleep while studying earlier, then %kid2 and %kid1 woke me up!#$b#I was surprised that they moved independently on their own at this stage!",
-    "TwoKids_1": "Hmm.. I could research on our kids @.. Human development across the lifespan is best observed at the start.$h#$b#I can be like Piaget!$h",
-    "TwoKids_2": "%kid2 said you're their favorite. Hmph.$a#$b#I mean.. I can't really blame them.. You're my favorite too.$l",
-    "TwoKids_3": "Phew.. watching over two kids is no easy task.#$b#But this is our family, and I'll do anything for it's happiness.$h#$b#Teehee... Our family.. < $l",
-            	
-    "Good_1": "I started a new research subject the other day. It was quite a progress.",
-    "Good_2": "Ahh! I burned my finger hon.. Uhhmm.. Please kiss it??$s",
-    "Good_3": "I consulted Olga and Bert on how to maintain a successful relationship and instead they were too occupied with their inside jokes.",
-    "Good_4": "Hey hon?.. I uhm... I love you..$l#$b#Nothing much.. I just wanted to tell you that..$l",
-    "Good_5": "I'm so happy I'm married to you @.. Uhmm I love this...$h#$b#Hey, always take care okay??$h",
-    "Good_6": "I wonder what's another type of clothing color would suite me.#$b#What do you think so @?",
-    "Good_7": "Please take care out there when you are exploring okay hon?? Uhm.. I don't want you getting hurt..",
-    "Good_8": "I've been admiring the shell you gave me hon..$l#$b#I still remember that day where I was so shocked when you proposed to me..$12",
-    "Good_9": "I've finished my chores!!$h#$b#Uhmm hon?.. Maybe a reward kiss?$12",
-    "Neutral_0": "I cleaned your tools earlier hon. I hope that's alright with you",
-    "Neutral_1": "%Flor is reading a book",
-    "Neutral_2": "%Flor is writing down notes about her research",
-    "Neutral_3": "I saw some foxes run around the field yesterday hon.#$b#I just shooed them away.$h",
-    "Neutral_4": "%Flor is reading a magazine.",
-    "Neutral_5": "I've been thinking hon... Are you really sure you want to marry me? I mean..#$b#I'm quite boring..$s",
-    "Neutral_6": "I've been looking for a new reseach subject. But I can't seem to think of one..$s",
-    "Neutral_7": "Uhhmm.. I'm really sleepy...$s",
-    "Neutral_8": "I just want to lay in bed all day today.. Hnggg..$s",
-    "Neutral_9": "I wonder if my room at the hotel has been cleaned up. I have to get back to my stuff soon.",
-	"Bad_0": "I've been having some doubts with our marriage @... It's not going well..$s",
-	"Bad_1": "As someone who studies behaviour... and rehabs them.. We are in desperate need of one..$s",
-	"Bad_2": "I.. Uhm.. I don't know about this anymore @..$s",
-	"Bad_3": "%Flor is ignoring you",
-	"Bad_4": "I'm tired @... I don't have the energy to talk at the moment..$s",
-	"Bad_5": "I think I'd want to stay some days at the hotel for a while....$s",
-	"Bad_6": "Uhmm.. I think I better stay away from you for a while...$s",
-	"Bad_7": "Why don't you talk to me as much as before @?... Uhm.. It's getting lonely here..$s",
-	"Bad_8": "I'm starting to regret marrying you @... No offense..$s",
-	"Bad_9": "I... I'm not happy... This all seems toxic..$s",
-            	
-//Day before Festivals  
-    "spring_12": "Isn't tomorrow the egg festival? Oh such festivities are a good research on large gatherings of the masses.$h#$b#Ofcourse I'll enjoy the festival too hon, Don't worry.",
-	"spring_23": "Uhhm.. I'm a little shy for tomorrow @...$12#$b#But I really would love to dance with you hon..$l#$b#So I won't care about what others think.. As long as I get to dance in your arms..$l",
-    "summer_10": "Are you all set for tomorrow hon? I'm excited for the Luau tomorrow..$h#$b#The festive atmosphere is a delight to analyze.$h",
-    "summer_27": "The silent serenity coupled with the beauty of the jellies tomorrow is such a sight to behold.#$b#Such phenomenon draws in people. Such beauty attracts people..#$b#Uhm.. Like how I am attraced to you @...$l",
-    "fall_26": "Uhmm.. I just want so say that no matter who wins the display tomorrow hon..$12#$b#You're always the winner for me..$12#$b#And I will see to it personally that the judging was fair!$a",
-    "winter_7": "What is it with competition that attracts crowds to gather. Even in fishing.#$b#It is such a strange concept. Yet I'm excited for it tomorrow!$h#$b#Goodluck to you as well hon.$h",
-    "winter_14": "I've been saving up for a new binder and some exotic highligher pens I've been reading about.#$b#The advertisment said they'd help you learn faster!$u#$b#Ohh! I'm excited  hon!$h",
-    "winter_24": "hon, uhmm..$l#$b#Can we place a wreath on our door?$l#$b#I read somewhere that it is a symbol of love ehehe. I think it’d look good in front of our door.$h",
-            	
-//Seasonal
-    "spring_1": "Uhhmm... It's the season of flowers and pleasantries.$h#$b#But still, I want you to be careful all the time okay hon?$h",
-    "summer_1": "It's a little humid isn't?#$b#Oh. It's the summer time already?#$b#Uhhm.. I'm sorry I didn't notice hon.$h",
-    "fall_1": "I remember studying up on the hotel balcony during the fall.$h#$b#Come on hon.. Let's go and spend some time up there again like before. Teehee <$12",
-    "winter_1": "Brrrr It's cold...$u#$b#Uhhmm.. Hon... Please hold me close and tight?$12#$b#I want you near...$12",
- 
- 
+//If Married:
+///Spring
+	"spring_1": "Will you help me do some spring cleaning this year? #$b#As much as I love winter, the sunshine and fresh air makes the house feel stuffy after being shut up against the cold for so long.$h",
+	"spring_12": "Tomorrow's the egg festival, right? #$b#I almost forgot... I'm not expected to bring an egg dish on our behalf, am I?$s",
+	"spring_23": "Um... do you... do you feel strongly about dancing, tomorrow? $s#$b#I still don't know how I feel about dancing in front of everyone...$l",
+
+///Summer
+	"summer_1": "Summer already?$u#$b# I need to order more sunscreen...",
+	"summer_10": "Are you all set for tomorrow, honey? #$b#Do you know what you're bringing?",
+	"summer_27": "Do you want to bring something to drink with us, tomorrow?#$b# I'm okay with anything, I just thought it might be a nice touch...$l",
+
+///Fall
+	"fall_1": "I remember working up on the hotel balcony during the fall. #$b#I like doing it on your porch better. Er. Our porch.$l",
+	"fall_15": "Are you going to compete tomorrow?#$b# I should probably tell you to do your best to be okay with any outcome, but... I'm pretty sure you'll win.$h",
+	"fall_26": "What are your plans during Spirit's Eve tomorrow? I#$b#'ll probably stick around the center of town again.",
+
+///Winter
+	"winter_1": "Let me know if you need any help this winter, okay?$h#$b# I might have to ask for directions, but I want to help if I can.",
+	"winter_7": "Please be careful out on the ice tomorrow. $s#$b#I was reading about neurological reactions to extreme environment changes,#$b# and the article included what happens in the brain and body when someone falls through ice into frigid water.$s#$b# It was... well, it was scary.$s",
+	"winter_14": "Do you think the rare book vendor will be with the merchants this year? #$b#I've been trying to track down an old philosophy book someone in my graduate program recommended years ago on epistemic injustice, but it's impossible to find!$h",
+	"winter_15": "%Flor acknowledges you with a smile, and then goes back to watching everything at the market with wide eyes.",
+	"winter_16": "%Flor acknowledges you with a smile, and then goes back to watching everything at the market with wide eyes.",
+	"winter_17": "I love the art vendor here!$h#$b# What do you think about the painting he's selling tonight?",
+	"winter_24": "Can we place a wreath on our door?$h#$b# I read about how evergreen boughs and holly represent eternal life...#$b#But that's not why I want to put one up. I just think they're pretty.$h",
+///Room
+"spouseroom_Flor": "I keep meaning to digitize these articles that I collected during school, but I like reading things on paper so much more than digitally... #$b#I guess I could always get another bookshelf...",
+
+///Patio
+"patio_Flor": "Everything about this place is so conducive to just being present... $h#$b#I love this farm. I love the farmer even more.$l",
+
+///Rainy Day 
+"Rainy_Day_0": "Hey honey, do you want another cup of coffee before you tackle your day? #$b#I made plenty.",
+"Rainy_Day_1": "@, can I wear your sweatshirt? $l#$b#I don't think you'd mind if I just took it, but I wanted to ask anyway.4h",
+"Rainy_Day_2": "I was reading a book the other day that talked about how different types of clouds can help predict the weather. #$b#I wanted to check the sky, but it didn't say anything about rainclouds like these.",
+"Rainy_Day_3": "Would you like me to pick up some soup from Pika's? #$b#I think it'd be really good in this weather.",
+"Rainy_Day_4": "Hey @, do you mind if I come lend a hand? #$b#I know it's gross out, but I just... um. I guess I just wanted to spend more time with you.$s",
+"Rainy_Day_Flor": "I wonder where the phrase “raining cats and dogs” came from. #$b#A lot of common phrases have origins that make sense if you think about it, but that one just...#$b# why cats and dogs?",
+
+///Rainy Night
+"Rainy_Night_0": "Oh, you're home! You're soaked!$u#$b#I can run you a bath if you want?",
+"Rainy_Night_1": "Hey @, I missed you today.#$b# Can I ask for a hug$l?",
+"Rainy_Night_2": "Oh dear, you're soaking wet!$u#$b#Let's get you out of those wet clothes...#$b# And into something dry! Don't look at me like that!$l",
+"Rainy_Night_3": "Have you ever noticed how poets like comparing good things to warm sunny days and bad things to storms and rain? #$b#I understand why on a surface level, but I think there isn't much better than being with someone you love when it's pouring out.",
+"Rainy_Night_4": "Have you finished all your work for today?#$b# I have some notes to review on the couch before I call it a night. Do you want to spend some time with me?$h",
+"Rainy_Night_5": "Muddy boots outside, please! $a#$b#Dinner will be ready by the time you wash your hands. $h#$e# Welcome home, by the way. I love you.$h",
+"Rainy_Night_Flor": "This weather makes me want to curl up with you in front of a fire.$h#$b# I wonder why... aside from the obvious answer of 'because it's you', of course.$l",
+
+///Indoor Day
+"Indoor_Day_0": "Good morning, honey. I hope you have a wonderful day today. $h#$b#I have a couple of appointments but I'll be home on time today.",
+"Indoor_Day_1": "Lewis offered to lend me his truck so I can drive out to Grampleton and take on clients there, too... $s#$e#it's been a really long time since I've driven, though, and that's a lot of responsibility...$s",
+"Indoor_Day_2": "Were you always a morning bird, or did farming force that? #$b#I'm still a night owl, no matter how hard I try to wake up with you...$s",
+"Indoor_Day_3": "Good morning! I'm working on a research proposal with Doctor Harvey.#$b# We don't think it'll go anywhere, especially with the nearest IRB being in Zuzu, #$b#but we might as well give it a shot!$h",
+"Indoor_Day_4": "I love you, @. I just wanted to tell you that.$h",
+"Indoor_Day_Flor": "It's so much easier to be relaxed here with you, but I still get anxious outside our farm...$s#$b# it's kind of embarrassing.$s",
+
+//Indoor Night
+"Indoor_Night_0": "Welcome home. Did you have a good day?",
+"Indoor_Night_1": "I really thought that it would be easier to focus when we got married. $s#$b# I used to spend evenings trying to work and getting lost in thought, back when I lived at the hotel. $s#$b#Now I spend evenings trying to work and waiting for you to come home.$l",
+"Indoor_Night_2": "Lewis suggested starting a clinic here... $s#$b#I had to remind him I'm not fully licensed and can only practice because Harvey's allowed to act as my supervisor since we're in such a rural area... Someday, though, it would be nice.",
+"Indoor_Night_3": "I've set the timer on the coffee pot for the morning, so it should be ready when you wake up.$h",
+"Indoor_Night_4": "I've been waiting for you to get home! I missed you! $h#$b#I-- (cough, cough) $u#$e#  read something about being more effusive and wanted to try it, but I got anxious and oversold it and made my voice crack. That was embarrassing.$s",
+"Indoor_Night_Flor": "Today was really long. I'm glad I get to come home to you.",
+
+///Outdoors
+"Outdoor_0": "Don't mind me, just enjoying... all of this, really.$h",
+"Outdoor_1": "Did you remember to put on sunscreen? $s#$b#Harvey went on a tangent about skin cancer the other day and I started worrying about you...$s#$b# Will you humor me?$s",
+"Outdoor_2": "It must feel amazing to do all this work with your own two hands and then watch it come to fruition.$h#$b# Er, no pun intended.$s",
+"Outdoor_3": "I feel bad that I'm not more help around the farm... $s#$b#I know we've talked about this, but I have to ask because I get anxious.#$b#Do you mind that I'm... er, kind of useless, I guess?#$b# That's a bit harsh, but it's true...$s",
+"Outdoor_4": "I really love this life with you. $h#$b#Have I told you that lately? Because I really do.$l",
+
+//Leaving
+"funLeave_Flor": "I'm off to win my share of the bread, honey$h.#$b# Do you need me to pick up anything on the way home?",
+
+//Returning
+"funReturn_Flor": "Today's sessions went well.$h#$b# I never get sick of the walk home... #$b#it's a really good opportunity for me to just practice being mindful and present.$h", 
+
+//One kid
+"OneKid_0": "[kid 1's name] is growing so fast!#$b# I kind of wish I specialized in child psychology, just to better appreciate the way child brains work.", 
+"OneKid_1": "Phew, Taking care of one kid is tiring, huh? #$b#Imagine if we had two! I'm tired just thinking about it...$s", 
+"OneKid_2": "@! [Kid 1's name] said “Mama” earlier! $h#$b#It might have just been babbling, but, I mean, that is how language forms, and it was amazing!$h", 
+"OneKid_3": "[kid 1's name] and I will be here when you get home, and dinner  will be ready. We love you!$h",
+
+//Two kids
+"TwoKids_0": "I fell asleep while the kids were napping earlier. $s#$b#[kid 2's name] and [kid 1's name] woke me up. #$b#I should be worried about dozing off and not waking up with them, but it was really cute to see them collaborate like that.",
+"TwoKids_1": "I've been reading up on child psychology and lifespan development. #$b#I'm glad I remember some of this from school, even if we only barely touched on Piaget and Erikson.$h",
+"TwoKids_2": "[kid 2's name] said you're their favorite. $a#$b# I mean...I can't really blame them.You're my favorite too.$l",
+"TwoKids_3": "I get so absorbed in the day-to-day chaos, and then I look up and it seems like the kids grew a year overnight. $s#$b#It's kind of chaotic, and I wouldn't have it any other way.$h",
+
+
+//Relationship-dependent
+///Good
+"Good_0": "Serotonin and oxytocin dose, please!$h #$e# A hug, I mean. I'd like a hug.$l",
+"Good_1": "I got sucked into a research rabbit hole yesterday and used up too much printer paper at the library. #$b#I think Gunther's a little annoyed with me.$s",
+"Good_2": "Ahh! I burned my finger. Ow! $u#$b#... um. Can I... $l#$b#um, w-will you... $l#$b#willyoukissitbetter?$l",
+"Good_3": "I asked Olga and Bert for advice on  how to maintain a successful relationship, but they just went on a tangent filled with inside jokes. #$b# I guess that's advice, in a way.$h",
+"Good_4": "Hey, honey? I love you. I just wanted to tell you that.$l",
+"Good_5": "I'm so happy I ended up here, with you, like this.$h #$b#This life is a good one.$h",
+"Good_6": "I need to replace my favorite cardigan, ugh.$a#$b# It has holes in it. Do you want me to pick you up a new pair of jeans while I'm shopping?",
+"Good_7": "Please take care out there when you are exploring, okay? $s#$b#Just come home safe.",
+"Good_8": "I really, really love this pendant. $h#$b#I never want to take it off, but I'm worried it'll break accidentally.$s",
+"Good_9": "At what point is it too cheesy to ask for a kiss as a reward for cleaning the house?#$b# Because I, uh, I cleaned, and...$l",
+
+///Neutral
+"Neutral_0": "I cleaned your tools earlier, honey. #$b#I hope that's okay with you.$s",
+"Neutral_1": "%Flor is reading a book",
+"Neutral_2": "%Flor is writing something intently in her notebook.",
+"Neutral_3": "I saw some foxes on the edges of the property yesterday.$a#$b#I did my best to shoo them away, but we should ask Marnie for advice.$s",
+"Neutral_4": "%Flor is reviewing what looks like session notes. You shouldn't read over her shoulder.",
+"Neutral_5": "I know I'm not the most thrilling spouse, but I like our little life here.$s",
+"Neutral_6": "I want to focus on research of some kind, but I can't decide what...",
+"Neutral_7": "Yawn...I'm really sleepy...",
+"Neutral_8": "I just want to lay in bed all day today.",
+"Neutral_9": "I can't find a book I swear I brought with me to the valley... I wonder if I left it at the hotel?$a",
+
+///Bad
+"Bad_0": "Sometimes I wonder where the line between annoyance and resentment is.$a",
+"Bad_1": "I wish I wasn't the only therapist in the area, because we are in desperate need of one. $s",
+"Bad_2": "We have had the same argument over and over again... $a#$b#at some point, we have to break the cycle.$a",
+"Bad_3": "%Flor hasn't acknowledged you.",
+"Bad_4": "I'm tired @... I don't have the energy to talk at the moment...$s",
+"Bad_5": "I think I  want to stay at the hotel for a little while...$s",
+"Bad_6": "Can we... just... can we not, right now? $s#$b#I don't really know what to say to you.$a",
+"Bad_7": "I can't believe I was worried about codependence over everything else... I had no idea.$s",
+"Bad_8": "Why did we get married?$a",
+"Bad_9": "This is toxic. There's no way to pretend it's not.$a",
+
+
 }
 

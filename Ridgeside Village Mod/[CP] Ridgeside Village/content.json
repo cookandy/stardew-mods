@@ -15,10 +15,16 @@
 			"Description": "Enable the chances of other NPCs to appear riding the Cable Car (Along with LASV, ES and SVE NPCs)"
 		},
 		
+		"EnableVillageMusic": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Enable the custom music to play in Ridgeside Village"
+		},
+		
 		"PortraitType": {
 			"AllowValues": "Legacy, Official",
 			"Default": "Legacy",
-			"Description": "Change Portrait Type (Legacy by Rafseazz / Official by avislone)"
+			"Description": "Change Portrait Type (Legacy by Rafseazz / Official by avislone) Legacy/Official"
 		},
 		
 		"MaddieGlasses": {
@@ -97,18 +103,23 @@
 		"When": { "EnableOtherNPCsInCableCar": "true", "HasMod: |contains=Lemurkat.JacobEloise.CP": true, "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true, "HasMod: |contains=Rafseazz.LunnaCP": true  },
 		},
 		
+//		{
+//		"Name": "SPOUSECHECK",
+//		"Value": "Alex, Elliot, Harvey, Sam, Sebastian, Shane, Abigail, Emily, Haley, Leah, Maru, Penny, Alissa, Corine, Flor, Maddie, Ysabelle, Ian, Jeric, Kenneth, Philip, Shiro",
+//		},
+		
 	//EMBER OF RESOLUTIONS TOKENS
 		{
 		//Alone
 		"Name": "BONFIREEVENT",
 		"Value": "/warp farmer 40 49/faceDirection farmer 0/fade/viewport 39 46/pause 2000/move farmer 0 -5 0/pause 1000/playSound backpackIN/addObject 40 42 294/pause 2000/message \"..And my new year resolutions are..\"/pause 3000/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/warp farmer 40 48/faceDirection farmer 0/",
 		},
-		{
+//		{
 		//With Spouse
-		"Name": "BONFIREEVENT",
-		"Value": "/warp farmer 40 49/warp {{spouse}} 39 49/faceDirection farmer 0/faceDirection {{spouse}} 0/fade/viewport 39 46/pause 2000/move {{spouse}} 0 -5 2/move farmer 0 -5 3/faceDirection {{spouse}} 1/pause 1000/faceDirection farmer 0/faceDirection {{spouse}} 0/pause 1000/playSound backpackIN/addObject 39 42 294/pause 1000/playSound backpackIN/addObject 40 42 294/pause 1000/message \"..And my new year resolutions are..\"/pause 3000/faceDirection {{spouse}} 1/pause 2000/faceDirection farmer 3/speak {{spouse}} \"I'm looking forward for another year with you..$l\"/emote {{spouse}}/emote farmer 20/pause 3000/globalFade/viewport -1000 -1000/warp farmer 40 48/faceDirection farmer 0/warp {{spouse}} 39 48/faceDirection {{spouse}} 0/",
-		"When": { "HasValue:{{spouse}}": "true" }
-		},
+//		"Name": "BONFIREEVENT",
+//		"Value": "/warp farmer 40 49/warp {{spouse}} 39 49/faceDirection farmer 0/faceDirection {{spouse}} 0/fade/viewport 39 46/pause 2000/move {{spouse}} 0 -5 2/move farmer 0 -5 3/faceDirection {{spouse}} 1/pause 1000/faceDirection farmer 0/faceDirection {{spouse}} 0/pause 1000/playSound backpackIN/addObject 39 42 294/pause 1000/playSound backpackIN/addObject 40 42 294/pause 1000/message \"..And my new year resolutions are..\"/pause 3000/faceDirection {{spouse}} 1/pause 2000/faceDirection farmer 3/speak {{spouse}} \"I'm looking forward for another year with you..$l\"/emote {{spouse}} 20/emote farmer 20/pause 3000/globalFade/viewport -1000 -1000/warp farmer 40 48/faceDirection farmer 0/warp {{spouse}} 39 48/faceDirection {{spouse}} 0/",
+//		"When": { "HasValue:{{spouse}}": "true", "Spouse": "Alex, Elliot, Harvey, Sam, Sebastian, Shane, Abigail, Emily, Haley, Leah, Maru, Penny, Alissa, Corine, Flor, Maddie, Ysabelle, Ian, Jeric, Kenneth, Philip, Shiro" }
+//		},
 		
 	//RIDGESIDE GATHERING TOKENS
 		//Sam Band Only
@@ -505,6 +516,8 @@
 		"Target": "LooseSprites/RSVQuestBoard, LooseSprites/RSVNinjaBoard",
 		"FromFile": "assets/{{Target}}.png",
 	},
+	
+
 
 ],
 

@@ -1,7 +1,7 @@
 {
 	"Name": "RSV Items",
     "Author": "Rafseazz",
-    "Version": "1.0.0",
+    "Version": "1.2.2",
     "Description": "Adds items for RidgeSide Village 1.2.0",
     "UniqueID": "Rafseazz.RSVJA",
 	"UpdateKeys": [ "Nexus:???" ],

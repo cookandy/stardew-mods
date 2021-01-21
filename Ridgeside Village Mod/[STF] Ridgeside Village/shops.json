@@ -457,7 +457,7 @@
 	"Quote": "Girls rule!!",
 	"ShopPrice": -1,
 	"MaxNumItemsSoldInStore": 8,
-	"DefaultSellPriceMultiplier": 0.8,
+	"DefaultSellPriceMultiplier": 1.0,
 	
 	"ItemStocks": [
 		{
@@ -576,7 +576,7 @@
 	"Quote": "Boys rule!!",
 	"ShopPrice": -1,
 	"MaxNumItemsSoldInStore": 8,
-	"DefaultSellPriceMultiplier": 0.8,
+	"DefaultSellPriceMultiplier": 1.0,
 	
 	"ItemStocks": [
 		{

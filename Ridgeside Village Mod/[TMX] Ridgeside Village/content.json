@@ -27,21 +27,108 @@
 		"40 40 RidgesideVillage 99 1",
 		"41 40 RidgesideVillage 100 1",
 		"42 40 RidgesideVillage 100 1",
-		"31 -1 RidgeForest 69 128",
-		"32 -1 RidgeForest 69 128",
-		"33 -1 RidgeForest 69 128",
+		"31 -1 RidgeForestQ1 69 53",
+		"32 -1 RidgeForestQ1 69 53",
+		"33 -1 RidgeForestQ1 69 53",
 	  ]
 	},
 	{
-	  "name": "RidgeForest",
-	  "file": "assets/RidgeForest.tbin",
+	  "name": "RidgeForestQ1",
+	  "file": "assets/RidgeForestQ1.tbin",
 	        "addWarps": [
-		"68 130 Ridge 32 1",
-		"69 130 Ridge 32 1",
-		"70 130 Ridge 32 1",
-		"126 30 MysticFalls1 15 18",
-		"42 32 MysticFalls2 15 18",
-		"102 33 MysticFalls3 15 18",
+		"68 55 Ridge 32 1",
+		"69 55 Ridge 32 1",
+		"70 55 Ridge 32 1",
+		
+		"26 -1 RidgeForestQ4 27 73",
+		"27 -1 RidgeForestQ4 27 73",
+		"28 -1 RidgeForestQ4 27 73",
+		"29 -1 RidgeForestQ4 27 73",
+		
+		"75 -1 RidgeForestQ4 76 73",
+		"76 -1 RidgeForestQ4 76 73",
+		"77 -1 RidgeForestQ4 76 73",
+		"78 -1 RidgeForestQ4 76 73",
+		
+		"92 6 RidgeForestQ2 1 7",
+		"92 7 RidgeForestQ2 1 7",
+		"92 8 RidgeForestQ2 1 7",
+		
+		"92 26 RidgeForestQ2 1 27",
+		"92 27 RidgeForestQ2 1 27",
+		"92 28 RidgeForestQ2 1 27",
+		
+		"92 40 RidgeForestQ2 1 41",
+		"92 41 RidgeForestQ2 1 41",
+		"92 42 RidgeForestQ2 1 41",
+	  ]
+	},
+	{
+	  "name": "RidgeForestQ2",
+	  "file": "assets/RidgeForestQ2.tbin",
+	        "addWarps": [
+		"-1 6 RidgeForestQ1 90 7",
+		"-1 7 RidgeForestQ1 90 7",
+		"-1 8 RidgeForestQ1 90 7",
+		
+		"-1 26 RidgeForestQ1 90 27",
+		"-1 27 RidgeForestQ1 90 27",
+		"-1 28 RidgeForestQ1 90 27",
+		
+		"-1 40 RidgeForestQ1 90 41",
+		"-1 41 RidgeForestQ1 90 41",
+		"-1 42 RidgeForestQ1 90 41",
+		
+		"34 -1 RidgeForestQ3 35 73",
+		"35 -1 RidgeForestQ3 35 73",
+		"36 -1 RidgeForestQ3 35 73",
+		"37 -1 RidgeForestQ3 35 73",
+	  ]
+	},
+	{
+	  "name": "RidgeForestQ3",
+	  "file": "assets/RidgeForestQ3.tbin",
+	        "addWarps": [
+		"34 75 RidgeForestQ2 35 1",
+		"35 75 RidgeForestQ2 35 1",
+		"36 75 RidgeForestQ2 35 1",
+		"37 75 RidgeForestQ2 35 1",
+		
+		"-1 55 RidgeForestQ4 90 56",
+		"-1 56 RidgeForestQ4 90 56",
+		"-1 57 RidgeForestQ4 90 56",
+		
+		"-1 19 RidgeForestQ4 90 20",
+		"-1 20 RidgeForestQ4 90 20",
+		"-1 21 RidgeForestQ4 90 20",
+		
+		"34 30 MysticFalls1 15 19",
+		"10 33 MysticFalls3 15 19",
+	  ]
+	},
+	{
+	  "name": "RidgeForestQ4",
+	  "file": "assets/RidgeForestQ4.tbin",
+	        "addWarps": [
+		"26 75 RidgeForestQ1 27 1",
+		"27 75 RidgeForestQ1 27 1",
+		"28 75 RidgeForestQ1 27 1",
+		"29 75 RidgeForestQ1 27 1",
+		
+		"75 75 RidgeForestQ1 76 1",
+		"76 75 RidgeForestQ1 76 1",
+		"77 75 RidgeForestQ1 76 1",
+		"78 76 RidgeForestQ1 76 1",
+		
+		"92 55 RidgeForestQ3 1 56",
+		"92 56 RidgeForestQ3 1 56",
+		"92 57 RidgeForestQ3 1 56",
+		
+		"92 19 RidgeForestQ3 1 20",
+		"92 20 RidgeForestQ3 1 20",
+		"92 21 RidgeForestQ3 1 20",
+		
+		"42 32 MysticFalls2 15 19",
 	  ]
 	},
 	{
@@ -86,27 +173,27 @@
 	  "name": "MysticFalls1",
 	  "file": "assets/MysticFalls1.tbin",
 	        "addWarps": [
-		"14 20 RidgeForest 126 32",
-		"15 20 RidgeForest 126 32",
-		"16 20 RidgeForest 126 32",
+		"14 20 RidgeForestQ3 34 32",
+		"15 20 RidgeForestQ3 34 32",
+		"16 20 RidgeForestQ3 34 32",
 	  ]
 	},
 	{
 	  "name": "MysticFalls2",
 	  "file": "assets/MysticFalls2.tbin",
 	        "addWarps": [
-		"14 20 RidgeForest 42 34",
-		"15 20 RidgeForest 42 34",
-		"16 20 RidgeForest 42 34",
+		"14 20 RidgeForestQ4 42 34",
+		"15 20 RidgeForestQ4 42 34",
+		"16 20 RidgeForestQ4 42 34",
 	  ]
 	},
 	{
 	  "name": "MysticFalls3",
 	  "file": "assets/MysticFalls3.tbin",
 	        "addWarps": [
-		"14 20 RidgeForest 102 35",
-		"15 20 RidgeForest 102 35",
-		"16 20 RidgeForest 102 35",
+		"14 20 RidgeForestQ3 10 35",
+		"15 20 RidgeForestQ3 10 35",
+		"16 20 RidgeForestQ3 10 35",
 	  ]
 	},
 	{
@@ -316,6 +403,13 @@
       "file": "assets/RSVHiddenWarp.tbin",
 	        "addWarps": [
         "11 1 RSVNinjaHouse 6 9"
+      ]
+    },
+	{
+      "name": "RSVHiddenWarp2",
+      "file": "assets/RSVHiddenWarp2.tbin",
+	        "addWarps": [
+        "11 1 Ridge 70 33"
       ]
     },
 	{

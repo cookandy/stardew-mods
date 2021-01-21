@@ -1,89 +1,110 @@
 {
-	"Introduction": "Why hello there! I can tell you're new here. By the way, my name's Ysabelle. What's yours?#$b#Nice to meet you @. Hope you have a great stay here!$h",
+	"Introduction": "Why hello there! I can tell that you're new here.#$e#My name is Ysabelle. What's yours?#$b#Nice to meet you @. I do hope you have a great stay here!$h",
 
-//Day before Festivals	
-	"spring_12": "I brought a lovely dress for Corine to wear tomorrow! I hope she likes it.#$b#Oh I also bought myself a sleek dress for myself#$b#You just have to come tomorrow to see it$h",
-	"spring_23": "The flowerdance is my favorite festival! It gives me a chance to express myself#$b#I’m really looking forward to dancing my heart out tomorrow!$h",
-	"summer_10": "My granddad wishes the soup turns out good tomorrow, He enjoys the Luau so much!.#$b#I think the governor enjoys the soup tasting the most! haha $h",
-	"summer_27": "I admire how the jellyfish get attracted to the light. It’s like they’re making a dance on their own.#$b#Will you be there tomorrow? If you decide to go I’m sure you’d like it!$h",
-	"fall_15": "Are you thinking of going to the fair tomorrow?#$b#You should visit Gus by the fountains! His burgers are just so divine!$h",
-	"fall_26": "If you ask me, it honestly feels so tacky to wear a costume but Corine keeps on bugging me!$a#$b#*Sigh* I guess I’ll just wear one of my tutus… But then again, I could decide for myself#$b#We’ll see tomorrow$6 ",
-	"winter_7": "The festival of ice makes me think about The Nutcracker Ballet!$s#$b#Oh what I’d give to play a role like Clara for The Nutcracker.$7",
-	"winter_14": "Do you know what you’ll buy at the market tomorrow?#$b#I’ve always been looking for pointe shoes during the night market, I just can’t seem to find one of good quality these days.$s",
-	"winter_24": "I hope this yuletide season brings you joy as much as the Winter Star treats brings me happiness!#$b#Have a wonderful new year @!$h",
+//Spring
+	"spring_1": "I'm looking forward to the start of this new season!$h#b#I hope everyone has a prosperous new year!$h",
+	"spring_12": "I bought a lovely dress for Corine to wear tomorrow! It'll highlight her curves in all the right places.$h#$b#I hope she likes it.$h#$b#Oh, I also bought a sleek dress for myself. You have to come tomorrow to see it!$l",
+	"spring_23": "The Flower Dance is my favorite festival!$h#$e#It gives me a chance to express myself.$l#$b#Hearing the music and feeling the rhythm just makes my heart soar.$h",
+
+//Summer
+	"summer_1": "I'm looking forward to this season.#$b#The grass skirts and the dresses all remind me of dancing hula as a little girl in summer shows.$h",
+	"summer_10": "My granddad is quite excited for the festival tomorrow.#$b#He enjoys the Luau so much!$h#$e#I think the governor is more excited than anyone else, because when the soup is good, it's really good!$h",
+	"summer_27": "I love how the jellyfish move when they glow.$l#$b#It's like they're dancing...$6#$e#Will you be there tomorrow? If you decide to go I'm sure you'd like it!$h",
+
+//Fall
+	"fall_1": "Oooh, I just fall in love with all the colors when fall comes around. Haha, get it?$h#$e#It's such a good season for fashion, too, with the changing weather.#$b#There's so much flexibility, and so many good color palettes.$h",
+	"fall_15": "Are you thinking of going to the fair tomorrow?#$b#You should visit Gus by the fountains! His burgers are simply divine!$h",
+	"fall_26": "It feels a little gauche to wear a costume tomorrow, but Corine keeps on bugging me to wear one of my tutus.$s#$e#*Sigh* But then again, I don't have to dress up. I could decide for myself.$6#$b#We'll see tomorrow.$6",
+
+//Winter
+	"winter_1": "Brr! I wonder if the lake freezes over enough for ice skating?#$b#I've never tried it!$6",
+	"winter_7": "The Ice Festival makes me think about The Nutcracker Ballet.$6#$b#I always wanted to be the Sugar Plum Fairy...$7",
+	"winter_14": "Do you know what you'll buy at the market tomorrow?#$e#I'm keeping an eye out for some new silk ribbons!#$b#You just can't buy them online.$a",
+	"winter_15": "I hope someone is selling ribbons.$6#$e#If not I'll have to do without, or plan a trip into the city...$6No, I'd rather just do without.$s",
+	"winter_16": "The elegance of the mermaids is truly otherworldly.$l#$b#If you haven't seen the show yet, what are you waiting for?",
+	"winter_17": "Lupini asked if he could paint me.$u#$e#I was surprised at the offer, but I couldn't say no!$l#$b#His rococo style is unparalleled!",
+	"winter_24": "I hope this yuletide season brings you joy as much as the Winter Star treats bring me happiness!$h#$b#Have a wonderful new year, @!$h",
+
+
 
 //Days of the Week
-	"Mon": "Hello! Your name’s @ right? How are you today?#$b#I’m sorry I have to leave in such a haste, I’m on my way to help Corine with her stretching.",
-	"Tue": "Oh hello! Have a great day ahead @.",
-	"Wed": "Honestly, working at the cabin stresses me a lot.$s#$b#It must be nice having a lot of time to relax.#$e#I mean I get why grandfather wants me to do this, but can’t a lady take a break once in a while?$s",
-	"Thu": "Have you been to Pelican beach?#$b#I recommend that place for yoga and for clearing your head",
-	"Fri": "Excuse me, you’re in my way.#$e#Can you leave me alone for now? I’m not really in the mood to talk$a",
-	"Sat": "I’m sorry I can’t stay and chat with you today. I have to go back to my studio at the cabin to practice my pirouettes",
-	"Sun": "Ahh my favorite day of the week. This day is my 'me' day. A time to relieve some stress and catch up on my meditation ",
-	
-	"Mon2": "I helped Haley with her walk yesterday. She wanted me to teach her the proper posture in walking. She wants an edge for the next Flowerdance festival.",
-	"Tue2": "It’s a nice day today isn’t it? I have this hankering for chocolates right now.",
-	"Wed2": "Hi @! I hope you have a great day today#$e#It’s definitely a beautiful day to go outside!$h",
-	"Thu2": "If you see my grandfather, please don’t tell him I’m here okay?$u#$e#I’ve been hiding from my chores today",
-	"Fri2": "I admire Leah’s work of art. I sincerely think that she sculpts with class. A modern-day Michaelangelo if you ask me",
-	"Sat2": "Have you taken the time to take care of your body today?#$e#I’m on my way to the hotel gym to warm up for my ballet practice",
-	"Sun2": "Have you tried eating the truffles? I can guarantee that they absolutely taste divine",
-	
-	"Mon4": "I miss hanging out with Alex and Corine at the beach. It has always been our safe haven.#$e#Hey @, if you want, next time you could come with us$h",
-	"Tue4": "It’s a great day of business here today at the cabin.#$b#In days like this I’m pleased because I feel like what my grandfather and I are doing gives satisfaction to the people in town.$h",
-	"Wed4": "When I visit the town, I often make it a point to go to Harvey and bring him coffee.#$b#We both enjoy talking about life and work whilst taking a little stroll around the plaza",
-	"Thu4": "OH NO! I left my pointe shoes at Corine’s last night. Ugh I hope no one else touches it before I get there.$u#$e#Pointe shoes tend to tear if they’re not handled with the utmost care.$s",
-	"Fri4": "Hello@!How have you been? I notice you’re glowing today. You must be eating healthy right?#$b#That’s great news! Hope to see you around!",
-	"Sat4": "I really appreciate grandfather for giving me this day to keep up with my training#$b#I really wanted to keep in touch with my passion for ballet.#$b#Training here at the gym of the hotel helps me keep in touch with my love for it$h",
-	"Sun4": "I’m going to the forest today to meditate#$b#Harvey sometimes joins me when Lenny joins me whenever she feels stressed.#$b#she knows that it’s a great way to relieve stress. It’s also a little bonding time for us.",
-	
-	"Mon6": "I applaud how Corine would try her best whenever she joins me in my training.$h#$b#She’s definitely improving on her plié and arabesques.$h",
-	"Tue6": "I’m grateful for grandfather. He took me in and took care of me. He’s also been teaching me how to be an adult.",
-	"Wed6": "Maddie has been bugging me to help around with the clean ups around town. Ugh she had the audacity to tell me that I don’t contribute enough to save the Earth$u#$b#I believe we can still do a lot for the environment even if we don’t pick up trash$a#$b#She must’ve been lacking sleep before she approached me so let’s give her the benefit of the doubt.",
-	"Thu6": "Oh hello there @! Have you tried the triple shot espresso? It is to die for! I think this is what Ambrosia tastes like",
-	"Fri6": "I saw Philip yesterday, he came to me at the hotel and he helped out. Grandfather got suspicious though. #$b#Would you believe that he actually thought Philip and I were together??$u",
-	"Sat6": "Another day, another training.$h#$b# Saturday is my favorite day of the week. It’s a day where I can truly be me on the dancefloor.",
-	"Sun6": "It’s quite nice that grandfather decided to join me on a walk on the forest today. He could use the fresh air.$h#$b#There we had a picnic on the grass and he was telling me about my childhood as well as Corine’s$h#$b#He told me that I’ve always been prim and proper. Awwee, thank the universe for Corine, she made me loosen up and have a lot of fun$h",
-	
-	"Mon8": "Hello @!I’ve noticed that the skies are brighter today now that you’re here$l#$b#Just kidding hihi. Anyhoo, have you been doing good?$h",
-	"Tue8": "Hey there @! I’ve been looking all over for you!$h#$b#I just wanted to let you know that you can come by anytime if you want to talk or anything.$h",
-	"Wed8": "*giggles* I’ve missed seeing you today.$l#$b#You must help me with the piece I’m working on next time. Although, it kind of involves you carrying me in your arms*smirks*$l",
-	"Thu8": "Hello @! It’s a beautiful day isn’t it?$h#$b#I just wanted to catch you alone… and maybe possible tell you that hihi… I really REALLY like you @!$l#$e#I really don’t expect you to like me back, but I just wanted to get that off my chest.$h#$b#It’s alright if you don’t feel the same, I hope we could still be friends(or even more hihi) as time passes$h",
-	"Fri8": "Why, hello there sunshine.$h#$b#You're looking more dashing than usual!$l^You look as radiant as the sun at its highest peak today$h",
-	"Sat8": "Hey @, I’m on my way to the gym to warm up for my training would you like to accompany me?$h",
-	"Sun8": "Hello @, I’d just like to say that I’m really grateful for you. Especially these past few days. For listening to me and for just simply being there$l#$e#*kisses you on the cheek*",
-	
-	"Mon10": "A great day to you @! Did you miss me? Haha#$e# OH stop it you! You’re making me blush!$l#$b#You really keep pushing me to the edge huh.$6#$b#What edge? Oh. This edge.#$b# %Whispers to your ear#$b#To the naughty edge..$l#$e#Oh? Nothing. Teehee < $h",
-	"Tue10": "*kisses you* Hello love, how was your day?#$e#Would you like to meet me after our shifts? Let’s go on a date",
-	"Wed10": "I'm kind of bored and stressed uhgg.$6#$b#I want to go release some tension and dance a bit.$h#$e#Want to go watch or even join me love?#$b#Come on! Maybe we can dance together a little.$h#$e#I like getting close to you.$l",
-	"Thu10": "Corine asked about our relationship the other day. She was curious about how we ended up together.#$e#I'm quite confused to who made the first move as well love!$h#$e#I don't really care though. I'm just happy you're mine. Teehee < $l",
-	"Fri10": "Can we got to your farm? I like hanging around there.$h#$e#I also like to pass the time looking at you sweat while you work hun.$l#$b#Just make sure you wipe the sweat before hugging me okay?$h",
-	"Sat10": "@ love. Come here.#$b#What? Not much, Just come here!$h#$b# %Ysa kissed you on the lips #$b#There. I missed you.$l#$e#Now tell me. How's your day so far?$h#$b#If you ever get bored please do visit me.#$b#I love it when you're around.$l",
-	"Sun10": "Hey hun, I missed you!#$e#Aww what’s wrong?#$e#You want to go out? Sure my love!$l#$e#Oh I’m just so lucky to have you! Why don’t we set up a picnic tonight at the beach and toast to happiness$h",
-	
-//Seasonal
-	"spring_1": "I’m looking forward to the start of this new season! I hope everyone has a prosperous new year!$h",
-	"summer_1": "I’m looking forward to this season!$h#$e#The grass skirts and the dresses all remind me of my hula dancing days as a child ",
-	"fall_1": "Oooh fall season just makes me fall in love with all the colors$6#$b#This season is what really inspired my fashion sense, I had a chance to try outfits that are for a hot weather as well as for cold weather because fall is a season where the hot and cold combine. And don’t get me started on the color palette of the season!$h ",
-	"winter_1": "Brr. This cold season makes me want to try my hand at ice skating!",
-	
-//Special Dialogue
-	"breakUp": "I apologize for doing this… But I don’t think things will work out between us$s",
-	"danceRejection": "Oh dear, I’m sorry but I have to decline for I don’t know you that well yet.",
-	"divorced": "What you did to me is unacceptable!#$e#You’re not worth my time so please stop wasting it.$a",
-	
-//Resort
-	"Resort_Entering": "Ahhh, a chance to soak up some sunshine and relax! This is my kind of getaway.",
-	"Resort_Leaving": "Awwww. Must we leave so soon? I must tell grandfather about this place! I think it'll be a great reason for him to get away from the village for a while!",
-	"Resort_Leaving_2": "This place is definitely for keeps. I must return here soon. With some company maybe?",
-	"Resort_Shore": "The sky's above, the sand's below. I feel at peace here. The sea’s calling out to me.",
-	"Resort_Shore_2": "I wonder how many seashells I'd find here. They're like the love letters of the ocean.",
-	"Resort_Umbrella": "Ahhhh, a day for relaxation. Isn't it wonderful?",
-	"Resort_Umbrella_2": "The ocean is everything I want to be. Beautiful, exciting, wild, and free.",
-	"Resort_Umbrella_3": "I could never in a million years get tired of this view.",
-	"Resort_Wander": "I'm looking for that perfect, quiet spot, with a breathtaking view. Have a cold drink in my hand, with a warm sea breeze on my skin, and the sound of the waves crashing. Ahhh, that would be the BEST!",
-	"Resort_Bar": "There's nothing else you need at the beach but a tequila and a tan!",
-	"Resort": "Ahhhh! Home is where the sea is, haha! I hope I get to work on my tan!",
 
+	//0 Hearts
+	"Mon": "Hello! Your name's @, right? How are you today?",
+	"Tue": "Oh hello! Have a great day ahead, @.$h",
+	"Wed": "Honestly, working at the hotel stresses me out a lot.$6#$e#It must be nice having a lot of time to relax.$6#$b#I mean I get why grandfather wants me to do this, but I could also use a break.$s",
+	"Thu": "Have you been to the beach? I recommend it for yoga and clearing your head.$h",
+	"Fri": "Excuse me, you're in my way. I'm not really in the mood to talk.$6",
+	"Sat": "I'm sorry, I can't stay and chat with you today.#$e#I scheduled dance practice for myself and I need to keep to my schedule.",
+	"Sun": "Ahh my favorite day of the week.$h#$b#Sunday is my 'me' day: a time to relieve some stress and catch up on my meditation.$h",
 	
+	//2 Hearts
+	"Mon2": "I'm going to help Haley later.#$b#She wants me to teach her the proper posture when walking the runway.#$e#She thinks it'll give her an edge for the next Flower Dance festival, but it's really just a good skill to have.$h",
+	"Tue2": "It's a nice day today isn't it? I have a craving for chocolates right now. Hmm, and maybe some strawberries.",
+	"Wed2": "Hi @! I hope you have a great day today!$h",
+	"Thu2": "If you see my grandfather, please don't tell him I'm here okay?$u#$b#I'm hiding from my to-do list, today.$l",
+	"Fri2": "I admire Leah's attitude. She specializes in abstractions, but there's a certain class to her work.$h",
+	"Sat2": "Have you taken the time to care for your body today?#$b#I'm on my way to the hotel gym. Would you care to join me?",
+	"Sun2": "Have you tried the valley truffles?#$b#They're absolutely magnificent grated over some popcorn, believe it or not.$h",
+	
+	//4 Hearts
+	"Mon4": "I miss hanging out with Alex and Corine at the beach.#$e#It has always been our safe haven.$h#$e#You're welcome to join us next time if you like, @.",
+	"Tue4": "Today's been a good day for the hotel.#$b#I'm glad for Grandfather that he's able to see how much the valley appreciates his hard work.$h",
+	"Wed4": "When I go into town, I often make it a point to visit Harvey and bring him coffee.#$b#We both enjoy talking about life and work whilst taking a little stroll around the plaza.$h",
+	"Thu4": "OH NO! I left my pointe shoes at Corine's last night.$u#$b#I hope she left them alone; she likes to try them on when she's had a drink or two.$6",
+	"Fri4": "Hello @! How have you been?#$b#My, you're glowing today. You must be eating well and getting your beauty sleep!$h",
+	"Sat4": "I really appreciate grandfather for always giving me a full day to focus on practicing.$h#$e#I'm not completely sure what the next few years will hold, but I want to stay as sharp as I can.$l",
+	"Sun4": "I'm going to the forest today to meditate.#$e#Lenny joins me whenever she feels stressed, as it's such a good way to let go of anxiety and practice being present.#$b#It's also a little bonding time for us.$h",
+	
+	//6 Hearts
+	"Mon6": "I applaud how hard Corine tries whenever she joins me in my training.#$b#She's definitely improving quickly.$h",
+	"Tue6": "I'm grateful for Grandfather. He took me in and took care of me when I was lost.#$b#I don't know how I would've survived if he wasn't there to guide me.$6",
+	"Wed6": "Maddie had the audacity to tell me that I don't contribute enough to save the Earth.$a#$e#There's a great deal that we can accomplish that doesn't involve picking up litter.$a#$b#She must've been short on sleep before she approached me, so let's give her the benefit of the doubt.$6",
+	"Thu6": "Oh, hello there @! Have you tried the triple shot espresso?#$b#It is to die for! I think this is what ambrosia tastes like.$l",
+	"Fri6": "After Philip finished work yesterday, he came by the lobby and offered to help out. Grandfather got suspicious though.#$b#Would you believe that he actually thought Philip and I were seeing each other?$u",
+	"Sat6": "~Another day, another plié.~$h#$e#Saturday is my new favorite day of the week.#$b#It's a day for just me and the dance floor. Well, gym floor.$h",
+	"Sun6": "Grandfather joined me for a forest walk the other day.#$b#We had a picnic on the grass and he told me stories from my and Corine's childhoods.$h#$e#He said that I've always been rather prim and proper.$6#$b#Thank the universe for Corine, she's taught me to loosen up a bit.$h",
+	
+	//8 Hearts
+	"Mon8": "Hello, @! My, I think the skies look a bit brighter with you around!$l#$b#I'm only teasing. How are you?$h",
+	"Tue8": "Hey there, @! I've been looking for you! But I can't for the life of me remember why.$l#$b#Oh well! It's good to see you.$h",
+	"Wed8": "It's good to see you!$h#$b#Yes, I'm aware we saw each other recently, but absence doesn't require time to make the heart grow fonder.$l",
+	"Thu8": "Hello @! It's a beautiful day isn't it?$h#$b#If you have some time to spare, care to spend it with me?$l",
+	"Fri8": "Why, hello there sunshine. You're looking more magnificent than usual!$l#$b#Like you're sculpted of stone!^You're as radiant as the sun!$h",
+	"Sat8": "Hey @, I'm on my way to the gym to warm up for my training. Would you like to accompany me?#$b#Lenny said she's going to try and drop by, though I don't know if that would encourage or discourage you from joining me.$l",
+	"Sun8": "Hello @, I'd just like to say that I'm really grateful for you.$l#$e#Especially these past few days. Both for listening to me, and for just simply being there.$l",
+	
+	//10 Hearts
+	"Mon10": "A great day to you my favorite dose of sunshine! Did you miss me?$h#$b#Oh, stop, you'll make me blush.$l",
+	"Tue10": "Hello love, how was your day? Would you like to meet me after work?#$b#Let's go on a date.$h",
+	"Wed10": "I'm rather of bored and stressed. I want to go release some tension and dance a bit.$6#$b#Care to join me, love? Take a risk! I'm sure I can teach you a thing or two.$h",
+	"Thu10": "Corine asked about our relationship the other day. She was curious about how we ended up together.$h#$b#I can't quite remember the story in detail. It was all a delightful blur.$l",
+	"Fri10": "Can we go to your farm? It's incredibly... what's the word? Not peaceful. Tranquil? Hmm...$6#$b#Comforting! That's it!$h",
+	"Sat10": "I finally figured out a name for what you and dance have in common, for me: both feel like home.$l",
+	"Sun10": "How does a picnic and a bottle of something sparkling sound?#$e#Champagne would be wonderful, but to be honest, I'd be fine with some sparkling water, as long as you're there.$l",
+	
+
+
+
+//Special Dialogue
+"breakUp": "I apologize for doing this... But I don't think things will work out between us.$6",
+"danceRejection": "Oh dear, I'm sorry but I have to decline.$6",
+"divorced": "What you did to me is unacceptable!$a#$b#You're not worth my time so please stop wasting it!$a",
+
+
+//Resort
+	"Resort_Entering": "Ahhh, a chance to soak up some sunshine and relax!$h#$b#This is my kind of getaway.$h",
+	"Resort_Leaving": "Awwww. Must we leave so soon?$6#$e#I must tell grandfather about this place! I think it'll be a great reason for him to get away from the village for a while!$h",
+	"Resort_Leaving_2": "This place is definitely for keeps. I must return here soon.#$b#With some company maybe?$l",
+	"Resort_Shore": "The sky's above, the sand's below. I feel at peace here. The sea's calling out to me.$h",
+	"Resort_Shore_2": "I wonder how many seashells I'd find here.#$b#They're like the love letters of the ocean.$h",
+	"Resort_Umbrella": "Ahhhh, a day for relaxation. Isn't it wonderful?$h",
+	"Resort_Umbrella_2": "The ocean is everything I want to be. Beautiful, exciting, wild, and free.$h",
+	"Resort_Umbrella_3": "I could never in a million years get tired of this view.$h",
+	"Resort_Wander": "I'm looking for that perfect, quiet spot, with a breathtaking view.#$b#Have a cold drink in my hand, with a warm sea breeze on my skin, and the sound of the waves crashing.#$e#Ahhh, that would be the BEST!$h",
+	"Resort_Bar": "There's nothing else you need at the beach but a tequila and a tan!$h",
+	"Resort": "Ahhhh! Home is where the sea is, haha!$h#$b#I hope I get to work on my tan!",
+
+
 }
+

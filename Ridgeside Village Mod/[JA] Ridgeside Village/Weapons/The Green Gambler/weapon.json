@@ -4,7 +4,7 @@
 	"Type": "dagger",
 	"PurchasePrice": 50000,
 	"MinimumDamage": 1,
-	"MaximumDamage": 300,
+	"MaximumDamage": 500,
 	"Knockback": 0.1,
 	"Speed": 10,
 	"Accuracy": 90,

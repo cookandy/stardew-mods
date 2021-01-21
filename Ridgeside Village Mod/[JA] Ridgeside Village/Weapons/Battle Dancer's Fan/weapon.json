@@ -4,7 +4,7 @@
 	"Type": "sword",
 	"PurchasePrice": 50000,
 	"MinimumDamage": 90,
-	"MaximumDamage": 150,
+	"MaximumDamage": 120,
 	"Knockback": 0.3,
 	"Speed": 15,
 	"Accuracy": 90,

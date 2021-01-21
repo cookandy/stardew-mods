@@ -10,7 +10,20 @@
 			"Music": "cm:FallInRidgeside"
 			},
 		"When": {
-			"Weather": "Sun"
+			"Weather": "Sun",
+			"Time": "{{Range: 0600, 1900}}",
+			"EnableVillageMusic": true
+			}
+	},
+	{
+		"LogName": "Ridgeside Village Music",
+		"Action": "EditMap",
+		"Target": "Maps/RidgesideVillage",
+		"MapProperties": {
+			"Music": null
+			},
+		"When": {
+			"EnableVillageMusic": false
 			}
 	},
 	

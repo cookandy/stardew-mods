@@ -28,18 +28,45 @@
 		"Action": "EditData",
 		"Target": "Data/ObjectContextTags",
 		"Entries": {
-			"{{spacechase0.JsonAssets/ObjectId:Bladetail Sturgeon}}": "fish__rsv_bladetail_sturgeon",
-			"{{spacechase0.JsonAssets/ObjectId:Caped Tree Frog}}": "fish__rsv_caped_tree_frog",
-			"{{spacechase0.JsonAssets/ObjectId:Cardia Septal Jellyfish}}": "fish__rsv_cardia_septal_jellyfish",
-			"{{spacechase0.JsonAssets/ObjectId:Crimson Spiked Clam}}": "fish__rsv_crimson_spiked_clam",
-			"{{spacechase0.JsonAssets/ObjectId:Fairytale Lionfish}}": "fish__rsv_fairytale_lionfish",
-			"{{spacechase0.JsonAssets/ObjectId:Fixer Eel}}": "fish__rsv_fixer_eel",
-			"{{spacechase0.JsonAssets/ObjectId:Golden Rose Fin}}": "fish__rsv_golden_rose_fin",
-			"{{spacechase0.JsonAssets/ObjectId:Harvester Trout}}": "fish__rsv_harvester_trout",
-			"{{spacechase0.JsonAssets/ObjectId:Lullaby Carp}}": "fish__rsv_lullaby_carp",
-			"{{spacechase0.JsonAssets/ObjectId:Pebble Back Crab}}": "fish__rsv_pebble_back_crab",
+			"{{spacechase0.JsonAssets/ObjectId:Bladetail Sturgeon}}": "color_green, fish_bladetail_sturgeon",
+			"{{spacechase0.JsonAssets/ObjectId:Caped Tree Frog}}": "color_green, fish_caped_tree_frog",
+			"{{spacechase0.JsonAssets/ObjectId:Cardia Septal Jellyfish}}": "color_purple, fish_cardia_septal_jellyfish",
+			"{{spacechase0.JsonAssets/ObjectId:Crimson Spiked Clam}}": "color_red, fish_crimson_spiked_clam",
+			"{{spacechase0.JsonAssets/ObjectId:Fairytale Lionfish}}": "color_blue, fish_fairytale_lionfish",
+			"{{spacechase0.JsonAssets/ObjectId:Fixer Eel}}": "color_yellow, fish_fixer_eel",
+			"{{spacechase0.JsonAssets/ObjectId:Golden Rose Fin}}": "color_yellow, fish_golden_rose_fin",
+			"{{spacechase0.JsonAssets/ObjectId:Harvester Trout}}": "color_red, fish_harvester_trout",
+			"{{spacechase0.JsonAssets/ObjectId:Lullaby Carp}}": "color_green, fish_lullaby_carp",
+			"{{spacechase0.JsonAssets/ObjectId:Pebble Back Crab}}": "color_gray, fish_pebble_back_crab",
 		},
 	},
+	
+
+	
+//Aquarium
+//	{
+//		"Action": "EditData",
+//		"Target": "Data/AquariumFish",
+//		"Entries": {
+//			"{{spacechase0.JsonAssets/ObjectId:Bladetail Sturgeon}}": "93/fish",
+//			"{{spacechase0.JsonAssets/ObjectId:Caped Tree Frog}}": "94/crawl",
+//			"{{spacechase0.JsonAssets/ObjectId:Cardia Septal Jellyfish}}": "95/float",
+//			"{{spacechase0.JsonAssets/ObjectId:Crimson Spiked Clam}}": "96/static",
+//			"{{spacechase0.JsonAssets/ObjectId:Fairytale Lionfish}}": "97/fish",
+//			"{{spacechase0.JsonAssets/ObjectId:Fixer Eel}}": "98/fish",
+//			"{{spacechase0.JsonAssets/ObjectId:Golden Rose Fin}}": "99/fish",
+//			"{{spacechase0.JsonAssets/ObjectId:Harvester Trout}}": "100/fish",
+//			"{{spacechase0.JsonAssets/ObjectId:Lullaby Carp}}": "101/fish",
+//			"{{spacechase0.JsonAssets/ObjectId:Pebble Back Crab}}": "102/crawl",
+//		},
+//	},
+
+//	{
+//		"Action": "EditImage",
+//		"Target": "LooseSprites/AquariumFish",
+//		"FromFile": "assets/LooseSprites/RSVFishesAquarium.png",
+//		"ToArea": { "X": 288, "Y": 192, "Width": 192, "Height": 48 },
+//	},
 
 //Locations      
 
@@ -227,8 +254,8 @@
 		"Action": "EditData",
 		"Target": "Data/FishPondData",
 		"Entries": { 
-		"fish_butterfish": {
-		"RequiredTags": [ "fish__rsv_bladetail_sturgeon" ],
+		"Bladetail Sturgeon": {
+		"RequiredTags": [ "item_bladetail_sturgeon" ],
 		"SpawnTime": -1,
 		"ProducedItems": [
 		{
@@ -273,8 +300,8 @@
 		"Action": "EditData",
 		"Target": "Data/FishPondData",
 		"Entries": { 
-		"fish_butterfish": {
-		"RequiredTags": [ "fish__rsv_caped_tree_frog" ],
+		"Caped Tree Frog": {
+		"RequiredTags": [ "item_caped_tree_frog" ],
 		"SpawnTime": -1,
 		"ProducedItems": [
 		{
@@ -319,8 +346,8 @@
 		"Action": "EditData",
 		"Target": "Data/FishPondData",
 		"Entries": { 
-		"fish_butterfish": {
-		"RequiredTags": [ "fish__rsv_cardia_septal_jellyfish" ],
+		"Cardia Septal Jellyfish": {
+		"RequiredTags": [ "item_cardia_septal_jellyfish" ],
 		"SpawnTime": -1,
 		"ProducedItems": [
 		{
@@ -365,8 +392,8 @@
 		"Action": "EditData",
 		"Target": "Data/FishPondData",
 		"Entries": { 
-		"fish_butterfish": {
-		"RequiredTags": [ "fish__rsv_crimson_spiked_clam" ],
+		"Crimson Spiked Clam": {
+		"RequiredTags": [ "item_crimson_spiked_clam" ],
 		"SpawnTime": -1,
 		"ProducedItems": [
 		{
@@ -411,8 +438,8 @@
 		"Action": "EditData",
 		"Target": "Data/FishPondData",
 		"Entries": { 
-		"fish_butterfish": {
-		"RequiredTags": [ "fish__rsv_fairytale_lionfish" ],
+		"Fairytale Lionfish": {
+		"RequiredTags": [ "item_fairytale_lionfish" ],
 		"SpawnTime": -1,
 		"ProducedItems": [
 		{
@@ -457,8 +484,8 @@
 		"Action": "EditData",
 		"Target": "Data/FishPondData",
 		"Entries": { 
-		"fish_butterfish": {
-		"RequiredTags": [ "fish__rsv_fixer_eel" ],
+		"Fixer Eel": {
+		"RequiredTags": [ "item_fixer_eel" ],
 		"SpawnTime": -1,
 		"ProducedItems": [
 		{
@@ -503,8 +530,8 @@
 		"Action": "EditData",
 		"Target": "Data/FishPondData",
 		"Entries": { 
-		"fish_butterfish": {
-		"RequiredTags": [ "fish__rsv_golden_rose_fin" ],
+		"Golden Rose Fin": {
+		"RequiredTags": [ "item_golden_rose_fin" ],
 		"SpawnTime": -1,
 		"ProducedItems": [
 		{
@@ -549,8 +576,8 @@
 		"Action": "EditData",
 		"Target": "Data/FishPondData",
 		"Entries": { 
-		"fish_butterfish": {
-		"RequiredTags": [ "fish__rsv_harvester_trout" ],
+		"Harvester Trout": {
+		"RequiredTags": [ "item_harvester_trout" ],
 		"SpawnTime": -1,
 		"ProducedItems": [
 		{
@@ -595,8 +622,8 @@
 		"Action": "EditData",
 		"Target": "Data/FishPondData",
 		"Entries": { 
-		"fish_butterfish": {
-		"RequiredTags": [ "fish__rsv_lullaby_carp" ],
+		"Lullaby Carp": {
+		"RequiredTags": [ "item_lullaby_carp" ],
 		"SpawnTime": -1,
 		"ProducedItems": [
 		{
@@ -641,8 +668,8 @@
 		"Action": "EditData",
 		"Target": "Data/FishPondData",
 		"Entries": { 
-		"fish_butterfish": {
-		"RequiredTags": [ "fish__rsv_pebble_back_crab" ],
+		"Pebble Back Crab": {
+		"RequiredTags": [ "item_pebble_back_crab" ],
 		"SpawnTime": -1,
 		"ProducedItems": [
 		{
@@ -681,6 +708,23 @@
 		},
 		},
 		},
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/FishPondData",
+		"MoveEntries": [
+			{ "ID": "item_bladetail_sturgeon", "ToPosition": "Top" },
+			{ "ID": "item_caped_tree_frog", "AfterID": "item_bladetail_sturgeon" },
+			{ "ID": "item_cardia_septal_jellyfish", "AfterID": "item_caped_tree_frog" },
+			{ "ID": "item_crimson_spiked_clam", "AfterID": "item_cardia_septal_jellyfish" },
+			{ "ID": "item_fairytale_lionfish", "AfterID": "item_crimson_spiked_clam" },
+			{ "ID": "item_fixer_eel", "AfterID": "item_fairytale_lionfish" },
+			{ "ID": "item_golden_rose_fin", "AfterID": "item_fixer_eel" },
+			{ "ID": "item_harvester_trout", "AfterID": "item_golden_rose_fin" },
+			{ "ID": "item_lullaby_carp", "AfterID": "item_harvester_trout" },
+			{ "ID": "item_pebble_back_crab", "AfterID": "item_lullaby_carp" }
+		]
 	},
 
 

@@ -354,6 +354,9 @@
    </animation>
   </tile>
  </tileset>
+ <tileset firstgid="4152" name="zrsvspouses" tilewidth="16" tileheight="16" tilecount="36" columns="12">
+  <image source="zrsvspouses.png" width="192" height="48"/>
+ </tileset>
  <layer id="1" name="BackSpouse" width="7" height="10">
   <data encoding="csv">
 592,592,592,592,592,592,0,
@@ -371,9 +374,9 @@
  <layer id="2" name="BuildingsSpouse" width="7" height="10">
   <data encoding="csv">
 155,0,0,0,0,156,69,
-187,81,81,81,81,188,69,
-113,113,113,113,113,113,69,
-441,442,315,3386,3387,3388,69,
+187,81,81,0,0,0,69,
+113,113,113,0,0,0,69,
+441,442,315,4185,4186,4187,69,
 0,0,0,0,0,0,69,
 0,0,0,560,561,562,69,
 0,218,0,0,0,0,69,
@@ -385,8 +388,8 @@
  <layer id="3" name="FrontSpouse" width="7" height="10">
   <data encoding="csv">
 0,257,1174,1250,1251,0,0,
-0,289,1206,3336,3337,3338,0,
-409,410,0,3361,3362,3363,0,
+0,289,1206,4161,4162,4163,0,
+409,410,0,4173,4174,4175,0,
 0,0,0,0,0,0,0,
 0,0,0,528,529,530,0,
 0,0,0,0,0,0,0,

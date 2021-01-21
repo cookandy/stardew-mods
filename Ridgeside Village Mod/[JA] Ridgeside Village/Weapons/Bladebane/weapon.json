@@ -1,10 +1,10 @@
 {
 	"Name": "Bladebane",
-	"Description": "A hufe waraxe with a pale ribbon wrapped in the middle. It looks unused for a long time.",
+	"Description": "A huge waraxe with a pale ribbon wrapped in the middle. It looks unused for a long time.",
 	"Type": "club",
 	"PurchasePrice": 50000,
-	"MinimumDamage": 300,
-	"MaximumDamage": 340,
+	"MinimumDamage": 120,
+	"MaximumDamage": 180,
 	"Knockback": 5.3,
 	"Speed": 2,
 	"Accuracy": 50,

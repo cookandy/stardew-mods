@@ -3,7 +3,7 @@
 	"Description": "A heavy hooked blade that got it's name for being too unstable and unpredictable to use in combat. Its weird design is an acquired taste and can be deadly when used properly",
 	"Type": "sword",
 	"PurchasePrice": 50000,
-	"MinimumDamage": 200,
+	"MinimumDamage": 100,
 	"MaximumDamage": 250,
 	"Knockback": 0.1,
 	"Speed": 2,

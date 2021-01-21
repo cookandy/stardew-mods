@@ -28,13 +28,13 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Corine 38 24 down",
+         "Value": "Corine 36 22 down",
          "Delimiter": "/"
 		},
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Ezekiel 37 24 down",
+         "Value": "Ezekiel 35 22 down",
          "Delimiter": "/"
 		},
 		{

@@ -4,7 +4,7 @@
 	"Type": "sword",
 	"PurchasePrice": 50000,
 	"MinimumDamage": 100,
-	"MaximumDamage": 500,
+	"MaximumDamage": 200,
 	"Knockback": 0.3,
 	"Speed": 15,
 	"Accuracy": 50,
@@ -13,7 +13,7 @@
 	"MineDropMinimumLevel": -1,
 	"ExtraSwingArea": -1,
 	"CritChance": 0.50,
-	"CritMultiplier": 3,
+	"CritMultiplier": 1,
 	"NameLocalization":
 	{
 		/*Information goes here*/
