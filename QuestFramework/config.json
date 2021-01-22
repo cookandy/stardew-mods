@@ -1,4 +1,5 @@
 {
   "EnableStateVerification": false,
-  "DebugMode": false
+  "DebugMode": false,
+  "ShowNpcQuestIndicators": true
 }
