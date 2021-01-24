@@ -5,7 +5,7 @@
   "GrowCropsKey": "NumPad2",
   "GrowRadius": 1,
   "DefaultTab": "PlayerAndTools",
-  "MoveSpeed": 3,
+  "MoveSpeed": 2,
   "InfiniteHealth": false,
   "InfiniteStamina": false,
   "InstantCooldowns": false,
