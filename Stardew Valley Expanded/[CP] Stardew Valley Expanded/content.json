@@ -2874,6 +2874,20 @@
      "ToArea": { "X": 85, "Y": 0, "Width": 3, "Height": 5 }
 },
 
+{    //Patches forest shortcut (remove some objects)
+     "Action": "EditMap",
+     "Target": "Maps/Forest",
+     "FromFile": "Assets/Maps/MapPatches/Forest_Shortcut.tbin",
+	 "When": { "HasFlag": "communityUpgradeShortcuts" },
+     "ToArea": { "X": 114, "Y": 32, "Width": 6, "Height": 9 }
+},
+{
+     "Action": "EditMap",
+     "Target": "Maps/Forest",
+	 "When": { "HasFlag": "communityUpgradeShortcuts" },
+     "MapProperties": { "NPCWarp": "118 35 BlueMoonVineyard 74 37" }
+},
+
 {
      "Action": "EditMap",
      "Target": "Maps/BusStop",
@@ -2988,6 +3002,13 @@
 	 "When": { "Year |contains=1": false, },
      "ToArea": { "X": 61, "Y": 92, "Width": 3, "Height": 3 }
 },*/
+
+{    //Place broken special order board during summer
+     "Action": "EditImage",
+     "Target": "Maps/summer_Town",
+     "FromFile": "Assets/Tilesheets/BrokenSpecialOrdersBoard.png",
+     "ToArea": { "X": 416, "Y": 993, "Width": 45, "Height": 31 }
+},
 
 {    //Changed NPC warp at bus stop to desert 
      "Action": "EditMap",
@@ -17502,8 +17523,6 @@
 	 "1000017_GetThroughThis": "pause 500/speak George \"We both know I haven't always been friendly in the past, but kind words mean a lot to me right now.$0\"/pause 1000/emote George 28/pause 1000/speak George \"I'm going to pray for a little longer.$2#$b#I appreciate you stopping by and talking with me.$2\"/pause 500/globalFade/viewport -1000 -1000/pause 700/end dialogue George \"I hate people pitying me, but I have no choice but to lean on friends and family now.$0\""
 	 },
 },
-
-        //Huh? Oh. Hi. I didn't notice you were still browsing through the content file... still. Mind finding typos or bugs for me? Thanks!
 
 {       //LEWIS EVENT
 	 "Action": "EditData",
