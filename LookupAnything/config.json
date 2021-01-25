@@ -4,7 +4,7 @@
     "ToggleSearch": "LeftShift + Q",
     "ScrollUp": "Up",
     "ScrollDown": "Down",
-    "ToggleDebug": ""
+    "ToggleDebug": "None"
   },
   "ProgressionMode": false,
   "HighlightUnrevealedGiftTastes": false,
