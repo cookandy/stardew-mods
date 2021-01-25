@@ -1,761 +1,6 @@
 ﻿{
   "loadLate": true,
   
-  
-   "festivalSpots": [  
-       
-    	//EGG FESTIVAL
-		
-		{
-        "name": "Victor",
-        "map": "Town-EggFestival", 
-        "position": [24, 76],
-        "direction": 0,
-        "position2": [22, 67],
-        "direction2": 1,
-        },
-		{
-        "name": "Olivia",
-        "map": "Town-EggFestival", 
-        "position": [31, 62],
-        "direction": 3,
-        "position2": [22, 68],
-        "direction2": 1,
-        },
-		{
-        "name": "Andy",
-        "map": "Town-EggFestival", 
-        "position": [32, 70],
-        "direction": 1,
-        "position2": [19, 64],
-        "direction2": 1,
-        },
-		{
-        "name": "Susan",
-        "map": "Town-EggFestival", 
-        "position": [119, 0],
-        "direction": 0,
-        "position2": [119, 0],
-        "direction2": 1,
-		//"conditions": "e 1000077",
-        },
-        {
-        "name": "Sophia",
-        "map": "Town-EggFestival", 
-        "position": [29, 62],
-        "direction": 1,
-		"position2": [25, 67],
-        "direction2": 1,
-        },
-		{
-        "name": "MarlonFay",
-        "map": "Town-EggFestival", 
-        "position": [41, 57],
-        "direction": 2,
-		"position2": [33, 106],
-        "direction2": 2,
-        },
-		{
-        "name": "Claire",
-        "map": "Town-EggFestival", 
-        "position": [118, 0],
-        "direction": 2,
-        "position2": [118, 0],
-        "direction2": 0,
-		//"conditions": "e 3219873",
-        },
-		{
-        "name": "GuntherSilvian",
-        "map": "Town-EggFestival", 
-        "position": [117, 0],
-        "direction": 2,
-        "position2": [117, 0],
-        "direction2": 3,
-		//"conditions": "e 103042015"
-        },
-		{
-        "name": "MorrisTod",
-        "map": "Town-EggFestival", 
-        "position": [116, 0],
-        "direction": 2,
-        "position2": [116, 0],
-        "direction2": 2,
-		//"conditions": "e 6665293"
-        },
-		{
-        "name": "Scarlett",
-        "map": "Town-EggFestival", 
-        "position": [119, 1],
-        "direction": 0,
-        "position2": [119, 1],
-        "direction2": 1,
-		//"conditions": "e 8185295"
-        },
-		/*{
-        "name": "Sandy",
-        "map": "Town-EggFestival", 
-        "position": [27, 62],
-        "direction": 2,
-        "position2": [72, 54],
-        "direction2": 2,
-		"conditions": "f Sandy 1250"
-        },*/
-		
-		//FLOWER FESTIVAL
-		
-		{
-        "name": "Victor",
-        "map": "Forest-FlowerFestival", 
-        "position": [10, 36],
-        "direction": 3,
-        "position2": [23, 22],
-        "direction2": 3,
-        },
-        {
-        "name": "Olivia",
-        "map": "Forest-FlowerFestival", 
-        "position": [15, 34],
-        "direction": 2,
-        "position2": [23, 23],
-        "direction2": 3,
-        },
-		{
-        "name": "Andy",
-        "map": "Forest-FlowerFestival", 
-        "position": [5, 26],
-        "direction": 3,
-        "position2": [5, 26],
-        "direction2": 1,
-        },
-		{
-        "name": "Susan",
-        "map": "Forest-FlowerFestival", 
-        "position": [1, 0],
-        "direction": 2,
-        "position2": [1, 0],
-        "direction2": 1,
-		//"conditions": "e 1000077",
-        },
-        {
-        "name": "Sophia",
-        "map": "Forest-FlowerFestival", 
-        "position": [9, 38],
-        "direction": 0,
-        "position2": [21, 20],
-        "direction2": 2,
-        },
-		{
-        "name": "MarlonFay",
-        "map": "Forest-FlowerFestival", 
-        "position": [22, 21],
-        "direction": 2,
-        "position2": [22, 41],
-        "direction2": 2,
-        },
-		{
-        "name": "Claire",
-        "map": "Forest-FlowerFestival", 
-        "position": [2, 0],
-        "direction": 2,
-        "position2": [2, 0],
-        "direction2": 1,
-		//"conditions": "e 3219873"
-        },
-		{
-        "name": "Martin",
-        "map": "Forest-FlowerFestival", 
-        "position": [3, 0],
-        "direction": 0,
-        "position2": [3, 0],
-        "direction2": 0,
-		//"conditions": "e 3219873"
-        },
-		{
-        "name": "GuntherSilvian",
-        "map": "Forest-FlowerFestival", 
-        "position": [4, 0],
-        "direction": 0,
-        "position2": [4, 0],
-        "direction2": 1,
-		//"conditions": "e 103042015"
-        },
-		{
-        "name": "MorrisTod",
-        "map": "Forest-FlowerFestival", 
-        "position": [0, 0],
-        "direction": 2,
-        "position2": [0, 0],
-        "direction2": 1,
-		//"conditions": "e 6665293"
-        },
-		/*{
-        "name": "Sandy",
-        "map": "Forest-FlowerFestival", 
-        "position": [24, 35],
-        "direction": 2,
-        "position2": [8, 21],
-        "direction2": 2,
-		"conditions": "f Sandy 1250"
-        },*/
-		{
-        "name": "Apples",
-        "map": "Forest-FlowerFestival", 
-        "position": [5, 0],
-        "direction": 2,
-        "position2": [5, 0],
-        "direction2": 3,
-		//"conditions": "e 7775927"
-        },
-		{
-        "name": "Morgan",
-        "map": "Forest-FlowerFestival", 
-        "position": [6, 0],
-        "direction": 2,
-        "position2": [6, 0],
-        "direction2": 2,
-		//"conditions": "e 5978924"
-        },
-		
-		//LUAU
-		
-		{
-        "name": "Victor",
-        "map": "Beach-Luau", 
-        "position": [49, 24],
-        "direction": 2,
-        "position2": [46, 12],
-        "direction2": 3,
-        },
-        {
-        "name": "Olivia",
-        "map": "Beach-Luau", 
-        "position": [41, 13],
-        "direction": 0,
-        "position2": [46, 11],
-        "direction2": 3,
-        },
-		{
-        "name": "Andy",
-        "map": "Beach-Luau", 
-        "position": [32, 10],
-        "direction": 0,
-        "position2": [40, 6],
-        "direction2": 2,
-        },
-		{
-        "name": "Susan",
-        "map": "Beach-Luau", 
-        "position": [33, 16],
-        "direction": 2,
-        "position2": [39, 6],
-        "direction2": 2,
-        },
-        {
-        "name": "Sophia",
-        "map": "Beach-Luau", 
-        "position": [50, 24],
-        "direction": 2,
-        "position2": [27, 10],
-        "direction2": 1,
-        },
-		{
-        "name": "MarlonFay",
-        "map": "Beach-Luau", 
-        "position": [53, 7],
-        "direction": 2,
-        "position2": [53, 7],
-        "direction2": 2,
-        },
-		{
-        "name": "Claire",
-        "map": "Beach-Luau", 
-        "position": [90, 0],
-        "direction": 2,
-        "position2": [90, 0],
-        "direction2": 2,
-		//"conditions": "e 3219873"
-        },
-		{
-        "name": "GuntherSilvian",
-        "map": "Beach-Luau", 
-        "position": [89, 0],
-        "direction": 2,
-        "position2": [89, 0],
-        "direction2": 1,
-		//"conditions": "e 103042015"
-        },
-		{
-        "name": "MorrisTod",
-        "map": "Beach-Luau", 
-        "position": [92, 0],
-        "direction": 2,
-        "position2": [92, 0],
-        "direction2": 2,
-		//"conditions": "e 6665293"
-        },
-		/*{
-        "name": "Sandy",
-        "map": "Beach-Luau", 
-        "position": [11, 9],
-        "direction": 1,
-        "position2": [30, 12],
-        "direction2": 1,
-		"conditions": "f Sandy 1250"
-        },*/
-		{
-        "name": "Scarlett",
-        "map": "Beach-Luau", 
-        "position": [88, 0],
-        "direction": 0,
-        "position2": [88, 0],
-        "direction2": 1,
-		//"conditions": "e 8185295"
-        },
-		{
-        "name": "Morgan",
-        "map": "Beach-Luau", 
-        "position": [87, 0],
-        "direction": 2,
-        "position2": [87, 0],
-        "direction2": 2,
-		//"conditions": "e 5978924"
-        },
-		
-		//MOONLIGHT JELLYFISH
-		
-		{
-        "name": "Victor",
-        "map": "Beach-Jellies", 
-        "position": [41, 36],
-        "direction": 2,
-        },
-        {
-        "name": "Olivia",
-        "map": "Beach-Jellies", 
-        "position": [40, 36],
-        "direction": 2,
-        },
-		{
-        "name": "Andy",
-        "map": "Beach-Jellies", 
-        "position": [16, 24],
-        "direction": 2,
-        },
-		{
-        "name": "Susan",
-        "map": "Beach-Jellies", 
-        "position": [52, 24],
-        "direction": 2,
-        },
-        {
-        "name": "Sophia",
-        "map": "Beach-Jellies", 
-        "position": [50, 24],
-        "direction": 2,
-        },
-		{
-        "name": "Claire",
-        "map": "Beach-Jellies", 
-        "position": [90, 0],
-        "direction": 3,
-		//"conditions": "e 3219873"
-        },
-		{
-        "name": "GuntherSilvian",
-        "map": "Beach-Jellies", 
-        "position": [91, 0],
-        "direction": 2,
-		//"conditions": "e 103042015"
-        },
-		{
-        "name": "MorrisTod",
-        "map": "Beach-Jellies", 
-        "position": [92, 0],
-        "direction": 2,
-		//"conditions": "e 6665293"
-        },
-		/*{
-        "name": "Sandy",
-        "map": "Beach-Jellies", 
-        "position": [39, 36],
-        "direction": 2,
-		"conditions": "f Sandy 1250"
-        },*/
-		
-		//TOWN FAIR
-		
-        {
-        "name": "Victor",
-        "map": "Town-Fair", 
-        "position": [19, 78],
-        "direction": 1,
-        },
-        {
-        "name": "Olivia",
-        "map": "Town-Fair", 
-        "position": [19, 79],
-        "direction": 1,
-        },
-		{
-        "name": "Andy",
-        "map": "Town-Fair", 
-        "position": [49, 70],
-        "direction": 2,
-        },
-		{
-        "name": "Susan",
-        "map": "Town-Fair", 
-        "position": [49, 65],
-        "direction": 2,
-        },
-        {
-        "name": "Sophia",
-        "map": "Town-Fair", 
-        "position": [47, 60],
-        "direction": 2,
-        },
-		{
-        "name": "MarlonFay",
-        "map": "Town-Fair", 
-        "position": [30, 76],
-        "direction": 2,
-        },
-		{
-        "name": "Claire",
-        "map": "Town-Fair", 
-        "position": [117, 0],
-        "direction": 2,
-		//"conditions": "e 3219873"
-        },
-		{
-        "name": "Martin",
-        "map": "Town-Fair", 
-        "position": [118, 0],
-        "direction": 2,
-		//"conditions": "e 3219873"
-        },
-		{
-        "name": "GuntherSilvian",
-        "map": "Town-Fair", 
-        "position": [119, 1],
-        "direction": 0,
-		//"conditions": "e 103042015"
-        },
-		{
-        "name": "MorrisTod",
-        "map": "Town-Fair", 
-        "position": [119, 0],
-        "direction": 2,
-		"conditions": "e 6665293"
-        },
-		/*{
-        "name": "Sandy",
-        "map": "Town-Fair", 
-        "position": [25, 78],
-        "direction": 3,
-		"conditions": "f Sandy 1250"
-        },*/
-		{
-        "name": "Scarlett",
-        "map": "Town-Fair", 
-        "position": [118, 1],
-        "direction": 0,
-		//"conditions": "e 8185295"
-        },
-		{
-        "name": "Morgan",
-        "map": "Town-Fair", 
-        "position": [117, 1],
-        "direction": 3,
-		//"conditions": "e 5978924"
-        },
-		{
-        "name": "Alesia",
-        "map": "Town-Fair", 
-        "position": [116, 1],
-        "direction": 1,
-		//"conditions": "e 1305677"
-        },
-        {
-        "name": "Isaac",
-        "map": "Town-Fair", 
-        "position": [119, 2],
-        "direction": 0,
-		//"conditions": "e 1305677"
-        },
-		
-		//HALLOWEEN
-		
-        {
-        "name": "Victor",
-        "map": "Town-Halloween", 
-        "position": [52, 35],
-        "direction": 0,
-        },
-        {
-        "name": "Olivia",
-        "map": "Town-Halloween", 
-        "position": [30, 68],
-        "direction": 0,
-        },
-		{
-        "name": "Andy",
-        "map": "Town-Halloween", 
-        "position": [33, 69],
-        "direction": 2,
-        },
-		{
-        "name": "Susan",
-        "map": "Town-Halloween", 
-        "position": [40, 60],
-        "direction": 1,
-        },
-        {
-        "name": "Sophia",
-        "map": "Town-Halloween", 
-        "position": [25, 68],
-        "direction": 0,
-        },
-		{
-        "name": "MarlonFay",
-        "map": "Town-Halloween", 
-        "position": [28, 57],
-        "direction": 2,
-        },
-		{
-        "name": "Claire",
-        "map": "Town-Halloween", 
-        "position": [118, 0],
-        "direction": 2,
-		//"conditions": "e 3219873"
-        },
-		{
-        "name": "Martin",
-        "map": "Town-Halloween", 
-        "position": [117, 0],
-        "direction": 2,
-		//"conditions": "e 3219873"
-        },
-		{
-        "name": "GuntherSilvian",
-        "map": "Town-Halloween", 
-        "position": [116, 0],
-        "direction": 0,
-		//"conditions": "e 103042015"
-        },
-		{
-        "name": "MorrisTod",
-        "map": "Town-Halloween", 
-        "position": [119, 0],
-        "direction": 2,
-		//"conditions": "e 6665293"
-        },
-		/*{
-        "name": "Sandy",
-        "map": "Town-Halloween", 
-        "position": [33, 73],
-        "direction": 0,
-		"conditions": "f Sandy 1250"
-        },*/
-		{
-        "name": "Scarlett",
-        "map": "Town-Halloween", 
-        "position": [119, 1],
-        "direction": 0,
-		//"conditions": "e 8185295"
-        },
-		{
-        "name": "Morgan",
-        "map": "Town-Halloween", 
-        "position": [118, 1],
-        "direction": 2,
-		//"conditions": "e 5978924"
-        },
-		{
-        "name": "Alesia",
-        "map": "Town-Halloween", 
-        "position": [117, 1],
-        "direction": 2,
-		//"conditions": "e 1305677"
-        },
-        {
-        "name": "Isaac",
-        "map": "Town-Halloween", 
-        "position": [116, 1],
-        "direction": 2,
-		//"conditions": "e 1305677"
-        },
-		
-		//ICE FESTIVAL
-
-		{
-        "name": "Victor",
-        "map": "Forest-IceFestival", 
-        "position": [58, 37],
-        "direction": 2,
-        },
-        {
-        "name": "Olivia",
-        "map": "Forest-IceFestival", 
-        "position": [86, 25],
-        "direction": 0,
-        },
-		{
-        "name": "Andy",
-        "map": "Forest-IceFestival", 
-        "position": [56, 31],
-        "direction": 2,
-        },
-		{
-        "name": "Susan",
-        "map": "Forest-IceFestival", 
-        "position": [72, 19],
-        "direction": 0,
-        },
-        {
-        "name": "Sophia",
-        "map": "Forest-IceFestival", 
-        "position": [58, 39],
-        "direction": 0,
-        },
-		{
-        "name": "MarlonFay",
-        "map": "Forest-IceFestival", 
-        "position": [100, 40],
-        "direction": 2,
-        },
-		{
-        "name": "Claire",
-        "map": "Forest-IceFestival", 
-        "position": [0, 1],
-        "direction": 1,
-		//"conditions": "e 3219873"
-        },
-		{
-        "name": "GuntherSilvian",
-        "map": "Forest-IceFestival", 
-        "position": [0, 2],
-        "direction": 2,
-		//"conditions": "e 103042015"
-        },
-		{
-        "name": "MorrisTod",
-        "map": "Forest-IceFestival", 
-        "position": [0, 0],
-        "direction": 2,
-		//"conditions": "e 6665293"
-        },
-		/*{
-        "name": "Sandy",
-        "map": "Forest-IceFestival", 
-        "position": [68, 47],
-        "direction": 0,
-        "position2": [65, 41],
-        "direction2": 0,
-		"conditions": "f Sandy 1250"
-        },*/
-		{
-        "name": "Apples",
-        "map": "Forest-IceFestival", 
-        "position": [3, 0],
-        "direction": 2,
-		//"conditions": "e 7775927"
-        },
-		{
-        "name": "Morgan",
-        "map": "Forest-IceFestival", 
-        "position": [1, 1],
-        "direction": 3,
-		//"conditions": "e 5978924"
-        },
-		
-		//CHRISTMAS
-
-		{
-        "name": "Victor",
-        "map": "Town-Christmas", 
-        "position": [36, 60],
-        "direction": 3,
-        },
-        {
-        "name": "Olivia",
-        "map": "Town-Christmas", 
-        "position": [34, 60],
-        "direction": 1,
-        },
-		{
-        "name": "Andy",
-        "map": "Town-Christmas", 
-        "position": [31, 62],
-        "direction": 2,
-        },
-		{
-        "name": "Susan",
-        "map": "Town-Christmas", 
-        "position": [30, 62],
-        "direction": 2,
-        },
-        {
-        "name": "Sophia",
-        "map": "Town-Christmas", 
-        "position": [53, 69],
-        "direction": 0,
-        },
-		{
-        "name": "MarlonFay",
-        "map": "Town-Christmas", 
-        "position": [27, 53],
-        "direction": 2,
-        },
-		{
-        "name": "Claire",
-        "map": "Town-Christmas", 
-        "position": [117, 0],
-        "direction": 2,
-        },
-		/*{
-        "name": "Martin",
-        "map": "Town-Christmas", 
-        "position": [36, 58],
-        "direction": 3,
-        },*/
-		{
-        "name": "GuntherSilvian",
-        "map": "Town-Christmas", 
-        "position": [118, 0],
-        "direction": 0,
-		//"conditions": "e 103042015"
-        },
-		{
-        "name": "MorrisTod",
-        "map": "Town-Christmas", 
-        "position": [119, 0],
-        "direction": 2,
-		//"conditions": "e 6665293"
-        },
-		/*{
-        "name": "Sandy",
-        "map": "Town-Christmas", 
-        "position": [27, 72],
-        "direction": 0,
-		"conditions": "f Sandy 1250"
-        },*/
-		/*{
-        "name": "Apples",
-        "map": "Town-Christmas", 
-        "position": [119, 1],
-        "direction": 1,
-		//"conditions": "e 7775927"
-        },*/
-		{
-        "name": "Morgan",
-        "map": "Town-Christmas", 
-        "position": [118, 1],
-        "direction": 1,
-		//"conditions": "e 5978924"
-        },
-    ],
-
   "addMaps": [ 
   
     //NEW LOCATIONS  
@@ -1840,9 +1085,9 @@
     },
 
     {
-       "id": "MartinShop",
+        "id": "MartinShop",
         "inventory": [
-          {
+		  {
               "index":272,
               "type":"BigObject",
               "Price":50000,
@@ -1901,43 +1146,43 @@
               "index":472,
               "type":"Object",
               "Price":18,
-			  "conditions": "z summer z fall z winter"
+			  "conditions": "z summer/z fall/z winter/k 502261"
           },
           {   //Potato
               "index":475,
               "type":"Object",
               "Price":45,
-			  "conditions": "z summer z fall z winter"
+			  "conditions": "z summer/z fall/z winter/k 502261"
           },
           {   //Cauliflower
               "index":474,
               "type":"Object",
               "Price":70,
-			  "conditions": "z summer z fall z winter"
+			  "conditions": "z summer/z fall/z winter/k 502261"
           },
           {   //Tulip
               "index":427,
               "type":"Object",
               "Price":18,
-			  "conditions": "z summer z fall z winter"
+			  "conditions": "z summer/z fall/z winter/k 502261"
           },
           {   //Kale
               "index":477,
               "type":"Object",
               "Price":64,
-			  "conditions": "z summer z fall z winter"
+			  "conditions": "z summer/z fall/z winter/k 502261"
           },
           {   //Jazz
               "index":429,
               "type":"Object",
               "Price":27,
-			  "conditions": "z summer z fall z winter"
+			  "conditions": "z summer/z fall/z winter/k 502261"
           },
           {   //Beans
               "index":473,
               "type":"Object",
               "Price":50,
-			  "conditions": "z summer z fall z winter"
+			  "conditions": "z summer/z fall/z winter/k 502261"
           },
 		  
 		  //SUMMER SEEDS 
@@ -1946,67 +1191,67 @@
               "index":479,
               "type":"Object",
               "Price":70,
-			  "conditions": "z spring z fall z winter"
+			  "conditions": "z spring/z fall/z winter/k 502261"
           },
           {   //Tomato
               "index":480,
               "type":"Object",
               "Price":43,
-			  "conditions": "z spring z fall z winter"
+			  "conditions": "z spring/z fall/z winter/k 502261"
           },
           {   //Blueberry
               "index":481,
               "type":"Object",
               "Price":72,
-			  "conditions": "z spring z fall z winter"
+			  "conditions": "z spring/z fall/z winter/k 502261"
           },
           {   //Pepper
               "index":482,
               "type":"Object",
               "Price":35,
-			  "conditions": "z spring z fall z winter"
+			  "conditions": "z spring/z fall/z winter/k 502261"
           },
           {   //Wheat
               "index":483,
               "type":"Object",
               "Price":8,
-			  "conditions": "z spring z fall z winter"
+			  "conditions": "z spring/z fall/z winter/k 502261"
           },
           {   //Radish
               "index":484,
               "type":"Object",
               "Price":35,
-			  "conditions": "z spring z fall z winter"
+			  "conditions": "z spring/z fall/z winter/k 502261"
           },
           {   //Corn
               "index":487,
               "type":"Object",
               "Price":135,
-			  "conditions": "z spring z fall z winter"
+			  "conditions": "z spring/z fall/z winter/k 502261"
           },
           {   //Hops
               "index":302,
               "type":"Object",
               "Price":53,
-			  "conditions": "z spring z fall z winter"
+			  "conditions": "z spring/z fall/z winter/k 502261"
           },
           {   //Poppy
               "index":453,
               "type":"Object",
               "Price":90,
-			  "conditions": "z spring z fall z winter"
+			  "conditions": "z spring/z fall/z winter/k 502261"
           },
           {   //Spangle
               "index":455,
               "type":"Object",
               "Price":44,
-			  "conditions": "z spring z fall z winter"
+			  "conditions": "z spring/z fall/z winter/k 502261"
           },
           {   //Sunflower
               "index":431,
               "type":"Object",
               "Price":180,
-			  "conditions": "z spring z fall z winter"
+			  "conditions": "z spring/z fall/z winter/k 502261"
           },
  
 		  //FALL SEEDS
@@ -2015,67 +1260,253 @@
               "index":490,
               "type":"Object",
               "Price":88,
-			  "conditions": "z spring z summer z winter"
+			  "conditions": "z spring/z summer/z winter/k 502261"
           },
 		  {   //Sunflower
               "index":431,
               "type":"Object",
               "Price":180,
-			  "conditions": "z spring z summer z winter"
+			  "conditions": "z spring/z summer/z winter/k 502261"
           },
 		  {   //Corn
               "index":487,
               "type":"Object",
               "Price":135,
-			  "conditions": "z spring z summer z winter"
+			  "conditions": "z spring/z summer/z winter/k 502261"
           },
           {   //Eggplant
               "index":488,
               "type":"Object",
               "Price":17,
-			  "conditions": "z spring z summer z winter"
+			  "conditions": "z spring/z summer/z winter/k 502261"
           },
           {   //Bok Choy
               "index":491,
               "type":"Object",
               "Price":43,
-			  "conditions": "z spring z summer z winter"
+			  "conditions": "z spring/z summer/z winter/k 502261"
           },
           {   //Amaranth
               "index":299,
               "type":"Object",
               "Price":64,
-			  "conditions": "z spring z summer z winter"
+			  "conditions": "z spring/z summer/z winter/k 502261"
           },
           {   //Yam
               "index":492,
               "type":"Object",
               "Price":55,
-			  "conditions": "z spring z summer z winter"
+			  "conditions": "z spring/z summer/z winter/k 502261"
           },
           {   //Cranberry
               "index":493,
               "type":"Object",
               "Price":220,
-			  "conditions": "z spring z summer z winter"
+			  "conditions": "z spring/z summer/z winter/k 502261"
           },
           {   //Fairy
               "index":425,
               "type":"Object",
               "Price":180,
-			  "conditions": "z spring z summer z winter"
+			  "conditions": "z spring/z summer/z winter/k 502261"
           },
 		  {   //Grapes
               "index":301,
               "type":"Object",
               "Price":55,
-			  "conditions": "z spring z summer z winter"
+			  "conditions": "z spring/z summer/z winter/k 502261"
           },
           {   //Wheat
               "index":483,
               "type":"Object",
               "Price":8,
-			  "conditions": "z spring z summer z winter"
+			  "conditions": "z spring/z summer/z winter/k 502261"
+          },
+		  
+		  
+		  //Year-round Seeds - Player completed joja warehouse
+		  
+		  //SPRING SEEDS
+		  
+          {   //Parsnip
+              "index":472,
+              "type":"Object",
+              "Price":18,
+			  "conditions": "e 502261"
+          },
+          {   //Potato
+              "index":475,
+              "type":"Object",
+              "Price":45,
+			  "conditions": "e 502261"
+          },
+          {   //Cauliflower
+              "index":474,
+              "type":"Object",
+              "Price":70,
+			  "conditions": "e 502261"
+          },
+          {   //Tulip
+              "index":427,
+              "type":"Object",
+              "Price":18,
+			  "conditions": "e 502261"
+          },
+          {   //Kale
+              "index":477,
+              "type":"Object",
+              "Price":64,
+			  "conditions": "e 502261"
+          },
+          {   //Jazz
+              "index":429,
+              "type":"Object",
+              "Price":27,
+			  "conditions": "e 502261"
+          },
+          {   //Beans
+              "index":473,
+              "type":"Object",
+              "Price":50,
+			  "conditions": "e 502261"
+          },
+		  
+		  //SUMMER SEEDS 
+		  
+		  {   //Melons
+              "index":479,
+              "type":"Object",
+              "Price":70,
+			  "conditions": "e 502261"
+          },
+          {   //Tomato
+              "index":480,
+              "type":"Object",
+              "Price":43,
+			  "conditions": "e 502261"
+          },
+          {   //Blueberry
+              "index":481,
+              "type":"Object",
+              "Price":72,
+			  "conditions": "e 502261"
+          },
+          {   //Pepper
+              "index":482,
+              "type":"Object",
+              "Price":35,
+			  "conditions": "e 502261"
+          },
+          {   //Wheat
+              "index":483,
+              "type":"Object",
+              "Price":8,
+			  "conditions": "e 502261"
+          },
+          {   //Radish
+              "index":484,
+              "type":"Object",
+              "Price":35,
+			  "conditions": "e 502261"
+          },
+          {   //Corn
+              "index":487,
+              "type":"Object",
+              "Price":135,
+			  "conditions": "e 502261"
+          },
+          {   //Hops
+              "index":302,
+              "type":"Object",
+              "Price":53,
+			  "conditions": "e 502261"
+          },
+          {   //Poppy
+              "index":453,
+              "type":"Object",
+              "Price":90,
+			  "conditions": "e 502261"
+          },
+          {   //Spangle
+              "index":455,
+              "type":"Object",
+              "Price":44,
+			  "conditions": "e 502261"
+          },
+          {   //Sunflower
+              "index":431,
+              "type":"Object",
+              "Price":180,
+			  "conditions": "e 502261"
+          },
+ 
+		  //FALL SEEDS
+		  
+		  {   //Pumpkin
+              "index":490,
+              "type":"Object",
+              "Price":88,
+			  "conditions": "e 502261"
+          },
+		  {   //Sunflower
+              "index":431,
+              "type":"Object",
+              "Price":180,
+			  "conditions": "e 502261"
+          },
+		  {   //Corn
+              "index":487,
+              "type":"Object",
+              "Price":135,
+			  "conditions": "e 502261"
+          },
+          {   //Eggplant
+              "index":488,
+              "type":"Object",
+              "Price":17,
+			  "conditions": "e 502261"
+          },
+          {   //Bok Choy
+              "index":491,
+              "type":"Object",
+              "Price":43,
+			  "conditions": "e 502261"
+          },
+          {   //Amaranth
+              "index":299,
+              "type":"Object",
+              "Price":64,
+			  "conditions": "e 502261"
+          },
+          {   //Yam
+              "index":492,
+              "type":"Object",
+              "Price":55,
+			  "conditions": "e 502261"
+          },
+          {   //Cranberry
+              "index":493,
+              "type":"Object",
+              "Price":220,
+			  "conditions": "e 502261"
+          },
+          {   //Fairy
+              "index":425,
+              "type":"Object",
+              "Price":180,
+			  "conditions": "e 502261"
+          },
+		  {   //Grapes
+              "index":301,
+              "type":"Object",
+              "Price":55,
+			  "conditions": "e 502261"
+          },
+          {   //Wheat
+              "index":483,
+              "type":"Object",
+              "Price":8,
+			  "conditions": "e 502261"
           },
         ],
         "portraits":[

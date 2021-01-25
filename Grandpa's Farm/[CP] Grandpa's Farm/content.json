@@ -13,6 +13,11 @@
       "Default": "false"
    },
    
+      "RemoveGrassStretch": {
+      "AllowValues": "true, false",
+      "Default": "false"
+   },
+   
       "GrassCropField": {
       "AllowValues": "true, false",
       "Default": "false"
@@ -56,7 +61,7 @@
     //Load tilesheets
     {
       "Action": "Load",
-      "Target": "Maps/z_petbowl, Maps/z_FarmCliff_Shadow, Maps/GrandpasGrove_Shadows1, Maps/GrandpasGrove_Shadows2, Maps/z_FarmCliff_Copper, Maps/z_FarmCliff_Iron, Maps/z_FarmCliff_Gold, Maps/z_FarmCliff_Gems, Maps/z_FarmCliff_Blank",
+      "Target": "Maps/z_petbowl, Maps/z_FarmCliff_Shadow, Maps/GrandpasGrove_Shadows1, Maps/GrandpasGrove_Shadows2, Maps/z_FarmCliff_Copper, Maps/z_FarmCliff_Iron, Maps/z_FarmCliff_Gold, Maps/z_FarmCliff_Gems, Maps/z_GrandpasFarm_mist, Maps/z_GrandpasGrove_mist, Maps/z_FarmCliff_Blank",
       "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",
     },
 
@@ -85,6 +90,14 @@
       "FromFile": "assets/MapPatches/GrandpasFarm_RemoveFences.tbin",
       "ToArea": { "X": 35, "Y": 35, "Width": 35, "Height": 50 },
       "When": { "FarmType": "Standard", "RemoveFences": "true", "SandboxLayout": "false" }
+    },
+	
+	{ //Removes grass stretch
+      "Action": "EditMap",
+      "Target": "Maps/Farm,Maps",
+      "FromFile": "assets/MapPatches/GrandpasFarm_RemoveGrassStretch.tbin",
+      "ToArea": { "X": 69, "Y": 53, "Width": 11, "Height": 30 },
+      "When": { "FarmType": "Standard", "RemoveGrassStretch": "true", "SandboxLayout": "false" }
     },
 	
     { //Grass crop field
@@ -338,25 +351,39 @@
      "Action": "EditImage",
 	 "Target": "Maps/z_FarmCliff_Copper",
 	 "FromFile": "Assets/Tilesheets/z_FarmCliff_Blank.png",
-	 "When": { "SkillLevel:Mining": "1, 2" }
+	 "When": { "SkillLevel:Mining": "0, 1, 2" }
     },
 	{
      "Action": "EditImage",
 	 "Target": "Maps/z_FarmCliff_Iron",
 	 "FromFile": "Assets/Tilesheets/z_FarmCliff_Blank.png",
-	 "When": { "SkillLevel:Mining": "1, 2, 3, 4, 5" }
+	 "When": { "SkillLevel:Mining": "0, 1, 2, 3, 4, 5" }
     },
 	{
      "Action": "EditImage",
 	 "Target": "Maps/z_FarmCliff_Gold",
 	 "FromFile": "Assets/Tilesheets/z_FarmCliff_Blank.png",
-	 "When": { "SkillLevel:Mining": "1, 2, 3, 4, 5, 6, 7" }
+	 "When": { "SkillLevel:Mining": "0, 1, 2, 3, 4, 5, 6, 7" }
     },
 	{
      "Action": "EditImage",
 	 "Target": "Maps/z_FarmCliff_Gems",
 	 "FromFile": "Assets/Tilesheets/z_FarmCliff_Blank.png",
-	 "When": { "SkillLevel:Mining": "1, 2, 3, 4, 5, 6, 7, 9" }
+	 "When": { "SkillLevel:Mining": "0, 1, 2, 3, 4, 5, 6, 7, 9" }
+    },
+	
+	//Removes mist effects unless it's raining
+	{
+     "Action": "EditImage",
+	 "Target": "Maps/z_GrandpasFarm_mist",
+	 "FromFile": "Assets/Tilesheets/z_GrandpasFarm_mist_blank.png",
+	 "When": { "Weather |contains=rain": false }
+    },
+	{
+     "Action": "EditImage",
+	 "Target": "Maps/z_GrandpasGrove_mist",
+	 "FromFile": "Assets/Tilesheets/z_GrandpasGrove_mist_blank.png",
+	 "When": { "Weather |contains=rain": false }
     },
 	
 	//Patches world map
