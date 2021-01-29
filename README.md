@@ -13,7 +13,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 ## Requirements
 
 - [Stardew Valley](https://www.stardewvalley.net/) version `1.5.2`
-- [SMAPI](https://smapi.io/) version `3.9.0`
+- [SMAPI](https://smapi.io/) version `3.9.1`
 
 
 ## Instructions
@@ -34,7 +34,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Better Artisan Goods Icons](https://www.nexusmods.com/stardewvalley/mods/2080) | This mod makes jelly, pickles, wine, juice, and honey icons be based on the fruit, vegetable, or flower used to make them. | `1.5.0` | |
 | [Better Ranching](https://www.nexusmods.com/stardewvalley/mods/859) | Prevents doomed milking/shearing attempts and adds an indicator when animals can be petted, milked, or sheared.	| `1.8.0` | |
 | [Bigger Backpack](https://www.nexusmods.com/stardewvalley/mods/1845) | Buy a bigger backpack at Pierre's for only 50,000g. | `3.0` | |
-| [Chests Anywhere](https://www.nexusmods.com/stardewvalley/mods/518) | Access your chests, dressers, fridge, shipping bin, and Junimo huts from anywhere and organise them your way. | `1.20.6` | |
+| [Chests Anywhere](https://www.nexusmods.com/stardewvalley/mods/518) | Access your chests, dressers, fridge, shipping bin, and Junimo huts from anywhere and organise them your way. | `1.20.8` | |
 | [CJB Cheats Menu](https://www.nexusmods.com/stardewvalley/mods/4) | A simple in-game cheats menu with lots of cheats. | `1.27.0` | |
 | [CJB Item Spawner](https://www.nexusmods.com/stardewvalley/mods/93) | An easy-to-use in-game item spawner menu. | `2.0.2` | |
 | [Climates of Ferngill](https://www.nexusmods.com/stardewvalley/mods/604) | Expands the climate system to be more robust, adding custom weathers. | `1.5.12` | Currenntly not working with `1.5`
@@ -63,7 +63,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Running Late](https://www.nexusmods.com/stardewvalley/mods/3518) | Changes the digital clock on the HUD to update every in-game minute instead of every 10. | `1.2.0` | |
 | [ShopTileFramework](https://www.nexusmods.com/stardewvalley/mods/5005) | A Framework mod that allows modders to add custom shops to the game, as well as edit vanilla shop. | `1.0.9` | |
 | [Skull Cavern Elevator](https://www.nexusmods.com/stardewvalley/mods/963) | Adds an elevator to the Skull Cavern. | `1.3.1` | |
-| [SpaceCore](https://www.nexusmods.com/stardewvalley/mods/1348) | Required by a few mods. | `1.5.3` | |
+| [SpaceCore](https://www.nexusmods.com/stardewvalley/mods/1348) | Required by a few mods. | `1.5.4` | |
 | [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) | This expansion features 26 new locations, 160 new character events, 12 new NPCs, a new village, 800 location messages, and more. | `1.12.9` | Some options changed. See [wiki](https://github.com/cookandy/stardew-mods/wiki/SVE)|
 | [StardewHack](https://www.nexusmods.com/stardewvalley/mods/3213) | Library mod used by my other mods. Doesn't do much on its own. | `3.0` | |
 | [TMXL Map Toolkit](https://www.nexusmods.com/stardewvalley/mods/1820) | Toolkit for adding/editing/replacing maps and creating buildables. | `1.22.0` | |
@@ -82,7 +82,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Medieval Buildings](https://www.nexusmods.com/stardewvalley/mods/4542) | Medieval Modern buildings | `1.15` |
 | [Seasonal Outfits - SVE](https://www.nexusmods.com/stardewvalley/mods/5975) | Gives the NPCs of Stardew Valley Expanded seasonal clothing. | `1.4.2` |
 | [Seasonal Villager Outfits](https://www.nexusmods.com/stardewvalley/mods/2449) | An outfit for every season! | `2.3.2` |
-| [Stardew Valley Dialogue Expansion](https://www.nexusmods.com/stardewvalley/mods/2544) | Adds about 2500 new lines of dialogue across all 33 characters who have a heart level. | `2.0.3` | |
+| [Stardew Valley Dialogue Expansion](https://www.nexusmods.com/stardewvalley/mods/2544) | Adds about 2500 new lines of dialogue across all 33 characters who have a heart level. | `2.0.5` | |
 | [Yellog's wood craftables](https://www.nexusmods.com/stardewvalley/mods/3063)| Craftables | `1.3` | [1] |
 | [Yellog's wood fence](https://www.nexusmods.com/stardewvalley/mods/2958) | Wood fence | `1.0` | [1] |
 
