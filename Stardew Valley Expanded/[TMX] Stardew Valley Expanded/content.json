@@ -15,7 +15,6 @@
     {
       "name": "ShearwaterBridge",
       "file": "assets/Maps/ShearwaterBridge.tbin"
-	  //"conditions": "LC not Luau.hasMod('LemurKat.EastScarpe.CP')"
     },
     {
       "name": "ForestWest",
@@ -40,6 +39,10 @@
     {
       "name": "AndyHouse",
       "file": "assets/Maps/AndyHouse.tbin"
+    },
+	{
+      "name": "AndyCellar",
+      "file": "assets/Maps/AndyCellar.tbin"
     },
     {
       "name": "SusanHouse",
@@ -215,6 +218,20 @@
       "sourceArea": [ 0, 0, 24, 22 ],
       "position": [ 0, 0 ],
 	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(502261)",
+    },
+    {
+      "name": "AndyHouse",
+      "file": "assets/MapPatches/AndyHouse_CellarEntrance.tbin",
+      "sourceArea": [ 0, 0, 7, 5 ],
+      "position": [ 18, 18 ],
+	  "conditions": "n AndyCellar",
+    },
+    {
+      "name": "BlueMoonVineyard",
+      "file": "assets/MapPatches/BlueMoonVineyard_FairyGarden.tbin",
+      "sourceArea": [ 0, 0, 11, 18 ],
+      "position": [ 11, 1 ],
+	  "conditions": "n SophiaFairyGarden",
     },
     {
       "name": "Forest",
@@ -1515,7 +1532,7 @@
     },
 
 	{
-      "id": "Ledger",
+      "id": "SophiaLedger",
         "inventory": [
 		  {
               "name":"Blue Moon Wine",
@@ -1536,12 +1553,115 @@
               "index":621,
               "type":"Object",
               "Price":4000
-          }
+          },
+		  {
+              "index":645,
+              "type":"Object",
+              "Price":15000,
+			  "conditions": "n SophiaFairyGarden",
+          },
+		  {
+              "index":915,
+              "type":"Object",
+              "Price":45000,
+			  "conditions": "n SophiaFairyGarden",
+          },
         ],
         "portraits":[
-          "assets/ShopPortraits/Misc/Ledger.png",
+          "assets/ShopPortraits/Misc/SophiaLedger.png",
         ],
     },
+	
+	{
+      "id": "AdventurerLedger",
+        "inventory": [
+		  {
+              "name":"Iridium Skull Lamp-post",
+              "type":"BigObject",
+              "price":40000
+          },
+		  {
+              "name":"Golden Skull Lamp-post",
+              "type":"BigObject",
+              "price":20000
+          },
+		  {
+              "name":"Fancy Iron Lamp-post",
+              "type":"BigObject",
+              "price":10000
+          },
+		  {
+              "name":"Fancy Wood Lamp-post",
+              "type":"BigObject",
+              "price":8000
+          },
+		  {
+              "name":"Adventurer Gear",
+              "type":"BigObject",
+              "price":5000
+          },
+		  {
+              "name":"Wood Barrel",
+              "type":"BigObject",
+              "price":2000
+          },
+		  {
+              "name":"Large Wood Barrel L",
+              "type":"BigObject",
+              "price":2000
+          },
+		  {
+              "name":"Large Wood Barrel R",
+              "type":"BigObject",
+              "price":2000
+          },
+		  {
+              "name":"Little Machine",
+              "type":"BigObject",
+              "price":3000
+          },
+		  {
+              "name":"Coal Box",
+              "type":"BigObject",
+              "price":4000
+          },
+		  {
+              "name":"Wood Crate",
+              "type":"BigObject",
+              "price":1500
+          },
+		  {
+              "name":"Moving Box",
+              "type":"BigObject",
+              "price":400
+          },
+		  {
+              "name":"Log Pile",
+              "type":"BigObject",
+              "price":500
+          },
+		  {
+              "name":"Tied Log Pile",
+              "type":"BigObject",
+              "price":600
+          },
+		  {
+              "name":"Potted Plant",
+              "type":"BigObject",
+              "price":800
+          },
+		  {
+              "name":"Empty Pot",
+              "type":"BigObject",
+              "price":400
+          },
+		  
+        ],
+        "portraits":[
+          "assets/ShopPortraits/Misc/AdventurerLedger.png",
+        ],
+    },
+
     {
       "id": "YellowJunimo",
         "inventory": [

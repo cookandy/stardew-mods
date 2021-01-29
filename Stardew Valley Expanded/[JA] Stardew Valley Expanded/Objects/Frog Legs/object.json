@@ -1,0 +1,40 @@
+{
+	"Name": "Frog Legs",
+	"Description": "One of the better-known delicacies of Gotoroan cuisine.",
+	"Category": "Cooking",
+	"Edibility": 30,
+	"EdibleIsDrink": false,
+	"EdibleBuffs": 
+	{
+        "Farming": 0,
+        "Fishing": 2,
+        "Mining": 0,
+        "Luck": 2,
+        "Foraging": 0,
+        "MaxStamina": 0,
+        "MagnetRadius": 0,
+        "Speed": 0,
+        "Defense": 0,
+        "Attack": 0,
+        "Duration": 480,
+    },
+	"Recipe":
+    {
+    "ResultCount": 1,
+    "Ingredients": [ { "Object": "Frog", "Count": 1, }, { "Object": 247, "Count": 1 }, { "Object": 246, "Count": 1 } ],
+    "CanPurchase": true,
+    "PurchaseFrom": "Krobus",
+    "PurchasePrice": 2000,
+    //"PurchaseRequirements": [ "f Krobus 750" ],
+    },
+	"CanSell": false,
+	"Price": 400,
+	"IsColored": false,
+	"GiftTastes":
+	{
+	    "Love": [ "Wizard", "Linus", "Pierre" ],
+ 		"Like": [ "Willy", "MarlonFay", "Gus" ],
+		"Dislike": [ "Emily", "Robin", "Demetrius", "Maru", "Caroline", "Alex", "George", "Evelyn", "Lewis", "Clint", "Penny", "Pam", "Haley", "Jodi", "Kent", "Marlon", "Sam", "Leah", "Shane", "Marnie", "Elliott", "Dwarf", "Harvey", "Sandy", "MorrisTod", "GuntherSilvian", "Andy", "Susan", "Victor", "Olivia", "Morgan", "Apples", "Claire", "Martin" ],
+	    "Hate": [ "Vincent", "Abigail", "Sebastian", "Sophia", "Morgan" ]
+	},
+}
