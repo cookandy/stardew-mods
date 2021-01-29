@@ -13,7 +13,7 @@
   "OneHitKill": false,
   "OneHitBreak": false,
   "InfiniteWateringCan": true,
-  "HarvestScythe": false,
+  "HarvestScythe": true,
   "InstantBite": false,
   "InstantCatch": false,
   "ThrowBobberMax": false,
