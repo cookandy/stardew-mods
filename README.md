@@ -66,6 +66,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [SpaceCore](https://www.nexusmods.com/stardewvalley/mods/1348) | Required by a few mods. | `1.5.4` | |
 | [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) | This expansion features 26 new locations, 160 new character events, 12 new NPCs, a new village, 800 location messages, and more. | `1.12.9` | Some options changed. See [wiki](https://github.com/cookandy/stardew-mods/wiki/SVE)|
 | [StardewHack](https://www.nexusmods.com/stardewvalley/mods/3213) | Library mod used by my other mods. Doesn't do much on its own. | `3.0` | |
+| [The Love of Cooking](https://www.nexusmods.com/stardewvalley/mods/6830) | A suite of changes all about cooking! | `1.0.8` | |
 | [TMXL Map Toolkit](https://www.nexusmods.com/stardewvalley/mods/1820) | Toolkit for adding/editing/replacing maps and creating buildables. | `1.22.0` | |
 | [Tractor Mod](https://www.nexusmods.com/stardewvalley/mods/1401) | Buy a tractor to more efficiently work with crops, clear twigs and rocks, etc. | `4.13.2` | |
 | [UI Info Suite](https://www.nexusmods.com/stardewvalley/mods/1150) | Provides helpful information about things around you designed to help you be aware of what's going on without feeling like you're cheating. | `2.0.0` | |
