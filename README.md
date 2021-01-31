@@ -79,7 +79,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Flower Valley](https://www.nexusmods.com/stardewvalley/mods/2064) | Town and Farm Buildings ReDesign | `4.3.1` |
 | [Flowery Bin](https://www.nexusmods.com/stardewvalley/mods/4760) | A bin with various options of Darkwood, Birch, Joja, And plus a few more. | `1.13.5` | [1] |
 | [Medieval Buildings](https://www.nexusmods.com/stardewvalley/mods/4542) | Medieval Modern buildings | `1.15` |
-| [Seasonal Outfits - SVE](https://www.nexusmods.com/stardewvalley/mods/5975) | Gives the NPCs of Stardew Valley Expanded seasonal clothing. | `1.4.2` |
+| [Seasonal Outfits - SVE](https://www.nexusmods.com/stardewvalley/mods/5975) | Gives the NPCs of Stardew Valley Expanded seasonal clothing. | `1.5.0` |
 | [Seasonal Villager Outfits](https://www.nexusmods.com/stardewvalley/mods/2449) | An outfit for every season! | `2.3.2` |
 | [Stardew Valley Dialogue Expansion](https://www.nexusmods.com/stardewvalley/mods/2544) | Adds about 2500 new lines of dialogue across all 33 characters who have a heart level. | `2.0.5` | |
 | [Yellog's wood craftables](https://www.nexusmods.com/stardewvalley/mods/3063)| Craftables | `1.3` | [1] |
