@@ -7,24 +7,13 @@
             "LogName": "Mermaid Pendant #1",
             "Action": "EditImage",
             "Target": "Portraits/{{MermaidPendantOverlay_Relationship}}",
-            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/{{MermaidPendantOverlay_Relationship}}_{{Season}}{{IndoorVariant}}{{WeatherVariant}}.png",
+            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/{{MermaidPendantOverlay_Relationship}}_{{Season}}{{IndoorVariant}}{{WeatherVariant}}.png, Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/{{MermaidPendantOverlay_Relationship}}_{{Season}}{{WeatherVariant}}.png",
             "When":
             {
                 "HasFile:{{FromFile}}": true,
             },
             "PatchMode": "Overlay",
             "Update": "OnLocationChange"
-        },
-        {
-            "LogName": "Mermaid Pendant #2",
-            "Action": "EditImage",
-            "Target": "Portraits/{{MermaidPendantOverlay_Relationship}}",
-            "FromFile": "Portraits/{{MermaidPendantOverlay}}/{{MermaidPendantOverlay_Relationship}}/{{MermaidPendantOverlay_Relationship}}_{{Season}}{{WeatherVariant}}.png",
-            "When":
-            {
-                "HasFile:{{FromFile}}": true,
-            },
-            "PatchMode": "Overlay"
         },
 
         // Abigail Portraits Mermaid Pendant

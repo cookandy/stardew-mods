@@ -9,7 +9,7 @@
             "Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_Tilesheet, Maps/MovieTheaterJoja_Tilesheet_international",
             "FromFile": "Characters/Gunther/Gunther_{{Season}}_Base.png",
             "When":
-            {                   
+            {
                 "HasMod |contains=Candidus42.ImagEd": false
             },
             "ToArea":
@@ -28,7 +28,7 @@
             },
             "PatchMode": "Overlay",
             "Update": "OnLocationChange"
-        },        
+        },
 
         // Marnie
 
@@ -70,6 +70,22 @@
                 "Height": 28
             },
             "PatchMode": "Replace",
+            "Update": "OnLocationChange"
+        },
+
+        // Marnie Luau Soup
+
+        {
+            "LogName": "Marnie Luau Soup",
+            "Action": "EditImage",
+            "Target": "Characters/Marnie",
+            "FromFile": "{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}Soup.png",
+            "When":
+            {
+                "DayEvent": "Luau",
+                "MarnieLuauSoupSpriteEnabled": true
+            },
+            "PatchMode": "Overlay",
             "Update": "OnLocationChange"
         },
 
@@ -168,7 +184,7 @@
                 "HasFile:{{FromFile}}": true,
                 "Season": "winter",
                 "MorrisEnabled": "true",
-            }, 
+            },
             "ToArea":
             {
                 "X": 389,
@@ -186,9 +202,9 @@
             "FromFile": "Cursors/Morris/MovieTheater/Morris_{{season}}.png",
             "When":
             {
-                "HasFile:{{FromFile}}": true,                
+                "HasFile:{{FromFile}}": true,
                 "MorrisEnabled": "true",
-            }, 
+            },
             "ToArea":
             {
                 "X": 16,

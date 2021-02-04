@@ -8,7 +8,7 @@
   <option name="ShowLocationOfTownsPeople">False</option>
   <option name="ShowBirthdayIcon">True</option>
   <option name="ShowHeartFills">True</option>
-  <option name="ShowAnimalsNeedPets">True</option>
+  <option name="ShowAnimalsNeedPets">False</option>
   <option name="DisplayCalendarAndBillboard">True</option>
   <option name="ShowCropAndBarrelTooltip">True</option>
   <option name="ShowItemEffectRanges">True</option>

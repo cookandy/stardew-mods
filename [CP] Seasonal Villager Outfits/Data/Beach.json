@@ -4,7 +4,7 @@
         {
             "LogName": "Swimsuit Island Sprites",
             "Action": "EditImage",
-            "Target": "Characters/Evelyn, Portraits/Evelyn, Characters/Gus, Portraits/Gus, Characters/Jas, Portraits/Jas, Characters/Kent, Portraits/Kent, Portraits/Linus, Characters/Vincent, Portraits/Vincent,",
+            "Target": "Characters/Evelyn, Portraits/Evelyn, Characters/Gus, Portraits/Gus, Characters/Jas, Portraits/Jas, Characters/Kent, Portraits/Kent, Portraits/Linus, Characters/Vincent, Portraits/Vincent",
             "FromFile": "{{TargetPathOnly}}/Swimsuits/{{TargetWithoutPath}}Swim.png",
             "When":
             {
@@ -62,7 +62,7 @@
             "LogName": "Demetrius Swimsuit Island Sprites",
             "Action": "EditImage",
             "Target": "Characters/Demetrius_Beach, Portraits/Demetrius",
-            "FromFile": "{{TargetPathOnly}}/Swimsuits/{{Random:Beach, null |key=DemetriusVanillaModdedBeach}}/DemetriusSwim.png",
+            "FromFile": "{{TargetPathOnly}}/Swimsuits/Beach/DemetriusSwim_{{Random:Beach, Vanilla |key=DemetriusVanillaModdedBeach}}.png",
             "When":
             {
                 "HasFile:{{FromFile}}": true,
@@ -140,7 +140,7 @@
             "LogName": "Lewis Swimsuit Island Sprites",
             "Action": "EditImage",
             "Target": "Characters/Lewis_Beach, Portraits/Lewis",
-            "FromFile": "{{TargetPathOnly}}/Swimsuits/{{Random:Beach, null |key=LewisVanillaModdedBeach}}/LewisSwim.png",
+            "FromFile": "{{TargetPathOnly}}/Swimsuits/Beach/LewisSwim_{{Random:Beach, Vanilla |key=LewisVanillaModdedBeach}}.png",
             "When":
             {
                 "HasFile:{{FromFile}}": true,

@@ -125,6 +125,59 @@
             "PatchMode": "Overlay"
         },
 
+        // Marnie Face (Less Creepy Marnie Sprite by CaddandraRose, Converted by HaruCookie)
+
+        {
+            "LogName": "Marnie Base",
+            "Action": "EditImage",
+            "Target": "Characters/Marnie",
+            "FromFile": "{{Target}}/Overlays/FaceOverlay.png",
+            "When":
+            {
+                "MarnieAltVersion": true,
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Marnie Outdoor Rain",
+            "Action": "EditImage",
+            "Target": "Characters/Marnie",
+            "FromFile": "{{Target}}/Overlays/FaceOverlay_Rain.png",
+            "When":
+            {
+                "MarnieAltVersion": true,
+                "IsOutdoors": true,
+                "Weather": "rain, storm"
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Marnie Winter Outdoor Sun 1",
+            "Action": "EditImage",
+            "Target": "Characters/Marnie",
+            "FromFile": "{{Target}}/Overlays/FaceOverlay_Winter_Outdoor_Sun_{{Random:1, 2 |key=MarnieSpringWinterVariant}}.png",
+            "When":
+            {
+                "MarnieAltVersion": true,
+                "IsOutdoors": true,
+                "Weather": "snow",
+                "Season": "winter",
+                "HasFile:{{FromFile}}": true,
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Marnie Base",
+            "Action": "EditImage",
+            "Target": "Characters/Marnie_Beach",
+            "FromFile": "{{Target}}/Overlays/FaceOverlay_Beach.png",
+            "When":
+            {
+                "MarnieAltVersion": true,
+            },
+            "PatchMode": "Overlay"
+        },
+
         // Maru Glasses
 
         {

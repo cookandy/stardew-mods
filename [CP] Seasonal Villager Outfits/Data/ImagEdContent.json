@@ -104,7 +104,7 @@
 
         // Krobus
 
-        {
+        /*{
             "LogName": "Krobus Main - ImagEd",
             "Action": "EditImage",
             "Target": "Characters/Krobus, Portraits/Krobus",
@@ -137,7 +137,7 @@
             },
             "PatchMode": "Overlay",
             "Update": "OnLocationChange"
-        },
+        },*/
 
         // Safari Guy
 
