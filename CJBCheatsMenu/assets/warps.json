@@ -348,6 +348,53 @@
                 "Location": "IslandEast",
                 "Tile": "22, 14"
             }
-        ]
+        ],
+                "Ridgeside": [
+                    {
+                        "DisplayText": "Log Cabin Hotel",
+                        "Location": "RidgesideVillage",
+                        "Tile": "114, 24"
+                    },
+                    {
+                        "DisplayText": "Blooming Hill Farm",
+                        "Location": "RidgesideVillage",
+                        "Tile": "22, 23"
+                    },
+                    {
+                        "DisplayText": "Pika's Restaurant",
+                        "Location": "RidgesideVillage",
+                        "Tile": "85, 59"
+                    },
+                    {
+                        "DisplayText": "Nightingale Orchard",
+                        "Location": "RidgesideVillage",
+                        "Tile": "19, 101"
+                    },
+                    {
+                        "DisplayText": "Water Research Facility",
+                        "Location": "RidgesideVillage",
+                        "Tile": "125, 106"
+                    },
+                    {
+                        "DisplayText": "Ninja House",
+                        "Location": "RidgesideVillage",
+                        "Tile": "135, 84"
+                    },
+                    {
+                        "DisplayText": "Lola's Shed",
+                        "Location": "RidgesideVillage",
+                        "Tile": "7, 50"
+                    },
+                    {
+                        "DisplayText": "Ridge",
+                        "Location": "Ridge",
+                        "Tile": "40, 34"
+                    },
+                    {
+                        "DisplayText": "Ridge Forest",
+                        "Location": "RidgeForestQ1",
+                        "Tile": "69, 53"
+                    }
+                ]
     }
 }

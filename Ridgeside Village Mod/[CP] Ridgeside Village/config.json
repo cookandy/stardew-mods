@@ -2,7 +2,8 @@
   "RepeatCableCarCutscene": "true",
   "EnableOtherNPCsInCableCar": "true",
   "EnableVillageMusic": "true",
-  "PortraitType": "Legacy",
+  "PortraitType": "Default",
+  "IndividualRealismPortrait": "",
   "MaddieGlasses": "false",
   "KennethBeard": "false",
   "BrandonIan": "false"
