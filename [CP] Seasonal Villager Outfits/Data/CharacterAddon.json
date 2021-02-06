@@ -96,13 +96,13 @@
             "Update": "OnLocationChange"
         },
 
-        // Harvey Mustache
+        // Harvey Overlays
 
         {
-            "LogName": "Harvey - Mustache Overlay",
+            "LogName": "Harvey Overlays",
             "Action": "EditImage",
             "Target": "Characters/Harvey, Portraits/Harvey",
-            "FromFile": "{{Target}}/Harvey_{{HarveyFacialHair}}Overlay.png, {{Target}}/Harvey_{{HarveyEyeColor}}Eye_Overlay.png",
+            "FromFile": "{{Target}}/Harvey_{{HarveyFacialHair}}Overlay.png, {{Target}}/Harvey_{{HarveyEyeColor}}Eye_Overlay, {{Target}}/Harvey_{{HarveyGlasses}}Overlay.png",
             "When":
             {
                 "HasFile:{{FromFile}}": true,
@@ -114,7 +114,7 @@
         // Harvey Beach
 
         {
-            "LogName": "Harvey - Mustache Overlay",
+            "LogName": "Harvey Beach Overlay",
             "Action": "EditImage",
             "Target": "Characters/Harvey_Beach, Portraits/Harvey_Beach",
             "FromFile": "{{TargetPathOnly}}/Swimsuits/Beach/Harvey_{{HarveyFacialHair}}Overlay.png, {{TargetPathOnly}}/Swimsuits/Beach/Harvey_{{HarveyEyeColor}}Eye_Overlay.png",

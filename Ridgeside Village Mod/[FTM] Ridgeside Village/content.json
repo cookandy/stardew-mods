@@ -125,6 +125,8 @@
         },
         "DaysUntilSpawnsExpire": 1
       },
+	  
+//Start Q1
       {
         "SpringItemIndex": [
           "Ridge Cherry",
@@ -182,6 +184,9 @@
         },
         "DaysUntilSpawnsExpire": 1
       },
+//End Q1	  
+
+//Start Q2
       {
         "SpringItemIndex": [
           74,
@@ -299,6 +304,9 @@
         },
         "DaysUntilSpawnsExpire": 1
       },
+//End Q2	  
+
+//Start Q3
       {
         "SpringItemIndex": [
           74,
@@ -416,6 +424,9 @@
         },
         "DaysUntilSpawnsExpire": 1
       },
+//End Q3	  
+
+//Start Q4
       {
         "SpringItemIndex": [
           74,
@@ -532,7 +543,9 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 1
-      }
+      },
+//End Q4	  
+
     ],
     "PercentExtraSpawnsPerForagingLevel": 0,
     "SpringItemIndex": [
@@ -601,6 +614,7 @@
   },
   "Ore_Spawn_Settings": {
     "Areas": [
+	//Q1
       {
         "MiningLevelRequired": null,
         "StartingSpawnChance": null,
@@ -636,6 +650,7 @@
         },
         "DaysUntilSpawnsExpire": 7
       },
+	//Q2
       {
         "MiningLevelRequired": null,
         "StartingSpawnChance": null,
@@ -671,6 +686,7 @@
         },
         "DaysUntilSpawnsExpire": 7
       },
+	//Q3
       {
         "MiningLevelRequired": null,
         "StartingSpawnChance": null,
@@ -706,6 +722,7 @@
         },
         "DaysUntilSpawnsExpire": 7
       },
+	//Q4
       {
         "MiningLevelRequired": null,
         "StartingSpawnChance": null,
@@ -740,7 +757,8 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 7
-      }
+      },
+	  
     ],
     "PercentExtraSpawnsPerMiningLevel": 0,
     "MiningLevelRequired": {
@@ -804,6 +822,7 @@
   },
   "Monster_Spawn_Settings": {
     "Areas": [
+	//Q1
       {
         "MonsterTypes": [
           {
@@ -921,6 +940,8 @@
         },
         "DaysUntilSpawnsExpire": null
       },
+	  
+	//Q2
       {
         "MonsterTypes": [
           {
@@ -1038,6 +1059,8 @@
         },
         "DaysUntilSpawnsExpire": null
       },
+	  
+	//Q3
       {
         "MonsterTypes": [
           {
@@ -1155,6 +1178,8 @@
         },
         "DaysUntilSpawnsExpire": null
       },
+	  
+	//Q4
       {
         "MonsterTypes": [
           {
@@ -1271,7 +1296,8 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
-      }
+      },
+	  
     ],
     "CustomTileIndex": []
   },

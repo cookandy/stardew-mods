@@ -448,7 +448,13 @@
         {
             "AllowValues": "Green, Brown",
             "Default": "Green",
-            "Description": "Changes the color of Harvey's eyes. Default is green."
+            "Description": "Changes the color of Harvey's eyes. Default is green. Portrait only."
+        },
+        "HarveyGlasses":
+        {
+            "AllowValues": "Glasses, NoGlasses",
+            "Default": "Glasses",
+            "Description": "Gives Harvey glasses or contacts. Default is glasses."
         },
 
         // Krobus
@@ -458,6 +464,21 @@
             "AllowValues": "true, false",
             "Default": "true",
             "Description": "Enables outfits for Krobus. Default is true."
+        },
+
+        // Marnie - Effects the Character sprite only.
+
+        "MarnieAltVersion":
+        {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Description": "Changes Marnie's appearance to match that of Less Creepy Marnie Sprite. Character only. Default is false."
+        },
+        "MarnieLuauSoupSpriteEnabled":
+        {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Only disable if using a recolor mod that edit the Luau Soup (the big pot) and want Marnie's tile to match. Character only. Default is true."
         },
 
         // Maru - Effects the Character sprite only.
@@ -998,10 +1019,10 @@
         // Harvey Overlays
 
         {
-            "LogName": "Harvey - Mustache Overlay",
+            "LogName": "Harvey Overlays",
             "Action": "EditImage",
             "Target": "Characters/Harvey, Portraits/Harvey",
-            "FromFile": "{{Target}}/Harvey_{{HarveyFacialHair}}Overlay.png, {{Target}}/Harvey_{{HarveyEyeColor}}Eye_Overlay.png",
+            "FromFile": "{{Target}}/Harvey_{{HarveyFacialHair}}Overlay.png, {{Target}}/Harvey_{{HarveyEyeColor}}Eye_Overlay, {{Target}}/Harvey_{{HarveyGlasses}}Overlay.png",
             "When":
             {
                 "HasFile:{{FromFile}}": true
@@ -1014,7 +1035,7 @@
         {
             "LogName": "Jodi Spring",
             "Action": "EditImage",
-            "Target": "Characters/Harvey, Portraits/Harvey",
+            "Target": "Characters/Jodi, Portraits/Jodi",
             "FromFile": "{{Target}}/Jodi{{Season}}{{WeatherVariant}}_{{Random:1, 2 |key=JodiSpringVariant}}.png",
             "When":
             {
@@ -1463,7 +1484,7 @@
             "LogName": "Sebastian Summer",
             "Action": "EditImage",
             "Target": "Characters/Sebastian, Portraits/Sebastian",
-            "FromFile": "{{Target}}/Sebastian_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3. 4 |key=SebastianSummerVariant}}.png",
+            "FromFile": "{{Target}}/Sebastian_{{Season}}{{IndoorVariant}}{{WeatherVariant}}_{{Random:1, 2, 3, 4 |key=SebastianSummerVariant}}.png",
             "When":
             {
                 "Season": "summer",
@@ -1691,10 +1712,11 @@
             "LogName": "Harvey Festival Sprites",
             "Action": "EditImage",
             "Target": "Characters/Harvey, Portraits/Harvey",
-            "FromFile": "{{TargetPathOnly}}/Festivals/{{Festival}}/Harvey_{{Festival}}_{{HarveyFacialHair}}.png",
+            "FromFile": "{{TargetPathOnly}}/Festivals/{{Festival}}/Harvey_{{Festival}}_{{HarveyFacialHair}}((HarveyGlasses)).png",
             "When":
             {
                 "HarveyFacialHair": "Mustache, Shaved",
+                "HarveyGlasses": "Glasses, NoGlasses",
                 "DayEvent |contains=Egg Festival, stardew valley fair, spirit's eve": false
             },
             "Update": "OnLocationChange"
@@ -1703,11 +1725,12 @@
             "LogName": "Harvey Spirit, Egg & SV Fair Sprites",
             "Action": "EditImage",
             "Target": "Characters/Harvey, Portraits/Harvey",
-            "FromFile": "{{TargetPathOnly}}/Festivals/{{Festival}}/Harvey_{{Festival}}_{{Random:1, 2 |key=HarveySpiritEggSVFairVariant}}_{{HarveyFacialHair}}.png",
+            "FromFile": "{{TargetPathOnly}}/Festivals/{{Festival}}/Harvey_{{Festival}}_{{Random:1, 2 |key=HarveySpiritEggSVFairVariant}}_{{HarveyFacialHair}}{{HarveyGlasses}}.png",
             "When":
             {
                 "DayEvent": "Egg Festival, stardew valley fair, spirit's eve",
-                "HarveyFacialHair": "Mustache, Shaved"
+                "HarveyFacialHair": "Mustache, Shaved",
+                "HarveyGlasses": "Glasses, NoGlasses",
             },
             "Update": "OnLocationChange"
         },
@@ -1819,7 +1842,7 @@
         {
             "LogName": "Swimsuits Sprites",
             "Action": "EditImage",
-            "Target": "Characters/Abigail, Portraits/Abigail, Characters/Alex, Portraits/Alex, Characters/Caroline, Portraits/Caroline, Characters/Clint, Portraits/Clint, Characters/Demetrius, Portraits/Demetrius, Characters/Emily, Portraits/Emily, Characters/Elliott, Portraits/Elliott, Characters/Evelyn, Portraits/Evelyn, Characters/Gus, Portraits/Gus, Characters/Harvey, Portraits/Harvey, Characters/Jas, Portraits/Jas, Characters/Jodi, Portraits/Jodi, Characters/Kent, Portraits/Kent, Characters/Leah, Portraits/Leah, Characters/Lewis, Portraits/Lewis, Portraits/Linus, Characters/Maru, Portraits/Maru, Characters/Marnie, Portraits/Marnie, Characters/Pam, Portraits/Pam, Characters/Pierre, Portraits/Pierre, Characters/Robin, Portraits/Robin, Characters/Sam, Portraits/Sam, Characters/Sebastian, Portraits/Sebastian, Characters/Shane, Portraits/Shane, Characters/Vincent, Portraits/Vincent,",
+            "Target": "Characters/Abigail, Portraits/Abigail, Characters/Alex, Portraits/Alex, Characters/Caroline, Portraits/Caroline, Characters/Clint, Portraits/Clint, Characters/Demetrius, Portraits/Demetrius, Characters/Emily, Portraits/Emily, Characters/Elliott, Portraits/Elliott, Characters/Evelyn, Portraits/Evelyn, Characters/Gus, Portraits/Gus, Characters/Harvey, Portraits/Harvey, Characters/Jas, Portraits/Jas, Characters/Jodi, Portraits/Jodi, Characters/Kent, Portraits/Kent, Characters/Leah, Portraits/Leah, Characters/Lewis, Portraits/Lewis, Portraits/Linus, Characters/Maru, Portraits/Maru, Characters/Marnie, Portraits/Marnie, Characters/Pam, Portraits/Pam, Characters/ParrotBoy, Portraits/ParrotBoy, Characters/Pierre, Portraits/Pierre, Characters/Robin, Portraits/Robin, Characters/Sam, Portraits/Sam, Characters/Sebastian, Portraits/Sebastian, Characters/Shane, Portraits/Shane, Characters/Vincent, Portraits/Vincent,",
             "FromFile": "{{TargetPathOnly}}/{{Swimsuits}}/{{TargetWithoutPath}}Swim.png",
             "When":
             {
@@ -1881,7 +1904,7 @@
         {
             "LogName": "Random Beach Outfits",
             "Action": "Include",
-            "FromFile": "Data/Beach.json",
+            "FromFile": "Data/Beach.json",            
         },
 
         // E N D  S W I M S U I T S        
