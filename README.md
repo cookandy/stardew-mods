@@ -52,9 +52,11 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Imaged](https://www.nexusmods.com/stardewvalley/mods/7218) | Provides non-interactive image recoloring. | `1.1` | |
 | [JSON Assets](https://www.nexusmods.com/stardewvalley/mods/1720) | Successor to Custom Crops. | `1.7.5` | |
 | [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541) | See live info about whatever's under your cursor. | `1.32.3` | Changed hotkey. See [wiki](https://github.com/cookandy/stardew-mods/wiki/LookupAnything) |
+| [Mail Framework Mod](https://www.nexusmods.com/stardewvalley/mods/1536) | Framework to use the in game mailbox. | `1.9.2` | |
 | [Mod Update Menu](https://www.nexusmods.com/stardewvalley/mods/2536) | Adds an in game menu to the title screen letting you know if you need to update your mods or SMAPI. | `1.6.0` | |
 | [Non-Destructive NPCs](https://www.nexusmods.com/stardewvalley/mods/5176) | Makes NPCs not destroy objects placed by the player in their paths. | `1.0.0` | |
-| [NPC Map Locations](https://www.nexusmods.com/stardewvalley/mods/239) | Shows the locations of NPC and farmers on the map page and on a minimap. | `2.5.12-alpha` |
+| [NPC Map Locations](https://www.nexusmods.com/stardewvalley/mods/239) | Shows the locations of NPC and farmers on the map page and on a minimap. | `2.5.12-alpha` | |
+| [PPJA More Trees](https://www.nexusmods.com/stardewvalley/mods/1671) | Adds more tree types. | `1.6.10` | |
 | [PyTK](https://www.nexusmods.com/stardewvalley/mods/1726) | Toolkit for Smapi Mods. | `1.21.0` | |
 | [Quest Framework](https://www.nexusmods.com/stardewvalley/mods/6414) | Framework for work with quests like create custom quests, define custom quest types and handle quests. | `1.3.1` | |
 | [Ridgeside Village](https://www.nexusmods.com/stardewvalley/mods/7286) | Adds 24 new NPCs, a new location, forage, custom music, and more. | `1.2.6` |
@@ -67,6 +69,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [The Love of Cooking](https://www.nexusmods.com/stardewvalley/mods/6830) | A suite of changes all about cooking! | `1.0.10` | |
 | [TMXL Map Toolkit](https://www.nexusmods.com/stardewvalley/mods/1820) | Toolkit for adding/editing/replacing maps and creating buildables. | `1.22.0` | |
 | [Tractor Mod](https://www.nexusmods.com/stardewvalley/mods/1401) | Buy a tractor to more efficiently work with crops, clear twigs and rocks, etc. | `4.13.2` | |
+| [Tree Transplant](https://www.nexusmods.com/stardewvalley/mods/1342) | Used to transplant trees on your farm. | `1.0.13` | |
 | [UI Info Suite](https://www.nexusmods.com/stardewvalley/mods/1150) | Provides helpful information about things around you designed to help you be aware of what's going on without feeling like you're cheating. | `2.0.0` | |
 | [Wear More Rings](https://www.nexusmods.com/stardewvalley/mods/3214) | Configure the amount of ring slots in your inventory. By default adds 6 additional ring slots. | `3.3` | |
 | [Winter Grass](https://www.nexusmods.com/stardewvalley/mods/1601) | Makes grass survive through winter. | `2.0.3` | |
@@ -79,7 +82,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Flower Valley](https://www.nexusmods.com/stardewvalley/mods/2064) | Town and Farm Buildings ReDesign | `4.3.1` |
 | [Flowery Bin](https://www.nexusmods.com/stardewvalley/mods/4760) | A bin with various options of Darkwood, Birch, Joja, And plus a few more. | `1.13.5` | [1] |
 | [Medieval Buildings](https://www.nexusmods.com/stardewvalley/mods/4542) | Medieval Modern buildings | `1.15` |
-| [Seasonal Outfits - SVE](https://www.nexusmods.com/stardewvalley/mods/5975) | Gives the NPCs of Stardew Valley Expanded seasonal clothing. | `1.5.0` |
+| [Seasonal Outfits - SVE](https://www.nexusmods.com/stardewvalley/mods/5975) | Gives the NPCs of Stardew Valley Expanded seasonal clothing. | `1.5.1` |
 | [Seasonal Villager Outfits](https://www.nexusmods.com/stardewvalley/mods/2449) | An outfit for every season! | `2.3.4` |
 | [Stardew Valley Dialogue Expansion](https://www.nexusmods.com/stardewvalley/mods/2544) | Adds about 2500 new lines of dialogue across all 33 characters who have a heart level. | `2.0.5` | |
 | [Yellog's wood craftables](https://www.nexusmods.com/stardewvalley/mods/3063)| Craftables | `1.3` | [1] |
