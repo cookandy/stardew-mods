@@ -17,7 +17,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Alissa 22 65 left",
+         "Value": "Alissa 21 66 left",
          "Delimiter": "/"
 		},
 		{
@@ -107,7 +107,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Olga 21 66 right",
+         "Value": "Olga 20 66 right",
          "Delimiter": "/"
 		},
 		{
@@ -171,7 +171,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Alissa 25 65 left",
+         "Value": "Alissa 25 66 left",
          "Delimiter": "/"
 		},
 		{

@@ -14,7 +14,7 @@
 			"Time": "{{Range: 0600, 1900}}",
 			"EnableVillageMusic": true
 			},
-		"Update": "OnLocationChange, OnTimeChange"
+		"Update": "OnLocationChange"
 	},
 	{
 		"LogName": "Ridgeside Village Music No Sun",
@@ -27,7 +27,7 @@
 			"Weather: |contains=Sun": false,
 			"EnableVillageMusic": true
 			},
-		"Update": "OnLocationChange, OnTimeChange"
+		"Update": "OnLocationChange"
 	},
 	{
 		"LogName": "Ridgeside Village Music Night",
@@ -40,7 +40,7 @@
 			"Time": "{{Range: 1900, 2600}}",
 			"EnableVillageMusic": true
 			},
-		"Update": "OnLocationChange, OnTimeChange"
+		"Update": "OnLocationChange"
 	},
 	{
 		"LogName": "Ridgeside Village Music Off",
@@ -83,7 +83,7 @@
 		"ToArea": { "X": 15, "Y": 0, "Width": 20, "Height": 20 },
 		"PatchMode": "ReplaceByLayer",
 		"When": { "Time": "{{Range: 1900, 2600}}" },
-		"Update": "OnLocationChange, OnTimeChange"
+		"Update": "OnLocationChange"
 	},
 	{
 		"Action": "EditMap",
@@ -93,7 +93,7 @@
 		"ToArea": { "X": 15, "Y": 0, "Width": 20, "Height": 20 },
 		"PatchMode": "ReplaceByLayer",
 		"When": { "Time": "{{Range: 0600, 1900}}" },
-		"Update": "OnLocationChange, OnTimeChange"
+		"Update": "OnLocationChange"
 	},
 	
 //Ride Sky
@@ -104,7 +104,7 @@
 		"ToArea": { "X": 0, "Y": 0, "Width": 39, "Height": 20 },
 		"PatchMode": "ReplaceByLayer",
 		"When": { "Time": "{{Range: 1900, 2600}}" },
-		"Update": "OnLocationChange, OnTimeChange"
+		"Update": "OnLocationChange"
 	},
 	{
 		"Action": "EditMap",
@@ -113,7 +113,7 @@
 		"ToArea": { "X": 0, "Y": 0, "Width": 39, "Height": 20 },
 		"PatchMode": "ReplaceByLayer",
 		"When": { "Time": "{{Range: 0600, 1900}}" },
-		"Update": "OnLocationChange, OnTimeChange"
+		"Update": "OnLocationChange"
 	},
 	
 //Cliff House Peek (11PM-11:30PM Thursday)

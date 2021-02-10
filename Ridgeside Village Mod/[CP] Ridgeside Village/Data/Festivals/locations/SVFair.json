@@ -17,7 +17,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Alissa 32 66 right",
+         "Value": "Alissa 33 66 right",
          "Delimiter": "/"
 		},
 		{
@@ -107,13 +107,13 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Olga 27 61 right",
+         "Value": "Olga 27 60 right",
          "Delimiter": "/"
 		},
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Philip 22 65 up",
+         "Value": "Philip 24 65 up",
          "Delimiter": "/"
 		},
 		{
@@ -171,7 +171,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Alissa 32 66 right",
+         "Value": "Alissa 33 66 right",
          "Delimiter": "/"
 		},
 		{
@@ -261,13 +261,13 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Olga 27 61 right",
+         "Value": "Olga 27 60 right",
          "Delimiter": "/"
 		},
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Philip 22 65 up",
+         "Value": "Philip 24 65 up",
          "Delimiter": "/"
 		},
 		{

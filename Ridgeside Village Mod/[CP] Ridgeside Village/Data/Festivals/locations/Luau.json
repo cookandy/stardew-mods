@@ -10,7 +10,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Aguar 14 39 down",
+         "Value": "Aguar 10 37 left",
          "Delimiter": "/"
 		},
 		{
@@ -40,7 +40,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Flor 30 17 right",
+         "Value": "Flor 29 17 right",
          "Delimiter": "/"
 		},
 		{
@@ -70,7 +70,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Kenneth 23 7 left",
+         "Value": "Kenneth 22 6 down",
          "Delimiter": "/"
 		},
 		{
@@ -144,7 +144,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "MainEvent_additionalCharacters"],
-         "Value": "Aguar 14 39 down",
+         "Value": "Aguar 10 37 left",
          "Delimiter": "/"
 		},
 		{
@@ -174,7 +174,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "MainEvent_additionalCharacters"],
-         "Value": "Flor 30 17 right",
+         "Value": "Flor 30 20 up",
          "Delimiter": "/"
 		},
 		{
@@ -204,7 +204,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "MainEvent_additionalCharacters"],
-         "Value": "Kenneth 23 7 left",
+         "Value": "Kenneth 22 6 right",
          "Delimiter": "/"
 		},
 		{

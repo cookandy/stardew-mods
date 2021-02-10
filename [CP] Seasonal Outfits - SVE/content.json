@@ -148,7 +148,7 @@
         {
             "LogName": "regular characters season",
             "Action": "EditImage",
-            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Jadu, Characters/Lance, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite, Characters/Susan, Characters/Victor",
+            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Jadu, Characters/Lance, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite, Characters/Sandy, Characters/Susan, Characters/Victor",
             "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
             "Update": "OnLocationChange",                
 			"When":
@@ -160,7 +160,7 @@
         {
             "LogName": "regular characters season/outdoor",
             "Action": "EditImage",
-            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Jadu, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite, Characters/Susan, Characters/Victor",
+            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Jadu, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite,  Characters/Sandy, Characters/Susan, Characters/Victor",
             "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}.png",
             "Update": "OnLocationChange",    
             "When":
@@ -172,7 +172,7 @@
         {
             "LogName": "regular characters season/outdoor/weather",
             "Action": "EditImage",
-            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Jadu, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite, Characters/Susan, Characters/Victor",
+            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Jadu, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite,  Characters/Sandy, Characters/Susan, Characters/Victor",
             "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}{{WeatherVariant}}.png",
             "Update": "OnLocationChange",    
             "When":
@@ -186,7 +186,7 @@
         {
             "LogName": " Portraits regular season",
             "Action": "EditImage",
-            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Jadu, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Scarlett, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
+            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Jadu, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Scarlett, Portraits/Sandy, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
             "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
             "Update": "OnLocationChange",     
             "When":
@@ -198,7 +198,7 @@
         {
             "LogName": "Portraits regular season/outdoor",
             "Action": "EditImage",
-            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Jadu, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Scarlett, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
+            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Jadu, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Scarlett, Portraits/Sandy, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
             "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}.png",
             "Update": "OnLocationChange",    
             "When":
@@ -210,7 +210,7 @@
         {
             "LogName": "Portraits regular season/outdoor/weather",
             "Action": "EditImage",
-            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Jadu, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Scarlett, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
+            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Jadu, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Scarlett, Portraits/Sandy, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
             "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}{{WeatherVariant}}.png",
             "Update": "OnLocationChange",    
             "When":

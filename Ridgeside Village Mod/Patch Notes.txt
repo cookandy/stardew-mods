@@ -1,0 +1,16 @@
+Corine PLACEHOLDER dialogues filled in.
+Alissa Portraits Updated (Less Messy hair during concert)
+Portrait Reworks for: Aguar, Bert, Ezekiel, Jio, Lola, & Olga
+Portrait Retouches for: Alissa, Freddie, Pika, & (???)
+Moved Olga and Alissa in the Winter's Star festival
+Moved Olga, Alissa, and Philip in the SVFair
+Adjusted Philip's character sprites to fit new portrait
+Reduced stutter experienced when 7PM strikes
+Fixed some fade timing on Freddie's Events
+Some more map tile fixes
+Cable Car animation now only plays when entering it from Pelican Town
+Fixed bugs in Philip's 2 Heart Event
+Moved Kenneth, Flor, and Aguar in Luau
+Hopefully a fix for some users who can't access Jeric's Shop (more clickable tiles)
+Removed double spacings in some event dialogues
+Some more dialogue fixes
