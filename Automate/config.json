@@ -5,7 +5,8 @@
     "ToggleOverlay": "U"
   },
   "ConnectorNames": [
-    "Workbench"
+    "Workbench",
+    "Stepping Stone Path"
   ],
   "ModCompatibility": {
     "AutoGrabberMod": true,

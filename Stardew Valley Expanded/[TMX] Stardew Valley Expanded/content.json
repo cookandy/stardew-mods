@@ -193,6 +193,14 @@
       "name": "GrampletonFields_Small",
       "file": "assets/Maps/GrampletonFields_Small.tbin"
     },
+	{
+      "name": "AdventurerSummit",
+      "file": "assets/Maps/AdventurerSummit.tbin"
+    },
+	{
+      "name": "BusStop_NoBus",
+      "file": "assets/Maps/BusStop_NoBus.tbin",
+    },
 	  ],
 
   "mergeMaps": [
@@ -1558,17 +1566,34 @@
               "index":645,
               "type":"Object",
               "Price":15000,
+			  "stock":3,
 			  "conditions": "n SophiaFairyGarden",
           },
 		  {
               "index":915,
               "type":"Object",
               "Price":45000,
+			  "stock":1,
 			  "conditions": "n SophiaFairyGarden",
           },
         ],
         "portraits":[
           "assets/ShopPortraits/Misc/SophiaLedger.png",
+        ],
+    },
+	
+	{
+      "id": "LewisLedger",
+        "inventory": [
+		  {
+              "name":"Property Deed",
+              "type":"Object",
+              "price":250000,
+			  "stock":1
+          },
+        ],
+        "portraits":[
+          "assets/ShopPortraits/Misc/LewisLedger.png",
         ],
     },
 	

@@ -21,7 +21,7 @@
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "119,49;0,0",
-          "119,96;35,50",
+          "139,96;35,0",
           "162,155;132,83",
           "34,96;0,78"
         ],
@@ -229,8 +229,8 @@
         "LevelTenSpawnChance": null,
         "UniqueAreaID": "Ore spawns",
         "MapName": "FarmCliff",
-        "MinimumSpawnsPerDay": 2,
-        "MaximumSpawnsPerDay": 3,
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 2,
         "IncludeTerrainTypes": [
           "Quarry"
         ],

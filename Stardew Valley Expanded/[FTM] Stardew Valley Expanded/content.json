@@ -298,8 +298,8 @@
         "WinterItemIndex": null,
         "UniqueAreaID": "Summit forage area 1",
         "MapName": "Summit",
-        "MinimumSpawnsPerDay": 3,
-        "MaximumSpawnsPerDay": 5,
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 6,
         "IncludeTerrainTypes": [
           "Grass",
           "Diggable"
@@ -329,56 +329,6 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 1
-      },
-      {
-        "SpringItemIndex": [
-          109
-        ],
-        "SummerItemIndex": [
-          109
-        ],
-        "FallItemIndex": [
-          109
-        ],
-        "WinterItemIndex": [
-          109
-        ],
-        "UniqueAreaID": "Summit forage area 2",
-        "MapName": "Summit",
-        "MinimumSpawnsPerDay": 1,
-        "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": [],
-        "ExcludeTerrainTypes": [],
-        "IncludeCoordinates": [
-          "21,25;21,25"
-        ],
-        "ExcludeCoordinates": [],
-        "StrictTileChecking": "High",
-        "SpawnTiming": {
-          "StartTime": 600,
-          "EndTime": 600,
-          "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": null,
-          "OnlySpawnIfAPlayerIsPresent": false,
-          "SpawnSound": ""
-        },
-        "ExtraConditions": {
-          "Years": [
-            "1"
-          ],
-          "Seasons": [
-            "Spring"
-          ],
-          "Days": [
-            "1"
-          ],
-          "WeatherYesterday": [],
-          "WeatherToday": [],
-          "WeatherTomorrow": [],
-          "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 1
-        },
-        "DaysUntilSpawnsExpire": 0
       },
       {
         "SpringItemIndex": null,

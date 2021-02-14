@@ -3,6 +3,11 @@
 
   "ConfigSchema": {
 
+      "MistEffects": {
+      "AllowValues": "true, false",
+      "Default": "true"
+   },
+
       "SandboxLayout": {
       "AllowValues": "true, false",
       "Default": "false"
@@ -54,6 +59,10 @@
       "Name": "GroveComplete",
       "Value": "{{HasSeenEvent: currentPlayer, hostPlayer |contains=2554911}}"
     },
+	{
+      "Name": "ExtraLand",
+      "Value": "{{HasSeenEvent: currentPlayer, hostPlayer |contains=8033861}}"
+    },
  ],
 
   "Changes": [ 
@@ -61,8 +70,32 @@
     //Load tilesheets
     {
       "Action": "Load",
-      "Target": "Maps/z_petbowl, Maps/z_FarmCliff_Shadow, Maps/GrandpasGrove_Shadows1, Maps/GrandpasGrove_Shadows2, Maps/z_FarmCliff_Copper, Maps/z_FarmCliff_Iron, Maps/z_FarmCliff_Gold, Maps/z_FarmCliff_Gems, Maps/z_GrandpasFarm_mist, Maps/z_GrandpasGrove_mist, Maps/z_FarmCliff_Blank",
+      "Target": "Maps/z_petbowl, Maps/z_FarmCliff_Shadow, Maps/GrandpasGrove_Shadows1, Maps/GrandpasGrove_Shadows2, Maps/z_FarmCliff_Copper, Maps/z_FarmCliff_Iron, Maps/z_FarmCliff_Gold, Maps/z_FarmCliff_Gems, Maps/z_FarmCliff_Blank",
       "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",
+    },
+	
+    //Load mist tilesheets
+    {
+      "Action": "Load",
+      "Target": "Maps/z_GrandpasFarm_mist, Maps/z_GrandpasGrove_mist",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",
+	  "When": { "MistEffects": "true",  }
+    },
+	
+    { //Adds mist effects to the farm
+     "Action": "EditMap",
+	 "Target": "Maps/Farm",
+	 "FromFile": "Assets/MistEffects/GrandpasFarm_Mist.tbin",
+	 "When": { "MistEffects": "true", "Weather": "Rain, Storm", "FarmType": "Standard" },
+	 "ToArea": { "X": 0, "Y": 0, "Width": 120, "Height": 97 }
+    },
+	
+	{ //Adds mist effects to the grandpa's grove
+     "Action": "EditMap",
+	 "Target": "Maps/GrandpasGrove",
+	 "FromFile": "Assets/MistEffects/GrandpasGrove_Mist.tbin",
+	 "When": { "MistEffects": "true", "Weather": "Rain, Storm", "FarmType": "Standard" },
+	 "ToArea": { "X": 0, "Y": 0, "Width": 50, "Height": 48 }
     },
 
 	//Load grandpa's farm
@@ -220,6 +253,15 @@
       "FromFile": "assets/MapPatches/GrandpasFarm_ForestTravelingMerchant.tbin",
       "ToArea": { "X": 23, "Y": 93, "Width": 8, "Height": 4 },
       "When": { "DayOfWeek": "Friday, Sunday", "FarmType": "Standard" }
+    },	
+	{
+     "Action": "EditMap",
+     "Target": "Maps/Farm,Maps",
+     "FromFile": "assets/MapPatches/GrandpasFarm_ForestTravelingMerchant_Gone.tbin",
+     "ToArea": { "X": 27, "Y": 95,"Width": 1, "Height": 2 },
+     "When": { "Time": "{{Range: 2000, 2600}}", "DayOfWeek": "Friday, Sunday" },
+	 "PatchMode": "Overlay",
+	 "Update": "OnTimeChange"
     },
 	
 	//Patches junimo warp
@@ -336,6 +378,22 @@
 	 "When": { "GroveComplete": "true", "FarmType": "Standard" },
      "ToArea": { "X": 0, "Y": 17, "Width": 9, "Height": 6 }
     },
+	
+	//Patches extra land
+	{ 
+     "Action": "EditMap",
+     "Target": "Maps/Farm,Maps",
+     "FromFile": "Assets/MapPatches/GrandpasFarm_ExtraLand.tbin",
+	 "When": { "ExtraLand": "true", "GrassCropField": "false", "FarmType": "Standard" },
+     "ToArea": { "X": 110, "Y": 33, "Width": 26, "Height": 42 }
+    },
+	{ 
+     "Action": "EditMap",
+     "Target": "Maps/Farm,Maps",
+     "FromFile": "Assets/MapPatches/GrandpasFarm_ExtraLand_GrassField.tbin",
+	 "When": { "ExtraLand": "true", "GrassCropField": "true", "FarmType": "Standard" },
+     "ToArea": { "X": 110, "Y": 33, "Width": 26, "Height": 42 }
+    },
 
 	//Fall leaves
 	{
@@ -343,7 +401,7 @@
 	 "Target": "Maps/Farm",
 	 "FromFile": "Assets/MapPatches/GrandpasFarm_Leaves.tbin",
 	 "When": { "Season": "Fall" },
-	 "ToArea": { "X": 0, "Y": 0, "Width": 120, "Height": 97 }
+	 "ToArea": { "X": 0, "Y": 0, "Width": 140, "Height": 97 }
     },
 	
 	//Makes gem appearances dynamic to players mining level
@@ -371,20 +429,7 @@
 	 "FromFile": "Assets/Tilesheets/z_FarmCliff_Blank.png",
 	 "When": { "SkillLevel:Mining": "0, 1, 2, 3, 4, 5, 6, 7, 9" }
     },
-	
-	//Removes mist effects unless it's raining
-	{
-     "Action": "EditImage",
-	 "Target": "Maps/z_GrandpasFarm_mist",
-	 "FromFile": "Assets/Tilesheets/z_GrandpasFarm_mist_blank.png",
-	 "When": { "Weather |contains=rain": false }
-    },
-	{
-     "Action": "EditImage",
-	 "Target": "Maps/z_GrandpasGrove_mist",
-	 "FromFile": "Assets/Tilesheets/z_GrandpasGrove_mist_blank.png",
-	 "When": { "Weather |contains=rain": false }
-    },
+
 	
 	//Patches world map
 	{
@@ -431,6 +476,38 @@
       "ToArea": { "X": 208, "Y": 1232,"Width": 32, "Height": 16 },
       "When": { "FarmType": "Standard" },
 	  "Update": "OnLocationChange"
+    },
+	
+	{ //Sophia spouse area TEST
+      "Action": "EditMap",
+      "Target": "Maps/Farm,Maps",
+      "FromFile": "assets/MapPatches/GrandpasFarm_Sophia_SpouseArea.tbin",
+	  "When": { "FarmType": "Standard", "Spouse": "Sophia" },
+      "ToArea": { "X": 78, "Y": 38, "Width": 4, "Height": 2 },
+    },
+	
+	{ //Victor spouse area TEST
+      "Action": "EditMap",
+      "Target": "Maps/Farm,Maps",
+      "FromFile": "assets/MapPatches/GrandpasFarm_Victor_SpouseArea.tbin",
+	  "When": { "FarmType": "Standard", "Spouse": "Victor" },
+      "ToArea": { "X": 78, "Y": 38, "Width": 4, "Height": 2 },
+    },
+	
+	{ //Olivia spouse area TEST
+      "Action": "EditMap",
+      "Target": "Maps/Farm,Maps",
+      "FromFile": "assets/MapPatches/GrandpasFarm_Olivia_SpouseArea.tbin",
+	  "When": { "FarmType": "Standard", "Spouse": "Olivia", "Weather |contains=Winter": false },
+      "ToArea": { "X": 78, "Y": 38, "Width": 4, "Height": 2 },
+    },
+	
+	{ //Claire spouse area TEST
+      "Action": "EditMap",
+      "Target": "Maps/Farm,Maps",
+      "FromFile": "assets/MapPatches/GrandpasFarm_Claire_SpouseArea.tbin",
+	  "When": { "FarmType": "Standard", "Spouse": "Claire" },
+      "ToArea": { "X": 78, "Y": 38, "Width": 4, "Height": 2 },
     },
 	
     //Changes standard farm icon to grandpa

@@ -1,0 +1,17 @@
+{
+  "Controls": {
+    "ToggleLookup": "Q",
+    "ToggleSearch": "LeftShift + Q",
+    "ScrollUp": "Up",
+    "ScrollDown": "Down",
+    "ToggleDebug": "None"
+  },
+  "ProgressionMode": false,
+  "HighlightUnrevealedGiftTastes": false,
+  "HideOnKeyUp": false,
+  "EnableTargetRedirection": true,
+  "EnableTileLookups": false,
+  "ForceFullScreen": false,
+  "ScrollAmount": 160,
+  "ShowDataMiningFields": false
+}
