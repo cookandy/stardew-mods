@@ -59,6 +59,6 @@
   "DurableFences": true,
   "InstantBuild": false,
   "AutoFeed": true,
-  "AutoWater": true,
+  "AutoWater": false,
   "InfiniteHay": false
 }

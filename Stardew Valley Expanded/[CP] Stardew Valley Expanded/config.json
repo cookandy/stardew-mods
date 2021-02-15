@@ -3,6 +3,7 @@
   "ReplaceDefaultFences": "false",
   "ReplaceHardwoodFences": "false",
   "ImmersiveShadows": "true",
+  "MistEffects": "true",
   "CanWalkOverBeachTidepools": "false",
   "SmallerDesertMap": "true",
   "RemoveObjectsFromGrandpasShed": "false",
