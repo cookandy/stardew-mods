@@ -78,11 +78,11 @@
             },
             {
                 "DisplayText": "Adventurer's Guild",
-                "Location": "Town",
-                "Tile": "33, 100",
+                "Location": "AdventurerSummit",
+                "Tile": "32, 22",
             },
             {
-            "DisplayText": "Joja Mart",
+               "DisplayText": "Joja Mart",
                 "Location": "Town",
                 "Tile": "95, 51",
                 "SpecialBehavior": "Jojamart"
@@ -221,8 +221,8 @@
             },
 			{
                 "DisplayText": "Secret Woods",
-                "Location": "forest",
-                "Tile": "53, 15",
+                "Location": "Woods",
+                "Tile": "58, 15",
             },
             {
                 "DisplayText": "Sophia's Vineyard",

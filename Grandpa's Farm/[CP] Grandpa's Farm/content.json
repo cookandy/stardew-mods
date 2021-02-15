@@ -478,7 +478,7 @@
 	  "Update": "OnLocationChange"
     },
 	
-	{ //Sophia spouse area TEST
+	{ //Sophia spouse area
       "Action": "EditMap",
       "Target": "Maps/Farm,Maps",
       "FromFile": "assets/MapPatches/GrandpasFarm_Sophia_SpouseArea.tbin",
@@ -486,7 +486,7 @@
       "ToArea": { "X": 78, "Y": 38, "Width": 4, "Height": 2 },
     },
 	
-	{ //Victor spouse area TEST
+	{ //Victor spouse area
       "Action": "EditMap",
       "Target": "Maps/Farm,Maps",
       "FromFile": "assets/MapPatches/GrandpasFarm_Victor_SpouseArea.tbin",
@@ -494,7 +494,7 @@
       "ToArea": { "X": 78, "Y": 38, "Width": 4, "Height": 2 },
     },
 	
-	{ //Olivia spouse area TEST
+	{ //Olivia spouse area
       "Action": "EditMap",
       "Target": "Maps/Farm,Maps",
       "FromFile": "assets/MapPatches/GrandpasFarm_Olivia_SpouseArea.tbin",
@@ -502,7 +502,7 @@
       "ToArea": { "X": 78, "Y": 38, "Width": 4, "Height": 2 },
     },
 	
-	{ //Claire spouse area TEST
+	{ //Claire spouse area
       "Action": "EditMap",
       "Target": "Maps/Farm,Maps",
       "FromFile": "assets/MapPatches/GrandpasFarm_Claire_SpouseArea.tbin",

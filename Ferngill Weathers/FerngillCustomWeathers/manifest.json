@@ -1,7 +1,7 @@
 ﻿{
   "Name": "Ferngill Custom Weathers",
   "Author": "Sakorona",
-  "Version": "2.0.0-beta.1",
+  "Version": "2.0.0-beta.2",
   "Description": "Adds custom weathers such as fogs and blizzards to Stardew Valley",
   "UniqueID": "KoihimeNakamura.FerngillCustomWeathers",
   "EntryDll": "FerngillCustomWeathers.dll",
