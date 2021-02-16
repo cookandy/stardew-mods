@@ -1,7 +1,7 @@
 {
 	"Name": "Medieval_buildings",
 	"Author": "Gweniaczek",
-	"Version": "1.15",
+	"Version": "1.16",
 	"Description": "Medieval buildings set inspired by Eemie and Flower Valley",
 	"UniqueID": "Gweniaczek.Medieval_buildings",
 	"UpdateKeys": ["Nexus:4542"],
@@ -24,6 +24,14 @@
 		},
 		{
 		"UniqueID": "stardewfoliageredone",
+		"IsRequired": false,
+		},
+		{
+		"UniqueID": "stardewfoliageredonereshade",
+		"IsRequired": false,
+		},
+		{
+		"UniqueID": "grapeponta.VibrantPastoralRecolor",
 		"IsRequired": false,
 		},
 	],
