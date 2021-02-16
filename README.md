@@ -12,7 +12,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 
 ## Requirements
 
-- [Stardew Valley](https://www.stardewvalley.net/) version `1.5.2`
+- [Stardew Valley](https://www.stardewvalley.net/) version `1.5.4`
 - [SMAPI](https://smapi.io/) version `3.9.1`
 
 
