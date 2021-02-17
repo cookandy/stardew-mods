@@ -42,7 +42,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Custom NPC Exclusions](https://www.nexusmods.com/stardewvalley/mods/7089) | Allows other mods to exclude NPCs from certain quests and events. | `1.2.0` | |
 | [DeepWoods](https://www.nexusmods.com/stardewvalley/mods/2571) | Adds an explorable forest to the secret woods. | `1.9.6-beta` | Modified to be slightly easier. See [wiki](https://github.com/cookandy/stardew-mods/wiki/DeepWoods)|
 | [Dynamic Night Time](https://www.nexusmods.com/stardewvalley/mods/2072) | Gives Stardew Valley a more dynamic daylight cycle. | `1.3.7` | |
-| [Event Reepeater](https://www.nexusmods.com/stardewvalley/mods/3642) | Add depth to your stories with the option to Repeat events over and over as you need them. | `6.0.0` | |
+| [Event Reepeater](https://www.nexusmods.com/stardewvalley/mods/3642) | Add depth to your stories with the option to Repeat events over and over as you need them. | `6.0.1` | |
 | [Expanded Preconditions Utility](https://www.nexusmods.com/stardewvalley/mods/6529) | A utility mod built on top of the game's preconditions system to offer a conditions system any mod can use | `1.0.1`| |
 | [Fall 28 Snow Day](https://www.nexusmods.com/stardewvalley/mods/486) | Makes snow fall on the last day of Fall. | `1.7.1` | |
 | [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) | A spawning framework that allows players and modders to spawn customizable features from Stardew's farm types. | `1.13.1` | |
@@ -50,6 +50,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) | A config menu framework for mods. | `1.2.1` | |
 | [Gift Taste Helper](https://www.nexusmods.com/stardewvalley/mods/229) | Displays a helpful tooltip that shows an NPC's favourite gifts when hovering over their birthday on the calendar or the social page. | `2.9.1` | |
 | [Grandpa's Farm](https://www.nexusmods.com/stardewvalley/mods/3753) | Grandpa's Farm for [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753). | `1.12.6` | |
+| [Horse Overhaul](https://www.nexusmods.com/stardewvalley/mods/7911) | Make the horse the way it should be, thin, fast and useful. | `1.2.5` | |
 | [Imaged](https://www.nexusmods.com/stardewvalley/mods/7218) | Provides non-interactive image recoloring. | `1.1` | |
 | [JSON Assets](https://www.nexusmods.com/stardewvalley/mods/1720) | Successor to Custom Crops. | `1.7.5` | |
 | [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541) | See live info about whatever's under your cursor. | `1.32.4` | Changed hotkey. See [wiki](https://github.com/cookandy/stardew-mods/wiki/LookupAnything) |
