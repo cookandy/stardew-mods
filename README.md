@@ -39,7 +39,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [CJB Cheats Menu](https://www.nexusmods.com/stardewvalley/mods/4) | A simple in-game cheats menu with lots of cheats. | `1.27.0` | |
 | [CJB Item Spawner](https://www.nexusmods.com/stardewvalley/mods/93) | An easy-to-use in-game item spawner menu. | `2.0.2` | |
 | [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) | Loads content packs that change the game's images and data without replacing XNB files. | `1.20.0` | |
-| [Custom NPC Exclusions](https://www.nexusmods.com/stardewvalley/mods/7089) | Allows other mods to exclude NPCs from certain quests and events. | `1.2.0` | |
+| [Custom NPC Exclusions](https://www.nexusmods.com/stardewvalley/mods/7089) | Allows other mods to exclude NPCs from certain quests and events. | `1.3.0` | |
 | [DeepWoods](https://www.nexusmods.com/stardewvalley/mods/2571) | Adds an explorable forest to the secret woods. | `1.9.6-beta` | Modified to be slightly easier. See [wiki](https://github.com/cookandy/stardew-mods/wiki/DeepWoods)|
 | [Dynamic Night Time](https://www.nexusmods.com/stardewvalley/mods/2072) | Gives Stardew Valley a more dynamic daylight cycle. | `1.3.7` | |
 | [Event Reepeater](https://www.nexusmods.com/stardewvalley/mods/3642) | Add depth to your stories with the option to Repeat events over and over as you need them. | `6.0.1` | |

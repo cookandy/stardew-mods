@@ -1,0 +1,14 @@
+{
+  "ThinHorse": true,
+  "MovementSpeed": true,
+  "MaxMovementSpeedBonus": 3.0,
+  "SaddleBag": true,
+  "VisibleSaddleBags": "Green",
+  "Petting": true,
+  "Water": true,
+  "Feeding": true,
+  "PetFeeding": true,
+  "HorseMenuKey": "H",
+  "PetMenuKey": "P",
+  "DisableStableSpriteChanges": false
+}
