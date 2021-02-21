@@ -1,6 +1,7 @@
 ﻿{
   //SPECIAL DIALOGUE
   "Introduction": "Hi. I haven't seen you before...$0#$e#Sorry. I...I don't really know you all that well.$2#$e#%Claire edges away from you.",
+  "accept_614": "Oh, green tea? Why, thank you.$1",
   "Town_92_44": "%'Employee Entrance'",
   "danceRejection": "Oh, you want to dance? Um... maybe later?$1",
   "BusStop_12_8": "Excuse me. I'm taking the bus home...$0",

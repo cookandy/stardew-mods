@@ -1561,7 +1561,7 @@
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
-          "30,6;30,6"
+          "9,9;9,9"
         ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "High",
@@ -1605,7 +1605,7 @@
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
-          "33,35;33,35"
+          "4,6;4,6"
         ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "High",
@@ -1628,54 +1628,6 @@
           "LimitedNumberOfSpawns": 1
         },
         "DaysUntilSpawnsExpire": null
-      },
-      {
-        "SpringItemIndex": [
-          454
-        ],
-        "SummerItemIndex": [
-          454
-        ],
-        "FallItemIndex": [
-          454
-        ],
-        "WinterItemIndex": null,
-        "UniqueAreaID": "Junimo Ancient Fruit Spawns",
-        "MapName": "AuroraVineyard",
-        "MinimumSpawnsPerDay": 1,
-        "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": [],
-        "ExcludeTerrainTypes": [],
-        "IncludeCoordinates": [
-          "56,105;20,94"
-        ],
-        "ExcludeCoordinates": [],
-        "StrictTileChecking": "High",
-        "SpawnTiming": {
-          "StartTime": 600,
-          "EndTime": 600,
-          "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": null,
-          "OnlySpawnIfAPlayerIsPresent": false,
-          "SpawnSound": ""
-        },
-        "ExtraConditions": {
-          "Years": [
-            "3+"
-          ],
-          "Seasons": [
-            "spring",
-            "summer",
-            "fall"
-          ],
-          "Days": [],
-          "WeatherYesterday": [],
-          "WeatherToday": [],
-          "WeatherTomorrow": [],
-          "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 0
-        },
-        "DaysUntilSpawnsExpire": 1
       },
       {
         "SpringItemIndex": null,

@@ -149,7 +149,7 @@
 	 "Entries": {
 	    "Claire": "ItemDelivery, Socialize, WinterStar, ShopDialog, IslandVisit",
 		"Martin": "ItemDelivery, Socialize, WinterStar, ShopDialog, IslandVisit",
-		"Apples": "ItemDelivery, Socialize, WinterStar, ShopDialog, IslandVisit",
+		"Apples": "ItemDelivery, Socialize, WinterStar, ShopDialog, IslandVisit, MovieInvite",
 		"Morgan": "ItemDelivery, WinterStar, ShopDialog, IslandVisit",
 		"Wizard": "WinterStar",
 		"MorrisTod": "Socialize, ItemDelivery, WinterStar, ShopDialog, IslandVisit",
@@ -299,456 +299,6 @@
 	 "When": { "MistEffects": "true", "Weather": "Rain, Storm" },
 	 "ToArea": { "X": 0, "Y": 0, "Width": 65, "Height": 43 }
 },
-
-
-     //GRANDPAS SHED QUEST LINE
-
-{    //Map patches a path to grandpa's shed at bus stop map
-     "Action": "EditMap",
-     "Target": "Maps/BusStop",
-     "FromFile": "Assets/Maps/GrandpasShed/BusStopShedPath.tbin",
-	 "When": { "HasMod |contains=alistairweekend.TSCCharacters": false },
-     "ToArea": { "X": 0, "Y": 24, "Width": 10, "Height": 6 }
-},
-
-{    //Map patches a path to grandpa's shed at bus stop map - stray cafe compat patch
-     "Action": "EditMap",
-     "Target": "Maps/BusStop",
-     "FromFile": "Assets/Maps/GrandpasShed/BusStopShedPathStrayCafe.tbin",
-	 "When": { "HasMod": "alistairweekend.TSCCharacters" },
-     "ToArea": { "X": 0, "Y": 24, "Width": 10, "Height": 6 }
-},
-
-{
-     //Map patches new warp coordinates inside grandpa's shed
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShed",
-     "FromFile": "Assets/Maps/GrandpasShed/GrandpasShedNewWarps.tbin",
-	 "When": { "FarmType |contains=Standard": false },
-     "ToArea": { "X": 15, "Y": 17, "Width": 2, "Height": 1 }
-},
-
-{    //Patches new warp coordinates inside grandpa's ruined shed
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShedRuins",
-     "FromFile": "Assets/Maps/GrandpasShed/GrandpasShedNewWarps.tbin",
-	 "When": { "FarmType |contains=Standard": false },
-     "ToArea": { "X": 15, "Y": 17, "Width": 2, "Height": 1 }
-},
-
-{
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShedRuins",
-     "When": { "FarmType |contains=Standard": false },
-     "MapProperties": { "Warp": "-20 -20 Farm 50 50" }
-},
-
-{
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShed",
-     "When": { "FarmType |contains=Standard": false },
-     "MapProperties": { "Warp": "-20 -20 Farm 50 50" }
-},
-
-{    //Configuration - Clears refurbished shed interior of static objects (barrels, desks, boxes, etc.)
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShedGreenhouse,Maps",
-     "FromFile": "assets/Maps/GrandpasShed/GrandpasShedGreenhouseCleared.tbin",
-	 "ToArea": { "X": 0, "Y": 0, "Width": 35, "Height": 22 },
-	 "When": { "RemoveObjectsFromGrandpasShed": "true" }
-},	
-
-{
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShed,Maps",
-     "FromFile": "assets/Maps/GrandpasShed/GrandpasShedCleared.tbin",
-	 "ToArea": { "X": 0, "Y": 0, "Width": 32, "Height": 18 },
-	 "When": { "RemoveObjectsFromGrandpasShed": "true" }
-},	
-
-{    //Patches new warp coordinates inside grandpa's ruined shed
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShedRuins",
-     "FromFile": "Assets/Maps/GrandpasShed/GrandpasShedNewWarps2.tbin",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
-     "ToArea": { "X": 15, "Y": 17, "Width": 2, "Height": 1 }
-},
-
-{    //Map patches new warp coordinates inside grandpa's shed
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShed",
-     "FromFile": "Assets/Maps/GrandpasShed/GrandpasShedNewWarps2.tbin",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
-     "ToArea": { "X": 15, "Y": 17, "Width": 2, "Height": 1 }
-},
-
-{
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShedRuins",
-     "When": { "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
-     "MapProperties": { "Warp": "15 17 Farm 20 22 16 17 Farm 21 22" }
-},
-
-{
-     //Fixes standard farm grandpa shed warps if players don't have IF2R or Grandpa's shed installed
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShed",
-     "FromFile": "Assets/Maps/GrandpasShed/GrandpasShedNewWarps.tbin",
-	 "When": { "FarmType": "Standard", "HasMod |contains=flashshifter.GrandpasFarm": false, "HasMod |contains=flashshifter.immersivefarm2remastered": false },
-     "ToArea": { "X": 15, "Y": 17, "Width": 2, "Height": 1 }
-},
-{
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShedRuins",
-     "FromFile": "Assets/Maps/GrandpasShed/GrandpasShedNewWarps.tbin",
-	 "When": { "FarmType": "Standard", "HasMod |contains=flashshifter.GrandpasFarm": false, "HasMod |contains=flashshifter.immersivefarm2remastered": false },
-     "ToArea": { "X": 15, "Y": 17, "Width": 2, "Height": 1 }
-},
-{
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShedRuins",
-     "When": { "FarmType": "Standard", "HasMod |contains=flashshifter.GrandpasFarm": false, "HasMod |contains=flashshifter.immersivefarm2remastered": false },
-     "MapProperties": { "Warp": "-20 -20 Farm 50 50" }
-},
-{
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShed",
-     "When": { "FarmType": "Standard", "HasMod |contains=flashshifter.GrandpasFarm": false, "HasMod |contains=flashshifter.immersivefarm2remastered": false },
-     "MapProperties": { "Warp": "-20 -20 Farm 50 50" }
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #1 - Tags event ID
-	 "Action": "EditData",
-	 "Target": "data/events/GrandpasShedRuins",
-	 "Entries": {
-	 "2554901/H": "none/-500 -500/farmer -20 -20 0/end"
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #2 - Robin inspection IF2R
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasSeenEvent": "2554901", "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false, "FarmType":"Standard" },
-	 "Entries": {
-	 "2554902/H/w sunny/t 600 800": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1100/speak Robin \"Good morning @!$0#$b#I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1000/faceDirection Robin 1 true/pause 1300/faceDirection Robin 0 true/pause 500/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation Town/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #2 - Robin inspection Grandpa's Farm (morning)
-	 "Action": "EditData",
-	 "Target": "data/events/BusStop",
-	 "When": { "HasSeenEvent": "2554901", "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
-	 "Entries": {
-	 "2554902/H/w sunny/t 600 1150": "continue/-300 -300/farmer 9 23 1 Robin 23 23 3/skippable/move farmer 5 0 1 true/move Robin -7 0 3 true/viewport 14 22 true/pause 2000/speak Robin \"Good morning @!$0#$b#Good timing. I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1100/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #2 - Robin inspection Grandpa's Farm (afternoon)
-	 "Action": "EditData",
-	 "Target": "data/events/BusStop",
-	 "When": { "HasSeenEvent": "2554901", "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
-	 "Entries": {
-	 "2554902/H/w sunny/t 1200 1600": "continue/-300 -300/farmer 9 23 1 Robin 23 23 3/skippable/move farmer 5 0 1 true/move Robin -7 0 3 true/viewport 14 22 true/pause 2000/speak Robin \"Good afternoon @!$0#$b#Good timing. I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1100/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #2 - Robin inspection Grandpa's Farm installed, but playing on different farm type
-	 "Action": "EditData",
-	 "Target": "data/events/farm",
-	 "When": { "HasSeenEvent": "2554901", "HasMod": "flashshifter.GrandpasFarm", "FarmType |contains=Standard": false },
-	 "Entries": {
-	 "2554902/H/w sunny/t 600 800": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1100/speak Robin \"Good morning @!$0#$b#I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1000/faceDirection Robin 1 true/pause 1300/faceDirection Robin 0 true/pause 500/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation Town/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #2 - Robin inspection NO IF2R or Grandpa's Farm
-	 "Action": "EditData",
-	 "Target": "data/events/farm",
-	 "When": { "HasSeenEvent":"2554901", "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false },
-	 "Entries": {
-	 "2554902/H/w sunny/t 600 800": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1100/speak Robin \"Good morning @!$0#$b#I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1000/faceDirection Robin 1 true/pause 1300/faceDirection Robin 0 true/pause 500/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation Town/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #2 - Robin inspection IF2R installed but playing on other farm type
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasSeenEvent": "2554901", "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false, "FarmType |contains=Standard": false },
-	 "Entries": {
-	 "2554902/H/w sunny/t 600 800": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1100/speak Robin \"Good morning @!$0#$b#I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1000/faceDirection Robin 1 true/pause 1300/faceDirection Robin 0 true/pause 500/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation Town/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"I'm estimating 150 pieces of hardwood to start...#$b#Most of the wood is rotten and will need to be replaced.$0\"/pause 500/emote Robin 40/speak Robin \"That's a hefty amount of wood to carry to my workshop...so I'll bring a storage chest here tomorrow morning where you can drop off the hardwood.$0#$b#I'll see you tomorrow with that chest @!$1\"/globalFade/viewport -1000 -1000/pause 500/end dialogue Robin \"I'll put my craftsmanship skills to the test with this project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
-	 
-	 },
-},
-
-{    //GRANDPAS SHED QUEST LINE - Map patches storage chest - hardwood
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShedRuins",
-     "FromFile": "Assets/Maps/GrandpasShed/GrandpasShed_Hardwood.tbin",
-	 "When": { "HasSeenEvent: hostPlayer": "2554902" },
-     "ToArea": { "X": 15, "Y": 10, "Width": 2, "Height": 2 }
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #3 - Storage chest placement
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasSeenEvent": "2554902" },
-	 "Entries": {
-	 "2554903/k 2554904": "continue/64 15/farmer 64 15 2 Robin 64 17 0/skippable/pause 1000/speak Robin \"Hey @!$1#$b#The storage chest is in the shed. You'll place hardwood inside it.$0\"/pause 1000/speak Robin \"After you've gathered the hardwood, mind writing a manifest for me - detailing the hardwood specifications? It'll really help me out!$0#$b#I'll pick up the manifest when you're finished!$1\"/pause 500/end dialogue Robin \"I'll pick up that hardwood manifest at your farm when you're finished!$1\""
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #4 - Completed hardwood requirement - IF2R
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false },
-	 "Entries": {
-	 "2554904/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/skippable/pause 1000/speak Robin \"You got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #4 - Completed hardwood requirement - late at night - IF2R
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false  },
-	 "Entries": {
-	 "2554904/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...$2\"/pause 1000/speak Robin \"Oh, you got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #4 - Completed hardwood requirement - Grandpa's Farm
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm" },
-	 "Entries": {
-	 "2554904/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/skippable/pause 1000/speak Robin \"You got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #4 - Completed hardwood requirement - late at night - Grandpa's Farm
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm" },
-	 "Entries": {
-	 "2554904/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...$2\"/pause 1000/speak Robin \"Oh, you got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #4 - Completed hardwood requirement - No IF2R or Grandpa's Farm
-	 "Action": "EditData",
-	 "Target": "data/events/GrandpasShedOutside",
-	 "When": { "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false },
-	 "Entries": {
-	 "2554904/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"You got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #4 - Completed hardwood requirement - No IF2R or Grandpa's Farm
-	 "Action": "EditData",
-	 "Target": "data/events/GrandpasShedOutside",
-	 "When": { "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false },
-	 "Entries": {
-	 "2554904/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"*yawn*...$2\"/pause 1000/speak Robin \"Oh, you got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #4 - Completed hardwood requirement - IF2R installed but playing on other farm type
-	 "Action": "EditData",
-	 "Target": "data/events/GrandpasShedOutside",
-	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false, "FarmType |contains=Standard": false },
-	 "Entries": {
-	 "2554904/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"*yawn*...$2\"/pause 1000/speak Robin \"Oh, you got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #4 - Completed hardwood requirement - IF2R installed but playing on other farm type
-	 "Action": "EditData",
-	 "Target": "data/events/GrandpasShedOutside",
-	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false, "FarmType |contains=Standard": false },
-	 "Entries": {
-	 "2554904/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"You got the hardwood and filled out the paperwork! Thanks, @!$1\"/pause 500/emote Robin 40/speak Robin \"Mmm, I'll need 50 iron bars to fix the plumbing. There's a lot of rusting that's happened over the years.$0\"/pause 1000/faceDirection Robin 1 true/pause 1000/faceDirection Robin 0 true/pause 500/speak Robin \"I'll put another chest in the shed for those iron bars.$1\"/pause 500/end dialogue Robin \"I know 50 iron bars is a hefty amount, but all that rusted metal has to be replaced.$0#$e#Don't forget to fill out the paperwork!$1\"",              
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #5 - Completed iron bar requirement - IF2R
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false },
-	 "Entries": {
-	 "2554905/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"These iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #5 - Completed iron bar requirement - late at night - IF2R
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false },
-	 "Entries": {
-	 "2554905/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...It's a bit late.$2\"/pause 1000/speak Robin \"Oh, these iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #5 - Completed iron bar requirement - Grandpa's Farm
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm" },
-	 "Entries": {
-	 "2554905/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"These iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #5 - Completed iron bar requirement - late at night - Grandpa's Farm
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm" },
-	 "Entries": {
-	 "2554905/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...It's a bit late.$2\"/pause 1000/speak Robin \"Oh, these iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #5 - Completed iron bar requirement - NO IF2R or grandpa's farm
-	 "Action": "EditData",
-	 "Target": "data/events/GrandpasShedOutside",
-	 "When": { "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false },
-	 "Entries": {
-	 "2554905/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"These iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #5 - Completed iron bar requirement - late at night - NO IF2R or grandpa's farm
-	 "Action": "EditData",
-	 "Target": "data/events/GrandpasShedOutside",
-	 "When": { "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false },
-	 "Entries": {
-	 "2554905/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"*yawn*...It's a bit late.$2\"/pause 1000/speak Robin \"Oh, these iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #5 - Completed iron bar requirement - IF2R installed but playing on another farm type
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false, "FarmType |contains=Standard": false },
-	 "Entries": {
-	 "2554905/t 600 2600/i {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Iron Manifest}}/skippable/pause 1000/speak Robin \"These iron bars are perfect! Thanks for the detailed manifest too!$1\"/pause 500/emote Robin 40/speak Robin \"All there's left to do now is restoring the electricity.$0#$b#I'm estimating It'll take 20 battery packs...$0#$b#Drop them off in the storage chest when you collect them!$1\"/pause 500/end dialogue Robin \"Just 20 battery packs and I think that's all the materials I need to get to work!$1\"",
-	 
-	 },
-},
-
-
-{       //GRANDPAS SHED QUEST LINE - event #6 - Completed battery pack requirement - IF2R
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false },
-	 "Entries": {
-	 "2554906/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"Hey @! You collected all of the materials I requested! Incredible work!$1\"/pause 1000/speak Robin \"I'll start restoring the shed today!$0#$b#I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #6 - Completed battery pack requirement - late at night - IF2R
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false },
-	 "Entries": {
-	 "2554906/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...Couldn't have waited until tomorrow morning, huh.$2\"/pause 1000/speak Robin \"Oh, hey! You collected all of the materials I requested!$0\"/pause 1000/speak Robin \"I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #6 - Completed battery pack requirement - Grandpa's Farm
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm" },
-	 "Entries": {
-	 "2554906/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"Hey @! You collected all of the materials I requested! Incredible work!$1\"/pause 1000/speak Robin \"I'll start restoring the shed today!$0#$b#I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #6 - Completed battery pack requirement - late at night - Grandpa's Farm
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm" },
-	 "Entries": {
-	 "2554906/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"*yawn*...Couldn't have waited until tomorrow morning, huh.$2\"/pause 1000/speak Robin \"Oh, hey! You collected all of the materials I requested!$0\"/pause 1000/speak Robin \"I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #6 - Completed battery pack requirement - NO IF2R
-	 "Action": "EditData",
-	 "Target": "data/events/GrandpasShedOutside",
-	 "When": { "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false  },
-	 "Entries": {
-	 "2554906/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"Hey @! You collected all of the materials I requested! Incredible work!$0\"/pause 1000/speak Robin \"I'll start restoring the shed today!$0#$b#I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #6 - Completed battery pack requirement - late at night - NO IF2R
-	 "Action": "EditData",
-	 "Target": "data/events/GrandpasShedOutside",
-	 "When": { "HasMod |contains=flashshifter.immersivefarm2remastered": false, "HasMod |contains=flashshifter.GrandpasFarm": false  },
-	 "Entries": {
-	 "2554906/t 2010 2600/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/changeLocation Farm/viewport 64 15 true/skippable/pause 1000/speak Robin \"*yawn*...Couldn't have waited until tomorrow morning, huh.$2\"/pause 1000/speak Robin \"Oh, hey! You collected all of the materials I requested!$0\"/pause 1000/speak Robin \"I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #6 - Completed battery pack requirement - IF2R installed but playing on another farm type
-	 "Action": "EditData",
-	 "Target": "data/events/Farm",
-	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false, "FarmType |contains=Standard": false },
-	 "Entries": {
-	 "2554906/t 600 2000/i {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "continue/64 15/farmer 64 15 2 Robin 64 17 0/removeItem {{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}/skippable/pause 1000/speak Robin \"Hey @! You collected all of the materials I requested! Incredible work!$1\"/pause 1000/speak Robin \"I'll start restoring the shed today!$0#$b#I work fast, I might be able to finish it by tomorrow!$1\"/pause 500/end dialogue Robin \"%Robin is busy.\"",
-	 
-	 },
-},
-
-{       //GRANDPAS SHED QUEST LINE - Fixed shed map patch - IF2R
-     "Action": "EditMap",
-     "Target": "Maps/Farm",
-     "FromFile": "Assets/Maps/GrandpasShed/FarmShedFixed.tbin",
-	 "When": { "GrandpaShedComplete": true, "HasMod": "flashshifter.immersivefarm2remastered", "HasMod |contains=flashshifter.GrandpasFarm": false, "FarmType":"Standard" },
-     "ToArea": { "X": 138, "Y": 23, "Width": 12, "Height": 12 }
-},
-
-{       //GRANDPAS SHED QUEST LINE - Fixed shed map patch - no IF2R
-     "Action": "EditMap",
-     "Target": "Maps/GrandpasShedOutside",
-     "FromFile": "Assets/Maps/GrandpasShed/GrandpasShedFixed2.tbin",
-	 "When": { "GrandpaShedComplete": true },
-     "ToArea": { "X": 16, "Y": 6, "Width": 12, "Height": 12 }
-},
-
-{       //GRANDPAS SHED QUEST LINE - event #7 - Refurbished interior
-	 "Action": "EditData",
-	 "Target": "data/events/GrandpasShed",
-	 "When": { "HasSeenEvent": "2554906" },
-	 "Entries": {
-	 "2554907": "none/-500 -500/farmer -200 -200 0 Robin 13 13 0/skippable/viewport 16 9 true/playMusic jaunty/pause 2500/playSound doorClose/warp farmer 16 16/pause 300/move farmer 0 -2 0 true/pause 300/faceDirection Robin 1 true/pause 600/emote farmer 16/pause 200/speak Robin \"Hey @!$1\"/pause 200/faceDirection farmer 3 true/pause 700/speak Robin \"So... what do you think?$0#$b#You may have seen new window panes on the roof.#$b#There's a great space to grow plants up there now.\"/pause 500/jump farmer/pause 1000/speak Robin \"I couldn't have fixed it up without all the materials you gathered.$1#$b#I actually had a lot of fun and learned some new things.$0\"/pause 1000/faceDirection Robin 0/pause 750/speak Robin \"There was some leftover hardwood, so I crafted a few casks for the heck of it!$1#$b#This bottom floor would be great for aging wine...$0\"/pause 750/faceDirection Robin 1 true/pause 700/speak Robin \"Well, enjoy the refurbished shed @!$1\"/pause 500/end dialogue Robin \"Oh, I almost forgot! There are some plants upstairs already, a gift from Susan. She thought you'd appreciate some plants to get your greenhouse started!$1#$e#Mmm, I wonder if she wants a greenhouse of her own?$0\""
-	 },
-},
  
      //CONTEXT TAGS
 {   
@@ -772,10 +322,7 @@
 	  "{{spacechase0.JsonAssets/ObjectId:Haste Elixir}}": "color_blue, potion_item",
 	  "{{spacechase0.JsonAssets/ObjectId:Armor Elixir}}": "color_green, potion_item",
 	  "{{spacechase0.JsonAssets/ObjectId:Junimo Scroll}}": "color_yellow",
-	  "{{spacechase0.JsonAssets/ObjectId:Hardwood Manifest}}": "color_white",
-	  "{{spacechase0.JsonAssets/ObjectId:Iron Manifest}}": "color_white",
-	  "{{spacechase0.JsonAssets/ObjectId:Battery Pack Manifest}}": "color_white",
-	  "{{spacechase0.JsonAssets/ObjectId:Stone Manifest}}": "color_white",
+	  "{{spacechase0.JsonAssets/ObjectId:Property Deed}}": "color_white",
 	  "{{spacechase0.JsonAssets/ObjectId:Blue Moon Wine}}": "color_blue, alcohol_item",
 	  "{{spacechase0.JsonAssets/ObjectId:Aged Blue Moon Wine}}": "color_blue, alcohol_item",
 	  "{{spacechase0.JsonAssets/ObjectId:Big Bark Burger}}": "color_brown, food_pantry",
@@ -1914,11 +1461,11 @@
    "Action": "EditData",
    "Target": "data/events/summit",
    "Entries": {
-   "1000022/f Kent 2500/e 1000018/w sunny/z winter/t 800 1400": "none/14 16/farmer 8 26 0 Kent 11 14 0/stopMusic/playMusic winter_day_ambient/skippable/move farmer 0 -2 0/move farmer 2 0 0/move farmer 0 -5 0/pause 800/emote farmer 8/pause 1500/faceDirection Kent 1 true/pause 250/faceDirection Kent 2 true/pause 1600/faceDirection Kent 1 true/pause 250/faceDirection Kent 0 true/pause 1800/speak Kent \"I didn't expect to run into anyone up here. It's not exactly the easiest hike.$0\"/pause 1350/speak Kent \"...$0\"/pause 2000/emote Kent 40/pause 1000/speak Kent \"...$2#$b#Still here, huh?$2\"/pause 1000/question fork0 \"#Say nothing#Sorry, I'll go.\"/fork 1000022_AreYouOkay/pause 1000/speak Kent \"...All right. Bye.$2\"/pause 500/globalFade/viewport -1000 -1000/pause 700/end dialogueWarpOut Kent \"Sometimes I go to the summit just to think...$2#$b#It's nice to be alone every once in a while.$0\"",
+   "1000022/f Kent 2500/e 1000018/w sunny/z winter/t 600 1800": "none/14 17/farmer 11 22 0 Kent 12 13 0/stopMusic/playMusic winter_day_ambient/skippable/move farmer 0 -6 0/pause 800/emote farmer 8/pause 1500/faceDirection Kent 1 true/pause 250/faceDirection Kent 2 true/pause 1600/faceDirection Kent 1 true/pause 250/faceDirection Kent 0 true/pause 1800/speak Kent \"I didn't expect to run into anyone up here. It's not exactly the easiest hike.$0\"/pause 1350/speak Kent \"...$0\"/pause 2000/emote Kent 40/pause 1000/speak Kent \"...$2#$b#Still here, huh?$2\"/pause 1000/question fork0 \"#Say nothing#Sorry, I'll go.\"/fork 1000022_AreYouOkay/pause 1000/speak Kent \"...All right. Bye.$2\"/pause 500/globalFade/viewport -1000 -1000/pause 700/end dialogueWarpOut Kent \"Sometimes I go to the summit just to think...$2#$b#It's nice to be alone every once in a while.$0\"",
    
-   "1000022_AreYouOkay": "pause 1000/faceDirection Kent 1 true/pause 200/faceDirection Kent 2 true/pause 800/speak Kent \"Come enjoy the view with me, @.$2\"/pause 650/faceDirection Kent 1 truw/pause 250/faceDirection Kent 0 true/pause 800/viewport move 0 -2 2500 true/move farmer 0 -5 0/pause 2500/speak Kent \"Tell me. What do you know about the Gotoro Empire?$2\"/pause 750/move farmer 0 0 1/pause 850/speak Kent \"$q -1 null#(What should I say)#$r -1 0 kent_event1#We are at war with them.#$r -1 0 kent_event2#The Gotoro Empire is our enemy.#$r -1 0 kent_event3#I don't know that much about them.\"/pause 850/move farmer 0 0 0/pause 1400/speak Kent \"Well then. You don't know the Gotoro Empire like I do.$2\"/pause 1000/speak Kent \"The things I've seen.$2\"/pause 1200/speak Kent \"The things I've experienced.$2\"/pause 500/stopMusic/pause 1000/speak Kent \"The people who've died...$2\"/pause 1650/speak Kent \"So many good and innocent people...$2\"/pause 1500/emote Kent 12/pause 500/move farmer 0 0 1/pause 700/shake Kent 1500/pause 800/speak Kent \"!!!$3\"/pause 500/shake Kent 25000/playMusic shaneTheme/emote farmer 16 true/pause 300/speak Kent \"Countless innocent people! Dead! And for what!? Tariffs!?$3#$b#So many of our soldiers! Good men and women!!!$3#$b#We are nothing but pawns on a chess board for billionaires!!! We're barely human to them!!$3\"/pause 500/speak Kent \"$q -1 null#(I need to say something)#$r -1 0 kent_event4#Say nothing#$r -1 0 kent_event5#Tell Kent to stop\"/shake Kent 25000/speak Kent \"The villages we bombed!!! The families we ripped apart!!!$3#$b#Gotoro civilians murdered!!!$3#$b#There... there was a farming village like Stardew Valley... We destroyed it!$3\"/pause 500/speak Kent \"$q -1 null#(What should I do)#$r -1 0 kent_event6#Calm Kent down#$r -1 0 kent_event7#Say nothing\"/speak Kent \"I didn't think about anyone other than myself!!!$3#$b#I abandoned my comrades!!! I should have died instead of them!!$3#$b#William! I'm sorry!$3\"/shake Kent 20000/pause 1000/speak Kent \"The torture... The screams... The starvation... The isolation...$3\"/shake Kent 6000/pause 2000/speak Kent \"I... I...!!!!!!$3\"/pause 500/jump farmer/pause 1000/playMusic spring_day_ambient/pause 500/move Kent 0 0 3/pause 2000/speak Kent \"...$2\"/pause 1500/question fork1 \"#It hurts me to see you like this.#You're scaring me...\"/fork 1000022_ScaredAndConfused/stopMusic/pause 1200/speak Kent \"...$2\"/switchEvent 1000022_ScaredAndConfused",
+   "1000022_AreYouOkay": "pause 1000/faceDirection Kent 1 true/pause 200/faceDirection Kent 2 true/pause 800/speak Kent \"Come enjoy the view with me, @.$2\"/pause 650/faceDirection Kent 1 true/pause 250/faceDirection Kent 0 true/pause 800/viewport move 0 -1 4000 true/move farmer -2 0 0/move farmer 0 -3 0/move farmer 1 0 1/pause 300/faceDirection farmer 0 true/pause 2500/speak Kent \"Tell me. What do you know about the Gotoro Empire?$2\"/pause 750/move farmer 0 0 1/pause 850/speak Kent \"$q -1 null#(What should I say)#$r -1 0 kent_event1#We are at war with them.#$r -1 0 kent_event2#The Gotoro Empire is our enemy.#$r -1 0 kent_event3#I don't know that much about them.\"/pause 850/move farmer 0 0 0/pause 1400/speak Kent \"Well then. You don't know the Gotoro Empire like I do.$2\"/pause 1000/speak Kent \"The things I've seen.$2\"/pause 1200/speak Kent \"The things I've experienced.$2\"/pause 500/stopMusic/pause 1000/speak Kent \"The people who've died...$2\"/pause 1650/speak Kent \"So many good and innocent people...$2\"/pause 1500/emote Kent 12/pause 500/move farmer 0 0 1/pause 700/shake Kent 1500/pause 800/speak Kent \"!!!$3\"/pause 500/shake Kent 25000/playMusic shaneTheme/emote farmer 16 true/pause 300/speak Kent \"Countless innocent people! Dead! And for what!? Tariffs!?$3#$b#So many of our soldiers! Good men and women!!!$3#$b#We are nothing but pawns on a chess board for billionaires!!! We're barely human to them!!$3\"/pause 500/speak Kent \"$q -1 null#(I need to say something)#$r -1 0 kent_event4#Say nothing#$r -1 0 kent_event5#Tell Kent to stop\"/shake Kent 25000/speak Kent \"The villages we bombed!!! The families we ripped apart!!!$3#$b#Gotoro civilians murdered!!!$3#$b#There... there was a farming village like Stardew Valley... We destroyed it!$3\"/pause 500/speak Kent \"$q -1 null#(What should I do)#$r -1 0 kent_event6#Calm Kent down#$r -1 0 kent_event7#Say nothing\"/speak Kent \"I didn't think about anyone other than myself!!!$3#$b#I abandoned my comrades!!! I should have died instead of them!!$3#$b#William! I'm sorry!$3\"/shake Kent 20000/pause 1000/speak Kent \"The torture... The screams... The starvation... The isolation...$3\"/shake Kent 6000/pause 2000/speak Kent \"I... I...!!!!!!$3\"/pause 500/jump farmer/pause 1000/playMusic spring_day_ambient/pause 500/move Kent 0 0 3/pause 2000/speak Kent \"...$2\"/pause 1500/question fork1 \"#It hurts me to see you like this.#You're scaring me...\"/fork 1000022_ScaredAndConfused/stopMusic/pause 1200/speak Kent \"...$2\"/switchEvent 1000022_ScaredAndConfused",
    
-   "1000022_ScaredAndConfused": "pause 2000/emote Kent 28/pause 300/move Kent 0 0 2/pause 700/animate Kent false true 999999 16/pause 1100/playMusic echos/pause 1000/speak Kent \"The doctors say I have severe PTSD... well, they're probably right.$2\"/pause 1300/speak Kent \"I haven't been the same since I left the valley. The person I used to be before all of this... I don't think he's coming back.$2#$b#I can't ever forgive the Gotoro Empire for torturing me and killing my friends.$2#$b#But people are people. Not everyone there is bad.$2#$b#The news stations here play us up as the good guys, and the war as good vs. evil.$2\"/pause 1500/speak Kent \"Truthfully? I think we're the bad guys.$2\"/pause 2000/speak Kent \"The amount of carnage and death we've brought to the Empire is unprecedented. And all with the wonders of modern technology.$2#$b#The destruction we've caused doesn't come close to what they did to us in the bombing of Jewel Inlet.\"/pause 1200/speak Kent \"...I hope this war will be over soon.$2\"/pause 1000/playMusic spring_day_ambient/pause 1250/stopAnimation Kent/pause 1250/move Kent 0 0 3/pause 1000/speak Kent \"You know, I think you're a good person. Thanks for hearing me out. That kind of stuff is really taxing.$0#$b#I know it was shocking and hard on you. I sometimes...$0#$b#Just need someone to listen. I watch the news and they spread lies, my family doesn't understand... Having someone else helps tremendously.$2\"/pause 1500/move Kent 0 0 2/pause 1500/move Kent 0 0 3/pause 1000/speak Kent \"I need to spend some time with my wife and kids.$0\"/pause 600/move Kent 0 1 2/move farmer 0 0 2/move Kent 0 3 2/pause 1100/emote Kent 40/pause 200/speak Kent \"And please, keep everything you heard from me a secret, @.$0#$b#If my superiors ever got wind of this, there's a good chance they would lock me up.$2#$b#But I trust you.$2\"/pause 500/emote farmer 36/pause 500/globalFade/viewport -1000 -1000/mail KentSummit/pause 700/end dialogue Kent \"Thanks for listening to me at the summit, @.$2#$b#Dealing with these issues can be impossible when you're alone. I'm glad I have close friends to count on.$1\""
+   "1000022_ScaredAndConfused": "pause 2000/emote Kent 28/pause 300/move Kent 0 0 2/pause 700/animate Kent false true 999999 16/pause 1100/playMusic echos/pause 1000/speak Kent \"The doctors say I have severe PTSD... well, they're probably right.$2\"/pause 1300/speak Kent \"I haven't been the same since I left the valley. The person I used to be before all of this... I don't think he's coming back.$2#$b#I can't ever forgive the Gotoro Empire for torturing me and killing my friends.$2#$b#But people are people. Not everyone there is bad.$2#$b#The news stations here play us up as the good guys, and the war as good vs. evil.$2\"/pause 1500/speak Kent \"Truthfully? I think we're the bad guys.$2\"/pause 2000/speak Kent \"The amount of carnage and death we've brought to the Empire is unprecedented. And all with the wonders of modern technology.$2#$b#The destruction we've caused doesn't come close to what they did to us in the bombing of Jewel Inlet.\"/pause 1200/speak Kent \"...I hope this war will be over soon.$2\"/pause 1000/playMusic spring_day_ambient/pause 1250/stopAnimation Kent/pause 1250/move Kent 0 0 3/pause 1000/speak Kent \"You know, I think you're a good person. Thanks for hearing me out. That kind of stuff is really taxing.$0#$b#I know it was shocking and hard on you. I sometimes...$0#$b#Just need someone to listen. I watch the news and they spread lies, my family doesn't understand... Having someone else helps tremendously.$2\"/pause 1000/emote Kent 40/pause 600/faceDirection Kent 3 true/pause 500/faceDirection farmer 1 true/pause 500/speak Kent \"I need to spend some time with my wife and kids.$0#$b#...$2#$b#And please, keep everything you heard from me a secret, @.$0#$b#If my superiors ever got wind of this, there's a good chance they would lock me up.$2#$b#But I trust you.$0\"/pause 500/emote farmer 36/pause 500/globalFade/viewport -1000 -1000/mail KentSummit/pause 700/end dialogue Kent \"Thanks for listening to me at the summit, @.$2#$b#Dealing with these issues can be impossible when you're alone. I'm glad I have close friends to count on.$1\""
    },
    "When": { "MatureEvents": true }
 },
@@ -1937,7 +1484,7 @@
     "Action": "EditData",
     "Target": "Data/Events/summit",
     "Entries": {
-    "0002577/y 2/b 1/f MarlonFay 2000": "winter_day_ambient/15 20/MarlonFay 21 25 0/skippable/pause 3000/speak MarlonFay \"...$2#$b#I'm sorry I have not visited lately. My bad leg is... proving troublesome.$2#$b#The hikes to the summit are becoming more difficult. My age is starting to show.$2\"/pause 2200/speak MarlonFay \"I was reminiscing of the old group with Gil...$2#$b#Jonathan, Boris, Alesia, Barin, Ketra, Gerta...$2#$b#My guilty pleasure of recalling the past - back when you were still...\"/pause 800/shake MarlonFay 1000/pause 1000/speak MarlonFay \"I had the nightmare again, Isabelle...$2#$b#...$2#$b#The moment I lost you...$2\"/pause 2000/speak MarlonFay \"...Soon, I'll be with you again. But there is work to do before that time comes.$2#$b#Until next time, my flower.$2\"/pause 1500/faceDirection MarlonFay 3 true/pause 800/speed MarlonFay 2/move MarlonFay -7 0 3 true/pause 1000/globalFade/viewport -1000 -1000/pause 600/end dialogue MarlonFay \"...$2#$e#...$0#$e#Hmm?$0#$b#I was... recalling past events.$2#$e#%Marlon turns away from you.\"",
+    "0002577/y 2/b 1/f MarlonFay 2000": "winter_day_ambient/15 20/MarlonFay 20 25 0/skippable/pause 3000/speak MarlonFay \"...$2#$b#I'm sorry I have not visited lately. My bad leg is... proving troublesome.$2#$b#The hikes to the summit are becoming more difficult. My age is starting to show.$2\"/pause 2200/speak MarlonFay \"I was reminiscing of the old group with Gil...$2#$b#Jonathan, Boris, Alesia, Barin, Ketra, Gerta...$2#$b#My guilty pleasure of recalling the past - back when you were still...\"/pause 800/shake MarlonFay 1000/pause 1000/speak MarlonFay \"I had the nightmare again, Isabelle...$2#$b#...$2#$b#The moment I lost you...$2\"/pause 2000/speak MarlonFay \"...Soon, I'll be with you again. But there is work to do before that time comes.$2#$b#Until next time, my flower.$2\"/pause 1500/faceDirection MarlonFay 3 true/pause 800/speed MarlonFay 2/move MarlonFay -7 0 3 true/pause 1000/globalFade/viewport -1000 -1000/pause 600/end dialogue MarlonFay \"...$2#$e#...$0#$e#Hmm?$0#$b#I was... recalling past events.$2#$e#%Marlon turns away from you.\"",
     },
 },
 
@@ -1981,12 +1528,11 @@
 */
 
 
-
 		
 //Special Orders
 
 
-{ //Adds Olivia's diamond to vanilla quest
+{ //Adds Olivia's diamond to Emily vanilla quest
   "Action": "EditData",
   "Target": "Data/SpecialOrders",
   "Entries": {
@@ -2098,14 +1644,13 @@
 { //Andy's special order
   "Action": "EditData",
   "Target": "Data/SpecialOrders",
-  "When": { "HasSeenEvent": "5000005" },
   "Entries": {
   "Andy": {
     "Name": "[Andy_Name]",
     "Requester": "Andy",
     "Duration": "TwoWeeks",
     "Repeatable": "False",
-    "RequiredTags": "",
+    "RequiredTags": "event_5000005, !event_5407915",
     "OrderType": "",
     "SpecialRule": "",
     "Text": "[Andy_Text]",
@@ -2142,7 +1687,7 @@
         "Data": {
           "DropBox": "AndyChest",
           "DropBoxGameLocation": "AndyHouse",
-          "DropBoxIndicatorLocation": "12 5.5",
+          "DropBoxIndicatorLocation": "12 5",
           "AcceptedContextTags": "item_stone"
         }
       },
@@ -2239,7 +1784,7 @@
     "Requester": "Olivia",
     "Duration": "Month",
     "Repeatable": "False",
-    "RequiredTags": "",
+    "RequiredTags": "!season_winter, !event_5407916",
     "OrderType": "",
     "SpecialRule": "",
     "Text": "[Olivia_Text]",
@@ -2366,7 +1911,7 @@
     "Requester": "Susan",
     "Duration": "TwoWeeks",
     "Repeatable": "False",
-    "RequiredTags": "",
+    "RequiredTags": "!season_winter, !event_5407917",
     "OrderType": "",
     "SpecialRule": "",
     "Text": "[Susan_Text]",
@@ -2491,7 +2036,7 @@
     "Requester": "Sophia",
     "Duration": "Month",
     "Repeatable": "False",
-    "RequiredTags": "",
+    "RequiredTags": "event_8185294, !season_winter, !event_5407918",
     "OrderType": "",
     "SpecialRule": "",
     "Text": "[Sophia_Text]",
@@ -2613,7 +2158,7 @@
     "Requester": "MarlonFay",
     "Duration": "Month",
     "Repeatable": "False",
-    "RequiredTags": "",
+    "RequiredTags": "!event_5407921",
     "OrderType": "",
     "SpecialRule": "",
     "Text": "[MarlonFay_Text]",
@@ -2718,227 +2263,9 @@
 },
 
 
-{ //Lewis's Special Order #2 - allows player on Grandpa's Farm to purchase more land   ---> Quest is added to journal automatically
-  "Action": "EditData",
-  "Target": "Data/SpecialOrders",
-  "When": { "HasSeenEvent": "8033758", "HasSeenEvent |contains=6665293": false, "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
-  "Update": "OnLocationChange",
-  "Entries": {
-  "Lewis2": {
-    "Name": "[Lewis2_Name]",
-    "Requester": "Lewis",
-    "Duration": "Month",
-    "Repeatable": "False",
-    "RequiredTags": "",
-    "OrderType": "",
-    "SpecialRule": "",
-    "Text": "[Lewis2_Text]",
-    "ItemToRemoveOnEnd": null,
-    "MailToRemoveOnEnd": null,
-    "RandomizedElements": null,
-    "Objectives": [
-      {
-        "Type": "Deliver",
-        "Text": "[Lewis2_Objective_1_Text]",
-        "RequiredCount": "1",
-        "Data": {
-          "AcceptedContextTags": "item_property_deed",
-          "TargetName": "Lewis"
-        }
-      },
-    ],
-    "Rewards": [
-      {
-        "Type": "Mail",
-        "Data": {
-          "MailReceived": "DeedOfLand"
-        }
-      }
-    ]
-  },
- },
-},
-
-{   //Lewis special order strings
-    "Action": "EditData",
-    "Target": "Strings/SpecialOrderStrings",
-	"When": { "HasSeenEvent |contains=6665293": false },
-    "Entries": {
-       "Lewis2_Name": "Expanding My Farmland",
-       "Lewis2_Text": "Sign the property deed and submit a 250,000g direct payment using the red ledger.",
-       "Lewis2_Objective_1_Text": "Turn in the property deed to Lewis.",
-	}
-},
-
-{    //Patches Lewis' manor ledger shop
-     "Action": "EditMap",
-	 "Target": "Maps/ManorHouse",
-	 "FromFile": "Assets/Maps/MapPatches/PropertyDeedShop.tbin",
-	 "When": { "HasSeenEvent": "8033758", "HasSeenEvent |contains=6665293": false, "HasSeenEvent |contains=8033860": false, "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
-	 "ToArea": { "X": 1, "Y": 7, "Width": 1, "Height": 1 },
-	 "Update": "OnLocationChange"
-},
-
-{    //Lewis special order event - part 1
-	 "Action": "EditData",
-	 "Target": "data/events/farmhouse",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard", "HasSeenEvent |contains=6665293": false }, //= Summer 17th year 3 minimum, Grandpa's Farm is being played on
-	 "Entries": {
-	 "8033858/t 800 1700/j 268/w sunny/H": "continue/-500 -500/farmer 95 49 2 Lewis 95 51 0/pause 1000/playSound stoneStep/pause 300/playSound stoneStep/pause 300/playSound stoneStep/pause 300/playSound stoneStep/pause 300/pause 800/message \"Someone's knocking on the front door.\"/changeLocation farm/pause 500/playSound doorOpen/pause 500/positionOffset farmer 0 -20/positionOffset Lewis 10 -25/viewport 95 49 clamp true/pause 1000/speak Lewis \"Hello, @. Hard at work on the farm today I see.$0#$b#May I take a moment of your time? There's something I want to talk to you about!$0\"/pause 650/emote farmer 8 true/pause 1500/faceDirection Lewis 1 true/pause 500/speak Lewis \"Follow me over there, past those fences.$0\"/pause 600/faceDirection farmer 1 true/pause 500/globalFade/viewport -1000 -1000/faceDirection farmer 1 true/faceDirection Lewis 3 true/warp farmer 120 57/warp Lewis 122 57/pause 500/viewport 121 57 clamp true/pause 1400/jump Lewis/pause 1000/speak Lewis \"I haven't hopped a fence like that since I was a youngin!$1\"/pause 1200/faceDirection Lewis 2 true/pause 1000/faceDirection Lewis 3 true/pause 300/faceDirection Lewis 0 true/pause 1000/faceDirection Lewis 3 true/pause 400/speak Lewis \"You've been cultivating %farm Farm for a couple years now. Have you thought about expanding?$0#$b#There's a lot of good land here next to your property.$0\"/pause 600/emote farmer 40/speak Lewis \"This is roughly one acre, which would cost 250,000g when all is said and done.$0#$b#Visit me at my estate when you've reached your decision, @.$1\"/pause 600/globalFade/viewport -1000 -1000/warp Lewis -50 -50/viewport 121 57 clamp true/pause 1700/faceDirection farmer 2 true/pause 1250/message \"Should I expand the farm?\"/pause 800/question fork0 \"#Expanded the farm.#Don't expanded the farm.\"/fork 8033858_ExpandFarm/pause 750/message \"All right. I'm not purchasing more land. I should let Lewis know.\"/pause 500/end dialogue Lewis \"Ah, you don't need to expand your farmland? Thank you for letting me know, @.$0#$e#Some areas of Stardew Valley should just remain how they are.$0\"",
-	  
-     },
-},
-
-{    //Player decided to purchase land
-	 "Action": "EditData",
-	 "Target": "data/events/farm",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard", "HasSeenEvent |contains=6665293": false },
-	 "Entries": {
-	 "8033858_ExpandFarm": "pause 400/addMailReceived PlayerWillExpandFarm/pause 100/message \"All right. I'll purchase more land. I should let Lewis know.\"/pause 500/end dialogue Lewis \"Land value in Stardew Valley has skyrocketed this past year.$0\""
-	 },
-},
-
-{    //Player decided to purchase land    ---->Allows ledger shop and special order to load
-	 "Action": "EditData",
-	 "Target": "data/events/town",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard", "HasSeenEvent |contains=6665293": false },
-	 "Entries": {
-	 "8033758/n PlayerWillExpandFarm": "none/-500 -500/Lewis -20 -20 0/end"
-	 },
-},
-
-{    //Lewis special order event - part 2      --->8033859 tagged for framework
-	 "Action": "EditData",
-	 "Target": "data/events/ManorHouse",
-	 "When": { "HasSeenEvent |contains=6665293": false },
-	 "Entries": {
-	 "8033859/e 8033758": "50s/-500 -500/farmer 5 11 0 Lewis 8 5 0 Marnie 22 4 1/positionOffset Marnie -6 10/showFrame Marnie 32 true/viewport 5 9 clamp true/move farmer 0 -2 0/pause 1000/faceDirection Lewis 3 true/pause 200/faceDirection Lewis 2 true/pause 300/emote Lewis 16/pause 300/faceDirection Lewis 3 true/pause 100/move Lewis -2 0 2/move Lewis 0 1 3/move Lewis -1 0 2/move Lewis 0 1 2/pause 650/speak Lewis \"Sorry, didn't hear you over the sink. Had to give my hands a good wash.$0\"/pause 600/emote farmer 40/pause 150/speak Lewis \"So, you decided to purchase more property? Great to hear.$0#$b#If there's anyone who'll get good use out of that land, it's you.$1\"/pause 650/faceDirection Lewis 3 true/pause 500/speak Lewis \"Use the red ledger to buy the property deed, then turn it into me for approval.$0\"/pause 400/faceDirection Lewis 2 true/pause 500/speak Lewis \"I look forward to seeing what you do with the space, @.$0#$b#Now, I need to go take care of something. Come find me later today with that signed deed.$0\"/pause 500/end dialogueWarpOut Lewis \"That new pond you'll have is in a great spot.$1#$e#Ah, what did I have to take care of? Nothing of your concern.$0#$e#...$3#$e#%Lewis is now ignoring you.\""
-	 },
-},
-
-{    //Lewis special order event - part 3      --->8033860 tagged for farmland map patch in [CP] Grandpa's Farm
-	 "Action": "EditData",
-	 "Target": "data/events/farm",
-	 "When": { "HasSeenEvent |contains=6665293": false },
-	 "Entries": {
-	 "8033861/n DeedOfLand/t 600 700": "continue/-500 -500/farmer 95 49 2 Lewis 95 51 0/pause 1000/speak Lewis \"Great news, @. The application for your farm's expansion has been approved.$0#$b#The land will be cleared and ready to use tomorrow!$1\"/pause 500/end dialogue Lewis \"There's a lot you could do with that newly acquired land.$0#$e#Maybe raise pigs and make truffle oil! It's a very valuable artisan good.$1\""
-	 },
-},
-
-
-  //JOJA VARIANT OF FARM EXPANSION
-{ //Morris Special Order #1 - allows player on Grandpa's Farm to purchase more land   ---> Quest is added to journal automatically
-  "Action": "EditData",
-  "Target": "Data/SpecialOrders",
-  "When": { "HasSeenEvent": "8033758", "HasSeenEvent": "6665293", "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
-  "Update": "OnLocationChange",
-  "Entries": {
-  "Morris": {
-    "Name": "[Morris_Name]",
-    "Requester": "MorrisTod",
-    "Duration": "Month",
-    "Repeatable": "False",
-    "RequiredTags": "",
-    "OrderType": "",
-    "SpecialRule": "",
-    "Text": "[Morris_Text]",
-    "ItemToRemoveOnEnd": null,
-    "MailToRemoveOnEnd": null,
-    "RandomizedElements": null,
-    "Objectives": [
-      {
-        "Type": "Deliver",
-        "Text": "[Morris_Objective_1_Text]",
-        "RequiredCount": "1",
-        "Data": {
-          "AcceptedContextTags": "item_property_deed",
-          "TargetName": "MorrisTod"
-        }
-      },
-    ],
-    "Rewards": [
-      {
-        "Type": "Mail",
-        "Data": {
-          "MailReceived": "DeedOfLand"
-        }
-      }
-    ]
-  },
- },
-},
-
-{   //Morris special order strings
-    "Action": "EditData",
-    "Target": "Strings/SpecialOrderStrings",
-	"When": { "HasSeenEvent": "6665293" },
-    "Entries": {
-       "Morris_Name": "Expanding My Farmland",
-       "Morris_Text": "Sign the property deed and submit a 250,000g direct payment using the bookshelf in my office.",
-       "Morris_Objective_1_Text": "Turn in the property deed to Morris.",
-	}
-},
-
-{    //Patches Morris joja ledger shop
-     "Action": "EditMap",
-	 "Target": "Maps/JojaMart",
-	 "FromFile": "Assets/Maps/MapPatches/PropertyDeedShop_Joja.tbin",
-	 "When": { "HasSeenEvent": "8033758", "HasSeenEvent": "6665293", "HasSeenEvent |contains=8033860": false, "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
-	 "ToArea": { "X": 25, "Y": 25, "Width": 1, "Height": 1 },
-	 "Update": "OnLocationChange"
-},
-
-{    //Morris special order event - part 1
-	 "Action": "EditData",
-	 "Target": "data/events/farmhouse",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard", "HasSeenEvent": "6665293" }, //= Summer 17th year 3 minimum, Grandpa's Farm is being played on
-	 "Entries": {
-	 "8033858/t 800 1700/j 268/w sunny/H": "continue/-500 -500/farmer 95 49 2 MorrisTod 95 51 0/pause 1000/playSound stoneStep/pause 300/playSound stoneStep/pause 300/playSound stoneStep/pause 300/playSound stoneStep/pause 300/pause 800/message \"Someone's knocking on the front door.\"/changeLocation farm/pause 500/playSound doorOpen/pause 500/positionOffset farmer 0 -20/positionOffset MorrisTod 10 -25/viewport 95 49 clamp true/pause 1000/speak MorrisTod \"Hello, @. Hard at work on the farm today I see.$0#$b#May I take a moment of your time? There's something I want to talk to you about!$1\"/pause 650/emote farmer 8 true/pause 1500/faceDirection MorrisTod 1 true/pause 500/speak MorrisTod \"Follow me over there, past those fences.$0\"/pause 600/faceDirection farmer 1 true/pause 500/globalFade/viewport -1000 -1000/faceDirection farmer 1 true/faceDirection MorrisTod 3 true/warp farmer 120 57/warp MorrisTod 122 57/pause 500/viewport 121 57 clamp true/pause 1400/jump MorrisTod/pause 1000/speak MorrisTod \"Hmm...$0\"/pause 1200/faceDirection MorrisTod 2 true/pause 1000/faceDirection MorrisTod 3 true/pause 300/faceDirection MorrisTod 0 true/pause 1000/faceDirection MorrisTod 3 true/pause 400/speak MorrisTod \"You've been cultivating %farm Farm for a of couple years now. Have you thought about expanding?$0#$b#There's a lot of good land here next to your property.$4\"/pause 600/emote farmer 40/speak MorrisTod \"This is roughly one acre, which would cost 250,000g when all is said and done.$0#$b#Visit me at JojaMart when you've reached your decision, @.$4\"/pause 600/globalFade/viewport -1000 -1000/warp MorrisTod -50 -50/viewport 121 57 clamp true/pause 1700/faceDirection farmer 2 true/pause 1250/message \"Should I expand the farm?\"/pause 800/question fork0 \"#Expanded the farm.#Don't expand the farm.\"/fork 8033858_ExpandFarm/pause 750/message \"All right. I'm not purchasing more land. I should let Morris know.\"/pause 500/end dialogue MorrisTod \"Ah, you don't want to expand your farmland?$0#$e#I suppose some areas of Stardew Valley should just remain how they are...$0\"",
-	  
-     },
-},
-
-{    //Player decided to purchase land
-	 "Action": "EditData",
-	 "Target": "data/events/farm",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard", "HasSeenEvent": "6665293" },
-	 "Entries": {
-	 "8033858_ExpandFarm": "pause 400/addMailReceived PlayerWillExpandFarm/pause 100/message \"All right. I'll purchase more land. I should let Morris know.\"/pause 500/end dialogue MorrisTod \"Land value in Stardew Valley has skyrocketed this past year!$5#$e#Belive it or not, you're actually getting quite the deal for that land.$0\""
-	 },
-},
-
-{    //Player decided to purchase land    ---->Allows ledger shop and special order to load
-	 "Action": "EditData",
-	 "Target": "data/events/town",
-	 "When": { "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard", "HasSeenEvent": "6665293" },
-	 "Entries": {
-	 "8033758/n PlayerWillExpandFarm": "none/-500 -500/MorrisTod -20 -20 0/end"
-	 },
-},
-
-{    //Morris special order event - part 2      --->9033859 tagged for framework
-	 "Action": "EditData",
-	 "Target": "data/events/JojaMart",
-	 "When": { "HasSeenEvent": "6665293" },
-	 "Entries": {
-	 "9033859/e 8033758": "jaunty/-500 -500/farmer 18 20 1 MorrisTod 24 26 3 Martin 9 25 1 Sam 26 7 2 Shane_JojaMart 13 15 3 Andy 25 16 3 Pam 2 17 1 Jodi 9 8 0/animate Martin false true 1000 20 20 20 20 20 21 20 20 20 20 20 20 20 20 20 21 21/animate Sam false true 100 40 40 41 41 42 42 41 41/viewport 22 26 true/move farmer 3 0 2/move farmer 0 3 2/pause 800/playSound stoneStep/pause 300/playSound stoneStep/pause 300/playSound stoneStep/pause 600/speak MorrisTod \"Ah, yes? Please come in!$1\"/pause 1000/doAction 21 24/pause 1000/move farmer 0 3 1/move farmer 1 0 1/pause 800/emote farmer 40/pause 500/speak MorrisTod \"So, you decided to purchase more property? Great to hear.$0#$b#If there's anyone who'll get good use out of that land, it's you.$1\"/pause 650/faceDirection MorrisTod 2 true/pause 300/faceDirection MorrisTod 1 true/pause 500/speak MorrisTod \"There's a ledger in this book shelf. Purchase the property deed, then turn it into me for approval.$0\"/pause 400/faceDirection MorrisTod 2 true/pause 300/faceDirection MorrisTod 3 true/pause 500/speak MorrisTod \"I look forward to seeing what you do with the space, @.$0#$b#Now, I need to take care of something. Come find me later today with that signed deed.$0\"/pause 500/end dialogueWarpOut MorrisTod \"Developing land is exciting, isn't it?$1\""
-	 },
-},
-
-{    //Morris special order event - part 3      --->8033860 tagged for farmland map patch
-	 "Action": "EditData",
-	 "Target": "data/events/farm",
-	 "When": { "HasSeenEvent": "6665293" },
-	 "Entries": {
-	 "8033861/n DeedOfLand/t 600 700": "continue/-500 -500/farmer 95 49 2 MorrisTod 95 51 0/pause 1000/speak MorrisTod \"Great news, @. The application for your farm's expansion has been approved.$0#$b#The land will be cleared and ready to use tomorrow!$1\"/pause 500/end"
-	 },
-},
-
-
 { //Clint's special order #2 - removes summit boulder   ---> Quest is added to journal automatically
   "Action": "EditData",
   "Target": "Data/SpecialOrders",
-  "When": { "HasSeenEvent": "8050107", "HasSeenEvent": "15389722" },
   "Update": "OnLocationChange",
   "Entries": {
   "Clint2": {
@@ -2946,7 +2273,7 @@
     "Requester": "Clint",
     "Duration": "Month",
     "Repeatable": "False",
-    "RequiredTags": "",
+    "RequiredTags": "event_8050107, !event_8050109",
     "OrderType": "",
     "SpecialRule": "",
     "Text": "[Clint2_Text]",
@@ -3022,13 +2349,13 @@
 {    //Railroad boulder - part 1
 	 "Action": "EditData",
 	 "Target": "data/events/Railroad",
-	 "When": { "HasWalletItem": "SkullKey", "HasWalletItem": "RustyKey", "HasSeenEvent": "15389722" },
+	 "When": { "HasWalletItem": "SkullKey", "HasWalletItem": "RustyKey" },
 	 "Entries": {
 	 "8050107/t 600 1500/H": "continue/-500 -500/farmer 33 26 1 Clint 45 26 0 MarlonFay 14 19 0 Susan 43 51 0/positionOffset MarlonFay 4 15/positionOffset Susan -12 -6/viewport 44 32 clamp true/viewport move 0 -1 5000 true/skippable/move farmer 10 0 1 true/pause 6250/faceDirection Clint 3 true/pause 500/speak Clint \"Oh. Hi, @.$0\"/pause 500/faceDirection Clint 0 true/pause 500/speak Clint \"Lewis hired me to get rid of this boulder. It's gonna require an explosive that packs a punch.$0#$b#Problem is, the materials I need to make it aren't exactly easy to come by...$2\"/pause 500/jump farmer/pause 1150/faceDirection Clint 3 true/pause 500/speak Clint \"You'll help me out? That's kind of you.$0#$b#Meet me at my house. We can go over the list of materials I need.$1\"/pause 500/globalFade/viewport -1000 -1000/end dialogue Lewis \"Ah, the summit boulder? I commissioned Clint for some of his handiwork to deal with it.$0\""
 	 },
 },
 
-{    //Railroad boulder - part 2
+{    //Railroad boulder - part 2   <<ID tagged in framework
 	 "Action": "EditData",
 	 "Target": "data/events/Blacksmith",
 	 "Entries": {
@@ -3036,7 +2363,7 @@
 	 },
 },
 
-{    //Railroad boulder - part 3
+{    //Railroad boulder - part 3  <<ID tagged for map patch
 	 "Action": "EditData",
 	 "Target": "data/events/farmhouse",
 	 "Entries": {
@@ -3201,6 +2528,384 @@
 	 "Summit_17_20": "Nature isn't afraid of showing you her true beauty. The view up here is proof enough of that.$1",
 	  },
 },
+
+
+// *** START GRANDPAS SHED QUEST LINE CODE *** //
+
+
+{
+  "Action": "EditData",
+  "Target": "Data/SpecialOrders",
+  "Update": "OnLocationChange",
+  "Entries": {
+  "Robin3": {
+    "Name": "[Robin3_Name]",
+    "Requester": "Robin",
+    "Duration": "Month",
+    "Repeatable": "False",
+    "RequiredTags": "event_2554902, !event_2554907",
+    "OrderType": "",
+    "SpecialRule": "",
+    "Text": "[Robin3_Text]",
+    "ItemToRemoveOnEnd": null,
+    "MailToRemoveOnEnd": null,
+    "RandomizedElements": null,
+    "Objectives": [
+	   {
+        "Type": "Donate",
+        "Text": "[Robin3_Objective_1_Text]",
+        "RequiredCount": "150",
+        "Data": {
+          "DropBox": "RobinTrunk",
+          "DropBoxGameLocation": "GrandpasShedRuins",
+          "DropBoxIndicatorLocation": "17.5 9",
+          "AcceptedContextTags": "item_hardwood"
+       }
+     },
+	 {
+        "Type": "Donate",
+        "Text": "[Robin3_Objective_2_Text]",
+        "RequiredCount": "600",
+        "Data": {
+          "DropBox": "RobinTrunk",
+          "DropBoxGameLocation": "GrandpasShedRuins",
+          "DropBoxIndicatorLocation": "17.5 9",
+          "AcceptedContextTags": "item_stone"
+       }
+     },
+	 {
+        "Type": "Donate",
+        "Text": "[Robin3_Objective_3_Text]",
+        "RequiredCount": "50",
+        "Data": {
+          "DropBox": "RobinTrunk",
+          "DropBoxGameLocation": "GrandpasShedRuins",
+          "DropBoxIndicatorLocation": "17.5 9",
+          "AcceptedContextTags": "item_iron_bar"
+       }
+     },
+	 {
+        "Type": "Donate",
+        "Text": "[Robin3_Objective_4_Text]",
+        "RequiredCount": "20",
+        "Data": {
+          "DropBox": "RobinTrunk",
+          "DropBoxGameLocation": "GrandpasShedRuins",
+          "DropBoxIndicatorLocation": "17.5 9",
+          "AcceptedContextTags": "item_battery_pack"
+       }
+     },
+    ],
+    "Rewards": [
+      {
+        "Type": "Mail",
+        "Data": {
+          "MailReceived": "ShedRepaired"
+        }
+      },
+      {
+        "Type": "Friendship",
+        "Data": {}
+      }
+    ]
+  },
+ },
+},
+
+
+
+
+{   //Robin's grandpa shed strings
+    "Action": "EditData",
+    "Target": "Strings/SpecialOrderStrings",
+    "Entries": {
+       "Robin3_Name": "Grandpa's Shed",
+       "Robin3_Text": "If I gather these materials, Robin will refurbish my grandpa's old shed. There's a trunk in the building where I can drop them off.",
+       "Robin3_Objective_1_Text": "Drop off hardwood.",
+	   "Robin3_Objective_2_Text": "Drop off stone.",
+	   "Robin3_Objective_3_Text": "Drop off iron bars.",
+	   "Robin3_Objective_4_Text": "Drop off battery packs.",
+	}
+},
+
+
+{    //Configuration - Clears refurbished shed interior of static objects (barrels, desks, boxes, etc.)
+     "Action": "EditMap",
+     "Target": "Maps/GrandpasShedGreenhouse,Maps",
+     "FromFile": "assets/Maps/GrandpasShed/GrandpasShedGreenhouseCleared.tbin",
+	 "ToArea": { "X": 0, "Y": 0, "Width": 35, "Height": 22 },
+	 "When": { "RemoveObjectsFromGrandpasShed": "true" }
+},	
+{
+     "Action": "EditMap",
+     "Target": "Maps/GrandpasShed,Maps",
+     "FromFile": "assets/Maps/GrandpasShed/GrandpasShedCleared.tbin",
+	 "ToArea": { "X": 0, "Y": 0, "Width": 32, "Height": 18 },
+	 "When": { "RemoveObjectsFromGrandpasShed": "true" }
+},
+
+
+{    //Bus Stop shed path (No Grandpa's Farm or IF2R)
+     "Action": "EditMap",
+     "Target": "Maps/BusStop",
+     "FromFile": "Assets/Maps/GrandpasShed/BusStopShedPath.tbin",
+	 "When": { "HasMod |contains=alistairweekend.TSCCharacters": false },
+     "ToArea": { "X": 0, "Y": 24, "Width": 10, "Height": 6 }
+},
+{    //Bus Stop shed path - stray cafe compatibility (No Grandpa's Farm or IF2R)
+     "Action": "EditMap",
+     "Target": "Maps/BusStop",
+     "FromFile": "Assets/Maps/GrandpasShed/BusStopShedPathStrayCafe.tbin",
+	 "When": { "HasMod": "alistairweekend.TSCCharacters" },
+     "ToArea": { "X": 0, "Y": 24, "Width": 10, "Height": 6 }
+},
+
+
+{    //Immersive Farm 2 Remastered Shed warp tiles
+     "Action": "EditMap",
+     "Target": "Maps/GrandpasShed",
+     "FromFile": "Assets/Maps/GrandpasShed/Warps_GrandpasShed_IF2R.tbin",
+	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "FarmType": "Standard" },
+     "ToArea": { "X": 15, "Y": 17, "Width": 2, "Height": 1 }
+},
+{    
+     "Action": "EditMap",
+     "Target": "Maps/GrandpasShedRuins",
+     "FromFile": "Assets/Maps/GrandpasShed/Warps_GrandpasShed_IF2R.tbin",
+	 "When": { "HasMod": "flashshifter.immersivefarm2remastered", "FarmType": "Standard" },
+     "ToArea": { "X": 15, "Y": 17, "Width": 2, "Height": 1 }
+},
+
+{    //Grandpa's Farm Shed warps tiles
+     "Action": "EditMap",
+     "Target": "Maps/GrandpasShed",
+     "FromFile": "Assets/Maps/GrandpasShed/Warps_GrandpasShed_GF.tbin",
+	 "When": { "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
+     "ToArea": { "X": 15, "Y": 17, "Width": 2, "Height": 1 }
+},
+{
+     "Action": "EditMap",
+     "Target": "Maps/GrandpasShedRuins",
+     "FromFile": "Assets/Maps/GrandpasShed/Warps_GrandpasShed_GF.tbin",
+	 "When": { "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard" },
+     "ToArea": { "X": 15, "Y": 17, "Width": 2, "Height": 1 }
+},
+
+
+     //* Start Events *//
+
+
+{    //Event #1 - tags player entering grandpas shed
+	 "Action": "EditData",
+	 "Target": "data/events/GrandpasShedRuins",
+	 "Entries": {
+	 "2554901/H": "continue/15 11/farmer 15 16 0/skippable/move farmer 0 -4 0/pause 700/faceDirection farmer 1 true/pause 1150/faceDirection farmer 0 true/pause 250/faceDirection farmer 3 true/pause 1200/faceDirection farmer 0 true/pause 600/emote farmer 40 true/pause 600/end position 15 12"
+	 
+	 },
+},
+
+
+{    //Event #2 - Robin's Inspection
+	 "Action": "EditData",
+	 "Target": "data/events/Farmhouse",
+	 "When": { "HasSeenEvent": "2554901" },
+	 "Entries": {
+	 "2554902/H/t 700 1500": "continue/-500 -500/farmer 64 15 2 Robin 64 17 0/skippable/pause 1000/playSound stoneStep/pause 300/playSound stoneStep/pause 300/playSound stoneStep/pause 300/playSound stoneStep/pause 300/pause 800/message \"Someone's knocking on the front door.\"/changeLocation farm/pause 500/playSound doorOpen/pause 500/positionOffset farmer 0 -20/positionOffset Robin 10 -25/viewport 64 16 clamp true/pause 1000/speak Robin \"Hey @!$0#$b#I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1000/faceDirection Robin 1 true/pause 1300/faceDirection Robin 0 true/pause 500/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"Visit me at my workshop and we can talk more about the specifics.$0\"/pause 500/globalFade/viewport -1000 -1000/pause 750/end dialogue Robin \"Whenever you want to discuss repairing that shed, find me at my workshop.$0\""
+	 
+	 },
+},
+{    //Event #2 - Robin's Inspection (Grandpa's Farm viewport)
+	 "Action": "EditData",
+	 "Target": "data/events/Farmhouse",
+	 "When": { "HasSeenEvent": "2554901", "HasMod": "flashshifter.GrandpasFarm", "FarmType": "Standard",  },
+	 "Entries": {
+	 "2554902/H/t 700 1500": "continue/-500 -500/farmer 95 49 2 Robin 95 51 0/skippable/pause 1000/playSound stoneStep/pause 300/playSound stoneStep/pause 300/playSound stoneStep/pause 300/playSound stoneStep/pause 300/pause 800/message \"Someone's knocking on the front door.\"/changeLocation farm/pause 500/playSound doorOpen/pause 500/positionOffset farmer 0 -20/positionOffset Robin 10 -25/viewport 95 49 clamp true/pause 1000/speak Robin \"Hey @!$0#$b#I'm about to check the structural integrity of that abandoned shed on your property!$0#$b#I'm licensed by the 'Ferngill Republic Building Association' to make sure abandoned buildings aren't on the verge of collapsing...$0\"/pause 1000/faceDirection Robin 3 true/pause 1300/faceDirection Robin 0 true/pause 500/speak Robin \"If you have a moment, you can watch my inspection progress.$0\"/pause 500/globalFade/viewport -1000 -1000/changeLocation GrandpasShedRuins/warp Robin 16 7/warp farmer 16 10/faceDirection farmer 0 true/faceDirection Robin 0 true/playSound doorClose/pause 600/playSound doorClose/pause 400/stopMusic/pause 200/viewport 16 9 true/pause 1700/faceDirection Robin 3 true/pause 1600/faceDirection Robin 0 true/pause 250/faceDirection Robin 1 true/pause 1600/faceDirection Robin 2 true/pause 1000/animate Robin false true 200 34 35/textAboveHead Robin \"Hmm...\"/pause 3500/stopAnimation Robin/pause 800/speak Robin \"I could actually refurbish this shed if I had the materials.$0#$b#It'd be a challenge, that's for sure!$1\"/pause 200/emote farmer 16/jump farmer/pause 1000/speak Robin \"Visit me at my workshop and we can talk more about the specifics.$0\"/pause 500/globalFade/viewport -1000 -1000/pause 750/end dialogue Robin \"Whenever you want to discuss repairing that shed, find me at my workshop.$0\""
+	 
+	 },
+},
+
+
+{    //Event #3 - Robin's material list     <<Tagged for framework
+	 "Action": "EditData",
+	 "Target": "data/events/ScienceHouse",
+	 "Entries": {
+	 "2554903/H/e 2554902": "none/-500 -500/farmer 6 24 0 Robin 7 18 2 Maru 27 9 1 Sebastian 29 9 3 Demetrius 19 18 0/playMusic jaunty/viewport 7 21 true/skippable/speed farmer 1/move farmer 0 -2 0/pause 300/jump Robin/pause 900/faceDirection Robin 3 true/pause 250/faceDirection Robin 0 true/pause 300/speed Robin 4/move Robin 0 -1 3/speed Robin 4/move Robin -2 0 2/speed Robin 4/move Robin 0 3 1/speed Robin 4/move Robin 1 0 2/pause 400/speak Robin \"Hey! I know what materials I need! So let's get right to business.$1#$b#I'm estimating 150 pieces of hardwood, 600 pieces of stone, 50 iron bars, and 20 battery packs...$0\"/pause 500/emote farmer 16/pause 500/speak Robin \"There's a lot of rotten wood and rust. That's what age can do to a building over the years.$0\"/pause 500/emote farmer 40/pause 200/speak Robin \"There's no rush on this project, @. Gather the materials on your own time!$1#$b#I put a trunk in the building for you to drop off materials as you procure them.$0\"/pause 500/globalFade/viewport -1000 -1000/end dialogue Robin \"I'll put my craftsmanship skills to the test with this project!$1#$e#I'm crafting a special storage chest for the project. We'll need more than just hardwood to refurbish the shed.$0\"",
+	 
+	 },
+},
+
+
+{    //Event #4 - Quest Complete
+	 "Action": "EditData",
+	 "Target": "data/events/farm",
+	 "Entries": {
+	 "2554906/n ShedRepaired": "continue/-500 -500/farmer 6 24 0 Robin 7 18 2/skippable/pause 1000/speak Robin \"I checked over all the materials you gathered, good job!$1#$b#You did your part, now I'll do mine. I work fast, so the shed should be refurbished tomorrow!$0\"/pause 500/emote farmer 32/pause 300/end dialogue Robin \"%Robin is busy.\""
+	 },
+},
+
+
+{    //Event #5 - Refurbished interior
+	 "Action": "EditData",
+	 "Target": "data/events/GrandpasShed",
+	 "When": { "HasSeenEvent": "2554906" },
+	 "Entries": {
+	 "2554907": "none/-500 -500/farmer -200 -200 0 Robin 13 13 0/skippable/viewport 16 9 true/playMusic jaunty/pause 2500/playSound doorClose/warp farmer 16 16/pause 300/move farmer 0 -2 0 true/pause 300/faceDirection Robin 1 true/pause 600/emote farmer 16/pause 200/speak Robin \"Hey @!$1\"/pause 200/faceDirection farmer 3 true/pause 700/speak Robin \"So... what do you think?$0#$b#You may have seen new window panes on the roof.#$b#There's a great space to grow plants up there now.\"/pause 500/jump farmer/pause 1000/speak Robin \"I couldn't have fixed it up without all the materials you gathered.$1#$b#I actually had a lot of fun and learned some new things.$0\"/pause 1000/faceDirection Robin 0/pause 750/speak Robin \"There was some leftover hardwood, so I crafted a few casks for the heck of it!$1#$b#This bottom floor would be great for aging wine...$0\"/pause 750/faceDirection Robin 1 true/pause 700/speak Robin \"Well, enjoy the refurbished shed @!$1\"/pause 500/end dialogue Robin \"Oh, I almost forgot! There are some plants upstairs already, a gift from Susan. She thought you'd appreciate some plants to get your greenhouse started!$1#$e#Mmm, I wonder if she wants a greenhouse of her own?$0\""
+	 },
+},
+
+
+{    //Refurbished Shed (No IF2R or Grandpa's Farm)
+     "Action": "EditMap",
+     "Target": "Maps/GrandpasShedOutside",
+     "FromFile": "Assets/Maps/GrandpasShed/GrandpasShedFixed2.tbin",
+	 "When": { "GrandpaShedComplete": true },
+     "ToArea": { "X": 16, "Y": 6, "Width": 12, "Height": 12 }
+},
+{    //Refurbished Shed (IF2R)
+     "Action": "EditMap",
+     "Target": "Maps/Farm",
+     "FromFile": "Assets/Maps/GrandpasShed/FarmShedFixed.tbin",
+	 "When": { "GrandpaShedComplete": true, "HasMod": "flashshifter.immersivefarm2remastered", "FarmType":"Standard" },
+     "ToArea": { "X": 138, "Y": 23, "Width": 12, "Height": 12 }
+},
+
+//Grandpa's Farm Patch found in content json >>> quest continued (3 more parts)
+
+
+
+{    //If players updated to SVE 1.12.13 and lost their Grandpa Shed quest progress (hardwood manifest complete, no iron )
+	 "Action": "EditData",
+	 "Target": "data/events/farmhouse",
+	 "Entries": {
+	 "2554999/e 2554904/k 2554907/H": "continue/-500 -500/Robin -10 -10 0/pause 1500/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 100/message \"Hey there! It's me, FlashShifter, the developer of Stardew Valley Expanded. If you're getting this message, there's something I need talk to you about...\"/pause 500/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 350/playSound junimoMeep1/pause 200/message \"The Grandpa's Shed questline received a huge overhaul in the SVE 1.12.13 update, which means the materials you've donated so far are lost forever...\"/pause 500/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 100/message \"But don't give up hope! You can install CJB Cheats Menu and get those lost resources back! I apologize for the inconvenience!\"/pause 1000/end"
+	 },
+},
+{    //If players updated to SVE 1.12.13 and lost their Grandpa Shed quest progress (iron manifest complete, no battery )
+	 "Action": "EditData",
+	 "Target": "data/events/farmhouse",
+	 "Entries": {
+	 "2554999/e 2554905/k 2554907/H": "continue/-500 -500/Robin -10 -10 0/pause 1500/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 100/message \"Hey there! It's me, FlashShifter, the developer of Stardew Valley Expanded. If you're getting this message, there's something I need talk to you about...\"/pause 500/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 350/playSound junimoMeep1/pause 200/message \"The Grandpa's Shed questline received a huge overhaul in the SVE 1.12.13 update, which means the materials you've donated so far are lost forever...\"/pause 500/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 100/message \"But don't give up hope! You can install CJB Cheats Menu and get those lost resources back! I apologize for the inconvenience!\"/pause 1000/end"
+	 },
+},
+
+
+
+{  //Apples's special order - vineyard quest
+  "Action": "EditData",
+  "Target": "Data/SpecialOrders",
+  "Update": "OnLocationChange",
+  "Entries": {
+  "Apples": {
+    "Name": "[Apples_Name]",
+    "Requester": "Apples",
+    "Duration": "Month",
+    "Repeatable": "False",
+    "RequiredTags": "event_77759294, !event_7775927",
+    "OrderType": "",
+    "SpecialRule": "",
+    "Text": "[Apples_Text]",
+    "ItemToRemoveOnEnd": null,
+    "MailToRemoveOnEnd": null,
+    "RandomizedElements": null,
+    "Objectives": [
+	   {
+        "Type": "Donate",
+        "Text": "[Apples_Objective_1_Text]",
+        "RequiredCount": "200",
+        "Data": {
+          "DropBox": "ApplesJunimoTile",
+          "DropBoxGameLocation": "AuroraVineyard",
+          "DropBoxIndicatorLocation": "50 50",   //20 6.3
+          "AcceptedContextTags": "item_starfruit"
+       }
+     },
+    ],
+    "Rewards": [
+      {
+        "Type": "Mail",
+        "Data": {
+          "MailReceived": "ApplesNowHappy"
+        }
+      },
+      {
+        "Type": "Friendship",
+        "Data": {}
+      }
+    ]
+  },
+ },
+},
+
+{   //Apple's quest strings
+    "Action": "EditData",
+    "Target": "Strings/SpecialOrderStrings",
+    "Entries": {
+       "Apples_Name": "Aurora Vineyard",
+       "Apples_Text": "A forest spirit is requesting starfruit.",
+       "Apples_Objective_1_Text": "Leave starfruit on the Junimo plaque in Aurora Vineyard.",
+	}
+},
+
+
+{   //Event #1 - The Junimo Tile        <<To start quest: Community Center must be built, player visited Lost Woods at least once, played for 138 days, event triggers in farmhouse at start of day
+	"Action": "EditData",
+	"Target": "data/events/farmhouse",
+	"Entries": { 
+    "77759254/e 191393/e 1000037/j 138/t 600 630/H": "none/-500 -500/Abigail -301 -301 2/pause 1500/changeLocation ForestWest/viewport 58 16 true/pause 2000/playSound junimoMeep1/pause 700/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/playSound junimoMeep1/globalFade/viewport -1000 -1000/pause 1500/message \"You sense something west of Cindersap Forest...\"/pause 1250/end dialogue Abigail \"I couldn't sleep last night...$2#$b#I felt as if 'something' was calling to me deep in the forest.$0#$e#Strange, right?$1\"",
+	},
+},
+
+
+{   //Event #2 - ???          <<Tagged by quest
+	"Action": "EditData",
+	"Target": "data/events/AuroraVineyard",
+	"Entries": { 
+    "77759294/e 77759254/k 7775927/H": "continue/-500 -500/farmer 11 12 0/pause 500/viewport 11 10 true/viewport move 0 -1 2000 true/skippable/move farmer 0 -4 0 true/pause 1000/playSound junimoMeep1/pause 900/playSound junimoMeep1/pause 400/faceDirection farmer 1 true/pause 500/emote farmer 8/pause 300/viewport move 1 0 4500 true/move farmer 9 0 0 true/pause 800/playSound junimoMeep1/pause 1200/playSound junimoMeep1/pause 1000/playSound junimoMeep1/pause 1750/playSound junimoMeep1/pause 1000/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 500/faceDirection farmer 3 true/pause 600/playSound junimoMeep1/pause 600/faceDirection farmer 0 true/pause 300/faceDirection farmer 1 true/pause 400/playSound junimoMeep1/pause 600/faceDirection farmer 0 true/pause 1150/emote farmer 40/pause 600/message \"The symbols vaguely look like the language of the Junimo, but I'm unable to make out what they say...\"/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/end position 20 8"
+	},
+},
+
+
+{   //Event #3 - The Junimo Scroll     <<Tagged by framework
+	"Action": "EditData",
+	"Target": "data/events/forest",
+	"Entries": { 
+    "7775926/e 77759294/H": "continue/-500 -500/farmer 20 53 0 Wizard -100 -100 1 Camilla -101 -101 0/skippable/pause 1000/showFrame Wizard 16/viewport 20 50 clamp true/viewport move 0 -1 3250/move farmer 0 -7 0 true/pause 3200/screenFlash 2/playSound wand/warp Wizard 20 44/positionOffset Wizard 20 0/pause 450/jump farmer/pause 500/faceDirection Wizard 2 true/pause 500/speak Wizard \"@. Intense magic is surrounding you? What have you done?$0\"/pause 400/emote farmer 40/pause 400/speak Wizard \"Hmm? Junimo activity in the abandoned vineyard? Most interesting.$0#$b#And what of the object you're carrying?\"/pause 500/emote farmer 8 true/pause 1000/message \"I feel something in my pocket...\"/pause 700/faceDirection farmer 3 true/pause 400/showFrame farmer 89 true/pause 500/playSound newRecipe/pause 200/addTemporaryActor JunimoScroll 10 11 20 46 2 false/positionOffset JunimoScroll -15 -5/pause 1500/message \"What is this doing here?\"/pause 1000/warp JunimoScroll -50 -50/playSound newRecipe/pause 400/faceDirection farmer 3 true/pause 500/faceDirection farmer 0 true/pause 500/speak Wizard \"That miraculous golden scroll is enchanted with forest magic.$0#$b#...$0#$b#Please. Follow me to my abode. This will require a thorough arcane analysis.$0\"/pause 500/globalFade/viewport -1000 -1000/stopMusic/playSound doorClose/changeLocation WizardHouse/faceDirection farmer 0 true/pause 200/playSound doorClose/pause 500/warp farmer 10 19/warp Wizard 10 17/faceDirection Wizard 2 true/playMusic WizardSong/pause 1000/viewport 8 18 true/pause 1300/speak Wizard \"Hand me the scroll.$0\"/pause 700/move farmer 0 -1 0/pause 600/ShowFrame farmer 15/playSound newRecipe/pause 600/move farmer 0 0 0/pause 500/speak Wizard \"Stand back.$0\"/pause 800/faceDirection farmer 1 true/pause 200/faceDirection farmer 2 true/pause 200/move farmer 0 1 2/pause 200/faceDirection farmer 1 true/pause 250/faceDirection farmer 0 true/pause 800/showFrame Wizard 16/pause 800/glow 0 0 255/playSound healSound/pause 1200/playSound healSound/glow 0 255 0/pause 1000/shake Wizard 1000/pause 1000/emote Wizard 12/pause 800/shake Wizard 700/glow 122 122 200/playSound healSound/pause 1500/glow 100 50 20/playSound healSound/pause 1700/showFrame Wizard 0/pause 1800/showFrame Wizard 18/pause 800/speak Wizard \"...#$b#I'm unable to decipher the scroll.#$b#It's so faded that it's almost illegible, and my translation skills are... rusty.$0\"/pause 1000/emote Wizard 40/pause 700/showFrame Wizard 0/pause 500/speak Wizard \"I will call a good friend for assistance.$0#$b#She excels in ancient languages.$0\"/pause 700/showFrame Wizard 16/pause 1000/shake Wizard 1000/pause 1700/showFrame Wizard 0/pause 400/speak Wizard \"She's arriving momentarily.\"/pause 400/emote farmer 8/pause 400/speak Wizard \"Ah. Who did I contact?$0#$b#The witch of-$0\"/screenFlash 2/playSound wand/warp Camilla 10 21/playMusic cm:EnchantedWaltz/pause 300/faceDirection farmer 1 true/pause 200/faceDirection farmer 2 true/pause 100/jump farmer/showFrame farmer 94 true/pause 900/move farmer 0 0 2/speak Camilla \"My, my. Hello there, dear.$0\"/pause 200/screenFlash 2/playSound wand/warp Camilla 8 17/faceDirection Camilla 1 true/pause 500/faceDirection Wizard 3 true/pause 400/faceDirection farmer 3 true/pause 300/speak Camilla \"You requested my help, Razzy?$1\"/speak Wizard \"...#$b#This scroll. What can you make of it?$0\"/pause 400/speak Camilla \"Mmm?$0\"/pause 600/move Camilla 1 0 1 true/pause 300/faceDirection farmer 0/pause 700/showFrame Wizard 13/pause 400/showFrame Camilla 20/playSound newRecipe/pause 200/showFrame Wizard 12/pause 2000/playSound healSound/screenFlash 1/pause 600/playSound healSound/screenFlash 1/pause 1000/emote Camilla 48/pause 400/speak Camilla \"The spirit who wrote this hardly understands their own language.$1#$b#It's like reading the writing of a child...I think they must be young.$0\"/pause 500/showFrame Camilla 4/playSound newRecipe/pause 650/faceDirection Camilla 2 true/pause 500/speak Camilla \"A 'Junimo' has taken up residence in the cellar of an abandoned building west of Cindersap Forest.$0#$b#They request 200 starfruits...$5#$b#It would seem you're on the verge of making a new friend, @.$1\"/pause 200/emote farmer 32/pause 800/screenFlash 2/playSound wand/warp Camilla 10 21/faceDirection Camilla 0 true/pause 500/faceDirection Wizard 2 true/pause 300/faceDirection farmer 3 true/pause 200/faceDirection farmer 2 true/pause 200/emote farmer 16 true/pause 350/speak Camilla \"You know, @...$0#$b#I could use someone with your...$0\"/screenFlash 2/playSound wand/warp Camilla 8 19/faceDirection Camilla 1 true/pause 300/faceDirection farmer 3 true/pause 200/speak Camilla \"Abilities...$5\"/speak Wizard \"Camilla. That's enough.\"/pause 250/faceDirection Camilla 0 true/pause 300/emote Camilla 12/pause 500/move Camilla 0 -2 1 true/pause 300/faceDirection farmer 0 true/pause 300/faceDirection Wizard 3 true/pause 400/speak Camilla \"You're no fun, Razzy.$3#$b#Is that all you needed me for?$2\"/pause 500/speak Wizard \"Indeed. Thank you-\"/speak Camilla \"Adieu.$5\"/faceDirection Camilla 1 true/pause 400/showFrame Camilla 17/pause 200/showFrame Camilla 18/pause 200/showFrame Camilla 19/pause 200/screenFlash 2/playSound wand/warp Camilla -300 -300/stopMusic/pause 1200/emote Wizard 40/pause 600/playMusic WizardSong/pause 200/faceDirection Wizard 2 true/pause 400/speak Wizard \"...#$b#She has important matters to handle in Castle Village. Forgive her manners, @.$0\"/pause 1000/showFrame Wizard 18/pause 600/shake Wizard 600/pause 1000/showFrame Wizard 0/pause 500/move Wizard -2 0 2/move Wizard 0 1 3 true/pause 200/faceDirection farmer 3 true/pause 150/move Wizard -1 0 2/move Wizard 0 1 3/move Wizard -1 0 3/pause 1000/speak Wizard \"Your connection with the Junimos is fascinating.#$b#It surpasses even mine.$0\"/pause 800/faceDirection Wizard 2/pause 700/showFrame Wizard 18/pause 400/speak Wizard \"Mmm. I wonder if this is related to your deeds in the community center.$0\"/pause 700/showFrame Wizard 0/pause 500/faceDirection Wizard 1 true/pause 500/speak Wizard \"Do keep me updated.$0#$b#I'm quite fascinated by this turn of events.$0\"/pause 500/globalFade/viewport -1000 -1000/stopMusic/pause 1400/end dialogue Wizard \"Hmm? You're responsible for what transpired at the community center?#$b#Ah, yes. This explains these recent events.#$e#I believe Camilla has taken a liking to you.#$b#She can sense your arcane potential.\"",
+	},
+},
+{    //adds Junimo Scroll temp actor   >>10x11
+     "Action": "Load",
+	 "Target": "Characters/JunimoScroll",
+	 "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/JunimoScroll.png"
+},
+
+
+{   //Event #4 - Junimo Tile Removed - Triggers overgrown interior of Aurora Vineyard     <<Triggers map patch
+	"Action": "EditData",
+	"Target": "data/events/farmhouse",
+	"Entries": { 
+    "7775925/e 7775926/n ApplesNowHappy/H": "none/-500 -500/farmer -300 -300 2/pause 1200/changeLocation ForestWest/viewport 58 16 true/pause 1500/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/glow 0 255 0/pause 150/playSound healSound/pause 800/playSound junimoMeep1/pause 600/playSound junimoMeep1/pause 700/glow 0 225 0/pause 150/playSound healSound/pause 700/playSound junimoMeep1/globalFade/viewport -1000 -1000/pause 1000/message \"You sense something has happened at Aurora Vineyard.\"/pause 1000/addConversationTopic VineyardOvergrown 28/end",
+	},
+},
+
+{
+	 "Action": "EditData",
+	 "Target": "characters/dialogue/Andy",
+	 "Entries": {
+     "VineyardOvergrown": "Somethin' happened to Aurora Vineyard, farmer. It's suddenly overgrown and my stuff is missin'!$2#$e#*sigh* Maybe it's time for me to move on...$8",
+     },
+},
+
+{   //Event #5 - Apples Introduction - Spawns into world next day
+	"Action": "EditData",
+	"Target": "data/events/AuroraVineyard",
+	"Entries": { 
+    "7775927/e 7775925/H": "communityCenter/-500 -500/farmer -300 -300 0 Apples -100 -100 2/pause 500/viewport 16 10 true/viewport move 0 1 6000 true/skippable/pause 4000/playSound doorClose/warp farmer 14 22/pause 800/move farmer 0 -4 0/pause 1000/faceDirection farmer 3/pause 1100/faceDirection farmer 0 true/pause 300/faceDirection farmer 1/pause 1250/move farmer 7 0 2/pause 1500/emote farmer 8/pause 500/move farmer 0 3 2/warp farmer -200 -200/playSound stairsdown/pause 750/globalFade/viewport -1000 -1000/changeLocation ApplesRoom/warp Apples 5 8/showFrame Apples 32/viewport 9 8 true/pause 4000/warp farmer 14 5/playSound stairsdown/pause 500/move farmer 0 3 2/pause 270/faceDirection farmer 3 true/pause 2250/move farmer -5 0 3/pause 1000/stopMusic/pause 1000/shake Apples 500/pause 1000/shake Apples 1000/pause 1000/showFrame Apples 0/playSound pickUpItem/jump Apples/pause 1200/playMusic junimoStarSong/playSound junimoMeep1/pause 800/faceDirection Apples 1 true/pause 700/playSound junimoMeep1/pause 600/playSound junimoMeep1/speak Apples \"Spirit-friend give starfruit!$1#$b#Spirit-friend make Apples happy!$0#$b#Apples take fruit and use forest magic to decorate new home!$1\"/pause 800/move Apples 2 0 1/pause 800/playSound junimoMeep1/pause 700/playSound junimoMeep1/jump Apples/pause 800/playSound junimoMeep1/speak Apples \"Apples here! Apples me!$1#$b#Be new-friend to Apples?$1\"/pause 500/playSound junimoMeep1/pause 200/move Apples 1 0 1/pause 500/playSound junimoMeep1/jump Apples/pause 1000/move Apples 0 1 1/move Apples 2 0 0 true/pause 300/faceDirection farmer 2 true/pause 400/playSound junimoMeep1/pause 300/move Apples 0 -2 3 true/pause 300/faceDirection farmer 1 true/pause 700/move Apples -2 0 2 true/pause 200/playSound junimoMeep1/pause 100/faceDirection farmer 0 true/pause 700/move Apples 0 2 1 true/pause 300/faceDirection farmer 3 true/pause 700/move Apples 1 0 0 true/pause 250/faceDirection farmer 2 true/pause 500/jump Apples/pause 1000/playSound junimoMeep1/speak Apples \"Apples leave soon to go to village. Apples tell other-friends about new home!$0#$b#Apples come back tomorrow!$1\"/pause 650/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 500/speak Apples \"Play with Apples before trip!$1\"/pause 500/playSound junimoMeep1/pause 500/jump Apples/pause 900/jump Apples/pause 200/playSound junimoMeep1/pause 700/faceDirection Apples 1 true/pause 250/faceDirection Apples 2 true/pause 400/animate Apples false true 200 24 25 24 27/pause 800/playSound junimoMeep1/pause 500/animate farmer false true 300 102 103/pause 1000/playSound junimoMeep1/pause 700/playSound junimoMeep1/pause 1200/globalFade/viewport -1000 -1000/pause 1250/message \"I'm friends with a Junimo! Starting tomorrow, I can talk to Apples.\"/pause 1200/message \"But why isn't the vineyard repaired?...\"/pause 1000/end dialogue Wizard \"%I explain to Magnus what I experienced in Aurora Vineyard.#$e#A Junimo named 'Apples' transformed the vineyard into their home?#$b#Most intriguing. Junimos repair abandoned buildings, not make them worse.#$e#Inform me if anything transpires.\"",
+	},
+},
+
+
+////*** END QUESTS *** ////
+
 
 {    //ADD MAIL
    "Action": "EditData",
@@ -5234,13 +4939,13 @@
   {    
     "Operation": "Append",
     "Target": ["Entries", "Set-Up_additionalCharacters"],
-    "Value": "MarlonFay 53 7 down",
+    "Value": "MarlonFay 54 7 down",
     "Delimiter": "/"
   },
   {
     "Operation": "Append",
     "Target": ["Entries", "MainEvent_additionalCharacters"],
-    "Value": "MarlonFay 53 7 down",
+    "Value": "MarlonFay 54 7 down",
     "Delimiter": "/"
   },
  ]
@@ -6748,26 +6453,43 @@
      "Target": "Maps/Town",
      "FromFile": "Assets/Maps/CropPhases/CommunityGardenTrellisPhase1.tbin",
      "ToArea": { "X": 95, "Y": 104,"Width": 15, "Height": 2 },
-     "When": { "Day": "{{Range: 1, 6}}" }
+     "When": { "Day": "{{Range: 1, 6}}", "HasFlag |contains=communityUpgradeShortcuts": false }
 },
 {    //Community garden trellis - phase 2
      "Action": "EditMap",
      "Target": "Maps/Town",
      "FromFile": "Assets/Maps/CropPhases/CommunityGardenTrellisPhase2.tbin",
      "ToArea": { "X": 95, "Y": 104,"Width": 15, "Height": 2 },
-     "When": { "Day": "{{Range: 7, 13}}" }
+     "When": { "Day": "{{Range: 7, 13}}", "HasFlag |contains=communityUpgradeShortcuts": false }
 },
 {    //Community garden trellis - phase 3
      "Action": "EditMap",
      "Target": "Maps/Town",
      "FromFile": "Assets/Maps/CropPhases/CommunityGardenTrellisPhase3.tbin",
      "ToArea": { "X": 95, "Y": 104,"Width": 15, "Height": 2 },
-     "When": { "Day": "{{Range: 14, 28}}" }
+     "When": { "Day": "{{Range: 14, 28}}", "HasFlag |contains=communityUpgradeShortcuts": false }
 },
-
-
-
-
+{    //Community garden trellis - phase 1 - shortcut unlocked
+     "Action": "EditMap",
+     "Target": "Maps/Town",
+     "FromFile": "Assets/Maps/CropPhases/CommunityGardenTrellisPhase1_ShortcutUnlocked.tbin",
+     "ToArea": { "X": 95, "Y": 104,"Width": 15, "Height": 2 },
+     "When": { "Day": "{{Range: 1, 6}}", "HasFlag": "communityUpgradeShortcuts" }
+},
+{    //Community garden trellis - phase 2 - shortcut unlocked
+     "Action": "EditMap",
+     "Target": "Maps/Town",
+     "FromFile": "Assets/Maps/CropPhases/CommunityGardenTrellisPhase2_ShortcutUnlocked.tbin",
+     "ToArea": { "X": 95, "Y": 104,"Width": 15, "Height": 2 },
+     "When": { "Day": "{{Range: 7, 13}}", "HasFlag": "communityUpgradeShortcuts" }
+},
+{    //Community garden trellis - phase 3 - shortcut unlocked
+     "Action": "EditMap",
+     "Target": "Maps/Town",
+     "FromFile": "Assets/Maps/CropPhases/CommunityGardenTrellisPhase3_ShortcutUnlocked.tbin",
+     "ToArea": { "X": 95, "Y": 104,"Width": 15, "Height": 2 },
+     "When": { "Day": "{{Range: 14, 28}}", "HasFlag": "communityUpgradeShortcuts" }
+},
 {    //Susan's crops - phase 1
      "Action": "EditMap",
      "Target": "Maps/Railroad",
@@ -9209,7 +8931,7 @@
           "BeforeMovie": {
             "ResponsePoint": null,
             "Script": "",
-            "Text": "It isn't my favorite genra, but I'll give it a go.$0"
+            "Text": "It isn't my favorite genre, but I'll give it a go.$0"
           },
           "DuringMovie": {
             "ResponsePoint": null,
@@ -11917,10 +11639,10 @@
       "Action": "EditData",
       "Target": "Data/animationdescriptions",
       "Entries": {
-        "Apples_Apple": "19 19 19 19 18 18 17 17 16/16/16 17 17 18 18 19 19",
-		"Apples_Dance1": "20 20 20 20 20/22 22 23 23 22 22 21 21/20 20 20 20 0 0 0 0 0",
-		"Apples_Dance2": "0 0 24 24/24 24 25 25 26 26 27 27/24 24 24 0 0 0",
-		"Apples_Sleep": "0 0 0 18 18 32 32/32/32 32 18 18 0 0",
+		"Apples_Dance1": "0 0 0 0/20 20 21 21 22 22 23 23/0 0 0 0",
+		"Apples_Dance2": "0 0 0 0 0/24 24 25 25 26 26 27 27/0 0 0 0",
+		"Apples_Wave": "0 0 0 0/28 28 29 29 30 30 31 31/0 0 0 0",
+		"Apples_Sleep": "19 19 18 18/32/18 18 19 19"
 	   }
     },
 	
@@ -12146,38 +11868,6 @@
 	 "FromFile": "Assets/CharacterFiles/OverworldSprites/Peaches/Peaches.png"
 },
 
-{   //Junimo Tile added to Aurora Vineyard + rare Abigail dialogue - Conditions: Played for 138 days (end of spring year 2), completed the community center, and entered the Lost Woods at least once
-	"Action": "EditData",
-	"Target": "data/events/farmhouse",
-	"Entries": { 
-    "77759254/e 191393/e 1000037/j 138": "none/-500 -500/farmer -300 -300 2 Abigail -301 -301 2/pause 1500/changeLocation ForestWest/viewport 58 16 true/pause 2000/playSound junimoMeep1/pause 700/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/playSound junimoMeep1/globalFade/viewport -1000 -1000/pause 1500/message \"You sense something west of Cindersap Forest...\"/pause 1250/end dialogue Abigail \"I couldn't sleep last night...$2#$e#I felt as if 'something' was calling to me deep in the forest.$2#$e#Strange, right?$0\"",
-	},
-},
-
-{   //The Junimo Scroll - Player has junimo scroll in inventory and enters forest map
-	"Action": "EditData",
-	"Target": "data/events/forest",
-	"Entries": { 
-    "7775926/i {{spacechase0.JsonAssets/ObjectId:Junimo Scroll}}": "spring_day_ambient/-500 -500/farmer 5 29 0 Wizard -100 -100 2 Camilla -101 -101 0/removeItem {{spacechase0.JsonAssets/ObjectId:Junimo Scroll}}/skippable/pause 1000/showFrame Wizard 16/viewport 13 22 clamp true/move farmer 0 -6 0/screenFlash 2/playSound wand/warp Wizard 5 20/pause 150/jump farmer/pause 600/showFrame Wizard 0/pause 400/speak Wizard \"That miraculous golden scroll is enchanted with forest magic. I sensed it from my tower...#$e#Where did you find this?\"/pause 600/emote farmer 40/pause 400/speak Wizard \"Hmm. I see. This will require a thorough arcane analysis.$0#$b#Please. Come inside.\"/pause 500/faceDirection Wizard 1 true/pause 200/faceDirection Wizard 0 true/pause 250/viewport move 0 -1 4500 true/move Wizard 0 -2 0/pause 200/warp Wizard -200 -200/playSound doorClose/pause 400/move farmer 0 -5 0/pause 300/warp farmer -198 -198/playSound doorClose/pause 700/globalFade/viewport -1000 -1000/stopMusic/changeLocation WizardHouse/warp farmer 10 19/warp Wizard 10 17/faceDirection Wizard 2 true/playMusic WizardSong/pause 1000/viewport 8 18 true/pause 1300/speak Wizard \"Hand me the scroll.$0\"/pause 700/move farmer 0 -1 0/pause 600/ShowFrame farmer 15/playSound newRecipe/pause 600/move farmer 0 0 0/pause 500/speak Wizard \"Stand back.$0\"/pause 800/faceDirection farmer 1 true/pause 200/faceDirection farmer 2 true/pause 200/move farmer 0 1 2/pause 200/faceDirection farmer 1 true/pause 250/faceDirection farmer 0 true/pause 800/showFrame Wizard 16/pause 800/glow 0 0 255/playSound healSound/pause 1200/playSound healSound/glow 0 255 0/pause 1000/shake Wizard 1000/pause 1000/emote Wizard 12/pause 800/shake Wizard 700/glow 122 122 200/playSound healSound/pause 1500/glow 100 50 20/playSound healSound/pause 1700/showFrame Wizard 0/pause 1800/showFrame Wizard 18/pause 800/speak Wizard \"...#$b#I'm unable to decipher the scroll.#$b#It's so faded that it's almost illegible, and my translation skills are... rusty.$0\"/pause 1000/emote Wizard 40/pause 700/showFrame Wizard 0/pause 500/speak Wizard \"I will call a good friend for assistance.$0#$b#She excels in ancient languages.$0\"/pause 700/showFrame Wizard 16/pause 1000/shake Wizard 1000/pause 1700/showFrame Wizard 0/pause 400/speak Wizard \"She's arriving momentarily.\"/pause 400/emote farmer 8/pause 400/speak Wizard \"Ah. Who did I contact?$0#$b#The witch of-$0\"/screenFlash 2/playSound wand/warp Camilla 10 21/playMusic cm:EnchantedWaltz/pause 300/faceDirection farmer 1 true/pause 200/faceDirection farmer 2 true/pause 100/jump farmer/showFrame farmer 94 true/pause 900/move farmer 0 0 2/speak Camilla \"My, my. Hello there, dear.$0\"/pause 200/screenFlash 2/playSound wand/warp Camilla 8 17/faceDirection Camilla 1 true/pause 500/faceDirection Wizard 3 true/pause 400/faceDirection farmer 3 true/pause 300/speak Camilla \"You requested my help, Razzy?$1\"/speak Wizard \"...#$b#This scroll. What can you make of it?$0\"/pause 400/speak Camilla \"Mmm?$0\"/pause 600/move Camilla 1 0 1 true/pause 300/faceDirection farmer 0/pause 700/showFrame Wizard 13/pause 400/showFrame Camilla 20/playSound newRecipe/pause 200/showFrame Wizard 12/pause 2000/playSound healSound/screenFlash 1/pause 600/playSound healSound/screenFlash 1/pause 1000/emote Camilla 40/pause 1500/emote Camilla 48/pause 400/speak Camilla \"The spirit who wrote this hardly understands their own language.$1#$b#It's like reading the writing of a child...I think they must be young.$0\"/pause 500/showFrame Camilla 4/playSound newRecipe/pause 650/faceDirection Camilla 2 true/pause 500/speak Camilla \"A 'Junimo' has taken up residence in the cellar of an abandoned building west of Cindersap Forest.$0#$b#They will only speak to you, @.$5#$b#It would seem you've made a new friend.$1\"/pause 200/emote farmer 32/pause 800/screenFlash 2/playSound wand/warp Camilla 10 21/faceDirection Camilla 0 true/pause 500/faceDirection Wizard 2 true/pause 300/faceDirection farmer 3 true/pause 200/faceDirection farmer 2 true/pause 200/emote farmer 16 true/pause 350/speak Camilla \"You know, @...$0#$b#I could use someone with your...$0\"/screenFlash 2/playSound wand/warp Camilla 8 19/faceDirection Camilla 1 true/pause 300/faceDirection farmer 3 true/pause 200/speak Camilla \"Abilities...$5\"/speak Wizard \"Camilla. That's enough.\"/pause 250/faceDirection Camilla 0 true/pause 300/emote Camilla 12/pause 500/move Camilla 0 -2 1 true/pause 300/faceDirection farmer 0 true/pause 300/faceDirection Wizard 3 true/pause 400/speak Camilla \"You're no fun, Razzy.$3#$b#Is that all you needed me for?$2\"/pause 500/speak Wizard \"Indeed. Thank you-\"/speak Camilla \"Adieu.$5\"/faceDirection Camilla 1 true/pause 400/showFrame Camilla 17/pause 200/showFrame Camilla 18/pause 200/showFrame Camilla 19/pause 200/screenFlash 2/playSound wand/warp Camilla -300 -300/stopMusic/pause 1200/emote Wizard 40/pause 600/playMusic WizardSong/pause 200/faceDirection Wizard 2 true/pause 400/speak Wizard \"...#$b#She has important matters to handle in Castle Village. Forgive her manners, @.$0\"/pause 1000/showFrame Wizard 18/pause 600/shake Wizard 600/pause 1000/showFrame Wizard 0/pause 500/move Wizard -2 0 2/move Wizard 0 1 3 true/pause 200/faceDirection farmer 3 true/pause 150/move Wizard -1 0 2/move Wizard 0 1 3/move Wizard -1 0 3/pause 1000/speak Wizard \"Your connection with the Junimos is fascinating.#$b#It surpasses even mine.$0\"/pause 800/faceDirection Wizard 2/pause 700/showFrame Wizard 18/pause 400/speak Wizard \"Mmm. I wonder if this is related to your deeds in the community center.$0\"/pause 700/showFrame Wizard 0/pause 500/faceDirection Wizard 1 true/pause 500/speak Wizard \"Do keep me updated.$0#$b#I'm quite fascinated by this turn of events.$0\"/pause 500/globalFade/viewport -1000 -1000/stopMusic/pause 1400/end dialogue Wizard \"Hmm? You're responsible for what transpired at the community center?#$b#Ah, yes. This explains these recent events.#$e#I believe Camilla has taken a liking to you.#$b#She can sense your arcane potential.\"",
-	},
-},
-
-{   //Junimo Tile Removed - Triggers overgrown interior of Aurora Vineyard
-	"Action": "EditData",
-	"Target": "data/events/forestwest",
-	"Entries": { 
-    "7775925/e 7775926": "none/-500 -500/farmer -300 -300 2/pause 1200/viewport 58 16 true/pause 1500/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/glow 0 255 0/pause 150/playSound healSound/pause 800/playSound junimoMeep1/pause 600/playSound junimoMeep1/pause 700/glow 0 225 0/pause 150/playSound healSound/pause 700/playSound junimoMeep1/end",
-	},
-},
-
-{   //Apples Introduction - Spawns into world next day
-	"Action": "EditData",
-	"Target": "data/events/AuroraVineyard",
-	"Entries": { 
-    "7775927/e 7775925": "communityCenter/-500 -500/farmer -300 -300 0 Apples -100 -100 2/pause 500/viewport 20 34 true/skippable/pause 3000/playSound doorClose/warp farmer 20 40/pause 800/move farmer 0 -4 0/pause 600/faceDirection farmer 1/pause 1000/faceDirection farmer 0 true/pause 200/faceDirection farmer 3/pause 800/faceDirection farmer 0 true/pause 500/move farmer 0 -7 0 true/pause 500/globalFade/viewport -1000 -1000 true/halt/warp farmer 26 22/faceDirection farmer 1 true/pause 50/viewport 29 22 true/move farmer 5 0 1/pause 250/faceDirection farmer 2/pause 500/emote farmer 8/pause 400/move farmer 0 5 2/warp farmer -200 -200/playSound stairsdown/pause 1000/globalFade/viewport -1000 -1000/changeLocation ApplesRoom/warp Apples 5 8/showFrame Apples 32/viewport 9 8 true/pause 5000/warp farmer 14 5/playSound stairsdown/pause 500/move farmer 0 3 2/pause 270/faceDirection farmer 3 true/pause 2250/move farmer -5 0 3/pause 1000/stopMusic/pause 1000/shake Apples 500/pause 1000/shake Apples 1000/pause 1000/showFrame Apples 0/playSound pickUpItem/jump Apples/pause 1200/playMusic junimoStarSong/playSound junimoMeep1/pause 800/faceDirection Apples 1 true/pause 700/playSound junimoMeep1/pause 600/playSound junimoMeep1/speak Apples \"Spirit-friend give starfruit!$1#$b#Spirit-friend make Apples happy!$0#$b#Apples take fruit and use forest magic to decorate new home!$1\"/pause 800/move Apples 2 0 1/pause 800/playSound junimoMeep1/pause 700/playSound junimoMeep1/jump Apples/pause 800/playSound junimoMeep1/speak Apples \"Apples here! Apples me!$1#$b#Be new-friend to Apples?$1\"/pause 500/playSound junimoMeep1/pause 200/move Apples 1 0 1/pause 500/playSound junimoMeep1/jump Apples/pause 1000/move Apples 0 1 1/move Apples 2 0 0 true/pause 300/faceDirection farmer 2 true/pause 400/playSound junimoMeep1/pause 300/move Apples 0 -2 3 true/pause 300/faceDirection farmer 1 true/pause 700/move Apples -2 0 2 true/pause 200/playSound junimoMeep1/pause 100/faceDirection farmer 0 true/pause 700/move Apples 0 2 1 true/pause 300/faceDirection farmer 3 true/pause 700/move Apples 1 0 0 true/pause 250/faceDirection farmer 2 true/pause 500/jump Apples/pause 1000/playSound junimoMeep1/speak Apples \"Apples leave soon to go to village. Apples tell other-friends about new home!$0#$b#Apples come back tomorrow!$1\"/pause 650/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 500/speak Apples \"Play with Apples before trip!$1\"/pause 500/playSound junimoMeep1/pause 500/jump Apples/pause 900/jump Apples/pause 200/playSound junimoMeep1/pause 700/faceDirection Apples 1 true/pause 250/faceDirection Apples 2 true/pause 400/animate Apples false true 200 24 25 24 27/pause 800/playSound junimoMeep1/pause 500/animate farmer false true 300 102 103/pause 1000/playSound junimoMeep1/pause 700/playSound junimoMeep1/pause 1200/globalFade/viewport -1000 -1000/pause 1250/message \"I'm friends with a Junimo! Starting tomorrow, I can talk to Apples.\"/pause 1200/message \"But why isn't the vineyard repaired?...\"/pause 1000/end dialogue Wizard \"%I explain to Magnus what I experienced in Aurora Vineyard.#$b#A Junimo named 'Apples' transformed the vineyard into their home?#$b#Most intriguing. Junimos repair abandoned buildings, not make them worse.#$e#Inform me if anything transpires.\"",
-	},
-},
-
 {   //Apples - warp tile added
 	"Action": "EditData",
 	"Target": "data/events/farm",
@@ -12213,19 +11903,12 @@
 	},
 },
 
-{
-     "Action": "EditMap",
-     "Target": "Maps/AuroraVineyard",
-     "When": { "HasSeenEvent": "7776001" },
-     "MapProperties": { "Light": "10 6 4 17 37 4 29 38 4 17 24 4 5 14 4 26 26 4 28 6 4 30 37 4" }
-},
-
 {   //Apples 2 heart event - 'Other Friends'
 	"Action": "EditData",
 	"Target": "data/events/forestwest",
 	"When": { "HasSeenEvent": "7776001" },
 	"Entries": { 
-    "7776002/t 600 1700/w sunny/c 1": "spring_day_ambient/-500 -500/farmer 59 28 0 Apples 59 18 2/showFrame Apples 32/pause 500/skippable/viewport 59 26 true/viewport move 0 -2 4000 true/move farmer 0 -8 0/pause 1100/shake Apples 600/pause 600/showFrame Apples 0/jump Apples/playSound pickUpItem/pause 800/playSound junimoMeep1/pause 600/playSound junimoMeep1/speak Apples \"Yay! Apples-friend is here!$1#$b#Apples work hard decorating new home!$0\"/pause 500/move Apples -1 0 3/pause 300/faceDirection Apples 2 true/pause 500/jump Apples/pause 700/playSound junimoMeep1/pause 500/playSound junimoMeep1/speak Apples \"Come! Come! Apples show!$1\"/pause 650/faceDirection Apples 1 true/pause 300/faceDirection Apples 0 true/pause 500/warp Apples -100 -100/playSound doorClose/pause 1000/viewport move 0 -1 5000 true/move farmer 0 -1 3/move farmer -1 0 0/move farmer 0 -1 0/pause 550/warp farmer -101 -101/playSound doorClose/pause 500/globalFade/viewport -1000 -1000/stopMusic/changeLocation AuroraVineyard/pause 600/stopMusic/warp Apples 20 23/warp farmer 20 31/faceDirection Apples 2 true/faceDirection farmer 0 true/viewport 20 30 true/viewport move 0 -2 2500 true/move farmer 0 -5 0/pause 500/jump Apples/pause 700/playSound junimoMeep1/pause 600/faceDirection farmer 1 true/pause 1250/faceDirection farmer 0 true/pause 800/playSound junimoMeep1/pause 600/playSound junimoMeep1/pause 400/playSound junimoMeep1/speak Apples \"Starfruit grow in home now!$1\"/pause 750/move Apples 0 2 2/pause 400/playSound junimoMeep1/pause 200/jump Apples/pause 900/playSound junimoMeep1/jump Apples/pause 800/speak Apples \"Apples give starfruit![268]$1\"/pause 300/playSound junimoMeep1/jump Apples/pause 800/speak Apples \"Fruit![268]$0\"/pause 200/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 150/jump Apples/pause 850/speak Apples \"More fruit!$1[268]\"/pause 900/playSound junimoMeep1/jump Apples/pause 1000/move Apples 0 -2 0/pause 250/faceDirection Apples 1 true/pause 250/faceDirection Apples 2 true/pause 600/playSound junimoMeep1/pause 500/playSound junimoMeep1/speak Apples \"Apples make plant-friends!$1\"/pause 600/move Apples -2 0 3/pause 250/faceDirection Apples 2 true/pause 250/faceDirection Apples 1 true/pause 400/jump Apples/playSound junimoMeep1/pause 1000/viewport move 0 -2 1500 true/move farmer 0 -3 0/pause 300/faceDirection farmer 3 true/pause 700/faceDirection Apples 2 true/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/speak Apples \"Meet 'Donna'!$1\"/pause 600/faceDirection Apples 3 true/pause 600/playSound junimoMeep1/pause 500/playSound junimoMeep1/speak Apples \"This 'Fig'.$0\"/pause 700/move Apples 0 -1 3/move Apples -1 0 0/pause 600/playSound junimoMeep1/pause 500/playSound junimoMeep1/speak Apples \"'Holly', meet other friend!$1\"/pause 700/move Apples 1 0 2/move Apples 0 1 1/pause 500/jump Apples/playSound junimoMeep1/pause 900/jump Apples/playSound junimoMeep1/speak Apples \"Other friends at village say Apples should make new friends.$0#$b#Apples listens! Make new friends!$1\"/pause 700/jump Apples/playSound junimoMeep1/pause 900/playSound junimoMeep1/pause 400/playSound junimoMeep1/speak Apples \"More friends above! Come! Come!$0\"/pause 500/friendship Apples 50/globalFade/viewport -1000 -1000/stopMusic/pause 1000/message \"Apples introduced me to more of their plant friends upstairs. They each have a name!\"/pause 1000/end dialogue Apples \"Donna likes you!$1#$e#Fig does not like you...$2#$b#Fig no tell Apples why.$2#$e#Apples wonder when other friends visit!$1\"",
+    "7776002/t 600 1700/w sunny/c 1": "spring_day_ambient/-500 -500/farmer 59 28 0 Apples 59 18 2/showFrame Apples 32/pause 500/skippable/viewport 59 26 true/viewport move 0 -2 4000 true/move farmer 0 -8 0/pause 1100/shake Apples 600/pause 600/showFrame Apples 0/jump Apples/playSound pickUpItem/pause 800/playSound junimoMeep1/pause 600/playSound junimoMeep1/speak Apples \"Yay! Apples-friend is here!$1#$b#Apples work hard decorating new home!$0\"/pause 500/move Apples -1 0 3/pause 300/faceDirection Apples 2 true/pause 500/jump Apples/pause 700/playSound junimoMeep1/pause 500/playSound junimoMeep1/speak Apples \"Come! Come! Apples show!$1\"/pause 650/faceDirection Apples 1 true/pause 300/faceDirection Apples 0 true/pause 500/warp Apples -100 -100/playSound doorClose/pause 1000/viewport move 0 -1 5000 true/move farmer 0 -1 3/move farmer -1 0 0/move farmer 0 -1 0/pause 550/warp farmer -101 -101/playSound doorClose/pause 500/globalFade/viewport -1000 -1000/stopMusic/changeLocation AuroraVineyard/pause 600/stopMusic/warp Apples 11 8/warp farmer 11 10/faceDirection Apples 2 true/faceDirection farmer 0 true/viewport 11 9 true/pause 750/jump Apples/pause 700/playSound junimoMeep1/pause 600/faceDirection farmer 1 true/pause 1050/playSound junimoMeep1/pause 200/faceDirection farmer 0 true/pause 300/faceDirection farmer 3 true/pause 1000/faceDirection farmer 0 true/pause 500/playSound junimoMeep1/pause 600/playSound junimoMeep1/pause 400/playSound junimoMeep1/speak Apples \"Starfruit grow in home now!$1\"/pause 750/move Apples 0 1 2/pause 400/playSound junimoMeep1/pause 200/jump Apples/pause 900/playSound junimoMeep1/jump Apples/pause 800/speak Apples \"Apples give starfruit![268]$1\"/pause 300/playSound junimoMeep1/jump Apples/pause 800/speak Apples \"Fruit![268]$0\"/pause 200/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 150/jump Apples/pause 850/speak Apples \"More fruit!$1[268]\"/pause 900/playSound junimoMeep1/jump Apples/pause 1000/move Apples 0 -1 0/pause 250/faceDirection Apples 1 true/pause 250/faceDirection Apples 2 true/pause 600/playSound junimoMeep1/pause 500/playSound junimoMeep1/speak Apples \"Apples make plant-friends!$1\"/pause 600/move Apples 2 0 2/move Apples 0 2 2 true/pause 500/faceDirection farmer 1 true/pause 800/faceDirection Apples 3 true/pause 400/playSound junimoMeep1/speak Apples \"Meet 'Donna'!$1\"/pause 500/faceDirection Apples 0 true/pause 300/move Apples 0 -2 0 true/pause 500/faceDirection farmer 0 true/pause 800/faceDirection Apples 1 true/pause 300/faceDirection Apples 2 true/pause 500/jump Apples/pause 300/playSound junimoMeep1/pause 500/playSound junimoMeep1/speak Apples \"This 'Fig'.$0\"/pause 500/faceDirection Apples 3 true/pause 400/move Apples -2 0 0/pause 400/jump Apples/pause 300/playSound junimoMeep1/pause 600/playSound junimoMeep1/pause 300/faceDirection Apples 1 true/pause 300/faceDirection Apples 2 true/pause 300/playSound junimoMeep1/pause 350/playSound junimoMeep1/pause 200/speak Apples \"'Holly', meet other friend!$1\"/pause 700/jump Apples/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 350/playSound junimoMeep1/pause 150/speak Apples \"Other friends at village say Apples should make new friends.$0#$b#Apples listens! Make new friends!$1\"/pause 700/jump Apples/playSound junimoMeep1/pause 900/playSound junimoMeep1/pause 400/playSound junimoMeep1/speak Apples \"More friends below! Come! Come!$0\"/pause 500/friendship Apples 50/globalFade/viewport -1000 -1000/stopMusic/pause 1000/message \"Apples introduced me to more of their plant friends in the cellar. They each have a name!\"/pause 1000/end dialogue Apples \"Donna likes you!$1#$e#Fig does not like you...$2#$b#Fig no tell Apples why.$2#$e#Apples wonder when other friends visit!$1\"",
     },
 },
 
@@ -12251,7 +11934,7 @@
 	"Action": "EditData",
 	"Target": "data/events/AuroraVineyard",
 	"Entries": {
-	"7776005/e 7776004": "none/-500 -500/farmer 25 15 3 Apples -100 -100 2/pause 700/addTemporaryActor Bear 32 32 -101 -101 0 true character/addTemporaryActor ApplesSad 16 32 22 5 0/playMusic echos/pause 650/showFrame ApplesSad 16/skippable/viewport 22 7 true/move farmer -3 0 3/pause 400/faceDirection farmer 0/pause 300/shake ApplesSad 1000/pause 500/move farmer 0 -7 0 true/pause 1500/shake Apples 1000/pause 2300/speak Apples \"...$2\"/pause 1000/showFrame ApplesSad 4/pause 250/showFrame ApplesSad 17/pause 500/shake ApplesSad 500/pause 750/move farmer 0 -1 0/pause 900/playSound junimoMeep1/pause 1100/playSound junimoMeep1/speak Apples \"Other friends say Apples make mistake turning vineyard into new home...$3\"/pause 800/shake ApplesSad 500/pause 1000/showFrame ApplesSad 4/pause 300/showFrame ApplesSad 16/pause 600/playSound junimoMeep1/pause 900/playSound junimoMeep1/pause 800/playSound junimoMeep1/speak Apples \"Junimos no want to play with Apples anymore...$3\"/pause 500/emote farmer 60/pause 400/playSound junimoMeep1/pause 1000/playSound junimoMeep1/speak Apples \"Apples is 'Junimo'.$2#$b#When human with 'gift' give offering, Junimo restore abandoned building.$4#$b#Apples thought its better idea to make new home for friends.$2\"/pause 700/shake ApplesSad 600/pause 1000/speak Apples \"...$3\"/pause 1000/playSound junimoMeep1/pause 800/playSound junimoMeep1/speak Apples \"$q -1 null#Did Apples make mistake turning vineyard into new home?#$r -1 0 apples_event1#You didn't do anything wrong.#$r -1 0 apples_event2#You should've repaired Aurora Vineyard.#$r -1 0 apples_event3#You made other plant friends. They aren't a mistake.\"/pause 1000/shake ApplesSad 500/pause 850/move ApplesSad 1 0 2/move ApplesSad 0 1 2/move ApplesSad 2 0 1 true/pause 500/faceDirection farmer 1 true/pause 1000/move farmer 0 -1 0/pause 250/faceDirection farmer 1 true/pause 1500/showFrame ApplesSad 16/pause 250/showFrame ApplesSad 12/pause 800/playSound junimoMeep1/pause 1000/playSound junimoMeep1/speak Apples \"Bear not here too...$2#$b#Party cancelled...$3\"/pause 1200/move ApplesSad -1 0 2/move ApplesSad 0 1 3/move ApplesSad -2 0 2 true/pause 500/faceDirection farmer 2 true/pause 500/move ApplesSad 0 2 2/pause 500/faceDirection ApplesSad 1 true/pause 250/faceDirection ApplesSad 0 true/pause 500/playSound junimoMeep1/speak Apples \"Apples-friend can leave...$2\"/pause 500/globalFade/viewport -1000 -1000/stopMusic/pause 1000/warp ApplesSad -99 -99/warp farmer -98 -98/warp Bear 57 23/changeLocation ForestWest/viewport 58 22 true/pause 500/warp farmer 58 18/playSound doorClose/pause 500/playMusic event1/emote farmer 16/speak Bear \"Hey there.$2#$b#I'm here for the party.$2\"/pause 400/move farmer 0 2 2/pause 200/emote farmer 32/pause 400/warp Apples 58 18/playSound doorClose/pause 500/faceDirection farmer 1 true/pause 200/faceDirection farmer 0 true/pause 300/playSound junimoMeep1/jump Apples/pause 700/playSound junimoMeep1/pause 400/playSound junimoMeep1/speak Apples \"Bear!?$0#$b#Bear come to Apples' party!$1\"/pause 300/speed Apples 4/move Apples -1 0 2/speed Apples 4/move Apples 0 2 2 true/pause 300/faceDirection farmer 3 true/pause 1000/faceDirection farmer 2 true/pause 500/speak Bear \"Sorry I'm late. I overslept!$0\"/pause 1000/shake Bear 500/pause 300/playSound stoneStep/addObject 57 21 724/pause 600/speak Bear \"Brought the maple syrup - even added those special leaves you like!$1\"/pause 500/playSound junimoMeep1/jump Apples/pause 800/speak Bear \"Say. Introduce me to your starfruit friends, little one.$1#$b#I'm interested in this Fig fella!$1\"/pause 500/animate Apples false true 200 24 25/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/faceDirection farmer 3 true/pause 300/playSound junimoMeep1/speak Apples \"!!!$1\"/pause 600/faceDirection farmer 2 true/pause 200/showFrame farmer 0/animate farmer false true 200 103 102/pause 800/jump Bear/pause 900/jump Bear/globalFade/viewport -1000 -1000/pause 500/message \"The bear brought wonderful treats and conversation, saving the day! \"/pause 1000/end dialogue Apples \"Apples-friend and Bear make Apples happy!$0#$e#Will other friends play with Apples again someday?$2#$e#%You tell Apples the other Junimos will.#$e#*meep*!!!$1\"",
+	"7776005/e 7776004": "none/-500 -500/farmer 11 18 0 Apples -100 -100 2/pause 700/addTemporaryActor Bear 32 32 -101 -101 0 true character/addTemporaryActor ApplesSad 16 32 11 8 0/playMusic echos/pause 650/showFrame ApplesSad 16/skippable/viewport 11 9 true/move farmer 0 -7 0 true/pause 1500/shake ApplesSad 800/pause 1300/shake Apples 800/pause 1800/speak Apples \"...$2\"/pause 1000/showFrame ApplesSad 4/pause 250/showFrame ApplesSad 17/pause 500/shake ApplesSad 500/pause 750/move farmer 0 -1 0/pause 900/playSound junimoMeep1/pause 1100/playSound junimoMeep1/speak Apples \"Other friends say Apples make mistake turning vineyard into new home...$3\"/pause 800/shake ApplesSad 500/pause 1000/showFrame ApplesSad 4/pause 300/showFrame ApplesSad 16/pause 600/playSound junimoMeep1/pause 900/playSound junimoMeep1/pause 800/playSound junimoMeep1/speak Apples \"Junimos no want to play with Apples anymore...$3\"/pause 500/emote farmer 60/pause 400/playSound junimoMeep1/pause 1000/playSound junimoMeep1/speak Apples \"Apples is 'Junimo'.$2#$b#When human with 'gift' give offering, Junimo restore abandoned building.$4#$b#Apples thought its better idea to make new home for friends.$2\"/pause 700/shake ApplesSad 600/pause 1000/speak Apples \"...$3\"/pause 1000/playSound junimoMeep1/pause 800/playSound junimoMeep1/speak Apples \"$q -1 null#Did Apples make mistake turning vineyard into new home?#$r -1 0 apples_event1#You didn't do anything wrong.#$r -1 0 apples_event2#You should've repaired Aurora Vineyard.#$r -1 0 apples_event3#You made other plant friends. They aren't a mistake.\"/pause 1000/shake ApplesSad 500/pause 850/move ApplesSad 1 0 2/move ApplesSad 0 1 2/move ApplesSad 2 0 1 true/pause 500/faceDirection farmer 1 true/pause 1000/move farmer 0 -1 0/pause 250/faceDirection farmer 1 true/pause 1500/showFrame ApplesSad 16/pause 250/showFrame ApplesSad 12/pause 800/playSound junimoMeep1/pause 1000/playSound junimoMeep1/speak Apples \"Bear not here too...$2#$b#Party cancelled...$3\"/pause 1200/move ApplesSad -1 0 2/move ApplesSad 0 1 3/move ApplesSad -2 0 2 true/pause 500/faceDirection farmer 2 true/pause 500/move ApplesSad 0 2 2/pause 500/faceDirection ApplesSad 1 true/pause 250/faceDirection ApplesSad 0 true/pause 500/playSound junimoMeep1/speak Apples \"Apples-friend can leave...$2\"/pause 500/globalFade/viewport -1000 -1000/stopMusic/pause 1000/warp ApplesSad -99 -99/warp farmer -98 -98/warp Bear 57 23/changeLocation ForestWest/viewport 58 22 true/pause 500/warp farmer 58 18/playSound doorClose/pause 500/playMusic event1/emote farmer 16/speak Bear \"Hey there.$2#$b#I'm here for the party.$2\"/pause 400/move farmer 0 2 2/pause 200/emote farmer 32/pause 400/warp Apples 58 18/playSound doorClose/pause 500/faceDirection farmer 1 true/pause 200/faceDirection farmer 0 true/pause 300/playSound junimoMeep1/jump Apples/pause 700/playSound junimoMeep1/pause 400/playSound junimoMeep1/speak Apples \"Bear!?$0#$b#Bear come to Apples' party!$1\"/pause 300/speed Apples 4/move Apples -1 0 2/speed Apples 4/move Apples 0 2 2 true/pause 300/faceDirection farmer 3 true/pause 1000/faceDirection farmer 2 true/pause 500/speak Bear \"Sorry I'm late. I overslept!$0\"/pause 1000/shake Bear 500/pause 300/playSound stoneStep/addObject 57 21 724/pause 600/speak Bear \"Brought the maple syrup - even added those special leaves you like!$1\"/pause 500/playSound junimoMeep1/jump Apples/pause 800/speak Bear \"Say. Introduce me to your starfruit friends, little one.$1#$b#I'm interested in this Fig fella!$1\"/pause 500/animate Apples false true 200 24 25/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/faceDirection farmer 3 true/pause 300/playSound junimoMeep1/speak Apples \"!!!$1\"/pause 600/faceDirection farmer 2 true/pause 200/showFrame farmer 0/animate farmer false true 200 103 102/pause 800/jump Bear/pause 900/jump Bear/globalFade/viewport -1000 -1000/pause 500/message \"The bear brought wonderful treats and conversation, saving the day! \"/pause 1000/end dialogue Apples \"Apples-friend and Bear make Apples happy!$0#$e#Will other friends play with Apples again someday?$2#$e#%You tell Apples the other Junimos will.#$e#*meep*!!!$1\"",
 	},
 },
 
@@ -12290,7 +11973,7 @@
 	"Action": "EditData",
 	"Target": "data/events/AuroraVineyard",
 	"Entries": {
-	"7776009/e 7776008": "none/-500 -500/Apples 20 36 0 farmer -100 -100 0/skippable/addTemporaryActor Peaches 16 32 21 36 0/addTemporaryActor Bear 32 32 20 34 2 true character/addTemporaryActor Junimo 16 32 -50 -50 0/addTemporaryActor Junimo1 16 32 28 36 2/addTemporaryActor Junimo2 16 32 31 35 2/addTemporaryActor Junimo3 16 32 19 23 3/addTemporaryActor Junimo4 16 32 25 25 1/addTemporaryActor Junimo5 16 32 25 27 2/addTemporaryActor Junimo6 16 32 22 6 0/addTemporaryActor Junimo7 16 32 24 5 0/addTemporaryActor Junimo8 16 32 28 6 0/addTemporaryActor Junimo9 16 32 8 6 3/addTemporaryActor Junimo10 16 32 11 7 1/animate Junimo7 false true 200 28 29 30 31/playMusic communityCenter/pause 1200/playSound junimoMeep1/pause 600/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 125/viewport 20 3 true/viewport move 0 2 16000 true/pause 350/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 600/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 500/jump Junimo10/pause 300/playSound junimoMeep1/pause 350/jump Junimo8/pause 300/playSound junimoMeep1/pause 450/playSound junimoMeep1/jump Junimo9/pause 400/playSound junimoMeep1/pause 550/playSound junimoMeep1/pause 450/playSound junimoMeep1/pause 340/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 350/playSound junimoMeep1/pause 500/playSound junimoMeep1/jump Junimo3/pause 350/playSound junimoMeep1/pause 525/playSound junimoMeep1/pause 450/playSound junimoMeep1/pause 300/jump Junimo4/pause 550/playSound junimoMeep1/pause 450/playSound junimoMeep1/pause 450/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 300/jump Junimo5/playSound junimoMeep1/pause 400/playSound junimoMeep1/jump Junimo3/pause 300/playSound junimoMeep1/pause 350/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 500/jump Junimo2/pause 400/playSound junimoMeep1/pause 475/playSound junimoMeep1/pause 450/animate Junimo2 false true 200 24 25 26 27/playSound junimoMeep1/jump Junimo1/pause 300/playSound junimoMeep1/pause 550/playSound junimoMeep1/pause 400/animate Junimo1 false true 1000 0 0 4 4 0 0/animate Junimo5 false true 200 20 21 22 23/warp farmer 20 40/playSound doorClose/pause 600/jump Bear/pause 250/move farmer 0 -2 0/speak Bear \"Hey there.\"/pause 500/faceDirection Apples 1 true/pause 250/faceDirection Apples 2 true/pause 300/faceDirection Peaches 3 true/pause 150/playSound junimoMeep1/jump Apples/pause 100/faceDirection Peaches 2 true/pause 550/playSound junimoMeep1/speak Apples \"Apples-friend here!\"/pause 500/playSound junimoMeep1/pause 300/faceDirection Peaches 3 true/pause 150/playSound junimoMeep1/pause 350/playSound junimoMeep1/pause 100/faceDirection Apples 1 true/pause 300/playSound junimoMeep1/pause 450/playSound junimoMeep1/pause 300/jump Apples/pause 400/playSound junimoMeep1/speak Peaches \"*meep*?\"/pause 250/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/playSound junimoMeep1/speak Apples \"*meep*!!!$1\"/pause 500/faceDirection Peaches 2 true/pause 350/playSound junimoMeep1/pause 200/faceDirection Apples 2 true/pause 300/move Peaches 0 2 3/pause 100/playSound junimoMeep1/faceDirection farmer 1 true/pause 400/playSound junimoMeep1/pause 400/jump Peaches/pause 250/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/emote farmer 32/pause 300/playSound junimoMeep1/pause 200/jump Peaches/pause 300/playSound junimoMeep1/pause 500/playSound junimoMeep1/speak Apples \"Peaches happy to meet Apples-friend!$1\"/pause 500/faceDirection farmer 0 true/pause 300/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 200/jump Apples/pause 350/faceDirection Peaches 0 true/pause 300/playSound junimoMeep1/speak Apples \"Come! 'Mother Starfruit Tree'!$1\"/playSound junimoMeep1/pause 525/playSound junimoMeep1/globalFade/viewport -1000 -1000/changeLocation ApplesRoom/stopAnimation Junimo1/stopAnimation Junimo2/stopAnimation Junimo5/stopAnimation Junimo7/warp Apples 8 6/faceDirection Apples 2 true/warp Peaches 10 6/faceDirection Peaches 2 true/warp farmer 14 8/faceDirection farmer 3 true/warp Bear 14 6/faceDirection Bear 3 true/warp Junimo1 6 10/faceDirection Junimo1 0 true/warp Junimo2 7 8/faceDirection Junimo2 0 true/warp Junimo3 8 8/faceDirection Junimo3 0 true/warp Junimo4 8 9/faceDirection Junimo4 0 true/warp Junimo5 9 9/faceDirection Junimo5 0 true/warp Junimo6 9 11/faceDirection Junimo6 0 true/warp Junimo7 10 8/faceDirection Junimo7 0 true/warp Junimo8 11 9/faceDirection Junimo8 0 true/warp Junimo9 12 7/faceDirection Junimo9 3 true/warp Junimo10 12 6/faceDirection Junimo10 3 true/positionOffset Peaches -30 5/positionOffset Apples 25 2/positionOffset farmer -30 -15/positionOffset Junimo2 -5 -18/positionOffset Junimo3 18 -5/positionOffset Junimo4 -11 5/positionOffset Junimo5 5 -25/positionOffset Junimo6 -15 -27/positionOffset Junimo8 -9 -23/positionOffset Junimo9 -20 6/positionOffset Junimo7 0 10/animate Junimo2 false true 200 28 29 30 31/animate Junimo5 false true 190 29 30 31 28/animate Junimo6 false true 180 28 29 30 31/animate Junimo7 false true 195 30 31 28 29/animate Junimo10 false false 2500 12 12 12 0 0 12/animate Junimo9 false false 2400 12 12 12 8 8 12/playMusic junimoStarSong/viewport 9 8 true/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/jump Junimo3/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/jump Junimo1/pause 400/playSound junimoMeep1/pause 250/jump Junimo1/pause 400/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 300/faceDirection Apples 1 true/pause 200/playSound junimoMeep1/pause 150/faceDirection Peaches 3 true/pause 375/playSound junimoMeep1/pause 200/jump Apples/pause 200/jump Peaches/pause 150/playSound junimoMeep1/pause 450/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 350/faceDirection Apples 2 true/pause 300/playSound junimoMeep1/pause 100/faceDirection Peaches 2 true/pause 500/playSound junimoMeep1/pause 400/animate Apples false true 200 24 25 26 27/pause 250/playSound junimoMeep1/pause 100/animate Peaches false true 200 24 25 26 27/pause 350/playSound junimoMeep1/pause 300/jump Junimo2/playSound junimoMeep1/pause 350/jump Junimo4/pause 100/playSound junimoMeep1/pause 200/jump Junimo6/pause 200/playSound junimoMeep1/pause 100/jump Junimo4/pause 100/playSound junimoMeep1/pause 250/jump Junimo3/pause 250/playSound junimoMeep1/pause 100/jump Junimo8/pause 300/faceDirection Junimo6 1 true/pause 200/playSound junimoMeep1/pause 100/faceDirection Junimo6 2 true/pause 300/playSound junimoMeep1/pause 50/jump Junimo1/animate Junimo6 false true 200 20 21 22 23/pause 200/playSound junimoMeep1/jump Junimo9/pause 300/playSound junimoMeep1/pause 250/jump Junimo8/pause 200/playSound junimoMeep1/pause 150/faceDirection Junimo10 3 true/pause 200/animate Junimo10 false true 200 12 13 14 15/pause 200/playSound junimoMeep1/jump Junimo5/pause 450/playSound junimoMeep1/pause 200/jump Junimo7/pause 350/playSound junimoMeep1/pause 100/globalFade/viewport -1000 -1000/pause 1000/message \"The Junimos shared their special knowledge with me...\"/pause 350/stopMusic/pause 1000/playSound reward/message \"Starfruits I grow will now sell for higher prices!\"/pause 800/end dialogue Apples \"Apples-friend here! Other-friends maybe visit again soon!$1#$b#Apples happy! Apples happy!$1#$e#%Apples jumps with joy.\""
+	"7776009/e 7776008": "none/-500 -500/Apples 13 19 1 farmer -100 -100 0/skippable/addTemporaryActor Peaches 16 32 14 19 3/addTemporaryActor Bear 32 32 13 17 2 true character/addTemporaryActor Junimo2 16 32 12 7 1/addTemporaryActor Junimo3 16 32 7 6 2/addTemporaryActor Junimo4 16 32 10 10 3/addTemporaryActor Junimo5 16 32 20 17 1/addTemporaryActor Junimo6 16 32 19 9 1/addTemporaryActor Junimo7 16 32 21 8 0/addTemporaryActor Junimo8 16 32 10 16 3/addTemporaryActor Junimo9 16 32 18 7 0/addTemporaryActor Junimo10 16 32 23 19 0/animate Junimo7 false true 200 28 29 30 31/positionOffset Junimo4 0 10/positionOffset Junimo2 15 0/positionOffset Junimo7 0 -20/positionOffset Junimo10 0 -24/positionOffset Junimo3 -10 0/animate Junimo3 false true 200 28 29 30 31/playMusic communityCenter/pause 600/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 600/playSound junimoMeep1/pause 505/playSound junimoMeep1/pause 150/viewport 14 3 true/viewport move 0 1 16000 true/pause 350/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 600/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 500/jump Junimo3/pause 300/playSound junimoMeep1/pause 350/jump Junimo8/pause 300/playSound junimoMeep1/pause 450/playSound junimoMeep1/jump Junimo9/pause 400/playSound junimoMeep1/pause 550/playSound junimoMeep1/pause 450/playSound junimoMeep1/pause 340/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 350/playSound junimoMeep1/pause 500/playSound junimoMeep1/jump Junimo3/pause 350/playSound junimoMeep1/pause 525/playSound junimoMeep1/pause 450/playSound junimoMeep1/pause 300/jump Junimo4/pause 550/playSound junimoMeep1/pause 450/playSound junimoMeep1/pause 450/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 300/jump Junimo5/playSound junimoMeep1/pause 400/playSound junimoMeep1/jump Junimo3/pause 300/playSound junimoMeep1/pause 350/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 500/jump Junimo2/pause 400/playSound junimoMeep1/pause 475/playSound junimoMeep1/pause 450/animate Junimo2 false true 200 24 25 26 27/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 550/playSound junimoMeep1/pause 400/animate Junimo5 false true 200 20 21 22 23/warp farmer 14 22/playSound doorClose/pause 500/move farmer 0 -1 0 true/pause 200/jump Bear/pause 700/speak Bear \"Hey there.\"/pause 500/faceDirection Apples 1 true/pause 250/faceDirection Apples 2 true/pause 300/faceDirection Peaches 3 true/pause 150/playSound junimoMeep1/jump Apples/pause 100/faceDirection Peaches 2 true/pause 550/playSound junimoMeep1/speak Apples \"Apples-friend here!\"/pause 500/playSound junimoMeep1/pause 300/faceDirection Peaches 3 true/pause 150/playSound junimoMeep1/pause 350/playSound junimoMeep1/pause 100/faceDirection Apples 1 true/pause 300/playSound junimoMeep1/pause 450/playSound junimoMeep1/pause 300/jump Apples/pause 400/playSound junimoMeep1/speak Peaches \"*meep*?\"/pause 250/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/playSound junimoMeep1/speak Apples \"*meep*!!!$1\"/pause 500/faceDirection Peaches 2 true/pause 350/playSound junimoMeep1/pause 200/faceDirection Apples 2 true/pause 300/move Peaches 0 1 2/pause 100/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 400/jump Peaches/pause 250/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/emote farmer 32/pause 300/playSound junimoMeep1/pause 200/jump Peaches/pause 300/playSound junimoMeep1/pause 500/playSound junimoMeep1/speak Apples \"Peaches happy to meet Apples-friend!$1\"/pause 500/faceDirection farmer 0 true/pause 300/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 200/jump Apples/pause 350/faceDirection Peaches 1 true/pause 300/move Peaches 0 -1 0/faceDirection Peaches 3 true/playSound junimoMeep1/pause 300/faceDirection Peaches 2 true/pause 300/playSound junimoMeep1/speak Apples \"Come! 'Mother Starfruit Tree'!$1\"/playSound junimoMeep1/pause 525/playSound junimoMeep1/globalFade/viewport -1000 -1000/changeLocation ApplesRoom/stopAnimation Junimo2/stopAnimation Junimo5/stopAnimation Junimo7/warp Apples 8 6/faceDirection Apples 2 true/warp Peaches 10 6/faceDirection Peaches 2 true/warp farmer 14 8/faceDirection farmer 3 true/warp Bear 14 6/faceDirection Bear 3 true/warp Junimo2 7 8/faceDirection Junimo2 0 true/warp Junimo3 8 8/faceDirection Junimo3 0 true/warp Junimo4 8 9/faceDirection Junimo4 0 true/warp Junimo5 9 9/faceDirection Junimo5 0 true/warp Junimo6 9 11/faceDirection Junimo6 0 true/warp Junimo7 10 8/faceDirection Junimo7 0 true/warp Junimo8 11 9/faceDirection Junimo8 0 true/warp Junimo9 12 7/faceDirection Junimo9 3 true/warp Junimo10 12 6/faceDirection Junimo10 3 true/positionOffset Peaches -30 5/positionOffset Apples 25 2/positionOffset farmer -30 -15/positionOffset Junimo2 -5 -18/positionOffset Junimo3 18 -5/positionOffset Junimo4 -11 5/positionOffset Junimo5 5 -25/positionOffset Junimo6 -15 -27/positionOffset Junimo8 -9 -23/positionOffset Junimo9 -20 6/positionOffset Junimo7 0 10/animate Junimo2 false true 200 28 29 30 31/animate Junimo5 false true 190 29 30 31 28/animate Junimo6 false true 180 28 29 30 31/animate Junimo7 false true 195 30 31 28 29/animate Junimo9 false false 2400 12 12 12 8 8 12/playMusic junimoStarSong/viewport 9 8 true/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/jump Junimo3/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 250/pause 400/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 300/faceDirection Apples 1 true/pause 200/playSound junimoMeep1/pause 150/faceDirection Peaches 3 true/pause 375/playSound junimoMeep1/pause 200/jump Apples/pause 200/jump Peaches/pause 150/playSound junimoMeep1/pause 450/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 350/faceDirection Apples 2 true/pause 300/playSound junimoMeep1/pause 100/faceDirection Peaches 2 true/pause 500/playSound junimoMeep1/pause 400/animate Apples false true 200 24 25 26 27/pause 250/playSound junimoMeep1/pause 100/animate Peaches false true 200 24 25 26 27/pause 350/playSound junimoMeep1/pause 300/jump Junimo2/playSound junimoMeep1/pause 350/jump Junimo4/pause 100/playSound junimoMeep1/pause 200/jump Junimo6/pause 200/playSound junimoMeep1/pause 100/jump Junimo4/pause 100/playSound junimoMeep1/pause 250/jump Junimo3/pause 250/playSound junimoMeep1/pause 100/jump Junimo8/pause 300/faceDirection Junimo6 1 true/pause 200/playSound junimoMeep1/pause 100/faceDirection Junimo6 2 true/pause 300/playSound junimoMeep1/pause 50/animate Junimo6 false true 200 20 21 22 23/pause 200/playSound junimoMeep1/jump Junimo9/pause 300/playSound junimoMeep1/pause 250/jump Junimo8/pause 200/playSound junimoMeep1/pause 150/faceDirection Junimo10 3 true/pause 200/pause 200/playSound junimoMeep1/jump Junimo5/pause 450/playSound junimoMeep1/pause 200/jump Junimo7/pause 350/playSound junimoMeep1/pause 100/globalFade/viewport -1000 -1000/pause 1000/message \"The Junimos shared their special knowledge with me...\"/pause 1000/playSound reward/message \"Starfruits I grow will now sell for higher prices!\"/pause 800/end dialogue Apples \"Apples-friend here! Other-friends maybe visit again soon!$1#$b#Apples happy! Apples happy!$1#$e#%Apples jumps with joy.\""
 	}
 },
 
@@ -12640,7 +12323,7 @@
 	  //Allows Claire to return home earlier when married to the player
       "Action": "EditMap",
       "Target": "Maps/MovieTheater",
-	  "When": { "HasSeenEvent": "191393", "HasFlag": "ccMovieTheater", "Spouse": "Claire" },
+	  "When": { "HasSeenEvent": "191393", "HasFlag": "ccMovieTheater", "Spouse": "Claire", "Day |contains=22": false, "DayOfWeek |contains=Tuesday, Friday, Saturday": false, "Weather |contains=Rain": false },
       "MapProperties": { "NPCWarp": "13 15 BusStop -1 23 14 15 BusStop -1 23" }
     },
 
@@ -19048,7 +18731,7 @@
 	 "Action": "EditData",
 	 "Target": "strings/schedules/Leah",
 	 "When": { "Season": "Winter", "Season |contains=Spring, Summer, Fall": false },
-	 "Entries": { "CommunityDay_Leah": "Winter is just the perfect season for festivals in a small town.$0Being in here by the fire all cozy with friends and family is a perfect way to wrap up the year.$3" }
+	 "Entries": { "CommunityDay_Leah": "Winter is just the perfect season for festivals in a small town.$0#$b#Being in here by the fire all cozy with friends and family is a perfect way to wrap up the year.$3" }
 },
 {    //LEAH Community Day Schedule - MARRIED
 	 "Action": "EditData",
@@ -19382,7 +19065,7 @@
 	  },
 },
 
-{       //LEWIS SCHEDULE DIALOGUE
+{       //LEWIS DIALOGUE
       "Action": "EditData",
       "Target": "Characters/Dialogue/Lewis",
       "Entries": {
@@ -19416,7 +19099,7 @@
 	 },
 },
 
-{       //MARNIE SCHEDULE DIALOGUE
+{       //MARNIE DIALOGUE
       "Action": "EditData",
       "Target": "Characters/Dialogue/Marnie",
       "Entries": {
@@ -19554,10 +19237,19 @@
 {       //PENNY SCHEDULE - Sam
 	 "Action": "EditData",
 	 "Target": "characters/schedules/Penny",
-	 "When": { "Weather": "Sun" },
+	 "When": { "Weather": "Sun", "HasSeenEvent |contains=5553210": false },
 	 "Entries": {
      "7": "900 Town 94 61 2 penny_read/1330 SamHouse 5 15 1/1600 Saloon 11 20 0/2100 Trailer 4 9 1 penny_sleep",
 	 "21": "900 Town 94 61 2 penny_read/1330 SamHouse 5 15 1/1600 Saloon 11 20 0/2100 Trailer 4 9 1 penny_sleep",
+     },
+},
+{       //PENNY SCHEDULE - Sam
+	 "Action": "EditData",
+	 "Target": "characters/schedules/Penny",
+	 "When": { "Weather": "Sun", "HasSeenEvent": "5553210" },
+	 "Entries": {
+     "7": "900 Town 83 85 2 penny_read/1330 SamHouse 5 15 1/1600 Saloon 11 20 0/2100 Trailer 4 9 1 penny_sleep",
+	 "21": "900 Town 83 85 2 penny_read/1330 SamHouse 5 15 1/1600 Saloon 11 20 0/2100 Trailer 4 9 1 penny_sleep",
      },
 },
 
@@ -20124,7 +19816,7 @@
 	 "When": { "HasSeenEvent |contains=5553210": false },
 	 "Entries": {
 	 "Tue": "700 LeahHouse 12 14 0/930 Forest 112 31 3 leah_sculpt/1240 Forest 113 31 2 leah_draw/1510 Forest 111 36 2/1540 Forest 111 39 0/1610 LeahHouse 6 5 0/1730 LeahHouse 12 14 0/1930 LeahHouse 3 4 2 leah_sleep",
-     "Sun": "620 LeahHouse 12 14 0/640 Forest 112 39 0/800 Forest 109 38 1/820 Forest 112 34 0/840 Forest 109 39 2/900 Town 97 104 3/1130 Town 100 104 2/1200 Town 103 104 2/1230 Town 104 104 2/1300 Town 108 104 2/1330 Town 110 104 0/1400 Town 105 63 3/1800 LeahHouse 18 10 0/2100 LeahHouse 3 4 2 leah_sleep",
+     "Sun": "620 LeahHouse 12 14 0/640 Forest 112 39 0/800 Forest 109 38 1/820 Forest 112 34 0/840 Forest 109 39 2/900 Town 97 104 2/1130 Town 100 104 2/1200 Town 103 104 2/1230 Town 104 104 2/1300 Town 108 104 2/1330 Town 110 104 0/1400 Town 105 63 3/1800 LeahHouse 18 10 0/2100 LeahHouse 3 4 2 leah_sleep",
 	  },
 },
 
@@ -20133,7 +19825,7 @@
 	 "Target": "characters/schedules/Leah",
 	 "When": { "HasSeenEvent": "5553210" },
 	 "Entries": {
-     "Sun": "610 LeahHouse 12 14 0/650 Forest 112 39 0/800 Forest 109 38 1/820 Forest 112 34 0/840 Forest 109 39 2/900 Town 97 104 3/1130 Town 100 104 2/1200 Town 103 104 2/1230 Town 104 104 2/1300 Town 108 104 2/1330 Town 110 104 0/1400 Town 88 103 2/1800 LeahHouse 18 10 0/2100 LeahHouse 3 4 2 leah_sleep",
+     "Sun": "610 LeahHouse 12 14 0/650 Forest 112 39 0/800 Forest 109 38 1/820 Forest 112 34 0/840 Forest 109 39 2/900 Town 97 104 2/1130 Town 100 104 2/1200 Town 103 104 2/1230 Town 104 104 2/1300 Town 108 104 2/1330 Town 110 104 0/1400 Town 88 103 2/1800 LeahHouse 18 10 0/2100 LeahHouse 3 4 2 leah_sleep",
 	  },
 },
 
@@ -22208,7 +21900,7 @@
 		 "AuroraVineyard.5": "The light switch doesn't work.",
 		 "AuroraVineyard.6": "These wooden logs are rotting away.",
 		 "AuroraVineyard.7": "Empty bottles? Someone's been drinking here recently.",
-		 "AuroraVineyard.8": "The table looks fairly new.",
+		 "AuroraVineyard.8": "The table looks fairly new. Someone has been here recently.",
 		 "AuroraVineyard.9": "The spilled contents of this Joja beverage are seeping into the floor.",
 		 "AuroraVineyard.10": "The cellar is blocked by vines. You can't enter.",
 		 "AuroraVineyard.11": "This window isn't broken or boarded up.",
@@ -22218,13 +21910,18 @@
 		 "AuroraVineyard.15": "It's a moldy pillow.",
 		 "AuroraVineyard.16": "It's a wooden bat.",
 		 //Hmmmmm... something happened here.
-		 "AuroraVineyard.17": "\"AURORA VINEYARD - BANKRU-- DUE TO MAR--T CR---!\"^^\"Stardew Vall-- --- ------ the ef-ec-s --- ------ ---- ---lowered dem-nd of cro-s. Local fa----- are unab-- -- fi-- vend-- or ------ to sell --------. There's an expected -------- in ---- ---- ----- --- --- rea--- ---- -------- -- ------. The Ferngill Gov----- has admi----ed a ----- to hel- fa-----. Mayor Le--- ---- ---- farm-r- of St--de- ---ley ----- - ------- ---- financial insec---ty----- ---- -- ---- News of tra----- and lo---- --- ---- from Grample--- ------- ------- -- -exports to other reg---- -- --- ------ --- ----- It is exp---ed many wil- follow...\"^^You're unable to read the rest.",
+		 "AuroraVineyard.17": "\"AURORA VINEYARD - BANKRU-- DUE TO MAR--T CR---!\"^^\"Stardew Vall-- --- ------ the ef-ec-s --- ------ ---- ---lowered dem-nd of cro-s. Local fa----- are unab-- -- fi-- vend-- or ------ to sell --------. There's an expected -------- in ---- ---- ----- --- --- rea--- ---- -------- -- ------. The Ferngill Gov----- has admi----ed a ----- to hel- fa-----. Mayor Le--- ---- ---- farm-r- of St--de- ---ley ----- - ------- ---- financial insec---ty----- ---- -- ---- News of tra----- and lo---- --- ---- from Grample--- ------- ------- -- -exports to other reg---- -- --- ------ --- ----- It is exp---ed many wil- follow...\"^^C.S REUTERS COMPANY",
 		 "AuroraVineyard.18": "The bright golden plaque is labeled:^^\"-COMMUNITY CENTER-\"",
 		 "AuroraVineyard.19": "A moldy shirt.",
 		 "AuroraVineyard.20": "These plates have plants growing on them.",
 		 "AuroraVineyard.21": "A musty and decaying couch.",
 		 "AuroraVineyard.22": "The TV's screen is smashed in.",
-		 "AuroraVineyard.23": "There are spiders living in a drawer. One waves to you.",
+		 "AuroraVineyard.23": "There are spiders living in this shelf. One waves to you.",
+		 "AuroraVineyard.24": "The couch smells very musty.",
+		 "AuroraVineyard.25": "The plastic bag has a 'JOJA' logo on it. It hasn't been here long.",
+		 "AuroraVineyard.26": "The barrel is empty, and slowly rotting away.",
+		 "AuroraVineyard.27": "It's a soggy moving box. Nothing is in it.",
+		 "AuroraVineyard.28": "???",
 		 "OliviaCellar.1": "Olivia's radio.",
 		 "OliviaCellar.2": "There are pins locating every vineyard in the Ferngill Republic.  Blue Moon Vineyard is on here too.",
 		 "OliviaCellar.3": "It's a bunch of expensive foreign wine.",
@@ -22399,10 +22096,14 @@
 		 "ArchaeologyHouseSVE.12": "\"Fishing Guide for Beginners\"",
 		 "ArchaeologyHouseSVE.13": "\"Basic Combat Stances - VOL I\"",
 		 "ArchaeologyHouseSVE.14": "\"Farming for Sustainability\"",
-		 "BlacksmithSVE.1": "It's Clint's workbench.",
-		 "BlacksmithSVE.2": "There's a bunch of coal in this box.",
+		 "BlacksmithSVE.1": "It's a huge geode.",
+		 "BlacksmithSVE.2": "Coal used to stoke the fires.",
 		 "BlacksmithSVE.3": "Clint's storage chest is locked.",
-		 "BlacksmithSVE.4": "Mmm... smells good.",
+		 "BlacksmithSVE.4": "The barrel is filled with various ores.",
+		 "BlacksmithSVE.5": "Iron ingots stacked on top of each other.",
+		 "BlacksmithSVE.6": "There's copper ingots and a single gold ingot.",
+		 "BlacksmithSVE.7": "Decorative ore nodes that came from a volcano.",
+		 "BlacksmithSVE.8": "A bunch of paperwork containing shipment details.",
          "HaleyHouseSVE.1": "'NO MESSAGES'",
 		 "HaleyHouseSVE.2": "\"Channeling Your Cosmic Energy - Yoba Studies\"",
 		 "HaleyHouseSVE.3": "It's a flat-screen TV.",
