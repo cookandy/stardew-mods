@@ -57,7 +57,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Mail Framework Mod](https://www.nexusmods.com/stardewvalley/mods/1536) | Framework to use the in game mailbox. | `1.10.0` | |
 | [Mod Update Menu](https://www.nexusmods.com/stardewvalley/mods/2536) | Adds an in game menu to the title screen letting you know if you need to update your mods or SMAPI. | `1.6.0` | |
 | [Non-Destructive NPCs](https://www.nexusmods.com/stardewvalley/mods/5176) | Makes NPCs not destroy objects placed by the player in their paths. | `1.0.0` | |
-| [NPC Map Locations](https://www.nexusmods.com/stardewvalley/mods/239) | Shows the locations of NPC and farmers on the map page and on a minimap. | `2.5.12-alpha` | |
+| [NPC Map Locations](https://www.nexusmods.com/stardewvalley/mods/239) | Shows the locations of NPC and farmers on the map page and on a minimap. | `2.6.0` | |
 | [PPJA More Trees](https://www.nexusmods.com/stardewvalley/mods/1671) | Adds more tree types. | `1.6.10` | |
 | [PyTK](https://www.nexusmods.com/stardewvalley/mods/1726) | Toolkit for Smapi Mods. | `1.21.0` | |
 | [Quest Framework](https://www.nexusmods.com/stardewvalley/mods/6414) | Framework for work with quests like create custom quests, define custom quest types and handle quests. | `1.3.4` | |
@@ -68,7 +68,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [SpaceCore](https://www.nexusmods.com/stardewvalley/mods/1348) | Required by a few mods. | `1.5.5` | |
 | [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) | This expansion features 26 new locations, 160 new character events, 12 new NPCs, a new village, 800 location messages, and more. | `1.12.13` | Some options changed. See [wiki](https://github.com/cookandy/stardew-mods/wiki/SVE)|
 | [StardewHack](https://www.nexusmods.com/stardewvalley/mods/3213) | Library mod used by my other mods. Doesn't do much on its own. | `3.0` | |
-| [The Love of Cooking](https://www.nexusmods.com/stardewvalley/mods/6830) | A suite of changes all about cooking! | `1.0.10` | |
+| [The Love of Cooking](https://www.nexusmods.com/stardewvalley/mods/6830) | A suite of changes all about cooking! | `1.0.11-prerelease.1` | |
 | [TMXL Map Toolkit](https://www.nexusmods.com/stardewvalley/mods/1820) | Toolkit for adding/editing/replacing maps and creating buildables. | `1.22.0` | |
 | [Tractor Mod](https://www.nexusmods.com/stardewvalley/mods/1401) | Buy a tractor to more efficiently work with crops, clear twigs and rocks, etc. | `4.13.3` | |
 | [Tree Transplant](https://www.nexusmods.com/stardewvalley/mods/1342) | Used to transplant trees on your farm. | `1.0.13` | |
