@@ -10,5 +10,6 @@
   "GotFood": "Получил(-а) еду: {{value}}",
   "Friendship": "Дружба: {{value}}",
   "AteEnough": "{{name}} не голоден/голодна.",
-  "AteFood": "{{name}} съел {{foodName}}."
+  "AteFood": "{{name}} съел {{foodName}}.",
+  "HorseWarning": "You cannot do that while riding a horse!"
 }

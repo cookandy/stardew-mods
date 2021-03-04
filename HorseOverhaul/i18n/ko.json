@@ -10,5 +10,6 @@
   "GotFood": "먹이 주기: {{value}}",
   "Friendship": "우정도: {{value}}",
   "AteEnough": "{{name}}은(는) 오늘은 충분히 먹었습니다.",
-  "AteFood": "{{name}}이(가) {{foodName}}을(를) 먹었습니다."
+  "AteFood": "{{name}}이(가) {{foodName}}을(를) 먹었습니다.",
+  "HorseWarning": "You cannot do that while riding a horse!"
 }

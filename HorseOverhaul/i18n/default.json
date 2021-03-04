@@ -10,5 +10,6 @@
   "GotFood": "Got food: {{value}}",
   "Friendship": "Friendship: {{value}}",
   "AteEnough": "{{name}} ate enough for today.",
-  "AteFood": "{{name}} ate your {{foodName}}."
+  "AteFood": "{{name}} ate your {{foodName}}.",
+  "HorseWarning": "You cannot do that while riding a horse!"
 }

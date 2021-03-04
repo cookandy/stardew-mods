@@ -10,5 +10,6 @@
   "GotFood": "食べもの：{{value}}",
   "Friendship": "なつき度：{{value}}",
   "AteEnough": "{{name}}はもうお腹いっぱい！",
-  "AteFood": "{{name}}は{{foodName}}を食べた。"
+  "AteFood": "{{name}}は{{foodName}}を食べた。",
+  "HorseWarning": "You cannot do that while riding a horse!"
 }

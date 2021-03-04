@@ -37,7 +37,6 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Chests Anywhere](https://www.nexusmods.com/stardewvalley/mods/518) | Access your chests, dressers, fridge, shipping bin, and Junimo huts from anywhere and organise them your way. | `1.20.9` | |
 | [Climates of Ferngill](https://www.nexusmods.com/stardewvalley/mods/604) | This mod expands the climate system to be more robust, adding custom weathers. | 2.0.0-beta.2 | |
 | [CJB Cheats Menu](https://www.nexusmods.com/stardewvalley/mods/4) | A simple in-game cheats menu with lots of cheats. | `1.27.0` | |
-| [CJB Item Spawner](https://www.nexusmods.com/stardewvalley/mods/93) | An easy-to-use in-game item spawner menu. | `2.0.2` | |
 | [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) | Loads content packs that change the game's images and data without replacing XNB files. | `1.20.0` | |
 | [Custom NPC Exclusions](https://www.nexusmods.com/stardewvalley/mods/7089) | Allows other mods to exclude NPCs from certain quests and events. | `1.3.0` | |
 | [DeepWoods](https://www.nexusmods.com/stardewvalley/mods/2571) | Adds an explorable forest to the secret woods. | `1.9.6-beta` | Modified to be slightly easier. See [wiki](https://github.com/cookandy/stardew-mods/wiki/DeepWoods)|
@@ -50,14 +49,14 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) | A config menu framework for mods. | `1.2.1` | |
 | [Gift Taste Helper](https://www.nexusmods.com/stardewvalley/mods/229) | Displays a helpful tooltip that shows an NPC's favourite gifts when hovering over their birthday on the calendar or the social page. | `2.9.1` | |
 | [Grandpa's Farm](https://www.nexusmods.com/stardewvalley/mods/3753) | Grandpa's Farm for [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753). | `1.12.6` | |
-| [Horse Overhaul](https://www.nexusmods.com/stardewvalley/mods/7911) | Make the horse the way it should be, thin, fast and useful. | `1.2.5` | |
+| [Horse Overhaul](https://www.nexusmods.com/stardewvalley/mods/7911) | Make the horse the way it should be, thin, fast and useful. | `1.3` | |
 | [Imaged](https://www.nexusmods.com/stardewvalley/mods/7218) | Provides non-interactive image recoloring. | `1.1` | |
 | [JSON Assets](https://www.nexusmods.com/stardewvalley/mods/1720) | Successor to Custom Crops. | `1.7.5` | |
 | [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541) | See live info about whatever's under your cursor. | `1.32.4` | Changed hotkey. See [wiki](https://github.com/cookandy/stardew-mods/wiki/LookupAnything) |
 | [Mail Framework Mod](https://www.nexusmods.com/stardewvalley/mods/1536) | Framework to use the in game mailbox. | `1.10.0` | |
 | [Mod Update Menu](https://www.nexusmods.com/stardewvalley/mods/2536) | Adds an in game menu to the title screen letting you know if you need to update your mods or SMAPI. | `1.6.0` | |
 | [Non-Destructive NPCs](https://www.nexusmods.com/stardewvalley/mods/5176) | Makes NPCs not destroy objects placed by the player in their paths. | `1.0.0` | |
-| [NPC Map Locations](https://www.nexusmods.com/stardewvalley/mods/239) | Shows the locations of NPC and farmers on the map page and on a minimap. | `2.6.0` | |
+| [NPC Map Locations](https://www.nexusmods.com/stardewvalley/mods/239) | Shows the locations of NPC and farmers on the map page and on a minimap. | `2.6.2` | |
 | [PPJA More Trees](https://www.nexusmods.com/stardewvalley/mods/1671) | Adds more tree types. | `1.6.10` | |
 | [PyTK](https://www.nexusmods.com/stardewvalley/mods/1726) | Toolkit for Smapi Mods. | `1.21.0` | |
 | [Quest Framework](https://www.nexusmods.com/stardewvalley/mods/6414) | Framework for work with quests like create custom quests, define custom quest types and handle quests. | `1.3.4` | |

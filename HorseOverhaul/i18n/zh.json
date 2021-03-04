@@ -10,5 +10,6 @@
   "GotFood": "得到喂食：{{value}}",
   "Friendship": "友好值：{{value}}",
   "AteEnough": "{{name}}今天吃的够多了。",
-  "AteFood": "{{name}}吃下了你喂的{{foodName}}。"
+  "AteFood": "{{name}}吃下了你喂的{{foodName}}。",
+  "HorseWarning": "You cannot do that while riding a horse!"
 }
