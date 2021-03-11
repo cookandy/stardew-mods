@@ -2,6 +2,7 @@
   "BuildingsReplaced": "Barn, Coop, Desert Obelisk, Earth Obelisk, Fish Pond, Gold Clock, Greenhouse, House, Island Obelisk, Junimo Hut, Log Cabin, Mill, Plank Cabin, Shed, Silo, Slime Hutch, Stable, Stone Cabin, Water Obelisk, Well",
   "IslandBuildingsReplaced": "House, Farm Obelisk",
   "houseroof": "clean",
+  "greenhouseoption": "1",
   "greenhouseroof": "flowers",
   "stableoption": "1",
   "stableroof": "flowers",
