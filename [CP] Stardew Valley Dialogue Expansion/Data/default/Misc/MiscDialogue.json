@@ -74,14 +74,14 @@
         "Entries":
 		{
 		"Birdie0": "I never thought I'd see a new face on this island, dear. But I'm glad you're here!",
-        "Birdie1": "It's rumored that long ago, a great civilization of dwarves lived on this very island.#$e#Have you been inside the volcano? It's filled with the ruins of their strange machines...",
+        "Birdie1": "It's rumored that long ago, a great civilization of dwarves lived on this very island.#$b#Have you been inside the volcano? It's filled with the ruins of their strange machines...",
         "Birdie2": "If you're ever feeling queasy in the stomach, a bite of ginger does wonders, dear...",
         "Birdie3": "Have you been to the secret shrine in the jungle? The flowers there smell lovely... It's one of my favorite spots on the island.$h",
         "Birdie4": "Every morning for breakfast, I have a bowl of poi and a glass of freshly squeezed mango juice. It keeps me young!",
         "Birdie5": "I walk the beach every day to see if anything new has washed ashore. There's a lot floating around out there!",
         "Birdie6": "My hut may be small, but it's more than enough for what I need. And best of all, I built it myself.",
         "Birdie7": "Got someone special waiting for you back on the mainland? You make sure you hold 'em close!",
-		"Birdie8": "Why sure, I'll spend the rest of my days on this island. It's become my happy place.#$e#Have you found one of your own?$h",
+		"Birdie8": "Why sure, I'll spend the rest of my days on this island. It's become my happy place.#$b#Have you found one of your own?$h",
 		"Birdie9": "Should be a good day for a hike. You'll see all sorts of little critters if you keep your eyes open.",
 		"Birdie10": "When I was just a tiny little girl, I wanted to be a mermaid. Looks like I came pretty close! Heh heh...",
 		"Birdie11": "The sand feels good between the toes, wouldn't you say?",
@@ -89,7 +89,7 @@
         "Birdie13": "I don't know if you believe in ocean spirits, but whenever I talk to them, the fish always bite a bit more.",
 		"Birdie14": "The weather is warm and lovely year round, my dear... it feels perfect for me bones...",
 		"Birdie15": "Fruit, fish, and foraged food... It's a good diet! I feel as healthy as ever.",
-        "Birdie16": "You've seen those Joja cargo barges, huh? I've seen one come near the island once and then turn around.#$e#Probably they were lost.",
+        "Birdie16": "You've seen those Joja cargo barges, huh? I've seen one come near the island once and then turn around.#$b#Probably they were lost.",
 		"Birdie17": "My husband and I never had any children. What an adventure that could have been...!#$e#There are plenty of lives I could have lived. Sometimes I wonder about those...$s#$b#...But only for a little while. It takes a bit of effort to be glad for what was.",
         "Birdie18": "Hello, dear... you look healthy and in good spirits today!$h",
 		"Birdie19": "Have you seen the little banana altar in the jungle? If I had a banana I'd set it there and see what happens... heh heh...$h",
@@ -98,7 +98,7 @@
         "Birdie23": "I've been here so long, I can't even hear the ocean anymore...",
         "Birdie24": "I think I'll take a stroll over to the secret shrine later. I have much to be thankful for each day.",
 		"Birdie25": "Can you think of a happier place than this?#$b#I traveled so many places when I was young, I think I've seen all I need!",
-		"Birdie26": "You do seem so dedicated to caring for living things. It takes a gentle soul to do that.#$e#But I sense you've got a tougher side, too, hmm? How many times have you been in that volcano, hmm?$h",
+		"Birdie26": "You do seem so dedicated to caring for living things. It takes a gentle soul to do that.#$b#But I sense you've got a tougher side, too, hmm? How many times have you been in that volcano, hmm?$h",
 		"Birdie27": "The seasons must be changing soon on the mainland, huh? Which one are you going into, now?",
 		"Birdie28": "It's a full moon, tonight... Whether your fortune be good or bad, be on the alert, my dear... The spirits are restless.",		}
 	}	

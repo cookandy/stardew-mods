@@ -12,8 +12,8 @@
   "Resort": "I reckon there's good forage on this island if you look hard enough.$0#$e#Huh? What in the name of Yoba is a 'golden walnut'?$2",
  
   //SPECIFIC MAP AND COORDINATES DIALOGUE
-  "AndyHouse_9_6": "What in Yoba's name are ya doin'!? I'm in bed! Leave now!$7",
-  "AndyHouse6_9_6": "Tryin' to sleep. Come back later, farmer.$5",
+  "Custom_AndyHouse_9_6": "What in Yoba's name are ya doin'!? I'm in bed! Leave now!$7",
+  "Custom_AndyHouse6_9_6": "Tryin' to sleep. Come back later, farmer.$5",
   "ForestWest_58_22": "Sorry, farmer. Not in a talkin' mood.$0",
   "SeedShop_37_22": "I didn't always used to believe in Yoba. I came to my senses when I was in dire need of help.$2#$b#Yoba saved me. Leas' I can do is show respect.$1",
   "JojaMart": "Joja has the best and cheapest products. If I shopped at Pierre's I would go out of business.$2",

@@ -8,7 +8,10 @@
   "Water": true,
   "Feeding": true,
   "PetFeeding": true,
+  "AllowMultipleFeedingsADay": false,
   "HorseMenuKey": "H",
   "PetMenuKey": "P",
+  "AlternateSaddleBagAndFeedKey": "LeftStick",
+  "DisableMainSaddleBagAndFeedKey": false,
   "DisableStableSpriteChanges": false
 }

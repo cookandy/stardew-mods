@@ -14,6 +14,8 @@
 					"Description": "List of all island buildings replaced by this mod. Delete a name to disable my retexture"}, 
 		"houseroof":{"AllowValues": "clean, flowers",
 					"Default": "flowers"},
+		"greenhouseoption":{"AllowValues": "1, 2, 3",
+					"Default": "1"},
 		"greenhouseroof":{"AllowValues": "clean, flowers",
 					"Default": "flowers"},
 		"stableoption":{"AllowValues": "1, 2, 3, 4",
@@ -132,10 +134,18 @@
 		{
 		"Action": "EditImage",
 		"Target": "Buildings/Greenhouse",
-		"FromFile": "assets/Greenhouses/1/{{greenhouseroof}}/{{season}}.png",
-			"FromArea": { "X": 0, "Y": 0, "Width": 112, "Height": 320 },
-			"ToArea": { "X": 0, "Y": 0, "Width": 112, "Height": 320 },
+		"FromFile": "assets/Greenhouses/{{greenhouseoption}}/{{greenhouseroof}}_{{season}}.png",
 			"When": { "BuildingsReplaced": "Greenhouse" },
+		},
+		{
+		"LogName": "Greenhouse ruins shadow fix",
+		"Action": "EditImage",
+		"Target": "Buildings/Greenhouse",
+		"FromFile": "assets/Greenhouses/{{greenhouseoption}}/{{greenhouseroof}}_{{season}}.png",
+			"FromArea": { "X": 112, "Y": 0, "Width": 128, "Height": 144 },
+			"ToArea": { "X": 112, "Y": 144, "Width": 128, "Height": 144 },
+			"When": { "BuildingsReplaced": "Greenhouse",
+					"HasFlag |contains=ccPantry": false },
 		},
 //slime hutch
         {
@@ -587,7 +597,7 @@
 		{
         "Action": "EditImage",
         "Target": "LooseSprites/Cursors",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/base/cl_{{season}}_{{ShipBinExtra |contains=steel}}_{{ShipBinExtra |contains=moss}}.png",
+        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/base/cl_{{ShipBinExtra |contains=trellis}}.png",
 			"ToArea": { "X": 134, "Y": 226, "Width": 390, "Height": 25 },
 		"Enabled": "{{ShipBinReplace}}",
         },
@@ -596,6 +606,13 @@
         "Target": "LooseSprites/Cursors",
         "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/base/ca.png",
 			"ToArea": { "X": 526, "Y": 218, "Width": 100, "Height": 22 },
+		"Enabled": "{{ShipBinReplace}}",
+        },
+		{
+        "Action": "EditImage",
+        "Target": "Maps/island_tilesheet_1",
+        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/base/o.png",
+			"ToArea": { "X": 192, "Y": 720, "Width": 32, "Height": 32 },
 		"Enabled": "{{ShipBinReplace}}",
         },
 	//trellis
@@ -616,6 +633,15 @@
 			"When": { "ShipBinExtra": "trellis" },
         "Enabled": "{{ShipBinReplace}}",
 		},
+		{
+        "Action": "EditImage",
+			"PatchMode": "Overlay",
+        "Target": "Maps/island_tilesheet_1",
+        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/trellis/o.png",
+			"ToArea": { "X": 192, "Y": 720, "Width": 32, "Height": 32 },
+			"When": { "ShipBinExtra": "trellis" },
+		"Enabled": "{{ShipBinReplace}}",
+        },
 	//metal
 		{
         "Action": "EditImage",
@@ -643,29 +669,29 @@
 			"When": { "ShipBinExtra": "steel" },
         "Enabled": "{{ShipBinReplace}}",
 		},
+		{
+        "Action": "EditImage",
+			"PatchMode": "Overlay",
+        "Target": "Maps/island_tilesheet_1",
+        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/steel/o.png",
+			"ToArea": { "X": 192, "Y": 720, "Width": 32, "Height": 32 },
+			"When": { "ShipBinExtra": "steel" },
+		"Enabled": "{{ShipBinReplace}}",
+        },
 	//moss
 		{
         "Action": "EditImage",
 			"PatchMode": "Overlay",
         "Target": "Buildings/Shipping Bin",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/moss/b_{{season}}.png",
+        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/moss/b_{{season}}_{{ShipBinExtra |contains=trellis}}.png",
 			"When": { "ShipBinExtra": "moss" },
         "Enabled": "{{ShipBinReplace}}",
 		},
 		{
         "Action": "EditImage",
 			"PatchMode": "Overlay",
-        "Target": "Buildings/Shipping Bin",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/moss/b_t_{{season}}.png",
-			"When": { "ShipBinExtra": "moss",
-					"ShipBinExtra": "trellis" },
-        "Enabled": "{{ShipBinReplace}}",
-		},
-		{
-        "Action": "EditImage",
-			"PatchMode": "Overlay",
         "Target": "Maps/{{season}}_outdoorsTileSheet",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/moss/o_{{season}}.png",
+        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/moss/o_{{season}}_{{ShipBinExtra |contains=trellis}}.png",
 			"ToArea": { "X": 192, "Y": 224, "Width": 32, "Height": 32 },
 			"When": {  "ShipBinExtra": "moss" },
         "Enabled": "{{ShipBinReplace}}",
@@ -673,13 +699,12 @@
 		{
         "Action": "EditImage",
 			"PatchMode": "Overlay",
-        "Target": "Maps/{{season}}_outdoorsTileSheet",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/moss/o_t_{{season}}.png",
-			"ToArea": { "X": 192, "Y": 224, "Width": 32, "Height": 32 },
-			"When": { "ShipBinExtra": "moss",
-					"ShipBinExtra": "trellis" },
-        "Enabled": "{{ShipBinReplace}}",
-		},
+        "Target": "Maps/island_tilesheet_1",
+        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/moss/o_spring_{{ShipBinExtra |contains=trellis}}.png",
+			"ToArea": { "X": 192, "Y": 720, "Width": 32, "Height": 32 },
+			"When": {  "ShipBinExtra": "moss" },
+		"Enabled": "{{ShipBinReplace}}",
+        },
 	//flowers
 		{
         "Action": "EditImage",
@@ -698,6 +723,15 @@
 			"When": { "ShipBinExtra": "flowers" },
         "Enabled": "{{ShipBinReplace}}",
 		},
+		{
+        "Action": "EditImage",
+			"PatchMode": "Overlay",
+        "Target": "Maps/island_tilesheet_1",
+        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/flowers/o_spring.png",
+			"ToArea": { "X": 192, "Y": 720, "Width": 32, "Height": 32 },
+			"When": {  "ShipBinExtra": "flowers" },
+		"Enabled": "{{ShipBinReplace}}",
+        },
 	//snow
 		{
         "Action": "EditImage",
@@ -768,85 +802,6 @@
         "Target": "Maps/Farm Obelisk",
         "FromFile": "assets/Island/Farm Obelisk.png",
 			"When": { "IslandBuildingsReplaced |contains=Farm Obelisk": true },
-        },
-	//Island Shipping Bin + lid summer overwrite
-		//base
-		{
-        "Action": "EditImage",
-        "Target": "Maps/island_tilesheet_1",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/base/o.png",
-			"ToArea": { "X": 192, "Y": 720, "Width": 32, "Height": 32 },
-		"Enabled": "{{ShipBinReplace}}",
-        },
-		{
-        "Action": "EditImage",
-        "Target": "LooseSprites/Cursors",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/base/cl_spring_{{ShipBinExtra |contains=steel}}_{{ShipBinExtra |contains=moss}}.png",
-			"ToArea": { "X": 134, "Y": 226, "Width": 390, "Height": 25 },
-			"When": { "LocationContext": "Island" },
-		"Enabled": "{{ShipBinReplace}}",
-		"Update": "OnLocationChange",
-        },
-		//metal
-		{
-        "Action": "EditImage",
-			"PatchMode": "Overlay",
-        "Target": "Maps/island_tilesheet_1",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/steel/o.png",
-			"ToArea": { "X": 192, "Y": 720, "Width": 32, "Height": 32 },
-			"When": { "ShipBinExtra": "steel" },
-		"Enabled": "{{ShipBinReplace}}",
-        },
-		{
-        "Action": "EditImage",
-			"PatchMode": "Overlay",
-        "Target": "LooseSprites/Cursors",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/steel/cl.png",
-			"ToArea": { "X": 134, "Y": 226, "Width": 390, "Height": 25 },
-			"When": { "ShipBinExtra": "steel",
-					"LocationContext": "Island" },
-        "Enabled": "{{ShipBinReplace}}",
-		"Update": "OnLocationChange",
-		},
-		//trellis
-		{
-        "Action": "EditImage",
-			"PatchMode": "Overlay",
-        "Target": "Maps/island_tilesheet_1",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/trellis/o.png",
-			"ToArea": { "X": 192, "Y": 720, "Width": 32, "Height": 32 },
-			"When": { "ShipBinExtra |contains=trellis": true },
-		"Enabled": "{{ShipBinReplace}}",
-        },
-		//moss
-		{
-        "Action": "EditImage",
-			"PatchMode": "Overlay",
-        "Target": "Maps/island_tilesheet_1",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/moss/o_spring.png",
-			"ToArea": { "X": 192, "Y": 720, "Width": 32, "Height": 32 },
-			"When": {  "ShipBinExtra": "moss" },
-		"Enabled": "{{ShipBinReplace}}",
-        },
-		{
-        "Action": "EditImage",
-			"PatchMode": "Overlay",
-        "Target": "Maps/island_tilesheet_1",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/moss/o_t_spring.png",
-			"ToArea": { "X": 192, "Y": 720, "Width": 32, "Height": 32 },
-			"When": { "ShipBinExtra": "moss",
-					"ShipBinExtra": "trellis" },
-		"Enabled": "{{ShipBinReplace}}",
-        },
-		//flowers
-		{
-        "Action": "EditImage",
-			"PatchMode": "Overlay",
-        "Target": "Maps/island_tilesheet_1",
-        "FromFile": "assets/Outdoors/Shipping bin/{{ShipBinoption}}/flowers/o_spring.png",
-			"ToArea": { "X": 192, "Y": 720, "Width": 32, "Height": 32 },
-			"When": {  "ShipBinExtra": "flowers" },
-		"Enabled": "{{ShipBinReplace}}",
         },
 	]
 }

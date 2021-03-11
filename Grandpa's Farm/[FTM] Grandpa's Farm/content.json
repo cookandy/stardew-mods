@@ -110,7 +110,7 @@
           418
         ],
         "UniqueAreaID": "Grove spawns",
-        "MapName": "GrandpasGrove",
+        "MapName": "Custom_GrandpasGrove",
         "MinimumSpawnsPerDay": 4,
         "MaximumSpawnsPerDay": 6,
         "IncludeTerrainTypes": [
@@ -228,7 +228,7 @@
         "StartingSpawnChance": null,
         "LevelTenSpawnChance": null,
         "UniqueAreaID": "Ore spawns",
-        "MapName": "FarmCliff",
+        "MapName": "Custom_FarmCliff",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
         "IncludeTerrainTypes": [

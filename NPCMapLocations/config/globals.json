@@ -1,5 +1,6 @@
 {
   "DEBUG_MODE": false,
+  "MapModId": "",
   "MenuKey": "Tab",
   "TooltipKey": "Space",
   "NameTooltipMode": 1,

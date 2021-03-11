@@ -42,10 +42,11 @@
   "joja_followup": "$p 8001#It was for you too, sweetie. I'm happy we were both able to move on.$3|It was for you too, sweetie. I'm happy we were both able to move on.$3",
   
   //SPECIFIC MAP AND COORDINATES DIALOGUE
-  "JenkinsHouse_20_9": "%Olivia is concentrating on her yoga form.",
-  "JenkinsHouse_19_5": "I'm in bed, dear. Leave at once!$5",
-  "JenkinsHouse_5_8": "@, I'm using the restroom! Leave!$5",
+  "Custom_JenkinsHouse_20_9": "%Olivia is concentrating on her yoga form.",
+  "Custom_JenkinsHouse_19_5": "I'm in bed, dear. Leave at once!$5",
+  "Custom_JenkinsHouse_5_8": "@, I'm using the restroom! Leave!$5",
   "SeedShop_21_20": "%Olivia is concentrating on her yoga form.",
+  "Custom_SophiaHouse_6_22": "Hi, sweetie! I'm putting in an order to Sophia right now.$3",
 
   //SPRING AND GENERAL DIALOGUE
   "spring_1": "I'm happy it's spring again. I was growing very weary of the winter weather.$1",
@@ -140,7 +141,7 @@
   "fall_Thu": "Jodi baked me an apple pie yesterday. It was delicious! I need to make her something special too.$1",
   "fall_Thu4": "A silent auction is being held in Zuzu City today.$0#$b#I'm always on the lookout for more Gotoran china. It's quite exquisite.$1",
   "fall_Thu8": "Jodi's been stressed lately. I'm going to offer to watch Vincent for a day so she can take a break.$0#$e#Let me know if I can ever help you relax a little, @. I know you work hard.$3",
-  "Fall_Fri": "Fall is just the most marvelous season for fashion, don't you think, @?$3#$b#Dresses, jackets, layers...so many possibilities. I love it!$3",
+  "fall_Fri": "Fall is just the most marvelous season for fashion, don't you think, @?$3#$b#Dresses, jackets, layers...so many possibilities. I love it!$3",
   "fall_Fri6": "Do you ever go shopping to expand your wardrobe, sweetie?$0#$b#I know a few places where you can get quality clothes at a great bargain, if you ever want to go together.$3",
   "fall_Sat": "Marlon walked into the saloon with the wizard last night and they both went to the back room.$6#$b#A person wearing a brown cloak joined them, but their face was covered.$0#$e#I wonder what on earth was going on back there...$6",
   "fall_Sat6": "Such a chilly fall day. Want to join me in the saloon later for a little pick-me-up, sweetie?$3",

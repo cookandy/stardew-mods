@@ -1,378 +1,7 @@
 ﻿{
   "loadLate": true,
-  
-  "addMaps": [ 
-  
-    //NEW LOCATIONS  
-    {
-      "name": "BlueMoonVineyard",
-      "file": "assets/Maps/BlueMoonVineyard.tbin"
-    },
-    {
-      "name": "TownEast",
-      "file": "assets/Maps/TownEast.tbin"
-    },
-    {
-      "name": "ShearwaterBridge",
-      "file": "assets/Maps/ShearwaterBridge.tbin"
-    },
-    {
-      "name": "ForestWest",
-      "file": "assets/Maps/ForestWest.tbin"
-    },
-	{
-      "name": "AuroraVineyard",
-      "file": "assets/Maps/AuroraVineyard.tbin"
-    },
-	{
-      "name": "SpriteSpring",
-      "file": "assets/Maps/SpriteSpring.tbin"
-    },
-    {
-      "name": "LostWoods",
-      "file": "assets/Maps/LostWoods.tbin"
-    },
-    {
-      "name": "MarnieShed",
-      "file": "assets/Maps/MarnieShed.tbin"
-    },
-    {
-      "name": "AndyHouse",
-      "file": "assets/Maps/AndyHouse.tbin"
-    },
-	{
-      "name": "AndyCellar",
-      "file": "assets/Maps/AndyCellar.tbin"
-    },
-    {
-      "name": "SusanHouse",
-      "file": "assets/Maps/SusanHouse.tbin"
-    },
-    {
-      "name": "JenkinsHouse",
-      "file": "assets/Maps/JenkinsHouse.tbin"
-    },
-    {
-      "name": "SophiaHouse",
-      "file": "assets/Maps/SophiaHouse.tbin"
-    },
-    {
-      "name": "SophiasCellar",
-      "file": "assets/Maps/SophiasCellar.tbin"
-    },
-    {
-      "name": "OliviaCellar",
-      "file": "assets/Maps/OliviaCellar.tbin"
-    },
-	{
-      "name": "CrimsonBadlands",
-      "file": "assets/Maps/CrimsonBadlands.tbin"
-    },
-	{
-      "name": "IridiumQuarry",
-      "file": "assets/Maps/IridiumQuarry.tbin"
-    },
-    {
-      "name": "TreasureCave",
-      "file": "assets/Maps/TreasureCave.tbin"
-    },
-	{
-      "name": "DesertRailway",
-      "file": "assets/Maps/DesertRailway.tbin"
-    },
-	{
-      "name": "WizardBasement",
-      "file": "assets/Maps/WizardBasement.tbin"
-    },
-	{
-      "name": "AuroraVineyardPictureMap",
-      "file": "assets/Maps/AuroraVineyardPictureMap.tbin"
-    },
-	{
-      "name": "StardustFarmPictureMap",
-      "file": "assets/Maps/StardustFarmPictureMap.tbin"
-    },
-	{
-      "name": "Void",
-      "file": "assets/Maps/Void.tbin"
-    },
-    {
-      "name": "Claire_WarpRoom",
-      "file": "assets/Maps/Claire_WarpRoom.tbin"
-    },
-    {
-      "name": "Martin_WarpRoom",
-      "file": "assets/Maps/Martin_WarpRoom.tbin"
-    },
-    {
-      "name": "Camilla_WarpRoom",
-      "file": "assets/Maps/Camilla_WarpRoom.tbin"
-    },
-    {
-      "name": "Alesia_WarpRoom",
-      "file": "assets/Maps/Alesia_WarpRoom.tbin"
-    },
-    {
-      "name": "Isaac_WarpRoom",
-      "file": "assets/Maps/Isaac_WarpRoom.tbin"
-    },
-    {
-      "name": "Apples_WarpRoom",
-      "file": "assets/Maps/Apples_WarpRoom.tbin"
-    },
-    {
-      "name": "Morgan_WarpRoom",
-      "file": "assets/Maps/Morgan_WarpRoom.tbin"
-    },
-    {
-      "name": "Scarlett_WarpRoom",
-      "file": "assets/Maps/Scarlett_WarpRoom.tbin"
-    },
-    {
-      "name": "Sandy_WarpRoom",
-      "file": "assets/Maps/Sandy_WarpRoom.tbin"
-    },
-    {
-      "name": "DayEnd_WarpRoom",
-      "file": "assets/Maps/DayEnd_WarpRoom.tbin"
-    },
-	{
-      "name": "ApplesRoom",
-      "file": "assets/Maps/ApplesRoom.tbin"
-    },
-	{
-      "name": "GunthersRoom",
-      "file": "assets/Maps/GunthersRoom.tbin"
-    },
-	{
-      "name": "GrandpasShed",
-      "file": "assets/Maps/GrandpasShed.tbin",
-	  "type": "Cellar"
-    },
-	{
-      "name": "GrandpasShedGreenhouse",
-      "file": "assets/Maps/GrandpasShedGreenhouse.tbin"
-    },
-	{
-      "name": "GrandpasShedRuins",
-      "file": "assets/Maps/GrandpasShedRuins.tbin"
-    },
-	{
-      "name": "GrandpasShedOutside",
-      "file": "assets/Maps/GrandpasShedOutside.tbin"
-    },
-	{
-      "name": "Countryside_BusStop_Bus",
-      "file": "assets/Maps/Countryside_BusStop_Bus.tbin"
-    },
-	{
-      "name": "Countryside_BusStop_NoBus",
-      "file": "assets/Maps/Countryside_BusStop_NoBus.tbin"
-    },
-	{
-      "name": "Countryside_ClaireHouse",
-      "file": "assets/Maps/Countryside_ClaireHouse.tbin"
-    },
-	{
-      "name": "ClaireHouse",
-      "file": "assets/Maps/ClaireHouse.tbin"
-    },
-	{
-      "name": "JojaEmporium",
-      "file": "assets/Maps/JojaEmporium.tbin"
-    },
-	{
-      "name": "GuntherExpedition1",
-      "file": "assets/Maps/GuntherExpedition1.tbin"
-    },
-	{
-      "name": "GuntherExpedition2",
-      "file": "assets/Maps/GuntherExpedition2.tbin"
-    },
-	{
-      "name": "GrampletonFields_Small",
-      "file": "assets/Maps/GrampletonFields_Small.tbin"
-    },
-	{
-      "name": "AdventurerSummit",
-      "file": "assets/Maps/AdventurerSummit.tbin"
-    },
-	{
-      "name": "BusStop_NoBus",
-      "file": "assets/Maps/BusStop_NoBus.tbin",
-    },
-	  ],
 
-  "mergeMaps": [
-  
-	//MAP UNLOCKS
-    {
-      "name": "AndyHouse",
-      "file": "assets/MapPatches/AndyHouseClean.tbin",
-      "sourceArea": [ 0, 0, 24, 22 ],
-      "position": [ 0, 0 ],
-	  "conditions": "LC Game1.MasterPlayer.hasCompletedCommunityCenter()",
-    },
-	{
-      "name": "Forest",
-      "file": "assets/MapPatches/AndyFarmHealthy.tbin",
-      "sourceArea": [ 0, 0, 15, 8 ],
-      "position": [ 54, 62 ],
-	  "conditions": "LC Game1.MasterPlayer.hasCompletedCommunityCenter()",
-    },
-    {
-      "name": "AndyHouse",
-      "file": "assets/MapPatches/AndyHouseClean.tbin",
-      "sourceArea": [ 0, 0, 24, 22 ],
-      "position": [ 0, 0 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(502261)",
-    },
-    {
-      "name": "AndyHouse",
-      "file": "assets/MapPatches/AndyHouse_CellarEntrance.tbin",
-      "sourceArea": [ 0, 0, 7, 5 ],
-      "position": [ 18, 18 ],
-	  "conditions": "n AndyCellar",
-    },
-    {
-      "name": "BlueMoonVineyard",
-      "file": "assets/MapPatches/BlueMoonVineyard_FairyGarden.tbin",
-      "sourceArea": [ 0, 0, 11, 18 ],
-      "position": [ 11, 1 ],
-	  "conditions": "n SophiaFairyGarden",
-    },
-    {
-      "name": "Forest",
-      "file": "assets/MapPatches/AndyFarmHealthy.tbin",
-      "sourceArea": [ 0, 0, 15, 8 ],
-      "position": [ 54, 62 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(502261)",
-    },
-	{
-      "name": "ForestWest",
-      "file": "assets/MapPatches/SpriteSpringUnlocked.tbin",
-      "sourceArea": [ 0, 0, 44, 39 ],
-      "position": [ 111, 117 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(418172)",
-    },
-	{
-      "name": "SkullCave",
-      "file": "assets/MapPatches/CrimsonBadlandsUnlocked.tbin",
-      "sourceArea": [ 0, 0, 12, 9 ],
-      "position": [ 15, 0 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(1305677)",
-    },
-	{
-      "name": "SkullCave",
-      "file": "assets/MapPatches/CrimsonBadlandsUnlocked.tbin",
-      "sourceArea": [ 0, 0, 12, 9 ],
-      "position": [ 15, 0 ],
-	  "conditions": "e 1305677",
-    },
-	{
-      "name": "TownEast",
-      "file": "assets/MapPatches/TownEastUnlocked.tbin",
-      "sourceArea": [ 0, 0, 3, 3 ],
-      "position": [ 15, 13 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(1000024)",
-    },
-	{
-      "name": "ForestWest",
-      "file": "assets/MapPatches/BearUnlocked.tbin",
-      "sourceArea": [ 0, 0, 1, 2 ],
-      "position": [ 10, 3 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(2120303)",
-    },
-	{
-      "name": "AuroraVineyard",
-      "file": "assets/MapPatches/JunimoPlaqueFake.tbin",
-      "sourceArea": [ 0, 0, 1, 1 ],
-      "position": [ 20, 7 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(77759254)",
-    },
-	{
-      "name": "AuroraVineyard",
-      "file": "assets/MapPatches/JunimoPlaque.tbin",
-      "sourceArea": [ 0, 0, 1, 1 ],
-      "position": [ 20, 7 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(7775926)",
-    },
-	{
-      "name": "AuroraVineyard",
-      "file": "assets/MapPatches/AuroraVineyardOvergrown.tbin",
-      "sourceArea": [ 0, 0, 27, 24 ],
-      "position": [ 0, 0 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(7775925)",
-    },
-	{
-      "name": "AuroraVineyard",
-      "file": "assets/MapPatches/AuroraVineyardStarfruits.tbin",
-      "sourceArea": [ 0, 0, 27, 24 ],
-      "position": [ 0, 0 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(7776001)",
-    },	
-	{
-      "name": "ApplesRoom",
-      "file": "assets/MapPatches/ApplesRoomStarfruitTree.tbin",
-      "sourceArea": [ 0, 0, 19, 15 ],
-      "position": [ 0, 0 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(7776006)",
-    },
-	{
-      "name": "ApplesRoom",
-      "file": "assets/MapPatches/ApplesRoomPatch.tbin",
-      "sourceArea": [ 0, 0, 3, 3 ],
-      "position": [ 1, 8 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(7766000)",
-    },
-	{
-      "name": "Forest",
-      "file": "assets/MapPatches/ShaneBottleCleanup.tbin",
-      "sourceArea": [ 0, 0, 4, 2 ],
-      "position": [ 77, 98 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(1637013)",
-    },
-	{
-      "name": "WizardBasement",
-      "file": "assets/MapPatches/ShrineOfIllusions.tbin",
-      "sourceArea": [ 0, 0, 1, 1 ],
-      "position": [ 23, 4 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(1724095)",
-    },	
-	{
-      "name": "WizardBasement",
-      "file": "assets/MapPatches/ShrineOfIllusions.tbin",
-      "sourceArea": [ 0, 0, 1, 1 ],
-      "position": [ 23, 4 ],
-	  "conditions": "e 1724095",
-    },
-	
-	{
-      "name": "GrandpasShedRuins",
-      "file": "assets/MapPatches/Robin_GrandpaShed.tbin",
-      "sourceArea": [ 0, 0, 2, 2 ],
-      "position": [ 17, 9 ],
-	  "conditions": "LC Game1.MasterPlayer.eventsSeen.Contains(2554903)",
-    },
-	
-	{
-      "name": "Backwoods",
-      "file": "assets/MapPatches/Backwoods_GraveSite.tbin",
-      "sourceArea": [ 0, 0, 3, 5 ],
-      "position": [ 34, 4 ],
-	  "conditions": "e 6963327"
-    },
-	{
-      "name": "Town-Fair",
-      "file": "assets/MapPatches/TownFairClean.tbin",
-      "sourceArea": [ 0, 0, 6, 6 ],
-      "position": [ 41, 76 ],
-	  "conditions": "e 1000009",
-    },
-],
-
-
-    //SHOPS
+  //SHOPS
 
   "shops": [
     {
@@ -1717,28 +1346,29 @@
       "id": "PurpleJunimo",
         "inventory": [
           {
+              "name":"Radioactive Bar",
+              "type":"Object",
+              "price":25000
+          },
+          {
               "name":"Magic Bait",
               "type":"Object",
-              "price":400,
-			  "stock": 15
+              "price":1000
           },
           {
               "name":"Deluxe Fertilizer",
               "type":"Object",
-              "price":300,
-			  "stock": 15
+              "price":5000
           },
           {
               "name":"Hyper Speed-Gro",
               "type":"Object",
-              "price":300,
-			  "stock": 15
+              "price":2500
           },
           {
               "name":"Deluxe Retaining Soil",
               "type":"Object",
-              "price":300,
-			  "stock": 15
+              "price":2500
           },
         ],
         "portraits":[
@@ -2342,32 +1972,27 @@
           {
               "name":"Radioactive Bar",
               "type":"Object",
-              "price":20000,
-			  "stock": 1
+              "price":25000
           },
           {
               "name":"Magic Bait",
               "type":"Object",
-              "price":500,
-			  "stock": 5
+              "price":1000
           },
           {
               "name":"Deluxe Fertilizer",
               "type":"Object",
-              "price":300,
-			  "stock": 15
+              "price":5000
           },
           {
               "name":"Hyper Speed-Gro",
               "type":"Object",
-              "price":300,
-			  "stock": 15
+              "price":2500
           },
           {
               "name":"Deluxe Retaining Soil",
               "type":"Object",
-              "price":300,
-			  "stock": 15
+              "price":2500
           },
         ],
         "portraits":[
