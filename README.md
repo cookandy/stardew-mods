@@ -47,28 +47,28 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Fall 28 Snow Day](https://www.nexusmods.com/stardewvalley/mods/486) | Makes snow fall on the last day of Fall. | `1.7.1` | |
 | [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) | A spawning framework that allows players and modders to spawn customizable features from Stardew's farm types. | `1.13.1` | |
 | [Festival of the Mundane](https://www.nexusmods.com/stardewvalley/mods/4630) | The Shadows have their own Spirit's Eve festival in the sewers. Come visit them and see what it's about. | `1.1.2` | |
-| [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) | A config menu framework for mods. | `1.3.1` | |
+| [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) | A config menu framework for mods. | `1.3.2` | |
 | [Gift Taste Helper](https://www.nexusmods.com/stardewvalley/mods/229) | Displays a helpful tooltip that shows an NPC's favourite gifts when hovering over their birthday on the calendar or the social page. | `2.9.1` | |
 | [Grandpa's Farm](https://www.nexusmods.com/stardewvalley/mods/3753) | Grandpa's Farm for [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753). | `1.12.6` | |
 | [Horse Overhaul](https://www.nexusmods.com/stardewvalley/mods/7911) | Make the horse the way it should be, thin, fast and useful. | `1.3` | |
 | [Imaged](https://www.nexusmods.com/stardewvalley/mods/7218) | Provides non-interactive image recoloring. | `1.1` | |
 | [JSON Assets](https://www.nexusmods.com/stardewvalley/mods/1720) | Successor to Custom Crops. | `1.7.5` | |
 | [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541) | See live info about whatever's under your cursor. | `1.33.0` | Changed hotkey. See [wiki](https://github.com/cookandy/stardew-mods/wiki/LookupAnything) |
-| [Mail Framework Mod](https://www.nexusmods.com/stardewvalley/mods/1536) | Framework to use the in game mailbox. | `1.10.0` | |
+| [Mail Framework Mod](https://www.nexusmods.com/stardewvalley/mods/1536) | Framework to use the in game mailbox. | `1.10.1` | |
 | [Mod Update Menu](https://www.nexusmods.com/stardewvalley/mods/2536) | Adds an in game menu to the title screen letting you know if you need to update your mods or SMAPI. | `1.6.0` | |
 | [Non-Destructive NPCs](https://www.nexusmods.com/stardewvalley/mods/5176) | Makes NPCs not destroy objects placed by the player in their paths. | `1.0.0` | |
 | [NPC Map Locations](https://www.nexusmods.com/stardewvalley/mods/239) | Shows the locations of NPC and farmers on the map page and on a minimap. | `2.6.2` | |
 | [PPJA More Trees](https://www.nexusmods.com/stardewvalley/mods/1671) | Adds more tree types. | `1.6.11` | |
-| [PyTK](https://www.nexusmods.com/stardewvalley/mods/1726) | Toolkit for Smapi Mods. | `1.21.0` | |
+| [PyTK](https://www.nexusmods.com/stardewvalley/mods/1726) | Toolkit for Smapi Mods. | `1.22.0` | |
 | [Quest Framework](https://www.nexusmods.com/stardewvalley/mods/6414) | Framework for work with quests like create custom quests, define custom quest types and handle quests. | `1.3.4` | |
 | [Ridgeside Village](https://www.nexusmods.com/stardewvalley/mods/7286) | Adds 24 new NPCs, a new location, forage, custom music, and more. | `1.2.7` |
 | [Running Late](https://www.nexusmods.com/stardewvalley/mods/3518) | Changes the digital clock on the HUD to update every in-game minute instead of every 10. | `1.2.0` | |
 | [ShopTileFramework](https://www.nexusmods.com/stardewvalley/mods/5005) | A Framework mod that allows modders to add custom shops to the game, as well as edit vanilla shop. | `1.0.9` | |
 | [Skull Cavern Elevator](https://www.nexusmods.com/stardewvalley/mods/963) | Adds an elevator to the Skull Cavern. | `1.3.1` | |
 | [SpaceCore](https://www.nexusmods.com/stardewvalley/mods/1348) | Required by a few mods. | `1.5.5` | |
-| [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) | This expansion features 26 new locations, 160 new character events, 12 new NPCs, a new village, 800 location messages, and more. | `1.12.16` | Some options changed. See [wiki](https://github.com/cookandy/stardew-mods/wiki/SVE)|
+| [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) | This expansion features 26 new locations, 160 new character events, 12 new NPCs, a new village, 800 location messages, and more. | `1.12.17` | Some options changed. See [wiki](https://github.com/cookandy/stardew-mods/wiki/SVE)|
 | [StardewHack](https://www.nexusmods.com/stardewvalley/mods/3213) | Library mod used by my other mods. Doesn't do much on its own. | `3.0` | |
-| [The Love of Cooking](https://www.nexusmods.com/stardewvalley/mods/6830) | A suite of changes all about cooking! | `1.0.11-prerelease.1` | |
+| [The Love of Cooking](https://www.nexusmods.com/stardewvalley/mods/6830) | A suite of changes all about cooking! | `1.0.11` | |
 | [TMXL Map Toolkit](https://www.nexusmods.com/stardewvalley/mods/1820) | Toolkit for adding/editing/replacing maps and creating buildables. | `1.22.0` | |
 | [Tractor Mod](https://www.nexusmods.com/stardewvalley/mods/1401) | Buy a tractor to more efficiently work with crops, clear twigs and rocks, etc. | `4.13.3` | |
 | [Tree Transplant](https://www.nexusmods.com/stardewvalley/mods/1342) | Used to transplant trees on your farm. | `1.0.13` | |

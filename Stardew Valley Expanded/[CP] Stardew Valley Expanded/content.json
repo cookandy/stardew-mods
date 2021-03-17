@@ -1020,7 +1020,7 @@
 {   //New town east map
 	"Action": "EditData",
 	"Target": "Mods/Bouhm.NPCMapLocations/Locations",
-	"When": { "HasSeenEvent |contains=1000024": false },
+	//"When": { "HasSeenEvent |contains=1000024": false },
 	"Entries": {
 	//Map tracking Garden
 	"Custom_Garden": {
@@ -1196,7 +1196,6 @@
 	 "When": { "SeasonalEdits": true, "Season |contains=Fall": false }
 },
 
-
 //MIST EFFECTS
 
 {    //Adds mist effects to the railroad
@@ -1293,12 +1292,13 @@
   "Custom_SpriteSpring": "-1/-1/-1/-1/-1/-1/-1/-1/109 .3 120 1 121 .4 119 .3 115 .4 114 .3",
   "Custom_GrampletonFields": "-1/-1/-1/-1/-1/-1/-1/-1/119 1 120 .4 121 .31 109 .21 115 .32 114 .25",
   "Custom_DeepCave": "-1/-1/-1/-1/156 -1 158 -1/156 -1 158 -1/156 -1 158 -1/156 -1 158 -1/-1",
-  "Custom_BlueMoonVineyard": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 145 1 143 1 153 1 137 1 706 1 132 1 {{spacechase0.JsonAssets/ObjectId:Starfish}} 0 267 0 129 0 131 0 147 0 148 0 152 0 708 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 138 1 145 1 153 1 144 1 706 1 132 1 267 0 {{spacechase0.JsonAssets/ObjectId:Clownfish}} 0 {{spacechase0.JsonAssets/ObjectId:Starfish}} 0 128 0 130 0 146 0 149 0 150 0 152 0 155 0 708 0 701 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 139 1 699 1 143 1 153 1 137 1 706 1 140 1 132 1 {{spacechase0.JsonAssets/ObjectId:Starfish}} 0 129 0 131 0 148 0 150 0 152 0 154 0 155 0 705 0 701 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 699 1 153 1 707 1 141 1 144 1 132 1 708 0 130 0 131 0 146 0 147 0 150 0 151 0 152 0 154 0 705 0/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
+  "Custom_BlueMoonVineyard": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 145 1 143 1 153 1 137 1 706 1 132 1 267 0 129 0 131 0 147 0 148 0 152 0 708 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 138 1 145 1 153 1 144 1 706 1 132 1 267 0 128 0 130 0 146 0 149 0 150 0 152 0 155 0 708 0 701 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 139 1 699 1 143 1 153 1 137 1 706 1 140 1 132 1 129 0 131 0 148 0 150 0 152 0 154 0 155 0 705 0 701 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 699 1 153 1 707 1 141 1 144 1 132 1 708 0 130 0 131 0 146 0 147 0 150 0 151 0 152 0 154 0 705 0/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
   "Custom_JunimoWoods": "-1/-1/-1/-1/734 -1 143 -1 136 -1/734 -1 143 -1 136 -1/734 -1 143 -1 136 -1/734 -1 143 -1 136 -1/121 .3 122 .2 123 .4 120 1 104 .3 109 .2 581 .2 582 .4 583 .3",
   "Custom_ShearwaterBridge": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Butterfish}} -1 {{spacechase0.JsonAssets/ObjectId:Puppyfish}} -1 143 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Puppyfish}} -1 {{spacechase0.JsonAssets/ObjectId:Butterfish}} -1 138 -1 144 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Butterfish}} -1 {{spacechase0.JsonAssets/ObjectId:Puppyfish}} -1 139 -1 699 -1 143 -1 706 -1 140 -1 269 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 699 -1 153 -1 707 -1 141 -1 144 -1 132 -1 269 -1/100 1 101 .31 103 .8 105 .7 106 .1 107 .65 114 .1",
   "Custom_GrandpasShedOutside": "-1/-1/-1/-1/-1/-1/-1/-1/100 .4 101 .3 103 .2 105 .31 106 1 107 .55 114 .21",
   "Custom_AdventurerSummit": "-1/-1/-1/-1/136 -1 {{spacechase0.JsonAssets/ObjectId:Minnow}} -1 142 -1 153 -1 702 -1 700 -1/136 -1 {{spacechase0.JsonAssets/ObjectId:Minnow}} -1 142 -1 153 -1 138 -1 702 -1 700 -1 698 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 140 -1 142 -1 153 -1 702 -1 700 -1 269 -1/136 -1 140 -1 141 -1 153 -1 707 -1 702 -1 700 -1 698 -1 269 -1/382 .06 581 .1 378 .1 102 .15 390 .25 330 1",
-   }
+   },
+   "Update": "OnTimeChange"
 },
 
 { //New Fish compat patch
@@ -1306,10 +1306,11 @@
   "Target": "Data/Locations",
   "When": { "HasMod |contains=MoreFish": false },
   "Entries": {
+  "Custom_BlueMoonVineyard": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 145 1 143 1 153 1 137 1 706 1 132 1 {{spacechase0.JsonAssets/ObjectId:Starfish}} 0 267 0 129 0 131 0 147 0 148 0 152 0 708 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 138 1 145 1 153 1 144 1 706 1 132 1 267 0 {{spacechase0.JsonAssets/ObjectId:Clownfish}} 0 {{spacechase0.JsonAssets/ObjectId:Starfish}} 0 128 0 130 0 146 0 149 0 150 0 152 0 155 0 708 0 701 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 139 1 699 1 143 1 153 1 137 1 706 1 140 1 132 1 {{spacechase0.JsonAssets/ObjectId:Starfish}} 0 129 0 131 0 148 0 150 0 152 0 154 0 155 0 705 0 701 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 699 1 153 1 707 1 141 1 144 1 132 1 708 0 130 0 131 0 146 0 147 0 150 0 151 0 152 0 154 0 705 0/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
   "Town": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 137 -1 132 -1 143 -1 145 -1 153 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 138 -1 132 -1 144 -1 145 -1 153 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 139 -1 137 -1 132 -1 140 -1 143 -1 153 -1 706 -1 699 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 707 -1 699 -1/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
   "BugLand": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 796 -1 142 -1 153 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 796 -1 142 -1 153 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 796 -1 142 -1 153 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 796 -1 142 -1 153 -1 157 -1/-1",
   "Forest": "16 .9 22 .9/396 .6 402 .9/404 .9 410 .9/418 .9 414 .9 283 .5/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 153 -1 145 0 143 0 137 1 132 0 706 0 702 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 153 -1 145 0 144 -1 138 0 132 0 706 0 704 0 702 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 143 0 153 -1 140 -1 139 0 137 1 132 0 706 0 702 0 699 0 269 1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 699 0 143 0 153 -1 144 -1 141 -1 140 -1 132 0 707 0 702 0 269 1/378 .08 579 .1 588 .1 102 .15 390 .25 330 1",
-  "Mountain": "20 .7 16 .5/396 .5 398 .8/404 .4 406 .4 408 .9/414 .85 418 .9 283 .5/{{spacechase0.JsonAssets/ObjectId:Frog}} -1 {{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 142 -1 153 -1 702 -1 700 -1 163 -1/{{spacechase0.JsonAssets/ObjectId:Frog}} -1 {{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 142 -1 153 -1 138 -1 702 -1 700 -1 698 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 140 -1 142 -1 153 -1 702 -1 700 -1 269 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 140 -1 141 -1 153 -1 707 -1 702 -1 700 -1 698 -1 269 -1/382 .06 581 .1 378 .1 102 .15 390 .25 330 1",
+  "Mountain": "20 .7 16 .5/396 .5 398 .8/404 .4 406 .4 408 .9/414 .85 418 .9 283 .5/{{spacechase0.JsonAssets/ObjectId:Frog}} -1 {{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 142 -1 153 -1 702 -1 700 -1/{{spacechase0.JsonAssets/ObjectId:Frog}} -1 {{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 142 -1 153 -1 138 -1 702 -1 700 -1 698 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 140 -1 142 -1 153 -1 702 -1 700 -1 269 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 140 -1 141 -1 153 -1 707 -1 702 -1 700 -1 698 -1 269 -1/382 .06 581 .1 378 .1 102 .15 390 .25 330 1",
   "WitchSwamp": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 795 -1 153 -1 143 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 795 -1 153 -1 143 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 795 -1 153 -1 143 -1 157 -1/{{spacechase0.JsonAssets/ObjectId:Void Eel}} -1 795 -1 153 -1 143 -1 157 -1/-1",
   "Beach": "372 .9 718 .1 719 .3 723 .3/372 .9 394 .5 718 .1 719 .3 723 .3/372 .9 718 .1 719 .3 723 .3/372 .4 392 .8 718 .05 719 .2 723 .2/{{spacechase0.JsonAssets/ObjectId:Starfish}} -1 267 -1 129 -1 131 -1 147 -1 148 -1 152 -1 708 -1/267 -1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} -1 {{spacechase0.JsonAssets/ObjectId:Starfish}} -1 128 -1 130 -1 146 -1 149 -1 150 -1 152 -1 155 -1 708 -1 701 -1/{{spacechase0.JsonAssets/ObjectId:Starfish}} -1 129 -1 131 -1 148 -1 150 -1 152 -1 154 -1 155 -1 705 -1 701 -1/708 -1 130 -1 131 -1 146 -1 147 -1 150 -1 151 -1 152 -1 154 -1 705 -1/384 .08 589 .09 102 .15 390 .25 330 1",
   "IslandSouth": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Starfish}} -1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} -1 155 -1 130 -1 128 -1 267 -1 837 -1/{{spacechase0.JsonAssets/ObjectId:Starfish}} -1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} -1 155 -1 130 -1 128 -1 267 -1 837 -1/{{spacechase0.JsonAssets/ObjectId:Starfish}} -1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} -1 155 -1 130 -1 128 -1 267 -1 837 -1/{{spacechase0.JsonAssets/ObjectId:Starfish}} -1 {{spacechase0.JsonAssets/ObjectId:Clownfish}} -1 155 -1 130 -1 128 -1 267 -1 837 -1/791 .05 292 .05 774 .1 749 1",
@@ -4356,6 +4357,7 @@
 	 "Target": "Maps/Forest",
 	 "FromFile": "Assets/maps/locations/Forest.tbin",
 },
+
 {
      "Action": "EditMap",
 	 "Target": "Maps/Forest",
@@ -5593,13 +5595,13 @@
   {    
     "Operation": "Append",
     "Target": ["Entries", "Set-Up_additionalCharacters"],
-    "Value": "Aspend 7 64 down",
+    "Value": "Aspen 7 64 down",
     "Delimiter": "/"
   },
   {
     "Operation": "Append",
     "Target": ["Entries", "MainEvent_additionalCharacters"],
-    "Value": "Aspend 31 69 up",
+    "Value": "Aspen 31 69 up",
     "Delimiter": "/"
   },
  ]
@@ -9469,7 +9471,7 @@
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",
       "Entries": {
-        "Andy": "Now this is something I really love! Thank you!/346 459 303 240/This ain't that bad. Thank you kindly for the gift!/167 296 20 18 16 396 420 422 416 414 416/What in tarnation is this? I don't like it!/62 64 66 68 70 72 80 82 84 86 418 535 536 537 538 539 540 541 542 543 544 545 546 547 548 549 550 551 552 553 554 555 556 557 558 559 560 561 562 563 564 565 566 567 568 569 570 571 572 573 574 575 576 577 578/Am I some kind of joke to you? Get this horrible thing away from me. Now./350 348 74/Thanks for the gift./398 404 446 395 373/"
+        "Andy": "Now this is something I really love! Thank you!/346 459 303 240/This ain't that bad. Thank you kindly for the gift!/167 296 20 18 16 396 420 422 416 414/What in tarnation is this? I don't like it!/60 62 64 66 68 70 72 80 82 84 86 418 535 536 537 538 539 540 541 542 543 544 545 546 547 548 549 550 551 552 553 554 555 556 557 558 559 560 561 562 563 564 565 566 567 568 569 570 571 572 573 574 575 576 577 578/Am I some kind of joke to you? Get this horrible thing away from me. Now./350 348 74/Thanks for the gift./398 404 446 395 373/"
       }
     },
 	
@@ -9799,7 +9801,7 @@
 	"Action": "EditData",
 	"Target": "data/events/Custom_AndyHouse",
 	"Entries": { 
-    "5000006/n AndyPictureLetter": "kindadumbautumn/-500 -500/Andy 16 17 3 farmer -50 -50 0/animate Andy true true 100 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 33 34 35 35 35 35 35 35 35 35 35 35 35 35 35 35 34 33 32 32 32 32 32 32 32 32 32 32 32/pause 1000/viewport 12 15 true/skippable/pause 1750/playSound stoneStep/playSound stoneStep/pause 300/playSound stoneStep/playSound stoneStep/pause 230/playSound stoneStep/playSound stoneStep/pause 1200/warp farmer 12 22/playSound doorClose/pause 500/move farmer 0 -5 1 true/pause 2500/stopAnimation Andy/pause 500/speak Andy \"Hey, farmer. See you got that there letter of mine.$0\"/pause 400/move Andy -2 0 3/pause 300/speak Andy \"Jus' wanted to show you somethin' I think you'd appreciate.$3#$b#Found 'em while cleanin' my house.$1\"/pause 600/move Andy -1 0 0/move Andy 0 -1 3/move Andy -4 0 0 true/pause 200/faceDirection farmer 0 true/pause 500/faceDirection farmer 3 true/pause 2500/move farmer -1 0 0/move farmer 0 -1 0/pause 150/faceDirection farmer 3/pause 400/showFrame Andy 36/pause 1100/playSound newRecipe/shake Andy 400/pause 800/showFrame Andy 8/pause 750/showFrame Andy 37/pause 800/speak Andy \"I have an old picture of Aurora Vineyard in its prime.$3#$b#Here. Take a look!$1\"/pause 350/showFrame Andy 38/pause 950/move farmer -1 0 3/pause 300/globalFade/viewport -1000 -1000/stopMusic/warp farmer -100 -100/warp Andy -101 -101/changeLocation Custom_AuroraVineyardPictureMap/AmbientLight 255 255 255/viewport 12 11 true/pause 250/playSound newRecipe/pause 350/playMusic musicboxsong/pause 14000/globalFade/viewport -1000 -1000/changeLocation Custom_AndyHouse/warp farmer 10 16/warp Andy 9 16/faceDirection Andy 1 true/positionOffset farmer 15 10/viewport 12 15 true/pause 1000/speak Andy \"Heh. I recall the day Jerry figured out how to craft kegs.$0#$b#That was a heck of a party!$1#$b#Elizabeth was a nice lady too. Sometimes invited me for tea and cookies.$3\"/pause 800/faceDirection Andy 0 true/pause 300/textAboveHead Andy \"Got this too.\"/pause 500/showFrame Andy 36/pause 1000/playSound newRecipe/shake Andy 250/pause 800/showFrame Andy 8/pause 600/showFrame Andy 37/pause 800/speak Andy \"Also got here a picture of Stardust Farm.$3\"/pause 800/showFrame Andy 38/pause 600/globalFade/viewport -1000 -1000/changeLocation Custom_StardustFarmPictureMap/warp farmer -40 -40/warp Andy -40 -40/ambientLight 255 255 255/viewport 10 12 true/playSound newRecipe/pause 14000/globalFade/viewport -1000 -1000/pause 100/changeLocation Custom_AndyHouse/ambientLight 90 90 90/warp farmer 10 16/warp Andy 9 16/faceDirection Andy 1 true/positionOffset farmer 15 10/positionOffset Andy -10 0/positionOffset farmer 10 7/viewport 12 15 true/pause 1000/speak Andy \"Alexa was a sweet girl. Always wore those bright yellow dresses on a sunny day.$0#$b#She grew the prettiest flowers in the valley.$3#$b#The honey and maple syrup from Stardust Farm was so sweet it'd send a bear spinnin'$1.\"/pause 900/speak Andy \"We commissioned Robin to build those there makeshift wooden bridges.$0#$b#Sure was nice seein' that smile of hers, bright as sunshine..$0\"/pause 1200/faceDirection Andy 2 true/pause 900/speak Andy \"I've come to learn friends come 'n go.#$b#And...\"/pause 1000/showFrame Andy 22/pause 800/speak Andy \"You never know when you'll meet a new one.$8\"/pause 800/showFrame Andy 0 true/pause 700/faceDirection Andy 1 true/pause 700/speak Andy \"Hmm. Hey. Let's grab some 'farmer's lunch'. I got fresh forage to go with it.$3\"/pause 500/globalFade/viewport -1000 -1000/end dialogue Andy \"Glad you got to see what their farms looked like, farmer.$0#$b#Their current state don't do 'em justice...$2#$b#Say. What happened at that there community center.#$b#Think that'll happen to Stardust Farm and Aurora Vineyard?$2#$e#Don't understand magic much.$1#$e#Keep workin' hard, farmer. Have yourself a great day.$3\"",
+    "5000006/n AndyPictureLetter": "kindadumbautumn/-500 -500/Andy 16 17 3 farmer -50 -50 0/animate Andy true true 100 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 33 34 35 35 35 35 35 35 35 35 35 35 35 35 35 35 34 33 32 32 32 32 32 32 32 32 32 32 32/pause 1000/viewport 12 15 true/skippable/pause 1750/playSound stoneStep/playSound stoneStep/pause 300/playSound stoneStep/playSound stoneStep/pause 230/playSound stoneStep/playSound stoneStep/pause 1200/warp farmer 12 22/playSound doorClose/pause 500/move farmer 0 -5 1 true/pause 2500/stopAnimation Andy/pause 500/speak Andy \"Hey, farmer. See you got that there letter of mine.$0\"/pause 400/move Andy -2 0 3/pause 300/speak Andy \"Jus' wanted to show you somethin' I think you'd appreciate.$3#$b#Found 'em while cleanin' my house.$1\"/pause 600/move Andy -1 0 0/move Andy 0 -1 3/move Andy -4 0 0 true/pause 200/faceDirection farmer 0 true/pause 500/faceDirection farmer 3 true/pause 2500/move farmer -1 0 0/move farmer 0 -1 0/pause 150/faceDirection farmer 3/pause 400/showFrame Andy 36/pause 1100/playSound newRecipe/shake Andy 400/pause 800/showFrame Andy 8/pause 750/showFrame Andy 37/pause 800/speak Andy \"I have an old picture of Aurora Vineyard in its prime.$3#$b#Here. Take a look!$1\"/pause 350/showFrame Andy 38/pause 950/move farmer -1 0 3/pause 300/globalFade/viewport -1000 -1000/stopMusic/warp farmer -100 -100/warp Andy -101 -101/changeLocation Custom_AuroraVineyardPictureMap/AmbientLight 255 255 255/viewport 12 11 true/pause 250/playSound newRecipe/pause 350/playMusic musicboxsong/pause 14000/globalFade/viewport -1000 -1000/changeLocation Custom_AndyHouse/warp farmer 10 16/warp Andy 9 16/faceDirection Andy 1 true/positionOffset farmer 15 10/viewport 12 15 true/pause 1000/speak Andy \"Heh. I recall the day Jerry figured out how to craft kegs.$0#$b#That was a heck of a party!$1#$b#Elizabeth was a nice lady too. Sometimes invited me for tea and cookies.$3\"/pause 800/faceDirection Andy 0 true/pause 300/textAboveHead Andy \"Got this too.\"/pause 500/showFrame Andy 36/pause 1000/playSound newRecipe/shake Andy 250/pause 800/showFrame Andy 8/pause 600/showFrame Andy 37/pause 800/speak Andy \"Also got here a picture of Stardust Farm.$3\"/pause 800/showFrame Andy 38/pause 600/globalFade/viewport -1000 -1000/changeLocation Custom_StardustFarmPictureMap/warp farmer -40 -40/warp Andy -40 -40/ambientLight 255 255 255/viewport 10 12 true/playSound newRecipe/pause 14000/globalFade/viewport -1000 -1000/pause 100/changeLocation Custom_AndyHouse/ambientLight 90 90 90/warp farmer 10 16/warp Andy 9 16/faceDirection Andy 1 true/positionOffset farmer 15 10/positionOffset Andy -10 0/positionOffset farmer 10 7/viewport 12 15 true/pause 1000/speak Andy \"Alexa was a sweet girl. Always wore those bright yellow dresses on a sunny day.$0#$b#She grew the prettiest flowers in the valley.$3#$b#The honey and maple syrup from Stardust Farm was so sweet it'd send a bear spinnin'$1.\"/pause 900/speak Andy \"We commissioned Robin to build those there makeshift wooden bridges.$0#$b#Sure was nice seein' that smile of hers, bright as sunshine..$0\"/pause 1200/faceDirection Andy 2 true/pause 900/speak Andy \"I've come to learn friends come 'n go.#$b#And...\"/pause 1000/showFrame Andy 22/pause 800/speak Andy \"You never know when you'll meet a new one.$8\"/pause 800/showFrame Andy 0 true/pause 700/faceDirection Andy 1 true/pause 700/speak Andy \"Hmm. Hey. Let's grab some 'farmer's lunch'. I got fresh forage to go with it.$3\"/pause 500/globalFade/viewport -1000 -1000/end dialogue Andy \"Glad you got to see what their farms looked like in their prime, farmer.$0#$e#Keep workin' hard and have yourself a great day.$3\"",
 	},
 },
 
@@ -13957,7 +13959,7 @@
       "Target": "Characters/Dialogue/MarriageDialogueClaire",
 	  "When": { "Date": "Fall 10" }, //Wed
       "Entries": {
-      "funReturn_Claire": "I just finished making dinner. I thought we'd eat something healthy tonight. [196 609 610 200 607 650]$1",
+      "funReturn_Claire": "I just finished making dinner. I thought we'd eat something healthy tonight. [196 609 610 200 607 649]$1",
       "funLeave_Claire": "*yawn*...$5#$e#That was a big yawn.$6#$e#Um. Have a great day today...$1"
         }
 	},
@@ -14056,7 +14058,7 @@
       "Target": "Characters/Dialogue/MarriageDialogueClaire",
 	  "When": { "Date": "Winter 1" }, //Mon
       "Entries": {
-      "funReturn_Claire": "It's like walking inside a freezer outside.$2#$e#I'm happy I can back to warm home... and you.$4#$e#%You hug Claire to warm her.#$e#Hehe...$7",
+      "funReturn_Claire": "It's like walking inside a freezer outside.$2#$e#I'm happy I came back to warm home... and you.$4#$e#%You hug Claire to warm her.#$e#Hehe...$7",
       "funLeave_Claire": "The snow last night blanketed the entire valley. Isn't it pretty?$1"
         }
 	},
@@ -14763,7 +14765,8 @@
     "Target": "Characters/Schedules/Claire",
 	"When": { "HasSeenEvent": "3219873" },
     "Entries": {
-    "Tue": "1030 SeedShop 26 17 1 \"Strings\\schedules\\Claire:AerobicsClass.002\"/1300 SeedShop 23 18 2 Claire_Dance \"Strings\\schedules\\Claire:AerobicsClass.001\"/1600 BusStop 12 8 0/1740 Custom_DayEnd_WarpRoom 2 2 0"
+    "Tue": "1030 SeedShop 26 17 1 \"Strings\\schedules\\Claire:AerobicsClass.002\"/1300 SeedShop 23 18 2 Claire_Dance \"Strings\\schedules\\Claire:AerobicsClass.001\"/1600 BusStop 12 8 0/1740 Custom_DayEnd_WarpRoom 2 2 0",
+	"marriage_Tue": "1030 SeedShop 26 17 1 \"Strings\\schedules\\Claire:AerobicsClass.000\"/1300 SeedShop 23 18 2 Claire_Dance \"Strings\\schedules\\Claire:AerobicsClass.001\"/1600 BusStop -1 23 3",
 	}
 },
 
@@ -15400,7 +15403,7 @@
       "Target": "Characters/Dialogue/Scarlett",
 	  "When": { "Season": "Fall", "Day": "8,9,10" },
       "Entries": {
-        "Mon": "Lot of work to do while I'm here!$1#$e#Hey. If you're gonna stick around, mind helping around?$0",
+        "Mon": "Lot of work to do while I'm here!$1#$e#Hey. If you're gonna stick around, give us a hand?$0",
         "Tue": "Funny you showed up! Sophia and I were just talkin' about you.$1#$e#Can't tell you! my lips are sealed!$1",
 	    "Wed": "It's a nice day today! Perfect for vineyard work!$0#$e#Well, time to get back to work.$1"
         }
@@ -15414,7 +15417,7 @@
       "Entries": {
         "Mon": "I'd like to go into town and see what Pelican Town is all about, but I'm too busy here.$0",
         "Tue": "Hey there! I'm helping Sophia today.$1",
-        "Wed": "Sophia and I ate a bunch of waffles this morning for breakfast!$1#$e#Knowing her, we're gonna have grampleton orange chicken for dinner.$0"
+        "Wed": "Sophia and I ate a bunch of waffles this morning for breakfast!$1#$e#Knowing her, we're gonna have Grampleton Orange Chicken for dinner.$0"
         }
     },
 	

@@ -1,8 +1,8 @@
 {
   "Name": "Stardew Valley Expanded",
   "Author": "FlashShifter",
-  "Version": "1.12.16",
-  "Description": "Remasters all vanilla maps, adds 26 new maps, 12 NPCs, over 900 location messages, 158 character events, and more!",
+  "Version": "1.12.17",
+  "Description": "Stardew Valley Expanded is a fanmade expansion for ConcernedApe's Stardew Valley. This mod adds 24 new NPCs, 30 locations, 200 character events, 800 location messages, reimagined vanilla areas, two farm maps, a reimagined world map reflecting all changes, new music, and many miscellaneous additions!",
   "UniqueID": "FlashShifter.StardewValleyExpandedCP",
   "MinimumApiVersion": "3.0",
   "UpdateKeys": [ "Nexus:3753" ],
