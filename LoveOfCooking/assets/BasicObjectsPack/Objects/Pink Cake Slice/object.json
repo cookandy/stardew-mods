@@ -1,9 +1,7 @@
 ﻿{
     "Name": "blueberry.cac.pinkcake_half",
     "Description": "...",
-    "Category": "Junk",
-    "CategoryTextOverride": "",
-    "CategoryColorOverride": "0, 0, 0, 0",
+    "Category": "Cooking",
     "Edibility": 60,
     "EdibleIsDrink": false,
     "EdibleBuffs": null,
