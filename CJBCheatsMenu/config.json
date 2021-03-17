@@ -55,10 +55,10 @@
   "FastWoodChipper": false,
   "FastWormBin": false,
   "AlwaysGiveGift": false,
-  "NoFriendshipDecay": false,
+  "NoFriendshipDecay": true,
   "DurableFences": true,
   "InstantBuild": false,
   "AutoFeed": true,
   "AutoWater": false,
-  "InfiniteHay": false
+  "InfiniteHay": true
 }

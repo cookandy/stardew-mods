@@ -32,6 +32,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 |  [AntiSocialNPCs](https://www.nexusmods.com/stardewvalley/mods/5371) | Allows modders to create NPCs that the player can't befriend. | `1.0.2`    | |
 | [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) |  Place a chest next to a machine (like a furnace or crystalarium), and the machine will automatically pull raw items from the chest and push processed items into it.	| `1.21.1` | |
 | [Better Artisan Goods Icons](https://www.nexusmods.com/stardewvalley/mods/2080) | This mod makes jelly, pickles, wine, juice, and honey icons be based on the fruit, vegetable, or flower used to make them. | `1.5.0` | |
+| [Better Fruit Trees](https://www.nexusmods.com/stardewvalley/mods/1976) | Lets fruit trees be placed, grow, and increase in quality even if there is something in the 3x3 area surrounding them.	| `2.6.1-unofficial.3-strobe` | |
 | [Better Ranching](https://www.nexusmods.com/stardewvalley/mods/859) | Prevents doomed milking/shearing attempts and adds an indicator when animals can be petted, milked, or sheared.	| `1.8.1` | |
 | [Bigger Backpack](https://www.nexusmods.com/stardewvalley/mods/1845) | Buy a bigger backpack at Pierre's for only 50,000g. | `3.0` | |
 | [Chests Anywhere](https://www.nexusmods.com/stardewvalley/mods/518) | Access your chests, dressers, fridge, shipping bin, and Junimo huts from anywhere and organise them your way. | `1.20.11` | |
