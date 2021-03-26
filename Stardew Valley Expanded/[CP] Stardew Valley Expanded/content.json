@@ -1298,7 +1298,6 @@
   "Custom_GrandpasShedOutside": "-1/-1/-1/-1/-1/-1/-1/-1/100 .4 101 .3 103 .2 105 .31 106 1 107 .55 114 .21",
   "Custom_AdventurerSummit": "-1/-1/-1/-1/136 -1 {{spacechase0.JsonAssets/ObjectId:Minnow}} -1 142 -1 153 -1 702 -1 700 -1/136 -1 {{spacechase0.JsonAssets/ObjectId:Minnow}} -1 142 -1 153 -1 138 -1 702 -1 700 -1 698 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 136 -1 140 -1 142 -1 153 -1 702 -1 700 -1 269 -1/136 -1 140 -1 141 -1 153 -1 707 -1 702 -1 700 -1 698 -1 269 -1/382 .06 581 .1 378 .1 102 .15 390 .25 330 1",
    },
-   "Update": "OnTimeChange"
 },
 
 { //New Fish compat patch
@@ -4311,12 +4310,19 @@
      "Action": "Load",
 	 "Target": "Maps/Town",
 	 "FromFile": "Assets/maps/locations/Town.tbin",
-	 "When": { "HasSeenEvent |contains=5553210": false }
+	 //"When": { "HasSeenEvent |contains=5553210": false }
 },
-{
+/*{
      "Action": "Load",
 	 "Target": "Maps/Town",
 	 "FromFile": "Assets/maps/locations/Town_Joja.tbin",
+	 "When": { "HasSeenEvent": "5553210" }
+},*/
+{
+     "Action": "EditMap",
+	 "Target": "Maps/Town",
+	 "FromFile": "Assets/maps/locations/Town_Joja.tbin",
+	 "ToArea": { "X": 0, "Y": 0,"Width": 128, "Height": 116 },
 	 "When": { "HasSeenEvent": "5553210" }
 },
 
@@ -4327,7 +4333,7 @@
      "ToArea": { "X": 0, "Y": 0,"Width": 120, "Height": 116 },
      "When": { "Time": "{{Range: 1700, 2600}}", "HasSeenEvent |contains=5553210": false },
 	 "PatchMode": "Overlay",
-	 "Update": "OnTimeChange"
+	 "Update": "OnLocationChange"
 },
 {    //Dynamic town lights - joja
      "Action": "EditMap",
@@ -4336,7 +4342,7 @@
      "ToArea": { "X": 0, "Y": 0,"Width": 128, "Height": 116 },
      "When": { "Time": "{{Range: 1700, 2600}}", "HasSeenEvent": "5553210" },
 	 "PatchMode": "Overlay",
-	 "Update": "OnTimeChange"
+	 "Update": "OnLocationChange"
 },
 {    //Pam's trailer lamp
      "Action": "EditMap",
@@ -4345,8 +4351,18 @@
      "ToArea": { "X": 71, "Y": 67,"Width": 1, "Height": 1 },
      "When": { "Time": "{{Range: 1700, 2600}}", "HasFlag |contains=pamHouseUpgrade": false },
 	 "PatchMode": "Overlay",
-	 "Update": "OnTimeChange"
+	 "Update": "OnLocationChange"
 },
+
+{
+     "Action": "EditMap",
+     "Target": "Maps/Town",
+     "When": { "HasSeenEvent": "5553210" },
+     "MapProperties": { 
+	 "Light": "24 52 4 24 60 4 33 55 4 20 66 4 38 66 4 27 74 4 30 74 4 27 88 4 37 79 4 50 79 4 52 100 4 56 100 4 118 16 4 71 67 4 92 79 4 94 52 4 97 52 4 11 9 4 27 9 4 1 88 4 14 88 4 86 58 4 87 45 4 88 45 4 17 52 4 4 52 4 52 51 4 36 49 4 41 51 4 41 69 4 12 84 4 24 87 4 59 48 4 57 60 4 63 83 4 92 79 4 101 87 4 108 6 1 112 7 1 111 10 1 97 49 4 94 49 4 31 22 4 31 29 4 21 29 4 21 22 4 41 35 4 54 35 4 49 24 4 56 24 4 69 24 4 79 10 4 92 70 4 112 70 4 108 43 4 113 43 4 107 28 4 114 28 4 108 23 4 111 23 4 106 21 4 109 21 4 112 21 4 115 22 4 110 28 4 111 28 4 71 92 4 95 92 4 127 70 4 25 113 4",
+	 }
+},
+
 {
      "Action": "Load",
 	 "Target": "Maps/Beach",
@@ -4449,7 +4465,7 @@
      "ToArea": { "X": 0, "Y": 0,"Width": 135, "Height": 41 },
      "When": { "Time": "{{Range: 1700, 2600}}" },
 	 "PatchMode": "Overlay",
-	 "Update": "OnTimeChange"
+	 "Update": "OnLocationChange"
 },
 {    //Dynamic mountain lights - joja
      "Action": "EditMap",
@@ -4458,13 +4474,13 @@
      "ToArea": { "X": 0, "Y": 0,"Width": 40, "Height": 41 },
      "When": { "Time": "{{Range: 1700, 2600}}", "HasSeenEvent": "5553210" },
 	 "PatchMode": "Overlay",
-	 "Update": "OnTimeChange"
+	 "Update": "OnLocationChange"
 },
 {    //Mountain Light - Joja
      "Action": "EditMap",
      "Target": "Maps/Mountain",
 	 "When": { "HasSeenEvent": "5553210" },
-	 "Update": "OnTimeChange",
+	 "Update": "OnLocationChange",
      "TextOperations": [
       {
        "Operation": "Append",
@@ -4494,7 +4510,7 @@
      "ToArea": { "X": 46, "Y": 10,"Width": 1, "Height": 1 },
      "When": { "Time": "{{Range: 1700, 2600}}", "HasSeenEvent": "5553210" },
 	 "PatchMode": "Overlay",
-	 "Update": "OnTimeChange"
+	 "Update": "OnLocationChange"
 },
 {
      "Action": "EditMap",
@@ -5273,15 +5289,17 @@
      "Target": "Maps/Custom_AdventurerSummit",
      "FromFile": "Assets/Maps/MapPatches/DynamicLantern.tbin",
      "ToArea": { "X": 50, "Y": 30,"Width": 1, "Height": 1 },
-     "When": { "Time": "{{Range: 1800, 2600}}", "DayOfWeek": "Friday", "Weather |contains=rain, storm": false },
+	 "When": { "Time": "{{Range: 1800, 2600}}" },
+     //"When": { "Time": "{{Range: 1800, 2600}}", "DayOfWeek": "Friday", "Weather |contains=rain, storm": false },   <<deprecated
 	 "PatchMode": "Overlay",
-	 "Update": "OnTimeChange"
+	 "Update": "OnLocationChange"
 },
 {    
      "Action": "EditMap",
      "Target": "Maps/Custom_AdventurerSummit",
-	 "When": { "Time": "{{Range: 1800, 2600}}", "DayOfWeek": "Friday", "Weather |contains=rain, storm": false },
-	 "Update": "OnTimeChange",
+	 "When": { "Time": "{{Range: 1800, 2600}}" },
+	 //"When": { "Time": "{{Range: 1800, 2600}}", "DayOfWeek": "Friday", "Weather |contains=rain, storm": false },   <<deprecated
+	 "Update": "OnLocationChange",
      "TextOperations": [
       {
        "Operation": "Append",
@@ -23088,7 +23106,7 @@
 		 "Egg-Festival.1": "You fill your plate with ham, eggs, greens, and some rolls! You eat it in one sitting and wash it down with some orange juice. It was delicious.",
 		 "Egg-Festival.2": "This is cute!",
 		 "Beach-Luau.1": "You know all the words to this song. You want to sing along, but you're practically tone deaf.",
-		 "Beach-Luau.2": "You help yourself to some glazed ham, radish salad, and bread rolls. You wash it all down with hand-crafted,iridium-quality grape wine from Blue Moon Vineyard! Yum!",
+		 "Beach-Luau.2": "You help yourself to some glazed ham, radish salad, and bread rolls. You wash it all down with hand-crafted, iridium-quality grape wine from Blue Moon Vineyard! Yum!",
 		 "Beach-Luau.3": "Linus sure does know how to slow roast ham.",
 		 "Beach-Luau.4": "These statues evoke the culture of the Tiki, one of the indigenous peoples of the Fern Islands.",
 		 "Beach-Luau.5": "You see something moving in the water.^^Hmm, whatever it was, it's gone. Must have been your imagination.",

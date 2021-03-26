@@ -13,7 +13,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 ## Requirements
 
 - [Stardew Valley](https://www.stardewvalley.net/) version `1.5.4`
-- [SMAPI](https://smapi.io/) version `3.9.4`
+- [SMAPI](https://smapi.io/) version `3.9.5`
 
 
 ## Instructions
@@ -37,7 +37,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Bigger Backpack](https://www.nexusmods.com/stardewvalley/mods/1845) | Buy a bigger backpack at Pierre's for only 50,000g. | `3.0` | |
 | [Chests Anywhere](https://www.nexusmods.com/stardewvalley/mods/518) | Access your chests, dressers, fridge, shipping bin, and Junimo huts from anywhere and organise them your way. | `1.20.11` | |
 | [Climates of Ferngill](https://www.nexusmods.com/stardewvalley/mods/604) | This mod expands the climate system to be more robust, adding custom weathers. | 2.0.0-beta.2 | |
-| [CJB Cheats Menu](https://www.nexusmods.com/stardewvalley/mods/4) | A simple in-game cheats menu with lots of cheats. | `1.27.0` | |
+| [CJB Cheats Menu](https://www.nexusmods.com/stardewvalley/mods/4) | A simple in-game cheats menu with lots of cheats. | `1.28.0` | |
 | [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) | Loads content packs that change the game's images and data without replacing XNB files. | `1.20.1` | |
 | [Custom NPC Exclusions](https://www.nexusmods.com/stardewvalley/mods/7089) | Allows other mods to exclude NPCs from certain quests and events. | `1.3.0` | |
 | [DeepWoods](https://www.nexusmods.com/stardewvalley/mods/2571) | Adds an explorable forest to the secret woods. | `1.9.6-beta` | Modified to be slightly easier. See [wiki](https://github.com/cookandy/stardew-mods/wiki/DeepWoods)|
@@ -54,7 +54,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Imaged](https://www.nexusmods.com/stardewvalley/mods/7218) | Provides non-interactive image recoloring. | `1.1` | |
 | [JSON Assets](https://www.nexusmods.com/stardewvalley/mods/1720) | Successor to Custom Crops. | `1.7.5` | |
 | [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541) | See live info about whatever's under your cursor. | `1.33.0` | Changed hotkey. See [wiki](https://github.com/cookandy/stardew-mods/wiki/LookupAnything) |
-| [Mail Framework Mod](https://www.nexusmods.com/stardewvalley/mods/1536) | Framework to use the in game mailbox. | `1.10.1` | |
+| [Mail Framework Mod](https://www.nexusmods.com/stardewvalley/mods/1536) | Framework to use the in game mailbox. | `1.10.2` | |
 | [Mod Update Menu](https://www.nexusmods.com/stardewvalley/mods/2536) | Adds an in game menu to the title screen letting you know if you need to update your mods or SMAPI. | `1.6.0` | |
 | [Non-Destructive NPCs](https://www.nexusmods.com/stardewvalley/mods/5176) | Makes NPCs not destroy objects placed by the player in their paths. | `1.0.0` | |
 | [NPC Map Locations](https://www.nexusmods.com/stardewvalley/mods/239) | Shows the locations of NPC and farmers on the map page and on a minimap. | `2.6.2` | |
@@ -66,7 +66,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [ShopTileFramework](https://www.nexusmods.com/stardewvalley/mods/5005) | A Framework mod that allows modders to add custom shops to the game, as well as edit vanilla shop. | `1.0.9` | |
 | [Skull Cavern Elevator](https://www.nexusmods.com/stardewvalley/mods/963) | Adds an elevator to the Skull Cavern. | `1.3.1` | |
 | [SpaceCore](https://www.nexusmods.com/stardewvalley/mods/1348) | Required by a few mods. | `1.5.5` | |
-| [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) | This expansion features 26 new locations, 160 new character events, 12 new NPCs, a new village, 800 location messages, and more. | `1.12.17` | Some options changed. See [wiki](https://github.com/cookandy/stardew-mods/wiki/SVE)|
+| [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) | This expansion features 26 new locations, 160 new character events, 12 new NPCs, a new village, 800 location messages, and more. | `1.12.18` | Some options changed. See [wiki](https://github.com/cookandy/stardew-mods/wiki/SVE)|
 | [StardewHack](https://www.nexusmods.com/stardewvalley/mods/3213) | Library mod used by my other mods. Doesn't do much on its own. | `3.0` | |
 | [The Love of Cooking](https://www.nexusmods.com/stardewvalley/mods/6830) | A suite of changes all about cooking! | `1.0.11-prerelease.1` | |
 | [TMXL Map Toolkit](https://www.nexusmods.com/stardewvalley/mods/1820) | Toolkit for adding/editing/replacing maps and creating buildables. | `1.22.0` | |
