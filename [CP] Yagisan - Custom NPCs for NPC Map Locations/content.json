@@ -1,0 +1,848 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Format": "1.20.0",
+
+	"Changes": [
+
+	{
+	  "LogName": "NPC Sprite Offsets", 
+	  "Action": "EditData",
+	  "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+	  "Entries": {
+
+		// Stardew Valley Expanded - https://www.nexusmods.com/stardewvalley/mods/3753
+
+		"Alesia": {
+			"MarkerCropOffset": 6
+		},
+		"Andy": {
+			"MarkerCropOffset": -1
+		},
+		"Apples": {
+			"MarkerCropOffset": 16
+		},
+		"Camilla": {
+			"MarkerCropOffset": 2
+		},
+		"Claire": {
+			"MarkerCropOffset": 3
+		},
+		"Claire_Joja": {
+			"MarkerCropOffset": 3
+		},
+		"GuntherSilvian": {
+			"MarkerCropOffset": 3
+		},
+		"Isaac": {
+			"MarkerCropOffset": 0
+		},
+		"MarlonFay": {
+			"MarkerCropOffset": 1
+		},
+		"Martin": {
+			"MarkerCropOffset": 1
+		},
+		"Morgan": {
+			"MarkerCropOffset": 8
+		},
+		"Olivia": {
+			"MarkerCropOffset": 1
+		},
+		"Scarlett": {
+			"MarkerCropOffset": 4
+		},
+		"Susan": {
+			"MarkerCropOffset": 1
+		},
+		"Sophia": {
+			"MarkerCropOffset": 3
+		},
+		"Victor": {
+			"MarkerCropOffset": 0
+		},
+
+		// Lunna - Astray in Stardew Valley - https://www.nexusmods.com/stardewvalley/mods/6626
+
+		"Bianka": {
+			"MarkerCropOffset": 5
+		},
+		"Dianna": {
+			"MarkerCropOffset": 14
+		},
+		"Lunna": {
+			"MarkerCropOffset": 3
+		},
+		"Raphael": {
+			"MarkerCropOffset": -1
+		},
+
+		// Juliet and Jessie the Joja Clerks - https://www.nexusmods.com/stardewvalley/mods/6398
+
+		"Juliet": {
+			"MarkerCropOffset": 2
+		},
+		"Jessie": {
+			"MarkerCropOffset": 2
+		},
+		"Gremlin": {
+			"MarkerCropOffset": 8
+		},
+
+		// Ridgeside Village - https://www.nexusmods.com/stardewvalley/mods/7286
+
+		"Aguar": {
+			"MarkerCropOffset": 1
+		},
+		"Alissa": {
+			"MarkerCropOffset": 6
+		},
+		"Bert": {
+			"MarkerCropOffset": -1
+		},
+		"Corine": {
+			"MarkerCropOffset": 3
+		},
+		"Ezekiel": {
+			"MarkerCropOffset": 0
+		},
+		"Flor": {
+			"MarkerCropOffset": 3
+		},
+		"Freddie": {
+			"MarkerCropOffset": 2
+		},
+		"Ian": {
+			"MarkerCropOffset": -1
+		},
+		"Jeric": {
+			"MarkerCropOffset": -1
+		},
+		"Jio": {
+			"MarkerCropOffset": 0
+		},
+		"Keahi": {
+			"MarkerCropOffset": 7
+		},
+		"Kenneth": {
+			"MarkerCropOffset": -1
+		},
+		"Kiwi": {
+			"MarkerCropOffset": 16
+		},
+		"Lenny": {
+			"MarkerCropOffset": 3
+		},
+		"Lola": {
+			"MarkerCropOffset": 3
+		},
+		"Maddie": {
+			"MarkerCropOffset": 3
+		},
+		"Olga": {
+			"MarkerCropOffset": 3
+		},
+		"Philip": {
+			"MarkerCropOffset": -1
+		},
+		"Pika": {
+			"MarkerCropOffset": -1
+		},
+		"Richard": {
+			"MarkerCropOffset": 1
+		},
+		"Shiro": {
+			"MarkerCropOffset": -1
+		},
+		"Trinnie": {
+			"MarkerCropOffset": 7
+		},
+		"Ysabelle": {
+			"MarkerCropOffset": 3
+		},
+		"Yuuma": {
+			"MarkerCropOffset": 6
+		},
+		"Helen": {
+			"Exclude": true
+		},
+		"Undreya": {
+			"Exclude": true
+		},
+
+		// Mister Ginger (cat NPC) - https://www.nexusmods.com/stardewvalley/mods/5295
+
+		"MisterGinger": {
+			"MarkerCropOffset": 16
+		},
+
+		// Jade NPC - https://www.nexusmods.com/stardewvalley/mods/5559
+
+		"Jade": {
+			"MarkerCropOffset": 3
+		},
+
+		// Beatrice NPC - https://www.nexusmods.com/stardewvalley/mods/7042
+
+		"Beatrice": {
+			"MarkerCropOffset": 4
+		},
+
+		// East Scarpe - https://www.nexusmods.com/stardewvalley/mods/5787
+
+		"Jacob": {
+			"MarkerCropOffset": -1
+		},
+		"Eloise": {
+			"MarkerCropOffset": 7
+		},
+		"Leximonster": {
+			"Exclude": true
+		},
+		"DuckNPC": {
+			"Exclude": true
+		},
+
+		// Professor Jasper Thomas - https://www.nexusmods.com/stardewvalley/mods/5599
+
+		"Jasper": {
+			"MarkerCropOffset": 0
+		},
+
+		// Boarding House and Bus Stop Extension - https://www.nexusmods.com/stardewvalley/mods/4120
+
+		"Gregory": {
+			"MarkerCropOffset": -1
+		},
+		"Joel": {
+			"MarkerCropOffset": 0
+		},
+		"Sheila": {
+			"MarkerCropOffset": -1
+		},
+
+    	// Delores - A New Custom NPC - https://www.nexusmods.com/stardewvalley/mods/5510
+
+		"Delores": {
+			"MarkerCropOffset": 3
+		},
+
+		// Custom NPC - Riley - https://www.nexusmods.com/stardewvalley/mods/5811
+
+		"Riley": {
+			"MarkerCropOffset": 0
+		},
+
+		// Custom npc Lyell - https://www.nexusmods.com/stardewvalley/mods/4499
+
+		"Lyell": {
+			"MarkerCropOffset": -2
+		},
+
+		// Custom Npc Nikolai - https://www.nexusmods.com/stardewvalley/mods/4882
+
+		"Nikolai": {
+			"MarkerCropOffset": 0
+		},
+		"Boxy": {
+			"MarkerCropOffset": 16
+		},
+
+		// Sorren - Original NPC - https://www.nexusmods.com/stardewvalley/mods/4040
+
+		"Sorren": {
+			"MarkerCropOffset": -3
+		},
+
+		// College Boy Mike - Custom NPC - https://www.nexusmods.com/stardewvalley/mods/6288
+
+		"Mike": {
+			"MarkerCropOffset": -1
+		},
+
+		// Custom NPC - Denver - https://www.nexusmods.com/stardewvalley/mods/4594
+
+		"Denver": {
+			"MarkerCropOffset": -1
+		},
+
+		// Custom NPC - Roronoa Zoro - https://www.nexusmods.com/stardewvalley/mods/6316
+
+		"Zoro": {
+			"MarkerCropOffset": 0
+		},
+
+		// Blanche - The librarian Custom NPC - https://www.nexusmods.com/stardewvalley/mods/6469
+
+		"Blanche": {
+			"MarkerCropOffset": 2
+		},
+
+		// Ayeisha - The Postal Worker (Custom NPC) - https://www.nexusmods.com/stardewvalley/mods/6427
+
+		"Ayeisha": {
+			"MarkerCropOffset": 1
+		},
+
+		// Shiko - New Custom NPC - https://www.nexusmods.com/stardewvalley/mods/3732
+
+		"Shiko": {
+			"MarkerCropOffset": 1
+		},
+
+		// New NPC - Cecilia - https://www.nexusmods.com/stardewvalley/mods/6246
+
+		"Cecilia": {
+			"MarkerCropOffset": 2
+		}
+
+		}
+	},
+	
+	{
+	"LogName": "Lunna - Astray in Stardew Valley - Location Support", 
+	"Action": "EditData",
+	"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+	"When": {
+		"HasMod: |contains=Rafseazz.LunnaCP": true
+	},
+	"Entries": {
+		// Lunna - Astray in Stardew Valley - https://www.nexusmods.com/stardewvalley/mods/6626
+
+		"LunnaWestForest": {
+			"MapVectors": [
+			{
+				"MapX": 230,
+				"MapY": 500
+			}
+			]
+	  	},
+
+		"LunnaLake": {
+			"MapVectors": [
+			{
+				"MapX": 244,
+				"MapY": 380
+			}
+			]
+	  	}
+	}
+	},
+
+	{
+		"LogName": "Juliet and Jessie the Joja Clerks - Location Support", 
+		"Action": "EditData",
+		"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+		"When": {
+			"HasMod: |contains=LemurKat.JulietHouse.NPC": true
+		},
+		"Entries": {
+		// Juliet and Jessie the Joja Clerks - https://www.nexusmods.com/stardewvalley/mods/6398
+
+		"ClearingHouse": {
+			"MapVectors": [
+			{
+				"TileX": 0,
+				"TileY": 0,
+				"MapX": 700,
+				"MapY": 160
+			},
+			{
+				"TileX": 60,
+				"TileY": 30,
+				"MapX": 740,
+				"MapY": 185
+			}
+			]
+		  }
+	}
+	},
+
+	{
+		"LogName": "Boarding House and Bus Stop Extension - Location Support", 
+		"Action": "EditData",
+		"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+		"When": {
+			"HasMod: |contains=FTMBdHouse": true
+		},
+		"Entries": {
+		// Boarding House and Bus Stop Extension - https://www.nexusmods.com/stardewvalley/mods/4120
+
+		"BackwoodsPlateau": {
+			"MapVectors": [
+			{
+				"TileX": 0,
+				"TileY": 0,
+				"MapX": 419,
+				"MapY": 82
+			},
+			{
+				"TileX": 60,
+				"TileY": 27,
+				"MapX": 581,
+				"MapY": 144
+			}
+	  		]
+		},
+
+		"TheLostValley": {
+			"MapVectors": [
+			{
+				"MapX": 506,
+				"MapY": 90
+			}
+			],
+			"MapTooltip": {
+				"X": 506,
+				"Y": 90,
+				"Width": 18,
+				"Height": 13,
+				"PrimaryText": "Lost Valley"
+			}
+	  	},
+
+		  "GregoryTent": {
+			"MapVectors": [
+			{
+				"MapX": 506,
+				"MapY": 90
+			}
+			]
+	  	},
+
+		"BuffaloRanch": {
+			"MapVectors": [
+			{
+				"MapX": 438,
+				"MapY": 93
+			}
+	  		],
+	  		"MapTooltip": {
+				"X": 438,
+				"Y": 93,
+				"Width": 38,
+				"Height": 22,
+				"PrimaryText": "Buffalo Ranch"
+			}
+		},
+
+		"BoardingHouse": {
+			"MapVectors": [
+			{
+				"MapX": 525,
+				"MapY": 93
+			}
+	  		],
+			"MapTooltip": {
+				"X": 525,
+				"Y": 93,
+				"Width": 18,
+				"Height": 13,
+				"PrimaryText": "Boarding House"
+			}
+		}
+	}
+	},
+
+	{
+		"LogName": "Ridgeside Village - Location Support", 
+		"Action": "EditData",
+		"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+		"When": {
+			"HasMod: |contains=Rafseazz.RSVCP": true
+		},
+		"Entries": {
+		// Ridgeside Village - https://www.nexusmods.com/stardewvalley/mods/7286
+		"RidgesideVillage": {
+			"MapVectors": [
+			{
+				"TileX": 0,
+				"TileY": 0,
+				"MapX": 1,
+				"MapY": 221
+			},
+			{
+				"TileX": 149,
+				"TileY": 129,
+				"MapX": 200,
+				"MapY": 480
+			}
+			],
+			"MapTooltip": {
+				"X": 1,
+				"Y": 221,
+				"Width": 148,
+				"Height": 259,
+				"PrimaryText": "Ridgeside Village"
+			}
+	  	},
+
+		"RSVCableCar": {
+			"MapVectors": [
+			{
+				"TileX": 0,
+				"TileY": 0,
+				"MapX": 570,
+				"MapY": 184
+			},
+			{
+				"TileX": 34,
+				"TileY": 29,
+				"MapX": 590,
+				"MapY": 204
+			}
+			],
+			"MapTooltip": {
+				"X": 570,
+				"Y": 184,
+				"Width": 20,
+				"Height": 20,
+				"PrimaryText": "Cable Car - Pelican Town"
+			}
+		},
+
+		"RSVCliff": {
+			"MapVectors": [
+			{
+				"TileX": 0,
+				"TileY": 0,
+				"MapX": 230,
+				"MapY": 270
+			},
+			{
+				"TileX": 34,
+				"TileY": 29,
+				"MapX": 250,
+				"MapY": 290
+			}
+			],
+			"MapTooltip": {
+				"X": 230,
+				"Y": 270,
+				"Width": 20,
+				"Height": 20,
+				"PrimaryText": "Cable Car - Ridgeside"
+	  		}
+		},
+
+		"RSVTheHike": {
+			"MapVectors": [
+			{
+				"MapX": 230,
+				"MapY": 320
+			}
+		],
+		"MapTooltip": {
+			"X": 230,
+			"Y": 320,
+			"Width": 20,
+			"Height": 20,
+			"PrimaryText": "The Hike"
+		  }
+		},
+
+		"Ridge": {
+			"MapVectors": [
+			{
+				"MapX": 121,
+				"MapY": 220
+			}
+			]
+		},
+
+		"BloomingHillsFarm": {
+			"MapTooltip": {
+				"X": 0,
+				"Y": 229,
+				"Width": 68,
+				"Height": 152,
+				"PrimaryText": "Blooming Hill Farm"
+			}
+	  	},
+
+		"NightingaleOrchard": {
+			"MapTooltip": {
+				"X": 0,
+				"Y": 381,
+				"Width": 124,
+				"Height": 98,
+				"PrimaryText": "Nightingale Orchard"
+			}
+		}
+	}
+	},
+
+	{
+		"LogName": "East Scarpe - Location Support", 
+		"Action": "EditData",
+		"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+		"When": {
+			"HasMod: |contains=LemurKat.EastScarpe.CP": true
+		},
+		"Entries": {
+		// East Scarpe - https://www.nexusmods.com/stardewvalley/mods/5787
+		"EastScarpe": {
+			"MapVectors": [
+			{
+				"MapX": 1150,
+				"MapY": 393
+			}
+			],
+			"MapTooltip": {
+				"X": 1150,
+				"Y": 393,
+				"Width": 20,
+				"Height": 20,
+				"PrimaryText": "East Scarpe"
+			}
+	  	}
+	}
+	},
+
+	{
+		"LogName": "Life Cycle - Athanaeri Corner - Location Support", 
+		"Action": "EditData",
+		"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+		"When": {
+			"HasMod: |contains=nraittanna.LifeCycleAthanaeriCP": true
+		},
+		"Entries": {
+		// Life Cycle - Rival Heart Events - https://www.nexusmods.com/stardewvalley/mods/6200
+		"Athanaeri": {
+			"MapVectors": [
+			{
+				"MapX": 617,
+				"MapY": 183
+			}
+			],
+			"MapTooltip": {
+				"X": 617,
+				"Y": 183,
+				"Width": 20,
+				"Height": 20,
+				"PrimaryText": "Athanaeri Corner"
+			}
+	  	}
+	}
+	},
+
+	{
+        "LogName": "Garden Village Shops - Expansion Mod - Location Support", 
+        "Action": "EditData",
+        "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+		"When": {
+            "HasMod: |contains=Tarniyar.CP.GardenVillage": true
+        },
+        "Entries": {
+        // Garden Village Shops - Expansion Mod - https://www.nexusmods.com/stardewvalley/mods/6113
+        
+        "MainShops": {
+            "MapVectors": [
+            {
+                "TileX": 0,
+                "TileY": 29,
+                "MapX": 250,
+                "MapY": 228
+            },
+            {
+                "TileX": 54,
+                "TileY": 21,
+                "MapX": 338,
+                "MapY": 222
+            }
+            ]
+        }
+    }
+    },
+
+	{
+		"LogName": "Walk to the Desert - Expansion Mod - Location Support", 
+		"Action": "EditData",
+		"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+		"When": {
+			"HasMod: |contains=Tarniyar.CP.WalkToDesert": true
+		},
+		"Entries": {
+		// Walk to the Desert - Expansion Mod - https://www.nexusmods.com/stardewvalley/mods/6234
+
+		"GhostTown": {
+			"MapVectors": [
+			{
+				"TileX": 0,
+				"TileY": 0,
+				"MapX": 200,
+				"MapY": 50
+			},
+			{
+				"TileX": 69,
+				"TileY": 47,
+				"MapX": 290,
+				"MapY": 95
+			}
+			]
+		},
+
+		"Interchange": {
+			"MapVectors": [
+			{
+				"TileX": 0,
+				"TileY": 37,
+				"MapX": 298,
+				"MapY": 82
+			},
+			{
+				"TileX": 25,
+				"TileY": 59,
+				"MapX": 353,
+				"MapY": 115
+			}
+			]
+		},
+
+		"WindingRoad": {
+			"MapVectors": [
+			{
+				"TileX": 25,
+				"TileY": 0,
+				"MapX": 353,
+				"MapY": 115
+			},
+			{
+				"TileX": 0,
+				"TileY": 83,
+				"MapX": 338,
+				"MapY": 222
+			}
+			]
+		},	
+
+		"ForestRoad": {
+			"MapVectors": [
+			{
+				"TileX": 0,
+				"TileY": 16,
+				"MapX": 362,
+				"MapY": 222
+			},
+			{
+				"TileX": 59,
+				"TileY": 29,
+				"MapX": 385,
+				"MapY": 228
+			}
+			]
+		}
+	}
+	},
+
+	{
+		"LogName": "Custom npc Lyell - Location Support", 
+		"Action": "EditData",
+		"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+		"When": {
+			"HasMod: |contains=Fellowclown.Lyell": true
+		},
+		"Entries": {
+		// Custom npc Lyell - https://www.nexusmods.com/stardewvalley/mods/4499
+		"LyellsWoods": {
+				"MapVectors": [
+				{
+					"MapX": 264,
+					"MapY": 380
+				}
+				]
+			  }
+		}
+		},
+
+	{
+		"LogName": "Custom Npc Nikolai - Location Support", 
+		"Action": "EditData",
+		"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+		"When": {
+			"HasMod: |contains=Fellowclown.Nikolai": true
+		},
+		"Entries": {
+		// Custom Npc Nikolai - https://www.nexusmods.com/stardewvalley/mods/4882
+		"NikolaisProperty": {
+				"MapVectors": [
+				{
+					"MapX": 800,
+					"MapY": 500
+				}
+				]
+			  }
+		}
+		},
+
+	{
+		"LogName": "Custom NPC - Roronoa Zoro - Location Support", 
+		"Action": "EditData",
+		"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+		"When": {
+			"HasMod: |contains=EmpressKimi.Zoro": true
+		},
+		"Entries": {
+		// Custom NPC - Roronoa Zoro - https://www.nexusmods.com/stardewvalley/mods/6316
+		"ZoroDock": {
+				"MapVectors": [
+				{
+					"MapX": 715,
+					"MapY": 650
+				}
+				]
+			  }
+		}
+		},
+
+	{
+		"LogName": "Stardew Valley - Vanilla Location Support", 
+		"Action": "EditData",
+		"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+		"Entries": {
+		// Vanilla locations. These get changed unconditionally. FIXME assuming we can override hardcoded values.
+		"Woods": {
+			"MapVectors": [
+				{
+					"TileX": 0,
+					"TileY": 0,
+					"MapX": 210,
+					"MapY": 400
+				},
+				{
+					"TileX": 59,
+					"TileY": 31,
+					"MapX": 240,
+					"MapY": 450
+				}
+				],
+				"MapTooltip": {
+					"X": 210,
+					"Y": 400,
+					"Width": 30,
+					"Height": 50,
+					"PrimaryText": "Secret Woods"
+				}
+			},
+
+		"DeepWoods": {
+			"MapVectors": [
+				{
+					"TileX": 0,
+					"TileY": 0,
+					"MapX": 210,
+					"MapY": 400
+				},
+				{
+					"TileX": 59,
+					"TileY": 31,
+					"MapX": 240,
+					"MapY": 450
+				}
+				]
+			}
+
+	}
+	}
+
+]
+}

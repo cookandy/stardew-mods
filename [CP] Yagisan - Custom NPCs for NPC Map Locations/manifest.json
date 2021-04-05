@@ -1,0 +1,123 @@
+{
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "Name": "[CP] Yagisan - Custom NPCs for NPC Map Locations",
+  "Author": "Yagisan",
+  "Version": "1.1.4",
+  "Description": "Setup Custom NPCs for the NPC Map Location mod",
+  "UniqueID": "Yagisan.NPCMapLocationsForNPCs",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": [ "Nexus:8174" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+      {
+        "UniqueID": "Bouhm.NPCMapLocations",
+        "IsRequired": true
+      },
+      {
+         "UniqueID": "FTMBdHouse",
+         "IsRequired": false
+       },
+       {
+         "UniqueID": "LemurKat.JulietHouse.NPC",
+         "IsRequired": false
+       },
+       {
+         "UniqueID": "Rafseazz.LunnaCP",
+         "IsRequired": false
+       },
+       {
+         "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+         "IsRequired": false
+       },
+       {
+         "UniqueID": "Rafseazz.RSVCP",
+         "IsRequired": false
+       },
+       {
+        "UniqueID": "malic.cp.jadeNPC",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "attonbomb.Beatrice",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "LemurKat.Mr.Ginger.NPC",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "Lemurkat.JacobEloise.CP",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "LemurKat.EastScarpe.CP",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "Lemurkat.NPCJasper",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "nraittanna.LifeCycleAthanaeriCP",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "blaaze6.Delores",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "SG.Riley",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "Tarniyar.CP.GardenVillage",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "Tarniyar.CP.WalkToDesert",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "Fellowclown.Lyell",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "Fellowclown.Nikolai",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "annachibi.SorrenNPC",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "SYS.mike",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "balverines.Denver",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "EmpressKimi.Zoro",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "MIDI.Blanche",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "TheLimeyDragon.Ayeisha",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "Papaya.ShikoTakahashi",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "balverines.cecilia",
+        "IsRequired": false
+      },
+     ]
+}
