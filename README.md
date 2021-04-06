@@ -28,7 +28,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 
 | Name      | Description | Version    | Notes     |
 | :------------- | :---------- | :---------- | :----------- |
-|  [Advanced Save Backup](https://www.nexusmods.com/stardewvalley/mods/435) | Automatically backs up your saves when loading the game and every night when you sleep.  | `1.9.0`    | |
+|  [Advanced Save Backup](https://www.nexusmods.com/stardewvalley/mods/435) | Automatically backs up your saves when loading the game and every night when you sleep.  | `1.10.0`    | |
 |  [AntiSocialNPCs](https://www.nexusmods.com/stardewvalley/mods/5371) | Allows modders to create NPCs that the player can't befriend. | `1.0.2`    | |
 | [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) |  Place a chest next to a machine (like a furnace or crystalarium), and the machine will automatically pull raw items from the chest and push processed items into it.	| `1.22.0` | |
 | [Better Artisan Goods Icons](https://www.nexusmods.com/stardewvalley/mods/2080) | This mod makes jelly, pickles, wine, juice, and honey icons be based on the fruit, vegetable, or flower used to make them. | `1.5.0` | |
@@ -44,7 +44,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Dynamic Night Time](https://www.nexusmods.com/stardewvalley/mods/2072) | Gives Stardew Valley a more dynamic daylight cycle. | `1.3.7` | |
 | [Event Reepeater](https://www.nexusmods.com/stardewvalley/mods/3642) | Add depth to your stories with the option to Repeat events over and over as you need them. | `6.0.1` | |
 | [Expanded Preconditions Utility](https://www.nexusmods.com/stardewvalley/mods/6529) | A utility mod built on top of the game's preconditions system to offer a conditions system any mod can use | `1.0.1`| |
-| [Fall 28 Snow Day](https://www.nexusmods.com/stardewvalley/mods/486) | Makes snow fall on the last day of Fall. | `1.7.1` | |
+| [Fall 28 Snow Day](https://www.nexusmods.com/stardewvalley/mods/486) | Makes snow fall on the last day of Fall. | `1.8.0` | |
 | [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) | A spawning framework that allows players and modders to spawn customizable features from Stardew's farm types. | `1.13.1` | |
 | [Festival of the Mundane](https://www.nexusmods.com/stardewvalley/mods/4630) | The Shadows have their own Spirit's Eve festival in the sewers. Come visit them and see what it's about. | `1.1.2` | |
 | [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) | A config menu framework for mods. | `1.3.3` | |
