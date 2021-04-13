@@ -7,7 +7,7 @@
   "FogChanceInLateFall": 0.5,
   "FogChanceInEarlyWinter": 0.2,
   "FogChanceInLateWinter": 0.2,
-  "UseLighterFog": false,
+  "UseLighterFog": true,
   "DisplayFogInTheDesert": false,
   "EveningWeatherFogChance": 0.35
 }
