@@ -30,15 +30,15 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | :------------- | :---------- | :---------- | :----------- |
 |  [Advanced Save Backup](https://www.nexusmods.com/stardewvalley/mods/435) | Automatically backs up your saves when loading the game and every night when you sleep.  | `1.10.0`    | |
 |  [AntiSocialNPCs](https://www.nexusmods.com/stardewvalley/mods/5371) | Allows modders to create NPCs that the player can't befriend. | `1.0.2`    | |
-| [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) |  Place a chest next to a machine (like a furnace or crystalarium), and the machine will automatically pull raw items from the chest and push processed items into it.	| `1.22.0` | |
+| [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) |  Place a chest next to a machine (like a furnace or crystalarium), and the machine will automatically pull raw items from the chest and push processed items into it.	| `1.22.1` | |
 | [Better Artisan Goods Icons](https://www.nexusmods.com/stardewvalley/mods/2080) | This mod makes jelly, pickles, wine, juice, and honey icons be based on the fruit, vegetable, or flower used to make them. | `1.5.0` | |
 | [Better Fruit Trees](https://www.nexusmods.com/stardewvalley/mods/1976) | Lets fruit trees be placed, grow, and increase in quality even if there is something in the 3x3 area surrounding them.	| `2.6.1-unofficial.3-strobe` | |
 | [Better Ranching](https://www.nexusmods.com/stardewvalley/mods/859) | Prevents doomed milking/shearing attempts and adds an indicator when animals can be petted, milked, or sheared.	| `1.8.1` | |
 | [Bigger Backpack](https://www.nexusmods.com/stardewvalley/mods/1845) | Buy a bigger backpack at Pierre's for only 50,000g. | `3.0` | |
-| [Chests Anywhere](https://www.nexusmods.com/stardewvalley/mods/518) | Access your chests, dressers, fridge, shipping bin, and Junimo huts from anywhere and organise them your way. | `1.20.12` | |
+| [Chests Anywhere](https://www.nexusmods.com/stardewvalley/mods/518) | Access your chests, dressers, fridge, shipping bin, and Junimo huts from anywhere and organise them your way. | `1.20.13` | |
 | [Climates of Ferngill](https://www.nexusmods.com/stardewvalley/mods/604) | This mod expands the climate system to be more robust, adding custom weathers. | 2.0.0-beta.2 | |
 | [CJB Cheats Menu](https://www.nexusmods.com/stardewvalley/mods/4) | A simple in-game cheats menu with lots of cheats. | `1.28.1` | |
-| [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) | Loads content packs that change the game's images and data without replacing XNB files. | `1.20.2` | |
+| [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) | Loads content packs that change the game's images and data without replacing XNB files. | `1.22.0` | |
 | [Custom NPC Exclusions](https://www.nexusmods.com/stardewvalley/mods/7089) | Allows other mods to exclude NPCs from certain quests and events. | `1.3.0` | |
 | [DeepWoods](https://www.nexusmods.com/stardewvalley/mods/2571) | Adds an explorable forest to the secret woods. | `1.9.6-beta` | Modified to be slightly easier. See [wiki](https://github.com/cookandy/stardew-mods/wiki/DeepWoods)|
 | [Dynamic Night Time](https://www.nexusmods.com/stardewvalley/mods/2072) | Gives Stardew Valley a more dynamic daylight cycle. | `1.3.7` | |
@@ -53,13 +53,13 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Horse Overhaul](https://www.nexusmods.com/stardewvalley/mods/7911) | Make the horse the way it should be, thin, fast and useful. | `1.3` | |
 | [Imaged](https://www.nexusmods.com/stardewvalley/mods/7218) | Provides non-interactive image recoloring. | `1.1` | |
 | [JSON Assets](https://www.nexusmods.com/stardewvalley/mods/1720) | Successor to Custom Crops. | `1.7.6` | |
-| [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541) | See live info about whatever's under your cursor. | `1.34.0` | Changed hotkey. See [wiki](https://github.com/cookandy/stardew-mods/wiki/LookupAnything) |
+| [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541) | See live info about whatever's under your cursor. | `1.34.1` | Changed hotkey. See [wiki](https://github.com/cookandy/stardew-mods/wiki/LookupAnything) |
 | [Mail Framework Mod](https://www.nexusmods.com/stardewvalley/mods/1536) | Framework to use the in game mailbox. | `1.10.2` | |
 | [Mod Update Menu](https://www.nexusmods.com/stardewvalley/mods/2536) | Adds an in game menu to the title screen letting you know if you need to update your mods or SMAPI. | `1.6.0` | |
 | [Non-Destructive NPCs](https://www.nexusmods.com/stardewvalley/mods/5176) | Makes NPCs not destroy objects placed by the player in their paths. | `1.0.0` | |
 | [NPC Map Locations](https://www.nexusmods.com/stardewvalley/mods/239) | Shows the locations of NPC and farmers on the map page and on a minimap. | `2.6.2` | |
 | [PPJA More Trees](https://www.nexusmods.com/stardewvalley/mods/1671) | Adds more tree types. | `1.6.11` | |
-| [PyTK](https://www.nexusmods.com/stardewvalley/mods/1726) | Toolkit for Smapi Mods. | `1.22.2` | |
+| [PyTK](https://www.nexusmods.com/stardewvalley/mods/1726) | Toolkit for Smapi Mods. | `1.22.4` | |
 | [Quest Framework](https://www.nexusmods.com/stardewvalley/mods/6414) | Framework for work with quests like create custom quests, define custom quest types and handle quests. | `1.3.4` | |
 | [Ridgeside Village](https://www.nexusmods.com/stardewvalley/mods/7286) | Adds 24 new NPCs, a new location, forage, custom music, and more. | `1.2.7` |
 | [Running Late](https://www.nexusmods.com/stardewvalley/mods/3518) | Changes the digital clock on the HUD to update every in-game minute instead of every 10. | `1.2.0` | |
@@ -70,7 +70,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [StardewHack](https://www.nexusmods.com/stardewvalley/mods/3213) | Library mod used by my other mods. Doesn't do much on its own. | `3.0` | |
 | [The Love of Cooking](https://www.nexusmods.com/stardewvalley/mods/6830) | A suite of changes all about cooking! | `1.0.12` | |
 | [TMXL Map Toolkit](https://www.nexusmods.com/stardewvalley/mods/1820) | Toolkit for adding/editing/replacing maps and creating buildables. | `1.22.0` | |
-| [Tractor Mod](https://www.nexusmods.com/stardewvalley/mods/1401) | Buy a tractor to more efficiently work with crops, clear twigs and rocks, etc. | `4.14.0` | |
+| [Tractor Mod](https://www.nexusmods.com/stardewvalley/mods/1401) | Buy a tractor to more efficiently work with crops, clear twigs and rocks, etc. | `4.14.1` | |
 | [Tree Transplant](https://www.nexusmods.com/stardewvalley/mods/1342) | Used to transplant trees on your farm. | `1.0.13` | |
 | [UI Info Suite](https://www.nexusmods.com/stardewvalley/mods/1150) | Provides helpful information about things around you designed to help you be aware of what's going on without feeling like you're cheating. | `2.0.0` | |
 | [Wear More Rings](https://www.nexusmods.com/stardewvalley/mods/3214) | Configure the amount of ring slots in your inventory. By default adds 6 additional ring slots. | `3.3` | |
@@ -83,7 +83,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Eemie's Map Recolors](https://www.moddrop.com/stardew-valley/mods/580620-eemies-just-a-new-map-recolour-content-patcher-edition) | Map Recolor | `1.7.2` | [1] |
 | [Flower Valley](https://www.nexusmods.com/stardewvalley/mods/2064) | Town and Farm Buildings ReDesign | `4.3.1` |
 | [Flowery Bin](https://www.nexusmods.com/stardewvalley/mods/4760) | A bin with various options of Darkwood, Birch, Joja, And plus a few more. | `1.13.5` | [1] |
-| [Medieval Buildings](https://www.nexusmods.com/stardewvalley/mods/4542) | Medieval Modern buildings | `1.18` |
+| [Medieval Buildings](https://www.nexusmods.com/stardewvalley/mods/4542) | Medieval Modern buildings | `1.19` |
 | [Seasonal Outfits - SVE](https://www.nexusmods.com/stardewvalley/mods/5975) | Gives the NPCs of Stardew Valley Expanded seasonal clothing. | `1.5.1` |
 | [Seasonal Villager Outfits](https://www.nexusmods.com/stardewvalley/mods/2449) | An outfit for every season! | `2.3.4` |
 | [Stardew Valley Dialogue Expansion](https://www.nexusmods.com/stardewvalley/mods/2544) | Adds about 2500 new lines of dialogue across all 33 characters who have a heart level. | `2.0.7` | |
