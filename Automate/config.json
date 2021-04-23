@@ -18,6 +18,5 @@
       "Priority": -1,
       "Enabled": true
     }
-  },
-  "PreventRemovingStacks": false
+  }
 }
