@@ -60,8 +60,11 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [NPC Map Locations](https://www.nexusmods.com/stardewvalley/mods/239) | Shows the locations of NPC and farmers on the map page and on a minimap. | `2.6.2` | |
 | [PPJA Artisan Valley](https://www.nexusmods.com/stardewvalley/mods/1926) | 20 New Machines and 150+ New Items! | `3.0.20` | |
 | [PPJA Fruits and Veggies](https://www.nexusmods.com/stardewvalley/mods/1598) | Adds more fruits and veggies. | `2.0.15` | |
+| [PPJA More Recipes](https://www.nexusmods.com/stardewvalley/mods/1670) | Adds more recipes. | `1.9.13` | |
+| [PPJA Mizus Flowers](https://www.nexusmods.com/stardewvalley/mods/2028) | Adds more flowers. | `1.6.7` | |
 | [PPJA More Trees](https://www.nexusmods.com/stardewvalley/mods/1671) | Adds more tree types. | `1.6.11` | |
 | [PyTK](https://www.nexusmods.com/stardewvalley/mods/1726) | Toolkit for Smapi Mods. | `1.22.4` | |
+| [Producer Framework](https://www.nexusmods.com/stardewvalley/mods/4970) | Toolkit for Smapi Mods. | `1.7.3` | |
 | [Quest Framework](https://www.nexusmods.com/stardewvalley/mods/6414) | Framework for work with quests like create custom quests, define custom quest types and handle quests. | `1.3.4` | |
 | [Ridgeside Village](https://www.nexusmods.com/stardewvalley/mods/7286) | Adds 24 new NPCs, a new location, forage, custom music, and more. | `1.2.7` |
 | [Running Late](https://www.nexusmods.com/stardewvalley/mods/3518) | Changes the digital clock on the HUD to update every in-game minute instead of every 10. | `1.2.0` | |
