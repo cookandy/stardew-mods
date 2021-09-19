@@ -5,13 +5,18 @@
   "ImmersiveShadows": "true",
   "MistEffects": "true",
   "CanWalkOverBeachTidepools": "false",
-  "SmallerDesertMap": "true",
+  "MountainMinecart": "false",
+  "AlternativeCraftables": "false",
   "RemoveObjectsFromGrandpasShed": "false",
+  "RemoveSouthernCactusesFromDesert": "false",
+  "DisableSVEJojaMartShop": "false",
   "LowerProfitMargins": "false",
   "BalancedCrafting": "false",
   "HarderBuildingConstruction": "false",
   "StrongerMonsters": "false",
   "OlderSophiaPortraits": "false",
   "VanillaSandyPortraits": "false",
-  "MatureEvents": "true"
+  "MatureEvents": "true",
+  "UseGaldoranThemeAllTimes": "false",
+  "DisableGaldoranTheme": "false"
 }

@@ -2,7 +2,7 @@
    "Name": "Canon-Friendly Dialogue Expansion for All Friend-able Characters for Content Patcher",
    "Author": "gizzymo (dialogue), paradigmnomad (coding), and various translators.",
    "Description": "Adds about 2500 new lines of dialogue across all 34 characters who have a heart level",
-   "Version": "2.0.7",
+   "Version": "2.0.9",
    "UniqueID": "gizzymo.canonfriendlyexpansion",
    "ContentPackFor": {
        "UniqueID": "Pathoschild.ContentPatcher"

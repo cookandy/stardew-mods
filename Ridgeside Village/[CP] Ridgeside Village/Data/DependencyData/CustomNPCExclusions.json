@@ -1,0 +1,19 @@
+{
+	"Changes": [
+
+	/*********
+	** NPC Exclusions
+	*********/
+		{
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Kiwi": "MovieInvite",
+				"Jio": "MovieInvite",
+				"Undreya": "ALL",
+				"Helen": "ALL",
+			}
+		},
+
+],
+}

@@ -1,0 +1,53 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		// Juliet and Jessie the Joja Clerks - https://www.nexusmods.com/stardewvalley/mods/6398
+		{
+			"LogName": "Juliet and Jessie NPC Sprite Offsets",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=LemurKat.JulietHouse.NPC": true
+			},
+			"Entries": {
+				"Juliet": {
+					"MarkerCropOffset": 2
+				},
+				"Jessie": {
+					"MarkerCropOffset": 2
+				},
+				"Gremlin": {
+					"MarkerCropOffset": 8
+				},
+			}
+		},
+		// TODO: In East Scarpe 2.0, if SVE is not installed, they will move to East Scarpe.
+		{
+			"LogName": "Juliet and Jessie the Joja Clerks - Location Support",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"When": {
+				"HasMod: |contains=LemurKat.JulietHouse.NPC": true
+			},
+			"Entries": {
+				// Juliet and Jessie the Joja Clerks - https://www.nexusmods.com/stardewvalley/mods/6398
+				"ClearingHouse": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 680,
+							"MapY": 172
+						},
+						{
+							"TileX": 59,
+							"TileY": 29,
+							"MapX": 703,
+							"MapY": 194
+						},
+					]
+				}
+			}
+		},
+	]
+}

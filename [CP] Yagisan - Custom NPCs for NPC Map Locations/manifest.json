@@ -2,7 +2,7 @@
   "$schema": "https://smapi.io/schemas/manifest.json",
   "Name": "[CP] Yagisan - Custom NPCs for NPC Map Locations",
   "Author": "Yagisan",
-  "Version": "1.1.4",
+  "Version": "1.1.12",
   "Description": "Setup Custom NPCs for the NPC Map Location mod",
   "UniqueID": "Yagisan.NPCMapLocationsForNPCs",
   "MinimumApiVersion": "3.0.0",
@@ -35,6 +35,10 @@
          "UniqueID": "Rafseazz.RSVCP",
          "IsRequired": false
        },
+       {
+        "UniqueID": "Rafseazz.RidgesideMobileCP",
+        "IsRequired": false
+      },       
        {
         "UniqueID": "malic.cp.jadeNPC",
         "IsRequired": false
@@ -117,6 +121,10 @@
       },
       {
         "UniqueID": "balverines.cecilia",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "invatorzen.AspenCP",
         "IsRequired": false
       },
      ]

@@ -11,7 +11,7 @@
 				"Tue4_1":"Mom's always worried about Vincent. Personally, I think he'll turn out fine.#$e#I mean, did she forget about what I was like at that age, or something?$h",
 				"Tue4":"I tried fixing a bowl of cereal for my dad, but as soon as I poured milk on it, he flipped out. What was up with that?$s",
 				"Tue8_1":"Sometimes I look at other people and notice how everyone changes. Some people I grew up with just aren't the same.#$e#It sucks to have to leave behind those parts of your childhood. Why does everyone settle for it?",
-				"Tue8":"Sometimes I look at other people and notice how everyone changes. Some people I grew up with just aren't the same.#$e#It sucks to have to leave behind those parts of your childhood. Why does everyone settle for it?",																																																																																		  
+				"Tue8":"Sometimes I look at other people and notice how everyone changes. Some people I grew up with just aren't the same.#$e#It sucks to have to leave behind those parts of your childhood. Why does everyone settle for it?",
 				"Wed":"I'm trying to come up with a new song for my band, but I'm blanking...#$q 319/320 Wed_old#Hey.. What do you think my new song should be about?#$r 320 30 Wed_320#Farming, mining, and chopping wood.#$r 8820 30 Wed_320#A city in the sea.#$r 8821 30 Wed_320#Trains.#$r 319 -50 Wed_319#Choose anything. It'll still be a horrible song.",
 				"Wed_old":"$p 319#But I already know what you think about it.$a|Thanks to your help I'm already done with the lyrics!$h",
 				"Wed_319":"Hey, man... what the heck is your problem? Sorry I asked.$a",

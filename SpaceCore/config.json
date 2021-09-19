@@ -1,3 +1,6 @@
 {
-  "CustomSkillPage": true
+  "CustomSkillPage": true,
+  "WalletLegacyStyle": false,
+  "WalletOnRightOfSkillPage": false,
+  "DisposeOldTextures": false
 }

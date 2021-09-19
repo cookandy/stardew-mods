@@ -275,28 +275,32 @@
                 "HasFile:{{FromFile}}": true
             },
         },
+	
 		{
-            "LogName": "Morris Vanilla Portrait outdoor",
+            "LogName": "Morris Vanilla Portrait indoor",
             "Action": "EditImage",
             "Target": "Portraits/Morris",
             "FromFile": "assets/Portraits/MorrisTod/MorrisTod_{{Season}}{{IndoorVariant}}.png",
             "Update": "OnLocationChange",            
 		    "When": {
                 "HasFile:{{FromFile}}": true,
-				"LocationName": "JojaMart" 
             },
         },
 
 		{
-            "LogName": "Morris Vanilla Portrait",
+            "LogName": "Morris Vanilla Portrait Joja",
             "Action": "EditImage",
             "Target": "Portraits/Morris",
             "FromFile": "assets/Portraits/MorrisTod/MorrisTod_Winter_Indoor.png",
-            "Update": "OnLocationChange",            
+            "Update": "OnLocationChange",
+            "Update": "OnTimeChange",            
 		    "When": {
-                "HasFile:{{FromFile}}": true
+                "HasFile:{{FromFile}}": true,
+                "Time": "{{Range: 0950, 2210}}",
+				"Season": "Winter",
             },
-        },		
+        },
+		
         {
             "LogName": "Morris Vanilla Sprite",
             "Action": "EditImage",
@@ -306,7 +310,7 @@
 			"When": {
                 "HasFile:{{FromFile}}": true
             },
-        },
+        },	
         {
             "LogName": "Morris Vanilla Sprite outdoor",
             "Action": "EditImage",
@@ -316,8 +320,7 @@
 			"When": {
                 "HasFile:{{FromFile}}": true
             },
-        },		
-
+        },	
 	//Gunther
         {
             "LogName": "Gunther Vanilla Portait",
@@ -363,6 +366,27 @@
             },
         },
 
+//Wizard        
+		{
+            "LogName": "Wizard Vanilla Portait",
+            "Action": "EditImage",
+            "Target": "Portraits/Wizard",
+            "FromFile": "assets/Portraits/Magnus/Magnus_{{Season}}.png",
+            "Update": "OnLocationChange",            
+		    "When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+        {
+            "LogName": "Wizard Vanilla Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Wizard",
+            "FromFile": "assets/Characters/Magnus/Magnus_{{Season}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
 
 
 // Work Joja		
@@ -474,7 +498,37 @@
       "When": { "Spouse": "Claire", "DayOfWeek": "Monday, Wednesday, Thursday, Sunday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
       "Update": "OnLocationChange"
     },
-		
+	
+// Claire Theater 14 heart overwrite	
+	{ "LogName": "Claire's Theater Portraits 14 heart season",
+      "Action": "EditImage",
+      "Target": "Portraits/Claire",
+      "FromFile": "assets/Portraits/Claire/Claire_{{Season}}.png",
+      "When": { "Spouse |contains=Claire": true, "LocationName": "MovieTheater", "HasSeenEvent |contains=4269703": true, "HasSeenEvent |contains=4269704": false, "Time": "{{Range: 1600, 2000}}", "HasFile:{{FromFile}}": true,},
+      "Update": "OnLocationChange"
+    },
+	{ "LogName": "Claire's Theater Portraits 14 heart season outdoor",
+      "Action": "EditImage",
+      "Target": "Portraits/Claire",
+      "FromFile": "assets/Portraits/Claire/Claire_{{Season}}{{IndoorVariant}}.png",
+      "When": { "Spouse |contains=Claire": true, "LocationName": "MovieTheater", "HasSeenEvent |contains=4269703": true, "HasSeenEvent |contains=4269704": false, "Time": "{{Range: 1600, 2000}}", "HasFile:{{FromFile}}": true, },
+      "Update": "OnLocationChange"
+    },
+	{ "LogName": "Claire's Theater Sprites 14 heart season",
+      "Action": "EditImage",
+      "Target": "Characters/Claire",
+      "FromFile": "assets/Characters/Claire/Claire_{{Season}}.png",
+      "When": { "Spouse |contains=Claire": true, "LocationName": "MovieTheater", "HasSeenEvent |contains=4269703": true, "HasSeenEvent |contains=4269704": false, "Time": "{{Range: 1600, 2000}}", "HasFile:{{FromFile}}": true, },
+      "Update": "OnLocationChange"
+    },
+	{ "LogName": "Claire's Theater Sprites 14 heart season outdoor",
+      "Action": "EditImage",
+      "Target": "Characters/Claire",
+      "FromFile": "assets/Characters/Claire/Claire_{{Season}}{{IndoorVariant}}.png",
+      "When": { "Spouse |contains=Claire": true, "LocationName": "MovieTheater", "HasSeenEvent |contains=4269703": true, "HasSeenEvent |contains=4269704": false, "Time": "{{Range: 1600, 2000}}", "HasFile:{{FromFile}}": true, },
+      "Update": "OnLocationChange"
+    },	
+	
 // Festivals
         {
             "LogName": "Festival Character Sprites",

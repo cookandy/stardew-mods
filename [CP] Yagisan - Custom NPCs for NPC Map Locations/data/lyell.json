@@ -1,0 +1,38 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Custom npc Lyell - https://www.nexusmods.com/stardewvalley/mods/4499
+        {
+            "LogName": "NPC Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Fellowclown.Lyell": true
+            },
+            "Entries": {
+                "Lyell": {
+                    "MarkerCropOffset": -2
+                },
+            }
+        },
+        {
+            "LogName": "Custom npc Lyell - Location Support",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": {
+                "HasMod: |contains=Fellowclown.Lyell": true
+            },
+            "Entries": {
+                // Custom npc Lyell - https://www.nexusmods.com/stardewvalley/mods/4499
+                "Custom_Fellowclown.Lyell_LyellsWoods": {
+                    "MapVectors": [
+                        {
+                            "MapX": 264,
+                            "MapY": 380
+                        }
+                    ]
+                }
+            }
+        },
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Custom NPC - Roronoa Zoro - https://www.nexusmods.com/stardewvalley/mods/6316
+        {
+            "LogName": "NPC Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=EmpressKimi.Zoro": true
+            },
+            "Entries": {
+                "Zoro": {
+                    "MarkerCropOffset": 0
+                },
+            }
+        },
+        {
+            "LogName": "Custom NPC - Roronoa Zoro - Location Support",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": {
+                "HasMod: |contains=EmpressKimi.Zoro": true
+            },
+            "Entries": {
+                // Custom NPC - Roronoa Zoro - https://www.nexusmods.com/stardewvalley/mods/6316
+                "ZoroDock": {
+                    "MapVectors": [
+                        {
+                            "MapX": 715,
+                            "MapY": 650
+                        }
+                    ]
+                }
+            }
+        },
+    ]
+}

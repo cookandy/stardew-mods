@@ -1,0 +1,22 @@
+{
+"Changes": [
+
+	/*********
+	** Portrait Changes
+	*********/	
+	
+	{
+		"LogName": "Corine Ninja Outfit Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Corine",
+		"FromFile": "Assets/Portraits/Corine_Ninja.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"HasSeenEvent: hostPlayer": 75160125,
+			"LocationName": "Custom_Ridgeside_RidgesideVillage, Custom_Ridgeside_Ridge, Farm, FarmHouse",
+			"DayOfWeek": "Thursday",
+		},
+	},
+
+]
+}

@@ -8,6 +8,9 @@
 		"1",
 		"1"
 	],
+	"CookingUseRange": [
+		"3"
+	],
 	"NpcKitchenFriendshipRequired": [
 		"6"
 	],
@@ -23,6 +26,7 @@
 	"NettlesLocations": [
 		"Farm",
 		"Forest",
+		"Mountain",
 		"Railroad"
 	],
 	"NettlesAddedRange": [
