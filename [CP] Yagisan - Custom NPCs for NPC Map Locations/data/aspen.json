@@ -3,7 +3,7 @@
     "Changes": [
         // Aspen - New Custom Dateable NPC - https://www.nexusmods.com/stardewvalley/mods/6754
         {
-            "LogName": "NPC Sprite Offsets",
+            "LogName": "[Yagi] Aspen - Sprite Offsets",
             "Action": "EditData",
             "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
             "When": {
@@ -16,7 +16,7 @@
             }
         },
         {
-            "LogName": "Aspen - New Custom Dateable NPC - Location Support",
+            "LogName": "[Yagi] Aspen - Location Support",
             "Action": "EditData",
             "Target": "Mods/Bouhm.NPCMapLocations/Locations",
             "When": {

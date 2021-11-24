@@ -1,0 +1,33 @@
+{
+	"Name": "Ornate Nudibranch",
+	"Description": "A translucent sea slug.",
+	"Category": "Fish",
+	"Edibility": 20,
+	"EdibleIsDrink": false,
+	"EdibleBuffs": null,
+	"Price": 220,
+	"IsColored": false,
+	"GiftTastes":
+	{
+		"Love": ["Demetrius", "Vincent", "Wizard"],
+		"Like": ["Maru"]
+	},
+	"NameLocalization":
+	{
+		/*to be added in*/
+		"ko": "화려한 갯민숭달팽이",
+		"zh": "华丽海蛞蝓",
+	},
+	"DescriptionLocalization":
+	{
+		/*to be added in*/
+		"ko": "바닷물에서 서식하는 반투명한 민달팽이의 한 종류입니다.",
+		"zh": "一条半透明的海蛞蝓。",
+	},
+	"CategoryLocalization":
+	{
+		/*to be added in*/
+		"ko": "물고기",
+		"zh": "鱼",
+	}
+}

@@ -3,7 +3,7 @@
     "Changes": [
         // Custom NPC - Roronoa Zoro - https://www.nexusmods.com/stardewvalley/mods/6316
         {
-            "LogName": "NPC Sprite Offsets",
+            "LogName": "[Yagi] Roronoa Zoro - Sprite Offsets",
             "Action": "EditData",
             "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
             "When": {
@@ -16,7 +16,7 @@
             }
         },
         {
-            "LogName": "Custom NPC - Roronoa Zoro - Location Support",
+            "LogName": "[Yagi] Roronoa Zoro - Location Support",
             "Action": "EditData",
             "Target": "Mods/Bouhm.NPCMapLocations/Locations",
             "When": {
@@ -27,10 +27,17 @@
                 "ZoroDock": {
                     "MapVectors": [
                         {
-                            "MapX": 715,
-                            "MapY": 650
+                            "MapX": 735,
+                            "MapY": 600
                         }
-                    ]
+                    ],
+                    "MapTooltip": {
+                        "X": 716,
+                        "Y": 596,
+                        "Width": 36,
+                        "Height": 24,
+                        "PrimaryText": "Zoro's BoatHouse"
+                    }
                 }
             }
         },

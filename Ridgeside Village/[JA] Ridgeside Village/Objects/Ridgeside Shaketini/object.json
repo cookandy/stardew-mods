@@ -1,6 +1,6 @@
 {
   "Name": "Ridgeside Shaketini",
-  "Description": "A Ridgeside Village Specialty.",
+  "Description": "A Ridgeside Village specialty.",
   "Category": "Cooking",
   "Price": 300,
   "Edibility": 51,
@@ -24,6 +24,25 @@
     "Like": ["Abigail", "Emily", "Haley", "Leah", "Maru", "Penny", "Caroline", "Jodi", "Sandy", "Demetrius", "Gus", "Pierre"],
     "Dislike": ["Krobus", "Dwarf"]
   },
+  "Recipe":
+    {
+        "ResultCount": 1,
+        "Ingredients": [
+        {
+            "Object": "Ridge Wild Apple",
+            "Count": 1,
+        },
+        {
+            "Object": "Ridgeside Clementine",
+            "Count": 1,
+        },
+        {
+            "Object": 636,
+            "Count": 1,
+        },
+        ],
+        "CanPurchase": false,
+    },
 
     "NameLocalization":
     { 

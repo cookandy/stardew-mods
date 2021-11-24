@@ -1,0 +1,16 @@
+{
+    "Name": "[TMX] East Scarp",
+    "Author": "LemurKat",
+    "Version": "2.0.2",
+    "Description": "Adds ES NPC Spouse Rooms",
+    "UniqueID": "LemurKat.EastScarpe.TMX",
+    "UpdateKeys": ["Nexus:???"],
+    "Dependencies": [
+  	{ "UniqueID": "LemurKat.EastScarpe.CP" }
+			],
+   "ContentPackFor": {
+      "UniqueID": "Platonymous.TMXLoader",
+      "MinimumVersion": "1.13.0"
+              }
+      
+    }

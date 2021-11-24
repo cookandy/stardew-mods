@@ -1,0 +1,30 @@
+{
+	"Name": "Cerulean Nudibranch",
+	"Description": "A tiny beautiful sea slug.",
+	"Category": "Fish",
+	"Edibility": 20,
+	"EdibleIsDrink": false,
+	"EdibleBuffs": null,
+	"Price": 150,
+	"IsColored": false,
+	"GiftTastes":
+	{
+		"Love": ["Vincent"],
+		"Like": ["Wizard"]
+	},
+	"NameLocalization":
+	{
+		/*to be added in*/
+		"ko": "짙은 청색 갯민숭달팽이"
+	},
+	"DescriptionLocalization":
+	{
+		/*to be added in*/
+		"ko": "바닷물에서 서식하는 아주 작고 예쁜 민달팽이의 한 종류입니다."
+	},
+	"CategoryLocalization":
+	{
+		/*to be added in*/
+		"ko": "물고기"
+	}
+}

@@ -2,7 +2,7 @@
 	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Changes": [
 		{
-			"LogName": "Stardew Valley - Vanilla Location Support",
+			"LogName": "[Yagi] Stardew Valley - Vanilla Location Support",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
 			"Entries": {

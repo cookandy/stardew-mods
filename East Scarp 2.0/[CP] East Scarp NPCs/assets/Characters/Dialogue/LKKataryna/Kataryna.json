@@ -1,0 +1,18 @@
+{
+    "Mon": "There's definitely something supernatural going on here. I can practically smell it.",
+    "Mon2":"Seen anything supernatural going on? No? Then I don't have time to chat.$4",
+    "Tue": "One of my sources told me there's a wizard living in town.#$b#I don't suppose you'd organize a visit?#$b#Of course I tried knocking! He refused to answer.$a",
+    "Tue2": "Oh... That Peasbody-person has been criticising my stories again. The gall!$a#$b#All because HE doesn't believe in monsters...^All because SHE doesn't believe in monsters...",
+    "Wed": "Oh yes, I've met that charming chap up in the Guild.#$b#He's a bit gruff, isn't he? Wouldn't tell me much of anything.$2",
+    "Thu": "Granny Evelyn's delightful! She told me so much about the town.#$b#None of it was particularly useful, but I didn't have the heart to discourage the old dear.$1",
+    "Fri": "Oh, can't stop, deadlines to meet!",
+    "Fri2":"You haven't seen anything unusual around here, have you?",
+    "Sat": "The children keep telling me such outrageous stories.#$b#A fishman lurking by the wharf, goblins in the woods... if only they were true!$3",
+    "Sun": "What do you know about the message on the gravestone, @? It's rather mysterious, isn't it.$1",
+    "summer_Fri_inlaw_Jasper": "I hope your husband is working on something refreshing for us! His articles are always such a hoot.$1",
+    "Mon6":"We spent all night camping in the Foreverglades once; we'd heard rumors of a pungent ape.#$b#Got eaten alive by mosquitoes for my trouble.$4",
+    "winter_Fri":"There's definitely something a little... different about this town, don't you think?#$b#And so insular. No one wants to talk to me. Well, except the Vet's girl. And all she wants to talk about are birds!$a",
+    "winter_Wed":"Could've sworn I heard a weird banging noise, somewhere far below my bed last night.#$b#The ghosts of the miners perhaps? They say when death strikes suddenly, shades often linger, caught in an endless loop.$1",
+    "fall_Thu":"Oh, hello @. I'd kill for an espresso. Was up all night sorting out a scoop.#$b#Hah, no! That's classified information. You can buy the next issue, like everyone else.$3",
+    "fall_Sat_inlaw_Jasper":"I see your charming husband's been hard at work. His latest piece on the junimo was most enlightening. Hmm... I wonder if there mimght be some around here?",
+}

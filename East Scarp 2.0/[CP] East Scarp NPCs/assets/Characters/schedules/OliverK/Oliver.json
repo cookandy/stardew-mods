@@ -1,0 +1,9 @@
+{
+    "winter_1": "0 BusStop 12 16 0/610 BusStop 14 16 3/800 SeedShop 12 27 3/1030 Town 46 57 2/1120 Custom_EastScarpeInn 15 9 0/1600 Custom_EastScarpeInn 13 11 1 oliverk_computer/2200 Custom_EastScarpeInn 19 11 3 oliverk_sleep",
+    "rain":"0 Custom_EastScarpeInn 19 11/900 Custom_EastScarpeInn 15 9 0/1000 Custom_EastScarpeInn 45 10 0/1100 Custom_EastScarpeInn 45 12 3/1300 Custom_EastScarpeInn 25 12 2 square_5_1_2/1800 Custom_EastScarpeInn 13 11 1 oliverk_computer/2200 Custom_EastScarpeInn 19 11 3 oliverk_sleep",
+    "spring": "0 Custom_EastScarpeInn 19 11/800 Custom_EastScarpeInn 15 9 0/1000 Custom_EastScarpe 47 70 3/1500 Custom_EastScarpe 14 123 2/1800 Custom_EastScarpeInn 33 28 0/2200 Custom_EastScarpeInn 19 11 3 oliverk_sleep",
+    "Tue":"MAIL JacobOliverWork/GOTO spring/0 Custom_EastScarpeInn 19 11/800 Custom_EastScarpeInn 15 9 0/1000 Custom_EastScarpe 28 32 3/1140 Custom_ES_VetAwayWarp 6 5 2/1800 Custom_EastScarpeInn 13 11 1 oliverk_computer/2200 Custom_EastScarpeInn 19 11 3 oliverk_sleep",
+    "Sat": "0 Custom_EastScarpeInn 19 11/900 Custom_EastScarpeInn 15 9 0/1000 Custom_EastScarpe 31 63 3/1300 Custom_EastScarpe 10 109 2/1600 Custom_EastScarpeInn 28 13 3/1900 Custom_EastScarpeInn 13 11 1 oliverk_computer",
+    "Sun": "0 Custom_EastScarpeInn 19 11/1100 Custom_EastScarpeInn 48 19 3/1300 Custom_EastScarpe 31 63 3/1500 Custom_EastScarpe 14 123 2/1800 Custom_EastScarpeInn 33 28 0/2200 Custom_EastScarpeInn 19 11 3 oliverk_sleep",
+	
+}

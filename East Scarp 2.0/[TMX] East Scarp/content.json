@@ -1,0 +1,16 @@
+{
+	"LoadLate":true,
+  "spouseRooms": [
+    {
+      "name": "Aideen",
+      "file": "assets/SpouseRooms/Aideen.tmx"
+    }
+  ],
+/*"addMaps": [   
+   {
+      "name": "Custom_ESOrchard",
+      "file": "assets/Orchard.tmx"
+    }
+  ]*/
+
+}

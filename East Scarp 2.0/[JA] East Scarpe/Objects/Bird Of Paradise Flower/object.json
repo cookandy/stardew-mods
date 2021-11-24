@@ -1,0 +1,38 @@
+﻿{
+    "Name": "Bird Of Paradise Flower",
+    "Description": "This exotic flower resembles a colorful bird.",
+    "Category": "Flower",
+    "Edibility": 5,
+    "EdibleIsDrink": false,
+    "Price": 200,
+    "IsColored": false,
+    "Recipe": null,
+    "HideFromShippingCollection": true,
+    "GiftTastes":
+    {
+        "Love": ["Haley", "Elliott", "Aideen"]
+    },
+    
+    "ContextTags": [
+        "color_orange",
+        "flower_item"
+    ],
+	"NameLocalization":
+	{
+		/*to be added in*/
+		"ko": "극락조화",
+"zh": "天堂鸟",
+	},
+	"DescriptionLocalization":
+	{
+		/*to be added in*/
+		"ko": "이국적인 이 꽃은 마치 화려한 새의 모습을 띄고 있습니다.",
+"zh": "这种奇异的花朵看起来像五彩缤纷的鸟。",
+	},
+	"CategoryLocalization":
+	{
+		/*to be added in*/
+		"ko": "꽃",
+"zh": "花",
+	}
+}

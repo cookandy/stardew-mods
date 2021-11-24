@@ -1,0 +1,26 @@
+RSV 2.0.2
+------------------------------------------------------
+Changed Acorn's name to Lil Acorn for compatibility in all aspects
+Changed Ridgeside Obelisk requirements (Now requires 200 spirit essence and 10 iridium bars)
+Increased Maive's Charity Special Order reward to 80,000G
+Fixed Lover's Sorrow Ghost not giving the relic
+Fixed weird bug in Ian's 14 heart event
+Fixed repeating wedding reception advertisment mail bug
+Fixed Ariah's World Map Sprite
+Fixed North Minecart blockade still there after unlock for other players in mutiplayer
+Fixed a bunch of typos and grammar errors
+Fixed bug where you can walk on water near the Ninja Base
+Fixed bug where Cherry Pluot and Mountain Plumcot object sprites were the same
+Fixed some map tile bugs
+Fixed bug where Carmen and Jodi merge during the Night Market
+Fixed bug with multiplayer Ember of Resolutions
+Fixed bugs in special orders
+Fixed split screen issues with the Pedestals
+Fixed bug where Carmen doesn't give you the recipe for Ridge Apple Cake
+Fixed requirements for Daia's Mystic Falls weapon
+Fixed bug where errors show about Jio's schedule after finishing the Preparations Quest
+Fixed missing lamp at Ember of Resolutions
+Fixed bug where quest items aren't returned if offered to Raeriyala
+Fixed bug where Daia becomes one with some pole at the village in one of her schedules
+Fixed bug where Corine is slicing off a pole at the village for no reason
+Fixed bug where ambient music plays a clear night during rainy nights

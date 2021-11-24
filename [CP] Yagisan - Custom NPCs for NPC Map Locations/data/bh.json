@@ -3,7 +3,7 @@
 	"Changes": [
 		// Boarding House and Bus Stop Extension - https://www.nexusmods.com/stardewvalley/mods/4120
 		{
-			"LogName": "BH NPC Sprite Offsets",
+			"LogName": "[Yagi] Boarding House and Bus Stop Extension - Sprite Offsets",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
 			"When": {
@@ -22,7 +22,7 @@
 			}
 		},
 		{
-			"LogName": "Boarding House and Bus Stop Extension - Location Support",
+			"LogName": "[Yagi] Boarding House and Bus Stop Extension - Location Support",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
 			"When": {
@@ -79,7 +79,7 @@
 						}
 					]
 				},
-				"BackwoodsPlateau": {
+				"Custom_BoardingHouse_BackwoodsPlateau": {
 					"MapVectors": [
 						{
 							"TileX": 0,
@@ -118,7 +118,7 @@
 						}
 					]
 				},
-				"BuffaloRanch": {
+				"BuffalosRanch": {
 					"MapVectors": [
 						{
 							"MapX": 438,

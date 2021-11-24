@@ -23,6 +23,25 @@
 	{
 		"Love": ["Keahi", "Ysabelle"],
 	},
+    "Recipe":
+    {
+        "ResultCount": 1,
+        "Ingredients": [
+        {
+            "Object": 247,
+            "Count": 1,
+        },
+        {
+            "Object": "Highland Chard",
+            "Count": 2,
+        },
+        {
+            "Object": "Mountain Arugula",
+            "Count": 1,
+        },
+        ],
+        "CanPurchase": false,
+    },
 
     "NameLocalization":
     { 

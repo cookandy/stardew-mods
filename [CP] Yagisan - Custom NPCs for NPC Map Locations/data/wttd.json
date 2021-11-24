@@ -2,7 +2,7 @@
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Changes": [
         {
-            "LogName": "Walk to the Desert - Expansion Mod - Location Support",
+            "LogName": "[Yagi] Walk to the Desert - Location Support",
             "Action": "EditData",
             "Target": "Mods/Bouhm.NPCMapLocations/Locations",
             "When": {

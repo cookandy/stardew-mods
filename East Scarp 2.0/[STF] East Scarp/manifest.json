@@ -1,0 +1,12 @@
+{
+  "Name": "East Scarpe Shops",
+  "Author": "Lemurkat",
+  "Version": "2.0.2",
+  "Description": "Buy and trade stuff at East Scarpe.",
+  "UniqueID": "LemurKat.EastScarpeShops.STF",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": ["Nexus:???"],
+  "ContentPackFor": {
+    "UniqueID": "Cherry.ShopTileFramework"
+  }
+}

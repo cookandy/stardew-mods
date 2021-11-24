@@ -1,0 +1,49 @@
+﻿{
+    "Name": "Bird Of Paradise Plant",
+    "Product": "Bird Of Paradise Flower",
+    "SeedName": "Bird Of Paradise Seeds",
+    "SeedDescription": "Plant in summer or fall to grow a brilliant bird-like flower. Takes 12 days to mature, and keeps producing after the first harvest.",
+    "Type": "Flower",
+    "Seasons": ["summer"],
+    "Phases": [2,2,2,3,3],
+    "RegrowthPhase": 4,
+    "HarvestWithScythe": false,
+    "TrellisCrop": false,
+    "Colors": null,
+  
+    "CanPurchase": true,
+	"SeedPurchasePrice": 125,
+	"SeedPurchaseFrom": "NOTSOLDATVENDOR",
+	"SeedPurchaseRequirements": null,
+   
+    "ContextTags": [
+        
+        "season_summer",
+        
+        "seed_item"
+    ],
+    "NameLocalization":
+	{
+		/*to be added in*/
+		"ko": "극락조화",
+		"zh": "天堂鸟",
+	},
+	"ProductLocalization":
+	{
+		/*to be added in*/
+		"ko": "극락조화",
+		"zh": "天堂鸟",
+	},
+	"SeedNameLocalization":
+	{
+		/*to be added in*/
+		"ko": "극락조화 씨앗",
+		"zh": "天堂鸟种子",
+	},
+	"SeedDescriptionLocalization":
+	{
+		/*to be added in*/
+		"ko": "여름 또는 가을에 심을 수 있다. 다 자라는 데에는 총 12일이 소요되고, 수확 후에도 계속해서 꽃을 피운다. 새 모양의 빛이 나는 꽃을 보고 싶다면 심어보세요!",
+		"zh": "夏季或秋季种植，开出美丽的鸟状花朵。需要12天成熟，并在第一次收获后继续生长。",
+	}
+}

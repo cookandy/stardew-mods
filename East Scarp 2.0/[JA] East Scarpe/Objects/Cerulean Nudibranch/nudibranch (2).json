@@ -1,0 +1,33 @@
+{
+	"Name": "Cerulean Nudibranch",
+	"Description": "A tiny beautiful sea slug.",
+	"Category": "Fish",
+	"Edibility": 20,
+	"EdibleIsDrink": false,
+	"EdibleBuffs": null,
+	"Price": 150,
+	"IsColored": false,
+	"GiftTastes":
+	{
+		"Love": ["Vincent"],
+		"Like": ["Wizard"]
+	},
+	"NameLocalization":
+	{
+		/*to be added in*/
+		//"ko": "",
+		"zh": "蓝色海蛞蝓",
+	},
+	"DescriptionLocalization":
+	{
+		/*to be added in*/
+		//"ko": "",
+		"zh": "小而美丽的海蛞蝓。",
+	},
+	"CategoryLocalization":
+	{
+		/*to be added in*/
+		//"ko": "",
+		"zh": "鱼",
+	}
+}

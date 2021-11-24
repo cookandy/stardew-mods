@@ -1,0 +1,129 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Rosa Dialogue File",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Rosa, Characters/Schedules/Rosa",
+      "FromFile": "assets/{{target}}/Rosa.json"
+    },
+    {
+      "LogName": "NPC Dispositions",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Rosa": "adult/neutral/neutral/neutral/female/not-datable/null/Town/null/fall 7/Custom_ES_InnRoomRosa 5 5/{{i18n:Name.Rosa}}"
+      }
+    },
+    /* {
+      "LogName": "NPC Manifestation - makes Rosa datable if you're playing a female char (she may ask you at 8-hearts if you are interested in women romantically and if no, remove - or add - a flag)",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Fields": {
+        "Rosa": {
+          "5": "datable"
+        }
+      },
+      "When": {
+        "PlayerGender": "female"
+      }
+    },*/
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Rosa": "{{i18n:gifts.rosa.love}}/540 233 400/{{i18n:gifts.rosa.like}}/-4 -5 -6 -7 -79 422 216 246 768/{{i18n:gifts.rosa.dislike}}/330/{{i18n:gifts.rosa.hate}}/2 769/{{i18n:gifts.rosa.neutral}}/-4/ "
+      }
+    },
+    {
+      "LogName": "Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Rosa",
+      "FromFile": "assets/{{Target}}/Rosa.png"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Festivals/Rosa.json"
+    },
+
+    {
+      "LogName": "Schedule Dialogue",
+      "Action": "Load",
+      "Target": "Strings/schedules/Rosa",
+      "FromFile": "assets/Characters/schedules/Rosa/ScheduleDialogueRosa.json"
+    },
+    {
+      "LogName": "Additional Rosa Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/Characters/Dialogue/Rosa/RosaDialogue.json"
+    },
+    /*********
+  ** Sprites
+  *********/
+    {
+      "LogName": "Sprites",
+      "Action": "Load",
+      "Target": "Characters/Rosa",
+      "FromFile": "assets/{{Target}}/Rosa.png"
+    },
+    {
+      "LogName": "Sprites",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Rosa",
+      "Entries": {
+        "spring": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 22 100 2/1800 Custom_EastScarpe 17 121 2/2000 Custom_ES_InnRoomRosa 5 5 1",
+        "summer": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 22 100 2/1800 Custom_EastScarpe 17 121 2/2000 Custom_ES_InnRoomRosa 5 5 1",
+        "fall": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 22 100 2/1800 Custom_EastScarpe 17 121 2/2000 Custom_ES_InnRoomRosa 5 5 1",
+        "winter": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 22 100 2/1800 Custom_EastScarpe 17 121 2/2000 Custom_ES_InnRoomRosa 5 5 1",
+        "rain": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpeInn 33 28 0/1500 Custom_EastScarpeInn 28 13 3 square_1_2_1/1800 Custom_EastScarpe 17 121 2/2000 Custom_ES_InnRoomRosa 5 5 1",
+      },
+      "When": {
+        "HasMod": "ItsBenter.InnCompanions.CP"
+      },
+    },
+    {
+      "LogName": "Sprites",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Rosa",
+      "Entries": {
+        "Sat": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 22 100 2/1700 Saloon 36 20 1/2400 Custom_ES_InnRoomRosa 5 5 1",
+      },
+      "When": {
+        "HasSeenEvent": "57874001"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_EastScarpeInn",
+      "Entries": {
+        "57874000": "jaunty/37 15/farmer 40 22 0 Rosa 44 10 0/skippable/addObject 43 17 234 1/addObject 41 8 245 1/addObject 42 8 246 1/move farmer 0 -4 1 true/move Rosa -4 0 2 true/emote Rosa 56/emote farmer 8/move farmer 2 0 1/move Rosa 0 5 2/doAction 40 16/playSound openBox/faceDirection farmer 3/move farmer -2 0 0 true/move Rosa 0 2 2 true/pause 1000/emote Rosa 16/jump Rosa 3/jump farmer 3/move farmer 1 0 3/playSound dwop/addObject 40 18 255 0/textAboveHead Rosa \"{{i18n:57874000.01}}\"/speak Rosa \"{{i18n:57874000.02}}\"/quickQuestion #{{i18n:57874000.03}}#{{i18n:57874000.04}}(break)speak Rosa \"{{i18n:57874000.05}}\"(break)speak Rosa \"{{i18n:57874000.06}}\"/speak Rosa \"{{i18n:57874000.07}}\"/emote farmer 36/speak Rosa \"{{i18n:57874000.08}}\"/playSound pickUpItem/removeSprite 40 18/move Rosa 0 1 1/speak Rosa \"{{i18n:57874000.09}}\"/faceDirection Rosa 3/pause 500/faceDirection Rosa 1/speak Rosa \"{{i18n:57874000.10}}\"/emote farmer 32/pause 500/speak Rosa \"{{i18n:57874000.11}}\"/emote farmer 56/pause 500/speak Rosa \"{{i18n:57874000.12}}\"/pause 500/emote farmer 40/pause 500/speak Rosa \"{{i18n:57874000.13}}\"/pause 500/move Rosa 0 -1 0/move farmer -1 0 0/move Rosa 0 -6 0 true/pause 1000/end"
+      }
+    },
+//With Juliet
+       {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC"
+            },
+            "Entries": {
+                "cc_Complete": "I saw the JojaMart is all boarded up. What happened?#$b#I hope that doesn't mean Juliet's going to leave.$2",
+		"summer_Fri2":"$d joja#Hey, you know Juliet? The cute clerk at the JojaMart? She's such a hoot.#$b#You won't believe what she said to me yesterday! Yep, something about melons.$1#$b#I bought two. Shes' err... very persuasive.$4|Have you seen you Juliet around? Now, there's a woman who knows her own mind!$1",
+            }
+        },
+ {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC",
+		"HasSeenEvent":"57874001"
+            },
+            "Entries": {
+      "fall_Fri6": "Jules and I have been talking about a seance. Spooky time of year and all that.#$b#Do you want in on it?",
+                "Sun6": "Hah, you should come join us sometime on Saturday night. Jules and me have been shooting pool down at the Stardrop.#$b#She's not quite the poolshark she thinks she is!$1#$e#But she does this cute little dance when she wins... so sometimes I miss on purpose.#$e#That's our little secret, 'k?$4"
+          }
+}
+
+  ]
+}

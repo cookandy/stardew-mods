@@ -1,7 +1,10 @@
 {
 	"$schema": "https://smapi.io/schemas/content-patcher.json",
-	"Format": "1.23.0",
+	"Format": "1.24.0",
 	"Changes": [
+		// Tier 1 Supported.
+		////////////////////////////////////////////////////////////////////////////////
+		// Core Stardew Valley
 		{
 			"Action": "Include",
 			"FromFile": "data/sdv.json",
@@ -9,6 +12,7 @@
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},
+		// Aspen
 		{
 			"Action": "Include",
 			"FromFile": "data/aspen.json",
@@ -16,6 +20,7 @@
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},
+		// Boarding House 4.0.4 and newer
 		{
 			"Action": "Include",
 			"FromFile": "data/bh.json",
@@ -23,13 +28,7 @@
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},
-		{
-			"Action": "Include",
-			"FromFile": "data/es.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
+		// East Scarp 1.7 and older
 		{
 			"Action": "Include",
 			"FromFile": "data/es17.json",
@@ -37,6 +36,15 @@
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},
+		// East Scarp 2.0 and newer
+		{
+			"Action": "Include",
+			"FromFile": "data/es.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		// Juliet and Jessie - the Joja Clerks
 		{
 			"Action": "Include",
 			"FromFile": "data/juliet_jessie.json",
@@ -44,6 +52,7 @@
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},
+		// Lunna - Astray in Stardew Valley
 		{
 			"Action": "Include",
 			"FromFile": "data/lasv.json",
@@ -51,13 +60,15 @@
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},
+		// Tier 1 Supported Misc NPCs
 		{
 			"Action": "Include",
-			"FromFile": "data/misc_npcs.json",
+			"FromFile": "data/tier_1_misc_npcs.json",
 			"When": {
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},
+		// Ridgeside Village
 		{
 			"Action": "Include",
 			"FromFile": "data/rsv.json",
@@ -65,6 +76,18 @@
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},
+
+		// Always Raining in the Valley
+		{
+			"Action": "Include",
+			"FromFile": "data/arv.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		// Tier 2 Community Supported.
+		////////////////////////////////////////////////////////////////////////////////
+		// Stardew Valley Expanded (Unsupported)
 		{
 			"Action": "Include",
 			"FromFile": "data/sve.json",
@@ -72,17 +95,10 @@
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},
-		// Unsupported. I don't use these mods and rely on community patches for timely updates.
+		// Tier 2 Unsupported Misc NPCs
 		{
 			"Action": "Include",
-			"FromFile": "data/athanaeri.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
-		{
-			"Action": "Include",
-			"FromFile": "data/garden_village.json",
+			"FromFile": "data/tier_2_misc_npcs.json",
 			"When": {
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
@@ -103,6 +119,59 @@
 		},
 		{
 			"Action": "Include",
+			"FromFile": "data/zoro.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "data/dsv.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "data/athanaeri.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "data/wilford.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "data/juna.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		// Tier 3 Community Supported.
+		////////////////////////////////////////////////////////////////////////////////
+		// Unsupported. I don't use these mods and rely on community patches for timely updates.
+		// Tier 3 Unsupported Misc NPCs
+		{
+			"Action": "Include",
+			"FromFile": "data/tier_3_misc_npcs.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},		
+		{
+			"Action": "Include",
+			"FromFile": "data/garden_village.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		{
+			"Action": "Include",
 			"FromFile": "data/rsv_mobile.json",
 			"When": {
 				"HasMod": "Bouhm.NPCMapLocations"
@@ -117,7 +186,7 @@
 		},
 		{
 			"Action": "Include",
-			"FromFile": "data/zoro.json",
+			"FromFile": "data/cotton.json",
 			"When": {
 				"HasMod": "Bouhm.NPCMapLocations"
 			}

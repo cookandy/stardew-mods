@@ -1,6 +1,6 @@
 {
 	"Name": "Honey Glazed Salad",
-	"Description": "A Pika Special Salad glazed with home-made honey! Super sweet!",
+	"Description": "Pika's special salad, glazed with homemade honey. Super sweet!",
 	"Category": "Cooking",
 	"Edibility": 60,
 	"EdibleIsDrink": false,
@@ -23,6 +23,29 @@
 	{
 		"Love": ["Pika", "Alissa"],
 	},
+    "Recipe":
+    {
+        "ResultCount": 1,
+        "Ingredients": [
+        {
+            "Object": 340,
+            "Count": 1,
+        },
+        {
+            "Object": 266,
+            "Count": 1,
+        },
+        {
+            "Object": "Highland Chard",
+            "Count": 1,
+        },
+        {
+            "Object": "Ridge Cherry",
+            "Count": 1,
+        },
+        ],
+        "CanPurchase": false,
+    },
 
     "NameLocalization":
     { 

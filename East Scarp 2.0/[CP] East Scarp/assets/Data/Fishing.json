@@ -1,0 +1,329 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectContextTags",
+            "Entries": {
+                "Golden Trout": "color_gold, fish_golden_trout, fish_lake",
+                "Kokanee Salmon": "color_red, fish_kokanee_salmon, fish_lake",
+                "Cerulean Nudibranch": "color_blue, fish_nudibranch, fish_ocean",
+                "Ornate Nudibranch": "color_red, fish_nudibranch, fish_ocean",
+                "Sea Bunny Nudibranch": "color_red, fish_nudibranch, fish_ocean",
+                "Sunset Nudibranch": "color_blue, fish_nudibranch, fish_ocean"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Fish",
+            "Entries": {
+                "{{spacechase0.JsonAssets/ObjectId:Golden Trout}}": "Golden Trout/80/smooth/6/12/600 1200/spring summer fall winter/both/689 .4 680 .1/3/.3/.1/0",
+                "{{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}}": "Kokanee Salmon/75/dart/6/12/1100 2000/spring summer fall winter/both/689 .4 680 .1/3/.2/.1/0",
+                "{{spacechase0.JsonAssets/ObjectId:Cerulean Nudibranch}}": "Cerulean Nudibranch/70/dart/1/3/1000 1800/winter/both/683 .2 689 .4/4/.1/.25/0",
+                "{{spacechase0.JsonAssets/ObjectId:Ornate Nudibranch}}": "Ornate Nudibranch/80/floater/1/3/1000 1800/spring/both/683 .2 689 .4/4/.1/.25/0",
+                "{{spacechase0.JsonAssets/ObjectId:Sea Bunny Nudibranch}}": "Sea Bunny Nudibranch/80/sinker/1/3/1000 1800/summer/both/683 .2 689 .4/4/.1/.25/0",
+                "{{spacechase0.JsonAssets/ObjectId:Sunset Nudibranch}}": "Sunset Nudibranch/85/mixed/1/3/1000 1800/fall/both/683 .2 689 .4/4/.1/.25/0",
+            },
+            "When": {
+                "HasMod |contains=spacechase0.JsonAssets": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Custom_ESDeepMountains": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/269 -1 699 -1 {{spacechase0.JsonAssets/ObjectId:Golden Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}} -1/699 -1 {{spacechase0.JsonAssets/ObjectId:Golden Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}} -1/139 -1 269 -1 699 -1 {{spacechase0.JsonAssets/ObjectId:Golden Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}} -1/269 -1 699 -1 {{spacechase0.JsonAssets/ObjectId:Golden Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}} -1/100 1 101 .31 103 .8 105 .7 106 .1 107 .65 114 .1",
+            },
+            "When": {
+                "HasMod |contains=spacechase0.JsonAssets": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "When": {
+                "HasMod |contains=spacechase0.JsonAssets": true,
+                "HasMod": "FlashShifter.JA.SVE"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Custom_ESDeepMountains",
+                        4
+                    ], // spring
+                    "Value": "{{spacechase0.JsonAssets/ObjectId:King Salmon}} -1",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Custom_ESDeepMountains",
+                        5
+                    ], // summer
+                    "Value": "{{spacechase0.JsonAssets/ObjectId:King Salmon}} -1",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "LogName": "Fish Location Data",
+            "Target": "Data/Locations",
+            "When": {
+                "HasMod |contains=spacechase0.JsonAssets": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Custom_EastScarpe",
+                        4
+                    ],
+                    "Value": "{{spacechase0.JsonAssets/ObjectId:Ornate Nudibranch}} 1",
+                    "Delimiter": " " // if there are already values, add a space between them and the new ones
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Custom_EastScarpe",
+                        5
+                    ],
+                    "Value": "{{spacechase0.JsonAssets/ObjectId:Sea Bunny Nudibranch}} 1",
+                    "Delimiter": " " // if there are already values, add a space between them and the new ones
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Custom_EastScarpe",
+                        6
+                    ],
+                    "Value": "{{spacechase0.JsonAssets/ObjectId:Sunset Nudibranch}} 1",
+                    "Delimiter": " " // if there are already values, add a space between them and the new ones
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Custom_EastScarpe",
+                        7
+                    ],
+                    "Value": "{{spacechase0.JsonAssets/ObjectId:Cerulean Nudibranch}} 1",
+                    "Delimiter": " " // if there are already values, add a space between them and the new ones
+                }
+            ]
+        },
+        {
+            "LogName": "Aquarium Data",
+            "Action": "EditData",
+            "Target": "Data/AquariumFish",
+            "When": {
+                "HasMod |contains=spacechase0.JsonAssets": true
+            },
+            "Entries": {
+                "{{spacechase0.JsonAssets/ObjectId:Golden Trout}}": "141/fish",
+                "{{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}}": "140/fish",
+                "{{spacechase0.JsonAssets/ObjectId:Cerulean Nudibranch}}": "145/crawl",
+                "{{spacechase0.JsonAssets/ObjectId:Ornate Nudibranch}}": "146/float",
+                "{{spacechase0.JsonAssets/ObjectId:Sea Bunny Nudibranch}}": "143/crawl",
+                "{{spacechase0.JsonAssets/ObjectId:Sunset Nudibranch}}":"144/crawl"
+            }
+        },
+        {
+            "LogName": "Aquarium Sprites",
+            "Action": "EditImage",
+            "Target": "LooseSprites/AquariumFish",
+            "FromFile": "assets/AquariumSprites.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 336,
+                "Width": 168,
+                "Height": 48
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FishPondData",
+            "Entries": {
+                "item_kokanee_salmon": {
+                    "RequiredTags": [
+                        "item_kokanee_salmon"
+                    ],
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.02,
+                            "ItemID": 394,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.001,
+                            "ItemID": 74,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 1.0,
+                            "ItemID": 812,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                    "PopulationGates": {
+                        "4": [
+                            "338 3",
+                            "340",
+                            "393 3",
+                            "723"
+                        ],
+                        "6": [
+                            "422 2 3",
+                            "60 2",
+                            "749 2 3",
+                            "116"
+                        ],
+                        "8": [
+                            "342",
+                            "336 3",
+                            "344",
+                            "386",
+                            "72"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FishPondData",
+            "Entries": {
+                "item_golden_trout": {
+                    "RequiredTags": [
+                        "item_golden_trout"
+                    ],
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.001,
+                            "ItemID": 124,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.01,
+                            "ItemID": 336,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.4,
+                            "ItemID": 384,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 5
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.8,
+                            "ItemID": 812,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 5
+                        }
+                    ],
+                    "PopulationGates": {
+                        "4": [
+                            "384 3"
+                        ],
+                        "6": [
+                            "559 1"
+                        ],
+                        "8": [
+                            "336 3"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FishPondData",
+            "Entries": {
+                "fish_nudibranch": {
+                    "RequiredTags": [
+                        "fish_nudibranch"
+                    ],
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.001,
+                            "ItemID": 72,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 5,
+                            "Chance": 0.01,
+                            "ItemID": 80,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 3,
+                            "Chance": 0.6,
+                            "ItemID": 766,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 2
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 1.0,
+                            "ItemID": 812,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 5
+                        }
+                    ],
+                    "PopulationGates": {
+                        "4": [
+                            "685 5"
+                        ],
+                        "6": [
+                            "774 5"
+                        ],
+                        "8": [
+                            "908 2"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FishPondData",
+            "MoveEntries": [
+                {
+                    "ID": "item_golden_trout",
+                    "ToPosition": "Top"
+                },
+                {
+                    "ID": "item_kokanee_salmon",
+                    "AfterID": "item_golden_trout"
+                },
+                {
+                    "ID": "fish_nudibranch",
+                    "AfterID": "item_kokanee_salmon"
+                }
+            ]
+        }
+    ]
+}

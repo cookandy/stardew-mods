@@ -3,7 +3,7 @@
 	"Changes": [
 		// East Scarp - https://www.nexusmods.com/stardewvalley/mods/5787
 		{
-			"LogName": "ES NPC Sprite Offsets",
+			"LogName": "[Yagi] East Scarp 1.7 - Sprite Offsets",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
 			"When": {
@@ -49,7 +49,7 @@
 			}
 		},
 		{
-			"LogName": "East Scarp 1.7 - Location Support",
+			"LogName": "[Yagi] East Scarp 1.7 - Legacy Location Support",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
 			"When": {
@@ -57,70 +57,17 @@
 			},
 			"Entries": {
 				// East Scarp - https://www.nexusmods.com/stardewvalley/mods/5787
-				// NPC Map Locations complains if any maps don't have a location.  Put a fake entry in to hide these for now.
 				"DeepMountains": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"ESOrchard": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"ESShack": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"OrchardHouse": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"EastScarpe": {
 					"MapVectors": [
@@ -140,7 +87,7 @@
 			}
 		},
 		{
-			"LogName": "East Scarp 1.7 Vineyard - Location Support",
+			"LogName": "[Yagi] East Scarp 1.7 Vineyard - Legacy Location Support",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
 			"When": {
@@ -168,7 +115,7 @@
 			}
 		},
 		{
-			"LogName": "East Scarp 1.7 Vineyard + SVE - Location Support",
+			"LogName": "[Yagi] East Scarp 1.7 - Vineyard + Stardew Valley Expanded - Legacy Location Support",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
 			"When": {
@@ -177,22 +124,8 @@
 			},
 			"Entries": {
 				// East Scarpe - https://www.nexusmods.com/stardewvalley/mods/5787
-				// This map does not exist when SVE is installed. Fake an entry so NPC Map Locations doesn't complain.
 				"ESVineyard": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				}
 			}
 		},

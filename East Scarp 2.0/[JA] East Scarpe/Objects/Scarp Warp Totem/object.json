@@ -1,0 +1,46 @@
+{
+  "Name": "Scarp Warp Totem",
+  "Description": "Warp to a East Scarpe!",
+  "Category": "Crafting",
+  "Edibility": -300,
+  "Price": 100,
+  "IsColored": false,
+  "EnableWithMod":"tlitookilakin.warpnetwork",
+  "Recipe":
+    	{
+        	"ResultCount": 1,
+	        "Ingredients": [
+            {   "Object": 709,
+                "Count": 1
+                        },
+            {   "Object": 717,
+                "Count": 1
+                        },
+            {   "Object": 296,
+                "Count": 5
+                        },
+           
+	                ],
+        "CanPurchase": true,
+        "PurchaseFrom": "",
+        "PurchasePrice": 1250
+                },
+	"NameLocalization":
+        {
+		/*to be added in*/
+		"ko": "스카프 워프 토템",
+		"zh": "斯卡普传送图腾",
+	},
+	"DescriptionLocalization":
+	{
+		/*to be added in*/
+		"ko": "이스트 스카프 마을로 공간 이동 시켜주는 토템입니다.",
+		"zh": "传送到东斯卡普村的图腾！",
+	},
+	"CategoryLocalization":
+	{
+		/*to be added in*/
+		"ko": "제작품",
+		"zh": "工艺制品",
+	}
+}

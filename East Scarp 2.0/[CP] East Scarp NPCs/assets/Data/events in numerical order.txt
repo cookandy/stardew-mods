@@ -1,0 +1,45 @@
+57873000    (Farm) Lewis comes to tell you they're coming: /j 153/z summer/z winter/z spring/u 28/Hn Oliver_Meet/Hn Josephine_Meet/t 600 900
+
+57872008    (East Scarpe) Oliver rescues Friend Gull: 57872008/p OliverK/f OliverK 1000/e 57872007/t 1300 1800 < must have seen Lexi's event with Friend Gull
+
+57872009    (East Scarpe) Part two of the above: Gull taken to Jacob: 57872009/e 57872008 < follows directly on
+
+57872010    (East Scarpe) Part three of the above: farmer talks to Lexi: 57872010/e 57872009 < follows directly on
+
+57872011    (East Scarpe) Part Four: Oliver releases the gull: 57872011/e 57872010/A OliverLexiGull/d Mon Thu Sat Sun/t 600 1100 < one week later, Olly releases gull, meets Lexi
+
+57872012    (Sea Caves) Oliver brings cookies: 57872012/e 57872011/d Tue Wed Thu/t 0800 1100 < Olly brings cookies. Unsure why not on a school day. Probably so its a few days later not the same day as above
+
+57872019    (Sea Cave) Oliver confesses to Lexi: 57872019/k 57872020/e 57873018 < Olly confesses to Lexi. This can be missed.
+
+57872020    (East Scarpe) Kataryna Visits: 57872020/e 57873018/A CryptoToday_Talk/w sunny/t 1100 1800 < Kataryna shows up. Seven days after original event.
+
+57873001    (BusStop) Arriving: /e 57873000/t 600 1200 < This one can be missed if you don't trigger it the day after the orginal event 
+
+57873002    (SeedShop) Pierre Recognises Josephine: 57873002/e 57873000/p JosephineK/f JosephineK 500 < Two hearts, visit the Seed Shop the same time Josephine does
+
+57873003    (EastScarpeInn) Video games on Saturday night: 57873003/f OliverK 500/p OliverK/t 1800 2400/d Mon Tue Wed Thu Fri Sun < Saturday nights only, 2 hearts
+
+57873005    Leaving: 57873005/f Josephine 2500/e ???/t 600 1800
+
+57873012    (EastScarpeInn) Argument over reunion concert: 57873012/f OliverK 1500/f JosephineK 1000/p OliverK/p JosephineK < 6 hearts Olly, 4 hearts Josie
+
+57873013    (EastScarpeInn) Reminscing over Zuzu Songbird: 57873013/e 57873012/f JosephineK 1500/p JosephineK < 6 hearts Josie must have seen previous
+
+57873014    (Town) Josephine gets the tour: 57873014/e 57873000/f JosephineK 20/w sunny/t 900 1600 < Triggered after you've spoken to her once.
+
+57873015    (East Scarpe) Farmer walks in on Oliver telling Kennedy: 57873015/e 57872012/t 1600 2100"/e 57872012/t 1600 2100"
+
+57873016    (LeahHouse) Admires sculpture: 57873016/e 57873001/k 57873005/f JosephineK 250/p Leah < one heart, Leah must be home
+
+57873017    (Farm) Delivers an urgent letter: 57873017/A KennedyLexi/e 57873015/x CryptoToday_Oliver < Olly asks you to come talk to him
+
+57873018    (Inn) Oliver tells Kennedy: 57873018/n CryptoToday_Oliver/p OliverK < Olly confesses to telling Kennedy and tells you about her aunt.
+
+57873021    (EastScarpeInn) Dr Jacob seeks assistance: 57873021/e 57872011/f OliverK 2000/f Jacob 1500/d Tue Wed Thu Fri Sat Sun/t 1000 1400 < has seen gull event but not necessarily others: Oliver 8 hearts, Jacob 6 hearts. Monday only.
+
+57873048    Discussion between Oliver and Josephine re: his bombshell
+
+57873049    (Farm): Invites you to dinner: summer or spring only: 57873049/f JosephineK 2500/f OliverK 2000/z winter/z fall/e 57873021/A Oliver_Jacob_Help < should happen at a minimum of two weeks after above event.
+
+57873050    (Dinner Part) 57873050/t 1800 2200/i 348/e 57873049/A Lewis_DinnerPartyInvite

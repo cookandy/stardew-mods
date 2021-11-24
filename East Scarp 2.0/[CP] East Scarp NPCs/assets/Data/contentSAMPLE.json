@@ -1,0 +1,31 @@
+{
+    "Format": "1.21",
+    "CustomLocations": [
+        // add the in-game location
+        {
+            "Name": "Custom_<MapName>",
+            "FromMapFile": "assets/Maps/<MapName>.tmx"
+        }
+    ],
+    "Changes": [
+        { //sets up House 2's door warp
+    "Action": "EditMap",
+    "Target": "Maps/EastScarpe",
+    "MapTiles": [
+        {
+            "Position": {
+                "X":31 ,
+                "Y":50 
+            },
+            "Layer": "Buildings",
+            "SetProperties": {
+                "Action": "Warp 10 20 Custom_<MapName>"
+            }
+        }
+    ]
+   },
+
+   //REST OF CONTENT JSON HERE
+
+]
+}

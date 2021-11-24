@@ -2,7 +2,8 @@
   "RepeatCableCarCutscene": "true",
   "EnableOtherNPCsInCableCar": "true",
   "EnableRidgesideMusic": "true",
-  "PastoralMapStyle": "PastoralBase",
   "RSVNPCSAttendFestivals": "true",
-  "EnableWorldMapEdit": "true"
+  "EasyIntroduction": "false",
+  "FullFestivals": "false",
+  "EnableBetterBusStop": "false"
 }

@@ -3,39 +3,75 @@
 	"Changes": [
 		// Ridgeside Village - https://www.nexusmods.com/stardewvalley/mods/7286
 		{
-			"LogName": "RSV NPC Sprite Offsets",
+			"LogName": "[Yagi] Ridgeside Village - Sprite Offsets",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
 			"When": {
 				"HasMod: |contains=Rafseazz.RSVCP": true
 			},
 			"Entries": {
+				"Acorn": {
+					"MarkerCropOffset": 16
+				},
 				"Aguar": {
-					"MarkerCropOffset": 1
+					"MarkerCropOffset": 2
 				},
 				"Alissa": {
-					"MarkerCropOffset": 6
+					"MarkerCropOffset": 4
+				},
+				"Anton": {
+					"MarkerCropOffset": 0
+				},
+				"Ariah": {
+					"MarkerCropOffset": 4
+				},
+				"Belinda": {
+					"MarkerCropOffset": 0
 				},
 				"Bert": {
 					"MarkerCropOffset": -1
 				},
+				"Blair": {
+					"MarkerCropOffset": 4
+				},
+				"Bliss": {
+					"MarkerCropOffset": 8
+				},
+				"Bryle": {
+					"MarkerCropOffset": 0
+				},
+				"Carmen": {
+					"MarkerCropOffset": 0
+				},
 				"Corine": {
 					"MarkerCropOffset": 3
 				},
+				"Daia": {
+					"MarkerCropOffset": 4
+				},
 				"Ezekiel": {
 					"MarkerCropOffset": 0
+				},
+				"Faye": {
+					"MarkerCropOffset": 4
 				},
 				"Flor": {
 					"MarkerCropOffset": 3
 				},
 				"Freddie": {
-					"MarkerCropOffset": 2
+					"MarkerCropOffset": 4
+				},
+				"Helen": {
+					"MarkerCropOffset": 4
 				},
 				"Ian": {
-					"MarkerCropOffset": -1
+					"MarkerCropOffset": 0
+				},
+				"Irene": {
+					"MarkerCropOffset": 3
 				},
 				"Jeric": {
-					"MarkerCropOffset": -1
+					"MarkerCropOffset": 0
 				},
 				"Jio": {
 					"MarkerCropOffset": 0
@@ -44,7 +80,13 @@
 					"MarkerCropOffset": 7
 				},
 				"Kenneth": {
-					"MarkerCropOffset": -1
+					"MarkerCropOffset": 0
+				},
+				"Kiarra": {
+					"MarkerCropOffset": 2
+				},
+				"Kimpoi": {
+					"MarkerCropOffset": 0
 				},
 				"Kiwi": {
 					"MarkerCropOffset": 16
@@ -55,10 +97,28 @@
 				"Lola": {
 					"MarkerCropOffset": 3
 				},
+				"Lorenzo": {
+					"MarkerCropOffset": -2
+				},
+				"Louie": {
+					"MarkerCropOffset": 8
+				},
 				"Maddie": {
 					"MarkerCropOffset": 3
 				},
+				"Maive": {
+					"MarkerCropOffset": 3
+				},
+				"Malaya": {
+					"MarkerCropOffset": 4
+				},
+				"Naomi": {
+					"MarkerCropOffset": 4
+				},
 				"Olga": {
+					"MarkerCropOffset": 3
+				},
+				"Paula": {
 					"MarkerCropOffset": 3
 				},
 				"Philip": {
@@ -67,31 +127,52 @@
 				"Pika": {
 					"MarkerCropOffset": -1
 				},
+				"Pipo": {
+					"MarkerCropOffset": 6
+				},
+				"Raeriyala": {
+					"MarkerCropOffset": 1
+				},
 				"Richard": {
 					"MarkerCropOffset": 1
 				},
+				"Sari": {
+					"MarkerCropOffset": 3
+				},
+				"Sean": {
+					"MarkerCropOffset": 0
+				},
+				"Shanice": {
+					"MarkerCropOffset": 1
+				},
 				"Shiro": {
-					"MarkerCropOffset": -1
+					"MarkerCropOffset": 0
+				},
+				"Sonny": {
+					"MarkerCropOffset": 0
+				},
+				"TreehouseGirl": {
+					"MarkerCropOffset": 8
 				},
 				"Trinnie": {
 					"MarkerCropOffset": 7
+				},
+				"Undreya": {
+					"MarkerCropOffset": 8
 				},
 				"Ysabelle": {
 					"MarkerCropOffset": 3
 				},
 				"Yuuma": {
-					"MarkerCropOffset": 6
+					"MarkerCropOffset": 7
 				},
-				"Helen": {
-					"Exclude": true
-				},
-				"Undreya": {
-					"Exclude": true
-				},
+				"Zayne": {
+					"MarkerCropOffset": 0
+				}
 			}
 		},
 		{
-			"LogName": "Ridgeside Village - Location Support",
+			"LogName": "[Yagi] Ridgeside Village - Location Support",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
 			"When": {
@@ -99,269 +180,53 @@
 			},
 			"Entries": {
 				// Ridgeside Village - https://www.nexusmods.com/stardewvalley/mods/7286
-				// NPC Map Locations complains if any maps don't have a location.  Put a fake entry in to hide these for now.
 				"Custom_Ridgeside_EmberNight": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_EzekielPic": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_MysticFalls1": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_MysticFalls2": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_MysticFalls3": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RidgeFalls": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RidgeForestQ1": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RidgeForestQ2": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RidgeForestQ3": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RidgeForestQ4": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_PrincessVilleDate": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RSVCliffNight": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RSVGathering": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RSVPikaOpen": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RSVTheRide": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						},
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 0,
-							"MapY": 0
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RidgesideVillage": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 1,
-							"MapY": 221
-						},
-						{
-							"TileX": 149,
-							"TileY": 129,
-							"MapX": 200,
-							"MapY": 480
-						}
-					],
-					"MapTooltip": {
-						"X": 1,
-						"Y": 221,
-						"Width": 148,
-						"Height": 259,
-						"PrimaryText": "Ridgeside Village"
-					}
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RSVCableCar": {
 					"MapVectors": [
@@ -383,80 +248,26 @@
 						"Y": 184,
 						"Width": 20,
 						"Height": 20,
-						"PrimaryText": "Cable Car - Pelican Town"
+						"PrimaryText": "Ridgeside Village Cable Car"
 					}
 				},
 				"Custom_Ridgeside_RSVCliff": {
-					"MapVectors": [
-						{
-							"TileX": 0,
-							"TileY": 0,
-							"MapX": 230,
-							"MapY": 270
-						},
-						{
-							"TileX": 34,
-							"TileY": 29,
-							"MapX": 250,
-							"MapY": 290
-						}
-					],
-					"MapTooltip": {
-						"X": 230,
-						"Y": 270,
-						"Width": 20,
-						"Height": 20,
-						"PrimaryText": "Cable Car - Ridgeside"
-					}
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RSVTheHike": {
-					"MapVectors": [
-						{
-							"MapX": 230,
-							"MapY": 320
-						}
-					],
-					"MapTooltip": {
-						"X": 230,
-						"Y": 320,
-						"Width": 20,
-						"Height": 20,
-						"PrimaryText": "The Hike"
-					}
+					"Exclude": true
 				},
 				"Custom_Ridgeside_Ridge": {
-					"MapVectors": [
-						{
-							"MapX": 121,
-							"MapY": 220
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_LogCabinHotelLobby": {
-					"MapVectors": [
-						{
-							"MapX": 150,
-							"MapY": 250
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_LogCabinHotel2ndFloor": {
-					"MapVectors": [
-						{
-							"MapX": 150,
-							"MapY": 250
-						}
-					]
+					"Exclude": true
 				},
-				// FIXME. This map name is correct - but the NPCs do not show up here.  They appear in the top left area of Custom_Ridgeside_RidgesideVillage.
-				// NPCs in Custom_Ridgeside_LogCabinHotelLobby and Custom_Ridgeside_LogCabinHotel2ndFloor appear correctly.
 				"Custom_Ridgeside_LogCabinHotel3rdFloor": {
-					"MapVectors": [
-						{
-							"MapX": 150,
-							"MapY": 250
-						}
-					]
+					"Exclude": true
 				},
 				"Custom_Ridgeside_RSVHiddenWarp": {
 					"Exclude": true
@@ -464,24 +275,6 @@
 				"Custom_Ridgeside_RSVHiddenWarp2": {
 					"Exclude": true
 				},
-				"BloomingHillsFarm": {
-					"MapTooltip": {
-						"X": 0,
-						"Y": 229,
-						"Width": 68,
-						"Height": 152,
-						"PrimaryText": "Blooming Hill Farm"
-					}
-				},
-				"NightingaleOrchard": {
-					"MapTooltip": {
-						"X": 0,
-						"Y": 381,
-						"Width": 124,
-						"Height": 98,
-						"PrimaryText": "Nightingale Orchard"
-					}
-				}
 			}
 		},
 	]

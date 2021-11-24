@@ -3,7 +3,7 @@
 	"Changes": [
 		// Juliet and Jessie the Joja Clerks - https://www.nexusmods.com/stardewvalley/mods/6398
 		{
-			"LogName": "Juliet and Jessie NPC Sprite Offsets",
+			"LogName": "[Yagi] Juliet and Jessie - Sprite Offsets",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
 			"When": {
@@ -21,9 +21,9 @@
 				},
 			}
 		},
-		// TODO: In East Scarpe 2.0, if SVE is not installed, they will move to East Scarpe.
+		// This is a legacy location. Used only for old installs. It will be removed. Non-Legacy maps are actually part of the East Scarp mod!
 		{
-			"LogName": "Juliet and Jessie the Joja Clerks - Location Support",
+			"LogName": "[Yagi] Juliet and Jessie - Legacy Location Support",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
 			"When": {

@@ -5,6 +5,7 @@
    "Action": "EditData",
    "Target": "Characters/Dialogue/Flor",
    "Entries": {
+   	"Introduction": "{{i18n:{{TargetWithoutPath}}.Dialogue.Introduction}}",
 
 
 //Spring
@@ -105,6 +106,9 @@
 	"Resort_Wander": "{{i18n:Flor.Dialogue.Resort_Wander}}",
 	"Resort_Bar": "{{i18n:Flor.Dialogue.Resort_Bar}}",
 	"Resort": "{{i18n:Flor.Dialogue.Resort}}",
+
+//ArchaeologyHouse
+	"ArchaeologyHouse": "{{i18n:Flor.ArchaeologyHouse}}",
 
 		},
 	},

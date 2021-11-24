@@ -3,7 +3,7 @@
     "Changes": [
         // Custom npc Lyell - https://www.nexusmods.com/stardewvalley/mods/4499
         {
-            "LogName": "NPC Sprite Offsets",
+            "LogName": "[Yagi] Lyell - Sprite Offsets",
             "Action": "EditData",
             "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
             "When": {
@@ -16,7 +16,7 @@
             }
         },
         {
-            "LogName": "Custom npc Lyell - Location Support",
+            "LogName": "[Yagi] Lyell - Location Support",
             "Action": "EditData",
             "Target": "Mods/Bouhm.NPCMapLocations/Locations",
             "When": {

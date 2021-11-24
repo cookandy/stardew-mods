@@ -1,0 +1,260 @@
+{
+    "Format": "1.8",
+
+    "ConfigSchema": {
+        "EemieFallVariant": {
+            "AllowValues": "Green, Orange",
+            "Default": "Green"
+        },
+        "VibrantPastoralFallVariant": {
+            "AllowValues": "Green, Orange",
+            "Default": "Green"
+        },
+        "EnableArrows":{
+            "AllowValues":"true, false",
+            "Default":"true"
+        },
+        "StarrySkyInterfaceDarkerFont":{
+            "AllowValues":"true, false",
+            "Default":"false"
+        }
+    },
+
+    "DynamicTokens": [
+
+        // recolours
+        
+        {
+            "Name": "recolour",
+            "Value": "vanilla"
+        },
+        {
+            "Name": "recolour",
+            "Value": "eemie",
+            "When": {
+                "HasMod": "minervamaga.CP.eemieMapRecolour"
+            }
+        },
+        {
+            "Name": "recolour",
+            "Value": "starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley"
+            }
+        },
+        {
+            "Name": "recolour",
+            "Value": "awnr",
+            "When": {
+                "HasMod": "Acerbicon.Recolor"
+            }
+        },
+        {
+            "Name": "recolour",
+            "Value": "sfr",
+            "When": {
+                "HasMod": "stardewfoliageredone"
+            }
+        },
+        {
+            "Name": "recolour",
+            "Value": "sfr_reshade",
+            "When": {
+                "HasMod": "stardewfoliageredonereshade"
+            }
+        },
+        {
+            "Name": "recolour",
+            "Value": "daisy",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyRecolour"
+            }
+        },
+        {
+            "Name": "recolour",
+            "Value": "vibrant",
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor"
+            }
+        },
+        {
+            "Name":"recolour",
+            "Value":"yellog",
+            "When":{
+                "HasMod":"yri.ProjectYellogTownOverhaul"
+            }
+        },
+
+        // ui mods
+
+        {
+            "Name":"ui",
+            "Value":"vanilla"
+        },
+        {
+            "Name":"ui",
+            "Value":"overgrown",
+            "When":{
+                "HasMod":"Amaryn.OvergrownFloweryInterface"
+            }
+        },
+        {
+            "Name":"ui",
+            "Value":"vintage",
+            "When":{
+                "HasMod":"ManaKirel.VMI"
+            }
+        },
+        {
+            "Name":"ui",
+            "Value":"vintage",
+            "When":{
+                "HasMod":"ManaKirel.VintageInterface2"
+            }
+        },
+        {
+            "Name":"ui",
+            "Value":"vintage",
+            "When":{
+                "HasMod":"Maythorn.VintageInterfaceMultipack"
+            }
+        },
+        {
+            "Name":"ui",
+            "Value":"starry",
+            "When":{
+                "HasMod":"BeneathThePlass.StarrySkyInterfaceCP",
+                "StarrySkyInterfaceDarkerFont":"false"
+            }
+        },
+        {
+            "Name":"ui",
+            "Value":"starrydark",
+            "When":{
+                "HasMod":"BeneathThePlass.StarrySkyInterfaceCP",
+                "StarrySkyInterfaceDarkerFont":"true"
+            }
+        }
+    ],
+
+
+    "Changes": [
+        //seasonal
+        {
+            "Action": "Load",
+            "Target": "Maps/spring_daisyextras, Maps/summer_daisyextras, Maps/fall_daisyextras, Maps/winter_daisyextras",
+            "FromFile": "assets/{{recolour}}/{{TargetWithoutPath}}.png"
+        },
+
+        //eemie orange fall
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_daisyextras",
+            "FromFile": "assets/eemie/orange_fall_daisyextras.png",
+            "When": {
+                "recolour": "eemie",
+                "EemieFallVariant": "Orange"
+            }
+        },
+        //vibrant pastoral orange fall
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_daisyextras",
+            "FromFile": "assets/vibrant/orange_fall_daisyextras.png",
+            "When": {
+                "recolour": "vibrant",
+                "VibrantPastoralFallVariant": "Orange"
+            }
+        },
+
+        //others
+        {
+            "Action": "Load",
+            "Target": "Maps/cave_daisyextras",
+            "FromFile": "assets/cave_daisyextras.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/desert_daisyextras",
+            "FromFile": "assets/desert_daisyextras.png"
+        },
+
+       // arrows
+       
+       // down replaces _       
+       {
+            "Action":"EditImage",
+            "Target":"LooseSprites/font_bold",
+            "FromFile":"assets/arrows/{{ui}}_d.png",
+            "ToArea":{
+                "X":120,
+                "Y":48,
+                "Width":8,
+                "Height":16
+            },
+            "When":{
+                "EnableArrows":"true"
+            }
+       },
+       // up left replaces [
+       {
+            "Action":"EditImage",
+            "Target":"LooseSprites/font_bold",
+            "FromFile":"assets/arrows/{{ui}}_ul.png",
+            "ToArea":{
+                "X":88,
+                "Y":48,
+                "Width":8,
+                "Height":16
+            },
+            "When":{
+                "EnableArrows":"true"
+            }
+       },
+       // up right replaces ]
+       {
+            "Action":"EditImage",
+            "Target":"LooseSprites/font_bold",
+            "FromFile":"assets/arrows/{{ui}}_ur.png",
+            "ToArea":{
+                "X":104,
+                "Y":48,
+                "Width":8,
+                "Height":16
+            },
+            "When":{
+                "EnableArrows":"true"
+            }
+       },
+       // down left replaces {
+       {
+            "Action":"EditImage",
+            "Target":"LooseSprites/font_bold",
+            "FromFile":"assets/arrows/{{ui}}_dl.png",
+            "ToArea":{
+                "X":88,
+                "Y":80,
+                "Width":8,
+                "Height":16
+            },
+            "When":{
+                "EnableArrows":"true"
+            }
+       },
+       // down right replaces }
+       {
+            "Action":"EditImage",
+            "Target":"LooseSprites/font_bold",
+            "FromFile":"assets/arrows/{{ui}}_dr.png",
+            "ToArea":{
+                "X":104,
+                "Y":80,
+                "Width":8,
+                "Height":16
+            },
+            "When":{
+                "EnableArrows":"true"
+            }
+       },
+    ]
+}

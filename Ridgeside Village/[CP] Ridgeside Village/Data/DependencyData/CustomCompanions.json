@@ -10,121 +10,135 @@
                "Position": { "X": 21, "Y": 36 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.BrownChicken"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.BrownChicken"
                }
             },
             {
                "Position": { "X": 23, "Y": 38 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.BrownChicken"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.BrownChicken"
                }
             },
             {
                "Position": { "X": 30, "Y": 38 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.BrownChicken"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.BrownChicken"
                }
             },
             {
                "Position": { "X": 37, "Y": 38 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.BrownChicken"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.BrownChicken"
                }
             },
             {
                "Position": { "X": 37, "Y": 41 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.BrownChicken"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.BrownChicken"
                }
             },
             {
                "Position": { "X": 26, "Y": 40 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.WhiteChicken"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.WhiteChicken"
                }
             },
             {
                "Position": { "X": 30, "Y": 36 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.WhiteChicken"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.WhiteChicken"
                }
             },
             {
                "Position": { "X": 39, "Y": 42 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.WhiteChicken"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.WhiteChicken"
                }
             },
             {
                "Position": { "X": 40, "Y": 38 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.WhiteChicken"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.WhiteChicken"
                }
             },
             {
                "Position": { "X": 32, "Y": 99 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.BrownCow"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.BrownCow"
                }
             },
             {
                "Position": { "X": 37, "Y": 100 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.BrownCow"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.BrownCow"
                }
             },
             {
                "Position": { "X": 35, "Y": 105 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.BrownCow"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.BrownCow"
                }
             },
             {
                "Position": { "X": 43, "Y": 106 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.BrownCow"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.BrownCow"
                }
             },
             {
                "Position": { "X": 32, "Y": 103 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.WhiteCow"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.WhiteCow"
                }
             },
             {
                "Position": { "X": 34, "Y": 107 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.WhiteCow"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.WhiteCow"
                }
             },
             {
                "Position": { "X": 49, "Y": 106 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn 1 PeacefulEnd.CustomCompanions.RidgesideVillage.WhiteCow"
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.WhiteCow"
+               }
+            },
+            {
+               "Position": { "X": 22, "Y": 27 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.WanderingChicken"
+               }
+            },
+            {
+               "Position": { "X": 57, "Y": 53 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Torts"
                }
             },
          ],
 		"When": {
 			"Weather": "Sun, Wind",
 			},
-		"Update": "OnLocationChange"
+		"Update": "OnDayStart"
 	},
-		{
+	{
 		"LogName": "Ridgeside Village Custom Companions",
 		"Action": "EditMap",
 		"Target": "Maps/RidgesideVillage",
@@ -151,7 +165,7 @@
                }
             },
             {
-               "Position": { "X": 37, "Y": 37 },
+               "Position": { "X": 37, "Y": 38 },
                "Layer": "Back",
                "SetProperties": {
                   "CustomCompanions": null
@@ -241,11 +255,348 @@
                   "CustomCompanions": null
                }
             },
+            {
+               "Position": { "X": 22, "Y": 27 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": null
+               }
+            },
+            {
+               "Position": { "X": 57, "Y": 53 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "null"
+               }
+            },
          ],
 		"When": {
 			"Weather: |contains=Sun,Wind": false,
 			},
-		"Update": "OnLocationChange"
-	}
+		"Update": "OnDayStart"
+	},
+   {
+      "LogName": "Ridgeside Village Custom Companions",
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:Rafseazz.RSVCC.WhiteCow}}",
+      "Entries": {
+        "Companion": {
+          "DespawnOnTile": [ 44, 105, 0 ],
+          "IdleBehavior": "Simple_Path",
+          "IdleArguments": [ 44, 105, 0 ]
+        }
+      },
+      "When": {
+         "Time": "{{Range: 2000, 2600}}",
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+   },
+   {
+      "LogName": "Ridgeside Village Custom Companions",
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:Rafseazz.RSVCC.BrownCow}}",
+      "Entries": {
+        "Companion": {
+          "Respawn": false,
+          "DespawnOnTile": [ 37, 98, 100 ],
+          "IdleBehavior": "Simple_Path",
+          "IdleArguments": [ 37, 98, 100 ]
+        }
+      },
+      "When": {
+         "Time": "{{Range: 2000, 2600}}",
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+   },
+   {
+      "LogName": "Ridgeside Village Custom Companions",
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:Rafseazz.RSVCC.WhiteChicken}}",
+      "Entries": {
+        "Companion": {
+          "Respawn": false,
+          "DespawnOnTile": [ 26, 38, 100 ],
+          "IdleBehavior": "Simple_Path",
+          "IdleArguments": [ 26, 38, 100 ]
+        }
+      },
+      "When": {
+         "Time": "{{Range: 2000, 2600}}",
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+   },
+   {
+      "LogName": "Ridgeside Village Custom Companions",
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:Rafseazz.RSVCC.BrownChicken}}",
+      "Entries": {
+        "Companion": {
+          "Respawn": false,
+          "DespawnOnTile": [ 35, 38, 100 ],
+          "IdleBehavior": "Simple_Path",
+          "IdleArguments": [ 35, 38, 100 ]
+        }
+      },
+      "When": {
+         "Time": "{{Range: 2000, 2600}}",
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+   },
+
+   {
+      "LogName": "Torts random dialogue",
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:Rafseazz.RSVCC.Torts}}",
+      "Entries": {
+         "Companion": {
+            "InspectionDialogue": "{{i18n:Torts.{{Season}}{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}}}}"
+         }
+      }
+   },
+   {
+      "LogName": "Howdy random dialogue",
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:Rafseazz.RSVCC.Howdy}}",
+      "Entries": {
+         "Companion": {
+            "InspectionDialogue": "{{i18n:Howdy.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}}}}"
+         }
+      }
+   },
+
+   {
+      "LogName": "Spirit Realm Custom Companions",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Ridgeside_RSVSpiritRealm",
+      "MapTiles": [
+            {
+               "Position": { "X": 28, "Y": 58 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit1"
+               }
+            },
+            {
+               "Position": { "X": 28, "Y": 58 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit2"
+               }
+            },
+            {
+               "Position": { "X": 28, "Y": 58 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit3"
+               }
+            },
+            {
+               "Position": { "X": 28, "Y": 58 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit4"
+               }
+            },
+            {
+               "Position": { "X": 60, "Y": 43 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit1"
+               }
+            },
+            {
+               "Position": { "X": 60, "Y": 43 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit2"
+               }
+            },
+            {
+               "Position": { "X": 60, "Y": 43 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit3"
+               }
+            },
+            {
+               "Position": { "X": 60, "Y": 43 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit4"
+               }
+            },
+            {
+               "Position": { "X": 60, "Y": 70 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit1"
+               }
+            },
+            {
+               "Position": { "X": 60, "Y": 70 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit2"
+               }
+            },
+            {
+               "Position": { "X": 60, "Y": 70 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit3"
+               }
+            },
+            {
+               "Position": { "X": 60, "Y": 70 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit4"
+               }
+            },
+            {
+               "Position": { "X": 31, "Y": 76 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit1"
+               }
+            },
+            {
+               "Position": { "X": 31, "Y": 76 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit2"
+               }
+            },
+            {
+               "Position": { "X": 31, "Y": 76 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit3"
+               }
+            },
+            {
+               "Position": { "X": 31, "Y": 76 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Spirit4"
+               }
+            },
+         ],
+      "Update": "OnDayStart"
+   },
+
+   /*{ //Disabled CC Relic Spirit because of an unknown bug that's inconsistent and hard to reproduce.
+      "LogName": "Lover's Sorrow Relic Spirit Spawn",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Ridgeside_RidgeForest",
+      "MapTiles": [
+            {
+               "Position": { "X": 77, "Y": 70 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.RelicSpirit"
+               }
+            },
+         ],
+      "When": { 
+         "Day": "3, 6, 9, 12, 15, 18, 21, 24, 27" 
+      },
+      "Update": "OnDayStart"
+   },
+   {
+      "LogName": "Lover's Sorrow Relic Spirit Dialogue",
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:Rafseazz.RSVCC.RelicSpirit}}",
+      "Entries": {
+         "Companion": {
+            "InspectionDialogue": "{{i18n:RelicSpiritTalk}}[{{spacechase0.JsonAssets/ObjectId:Lover's Sorrow}}]"
+         }
+      },
+      "Update": "OnLocationChange, OnTimeChange, OnDayStart",
+   },*/
+
+   //Howdy follow Kenneth
+   {
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:Rafseazz.RSVCC.Howdy}}",
+      "When": { "RandomNumber": "{{Range: 7,8}}" },
+      "Entries": {
+         "Companion": {
+            "TargetNpcName": "Kenneth"
+         }
+      }
+   },
+
+   //Howdy spawn
+   {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Ridgeside_RSVCliff",
+      "MapTiles": [
+         {
+            "Position": { "X": 43, "Y": 30 },
+            "Layer": "Back",
+            "SetProperties": {
+               "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Howdy"
+            }
+         }
+      ],
+      "When": { "RandomNumber": "{{Range: 1,2}}" }
+   },
+   {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Ridgeside_KennethHouse",
+      "MapTiles": [
+         {
+            "Position": { "X": 7, "Y": 4 },
+            "Layer": "Back",
+            "SetProperties": {
+               "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Howdy"
+            }
+         }
+      ],
+      "When": { "RandomNumber": "{{Range: 3,4}}" }
+   },
+   {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Ridgeside_RidgesideVillage",
+      "MapTiles": [
+         {
+            "Position": { "X": 74, "Y": 37 },
+            "Layer": "Back",
+            "SetProperties": {
+               "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Howdy"
+            }
+         }
+      ],
+      "When": { "RandomNumber": "{{Range: 5,6}}" }
+   },
+   {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Ridgeside_RSVCliff",
+      "MapTiles": [
+         {
+            "Position": { "X": 43, "Y": 30 },
+            "Layer": "Back",
+            "SetProperties": {
+               "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Howdy"
+            }
+         }
+      ],
+      "When": { "RandomNumber": "{{Range: 7,8}}" }
+   },
+   {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Ridgeside_RSVCableCar",
+      "MapTiles": [
+         {
+            "Position": { "X": 24, "Y": 11 },
+            "Layer": "Back",
+            "SetProperties": {
+               "CustomCompanions": "Spawn 1 Rafseazz.RSVCC.Howdy"
+            }
+         }
+      ],
+      "When": { "RandomNumber": "{{Range: 9,10}}" }
+   },
 ]
 }

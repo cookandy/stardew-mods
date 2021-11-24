@@ -54,6 +54,11 @@
 },
 {
    "Action": "Load",
+   "Target": "Maps/zFreddieShedItems",
+   "FromFile": "Assets/Maps/TileSheets/FreddieShedItems.png"
+},
+{
+   "Action": "Load",
    "Target": "Maps/RSVBonfire",
    "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
 },
@@ -217,5 +222,75 @@
    "Target": "Maps/zrsvshadows",
    "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
 },
+{
+   "Action": "Load",
+   "Target": "Maps/z_rsvinterior",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_rsvgarden",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/fall_zRSVbg",
+   "FromFile": "Assets/WeddingReception/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/spring_zRSVbg",
+   "FromFile": "Assets/WeddingReception/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/summer_zRSVbg",
+   "FromFile": "Assets/WeddingReception/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/winter_zRSVbg",
+   "FromFile": "Assets/WeddingReception/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_RSVspousePic",
+   "FromFile": "Assets/WeddingReception/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/RafNPCSheet",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/zrsvwallsfloorcopy",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/zrsv3brosInterior",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/zrsvspiritrealm",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/zrsvspiritrealm_corrupt",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/zrsvCorineDate",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/zrsvcolorlights",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+}
 ]
 }

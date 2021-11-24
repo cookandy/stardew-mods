@@ -1,0 +1,208 @@
+{
+	"Format": "1.23.0",
+
+	"DynamicTokens": 
+        [
+        //Flowers
+        {
+        "Name": "FlowerStyle",
+        "Value": "{{FlowersSpring}}"
+        },
+        {
+        "Name": "FlowerStyle",
+        "Value": "{{FlowersSummer}}",
+        "When": {"season": "summer"}
+        },
+        {
+        "Name": "FlowerStyle",
+        "Value": "{{FlowersFall}}",
+        "When": {"season": "fall"}
+        },
+        {
+        "Name": "FlowerStyle",
+        "Value": "{{FlowersWinter}}",
+        "When": {"season": "winter"}
+        },
+     	],
+
+	"ConfigSchema": {
+
+		 //Flowers
+        
+        "FlowersSpring" : {"AllowValues" : "False, RoseBlue, RosePink, RosePurple, RoseRed, RoseWhite, RoseYellow, ClematisBlue, ClematisPink, ClematisPurple, ClematisRed, ClematisWhite, ClematisYellow", "Default" : "False"},
+        "FlowersSummer" : {"AllowValues" : "False, RoseBlue, RosePink, RosePurple, RoseRed, RoseWhite, RoseYellow, ClematisBlue, ClematisPink, ClematisPurple, ClematisRed, ClematisWhite, ClematisYellow", "Default" : "False"},
+        "FlowersFall"   : {"AllowValues" : "False, RoseFBlue, RoseFPink, RoseFPurple, RoseFRed, RoseFWhite, RoseFYellow, ClematisFBlue, ClematisFPink, ClematisFPurple, ClematisFRed, ClematisFWhite, ClematisFYellow", "Default" : "False"},
+		"FlowersWinter" : {"AllowValues" : "False, ClematisWBlue, ClematisWPink, ClematisWPurple, ClematisWRed, ClematisWWhite, ClematisWYellow", "Default" : "False"},
+		},
+
+		//Project Yellog Town Overhaul
+        
+        "Name":"PYTownOverhaulFullVersion",
+        "When":{
+        "HasMod":"yri.ProjectYellogTownOverhaul"
+        },
+
+	"Changes":[
+
+		//Tilesheets
+		{
+     	"Action": "EditImage",
+     	"PatchMode": "Replace",
+     	"Target": "Maps/{{season}}_zridgesidebuildings",
+     	"FromFile": "assets/Tilesheets/{{season}}_zridgesidebuildings.png",
+     	},
+     	{
+     	"Action": "EditImage",
+     	"PatchMode": "Replace",
+     	"Target": "Maps/{{season}}_zridgetiles",
+     	"FromFile": "assets/Tilesheets/{{season}}_zridgetiles.png",
+     	},     
+     	{
+     	"Action": "EditImage",
+     	"PatchMode": "Replace",
+     	"Target": "Maps/{{season}}_zridgetiles",
+     	"FromFile": "assets/Tilesheets/{{season}}_zridgetilesPY.png",
+     	"When":{"HasMod":"yri.ProjectYellogTownOverhaul"}
+     	},     	
+     	{
+     	"Action": "EditImage",
+     	"PatchMode": "Replace",
+     	"Target": "Maps/{{season}}_zrsvcliffhouse",
+     	"FromFile": "assets/Tilesheets/{{season}}_zrsvcliffhouse.png",
+     	},
+     	{
+     	"Action": "EditImage",
+     	"PatchMode": "Replace",
+     	"Target": "Maps/{{season}}_zrsvcablecar",
+     	"FromFile": "assets/Tilesheets/{{season}}_zrsvcablecar.png",
+     	},
+     	{
+     	"Action": "EditImage",
+     	"PatchMode": "Replace",
+     	"Target": "Maps/{{season}}_zrsvscene1",
+     	"FromFile": "assets/Tilesheets/{{season}}_zrsvscene1.png",
+     	},
+     	{
+     	"Action": "EditImage",
+     	"PatchMode": "Replace",
+     	"Target": "Maps/RSVBonfire",
+     	"FromFile": "assets/Tilesheets/RSVBonfire.png",
+     	},
+     	{
+     	"Action": "EditImage",
+     	"PatchMode": "Replace",
+     	"Target": "Maps/z_FlowerPot",
+     	"FromFile": "assets/Tilesheets/z_FlowerPot.png",
+     	},
+     	{
+     	"Action": "EditImage",
+     	"PatchMode": "Replace",
+     	"Target": "Maps/zrsvgatheringtiles",
+     	"FromFile": "assets/Tilesheets/zrsvgatheringtiles.png",
+     	},
+
+     	//LooseSprites
+
+     	{
+        "Action": "EditImage",
+        "PatchMode": "Replace",
+      	"Target": "LooseSprites/RSVMap",
+      	"FromFile": "assets/LooseSprites/RSVMap.png"
+   		},
+   		{
+        "Action": "EditImage",
+        "PatchMode": "Replace",
+      	"Target": "LooseSprites/FoxPedestal",
+      	"FromFile": "assets/LooseSprites/FoxPedestal.png"
+   		},
+   		{
+        "Action": "EditImage",
+        "PatchMode": "Replace",
+      	"Target": "LooseSprites/RSVTownSO",
+      	"FromFile": "assets/LooseSprites/RSVTownSO.png"
+   		},
+		{
+        "Action": "EditImage",
+        "PatchMode": "Replace",
+      	"Target": "LooseSprites/RSVNinjaBoard",
+      	"FromFile": "assets/LooseSprites/RSVNinjaBoard.png"
+   		},
+   		{
+        "Action": "EditImage",
+        "PatchMode": "Replace",
+      	"Target": "LooseSprites/RSVQuestBoard_{{language}}",
+      	"FromFile": "assets/LooseSprites/RSVQuestBoard_{{language}}.png"
+   		},
+
+
+   		///EventFiles
+        {
+        "Action": "EditImage",
+        "PatchMode": "Replace",
+        "Target": "Characters/RSVCableCar",
+        "FromFile": "assets/EventFiles/RSVCableCar.png"
+        },
+        {
+        "Action": "EditImage",
+        "PatchMode": "Replace",
+        "Target": "Characters/RSVcampfire",
+        "FromFile": "assets/EventFiles/RSVcampfire.png"
+        },
+        {
+        "Action": "EditImage",
+        "PatchMode": "Replace",
+        "Target": "Characters/RSVtent",
+        "FromFile": "assets/EventFiles/RSVtent.png"
+        },
+        {
+        "Action": "EditImage",
+        "PatchMode": "Replace",
+        "Target": "Characters/RSVBonfireLeft",
+        "FromFile": "assets/EventFiles/RSVBonfireLeft.png"
+        },
+        {
+        "Action": "EditImage",
+        "PatchMode": "Replace",
+        "Target": "Characters/RSVBonfireRight",
+        "FromFile": "assets/EventFiles/RSVBonfireRight.png"
+        },
+
+        //MapPatch
+
+        {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Ridgeside_RidgesideVillage",
+        "FromFile": "assets/MapPatch/RidgesideVillageHotelFix.tbin",
+        "ToArea": { "X": 108, "Y": 12, "Width": 11, "Height": 4 },
+         },
+
+
+
+   		///Flowers
+
+   		{
+      	"Action": "EditImage",
+      	"Target": "Maps/spring_zridgesidebuildings",
+      	"FromFile": "assets/Flowers/{{FlowerStyle}}.png",
+      	"PatchMode" : "Overlay",
+   		},
+   		{
+      	"Action": "EditImage",
+      	"Target": "Maps/summer_zridgesidebuildings",
+      	"FromFile": "assets/Flowers/{{FlowerStyle}}.png",
+      	"PatchMode" : "Overlay",
+   		},
+   		{
+      	"Action": "EditImage",
+      	"Target": "Maps/fall_zridgesidebuildings",
+      	"FromFile": "assets/Flowers/{{FlowerStyle}}.png",
+      	"PatchMode" : "Overlay",
+   		},
+   		{
+      	"Action": "EditImage",
+      	"Target": "Maps/winter_zridgesidebuildings",
+      	"FromFile": "assets/Flowers/{{FlowerStyle}}.png",
+      	"PatchMode" : "Overlay",
+   		},
+	]
+}

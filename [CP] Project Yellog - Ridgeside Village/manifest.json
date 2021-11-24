@@ -1,0 +1,12 @@
+{
+  "Name": "ProjectYellogRidgesideVillage",
+  "Author": "Yri",
+  "Version": "1.0.0",
+  "Description": "This mod replaces all RSV Buildings with customs ones",
+  "UniqueID": "yri.ProjectYellogRidgesideVillage",
+  "MinimumApiVersion": "3.0",
+  "UpdateKeys": ["Nexus:10113"],
+  "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+   },
+}

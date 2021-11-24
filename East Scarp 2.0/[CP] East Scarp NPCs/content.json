@@ -1,0 +1,647 @@
+{
+	"Format": "1.22",
+	"CustomLocations": [
+		/*********
+** Load InnRoomRosa
+*********/
+		{
+			"Name": "Custom_ES_InnRoomRosa",
+			"FromMapFile": "assets/Maps/InnRoomRosa.tmx"
+		},
+		{
+			"Name": "Custom_ES_DaoHouse",
+			"FromMapFile": "assets/Maps/DaoHouse.tmx"
+		},
+		{
+			"Name": "Custom_ES_TNPCWaitingRoomWarp",
+			"FromMapFile": "assets/Maps/TNPCWaitingRoom.tmx"
+		},
+		{
+			"Name": "Custom_ES_VetAwayWarp",
+			"FromMapFile": "assets/Maps/VetAwayWarp.tmx"
+		},
+		{
+			"Name": "Custom_ES_CatWarpRoom",
+			"FromMapFile": "assets/Maps/CatWarpRoom.tmx"
+		}
+	],
+	"ConfigSchema": {
+		"EnableSpecialOrders": {
+			"AllowValues": "true,false",
+			"Description": "Enable East Scarp Special Orders",
+			"Default": "true"
+		}
+	},
+	"DynamicTokens": [
+		{
+			"Name": "LexiNameForYou",
+			"Value": "@"
+		},
+		{
+			"Name": "LexiNameForYou",
+			"Value": "{{i18n:lexi.None-of-your-business}}",
+			"When": {
+				"HasFlag": "LexiNoneBusiness"
+			}
+		},
+		{
+			"Name": "cattalk",
+			"Value": "false",
+			"When": {
+				"HasSeenEvent |contains=50706121": false
+			}
+		},
+		{
+			"Name": "cattalk",
+			"Value": "true",
+			"When": {
+				"HasSeenEvent |contains=50706121": true
+			}
+		},
+		{
+			"Name": "Sheba.nap",
+			"Value": "{{Random:Custom_EastScarpe 7 83 2 sheba_nap,Custom_EastScarpe 65 76 2 sheba_nap,Custom_EastScarpe 23 79 2 sheba_nap,Custom_EastScarpe 3 101 2 sheba_nap}}"
+		},
+		{
+			"Name": "Sheba.sit",
+			"Value": "{{Random:Custom_EastScarpe 10 86 2 sheba_sit,Custom_EastScarpe 28 104 2 sheba_sit,Custom_EastScarpe 1 12 2 sheba_sit,Custom_EastScarpe 23 102 2 sheba_sit,Custom_ESOrchard 2 15 sheba_sit}}"
+		},
+		{
+			"Name": "Sheba.wander",
+			"Value": "{{Random:Custom_EastScarpe 75 80 2 square_5_5,Custom_EastScarpe 26 70 0 square_7_0_0,Custom_EastScarpe 22 16 2 square_5_4,Custom_EastScarpe 45 110 0 square_5_0_0,Custom_EastScarpe 16 102 square_5_5,Custom_EastScarpe 45 66 0 square 5_0}}"
+		},
+		{
+			"Name": "Sheba.groom",
+			"Value": "{{Random:Custom_EastScarpe 11 62 2 sheba_grooming,Custom_EastScarpe 8 53 2 sheba_grooming,Custom_EastScarpe 29 98 2 sheba_grooming,Custom_EastScarpe 53 61 2 sheba_grooming,Custom_EastScarpe 13 92 2 sheba_grooming}}"
+		}
+	],
+	"Changes": [
+		{
+			"LogName": "Add warp to ES Inn for Rose",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_EastScarpeInn",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 25,
+						"Y": 4
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "LockedDoorWarp 3 9 Custom_ES_InnRoomRosa 800 2000"
+					}
+				}
+			]
+		},
+		/***********************Temporary NPCS
+		******************************************/
+		{
+			"LogName": "NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"OliverK": "teen/polite/shy/neutral/male/not-datable//Other//JosephineK 'mother'/Custom_ES_TNPCWaitingRoomWarp 6 5/{{i18n:Name.Oliver}}",
+				"JosephineK": "adult/polite/neutral/positive/female/not-datable/GovernorK/Other//OliverK '{{i18n:Relationship.Josephine.Oliver}}'/Custom_ES_TNPCWaitingRoomWarp 7 5/{{i18n:Name.Josephine}}",
+				"RichieTheMacaw": "adult/rude/outgoing/negative/male/not-datable//other///Custom_ESVetHouse 8 21/{{i18n:Name.Richie}}",
+				"LadySheba": "teen/rude/shy/negative/female/not-datable//other///Custom_ES_CatWarpRoom 2 3/{{i18n:Name.Sheba}}"
+			}
+		},
+		{
+			"LogName": "Josephine and Oliver's antisocial flags",
+			"Action": "EditData",
+			"Target": "Data/AntiSocialNPCs",
+			"Entries": {
+				"JosephineK": true,
+				"OliverK": true
+			},
+			"When": {
+				"HasSeenEvent |contains=57873000": false
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_EastScarpeInn",
+			"FromFile": "assets/Maps/OliverRoom.tmx",
+			"Update": "OnLocationChange",
+			"ToArea": {
+				"X": 12,
+				"Y": 4,
+				"Width": 9,
+				"Height": 9
+			},
+			"When": {
+				"HasSeenEvent |contains=57873000": "True",
+				"HasSeenEvent |contains=57873005": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_ESVetHouse",
+			"FromFile": "assets/Maps/VetHouse_Oliver.tmx",
+			"ToArea": {
+				"X": 17,
+				"Y": 17,
+				"Width": 8,
+				"Height": 11
+			},
+			"When": {
+				"HasSeenEvent |contains=57873005": "true"
+			}
+		},
+		/**************** Resident NPCs
+		********************************************/
+		{
+			"Action": "Include",
+			"FromFile": "assets/JacobEloise.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Aideen.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Lexi.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/OliverJosephine.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/LeoFix.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Rosa.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Kataryna.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Dao.json",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"PlayerName": "Isla, Beth"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Movies.json"
+		},
+		/***************************
+		ANTISOCICAL NPCS
+		****************************/
+		/*{
+					"LogName": "AntiSocial Flags",
+					"Action": "EditData",
+					"Target": "Data/AntiSocialNPCs",
+					"Entries": {
+						"Rosa": true
+					}
+				},*/
+		{
+			"LogName": "NPC Exclusion NPCs to avoid Perfection issues",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"DuckNPC": "All",
+				"Duck2NPC": "All",
+				"RichieTheMacaw": "All",
+				"Leximonster": "PerfectFriend,IslandVisit,TownQuest",
+				"OliverK": "All",
+				"JosephineK": "All",
+				"LKKataryna": "All",
+				"LadySheba": "All",
+				"Rosa":"IslandVisit"
+			}
+		},
+		{
+			"LogName": "NPC Exclusion NPCs to avoid Perfection issues",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"When": {
+				"HasSeenEvent": "57873000",
+				"HasSeenEvent |contains=57873005": false
+			},
+			"Entries": {
+				"JosephineK": "PerfectFriend"
+			}
+		},
+		{
+			"LogName": "NPC Exclusion NPCs to avoid Perfection issues",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"When": {
+				"HasSeenEvent": "57873000"
+			},
+			"Entries": {
+				"OliverK": "PerfectFriend"
+			}
+		},
+		{
+			"LogName": "Emperor Ducks AntiSocial Flags",
+			"Action": "EditData",
+			"Target": "Data/AntiSocialNPCs",
+			"Entries": {
+				"DuckNPC": true,
+				"Duck2NPC": true
+			},
+			"When": {
+				"HasSeenEvent |contains=57870002": true,
+				"HasMod": "SuperAardvark.AntiSocial"
+			}
+		},
+		{
+			"LogName": "AntiSocial Flags",
+			"Action": "EditData",
+			"Target": "Data/AntiSocialNPCs",
+			"Entries": {
+				"RichieTheMacaw": true,
+				"LKKataryna": true,
+				"LadySheba": true
+			}
+		},
+		//Ducks
+		{ //Drake
+			"LogName": "Mandarin Duck",
+			"Action": "Load",
+			"Target": "Characters/DuckNPC",
+			"FromFile": "assets/Images/Duck-Mandarin-land.png"
+		},
+		{
+			"LogName": "Mandarin Duck",
+			"Action": "Load",
+			"Target": "Characters/schedules/DuckNPC",
+			"FromFile": "assets/Characters/schedules/Duck.json"
+		},
+		{
+			"LogName": "Mandarin Duck",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/DuckNPC",
+			"FromFile": "assets/Characters/Dialogue/Duck.json"
+		},
+		{
+			"LogName": "Mandarin Duck",
+			"Action": "Load",
+			"Target": "Portraits/DuckNPC",
+			"FromFile": "assets/Images/DuckPortrait.png"
+		},
+		{ //Hen
+			"LogName": "Mandarin Duck",
+			"Action": "Load",
+			"Target": "Characters/Duck2NPC",
+			"FromFile": "assets/Images/Duck-Mandarin-female.png"
+		},
+		{ //Hen
+			"LogName": "Mandarin Duck",
+			"Action": "Load",
+			"Target": "Characters/Duck2NPC_swimming",
+			"FromFile": "assets/Images/Duck-Mandarin-female_water.png"
+		},
+		{
+			"LogName": "Mandarin Duck",
+			"Action": "Load",
+			"Target": "Characters/schedules/Duck2NPC",
+			"FromFile": "assets/Characters/schedules/Duck2.json"
+		},
+		{
+			"LogName": "Mandarin Duck",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Duck2NPC",
+			"FromFile": "assets/Characters/Dialogue/Duck2.json"
+		},
+		{
+			"LogName": "Mandarin Duck",
+			"Action": "Load",
+			"Target": "Portraits/Duck2NPC",
+			"FromFile": "assets/Images/DuckPortrait2.png"
+		},
+		{
+			"LogName": "Governor",
+			"Action": "Load",
+			"Target": "Characters/Governor_walking",
+			"FromFile": "assets/Images/GovernorK.png"
+		},
+		{ //Richie Macaw --------------------------------------------------
+			"LogName": "Richie the Macaw",
+			"Action": "Load",
+			"Target": "Characters/RichieTheMacaw",
+			"FromFile": "assets/Images/Macaw.png"
+		},
+		{
+			"LogName": "Richie the Macaw",
+			"Action": "Load",
+			"Target": "Portraits/RichieTheMacaw",
+			"FromFile": "assets/Images/RichieTheMacaw.png"
+		},
+		{
+			"LogName": "Richie the Macaw",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/RichieTheMacaw",
+			"FromFile": "assets/Characters/Dialogue/RichieTheMacaw.json"
+		},
+		// Lady Sheba ------------------------------------------------------
+		{
+			"LogName": "Stray Cat",
+			"Action": "Load",
+			"Target": "Portraits/LadySheba",
+			"FromFile": "assets/Images/LadySheba_Portrait.png"
+		},
+		{
+			"LogName": "Stray Cat sprites",
+			"Action": "Load",
+			"Target": "Characters/LadySheba",
+			"FromFile": "assets/Images/LadySheba.png"
+		},
+		{
+			"LogName": "Stray Cat Dialogue and Schedule",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/LadySheba, Characters/schedules/LadySheba",
+			"FromFile": "assets/{{Target}}.json",
+			"When": {
+				"HasSeenEvent": "57879903"
+			}
+		},
+		{
+			"LogName": "Stray Cat Dialogue and Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/LadySheba",
+			"Entries": {
+				"spring": "900 {{sheba.groom}}/1100 {{sheba.wander}}/1300 {{sheba.nap}}/1500 {{sheba.sit}}/1800 {{sheba.wander}}/2200 Custom_ES_CatWarpRoom 2 4 sheba_nap"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Characters/Dialogue/LadySheba2.json",
+			"When": {
+				"HasSeenEvent": "50706121"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Festivals/LadySheba.json",
+			"When": {
+				"HasSeenEvent": "57879903",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"LogName": "Animations",
+			"Action": "EditData",
+			"Target": "Data/animationDescriptions",
+			"Entries": {
+				"sheba_grooming": "16 17 18 19/20 20 20 20 20 21 21 21 21 22 22 22 22 23 23 23 23 21 21 21 21 21 21 22 22 22 22 23 23 23 23 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18/19 18 17 16",
+				"sheba_nap": "28/28 28 28 28 28 28 28 28 29 29 29 29 29 29 29 29/28",
+				"sheba_sit": "16 17 18/19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18/18 17 16"
+			}
+		},
+		//******************************************************************************************************************//
+		{
+			"LogName": "NPC Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"DuckNPC": "{{i18n:gifts.duck.love}}/398 216/{{i18n:gifts.duck.like}}//{{i18n:gifts.duck.dislike}}/74 2 293/{{i18n:gifts.duck.hate}}//{{i18n:gifts.duck.neutral}}/-4 -81 -2 -75 -79 -7 -26 446/",
+				"LadySheba": "{{i18n:gifts.sheba.love.{{cattalk}}}}/130 139 148 198 227 267 424 426 715 874/{{i18n:gifts.sheba.like.{{cattalk}}}}/-4 168 176 442 195 209 228 305 444 446 684 685 732/{{i18n:gifts.sheba.dislike.{{cattalk}}}}/-81 -2 -75 -79 -7/{{i18n:gifts.sheba.hate.{{cattalk}}}}/2 220 221 222 223 -26 395/{{i18n:gifts.sheba.neutral.{{cattalk}}}}//"
+			}
+		},
+		{
+			"LogName": "NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"DuckNPC": "adult/rude/outgoing/positive/male/not-datable/null/Town/null//Custom_EastScarpe 21 62/{{i18n:Name.duck1}}"
+			},
+			"When": {
+				"HasSeenEvent": "57870002"
+			}
+		},
+		{
+			"LogName": "NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Duck2NPC": "adult/rude/shy/positive/female/not-datable/null/Town/null//Custom_EastScarpe 22 61/{{i18n:Name.duck2}}"
+			},
+			"When": {
+				"HasSeenEvent": "57870011"
+			}
+		},
+{
+			"LogName": "NPC Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"Duck2NPC": "{{i18n:gifts.duck2.love}}/398 216/{{i18n:gifts.duck2.like}}//{{i18n:gifts.duck2.dislike}}/74 2 293/{{i18n:gifts.duck2.hate}}//{{i18n:gifts.duck2.neutral}}/-4 -81 -2 -75 -79 -7 -26 446/",
+			},
+			"When": {
+				"HasSeenEvent": "57870011"}
+		},
+
+		{
+			"Action": "Include",
+			"FromFile": "assets/SpecialOrders.json",
+			"When": {
+				"EnableSpecialOrders": "true"
+			}
+		},
+		//Fixing Beatrice's pathing	and adding resort dialogue .................................
+		{
+			"LogName": "NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Beatrice": "adult/neutral/shy/negative/female/non-datable/null/Town/spring 17//Custom_ESLighthouse 11 10/{{i18n:Name.Beatrice}}"
+			},
+			"When": {
+				"HasMod": "attonbomb.Beatrice"
+			}
+		},
+		{
+			"LogName": "Beatrice Summer",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Beatrice",
+			"Entries": {
+				"rain": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 Custom_ESLighthouse 5 5 0/1200 Custom_EastScarpe 60 114 2 \"Strings\\schedules\\Beatrice:rain.001\"/1400 Custom_EastScarpe 71 77 2/1500 Custom_EastScarpe 71 120 2 Beatrice_telescope \"Strings\\schedules\\Beatrice:telescope.001\"/1600 Custom_ESLighthouse 21 6 1/1900 Custom_ESLighthouse 18 4 0", // Have edited
+				"rain2": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 Custom_ESLighthouse 5 5 0/1200 Custom_EastScarpe 60 114 2 \"Strings\\schedules\\Beatrice:rain.001\"/1400 Custom_EastScarpe 71 77 2/1500 Custom_EastScarpe 68 116 0 Beatrice_telescope \"Strings\\schedules\\Beatrice:telescope.002\"/1600 Custom_EastScarpe 12 111 3 \"Strings\\schedules\\Beatrice:boat.001\"/1900 Custom_ESLighthouse 18 4 0", // Have edited
+				"Mon": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1000 SeedShop 16 29 3 Beatrice_shop/1400 Saloon 19 23 3 \"Strings\\schedules\\Beatrice:saloon.001\"/1700 Custom_ESLighthouse 18 4 0",
+				"Sun": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 Custom_ESLighthouse 2 10 3/1200 Custom_ESLighthouse 4 9 2 Beatrice_read \"Strings\\schedules\\Beatrice:read.001\"/1500 Custom_ESLighthouse 5 5 0/1600 Custom_ESLighthouse 11 5 0/1800 Custom_ESLighthouse 18 4 0 \"Strings\\schedules\\Beatrice:light.001\"",
+				"spring_16": "610 Custom_ESLighthouse 18 4 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1000 Hospital 15 15 3 Beatrice_chair \"Strings\\schedules\\Beatrice:checkup\"/1500 Saloon 19 23 3/1900 Custom_ESLighthouse 18 4 0",
+				"spring": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 Custom_ESLighthouse 5 5 0/1400 Custom_EastScarpe 68 116 0 Beatrice_telescope/1600 Custom_EastScarpe 12 111 3/1800 Custom_ESLighthouse 2 10 3/1900 Custom_ESLighthouse 18 4 0",
+				"fall": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1200 Custom_EastScarpe 55 84 3 Beatrice_read/1500 Custom_EastScarpe 75 119 2 Beatrice_telescope/1700 Custom_ESLighthouse 21 6 1/1830 Custom_ESLighthouse 18 4 0",
+				"winter": "610 Custom_ESLighthouse 18 4 0/800 Custom_ESLighthouse 11 10 2 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1200 Custom_ESLighthouse 11 5 0/1300 Custom_EastScarpe 54 40 2 Beatrice_sit/1700 Custom_ESLighthouse 21 6 1/1800 Custom_ESLighthouse 18 4 0",
+				"spring_12": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/900 Custom_ESLighthouse 5 5 0/930 ArchaeologyHouse 18 9 2 Beatrice_stool \"Strings\\schedules\\Beatrice:read.002\"/1440 Saloon 19 23 3/1600 Custom_ESLighthouse 2 10 3/2000 Custom_ESLighthouse 18 4 0",
+				"fall_12": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/900 Custom_ESLighthouse 5 5 0/930 ArchaeologyHouse 18 9 2 Beatrice_stool \"Strings\\schedules\\Beatrice:read.002\"/1440 Saloon 19 23 3/1600 Custom_ESLighthouse 2 10 3/1900 Custom_ESLighthouse 18 4 0",
+				"winter_12": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/900 Custom_ESLighthouse 5 5 0/930 ArchaeologyHouse 18 9 2 Beatrice_stool \"Strings\\schedules\\Beatrice:read.002\"/1440 Saloon 19 23 3/1600 Custom_ESLighthouse 2 10 3/1800 Custom_ESLighthouse 18 4 0",
+				"summer": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 Custom_EastScarpe 22 102 1/1300 Custom_EastScarpe 55 84 2 Beatrice_read/1500 Custom_ESLighthouse 11 5 0/1600 Custom_ESLighthouse 21 6 1/1700 Custom_ESLighthouse 5 5 0/2000 Custom_ESLighthouse 18 4 0"
+			},
+			"When": {
+				"HasMod": "attonbomb.Beatrice"
+			}
+		},
+		{
+			"LogName": "Beatrice Summer",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Beatrice",
+			"Entries": {
+				"Resort_Entering": "{{i18n:Beatrice.Resort_Entering}}",
+				"Resort_Leaving": "{{i18n:Beatrice.Resort_Leaving}}",
+				"Resort_Shore": "{{i18n:Beatrice.Resort_Shore}}",
+				"Resort_Umbrella": "{{i18n:Beatrice.Resort_Umbrella}}",
+				"Resort_Wander": "{{i18n:Beatrice.Resort_Wander}}",
+				"Resort_Bar": "{{i18n:Beatrice.Resort_Bar}}",
+				"Resort": "{{i18n:Beatrice.Resort}}"
+			},
+			"When": {
+				"HasMod": "attonbomb.Beatrice"
+			}
+		},
+		{
+			"LogName": "Nagito",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Nagito",
+			"When": {
+				"HasMod": "Lavender.Nagito"
+			},
+			"Entries": {
+				"spring": "700 NagitoCottage 11 5 0/800 Custom_EastScarpe 15 107 2 nagito_read/1700 NagitoCottage 5 5 2/2300 NagitoCottage 1 6 0 nagito_sleep",
+				"summer": "700 NagitoCottage 11 5 0/800 Custom_EastScarpe 15 107 2 nagito_read/1700 NagitoCottage 5 5 2/2300 NagitoCottage 1 6 0 nagito_sleep"
+			}
+		},
+		{
+			"LogName": "Adds warp to ES from Cottage interior",
+			"Action": "EditMap",
+			"Target": "Maps/NagitoCottage",
+			"MapProperties": {
+				"Warp": "7 12 Custom_EastScarpe 4 97 8 12 Custom_EastScarpe 4 97"
+			},
+			"When": {
+				"HasMod": "Lavender.Nagito"
+			}
+		},
+		//NPC for visiting "When": {"HasFlag":"Capsule_Broken"}
+		//Lewis Visits............................................................... 
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"57873000/j 153/z summer/z winter/z spring/u 28/Hn Oliver_Meet/Hn Josephine_Meet": "continue/64 15/farmer 64 16 2 Lewis 64 18 0/addConversationTopic Josephine_Arrives 1/addConversationTopic Josephine_Introduction 7/pause 1500/speak Lewis \"{{i18n:57873000.01}}\"/pause 500/emote farmer 8/pause 1500/speak Lewis \"{{i18n:57873000.02}}\"/pause 500/jump farmer 3/emote farmer 16/pause 1500/speak Lewis \"{{i18n:57873000.03}}\"/emote farmer 60/speak Lewis \"{{i18n:57873000.04}}\"/pause 500/emote farmer 40/quickQuestion #{{i18n:57873000.q1}}#{{i18n:57873000.q2}}#{{i18n:57873000.q3}}#{{i18n:57873000.q4}}(break)emote Lewis 24\\pause 1000\\speak Lewis \"{{i18n:57873000.r1}}\"(break)emote Lewis 40\\pause 500\\speak Lewis \"{{i18n:57873000.r2}}\"(break)emote Lewis 28\\pause 500\\speak Lewis \"{{i18n:57873000.r3}}\"(break)emote Lewis 12\\speak Lewis \"{{i18n:57873000.r4}}\"/pause 1000/speak Lewis \"{{i18n:57873000.05}}\"/pause 1500/faceDirection Lewis 2/emote farmer 28/pause 1000/end"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Custom_EastScarpe",
+			"Entries": {
+				"57879000/t 2200 2600/a 0 71/w sunny": "junimoKart_ghostMusic/12 69/farmer 2 72 1 LadySheba 13 67 0/skippable/addTemporaryActor MidnightBlackKitty 32 32 15 66 3 false/addTemporaryActor MunchBoi 32 32 12 65 2 false/move farmer 10 0 0 true/pause 2000/playSound cat/pause 500/emote MunchBoi 8/playSound cat/pause 1000/emote MidnightBlackKitty 56/pause 1000/playSound cat/emote LadySheba 16/playSound cat/pause 2000/emote farmer 56/pause 500/faceDirection LadySheba 2/jump LadySheba/emote LadySheba 16/showFrame MidnightBlackKitty 18/pause 500/speed LadySheba 5/move LadySheba 0 15 0 true/faceDirection farmer 1/pause 3000/advancedMove MunchBoi false 0 2/pause 2000/move farmer 1 0 0/move farmer 0 -2 0/showFrame MunchBoi 18/pause 1000/playSound cat/faceDirection farmer 0/emote MunchBoi 56/emote farmer 40/pause 2000/end"
+			}
+		},
+		/*******************************************
+            A N I M A L   N P C S
+		*********************************************/
+		{
+			"LogName": "Mandarin Duck",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/DuckNPC",
+			"Entries": {
+				"Mon": "{{i18n:duck.mon}}",
+				"Tue": "{{i18n:duck.tue}}",
+				"Wed": "{{i18n:duck.wed}}",
+				"Thu": "{{i18n:duck.thu}}",
+				"Fri": "{{i18n:duck.fri}}",
+				"Sat": "{{i18n:duck.sat}}",
+				"Sun": "{{i18n:duck.sun}}"
+			}
+		},
+		{
+			"LogName": "Mandarin Duck",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Duck2NPC",
+			"Entries": {
+				"Mon": "{{i18n:duck2.mon}}",
+				"Tue": "{{i18n:duck2.tue}}",
+				"Wed": "{{i18n:duck2.wed}}",
+				"Thu": "{{i18n:duck2.thu}}",
+				"Fri": "{{i18n:duck2.fru}}",
+				"Sat": "{{i18n:duck2.sat}}",
+				"Sun": "{{i18n:duck2.sun}}"
+			}
+		},
+		{
+			"LogName": "Stray Cat Dialogue and Schedule",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/LadySheba",
+			"Entries": {
+				"Mon": "{{i18n:ladysheba.mon}}",
+				"Tue": "{{i18n:ladysheba.tue}}",
+				"Wed": "{{i18n:ladysheba.wed}}",
+				"Thu": "{{i18n:ladysheba.thu}}",
+				"Fri": "{{i18n:ladysheba.fri}}",
+				"Sat": "{{i18n:ladysheba.sat}}",
+				"Sun": "{{i18n:ladysheba.sun}}"
+			}
+		},
+		{ // Lady Sheba talks if you have seen Mr. Ginger's 6 heart event
+			"LogName": "Stray Cat Dialogue and Schedule",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/LadySheba",
+			"When": {
+				"HasSeenEvent": "50706121"
+			},
+			"Entries": {
+				"Mon": "{{i18n:ladysheba.mon.50706121}}",
+				"Tue": "{{i18n:ladysheba.tue.50706121}}",
+				"Wed": "{{i18n:ladysheba.wed.50706121}}",
+				"Thu": "{{i18n:ladysheba.thu.50706121}}",
+				"Fri": "{{i18n:ladysheba.fri.50706121}}",
+				"Sat": "{{i18n:ladysheba.sat.50706121}}",
+				"Sun": "{{i18n:ladysheba.sun.50706121}}",
+				"Mon4": "{{i18n:ladysheba.mon4.50706121}}",
+				"Tue4": "{{i18n:ladysheba.tue4.50706121}}",
+				"Wed4": "{{i18n:ladysheba.wed4.50706121}}",
+				"Thu4": "{{i18n:ladysheba.thu4.50706121}}",
+				"Fri4": "{{i18n:ladysheba.fri4.50706121}}",
+				"Sat4": "{{i18n:ladysheba.sat4.50706121}}!",
+				"Sun4": "{{i18n:ladysheba.sun4.50706121}}",
+				"{{Season}}_22_2": "{{i18n:ladysheba.22.50706121}}",
+				"Mon10": "{{i18n:ladysheba.mon10.50706121}}",
+				"Tue8": "{{i18n:ladysheba.tue8.50706121}}",
+				"Wed10": "{{i18n:ladysheba.wed10.50706121}}",
+				"Thu8": "{{i18n:ladysheba.thu8.50706121}}",
+				"Fri10": "{{i18n:ladysheba.fri10.50706121}}",
+				"Sat8": "{{i18n:ladysheba.sat8.50706121}}",
+				"Sun10": "{{i18n:ladysheba.sun10.50706121}}",
+			}
+		},
+		{ // swearing parrot, feel free to embellish his dialogue if you wish
+			"LogName": "Richie the Macaw",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/RichieTheMacaw",
+			"Entries": {
+				"Mon": "{{i18n:macaw.mon}}",
+				"Tue": "{{i18n:macaw.tue}}",
+				"Wed": "{{i18n:macaw.wed}}",
+				"Thu": "{{i18n:macaw.thu}}",
+				"Fri": "{{i18n:macaw.fri}}",
+				"Sat": "{{i18n:macaw.sat}}",
+				"Sun": "{{i18n:macaw.sun}}"
+			}
+		},
+		{ //edits in additional dialogue and/or translations
+			"LogName": "Translated Dialogue",
+			"Action": "Include",
+			"FromFile": "assets/Translations/{{Language}}.json",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			}
+		}
+		/* Event Key:
+				57870000+ = Jacob and Eloise
+				57871000+ = Aideen
+				57872000+ = Lexi
+				57873000+ = Oliver and Josephine
+				57874000+ = Rosa
+				*/
+	]
+}

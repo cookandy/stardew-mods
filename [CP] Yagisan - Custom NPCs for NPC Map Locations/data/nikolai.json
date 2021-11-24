@@ -3,7 +3,7 @@
     "Changes": [
         // Custom Npc Nikolai - https://www.nexusmods.com/stardewvalley/mods/4882
         {
-            "LogName": "NPC Sprite Offsets",
+            "LogName": "[Yagi] Nikolai - Sprite Offsets",
             "Action": "EditData",
             "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
             "When": {
@@ -19,7 +19,7 @@
             }
         },
         {
-            "LogName": "Custom Npc Nikolai - Location Support",
+            "LogName": "[Yagi] Nikolai - Location Support",
             "Action": "EditData",
             "Target": "Mods/Bouhm.NPCMapLocations/Locations",
             "When": {

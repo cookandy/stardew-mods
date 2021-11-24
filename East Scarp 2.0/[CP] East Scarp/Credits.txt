@@ -1,0 +1,35 @@
+CREDITS:
+
+The adorable Munchboi appears courtesy of his creator, Aizu, and you can adopt your own massive floofy cat with amusing sleeping positions here:
+https://www.nexusmods.com/stardewvalley/mods/3875
+
+If you like the giant flower, you can grow your own smaller versions using this mod:
+https://www.nexusmods.com/stardewvalley/mods/4472
+
+Shekurika for making the obelisk work, helping water my off-site farm, and fixing the orchard.
+Gervig for the animated barn animals.
+Aideen's portraits and sprites were a team effort via the combined talents of Hadi, Hime*, and Corinne.
+Rafsaez created the portraits for Rosa, and her coffee cart.
+Itsbenter created the inn, plus the portraits for Lexi, Oliver and Josephine, Bird of Paradise assets, and touched up the sprites. 
+Aedenthorne created the sprites for Lexi. 
+Lumina's flowers decorate Aideen's house interior.
+Kaya designed the Santorini buildings and the giant ancient flower (6480 for the smaller ones), and polished Pepper's portrait until she was adorable.
+SG designed the lighthouse, and so much more.
+Kdau wrote the Smapi component and is also awesome and a Knower of All Things; he enabled East Scarpe to be more than just another map.
+Hesper/Dustbeauty edited my buildings and made them lovely.
+LorellaBellaBean created the cabins that were edited to become the houses.
+Eemie created the recolor used in the DeepDark.
+DaisyNiko's tilesheets are an important component of the DeepDark, and the upper land..
+Cheese, Jen and various members of the East Scarpe Discord server for their sharp eyes and ability to pick out stray pixels and other cosmetic errors.
+Draylon for touching up the map (and diversifying the trees).
+
+And, finally:
+Pathoschild for Smapi and content patcher. And for recompiling ES so it will work with 64bit.
+Routine for TMXL.
+Esca for Farm Type Manager.
+Mouse for advice.
+
+TO RESET ORCHARD TREES:
+type:
+
+into the Smapi console

@@ -1,0 +1,33 @@
+{
+    "Changes": [
+     {
+			"LogName": "NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"LKKataryna": "adult/rude/outgoing/positive/female/not-datable//Other///Custom_ES_TNPCWaitingRoomWarp 2 5/{{i18n:Name.Kataryna}}"
+			}
+		},
+        { //Kataryna
+            "LogName": "Kataryna",
+            "Action": "Load",
+            "Target": "Characters/LKKataryna, Portraits/LKKataryna",
+            "FromFile": "assets/{{Target}}/Kataryna.png"
+        },
+        { //Kataryna
+            "LogName": "Kataryna",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/LKKataryna",
+            "FromFile": "assets/{{Target}}/Kataryna.json"
+        },
+       { //Kataryna
+            "LogName": "Kataryna",
+            "Action": "Load",
+            "Target": "Characters/schedules/LKKataryna",
+            "FromFile": "assets/{{Target}}_schedule.json",
+            "When": {
+                "PlayerName": "Isla"
+            }
+        }
+    ]
+}

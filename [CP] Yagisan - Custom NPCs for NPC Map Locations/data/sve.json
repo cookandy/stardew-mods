@@ -3,7 +3,7 @@
 	"Changes": [
 		// Stardew Valley Expanded - https://www.nexusmods.com/stardewvalley/mods/3753
 		{
-			"LogName": "SVE NPC Sprite Offsets",
+			"LogName": "[Yagi] Stardew Valley Expanded - Sprite Offsets",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
 			"When": {
@@ -67,7 +67,7 @@
 			}
 		},
 		{
-			"LogName": "SVE NPC Sprite Offsets - Morris Event",
+			"LogName": "[Yagi] Stardew Valley Expanded - Sprite Offsets - After event 191393",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
 			"When": {
