@@ -1,8 +1,8 @@
 {
   "Name": "Stardew Valley Expanded",
   "Author": "FlashShifter",
-  "Version": "1.13.12-beta.20210919",
-  "Description": "A fanmade expansion for ConcernedApe's Stardew Valley. This mod adds 26 new characters, 334locations, 220 character events, 850 location messages, reimagined vanilla areas, two farm maps, a reimagined world map reflecting all changes, new music, new quests, and many miscellaneous additions!",
+  "Version": "1.13.16",
+  "Description": "A fanmade expansion for ConcernedApe's Stardew Valley. This mod adds 26 new characters, 34 locations, 220 character events, 850 location messages, reimagined vanilla areas, two farm maps, a reimagined world map reflecting all changes, new music, new quests, and many miscellaneous additions!",
   "UniqueID": "FlashShifter.StardewValleyExpandedCP",
   "MinimumApiVersion": "3.0",
   "UpdateKeys": [ "Nexus:???" ],
@@ -17,10 +17,6 @@
    {
       "UniqueID": "Bouhm.NPCMapLocations",
       "IsRequired": false,
-   },
-   {
-      "UniqueID": "spacechase0.CustomNPCFixes",
-      "IsRequired": true,
    },
    {
       "UniqueID": "Platonymous.CustomMusic",

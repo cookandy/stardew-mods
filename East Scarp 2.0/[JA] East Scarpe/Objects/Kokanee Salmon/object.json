@@ -9,8 +9,8 @@
 	"IsColored": false,
 	"GiftTastes":
 	{
-		"Love": ["Eyvinder","MisterGinger" ],
-		"Like": ["Willy","Kent"]
+		"Love": ["MisterGinger" ],
+		"Like": ["Willy","Kent", "Eyvinder",]
 	},
 	"NameLocalization":
 	{

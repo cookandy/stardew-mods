@@ -177,6 +177,15 @@
                     ],
                     "Value": "OliverK 44 35 1",
                     "Delimiter": "/"
+                },
+  {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "JosephineK 31 11 2/OliverK 32 11 2",
+                    "Delimiter": "/"
                 }
             ],
             "When": {
@@ -195,16 +204,8 @@
                     ],
                     "Value": "JosephineK 31 4 2",
                     "Delimiter": "/"
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters"
-                    ],
-                    "Value": "JosephineK 31 11 2/OliverK 32 11 2",
-                    "Delimiter": "/"
                 }
+              
             ],
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
@@ -256,7 +257,7 @@
             "Target": "Characters/JosephineLuggage",
             "FromFile": "assets/Images/Luggage.png",
             "When": {
-                "HasSeenEvent": "57873000",
+               "HasSeenEvent": "57873000",
                 "HasSeenEvent |contains=57873001": false
             }
         },
@@ -273,7 +274,7 @@
             "Action": "EditData",
             "Target": "Data/Events/BusStop",
             "Entries": {
-                "57873001/e 57873000/t 600 1200": "continue/12 14/farmer -100 -100 3 OliverK 15 13 3 JosephineK 13 13 1 Lewis -100 -100 3/addTemporaryActor JosephineLuggage 32 32 16 22 2 false/skippable/pause 500/textAboveHead JosephineK \"{{i18n:57873001.01}}\"/pause 500/move OliverK 3 0 2/textAboveHead OliverK \"{{i18n:57873001.02}}\"/speak OliverK \"{{i18n:57873001.03}}\"/warp farmer 0 23/move farmer 12 0 0 true/pause 500/speak JosephineK \"{{i18n:57873001.04}}\"/pause 500/faceDirection OliverK 1/speak OliverK \"{{i18n:57873001.05}}\"/speak JosephineK \"{{i18n:57873001.06}}\"/faceDirection JosephineK 2/jump JosephineK 4/move OliverK -4 0 2/speak JosephineK \"{{i18n:57873001.07}}\"/emote farmer 56/move JosephineK 0 4 2 true/move farmer 0 -4 0 true/pause 2000/speak JosephineK \"{{i18n:57873001.08}}\"/quickQuestion #{{i18n:57873001.09}}#{{i18n:57873001.10}}#{{i18n:57873001.11}}(break)speak JosephineK \"{{i18n:57873001.12}}\"(break)textAboveHead OliverK \"{{i18n:57873001.13}}\"\\speak JosephineK \"{{i18n:57873001.14}}\"(break)friendship JosephineK 50\\speak JosephineK \"{{i18n:57873001.15}}\"/pause 500/move OliverK -1 0 2/speak JosephineK \"{{i18n:57873001.16}}\"/pause 500/emote farmer 40/warp Lewis 34 23/speed Lewis 5/move Lewis -20 0 0/faceDirection JosephineK 2/faceDirection OliverK 2/textAboveHead Lewis \"{{i18n:57873001.17}}\"/faceDirection farmer 2/speak Lewis \"{{i18n:57873001.18}}\"/move Lewis 0 -6 3/faceDirection JosephineK 1/faceDirection farmer 0/speak Lewis \"{{i18n:57873001.19}}\"/textAboveHead JosephineK \"{{i18n:57873001.20}}\"/pause 1000/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873001.21}}\"/emote farmer 32/faceDirection JosephineK 1/textAboveHead JosephineK \"{{i18n:57873001.22}}\"/move JosephineK 0 6 1 true/move Lewis 0 6 3 true/move OliverK 0 6 3 true/faceDirection farmer 1/pause 2500/textAboveHead OliverK \"{{i18n:57873001.23}}\"/pause 3000/emote farmer 60/pause 1000/end"
+                "57873001/e 57873000/t 600 1200": "continue/12 14/farmer -100 -100 3 OliverK 15 13 3 JosephineK 13 13 1 Lewis -100 -100 3/addTemporaryActor JosephineLuggage 32 32 16 22 2 false/skippable/pause 500/textAboveHead JosephineK \"{{i18n:57873001.01}}\"/pause 500/move OliverK 3 0 2/textAboveHead OliverK \"{{i18n:57873001.02}}\"/speak OliverK \"{{i18n:57873001.03}}\"/warp farmer 0 23/move farmer 13 0 0 true/pause 500/speak JosephineK \"{{i18n:57873001.04}}\"/pause 500/faceDirection OliverK 1/speak OliverK \"{{i18n:57873001.05}}\"/speak JosephineK \"{{i18n:57873001.06}}\"/faceDirection JosephineK 2/jump JosephineK 4/move OliverK -4 0 2/speak JosephineK \"{{i18n:57873001.07}}\"/emote farmer 56/move JosephineK 0 4 2 true/move farmer 0 -4 0 true/pause 2000/speak JosephineK \"{{i18n:57873001.08}}\"/quickQuestion #{{i18n:57873001.09}}#{{i18n:57873001.10}}#{{i18n:57873001.11}}(break)speak JosephineK \"{{i18n:57873001.12}}\"(break)textAboveHead OliverK \"{{i18n:57873001.13}}\"\\speak JosephineK \"{{i18n:57873001.14}}\"(break)friendship JosephineK 50\\speak JosephineK \"{{i18n:57873001.15}}\"/pause 500/move OliverK -1 0 2/speak JosephineK \"{{i18n:57873001.16}}\"/pause 500/emote farmer 40/warp Lewis 34 23/speed Lewis 5/move Lewis -20 0 0/faceDirection JosephineK 2/faceDirection OliverK 2/textAboveHead Lewis \"{{i18n:57873001.17}}\"/faceDirection farmer 2/speak Lewis \"{{i18n:57873001.18}}\"/move Lewis 0 -6 3/faceDirection JosephineK 1/faceDirection farmer 0/speak Lewis \"{{i18n:57873001.19}}\"/textAboveHead JosephineK \"{{i18n:57873001.20}}\"/pause 1000/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873001.21}}\"/emote farmer 32/faceDirection JosephineK 1/textAboveHead JosephineK \"{{i18n:57873001.22}}\"/move farmer -1 0 1/move JosephineK 0 6 1 true/move Lewis 0 6 3 true/move OliverK 0 6 3 true/faceDirection farmer 1/pause 2500/textAboveHead OliverK \"{{i18n:57873001.23}}\"/pause 3000/emote farmer 60/pause 1000/end"
                 //"57873005/f Josephine 2500/e ???/t 600 1800":"continue/12 14/farmer OliverK JosephineK Jacob/addConversationTopic Josephine_Leaves 0/ Josephine says goodbye, Oliver says he'll be back soon."
             },
             "When": {
@@ -284,7 +285,7 @@
             "Action": "EditData",
             "Target": "Data/Events/BusStop",
             "Entries": {
-                "57873005/e 57873048/A JosephineLeaving/t 1000 1500/w sunny": "jaunty/14 14/JosephineK 12 13 1 OliverK 13 13 3 Jacob 16 14 3 Eloise 17 15 3 Lewis 10 13 1 Pierre 9 14 1 Caroline 10 15 1 Pam 11 10 2 Leah -100 -100 3 farmer 0 23 1/skippable/move farmer 12 0 0 true/pause 1000/speak OliverK \"{{i18n:57873005.01}}\"/textAboveHead JosephineK \"{{i18n:57873005.02}}\"/speak JosephineK \"{{i18n:57873005.03}}\"/textAboveHead OliverK \"{{i18n:57873005.04}}\"/speak OliverK \"{{i18n:57873005.05}}\"/emote farmer 16/move farmer 0 -7 0/move OliverK 1 0 2/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873005.06}}\"/faceDirection JosephineK 3/speak JosephineK \"{{i18n:57873005.07}}\"/emote Lewis 32/move JosephineK 0 1 1/speak JosephineK \"{{i18n:57873005.08}}\"/speak Jacob \"{{i18n:57873005.09}}\"/jump Eloise 3/speak Eloise \"{{i18n:57873005.10}}\"/emote OliverK 32/pause 1000/speak OliverK \"{{i18n:57873005.11}}\"/move JosephineK 0 -1 1/faceDirection OliverK 3/speak JosephineK \"{{i18n:57873005.12}}\"/speak OliverK \"{{i18n:57873005.13}}\"/textAboveHead JosephineK \"{{i18n:57873005.14}}\"/pause 1000/faceDirection OliverK 2/speak OliverK \"{{i18n:57873005.15}}\"/textAboveHead Jacob \"{{i18n:57873005.16}}\"/pause 1000/textAboveHead Pierre \"{{i18n:57873005.17}}\"/speak JosephineK \"{{i18n:57873005.18}}\"/emote Pam 40/animate Pam false false 240 28 29 28 29 28 29 28 29 28 29 28 29/faceDirection JosephineK 0/pause 1000/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873005.19}}\"/warp Leah 13 23/speed Leah 5/move Leah 0 -8 0/emote Leah 28/pause 2000/speak Leah \"{{i18n:57873005.20}}\"/emote JosephineK 8/speak Leah \"{{i18n:57873005.21}}\"/move Leah 1 0 3/addTemporaryActor EggHeads 16 80 13 15 2 false/animate EggHeads false true 150 0 1 2 3/faceDirection farmer 1/jump JosephineK 3/emote farmer 16/pause 1000/textAboveHead Leah \"{{i18n:57873005.22}}\"/speak JosephineK \"{{i18n:57873005.23}}\"/speak Leah \"{{i18n:57873005.24}}\"/speak JosephineK \"{{i18n:57873005.25}}\"/textAboveHead OliverK \"{{i18n:57873005.26}}\"/faceDirection JosephineK 1/pause 1000/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873005.27}}\"/speak JosephineK \"{{i18n:57873005.28}}\"/faceDirection OliverK 3/speak OliverK \"{{i18n:57873005.29}}\"/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873005.30}}\"/emote farmer 60/faceDirection JosephineK 1/faceDirection OliverK 3/move JosephineK 0 -3 1 true/move OliverK 0 -3 3 true/emote JosephineK 20/emote OliverK 60/move JosephineK 0 -1 0/warp JosephineK -100 -100/move Pam 1 0 0/move Pam 0 -1 0/warp Pam -100 -100/textAboveHead Leah \"{{i18n:57873005.31}}\"/pause 1000/fade/viewport -150 -150/playSound busDriveOff/pause 1000/end invisible JosephineK"
+                "57873005/e 57873048/A JosephineLeaving/t 1000 1500/w sunny": "jaunty/14 14/JosephineK 12 13 1 OliverK 13 13 3 Jacob 16 14 3 Eloise 17 15 3 Lewis 10 13 1 Pierre 9 14 1 Caroline 10 15 1 Pam 11 10 2 Leah -100 -100 3 farmer 0 23 1/skippable/move farmer 13 0 0 true/pause 1000/speak OliverK \"{{i18n:57873005.01}}\"/textAboveHead JosephineK \"{{i18n:57873005.02}}\"/speak JosephineK \"{{i18n:57873005.03}}\"/textAboveHead OliverK \"{{i18n:57873005.04}}\"/speak OliverK \"{{i18n:57873005.05}}\"/emote farmer 16/move farmer 0 -7 0/move farmer -1 0 0/move OliverK 1 0 2/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873005.06}}\"/faceDirection JosephineK 3/speak JosephineK \"{{i18n:57873005.07}}\"/emote Lewis 32/move JosephineK 0 1 1/speak JosephineK \"{{i18n:57873005.08}}\"/speak Jacob \"{{i18n:57873005.09}}\"/jump Eloise 3/speak Eloise \"{{i18n:57873005.10}}\"/emote OliverK 32/pause 1000/speak OliverK \"{{i18n:57873005.11}}\"/move JosephineK 0 -1 1/faceDirection OliverK 3/speak JosephineK \"{{i18n:57873005.12}}\"/speak OliverK \"{{i18n:57873005.13}}\"/textAboveHead JosephineK \"{{i18n:57873005.14}}\"/pause 1000/faceDirection OliverK 2/speak OliverK \"{{i18n:57873005.15}}\"/textAboveHead Jacob \"{{i18n:57873005.16}}\"/pause 1000/textAboveHead Pierre \"{{i18n:57873005.17}}\"/speak JosephineK \"{{i18n:57873005.18}}\"/emote Pam 40/animate Pam false false 240 28 29 28 29 28 29 28 29 28 29 28 29/faceDirection JosephineK 0/pause 1000/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873005.19}}\"/warp Leah 13 23/speed Leah 5/move Leah 0 -8 0/emote Leah 28/pause 2000/speak Leah \"{{i18n:57873005.20}}\"/emote JosephineK 8/speak Leah \"{{i18n:57873005.21}}\"/move Leah 1 0 3/addTemporaryActor EggHeads 16 80 13 15 2 false/animate EggHeads false true 150 0 1 2 3/faceDirection farmer 1/jump JosephineK 3/emote farmer 16/pause 1000/textAboveHead Leah \"{{i18n:57873005.22}}\"/speak JosephineK \"{{i18n:57873005.23}}\"/speak Leah \"{{i18n:57873005.24}}\"/speak JosephineK \"{{i18n:57873005.25}}\"/textAboveHead OliverK \"{{i18n:57873005.26}}\"/faceDirection JosephineK 1/pause 1000/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873005.27}}\"/speak JosephineK \"{{i18n:57873005.28}}\"/faceDirection OliverK 3/speak OliverK \"{{i18n:57873005.29}}\"/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873005.30}}\"/emote farmer 60/faceDirection JosephineK 1/faceDirection OliverK 3/move JosephineK 0 -3 1 true/move OliverK 0 -3 3 true/emote JosephineK 20/emote OliverK 60/move JosephineK 0 -1 0/warp JosephineK -100 -100/move Pam 1 0 0/move Pam 0 -1 0/warp Pam -100 -100/textAboveHead Leah \"{{i18n:57873005.31}}\"/pause 1000/fade/viewport -150 -150/playSound busDriveOff/pause 1000/end invisible JosephineK"
             }
         },
         {
@@ -452,7 +453,7 @@
             "Target": "Characters/schedules/OliverK",
             "Entries": {
                 "Sun": "0 Custom_ESVetHouse 18 21 2/0700 Custom_ESVetHouse 31 16 0 \"Strings\\schedules\\Oliver:Lexi.1\"/1000 Custom_ESSeaCave 30 24 0 \"Strings\\schedules\\Oliver:Lexi.2\"/1700 Custom_ESVetHouse 24 15 0/2200 Custom_ESVetHouse 18 21 3 oliverk_sleep",
-                "rain": "0 Custom_ESVetHouse 18 21 2/900 Custom_ESVetHouse 23 22 0/0700 Custom_ESVetHouse 31 16 0 0/1100 Custom_ESJacobBarn 14 6 3/1300 1300 Custom_EastScarpeInn 25 12 2 square_5_1_2/1800 Custom_ESVetHouse 22 25 1 oliverk_computer/2200 Custom_ESVetHouse 18 21 3 oliverk_sleep",
+                "rain": "0 Custom_ESVetHouse 18 21 2/700 Custom_ESVetHouse 23 22 0/900 Custom_ESVetHouse 31 16 0/1100 Custom_ESJacobBarn 14 6 3/1300 Custom_EastScarpeInn 25 12 2 square_5_1_2/1800 Custom_ESVetHouse 22 25 1 oliverk_computer/2200 Custom_ESVetHouse 18 21 3 oliverk_sleep",
                 "spring": "0 Custom_ESVetHouse 18 21 2/800 Custom_ESVetHouse 23 22 0/1000 Custom_EastScarpe 47 70 3/1500 Custom_EastScarpe 14 123 2/1800 Custom_ESVetHouse 24 15 0/2200 Custom_ESVetHouse 18 21 3 oliverk_sleep",
                 "Tue": "MAIL JacobOliverWork/GOTO spring/0 Custom_ESVetHouse 18 21 2/800 Custom_ESVetHouse 23 22 0/1000 Custom_EastScarpe 28 32 3/1140 Custom_ES_VetAwayWarp 6 5 2/1800 Custom_ESVetHouse 22 25 1 oliverk_computer/2200 Custom_ESVetHouse 18 21 3 oliverk_sleep",
                 "Sat": "0 Custom_ESVetHouse 18 21 2/900 Custom_ESVetHouse 23 22 0/1000 Custom_EastScarpe 31 63 3/1300 Custom_EastScarpe 10 109 2/1600 Custom_EastScarpeInn 28 13 3/1900 Custom_ESVetHouse 22 25 1 oliverk_computer",

@@ -284,7 +284,7 @@
             "LogName": "DeepMountains",
             "Action": "Load",
             "Target": "Maps/DeepMountainsVan",
-            "FromFile": "assets/Maps/DeepMountains_Van.tmx"
+            "FromFile": "assets/Maps/{{season}}_DeepMountains_Van.tmx"
         },
         /***********
 		E V E N T S
@@ -598,7 +598,7 @@
                 "HasSeenEvent": "9695001"
             },
             "Entries": {
-                "Tue": "0 Town 119 70/610 Town 85 51 3 \"Strings\\schedules\\Jacob:tuesday.000\"/740 Custom_EastScarpe 33 32 2/1140 Custom_ES_VetAwayWarp 5 5 0/1620 Custom_ESVetHouse 31 5 0/2200 Custom_ESVetHouse 22 5",
+                "Tue": "0 Town 119 70/610 Town 85 51 3 \"Strings\\schedules\\Jacob:tuesday.000\"/740 Custom_EastScarpe 33 32 2/1140 Custom_ES_VetAwayWarp 5 5 0/1820 Custom_ESVetHouse 31 5 0/2200 Custom_ESVetHouse 22 5",
                 "Wed": "0 Town 119 70/610 Town 85 51 3 \"Strings\\schedules\\Jacob:tuesday.001\"/740 Custom_EastScarpe 19 15 0/1200 Custom_ESVetHouse 3 23 2/1520 Custom_EastScarpe 19 67 1/1620 Custom_ESVetHouse 23 15 0/2000 Custom_ESVetHouse 31 5 0/2200 Custom_ESVetHouse 22 5",
                 "Fri": "GOTO Wed"
             }

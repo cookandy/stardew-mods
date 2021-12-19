@@ -1559,7 +1559,7 @@
  <objectgroup id="8" name="Buildings">
   <object id="4" name="TileData" x="400" y="96" width="16" height="16">
    <properties>
-    <property name="Action" value="Warp 13 19 LodgingHouse"/>
+    <property name="Action" value="Warp 13 19 Custom_LK_LodgingHouse"/>
    </properties>
   </object>
   <object id="5" name="TileData" x="320" y="208" width="16" height="16">

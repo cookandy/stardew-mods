@@ -4,7 +4,7 @@
   <property name="ForceAllowTreePlanting" value="T"/>
   <property name="IsFarm" type="bool" value="true"/>
   <property name="Outdoors" value="T"/>
-  <property name="Warp" value="13 -1 Custom_ESDeepMountains 60 61 14 -1 Custom_ESDeepMountains 60 61 15 -1 Custom_ESDeepMountains 60 61 16 -1 Custom_ESDeepMountains 60 61"/>
+  <property name="Warp" value="13 -1 Custom_ESDeepMountains 60 60 14 -1 Custom_ESDeepMountains 60 60 15 -1 Custom_ESDeepMountains 60 60 16 -1 Custom_ESDeepMountains 60 60"/>
  </properties>
  <tileset firstgid="1" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="spring_outdoorsTileSheet" width="400" height="1264"/>

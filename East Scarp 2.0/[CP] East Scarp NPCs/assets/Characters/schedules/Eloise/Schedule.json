@@ -8,7 +8,7 @@
     "summer_Mon": "700 Custom_ESVetHouse 30 14 1/900 Custom_ESVetHouse 30 25 3 \"Strings\\schedules\\Eloise:vethouse.000\"/1100 Beach 45 24 2 Eloise_write/1620 Custom_EastScarpe 19 68 1/1800 Custom_ESVetHouse 24 15 0/2100 Custom_ESVetHouse 33 23 2",
     "Mon": "700 Custom_ESVetHouse 30 14 1/900 Custom_ESVetHouse 30 25 3 \"Strings\\schedules\\Eloise:vethouse.000\"/1100 Custom_ESBirdHide 3 5 0 Eloise_kneel/1400 Custom_EastScarpe 19 31 square_5_5/1700 Custom_ESVetHouse 24 15 0/1900 Custom_ESVetHouse 29 23 2/2100 Custom_ESVetHouse 33 23 2",
     "Tue": "630 Custom_ESVetHouse 30 14 1/700 Custom_EastScarpe 42 40 2/730 Town 100 95 1 \"Strings\\schedules\\Eloise:schoolday.000\"/1000 ArchaeologyHouse 18 12 0 Eloise_kneel/1400 Town 88 103 2/1620 Town 15 91 1/1750 AnimalShop 6 5 0 Eloise_read",
-    "Wed": "630 Custom_ESVetHouse 30 14 1/700 Custom_EastScarpe 42 40 2/730 Town 100 95 1 \"Strings\\schedules\\Eloise:schoolday.001\"/1000 ArchaeologyHouse 18 12 0 Eloise_kneel/1400 Town 88 103 2/1640 Custom_EastScarpe 19 68 1/1800 Custom_ESVetHouse 24 15 0/2100 Custom_ESVetHouse 33 23 2",
+    "Wed": "630 Custom_ESVetHouse 30 14 1/700 Custom_EastScarpe 42 40 2/730 Town 100 95 1 \"Strings\\schedules\\Eloise:schoolday.001\"/1000 ArchaeologyHouse 18 12 0 Eloise_kneel/1400 Town 88 103 2/1650 Custom_EastScarpe 19 68 1/1800 Custom_ESVetHouse 24 15 0/2100 Custom_ESVetHouse 33 23 2",
     "Thu": "GOTO Mon",
     "Fri": "GOTO Wed",
     "Sat": "700 Custom_ESVetHouse 30 14 1/800 Town 33 90 3/1200 Town 16 13 Eloise_write/1620 Town 54 72 0/1740 Custom_ESVetHouse 24 15 0/2100 Custom_ESVetHouse 33 23 2",

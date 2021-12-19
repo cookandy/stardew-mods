@@ -5,10 +5,6 @@
 ** Load InnRoomRosa
 *********/
 		{
-			"Name": "Custom_ES_InnRoomRosa",
-			"FromMapFile": "assets/Maps/InnRoomRosa.tmx"
-		},
-		{
 			"Name": "Custom_ES_DaoHouse",
 			"FromMapFile": "assets/Maps/DaoHouse.tmx"
 		},
@@ -76,7 +72,7 @@
 		}
 	],
 	"Changes": [
-		{
+		/*{
 			"LogName": "Add warp to ES Inn for Rose",
 			"Action": "EditMap",
 			"Target": "Maps/Custom_EastScarpeInn",
@@ -92,7 +88,7 @@
 					}
 				}
 			]
-		},
+		},*/
 		/***********************Temporary NPCS
 		******************************************/
 		{
@@ -214,7 +210,7 @@
 				"JosephineK": "All",
 				"LKKataryna": "All",
 				"LadySheba": "All",
-				"Rosa":"IslandVisit"
+				"Rosa": "IslandVisit"
 			}
 		},
 		{
@@ -383,8 +379,7 @@
 			"Action": "Include",
 			"FromFile": "assets/Festivals/LadySheba.json",
 			"When": {
-				"HasSeenEvent": "57879903",
-				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+				"HasSeenEvent": "57879903"
 			}
 		},
 		{
@@ -429,7 +424,7 @@
 				"HasSeenEvent": "57870011"
 			}
 		},
-{
+		{
 			"LogName": "NPC Gift Tastes",
 			"Action": "EditData",
 			"Target": "Data/NPCGiftTastes",
@@ -437,9 +432,9 @@
 				"Duck2NPC": "{{i18n:gifts.duck2.love}}/398 216/{{i18n:gifts.duck2.like}}//{{i18n:gifts.duck2.dislike}}/74 2 293/{{i18n:gifts.duck2.hate}}//{{i18n:gifts.duck2.neutral}}/-4 -81 -2 -75 -79 -7 -26 446/",
 			},
 			"When": {
-				"HasSeenEvent": "57870011"}
+				"HasSeenEvent": "57870011"
+			}
 		},
-
 		{
 			"Action": "Include",
 			"FromFile": "assets/SpecialOrders.json",
@@ -534,7 +529,17 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Custom_EastScarpe",
 			"Entries": {
-				"57879000/t 2200 2600/a 0 71/w sunny": "junimoKart_ghostMusic/12 69/farmer 2 72 1 LadySheba 13 67 0/skippable/addTemporaryActor MidnightBlackKitty 32 32 15 66 3 false/addTemporaryActor MunchBoi 32 32 12 65 2 false/move farmer 10 0 0 true/pause 2000/playSound cat/pause 500/emote MunchBoi 8/playSound cat/pause 1000/emote MidnightBlackKitty 56/pause 1000/playSound cat/emote LadySheba 16/playSound cat/pause 2000/emote farmer 56/pause 500/faceDirection LadySheba 2/jump LadySheba/emote LadySheba 16/showFrame MidnightBlackKitty 18/pause 500/speed LadySheba 5/move LadySheba 0 15 0 true/faceDirection farmer 1/pause 3000/advancedMove MunchBoi false 0 2/pause 2000/move farmer 1 0 0/move farmer 0 -2 0/showFrame MunchBoi 18/pause 1000/playSound cat/faceDirection farmer 0/emote MunchBoi 56/emote farmer 40/pause 2000/end"
+				"57879000/t 2200 2600/r 0.3/w sunny": "junimoKart_ghostMusic/12 69/farmer 2 72 1 LadySheba 13 67 0/skippable/addTemporaryActor MidnightBlackKitty 32 32 15 66 3 false/addTemporaryActor MunchBoi 32 32 12 65 2 false/move farmer 10 0 0 true/pause 2000/playSound cat/pause 500/emote MunchBoi 8/playSound cat/pause 1000/emote MidnightBlackKitty 56/pause 1000/playSound cat/emote LadySheba 16/playSound cat/pause 2000/emote farmer 56/pause 500/faceDirection LadySheba 2/jump LadySheba/emote LadySheba 16/showFrame MidnightBlackKitty 18/pause 500/speed LadySheba 5/move LadySheba 0 15 0 true/faceDirection farmer 1/pause 3000/advancedMove MunchBoi false 0 2/pause 2000/move farmer 1 0 0/move farmer 0 -2 0/showFrame MunchBoi 18/pause 1000/playSound cat/faceDirection farmer 0/emote MunchBoi 56/emote farmer 40/pause 2000/end",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Custom_EastScarpe",
+			"Entries": {
+				"57879001/d Mon Tue Wed Thu Fri/e 5295000/z spring/z summer/w sunny/f LadySheba 250/o Shane/o MisterGinger/t 900 1700": "jaunty/20 48/MisterGinger 21 43 0 Jas 20 44 1 farmer 16 54 0 LadySheba 21 52 0/skippable/move farmer 0 -5 0/pause 1000/playSound hammer/pause 500/playSound hammer/speak Jas \"{{i18n:57879001.01}}\"/speak MisterGinger \"{{i18n:57879001.02}}\"/emote farmer 8/move farmer 0 1 3/move farmer 5 0 0/shake MisterGinger 40/playSound trashcanlid/move farmer 0 -4 0 true/pause 1000/textAboveHead Jas \"{{i18n:57879001.03}}\"/pause 1500/move MisterGinger 0 1 2/speak MisterGinger \"{{i18n:57879001.04}}\"/move MisterGinger 1 0 2/speak Jas \"{{i18n:57879001.05}}\"/speak MisterGinger \"{{i18n:57879001.06}}\"/speak Jas \"{{i18n:57879001.07}}\"/speak MisterGinger \"{{i18n:57879001.08}}\"/textAboveHead Jas \"{{i18n:57879001.09}}\"/speak Jas \"{{i18n:57879001.10}}\"/move LadySheba 0 -2 0/move MisterGinger 1 0 2 true/move farmer 1 0 2 true/pause 1000/playSound cat/pause 500/playSound cat/move LadySheba 0 -4 1/faceDirection farmer 3/emote farmer 56/pause 1000/playSound cat/faceDirection LadySheba 0/pause 1000/move LadySheba 0 -2 1/faceDirection MisterGinger 3/faceDirection farmer 3/pause 1000/faceDirection farmer 0/emote LadySheba 8/emote MisterGinger 30/pause 1000/faceDirection LadySheba 3/pause 1000/emote Jas 20/move LadySheba 0 -1 0/pause 1000/playSound doorCreak/pause 1000/faceDirection LadySheba 1/speak Jas \"{{i18n:57879001.11}}\"/pause 1000/faceDirection LadySheba 0/warp LadySheba -100 -100/playSound doorCreakReverse/faceDirection MisterGinger 2/pause 1000/speak Jas \"{{i18n:57879001.12}}\"/emote MisterGinger 20/pause 1000/end"
+			},
+			"When": {
+				"HasMod": "Lemurkat.Tristan.CP"
 			}
 		},
 		/*******************************************
@@ -635,6 +640,11 @@
 			"When": {
 				"HasFile:{{FromFile}}": true
 			}
+		},
+		{ //edits in additional dialogue and/or translations
+			"LogName": "Spouse stuff",
+			"Action": "Include",
+			"FromFile": "assets/Spouses.json",
 		}
 		/* Event Key:
 				57870000+ = Jacob and Eloise

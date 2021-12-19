@@ -106,7 +106,7 @@
             ]
         },
         {
-            "LogName": "Luau Dialogue",
+            "LogName": "JelliesAid Dialogue",
             "Action": "EditData",
             "Target": "data/festivals/summer28",
             "Entries": {

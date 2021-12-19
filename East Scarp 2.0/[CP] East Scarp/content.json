@@ -71,14 +71,6 @@
                 "ESHouse4"
             ]
         },
-        /*{ //Rosa's Room in the inn
-            "Name": "Custom_ES_InnRoomRosa",
-            "FromMapFile": "assets/Locations/InnRoomRosa.tmx"
-        },
-        { //Dao (not compatible with SVE)
-            "Name": "Custom_ES_DaoHouse",
-            "FromMapFile": "assets/Locations/DaoHouse.tmx"
-        },*/
         //Jacob And Eloise
         {
             "Name": "Custom_ESBirdHide",
@@ -180,6 +172,10 @@
             "MigrateLegacyNames": [
                 "HartResidence"
             ]
+        },
+        {
+            "Name": "Custom_ES_InnRoomRosa",
+            "FromMapFile": "assets/Locations/InnInteriors/InnRoomRosa.tmx"
         }
     ],
     "ConfigSchema": {
@@ -602,7 +598,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESDeepMountains 60 61"
+                        "TouchAction": "LoadMap Custom_ESDeepMountains 60 60"
                     }
                 },
                 {
@@ -612,7 +608,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESDeepMountains 60 61"
+                        "TouchAction": "LoadMap Custom_ESDeepMountains 60 60"
                     }
                 },
                 {
@@ -622,7 +618,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESDeepMountains 60 61"
+                        "TouchAction": "LoadMap Custom_ESDeepMountains 60 60"
                     }
                 }
             ],
@@ -637,7 +633,7 @@
                 {
                     "Position": {
                         "X": 59,
-                        "Y": 62
+                        "Y": 61
                     },
                     "Layer": "Back",
                     "SetProperties": {
@@ -647,7 +643,7 @@
                 {
                     "Position": {
                         "X": 60,
-                        "Y": 62
+                        "Y": 61
                     },
                     "Layer": "Back",
                     "SetProperties": {
@@ -657,7 +653,7 @@
                 {
                     "Position": {
                         "X": 61,
-                        "Y": 62
+                        "Y": 61
                     },
                     "Layer": "Back",
                     "SetProperties": {
@@ -673,13 +669,52 @@
         {
             "Action": "EditMap",
             "Target": "Maps/Custom_ESDeepMountains",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 59,
+                        "Y": 61
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "LoadMap Custom_ESMeadowFarm 15 0"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 60,
+                        "Y": 61
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "LoadMap Custom_ESMeadowFarm 15 0"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 61,
+                        "Y": 6
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "LoadMap Custom_ESMeadowFarm 15 0"
+                    }
+                }
+            ],
+            "When": {
+                "EnableMeadowFarm": "true"
+            }
+        },
+        /* {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESDeepMountains",
             "MapProperties": {
                 "Warp": "59 62 Custom_ESMeadowFarm 15 0 60 62 Custom_ESMeadowFarm 15 0 61 62 Custom_ESMeadowFarm 15 0"
             },
             "When": {
                 "EnableMeadowFarm": "true"
             }
-        },
+        },*/
         // Makes the Bird Hide's views seasonal
         {
             "Action": "EditMap",
@@ -810,17 +845,9 @@
         {
             "Action": "EditMap",
             "Target": "Maps/Custom_ESDeepMountains",
-            "TextOperations": [
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "Warp"
-                    ],
-                    "Value": "6 62 Mountain 89 0 7 62 Mountain 89 0 8 62 Mountain 89 0",
-                    "Delimiter": " "
-                }
-            ],
+            "MapProperties": {
+                "Warp": "6 62 Mountain 89 0 7 62 Mountain 89 0 8 62 Mountain 89 0"
+            },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             }
@@ -1393,7 +1420,7 @@
             ]
         },
         //East Scarpe Time based Map Edits:
-        {
+        /*{
             "Action": "EditMap",
             "Target": "Maps/Custom_EastScarpe",
             "FromFile": "assets/Patches/VanGone.tmx",
@@ -1403,12 +1430,12 @@
                 "Width": 6,
                 "Height": 9
             },
-            "Update": "OnTimeChange",
+            "Update": "OnLocationChange",
             "When": {
                 "DayofWeek": "Tuesday",
                 "Time": "{{Range: 1230, 1800}}"
             }
-        },
+        },*/
         {
             "Action": "EditMap",
             "Target": "Maps/Custom_ESOrchard",
@@ -1576,7 +1603,7 @@
             "Update": "OnLocationChange",
             "When": {
                 "HasMod": "PeacefulEnd.CustomCompanions",
-                "Hearts:DuckNPC": "10",
+                "HasSeenEvent": "57870011",
                 "Hearts:Duck2NPC": "10",
                 "Season": "spring",
                 "Time": "{{Range: 800, 1700}}"
@@ -1600,7 +1627,7 @@
             "Update": "OnLocationChange",
             "When": {
                 "HasMod": "PeacefulEnd.CustomCompanions",
-                "Hearts:DuckNPC": "10",
+                "HasSeenEvent": "57870011",
                 "Hearts:Duck2NPC": "10",
                 "Season": "spring",
                 "Time": "{{Range: 1700, 2100}}"

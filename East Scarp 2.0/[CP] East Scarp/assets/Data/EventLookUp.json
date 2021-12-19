@@ -20,6 +20,7 @@
                 "Custom_EastScarpe": "{{i18n:EastScarp.Locations.EastScarp}}",
                 "Custom_ESLighthouse": "{{i18n:EastScarp.Locations.Lighthouse}}",
                 "Custom_ESHouse1": "{{i18n:EastScarp.Locations.Aideen}}",
+		"Custom_ARVHouse":"{{i18n:EastScarp.Locations.ARV}}",
                 /*"Custom_ESHouse2": "",
                 "Custom_ESHouse3": "",
                 "Custom_ESHouse4": "",*/

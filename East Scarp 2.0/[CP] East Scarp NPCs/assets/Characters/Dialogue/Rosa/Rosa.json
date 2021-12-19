@@ -72,5 +72,25 @@
     "Resort_Entering": "This island is lovely! Too bad the inn isn't located here...",
     "Resort": "Did you know they had a string of forts along islands just like this one? Why couldn't my family choose to live in one of those?",
     "Resort_Shore": "Ouch! I think that crab just pinched me. Where's Willy when you need him?",
-    "Resort_Wander": "Shh, don't tell Juliet but I'm taking her to see the mermaid later."
+    "Resort_Wander": "Shh, don't tell Juliet but I'm taking her to see the mermaid later.",
+    //UCR
+    //Unique Dialogue Mods (Courtship/Jealousy responses)
+  //"give_pendant": "",
+  //"stardrop_gift": "",
+  //"reject_two_heartA": "",
+  //"reject_two_heartB": "",
+  //"reject_four_heartA": "",
+ // "reject_four_heartB": "",
+ // "engageA": "",
+ // "engageB": "",
+ // "marriedA": "",
+ // "marriedB": "",
+  //"refusal_no_heartsA": "",
+ //"refusal_no_heartsB": "",
+ // "refusal_knownA": "",
+ // "refusal_knownB": "",
+ // "refusal_botherA": "",
+  //"refusal_botherB": "",
+  "rejectNPCA": "You know I'm only attracted to girls, right?^Too soon, sunshine, I'd rather we got to know each other first.$1",
+  "rejectNPCB": "Sorry no, you're not my type.^Sorry sunshine, I'd rather we remain friends for now. Hope that's okay with you?",
 }

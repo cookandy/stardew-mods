@@ -49,7 +49,7 @@
             "Entries": {
                 "EastScarp.SpecialOrders.JosephineJelly": { //simply a reward
                     "Name": "[EastScarp.SpecialOrders.JosephineJelly_Name]",
-                    "Requester": "",
+                    "Requester": null,
                     "Duration": "ThreeWeeks",
                     "Repeatable": "false",
                     "RequiredTags": "event_57873000, !mail_Josephine_Leaves, !season_winter",
@@ -106,7 +106,7 @@
                 },
                 "EastScarp.SpecialOrders.SlayCrabs": { //unlocks penguin custom critter
                     "Name": "[EastScarp.SpecialOrders.SlayCrabs_Name]",
-                    "Requester": "",
+                    "Requester": null,
                     "Duration": "TwoWeeks",
                     "Repeatable": "true",
                     "RequiredTags": "",
@@ -424,7 +424,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "EastScarp.SpecialOrders.AideenFlowersMail2",
+                                "MailReceived": "EastScarp.SpecialOrders.AideenFlowers2Mail",
                                 "NoLetter": "false"
                             }
                         }
@@ -512,7 +512,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "EastScarp.SpecialOrders.AideenFlowersMail",
+                                "MailReceived": "EastScarp.SpecialOrders.AideenFlowers3Mail",
                                 "NoLetter": "false"
                             }
                         }
@@ -529,7 +529,7 @@
             "Entries": {
                 "EastScarp.SpecialOrders.BeatriceQuartz": {
                     "Name": "[EastScarp.SpecialOrders.BeatriceQuartz_Name]",
-                    "Requester": "",
+                    "Requester": null,
                     "Duration": "ThreeWeeks",
                     "Repeatable": "false",
                     "RequiredTags": "",
@@ -688,13 +688,14 @@
             "Action": "EditData",
             "Target": "Data/Events/Custom_ESHouse1",
             "Entries": {
-                "57879901/n EastScarp.SpecialOrders.AideenFlowersMail/c 1/p Aideen": "playful/9 11/Aideen 5 9 3 farmer 5 15 0/skippable/addBigProp 3 7 112/addBigProp 5 7 112/addBigProp 6 8 112/addBigProp 4 9 112/addBigProp 3 10 112/addBigProp 4 11 112/addBigProp 6 12 112/addTemporaryActor Munchboi 32 32 4 6 2 false/doAction 5 17/playSound doorOpen/pause 1000/move farmer 0 -4 0/faceDirection Aideen 2/animate Munchboi false false 120 16 17 18 18/pause 480/animate Munchboi false true 120 18/speak Aideen \"{{i18n:57879901.01}}\"/faceDirection farmer 3/jump farmer 1/emote farmer 16/pause 1000/faceDirection farmer 0/speak Aideen \"{{i18n:57879901.02}}\"/pause 1000/emote farmer 56/pause 1000/jump Aideen 3/speak Aideen \"{{i18n:57879901.03}}\"/pause 500/move Aideen 1 0 1/playSound openChest/textAboveHead Aideen \"{{i18n:57879901.04}}\"/pause 1000/move Aideen 0 2 3/faceDirection farmer 1/pause 500/speak Aideen \"These were a gift from a botanist. He assured me they would produce a fine bloom.#$b#I ... well I thought that you might have more success with them than I.$4 [{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}][0{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}][00{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}]\"/speak Aideen \"{{i18n:57879901.05}}\"/pause 500/emote farmer 32/pause 1000/end"
+                "57879901/n EastScarp.SpecialOrders.AideenFlowersMail/c 1/p Aideen": "playful/9 11/Aideen 5 9 3 farmer 5 15 0/skippable/addBigProp 3 7 112/addBigProp 5 7 112/addBigProp 6 8 112/addBigProp 4 9 112/addBigProp 3 10 112/addBigProp 4 11 112/addBigProp 6 12 112/addTemporaryActor Munchboi 32 32 4 6 2 false/doAction 5 17/playSound doorOpen/pause 1000/move farmer 0 -4 0/faceDirection Aideen 2/animate Munchboi false false 120 16 17 18 18/pause 480/animate Munchboi false true 120 18/speak Aideen \"{{i18n:57879901.01}}\"/faceDirection farmer 3/jump farmer 1/emote farmer 16/pause 1000/faceDirection farmer 0/speak Aideen \"{{i18n:57879901.02}}\"/pause 1000/emote farmer 56/pause 1000/jump Aideen 3/speak Aideen \"{{i18n:57879901.03}}\"/pause 500/move Aideen 1 0 1/playSound openChest/textAboveHead Aideen \"{{i18n:57879901.04}}\"/pause 1000/move Aideen 0 2 3/faceDirection farmer 1/pause 500/speak Aideen \"{{i18n:57879901.05}}[{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}][0{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}][00{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}]\"/speak Aideen \"{{i18n:57879901.06}}\"/pause 500/emote farmer 32/pause 1000/end"
             },
             "When": {
                 "HasMod": "LemurKat.EastScarpe.JA",
                 "HasMod |contains=spacechase0.jsonAssets": true
             }
         },
+        
         {
             "Action": "Load",
             "Target": "Animals/FairyPenguin",

@@ -2,7 +2,7 @@
     //Location Names for Event LookUp
     //*******************************
     "EastScarp.Locations.EastScarp": "East Scarp",
-    "EastScarp.Locations.Lighthouse": "",
+    "EastScarp.Locations.Lighthouse": "Lighthouse",
     "EastScarp.Locations.Aideen": "Aideen's House",
     "EastScarp.Locations.BirdHide": "Eloise's Birdhide",
     "EastScarp.Locations.Vet": "Vet House",
@@ -16,6 +16,7 @@
     "EastScarp.Locations.Smuggler": "Smuggler's Shack",
     "EastScarp.Locations.SeaCave": "East Scarp's Sea Cave",
     "EastScarp.Locations.Inn": "Scarpe Inn",
+    "EastScarp.Locations.ARV":"The Cooper's House",
     //Location Names For NPC Map Locations
     //************************************
     "LocationName.EastScarp": "East Scarp",

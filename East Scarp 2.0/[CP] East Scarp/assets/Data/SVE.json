@@ -31,17 +31,9 @@
             "LogName": "Adds the Warp from ES to AdventurerSummit",
             "Action": "EditMap",
             "Target": "Maps/Custom_ESDeepMountains",
-            "TextOperations": [
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "Warp"
-                    ],
-                    "Value": "6 62 Custom_AdventurerSummit 64 8 8 62 Custom_AdventurerSummit 64 9 7 62 Custom_AdventurerSummit 64 9",
-                    "Delimiter": " "
-                }
-            ],
+            "MapProperties": {
+                "Warp": "6 62 Custom_AdventurerSummit 64 8 8 62 Custom_AdventurerSummit 64 9 7 62 Custom_AdventurerSummit 64 9"
+            },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
             }

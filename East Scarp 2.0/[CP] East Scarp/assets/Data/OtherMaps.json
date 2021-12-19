@@ -41,7 +41,7 @@
                 "Height": 14
             },
             "When": {
-                "HasMod |contains=ricehit.SDSMAPSP": true
+                "HasMod |contains=ricehit.SDSMAPS": true
             }
         },
         { //Mountain > Deep Mountains

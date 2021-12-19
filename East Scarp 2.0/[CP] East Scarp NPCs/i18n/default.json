@@ -114,7 +114,8 @@
     "57879901.02": "The courier shall be picking them up this afternoon, and they shall adorn Zuzu's annual flower festival!$1#$b#Is that not most terribly exciting?$7",
     "57879901.03": "Oh yes! That's right. I requested you stop by because I have a little something for you. Please, wait a moment.",
     "57879901.04": "Here they are.",
-    "57879901.05": "Perhaps you would consider sharing the flowers with me?",
+    "57879901.05": "These were a gift from a botanist. He assured me they would produce a fine bloom.#$b#I ... well I thought that you might have more success with them than I.",
+    "57879901.06": "Perhaps you would consider sharing the flowers with me?",
     //Slay Crabs Reward (Dialogue is Eloise)
     "57879902.01": "Ssshhh!",
     "57879902.02": "(Look farmer @! It's a fairy penguin!)",
@@ -231,6 +232,8 @@
     "festivals.jacob.spring13": "Hello @. Eloise loves birds, but she's never been particularly interested in the egg hunt. Probably because Abigail always wins.",
     "festivals.josephine.spring13": "What a whimsical celebration! I'll have to take a photo in that rabbit; Guvvie will be most amused.#$b#It's a pity he couldn't join us... but he's a very busy man.$2",
     "festivals.oliver.spring13": "Hey there! I'm totally just here for the food. And this eggnog! It's wicked-good. You should try some.#$b#What do you mean I shouldn't be drinking it? Why? What's wrong with it?$4#$b#Oh... Please don't tell Mom, okay?$2",
+    "festivals.ladysheba.spring13.false": "Mirrup!$1",
+    "festivals.ladysheba.spring13.true": "I find color egg! Play with. Is fun!$1",
     // flower dance
     //*************
     "festivals.aideen.spring24": "Folk dancing? How very rustic. This bears little semblance to the dances I attended in Grampleton. Now, those were sophisticated affairs.",
@@ -295,7 +298,7 @@
     "festivals.josephine.winter25": "Merry Winter Star, @! I'm keeping Mayor Lewis company today.#$b#*whispers* He believes I'm here representing my husband, but really it's for the company.$1",
     "festivals.oliver.winter25": "Hey @. Yeah, Dad couldn't make it... he's helping out with some charity in Zuzu.$2#$b#Still, the food's good, and Dr. Jacob said I could join him, so it's cool. Literally.$1",
     "festivals.ladysheba.winter25.false": "Mirrup?$3",
-    "festivals.ladysheba.winter25.true": "Is many people. Scared. Stay here, okay? Bring present, yes?$3",//
+    "festivals.ladysheba.winter25.true": "Is many people. Scared. Stay here, okay? Bring present, yes?$3", //
     //**************************************
     // E N G A G E M E N T   D I A L O G U E
     //**************************************
@@ -1474,4 +1477,19 @@
     "strings.jacob.fri002": "Hi @. Just checking in to make sure Miss Marnie's animals are all doing well.",
     "strings.jacob.sat001": "On a clear day, you can see almost all the way to the Fern Islands. Del used to love this view.",
     "strings.jacob.winter17": "I've given Ellie a little pocket money to spend - it's not often we get such exotic visitors!#$b#I hope she doesn't buy that parrot...$3",
+    /******************************
+    N  E  W
+    ******************************/
+    "57879001.01": "She's going to love it!",
+    "57879001.02": "She'd better! Given how many times I whacked my thumb.$2",
+    "57879001.03": "Hello!",
+    "57879001.04": "Hey, hi there @. Check out my handiwork!",
+    "57879001.05": "We're putting in a cat door for Lady Sheba! So she can keep warm for winter!$1",
+    "57879001.06": "Jas's very persuasive, and I'm just a soft touch.$4#$b#Still, all cats deserve a home. I know that from experience.",
+    "57879001.07": "She can't come inside, Munchie doesn't like her much.$2",
+    "57879001.08": "Sad but true.$2#$b#Then again, I think Munchington only tolerates me because I can operate a can opener.$1",
+    "57879001.09": "Sssh",
+    "57879001.10": "Here she comes.$3",
+    "57879001.11": "It's okay, you can go in.",
+    "57879001.12": "Thanks Dad."
 }

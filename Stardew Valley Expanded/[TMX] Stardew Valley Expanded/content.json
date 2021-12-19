@@ -2290,27 +2290,4 @@
 	
   ],
   
-  	"spouseRooms": [
-        {
-        "name": "Victor",
-        "file": "assets/SpouseRooms/VictorsRoom.tmx"
-        },
-		{
-        "name": "Olivia",
-        "file": "assets/SpouseRooms/OliviasRoom.tmx"
-        },
-		{
-        "name": "Sophia",
-        "file": "assets/SpouseRooms/SophiasRoom.tmx"
-        },
-		{
-        "name": "Claire",
-        "file": "assets/SpouseRooms/ClairesRoom.tmx"
-        },
-		{
-        "name": "Wizard",
-        "file": "assets/SpouseRooms/WizardsRoom.tmx"
-        },
-    ]
-  
 }
