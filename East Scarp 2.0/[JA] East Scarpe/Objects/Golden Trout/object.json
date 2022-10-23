@@ -7,27 +7,15 @@
 	"EdibleBuffs": null,
 	"Price": 110,
 	"IsColored": false,
-	"GiftTastes":
-	{
-		"Love": ["MisterGinger", "Kent"],
-		"Like": ["Eyvinder","Willy"]
+	"GiftTastes": {
+		"Love": [
+			"MisterGinger",
+			"Kent"
+		],
+		"Like": [
+			"Eyvinder",
+			"Willy"
+		]
 	},
-	"NameLocalization":
-	{
-		/*to be added in*/
-		"ko": "황금빛 송어",
-"zh": "金色鳟鱼",
-	},
-	"DescriptionLocalization":
-	{
-		/*to be added in*/
-		"ko": "산에서 흐르는 개울가에서 서식하는 송어입니다.",
-"zh": "喜欢在山间溪流里活动的鳟鱼。",
-	},
-	"CategoryLocalization":
-	{
-		/*to be added in*/
-		"ko": "물고기",
-"zh": "鱼",
-	}
+	"TranslationKey": "object.goldentrout-fish",
 }

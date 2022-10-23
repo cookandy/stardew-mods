@@ -1,6 +1,8 @@
 {
-    "Changes": [ //Karmylla's Immersive Maps, but not Stardew Reimagined2
-        {
+    "Changes": [ 
+        // T O W N   >   V I N E Y A R D
+        /***************************/
+        {//Karmylla's Immersive Maps, but not Stardew Reimagined2
             "Action": "EditMap",
             "Target": "Maps/Town",
             "FromFile": "assets/Patches/ES_rev_karm.tmx",
@@ -44,10 +46,13 @@
                 "HasMod |contains=ricehit.SDSMAPS": true
             }
         },
+
+        //M O U N T A I N   >   D E E P   M O U N T A I N S
+        /************************************************/
         { //Mountain > Deep Mountains
             "Action": "EditMap",
             "Target": "Maps/Mountain",
-            "FromFile": "assets/Patches/MountainPatchDeepMountains.tmx",
+            "FromFile": "assets/Patches/MountainPatchDeepMountains_Reimagined2.tmx",
             "ToArea": {
                 "X": 86,
                 "Y": 0,
@@ -56,9 +61,26 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=DaisyNiko.SVR2": false
+                "HasMod |contains=DaisyNiko.SVR2": true
             }
         },
+        { //Mountain > Deep Mountains
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "FromFile": "assets/Patches/MountainPatchDeepMountains_Reimagined.tmx",
+            "ToArea": {
+                "X": 85,
+                "Y": 0,
+                "Width": 8,
+                "Height": 15
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=DaisyNiko.StardewValleyReimagined": true
+            }
+        },
+           //M O U N T A I N   >   E A S T   S C A R P
+        /************************************************/
         { // Mountain > East Scarp
             "Action": "EditMap",
             "Target": "Maps/Mountain",
@@ -90,6 +112,8 @@
                 "TownMap": "karmylla"
             }
         },
+        // T O W N   >   V I N E Y A R D   (continued)
+        /***************************/
         //Reimagined
         {
             "Action": "EditMap",
@@ -106,6 +130,8 @@
                 "TownMap": "default"
             }
         },
+          //M O U N T A I N   >   E A S T   S C A R P
+        /************************************************/
         { // Expanded/Water Filled Gorge
             "Action": "EditMap",
             "Target": "Maps/Mountain",
@@ -164,7 +190,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Mountain 92 40"
+                        "TouchAction": "Warp Mountain 92 40"
                     }
                 },
                 {
@@ -174,7 +200,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Mountain 92 40"
+                        "TouchAction": "Warp Mountain 92 40"
                     }
                 }
             ],

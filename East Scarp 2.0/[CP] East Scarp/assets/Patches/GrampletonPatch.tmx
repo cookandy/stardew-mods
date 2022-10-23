@@ -2890,17 +2890,17 @@
  <objectgroup id="2" name="Back">
   <object id="84" name="TileData" x="144" y="16" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_GrampletonFields 2 110"/>
+    <property name="TouchAction" value="Warp Custom_GrampletonFields 2 110"/>
    </properties>
   </object>
   <object id="85" name="TileData" x="144" y="32" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_GrampletonFields 2 111"/>
+    <property name="TouchAction" value="Warp Custom_GrampletonFields 2 111"/>
    </properties>
   </object>
   <object id="86" name="TileData" x="144" y="48" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_GrampletonFields 2 112"/>
+    <property name="TouchAction" value="Warp Custom_GrampletonFields 2 112"/>
    </properties>
   </object>
  </objectgroup>

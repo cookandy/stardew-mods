@@ -1,12 +1,11 @@
 {
-    "Changes": [
-    {
-            "LogName": "Pam",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Pam",
-            "Entries":
-            {
-                "Saloon_Wed": null,
+	"Changes":[
+		{
+			"LogName":"Pam",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Pam",
+			"Entries":{
+				"Saloon_Wed":null,
                 "Saloon_Mon": "Eu tava pensando em te pagar uma brahma, mas eu não tenho dinheiro.",
                 "Saloon_Thu": "GUS!!! MANDA MAIS UMA.$a",
                 "Saloon_Entry": "Acho que vou experimentar outra coisa hoje./Preciso beber algo.../A DE SEMPRE GUS!/EU QUERO MAIS UMAAAAA!/Que sede!/ESTOU DESIDRATANDO AQUI!",
@@ -57,6 +56,7 @@
                 "spring_23_2": "Eu mal posso esperar para ver Penny dançar amanhã!$h#$e#Eu só espero que ela dance com alguém bom o suficiente para ela.",
                 "winter_7_2": "Hora de eu testar minha mão na pesca amanhã. Você vai estar no festival?",
                 "winter_28_2": "Outro ano acabando...#$e#Não deixe sua vida ir embora, jovem.",
-            }
-        }]
+			}
+		}
+	]
 }

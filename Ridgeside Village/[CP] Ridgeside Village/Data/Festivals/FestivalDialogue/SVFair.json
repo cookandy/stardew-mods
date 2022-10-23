@@ -1,18 +1,18 @@
 {
 "Changes": [
-	
+
 //------------------------
-// FESTIVAL DIALOGUE   
+// FESTIVAL DIALOGUE
 //------------------------
 
 	//SVFair----------------------
-	
+
 		{
 			"LogName": "SVFair",
 			"Action": "EditData",
 			"Target": "Data/Festivals/fall16",
 			"Entries": {
-			
+
 			//Non-Dateables
 				"Aguar": "{{i18n:Festivals.StardewFair.Aguar}}",
 				"Bert": "{{i18n:Festivals.StardewFair.Bert}}",
@@ -45,6 +45,7 @@
 				"Malaya": "{{i18n:Festivals.StardewFair.Malaya}}",
 				"Kimpoi": "{{i18n:Festivals.StardewFair.Kimpoi}}",
 				"Naomi": "{{i18n:Festivals.StardewFair.Naomi}}",
+				"Torts": "{{i18n:Festivals.StardewFair.Torts}}",
 
 			//Dateables
 				"Alissa": "{{i18n:Festivals.StardewFair.Alissa}}",
@@ -71,6 +72,12 @@
 				"Daia_spouse": "{{i18n:Festivals.StardewFair.Daia_spouse}}",
 				"Jio": "{{i18n:Festivals.StardewFair.Jio}}",
 				"Jio_spouse": "{{i18n:Festivals.StardewFair.Jio_spouse}}",
+
+				"Anton_spouse": "{{i18n:Festivals.StardewFair.Anton_spouse}}",
+				"Kiarra_spouse": "{{i18n:Festivals.StardewFair.Kiarra_spouse}}",
+				"Sean_spouse": "{{i18n:Festivals.StardewFair.Sean_spouse}}",
+				"Paula_spouse": "{{i18n:Festivals.StardewFair.Paula_spouse}}",
+				"Blair_spouse": "{{i18n:Festivals.StardewFair.Blair_spouse}}",
 			},
 		},
 ]

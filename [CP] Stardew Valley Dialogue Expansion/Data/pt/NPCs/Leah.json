@@ -1,12 +1,11 @@
 {
-    "Changes": [
-    {
-            "LogName": "Leah",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Leah",
-            "Entries":
-            {
-                "Beach": null,
+	"Changes":[
+		{
+			"LogName":"Leah",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Leah",
+			"Entries":{
+				"Beach":null,
                 "Mon4": "Você gosta de vinho?#$e#Você poderia até fazer o seu próprio vinho, eles são bem caros quando envelhidos.$h",
                 "Mon6": "Marnie e Jas sempre foram vizinhas ótimas. Eu passo lá de vez em quando, quando estou voltando.#$e#Shane? Nunca falei com ele.$u",
                 "Mon8": "Você sabia que encontrei Lewis e Marnie se pegando em um arbusto?$h#$b#Entre nós, tudo bem?$l",
@@ -14,11 +13,12 @@
                 "Tue4": "Oi, você precisa de ajuda?#$e#A paisagem da vila sempre me traz novas ideias.#$e#Não faço arte pelo dinheiro, é apenas algo que gosto de fazer.#$e#Seu trabalho parece legal... e você ainda produz comida para todos.!$h#$e#Ah, você deve ter coisas pra fazer, desculpa.",
                 "Tue6": "Eu desenhei um quadro para o Elliot ontem. Isso vai deixar a casa dele mais animada.#$e#Eu respeito o trabalho dele para buscar o que sonha, nós somos iguais de certo modo.",
                 "Tue8": "Você já falou com aquele mago?#$e#Eu nunca cheguei ver ele.$7#$b#Ele se esconde melhor que 'aquele' casal.$h",
+				"Ter10":"Então... Se estamos namorando, quero ter certeza... você está bem com o fato de que eu não ganho muito dinheiro, né?#$e#Eu estava apenas pensando.#$b#Eu acho que você sabe por que.$l",
                 "Wed2": "Você já conheceu o Elliot?#$b#Ele também está se esforçando para buscar seu sonho.",
                 "Wed4": "Tem uma árvore bem grande e com frutas deliciosas perto de minha casa, mas... é meio difícil de alcançar.$s",
                 "Wed8": "É um pouco trabalhoso coletar madeira para fazer minha arte.#$q 225/226 Wed_old#Falando nisso, você gostou da escultura que te fiz?$u#$r 225 10 Wed_225#Sim, ela me lembra você.#$r 226 -100 Wed_226#Você pegou aquilo do lixo?",
                 "Wed_old": "$p 025#Eu tenho treinado com aquelas esculturas que fiz pra você.|Não se preocupe, eu não vou te dar mais nenhuma...$u",
-                "Wed_225": "...É sério?!$l#$b#Isso me deixa feliz.$l",
+                "Wed_225": "...É sério?!$l#$b#Isso me deixa feliz.$l",																																			 
                 "Wed_226": "...$s",
                 "Wed10": "Dei uma ajeitada no cabelo hoje, você percebeu?#$e#Isso vai manter meu cabelo longe do seu rosto quando a gente estiver se beijando.$l#$e#Eu disse isso em voz alta?$h",
                 "Thu": "Estou curiosa para ver o que você vai fazer naquela fazenda.$7",
@@ -128,14 +128,13 @@
                 "fall_15_2": "Espero que você se divirta amanhã.$h",
                 "winter_24_2": "Vamos comer tudo!$h",
                 "winter_28_2": "Como foi o seu ano, @?#$e#O meu foi ótimo!$h",
-            }
-        },
-        {
-            "LogName": "Leah Marriage",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialogueLeah",
-            "Entries":
-            {
+			}
+		},
+		{
+			"LogName":"Leah Marriage",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/MarriageDialogueLeah",
+			"Entries":{
                 "Rainy_Day_0": "#$c .5#Ainda estou traumatizada por ter visto aqueles dois na moita... céus.$s",
                 "Rainy_Day_1": "#$c .5#Eu sempre achei a chuva deprimente, mas ela é linda vista daqui$l#É um ótimo dia pra ficar em casa... tenho alguns projetos que quero fazer.$h",
                 "Rainy_Day_2": "Essa chuva vai durar pelo resto do dia?$7",
@@ -185,6 +184,7 @@
                 "winter_16": "É difícil vender uma peça na qual tenho muito orgulho.$s#$e#Eu posso manter algumas?$l",
                 "winter_20": "As decorações dos festivais de inverno são lindas.$h",
                 "winter_27": "A neve começou vazar por um buraco no telhado, e então os raios solares começaram atravesá-lo...#$b#Estava tão lindo...$l",
-            }
-        }]
+			}
+		}
+	]
 }

@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Caroline",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Caroline",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Caroline",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Caroline",
+			"Entries":{
                 "Mon2": "Abby foi educada quando falou com você?#$e#Ela normalmente é bem educada com os outros, mas costuma explodir às vezes.",
                 "Mon4": "Abby tem um ótimo talento musical, mas ela nunca focou em um instrumento por muito tempo.#$b#Você já viu ela tocando?",
                 "Mon6": "Abigail e eu estamos parando de brigar tanto, você acredita?#$e#Eu achei que ela nunca fosse amadurecer.$1",
@@ -48,6 +47,7 @@
                 "fall_Mon10": "Espero que Abby não cometa os mesmos erros que cometi...$s#$e#Hm... teremos aula amanhã, você vem?",
                 "fall_Thu": "Você esteve coletando cogumelos pela floresta? Eu vi vários.#$e#Eu não sou muito fã deles, embora.",
                 "fall_Thu6": "Há muita coisa gostosa para se fazer com cogumelos.#$e#Ou se você não gostar de cozinhar, pode vendê-los.",
+                "fall_Thu8":"$d Joja#Estou preocupada com Pierre. Cada vez que perdemos negócios para o JojaMart, ele mal consegue dormir por dias.|Nunca vou esquecer o dia em que Pierre enfrentou Morris daquele jeito. Isso me lembra de quando ainda éramos mais jovens.$h",
                 "fall_Sat6": "Abby sempre teve interesse no oculto, me pergunto de onde ela tirou isso...$s",
                 "fall_Sat8": "Abby passa muito tempo nos jogos...$2#$e#Mas talvez eu esteja exagerando.$2",
                 "winter_Thu": "O inverno é severo, mas muito bom para colocar as coisas em ordem.#$e#Você também pode encontrar algumas raízes por aí.",
@@ -64,6 +64,7 @@
                 "summer_27_2": "*whew* Que calor... acho que vou descansar.",
                 "fall_15_2": "Pierre está muito obssecado com a exibição de novo...",
                 "winter_28_2": "O fim de outro ano... espero que o próximo seja igual a este!",
-            }
-        }]
+			}
+		}
+	]
 }

@@ -12,7 +12,9 @@
 	"CategoryColorOverride": "0, 0, 155, 255",
 	"GiftTastes":
 	{
+	    "Like": [ "Lance" ],
 		"Dislike": ["Kent", "Jodi", "Olivia", "Pierre", "Gus", "Evelyn", "Leah", "Robin", "Elliott", "Andy", "George", "Claire", "Shane", "Sebastian", "Abigail", "Haley", "Maru", "Pam", "Clint", "Jas", "Morgan", "Vincent", "Sophia"],
 	    "Hate": ["Willy"]
 	},
+	"TranslationKey": "object.razor-trout",
 }

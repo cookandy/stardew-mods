@@ -97,7 +97,7 @@
 		
 		
 		{
-			"LogName": "Lumisteria Tilesheet",
+			"LogName": "Lumisteria Tilesheet FrontTile",
 			"Action": "Load",
 			"Target": "Mods/Lumisteria.LumiTilesheetsIndoor/lumi_towninterior_fronttiles",
 			"FromFile": "assets/tilesheets/indoor/vanilla/lumi_towninterior_fronttiles.png",
@@ -105,8 +105,8 @@
 		
 		
 		{
-			"LogName": "Lumisteria Tilesheet",
-			"Action": "Load",
+			"LogName": "Lumisteria Tilesheet FrontTile",
+			"Action": "EditImage",
 			"Target": "Mods/Lumisteria.LumiTilesheetsIndoor/lumi_towninterior_fronttiles",
 			"FromFile": "assets/tilesheets/indoor/{{interiorrecolor}}/lumi_towninterior_fronttiles.png",
             "When":

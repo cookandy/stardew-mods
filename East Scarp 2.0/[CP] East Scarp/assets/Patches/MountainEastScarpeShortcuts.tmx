@@ -1587,27 +1587,27 @@
   </object>
   <object id="50" name="TileData" x="32" y="80" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Town 111 1"/>
+    <property name="TouchAction" value="Warp Town 111 1"/>
    </properties>
   </object>
   <object id="51" name="TileData" x="48" y="80" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Town 112 1"/>
+    <property name="TouchAction" value="Warp Town 112 1"/>
    </properties>
   </object>
   <object id="58" name="TileData" x="96" y="80" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_EastScarpe 3 1"/>
+    <property name="TouchAction" value="Warp Custom_EastScarpe 3 1"/>
    </properties>
   </object>
   <object id="59" name="TileData" x="112" y="80" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_EastScarpe 4 1"/>
+    <property name="TouchAction" value="Warp Custom_EastScarpe 4 1"/>
    </properties>
   </object>
   <object id="61" name="TileData" x="64" y="80" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Town 113 1"/>
+    <property name="TouchAction" value="Warp Town 113 1"/>
    </properties>
   </object>
  </objectgroup>

@@ -83,7 +83,7 @@
     "data.npc.pet.description": "Il tuo fedele animale domestico.",
     "data.npc.horse.description": "Il tuo fedele destriero.",
     "data.npc.junimo.description": "Uno spirito della foresta, proveniente dal mondo degli spiriti. Si sa molto poco di loro.",
-    "data.npc.trashbear.description": "Uno spirito amichevole che ripulisce la spazzatura.",
+    "data.npc.trash-bear.description": "Uno spirito amichevole che ripulisce la spazzatura.",
 
     // item types
     "data.type.debris": "Detriti",
@@ -381,7 +381,7 @@
     "item.needed-for.full-collection": "l'achievement 'collezione completa' (donane ancora uno al museo)",
     "item.needed-for.gourmet-chef": "l'achievement 'chef da gourmet' (cucina {{recipes}})",
     "item.needed-for.craft-master": "l'achievement 'maestro della fabbricazione' (crea {{recipes}})",
-    "item.needed-for.quests": "current quests ({{quests}})", // TODO
+    "item.needed-for.quests": "missioni attuali ({{quests}})",
     "item.sells-to.shipping-box": "Cassetta delle spedizioni",
     "item.recipes-for-ingredient.entry": "{{name}} ({{count}} necessari)",
     "item.recipes-for-machine.multiple-items": "{{name}} x{{count}}",
@@ -444,6 +444,30 @@
 
 
     /*********
+    ** Item > melee weapon lookups
+    *********/
+    // labels
+    // TODO
+    "item.melee-weapon.accuracy": "Accuracy",
+    "item.melee-weapon.critical-chance": "Critical chance",
+    "item.melee-weapon.critical-damage": "Critical damage",
+    "item.melee-weapon.damage": "Damage",
+    "item.melee-weapon.defense": "Defense",
+    "item.melee-weapon.knockback": "Knockback",
+    "item.melee-weapon.reach": "Reach",
+    "item.melee-weapon.speed": "Attack speed",
+
+    // values
+    // TODO
+    "item.melee-weapon.critical-damage.label": "{{multiplier}} times normal damage (before player bonuses)",
+    "item.melee-weapon.defense.label": "{{amount}} while equipped",
+    "item.melee-weapon.knockback.label": "{{amount}} ({{multiplier}} times normal distance)",
+    "item.melee-weapon.reach.label": "{{amount}} pixels",
+    "item.melee-weapon.speed.shown-vs-actual": "shown: {{shownSpeed}}{{lineBreak}}actual: {{actualSpeed}}",
+    "item.melee-weapon.speed.summary": "{{speed}} ({{milliseconds}} milliseconds per swing frame, before player speed bonuses)",
+
+
+    /*********
     ** Item > movie lookups
     *********/
     // labels
@@ -452,6 +476,7 @@
     "item.movie-ticket.loves-movie": "Adora il film",
     "item.movie-ticket.likes-movie": "Gli piace il film",
     "item.movie-ticket.dislikes-movie": "Non gli piace il film",
+    "item.movie-ticket.rejects-movie": "Non guarderà il film",
 
     // values
     "item.movie-snack-preference.love": "{{name}} lo adora",
@@ -674,5 +699,50 @@
     "tree.stages.sapling": "alberello",
     "tree.stages.bush": "cespuglio",
     "tree.stages.smallTree": "piccolo albero",
-    "tree.stages.tree": "albero"
+    "tree.stages.tree": "albero",
+
+
+    /*********
+    ** Generic Mod Config Menu UI
+    *********/
+    // main options
+    "config.title.main-options": "Opzioni principali",
+    "config.progression-mode.name": "Modalità progressione",
+    "config.progression-mode.desc": "Scegli se nascondere alcuni contenuti (ad esempio, i gusti dei regali e le soluzioni degli enigmi) finché non li si scopre nel gioco.",
+    "config.highlight-unrevealed-gift-tastes.name": "Evidenzia i gusti dei regali non rivelati",
+    "config.highlight-unrevealed-gift-tastes.desc": "Scegli se evidenziare i gusti dei regali degli oggetti che non sono stati rivelati nel profilo del PNG. Se abilitato, i gusti dei regali non rivelati saranno in grassetto e le ricerche mostreranno anche i regali non graditi/odiati.",
+    "config.show-all-gift-tastes.name": "Mostra tutti i gusti dei regali",
+    "config.show-all-gift-tastes.desc": "Scegli se si desidera mostrare tutti i gusti dei regali per la ricerca di PNG e oggetti; quando è disattivato, vengono mostrati solo i gusti più rilevanti (ad esempio, i regali amati o graditi).",
+
+    // advanced options
+    "config.title.advanced-options": "Opzioni avanzate",
+    "config.tile-lookups.name": "Ricerca piastrelle",
+    "config.tile-lookups.desc": "Se includere o meno le piastrelle della mappa come target di ricerca.",
+    "config.data-mining-fields.name": "Mostra i campi di data mining",
+    "config.data-mining-fields.desc": "Scegli se mostrare i dati grezzi utili per i data miner (come campi separati in fondo ai risultati delle ricerche). Si tratta di una funzione avanzata non destinata alla maggior parte dei giocatori.",
+    "config.force-full-screen.name": "Forza schermo intero",
+    "config.force-full-screen.desc": "Scegli se il menu deve essere sempre a tutto schermo, invece che centrato nella finestra. Questa opzione è utile soprattutto quando si visualizzano i campi di data mining.",
+    "config.target-redirection.name": "Reindirizzamento del target",
+    "config.target-redirection.desc": "In alcuni casi il gioco genera un'entità temporanea per rappresentarne un'altra. Ad esempio, Abigail nelle miniere è in realtà un PNG temporaneo con il nome di 'AbigailMine', quindi cercarla lì non mostrerà le informazioni reali di Abigail. Con questa opzione attivata, Lookup Anything cercherà invece l'Abigail originale.",
+    "config.scroll-amount.name": "Quantità di scorrimento",
+    "config.scroll-amount.desc": "Il numero di pixel da spostare per ogni scorrimento verso l'alto o verso il basso.",
+
+    // controls section
+    "config.title.controls": "Controlli",
+    "config.hide-on-key-up.name": "Nascondi con tasto non premuto",
+    "config.hide-on-key-up.desc": "Scegli se nascondere l'interfaccia utente di ricerca quando si rilascia il tasto di ricerca.",
+    "config.toggle-lookup.name": "Attiva lookup",
+    "config.toggle-lookup.desc": "I tasti che attivano l'interfaccia utente di ricerca per qualcosa sotto il cursore.",
+    "config.toggle-search.name": "Attiva ricerca",
+    "config.toggle-search.desc": "I tasti che attivano l'interfaccia utente di ricerca.",
+    "config.scroll-up.name": "Scorri verso l'alto",
+    "config.scroll-up.desc": "I tasti che permettono di scorrere i contenuti lunghi di qualche riga verso l'alto.",
+    "config.scroll-down.name": "Scorri verso il basso",
+    "config.scroll-down.desc": "I tasti che permettono di scorrere i contenuti lunghi di qualche riga verso il basso.",
+    "config.page-up.name": "Pagina su",
+    "config.page-up.desc": "I tasti che fanno scorrere i contenuti lunghi di una pagina intera verso l'alto.",
+    "config.page-down.name": "Pagina giù",
+    "config.page-down.desc": "I tasti che fanno scorrere i contenuti lunghi di una pagina intera verso il basso.",
+    "config.toggle-debug.name": "Attiva debug",
+    "config.toggle-debug.desc": "I tasti che attivano la visualizzazione delle informazioni di debug."
 }

@@ -2,12 +2,15 @@
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Changes": [
         // Mister Ginger (cat NPC) - https://www.nexusmods.com/stardewvalley/mods/5295
+        // Tristan - https://www.nexusmods.com/stardewvalley/mods/6675
+        // This is a unique pair of NPCs.
         {
             "LogName": "[Yagi] Mr Ginger - Sprite Offsets",
             "Action": "EditData",
             "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
             "When": {
-                "HasMod: |contains=LemurKat.Mr.Ginger.NPC": true
+                "HasMod: |contains=LemurKat.Mr.Ginger.NPC": true,
+                "HasMod: |contains=Lemurkat.Tristan.CP": false
             },
             "Entries": {
                 "MisterGinger": {
@@ -15,6 +18,37 @@
                 },
             }
         },
+        {
+            "LogName": "[Yagi] Mr Ginger and Tristan [cat] - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=LemurKat.Mr.Ginger.NPC": true,
+                "HasMod: |contains=Lemurkat.Tristan.CP": true,
+                "HasSeenEvent |contains=5295000": false
+            },
+            "Entries": {
+                "MisterGinger": {
+                    "MarkerCropOffset": 16
+                },
+            }
+        },
+        {
+            "LogName": "[Yagi] Mr Ginger and Tristan [human] - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=LemurKat.Mr.Ginger.NPC": true,
+                "HasMod: |contains=Lemurkat.Tristan.CP": true,
+                "HasSeenEvent": "5295000"
+            },
+            "Entries": {
+                "MisterGinger": {
+                    "MarkerCropOffset": 0
+                },
+            }
+        },
+
         // Jade NPC - https://www.nexusmods.com/stardewvalley/mods/5559
         {
             "LogName": "[Yagi] Jade - Sprite Offsets",
@@ -110,6 +144,35 @@
             "Entries": {
                 "Leilani": {
                     "MarkerCropOffset": 4
+                },
+            }
+        },
+        // Ginger Island NPC Overhaul - https://www.nexusmods.com/stardewvalley/mods/9242
+        {
+            "LogName": "[Yagi] Ginger Island NPC Overhaul - Sprite Offsets - Before flag willyBoatFixed",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=ZoeDoll.GingerIslandNPCTweaks": true,
+                "HasFlag |contains=willyBoatFixed": false
+            },
+            "Entries": {
+                "ProfSnail": {
+                    "Exclude": true
+                },
+            }
+        },
+        {
+            "LogName": "[Yagi] Ginger Island NPC Overhaul - Sprite Offsets - After flag willyBoatFixed",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=ZoeDoll.GingerIslandNPCTweaks": true,
+                "HasFlag |contains=willyBoatFixed": true
+            },
+            "Entries": {
+                "ProfSnail": {
+                    "MarkerCropOffset": 6
                 },
             }
         },

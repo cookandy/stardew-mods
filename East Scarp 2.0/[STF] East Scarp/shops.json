@@ -216,7 +216,7 @@
       },
       "MaxNumItemsSoldInStore": 5,
       "When": [
-        "NPCAt Rosa 45 27"
+        "NPCAt Rosa 45 31"
       ],
       "ItemStocks": [
         {
@@ -336,7 +336,7 @@
       "LocalizedQuote": {},
       "MaxNumItemsSoldInStore": 5,
       "When": [
-        "NPCAt Rosa 45 27"
+        "NPCAt Rosa 45 31"
       ],
       "ItemStocks": [
         {

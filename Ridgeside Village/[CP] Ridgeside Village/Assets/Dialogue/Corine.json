@@ -96,7 +96,7 @@
 	"MovieInvitation": "{{i18n:Corine.Dialogue.MovieInvitation}}",
 
 //Locations
-	"Saloon": "{{i18n:Corine.Dialogue.Saloon}}",
+	"Saloon": "{{i18n:Corine.Dialogue.Saloon.{{Random: 1, 2, 3, 4, 5}}}}",
 
 //Resort
 	"Resort_Entering": "{{i18n:Corine.Dialogue.Resort_Entering}}",
@@ -111,6 +111,28 @@
 	"Resort_Bar": "{{i18n:Corine.Dialogue.Resort_Bar}}",
 	"Resort": "{{i18n:Corine.Dialogue.Resort}}",
 
+		},
+	},
+
+
+//Romantic dialogue overwrite when dating
+	{
+   
+   "Action": "EditData",
+   "Target": "Characters/Dialogue/Corine",
+   "When": {  	
+   	"Relationship:Corine": "Dating",
+   },
+   "Entries": {
+
+   	//8 Hearts and above
+	"Mon8": "{{i18n:Corine.Dialogue.Mon8.dating}}",
+	"Tue8": "{{i18n:Corine.Dialogue.Tue8.dating}}",
+	"Wed8": "{{i18n:Corine.Dialogue.Wed8.dating}}",
+	"Thu8": "{{i18n:Corine.Dialogue.Thu8.dating}}",
+	"Fri8": "{{i18n:Corine.Dialogue.Fri8.dating}}",
+	"Sat8": "{{i18n:Corine.Dialogue.Sat8.dating}}",
+	"Sun8": "{{i18n:Corine.Dialogue.Sun8.dating}}",
 		},
 	},
 ]

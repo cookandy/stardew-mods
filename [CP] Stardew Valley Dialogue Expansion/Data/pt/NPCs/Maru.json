@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Maru",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Maru",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Maru",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Maru",
+			"Entries":{
                 "Mon2": "Meu pai te tratou bem na primeira vez que te viu?$8#$b#Ele é muito ciumento com influências...$s",
                 "Mon4": "É preciso muito esforço pra restaurar uma fazenda do zero... você já sabe por onde começar?$8",
                 "Mon6": "Tem dias em que minha cabeça fica tão lotada com bobagens que mal consigo me concentrar...$8#$e#Acho que sair e tomar um ar fresco pode ajudar, não acha?$h",
@@ -39,7 +38,8 @@
                 "Sun10": "Você deve amar o que faz, já que ficou aqui todo esse tempo.$h#$e#Eu também... nós fazemos um par.$l",
                 "summer_Mon": "Você tem ideia do que posso construir esse verão?$h",
                 "summer_Mon2": "Tenho algumas coisas na minha lista de atividades para fazer nesse verão...$8#$b#Mas vou ajudar o Sebastian com um erro técnico no computador.$h",
-                "summer_Mon4": "Estive tendo um problema matemático ultimamente...$8#$b#Eu não queria apelar para o computador do Sebastian mas...$s",
+				"summer_Mon4":"Quando você está trabalhando em um projeto de tecnologia experimental, há uma dúzia de falhas para cada sucesso.#$e#A maneira como as coisas não funcionam pode ser tão emocionante quanto a maneira como funcionam.#$b#... Contanto que ninguém se machuque.$s",
+                "summer_Mon6": "Estive tendo um problema matemático ultimamente...$8#$b#Eu não queria apelar para o computador do Sebastian mas...$s",
                 "summer_Mon10": "Eu nunca senti tanta motivação em minhas construções...$8#$b#Obrigada por me inspirar...$l",
                 "summer_Tue2": "Você já falou com meu irmão?#$b#Ele não costuma sair muito, tente aparecer aqui à noite.$h",
                 "summer_Tue8": "Você inspira determinação quando vejo você.$l",
@@ -126,14 +126,13 @@
                 "fall_15_2": "A feira é o meu festival favorito, tem tanta coisa nova.$h#$e#Você já viu os jogos?",
                 "winter_7_2": "Eu quase não consigo sair da cama para o festival, credo.$h",
                 "winter_28_2": "Como foi o seu ano?$h",
-            }
-        },
-        {
-            "LogName": "Maru Marriage",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialogueMaru",
-            "Entries":
-            {
+			}
+		},
+		{
+			"LogName":"Maru Marriage",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/MarriageDialogueMaru",
+			"Entries":{
                 "Rainy_Day_0": "Meu irmão ainda deve estar dormindo, que perda de tempo.$8#$b#Você vai trabalhar nesse frio? Se cuide.$l",
                 "Rainy_Day_1": "Você viu minha chave de fenda amarela, amor?$s#Estou sempre perdendo ela.$8",
                 "Rainy_Day_2": "Eu não consegui dormir muito bem, então vim trabalhar na oficina.#$b#Eu fiz algo pra você, pegue. [688]$l",
@@ -183,6 +182,7 @@
                 "winter_22": "Estava pensando em construir aquecedores, mas lareiras são tão quentinhas...$l",
                 "winter_23": "Eu finalmente terminei o livro que Penny me emprestou no mês passado.$h#$b#Estou pronta para colocar em prática.$l",
                 "winter_28": "Feliz ano novo, amor...$l",
-            }
-        }]
+			}
+		}
+	]
 }

@@ -4,7 +4,8 @@
 			"LogName":"Marnie",
 			"Action":"EditData",
 			"Target":"Characters/Dialogue/Marnie",
-			"Entries":{
+			"Entries":
+			{
 				"Saloon":null,
 				"Saloon_Tue":null,
 				"Saloon_Wed":null,
@@ -34,16 +35,21 @@
 				"Sun4":"Have you looked up how to craft a mayo maker?#$e#I never liked mayonnaise until I tried it homemade. That store-bought stuff just isn't the same.",
 				"Sun6":"If I spend my life caring for the people and animals I love, then I'd say it's a life well lived.",
 				"summer_Mon2":"Another one of our cows gave birth last night.$h#$e#I don't think I'll ever grow tired of watching how life continues on like that. It'll always find a way.",
+				"summer_Tue10":"I saw the prettiest little flower growing in the pasture today, nestled among the grass.#$e#It was white and yellow, just dancing in the breeze with not a care in the world.#$e#I was about to give the flower a name when along came one of my goats, and she gobbled it right up without a thought.#$b#I thought, \"Well, nice knowin' ya, little flower. Thanks for being you.\"$h",
 				"summer_Wed4":"Shane's been distant since he moved in. He won't even sit with me at the saloon.$s#$e#I get that he needs his independence. He's an adult.$s#$e#And I'm not his mother, either.$u",
 				"summer_Wed6":"*sigh*... I wasn't very productive this morning.$s",
 				"summer_Thu":"How're you handling that heat?#$e#It rains enough in the summer that you shouldn't have to worry about your water sources running dry.",
 				"summer_Thu6":"Hoo, it's hot, but it's not too hot. We shouldn't have to worry about sunstroke with any of the animals.",
 				"summer_Fri6":"I spilled a whole bucket of milk on the floor today. It was horrible.$s#$e#And such a waste of my poor Belinda's hard work.$s",
 				"summer_Fri8":"I wonder if Mr. Lewis gets lonely in that big house of his...$s#$e#It seems so empty in there, doesn't it?",
+				"fall_Tue10":"It sure is somethin' to see how far along Jas has come since she moved here. I took her in a couple of years before you arrived.#$e#She could hardly write her name back then, and now take a look at her.#$b#She's always been sharp, but she never really had a chance to thrive before.",
 				"fall_Wed":"Are you stocking up on hay right now?#$b#Just take the number of animals you've got and multiply by 28. That's how much hay you'll need to make it through winter.",
 				"fall_Wed8":"You and me! We'll make sure together that our animals last through the coming winter.$h#$e#Just swing by if you start to run low on hay.",
 				"fall_Thu":"I sell heaters. Make sure you pop one of those down anywhere your livestock is housed.#$b#They'll be thanking you when the snow starts coming down.$h",
 				"fall_Thu6":"Jas brought home another hundred-percent quiz from school. I sure am proud of that girl.$h#$e#She's come such a long way.$h",
+				"fall_Sat10":"I'm happy I get to sell my extra livestock to you. It's nice knowing where they end up. And that they're in good hands.",
+				"fall_Sun10":"With all the troubles in the world, we can't possibly manage to fix them all...#$b#...but when I look into the eyes of an animal, I know that at least I made this creature's world perfect.",
+				"winter_Mon10":"Ages ago, most livestock could survive the winters as long as they all huddled together at night. We don't breed 'em like we used to.",
 				"winter_Wed":"Got enough feed for the winter?#$e#If you need me to sell you some, just make sure you don't wait until last minute.",
 				"winter_Thu":"If I hadn't been a rancher, I wonder if I'd wound up as a cake baker.#$e#Hmm? Oh, no, I don't bake. I uh... I just really like fancy cakes.",
 				"winter_Thu8":"Yes, Jas moved in first. Sometime later, I checked in on Shane, and it became clear that I'd need to take him in, too.",
@@ -58,7 +64,7 @@
 				"Tue_inlaw_Shane":"I'm so glad Shane met you. You take good care of him now, you hear?",
 				"Tue8_inlaw_Shane":"I'm so glad Shane met you. When he first moved to town, I wasn't sure how things would work out, but here we are!$h",
 				"spring_12_2":"I've been delivering eggs to Gus and Lewis for the past week.#$e#I sure hope they have enough.",
-				"fall_15_2":"I've been scrambling to get a good grange display for tomorrow's fair. I just need a few more eggs.#$e#Whoops. \"Scrambling.\" That was a bad pun.",
+				"fall_15_2":"I've been scrambling to get a good grange display for tomorrow's fair. I just need a few more eggs.#$e#Whoops. \"Scrambling.\" That was a bad pun.$h",
 				"winter_24_2":"Hey there! I hope to see you at the Feast tomorrow.$h",
 				"winter_28_2":"We did it! Our animals made it through the winter.$h"
 			}

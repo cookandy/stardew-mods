@@ -12,7 +12,6 @@
                 "HasFlag |contains=PlayerChoseParents": false,
                 "HasSeenEvent |contains=86060001": false,
                 "HasSeenEvent |contains=86060043": false
-
             },
             "Entries": {
                 "Juna": {
@@ -28,9 +27,8 @@
             "When": {
                 "HasMod: |contains=elhrvy.NPCJuna": true,
                 "HasFlag |contains=PlayerChoseParents": false,
-                "HasSeenEvent |contains=86060001": true,
+                "HasSeenEvent": "86060001",
                 "HasSeenEvent |contains=86060043": false
-
             },
             "Entries": {
                 "Juna": {
@@ -46,9 +44,8 @@
             "When": {
                 "HasMod: |contains=elhrvy.NPCJuna": true,
                 "HasFlag |contains=PlayerChoseParents": true,
-                "HasSeenEvent |contains=86060001": true,
+                "HasSeenEvent": "86060001",
                 "HasSeenEvent |contains=86060043": false
-
             },
             "Entries": {
                 "Juna": {
@@ -64,9 +61,8 @@
             "When": {
                 "HasMod: |contains=elhrvy.NPCJuna": true,
                 "HasFlag |contains=PlayerChoseParents": true,
-                "HasSeenEvent |contains=86060001": true,
-                "HasSeenEvent |contains=86060043": true
-
+                "HasSeenEvent": "86060001",
+                "HasSeenEvent": "86060043"
             },
             "Entries": {
                 "Juna": {

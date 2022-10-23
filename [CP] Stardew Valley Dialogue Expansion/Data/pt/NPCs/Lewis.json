@@ -1,14 +1,12 @@
 {
-    "Changes": [
-    {
-            "LogName": "Lewis",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Lewis",
-            "Entries":
-            {
-
-                "Saloon": null,
-                "Saloon4": null,
+	"Changes":[
+		{
+			"LogName":"Lewis",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Lewis",
+			"Entries":{
+				"Saloon":null,
+				"Saloon4":null,
                 "cc_Bus": "@, você viu? Parece que o velho ônibus da cidade começou a funcionar novamente durante a noite!$h#$b#É um mistério, não costumava funcionar antes.",
                 "Mon": "É uma boa época para começar a pensar em jardinagem, mesmo para nós que não somos fazendeiros.#$e#O vale é conhecido por produzir algumas das melhores flores da primavera!$h",
                 "Mon2": "Seu avô e eu costumávamos conversar muito sobre jardinagem, eu aprendi muito com ele.",
@@ -46,8 +44,12 @@
                 "fall_Thu4": "Você tem algum apiário na sua fazenda?#$e#Se você colocá-los perto de flores, você pode obter diferentes tipos de mel.",
                 "fall_Fri10": "Eu sinto que me tornei tão perto de você, @, do mesmo jeito de quando eu estava com seu avô. É estranho ainda reconfortante ver como os tempos mudam.#$e#Para cada vida que deixa este mundo, um novo vem substituí-lo. Não devemos esquecer os que se foram.",
                 "fall_Sun4": "Ah... não há nada melhor que uma xícara de chá forte pela manhã.$h",
+                "winter_Mon8":"Se minha vida fosse um ano, suponho que já entrei no inverno, por assim dizer.#$e#Como será o mundo daqui a algumas décadas, se eu ainda estiver por aí?",
                 "winter_Tue": "Eu tenho que equilibrar o orçamento antes do final do ano. Espero não ter que cortar nenhum festival apenas para manter o mínimo de manutenção básica.#$e#Eu imagino que vou encontrar um jeito. Sempre faço isso. Mas não tenho certeza.",
                 "winter_Tue6": "Eu tenho que começar a elaborar um plano para melhorar nossa cidade no próximo ano!",
+				"winter_Wed10":"Devo dizer, @, eu vi você vender um pouco... coisas interessantes daquela caixa de transporte.#$e#Tenho alguma história interessante para contar?$h#$e#... Não, sério.",
+				"winter_Thu":"Todo mundo está se aquecendo? Me avise se o aquecimento de alguém falhar. Algumas das casas por aqui são bem antigas.",
+				"winter_Thu8":"A quietude do inverno sempre me coloca em um humor sombrio.#$b#Sabe, eu não diria exatamente que isso me deixa triste. Parece que... minha alma desacelera para combinar com a sensação do ar livre.#$b#É difícil colocar em palavras, mas você sabe o que eu quero dizer?",
                 "spring_1_2": "Feliz ano novo! Você tem muito trabalho nesses começos de temporada, não?",
                 "spring_3": "Você já plantou alguma semente da primavera? A temporada não dura para sempre.",
                 "spring_12": "Você recebeu minha carta sobre o festival? Espero que você venha!#$e#Eu tenho algumas boas idéias para esconder os ovos no festival, espere só, vou surpreender todos.$h",
@@ -72,6 +74,7 @@
                 "winter_15_2": "O mercado noturno não é algo que eu planejo. Esses comerciantes viajantes só aparecem por conta própria a cada ano e, francamente, eu estou feliz que eles venham todo ano aqui.#$b#Espero que eles vendam um novo chapéu, o meu está bem velhinho.",
                 "winter_24_2": "Eu sempre gosto de planejar a Festa da Estrela de Inverno todo ano no papel, claro, mas a maneira como todos aparecem de um jeito tão alegre...#$b#...Eu amo meu trabalho!$h",
                 "winter_28_2": "Não é apenas o final de mais um ano, é o aniversário da sua chegada! Eu nunca esquecerei de quando você desceu daquele ônibus.$h#$e#Feliz Aniversario de chegada @.#$e#Seu avô ficaria orgulhoso de você, @.",
-            }
-        }]
+			}
+		}
+	]
 }

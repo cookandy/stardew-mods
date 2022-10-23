@@ -34,12 +34,6 @@
 				"Duck2NPC": {
 					"Exclude": true
 				},
-				"OliverK": {
-					"Exclude": true
-				},
-				"JosephineK": {
-					"Exclude": true
-				},
 				"Kataryna": {
 					"Exclude": true
 				},
@@ -49,6 +43,60 @@
 				"LadySheba": {
 					"Exclude": true
 				},
+			}
+		},
+		{
+			"LogName": "[Yagi] East Scarp - Sprite Offsets [JosephineK, OliverK] - Before Intro Event",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true,
+				"HasSeenEvent |contains=57873001": false,
+				"HasSeenEvent |contains=57873005": false
+			},
+			"Entries": {
+				"OliverK": {
+					"Exclude": true
+				},
+				"JosephineK": {
+					"Exclude": true
+				}
+			}
+		},
+		{
+			"LogName": "[Yagi] East Scarp - Sprite Offsets [JosephineK, OliverK] - After Intro Event",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true,
+				"HasSeenEvent": "57873001",
+				"HasSeenEvent |contains=57873005": false
+			},
+			"Entries": {
+				"OliverK": {
+					"MarkerCropOffset": 3
+				},
+				"JosephineK": {
+					"MarkerCropOffset": 5
+				}
+			}
+		},
+		{
+			"LogName": "[Yagi] East Scarp - Sprite Offsets [JosephineK, OliverK] - After Leaving Event",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true,
+				"HasSeenEvent": "57873001",
+				"HasSeenEvent": "57873005"
+			},
+			"Entries": {
+				"OliverK": {
+					"MarkerCropOffset": 3
+				},
+				"JosephineK": {
+					"Exclude": true
+				}
 			}
 		},
 		{
@@ -315,7 +363,7 @@
 			"Entries": {
 				// East Scarpe - https://www.nexusmods.com/stardewvalley/mods/5787
 				// If SVE is installed, this remains in Pelican Town.
-				"Custom_ESClearingHouse": {
+				"Custom_LK_ClearingHouse": {
 					"MapVectors": [
 						{
 							"TileX": 0,

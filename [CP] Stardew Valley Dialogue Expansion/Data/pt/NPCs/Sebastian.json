@@ -1,18 +1,18 @@
 {
-    "Changes": [
-    {
-            "LogName": "Sebastian",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Sebastian",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Sebastian",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Sebastian",
+			"Entries":{
                 "Mon2": "Oi?",
+				"Mon6":"Estou sempre confuso porque a ideia de uma vida após a morte é tão atraente. As pessoas percebem quanto tempo 'eternidade' realmente é?#$e#Eu entendo a necessidade de conforto, mas...#$b#... para mim, pensar em 'eternidade' é mais como olhar para um abismo sem fim. Prefiro focar no que é temporário e na minha frente.",
                 "Mon8": "É bem idiota assumir que somos importantes no universo.$s#$e#Eu acredito que estamos nadando em uma mesma direção.",
                 "Mon10": "É bem idiota assumir que somos importantes no universo.$s#$e#Mas olhando de outra perspectiva... você é importante para mim.$l",
                 "Tue4": "Sempre que você joga uma pedra no mar, ela pula. Então as ondas batem nas margens e param...#$b#Tudo tem seu fim... como pode alguma coisa ser importante se tem fim?",
                 "Wed4": "Eu fico entediado com tanta besteira que vejo hoje em dia... como as pessoas conseguem se divertir assim?#$e#Por exemplo, os pais da Abby compraram uma nova máquina na semana passada, e ficaram falando disso o resto do mês...#$b#Como se fosse a coisa mais extraordinária que acontece com eles.#$e#É um pouco engraçado, mas meio depressivo.$s",
                 "Wed10": "É bom ter um motivo para ficar nessa vila...#$e#Ei... estou falando de você.$h",
-                "Thu4_inlaw_Maru": "Está sendo mais fácil viver sem a Maru na casa... mas como ela está?",
+                "Thu4_inlaw_Maru": "Está sendo mais fácil viver sem a Maru na casa... mas como ela está?",																										   
                 "Fri2": "Se não fosse tão longe eu iria para a cidade ainda hoje.#$e#$q 415/416 Fri_old#O que você faz quando não está trabalhando?#$r 415 0 Fri_bad#Eu nunca paro de trabalhar.#$r 416 30 Fri_good#Leio mangás.#$r 415 -30 Fri_bad#Faço compras.#$r 415 -30 Fri_bad#Pratico esportes.",
                 "Fri_old": "$p 416#Ei, pode passar no meu quarto quando quiser...$h|Você provavelmente prefere a vida na cidade, não?",
                 "Fri8": "Alguma novidade?$h#$e#Vou para o salão hoje à noite, destruir o Sam na sinuca.$h",
@@ -71,6 +71,7 @@
                 "winter_Fri4": "Acho que não vou conseguir encarar esse frio por muito tempo...$s",
                 "winter_Fri6": "Você ouviu que estão pra lançar um novo volume de Dragon Ball?$h#$e#Eu já fiz a pré-ordem do meu.$h",
                 "winter_Sat4": "Parece que você não gosta de ficar em casa... está sempre correndo por aí.#$e#Você não cansa?",
+				"winter_Sat8": "Estou sempre confuso porque a ideia de uma vida após a morte é tão atraente. As pessoas percebem quanto tempo 'eternidade' realmente é?#$e#Eu entendo a necessidade de conforto, mas...#$b#... para mim, pensar em 'eternidade' é mais como olhar para um abismo sem fim. Prefiro focar no que é temporário e na minha frente.",
                 "winter_Sat10": "Eu preciso sair daqui...#$e#Você plantou algo legal na fazenda recentemente?",
                 "winter_Sun4": "Eu tinha feito um castelo na neve mas... Demétrius me fez desmanchar ele.#$b#Você percebe o quão inútil você é quando seu padrastro te trata como uma criança de 6 anos.$u",
                 "winter_Sun6_inlaw_Maru": "A Maru sempre fazia bonecos de neve do lado de fora da casa.#$e#Ela já fez algum na sua fazenda?#$e#Desculpe por perguntar.",
@@ -82,7 +83,7 @@
                 "fall_20": "Feliz para o festival de espíritos? É o meu festival favorito.$h",
                 "fall_26": "O festival é finalmente amanhã, espero que tragam aqueles esqueletos novamente.$h#$e#Eu já sinto que são meus amigos.",
                 "winter_24": "Tenha certeza de ir para o festival de estômago vazio, há muita coisa lá.$h",
-                "winter_28": "Seria bom se a gente pudesse pular a primeira parte do ano.#$b#Todos fazem promessas inúteis que nunca vão cumprir...",
+                "winter_28": "Seria bom se a gente pudesse pular a primeira parte do ano.#$b#Todos fazem promessas inúteis que nunca vão cumprir...",																																								   
                 "Mountain_47_23": "Só estou aqui pela quietude.",
                 "summer_Mountain_58_35": "#$c .5#A temperatura começa a ficar boa no inicio da noite.#$e#Sempre parece ser mais frio perto do lago.",
                 "spring_12_2": "Não sou um grande fã de festivais. muita comoção, muita interação social... mais estresse do que diversão.",
@@ -92,14 +93,13 @@
                 "fall_26_2": "Espero que tragam monstros novos este ano.$h#$e#Você capiturou algum?",
                 "winter_24_2": "Amanhã é o dia onde todos voltaremos para casa estufados.$h",
                 "winter_28_2": "Ah... feliz ano novo.#$b#Você também vai se encher de promessas inúteis para o ano que vem?",
-            }
-        },
-        {
-            "LogName": "Sebastian Marriage",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialogueSebastian",
-            "Entries":
-            {
+			}
+		},
+		{
+			"LogName":"Sebastian Marriage",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/MarriageDialogueSebastian",
+			"Entries":{
                 "Rainy_Day_0": "#$c .5#Finalmente está chovendo... eu enjoo rápido do clima de verão.#Você não acha que o dia está ótimo?$h",
                 "Rainy_Day_1": "#$c .5#Estava pensando no meu antigo quarto... eu me sentia confortável lá, mas não sinto falta.$h#Eu não conseguia ouvir o som da chuva no meu antigo porão, já gostei muito daqui por isso.$7#$e#Eu me sentia um inútil vivendo na casa da minha mãe daquele jeito.",
                 "Rainy_Day_2": "Eu não consegui dormir ontem e fui dar uma volta por aí, veja o que encontrei.[575 769 767 84 66 78]#$e#$c .5#Eu tenho insônia às vezes, mas não é nada relacionado a você.$h#Você não precisa se preocupar comigo.$h",
@@ -151,6 +151,7 @@
                 "winter_19": "Eu sempre prefiro café, mas vou dar uma chance ao chocolate quente hoje.$u#$e#Com marshmallows.$7",
                 "winter_24": "Parece que teremos que comer com toda nossa família reunida, até que estou animado.$h",
                 "winter_26": "A neve já está derretendo...$s",
-            }
-        }]
+			}
+		}
+	]
 }

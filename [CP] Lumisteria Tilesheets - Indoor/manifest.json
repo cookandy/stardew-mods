@@ -1,7 +1,7 @@
 {
    "Name": "Lumisteria Tilesheets - Indoor",
    "Author": "Lumisteria",
-  "Version": "1.1.0",
+  "Version": "1.3.0",
    "Description": "Custom Tilesheets for other mods to use. Don't include the tilesheets in your mod.",
    "UniqueID": "Lumisteria.LumiTilesheetsIndoor",
    "MinimumApiVersion": "3.13.0",      // Minimum SMAPI version, use whatever is current

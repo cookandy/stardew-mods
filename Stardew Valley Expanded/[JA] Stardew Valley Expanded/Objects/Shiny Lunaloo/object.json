@@ -10,6 +10,7 @@
 		"GiftTastes":
 	{
 	    "Love": [ "Wizard" ],
-		"Like": ["Willy"],
+		"Like": ["Willy", "Lance"],
 	},
+	"TranslationKey": "object.shiny-lunaloo",
 }

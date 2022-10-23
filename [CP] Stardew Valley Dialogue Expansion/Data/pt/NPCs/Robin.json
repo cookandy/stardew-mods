@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Robin",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Robin",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Robin",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Robin",
+			"Entries":{
                 "cc_Begin": "Eu já pensei em consertar o Centro Comunitário, mas Lewis não sabe o que quer fazer lá...",
                 "Mon": "Oi @.#$e#Eu estava sonhando acordada com alguns projetos de carpintaria...#$e#Como vai sua casa? Tem algo quebrado lá?",
                 "Mon2": "Já te contei que eu construí essa casa com minhas próprias mãos?#$e#Ela é definitivamente o ponto alto da minha carreira até agora.",
@@ -59,6 +58,7 @@
                 "summer_27_2": "Eu acho que nunca vou me cansar de ver as Medusas-Da-Lua com o Demetrius.#$e#Espero que você venha vê-las, também.",
                 "fall_15_2": "A Feira do Vale do Orvalho é realmente de outro mundo. Espero que você faça uma exibição de produtos pra nós!",
                 "winter_28_2": "Mais um ano se vai... e mais umas duas décadas e eu serei velha.#$e#Vou continuar fazendo o que eu faço por muitos anos, apesar disso.$h",
-            }
-        }]
+			}
+		}
+	]
 }

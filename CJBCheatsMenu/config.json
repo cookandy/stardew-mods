@@ -6,7 +6,7 @@
   "GrowRadius": 1,
   "DefaultTab": "PlayerAndTools",
   "MoveSpeed": 4,
-  "InfiniteHealth": false,
+  "InfiniteHealth": true,
   "InfiniteStamina": false,
   "InstantCooldowns": false,
   "MaxDailyLuck": false,
@@ -39,6 +39,7 @@
   "FastLightningRod": false,
   "FastLoom": false,
   "FastMayonnaiseMachine": false,
+  "FastMillMachine": false,
   "FastMushroomBox": false,
   "FastOilMaker": false,
   "FastOstrichIncubator": false,
@@ -60,7 +61,8 @@
   "DurableFences": true,
   "InstantBuild": false,
   "AutoFeed": true,
-  "AutoPetAnimals": false,
-  "AutoWater": false,
+  "AutoPetAnimals": true,
+  "AutoPetPets": false,
+  "AutoWater": true,
   "InfiniteHay": true
 }

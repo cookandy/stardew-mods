@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "rainy",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/rainy",
-            "Entries":
-            {
+    "Changes":[
+	{
+			"LogName": "Rainy",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/rainy",
+			"Entries":{
                 "Abigail": "#$c .5#Parece que o vale fica bem mais interessante na chuva, não acha?#$b#Eu gosto de visitar o lago quando o clima fica assim.",
                 "Robin": "#$c .5#Essa chuva atrapalha um pouco por conta da madeira molhada, mas isso não me impede de trabalhar.#Se o seu telhado tiver goteiras me chame.",
                 "Demetrius": "#$c .5#Sinta-se em casa se quiser se aquecer.#A baixa acidez dessa chuva deve ser boa para a sua fazenda.",
@@ -55,7 +54,53 @@
                 "TwoKids_1": "#$c .5#Estou tentando manter as crianças em um horário. Isso ajuda com a educação deles.#Temos que ter certeza e dar %kid1 muita atenção agora que temos %kid2. Nós não queremos nenhum ciúme entre eles.",
                 "TwoKids_2": "#$c .5#Com um casamento e filhos, sinto que posso ver mais longe a nossa vida do que nunca.#Você sabe, eu acho %kid2 tem seu nariz.",
                 "TwoKids_3": "#$c .5#Eu estou realmente feliz por ter minhas crianças em meus braços. Você faz muito trabalho, então eu estou feliz que posso contribuir para a nossa casa.#Uma bela casa, duas crianças maravilhosas e um belo terreno. O que mais falta?",
-
-            }
-        }]
+                "spouseRoom_Emily": "#$c .5#Eu vou passar algum tempo com o papagaio hoje. Parte meu coração que ele nunca mais voe.$u#Eu tenho alguns projetos de alfaiataria que precisam da minha atenção hoje. O papagaio vai me fazer companhia enquanto você está fora.",
+        }
+    },
+	{
+	    "LogName": "Sebastian Billiards",
+        "Action": "EditData",
+        "Target": "Strings/Schedules/Sebastian",
+        "Entries":
+		{
+			"Fri.000": "#$c .5#Devo deixar o Sam ganhar uma vez?...nah.$h#Cuidado! Tiro duplo, chegando.$h",
+			"marriage_Fri.001": "#$c .5#Minhas habilidades não diminuíram... Sam ainda é tão fácil de vencer.$h#Ahh, sweet victory. Some things never get old.$h"
+		}
+	},
+	{
+		"LogName": "Birdie",
+        "Action": "EditData",
+        "Target": "Data/ExtraDialogue",
+        "Entries":
+		{
+		"Birdie0": "Nunca pensei que veria um novo rosto nesta ilha, querida. Mas estou feliz que você está aqui!",
+        "Birdie1": "Há rumores de que há muito tempo, uma grande civilização de anões vivia nesta mesma ilha.#$b#Você esteve dentro do vulcão? Está cheio de ruínas de suas estranhas máquinas...",
+        "Birdie2": "Se você está se sentindo enjoado no estômago, uma mordida de gengibre faz maravilhas, querida...",
+        "Birdie3": "Você já esteve no santuário secreto na selva? As flores lá cheiram lindas... É um dos meus lugares favoritos na ilha.$h",
+        "Birdie4": "Todas as manhãs no café da manhã, eu tenho uma tigela de poi e um copo de suco de manga recém-espremido. Isso me mantém jovem!",
+        "Birdie5": "Eu ando na praia todos os dias para ver se alguma coisa nova foi lavada em terra. Tem muita coisa flutuando por aí!",
+        "Birdie6": "Minha cabana pode ser pequena, mas é mais do que suficiente para o que eu preciso. E o melhor de tudo, eu mesmo construí.",
+        "Birdie7": "Tem alguém especial esperando por você de volta ao continente? Certifique-se de segurá-los por perto!",
+		"Birdie8": "Por que com certeza, passarei o resto dos meus dias nesta ilha. Tornou-se meu lugar feliz.#$b#Você encontrou o seu?$h",
+		"Birdie9": "Deve ser um bom dia para uma caminhada. Você verá todos os tipos de criaturinhas se você manter os olhos abertos.",
+		"Birdie10": "Quando eu era apenas uma garotinha, eu queria ser uma sereia. Parece que cheguei bem perto! Heh heh...",
+		"Birdie11": "A areia é boa entre os dedos dos dedos, você não diria?",
+		"Birdie12": "*suspiro*... Para viver em um mundo de potencial infinito, nunca podemos saber se fizemos as escolhas certas.$s#$b#Desculpe incomodá-la, minha querida. Às vezes me empolgo com pensamentos...",
+        "Birdie13": "Eu não sei se você acredita em espíritos do oceano, mas sempre que eu falo com eles, os peixes sempre mordem um pouco mais.",
+		"Birdie14": "O clima está quente e lindo o ano todo, minha querida... parece perfeito para mim...",
+		"Birdie15": "Frutas, peixes e alimentos forrageiros... É uma boa dieta! Eu me sinto tão saudável como sempre.",
+        "Birdie16": "Você já viu aquelas barcaças de carga joja, hein? Eu vi um chegar perto da ilha uma vez e depois virar.#$b#Provavelmente eles estavam perdidos.",
+		"Birdie17": "Meu marido e eu nunca tivemos filhos. Que aventura que poderia ter sido...! #$e#Há muitas vidas que eu poderia ter vivido. Às vezes eu me pergunto sobre aqueles...$s#$b#... Mas só por um tempo. É preciso um pouco de esforço para estar feliz pelo que foi.",
+        "Birdie18": "Olá, querida... você parece saudável e de bom humor hoje!$h",
+		"Birdie19": "Você viu o pequeno altar de banana na selva? Se eu tivesse uma banana, eu a colocaria lá e veria o que acontece... heh heh...$h",
+        "Birdie20": "Sou só eu, ou os espíritos da ilha se animaram um pouco desde que você chegou?",
+		"Birdie22": "Eu me lembro há muito tempo como as pessoas mais velhas reclamavam sobre os tempos mudando.#$b#Bem, por aqui, nada muda muito! Parece que me esquivei dessa, hehe.$h",
+        "Birdie23": "Estou aqui há tanto tempo, que nem consigo ouvir mais o oceano...",
+        "Birdie24": "Acho que vou dar um passeio até o santuário secreto mais tarde. Tenho muito a agradecer por cada dia.",
+		"Birdie25": "Você pode pensar em um lugar mais feliz do que este?#$b#Eu viajei tantos lugares quando eu era jovem, acho que vi tudo o que preciso!",
+		"Birdie26": "Você parece tão dedicado a cuidar de seres vivos. É preciso uma alma gentil para fazer isso.#$b#Mas eu sinto que você tem um lado mais difícil, também, hmm? Quantas vezes você já esteve naquele vulcão, hmm?$h",
+		"Birdie27": "As estações devem estar mudando em breve no continente, hein? Em qual você está indo, agora?",
+		"Birdie28": "É lua cheia, hoje à noite... Se sua sorte é boa ou ruim, fique em alerta, minha querida... Os espíritos estão inquietos.",		}
+	}	
+	]
 }

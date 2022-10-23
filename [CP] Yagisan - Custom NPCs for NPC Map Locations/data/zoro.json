@@ -24,7 +24,7 @@
             },
             "Entries": {
                 // Custom NPC - Roronoa Zoro - https://www.nexusmods.com/stardewvalley/mods/6316
-                "ZoroDock": {
+                "Custom_EK_ZoroDock": {
                     "MapVectors": [
                         {
                             "MapX": 735,

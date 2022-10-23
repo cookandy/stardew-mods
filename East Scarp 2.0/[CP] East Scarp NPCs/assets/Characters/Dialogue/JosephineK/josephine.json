@@ -41,5 +41,6 @@
     //Visiting Pierre's
     "SeedShop_Mon": "And all this produce is locally sourced! How absolutely delightful.#$b#You grew it? Oh, you must be proud!",
     "SeedShop_Wed": "I walked in earlier and caught the shopkeeper singing to himself.#$b#Oh, I wouldn't mention it, he looked a little sheepish.#$b#Although I might say, he's not a bad tenor, if a little rough around the edges.$1",
-    "SeedShop_Fri": "Have you heard about the tradition about the gift of a bouquet? It's most wonderfully whimsical!$1#$b#I wonder if I could persuade my Guvvie to give me one."
+    "SeedShop_Fri": "Have you heard about the tradition about the gift of a bouquet? It's most wonderfully whimsical!$1#$b#I wonder if I could persuade my Guvvie to give me one.",
+    "election":"@! I just heard about the election. I really feel for poor Lewis... I wonder why he didn't tell us it was happening?$2#$b#I couldn't have voted, of course, but I would have provided moral support.$2"
 }

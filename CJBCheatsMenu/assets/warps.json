@@ -80,7 +80,7 @@
             {
                 "DisplayText": "warp.sewer",
                 "Location": "Sewer",
-                "Tile": "3, 48"
+                "Tile": "16, 21"
             }
         ],
         "warp-section.forest": [
@@ -117,9 +117,19 @@
                 "Tile": "10, 57"
             },
             {
+                "DisplayText": "warp.mutant-bug-lair",
+                "Location": "Bugland",
+                "Tile": "14, 52"
+            },
+            {
                 "DisplayText": "warp.quarry",
                 "Location": "Mountain",
                 "Tile": "127, 12"
+            },
+            {
+                "DisplayText": "warp.witch-swamp",
+                "Location": "WitchSwamp",
+                "Tile": "20, 23"
             }
         ],
         "warp-section.beach": [
@@ -180,6 +190,6 @@
                 "Location": "UndergroundMine121",
                 "Tile": "0, 0" // game places the player next to the ladder automatically
             }
-        ]  
+        ]
     }
 }

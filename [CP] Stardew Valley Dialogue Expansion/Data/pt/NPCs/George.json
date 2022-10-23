@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "George",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/George",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"George",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/George",
+			"Entries":{
                 "Mon2": "Certo, o que você quer?",
                 "Mon4": "Você ainda não desistiu?#$e#A fazenda, ela continua de pé?",
                 "Mon6": "Fico surpreso que você ainda quer fazer amizade comigo.",
@@ -52,6 +51,7 @@
                 "winter_15_2": "Eu não quero ir para o mercado noturno, obrigado.#$e#Eu já disse que é muito tarde?",
                 "winter_24_2": "Esse festival...#$e#Hora de congelar minha bunda de novo.",
                 "winter_28": "Mais um ano se foi...",
-            }
-        }]
+			}
+		}
+	]
 }

@@ -36,4 +36,11 @@
     "Sun": "After storm, ocean brings me bounty.#$b#I found a bottle once... inside it... secrets. No, I will never tell. They are mine.",
     "Sun8": "Ocean, she hides many secrets. One day, perhaps, she shall share some with you?",
     "winter_Sun": "You came to see me, even though water is very cold!#$b#Here, this will warm you up, yes? [456 457]",
+    //Unique Gift Responses
+    "GiftReaction_-74": "These make me thing of Mother. I will plant, nourish it. Hope it grow.#$b#Thank you.$4",
+    "GiftReaction_Beer": "Ugh! This smells horrible... and tastes like rotten weeds. Why do you give me this?",
+    "GiftReaction_Mead": "It's so sweet! Like drinking honey. Thank you.",
+  /*"GiftReaction_Frozen_Geode": "Thank you! This is cool. Get it?$3",
+  "GiftReaction_Magma_Geode": "Oh, I wonder what's inside?$1",
+  "GiftReaction_Omni_Geode": "It's like Mother Nature's lucky dip!$1"*/
 }

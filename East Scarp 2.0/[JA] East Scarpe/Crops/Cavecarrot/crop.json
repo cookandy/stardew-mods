@@ -28,22 +28,6 @@
         "MaxIncreasePerFarmLevel": 5,
         "ExtraChance": 0.1,
     },
-        "NameLocalization":
-	{
-		/*to be added in*/
-		"ko": "동굴당근 씨앗",
-		"zh": "山洞萝卜",
-	},
-	"SeedNameLocalization":
-	{
-		/*to be added in*/
-		"ko": "동굴당근 씨앗",
-		"zh": "山洞萝卜种子",
-	},
-	"SeedDescriptionLocalization":
-	{
-		/*to be added in*/
-		"ko": "가을에 심을 수 있다. 다 자라는 데에는 총 6일이 소요됩니다.",
-		"zh": "只能在秋天生长，6天成熟。",
-	}
+    "TranslationKey": "crop.cavecarrot-plant",
+    "SeedTranslationKey": "crop.cavecarrot-seed",
 }

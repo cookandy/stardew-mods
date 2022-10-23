@@ -84,7 +84,7 @@
     "data.npc.pet.description": "Tu fiel mascota.",
     "data.npc.horse.description": "Tu fiel corcel.",
     "data.npc.junimo.description": "Un espíritu forestal del mundo de los espíritus. Se sabe muy poco sobre ellos.",
-    "data.npc.trashbear.description": "Un espíritu amistodo que limpia la basura.",
+    "data.npc.trash-bear.description": "Un espíritu amistodo que limpia la basura.",
 
     // item types
     "data.type.debris": "Maleza",
@@ -444,6 +444,30 @@
 
 
     /*********
+    ** Item > melee weapon lookups
+    *********/
+    // labels
+    // TODO
+    "item.melee-weapon.accuracy": "Accuracy",
+    "item.melee-weapon.critical-chance": "Critical chance",
+    "item.melee-weapon.critical-damage": "Critical damage",
+    "item.melee-weapon.damage": "Damage",
+    "item.melee-weapon.defense": "Defense",
+    "item.melee-weapon.knockback": "Knockback",
+    "item.melee-weapon.reach": "Reach",
+    "item.melee-weapon.speed": "Attack speed",
+
+    // values
+    // TODO
+    "item.melee-weapon.critical-damage.label": "{{multiplier}} times normal damage (before player bonuses)",
+    "item.melee-weapon.defense.label": "{{amount}} while equipped",
+    "item.melee-weapon.knockback.label": "{{amount}} ({{multiplier}} times normal distance)",
+    "item.melee-weapon.reach.label": "{{amount}} pixels",
+    "item.melee-weapon.speed.shown-vs-actual": "shown: {{shownSpeed}}{{lineBreak}}actual: {{actualSpeed}}",
+    "item.melee-weapon.speed.summary": "{{speed}} ({{milliseconds}} milliseconds per swing frame, before player speed bonuses)",
+
+
+    /*********
     ** Item > movie lookups
     *********/
     // labels
@@ -452,6 +476,7 @@
     "item.movie-ticket.loves-movie": "Ama la película",
     "item.movie-ticket.likes-movie": "Le gusta la película",
     "item.movie-ticket.dislikes-movie": "No le gusta la película",
+    "item.movie-ticket.rejects-movie": "No verá la película",
 
     // values
     "item.movie-snack-preference.love": "{{name}} ama esto",
@@ -675,5 +700,50 @@
     "tree.stages.sapling": "Plántula",
     "tree.stages.bush": "Arbusto",
     "tree.stages.smallTree": "Árbol pequeño",
-    "tree.stages.tree": "Árbol"
+    "tree.stages.tree": "Árbol",
+
+
+    /*********
+    ** Generic Mod Config Menu UI
+    *********/
+    // main options
+    "config.title.main-options": "Opciones principales",
+    "config.progression-mode.name": "Modo de progresión",
+    "config.progression-mode.desc": "Si se ocultan algunos contenidos (por ejemplo, los gustos de los regalos y las soluciones de los rompecabezas) hasta que los descubras en el juego.",
+    "config.highlight-unrevealed-gift-tastes.name": "Destacar los gustos de los regalos no revelados",
+    "config.highlight-unrevealed-gift-tastes.desc": "Si se desea resaltar los gustos de los regalos que no han sido revelados en el perfil del NPC. Cuando se activa, los gustos de los regalos no revelados estarán en negrita y las búsquedas también mostrarán los regalos que no gustan/odian.",
+    "config.show-all-gift-tastes.name": "Mostrar todos los gustos de los regalos",
+    "config.show-all-gift-tastes.desc": "Mostrar o no todos los gustos de los regalos en las búsquedas de PNJs y objetos; cuando se desactiva, sólo se muestran los gustos más relevantes (por ejemplo, los regalos amados o gustados).",
+
+    // advanced options
+    "config.title.advanced-options": "Opciones avanzadas",
+    "config.tile-lookups.name": "Búsqueda de baldosas",
+    "config.tile-lookups.desc": "Si se incluyen las baldosas del mapa como objetivos de búsqueda.",
+    "config.data-mining-fields.name": "Mostrar campos de minería de datos",
+    "config.data-mining-fields.desc": "Si se muestran los datos sin procesar útiles para los mineros de datos (como campos separados en la parte inferior de los resultados de la búsqueda). Esta es una función avanzada que no está pensada para la mayoría de los jugadores.",
+    "config.force-full-screen.name": "Forzar pantalla completa",
+    "config.force-full-screen.desc": "Si el menú debe estar siempre a pantalla completa, en lugar de centrado en la ventana. Esto es útil principalmente cuando se visualizan campos de minería de datos.",
+    "config.target-redirection.name": "Redirección de objetivos",
+    "config.target-redirection.desc": "En algunos casos el juego genera una entidad temporal para representar a otra. Por ejemplo, Abigail en las minas es en realidad un NPC temporal con el nombre 'AbigailMine', por lo que buscarla allí no mostrará la información real de Abigail. Con esta opción activada, Lookup Anything buscará la Abigail original en su lugar.",
+    "config.scroll-amount.name": "Cantidad de desplazamiento",
+    "config.scroll-amount.desc": "El número de píxeles para desplazar el contenido en cada desplazamiento hacia arriba/abajo.",
+
+    // controls section
+    "config.title.controls": "Controles",
+    "config.hide-on-key-up.name": "Ocultar en la tecla arriba",
+    "config.hide-on-key-up.desc": "Si se quiere ocultar la interfaz de búsqueda cuando se suelta la tecla de búsqueda.",
+    "config.toggle-lookup.name": "Activar lookup",
+    "config.toggle-lookup.desc": "Las teclas que activa la interfaz de lookup de algo bajo el cursor.",
+    "config.toggle-search.name": "Activar busqueda",
+    "config.toggle-search.desc": "Las teclas que activa la interfaz de búsqueda.",
+    "config.scroll-up.name": "Desplazarse hacia arriba",
+    "config.scroll-up.desc": "Las teclas que desplazan hacia arriba el contenido largo en unas pocas líneas.",
+    "config.scroll-down.name": "Desplazarse hacia abajo",
+    "config.scroll-down.desc": "Las teclas que desplazan hacia abajo el contenido largo en algunas líneas.",
+    "config.page-up.name": "Subir de página",
+    "config.page-up.desc": "Las teclas que desplazan el contenido largo por una página completa.",
+    "config.page-down.name": "Bajar de página",
+    "config.page-down.desc": "Las teclas que desplazan hacia abajo el contenido largo por una página completa.",
+    "config.toggle-debug.name": "Activar debug",
+    "config.toggle-debug.desc": "Las teclas que activan la visualización de la información de debug."
 }

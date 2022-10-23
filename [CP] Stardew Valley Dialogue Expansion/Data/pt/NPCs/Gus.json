@@ -1,17 +1,16 @@
 {
-    "Changes": [
-    {
-            "LogName": "Gus",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Gus",
-            "Entries":
-            {
-                "Saloon": null,
-                "Saloon4": null,
-                "Saloon8": null,
-                "Saloon_Tue": null,
-                "Saloon_Thu": null,
-                "Saloon_Fri": null,
+	"Changes":[
+		{
+			"LogName":"Gus",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Gus",
+			"Entries":{
+				"Saloon":null,
+				"Saloon4":null,
+				"Saloon8":null,
+				"Saloon_Tue":null,
+				"Saloon_Thu":null,
+				"Saloon_Fri":null,
                 "Mon": "Sim, eu conheço muito as pessoas que vivem aqui.#$e#É a vantagem de ser dono de um barzão! Hahaha!$h#$e#Ah, mas... às vezes eu ouço demais...",
                 "Mon2": "Fala chefia!#$e#Então, trabalhando até o bumbum cair?#$b#Eu sei que tudo pode ser difícil, mas mantenha a fé que você chegará lá!",
                 "Mon4": "Você joga aqueles videogames no arcade?#$e#Eu jogo o mário de vez em quando, é meu personagem favorito!",
@@ -72,6 +71,7 @@
                 "fall_26_2": "Há um labirinto assustador nesse festival que teremos agora, mas eu vou ficar no buffet.",
                 "winter_24_2": "Farei minhas melhores receitas para o ano novo, você vai ver!$h",
                 "winter_28_2": "Feliz ano novo @! Aqui está o seu! [348]$h#$e#Que seu próximo ano seja ainda mais iluminado quanto!",
-            }
-        }]
+			}
+		}
+	]
 }

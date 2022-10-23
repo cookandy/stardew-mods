@@ -1,6 +1,6 @@
 {
-  "FlowersSpring": "False",
-  "FlowersSummer": "False",
-  "FlowersFall": "False",
-  "FlowersWinter": "False"
+  "FlowersSpring": "false",
+  "FlowersSummer": "false",
+  "FlowersFall": "false",
+  "FlowersWinter": "false"
 }

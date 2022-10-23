@@ -23,6 +23,38 @@
                 "Rosa": "{{i18n:festivals.rosa.winter8}}"
             }
         },
+{
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+	    "When":{"HasMod |contains=Rafseazz.RSVCP":false},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Rosa 22 62 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },/*
+{
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+	    "When":{"HasMod |contains=Rafseazz.RSVCP":true},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Rosa 22 62 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },*/
         {
             "Action": "EditData",
             "Target": "Data/Festivals/spring24",

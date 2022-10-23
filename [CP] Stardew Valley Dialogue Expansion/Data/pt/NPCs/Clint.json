@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Clint",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Clint",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Clint",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Clint",
+			"Entries":{
                 "Mon2": "Outro dia, outro dólar.#$e#Espero...$2",
                 "Mon6": "Eu ouço música para passar o tempo, e você?#$e#Até canto junto...#$e#Quê? Nah, você não vai querer me ouvir cantar.$h",
                 "Mon8": "Talvez eu tenha nascido na época errada... Há algumas décadas atrás minhas habilidades seriam mais valorizadas.",
@@ -52,5 +51,6 @@
                 "winter_Sun_inlaw_Emily": "Desculpe, eu prefiro ficar na minha hoje...$s",
                 "winter_28_2": "Ei, espero que seu ano tenha sido bom.#$e#Eu? Estou feliz que o inverno se foi.",
             }
-        }]
+		}
+	]
 }

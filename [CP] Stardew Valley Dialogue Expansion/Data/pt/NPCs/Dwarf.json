@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Dwarf",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Dwarf",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Dwarf",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Dwarf",
+			"Entries":{
                 "Mon": "Hm... obrigado por destruir o meu esconderijo. Você quer comprar alguma coisa?",
                 "Mon2": "Meu nome? Nós anões não usamos nomes...#$e#Eu não acho confuso... pior seria lembrar de cada nome para cada anão.",
                 "Mon4": "Eu peguei algumas frutas na superfície.#$e#Você não vai me encontrar por aí, eu só faço isso de madrugada.",
@@ -42,6 +41,7 @@
                 "Sun8": "Eu nunca falei tanto com um humano sem ser você.#$e#Sempre disse que ficaria longe, mas hoje vejo isso de uma maneira diferente...",
                 "winter_Sun": "Ah, é claro que muita gente já desceu essas minas e não voltaram...#$e#Não os chame de noobs, você tem o poder do protagonismo.#$e#Você já chegou no final?",
                 "winter_Sun10": "A quantidade de monstros esteve em alta por aqui.#$b#Você parou de descer lá?",
-            }
-        }]
+			}
+		}
+	]
 }

@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Kent",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Kent",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Kent",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Kent",
+			"Entries":{
                 "Mon2": "........#$b#…#$e#Desculpe eu pensei ter ouvido alguma coisa.$s#$e#Como vai?",
                 "Mon4": "Se estou dentro de casa sinto claustrofobia, quando estou fora me sinto vulnerável...#$e#Eu esqueci como é estar relaxado.",
                 "Mon6": "Eu não sei se vou me acostumar a viver em uma casa mais...#$e#A tranquilidade parece uma farça, eu não me sinto bem.",
@@ -57,6 +56,7 @@
                 "winter_Sat8": "Estava dormindo esta manhã quando Vincent me acordou. Perdi a paciência com ele, que grande pai eu sou...$s#$e#Pobre garoto, não merecia aquilo.#$b#Espero que ele me perdoe algum dia. Tudo o que posso fazer é o meu melhor.$s",
                 "winter_28": "Parece que esta noite é o aniversário do meu retorno.#$e#Estranho, não parece...#$e#Mas eu estou feliz.$h",
                 "winter_28_2": "Já se fazem dois anos desde que retornei.#$e#Caramba... não me sinto assim.#$e#Mas estou mais feliz ainda.$h",
-            }
-        }]
+			}
+		}
+	]
 }

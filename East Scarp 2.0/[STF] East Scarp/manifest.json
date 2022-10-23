@@ -1,8 +1,8 @@
 {
-  "Name": "East Scarpe Shops",
+  "Name": "East Scarp Shops",
   "Author": "Lemurkat",
-  "Version": "2.0.4",
-  "Description": "Buy and trade stuff at East Scarpe.",
+  "Version": "2.1.4",
+  "Description": "Buy and trade stuff at East Scarp.",
   "UniqueID": "LemurKat.EastScarpeShops.STF",
   "MinimumApiVersion": "3.0.0",
   "UpdateKeys": ["Nexus:???"],

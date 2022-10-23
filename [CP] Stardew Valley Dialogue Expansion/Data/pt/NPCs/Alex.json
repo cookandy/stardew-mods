@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Alex",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Alex",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Alex",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Alex",
+			"Entries":{
                 "Mon4": "Tudo o que eu preciso fazer é comparecer aos treinos juniores do gridebol da liga. Deve ser desafiador, mas não acho muito difícil.#$e#Depois uma ou duas vezes, já estarei pró, baby.",
                 "Mon6": "Existem algumas seleções juniores de gridebol no final do mês... eu poderia ir, mas...#$e#Talvez mais um ano de treino dê uma melhor primeira impressão, você não acha?",
                 "Mon8": "Sabe, eu costumava querer fama e grana, mas comecei a pensar de uma forma diferente. No final, são as pequenas coisas que satisfazem, você não acha?#$e#Eu ainda quero me tornar profissional, mas não é a coisa mais importante do mundo.",
@@ -28,6 +27,8 @@
                 "Fri8": "Ei @, você fez algo diferente com o cabelo?$h",
                 "Fri10": "Ei, hm...$l#$b#Me avise se você precisar de ajuda com o trabalho na fazenda.$l#$e#Eu preciso fazer algo além de apenas exercícios para o meu próprio bem, certo?$h",
                 "Sat2": "Ei, a Haley é linda, você não acha?#$e#Não, nós não estamos saindo. Ela está... passando por algumas coisas.#$e#Mas quem sabe?",
+                "Sat_inlaw_Haley":"Então... a Haley cozinha, hein? Ela nunca fez muita coisa antes de te conhecer.#$e#As pessoas mudam, não é mesmo?$s",
+                "Sat8_inlaw_Haley":"A Haley cozinha, hein? Você realmente despertou o que há melhor nela!$h#$e#Não quero ser estranho, mas estou curioso: Vocês têm algumas sobras?",
                 "Sat4": "Vovó não para de reclamar que tomo muito espaço na geladeira com minhas bandejas de gelo.#$b#Mas tipo, de que outra maneira eu teria o suficiente para tomar banho gelado?",
                 "Sat6": "Meus braços estão doendo, mas isso é apenas o sinal do progresso para um cara como eu.#$e#Eu devo ter feito umas mil flexões ontem.",
                 "Sat8": "...Onde você pensa que estarei daqui 10 anos?$s",
@@ -83,6 +84,8 @@
                 "fall_Fri8": "Você sabe, eu costumava querer fama e fortuna, mas ultimamente comecei a ver a vida de outra forma. No final, são as pequenas coisas que satisfazem, você não acha?#$e#Eu ainda quero treinar muito, mas não é a coisa mais importante do mundo.",
                 "fall_Fri10": "Haley é legal, mas ela nunca tentou me entender como você...#$e#Eu senti que sempre tive que agir como um grande bonzão quando eu estava perto dela. E se eu dissesse a ela como eu realmente me sentia, ela só perderia o interesse em mim.$s#$e#Mas ter essas lembranças me faz ser grato por quem tenho agora, muito mais.$l",
                 "fall_Sat2": "Ei, haley é ótima, não acha?#$e#Não, não estamos namorando... ela está... passando por algumas coisas.#$e#Mas provavelmente ela só esta me dando gelo de novo",
+                "fall_Sat_inlaw_Haley":"Então... a Haley cozinha, hein? Ela nunca fez muita coisa antes de te conhecer.#$e#As pessoas mudam, não é mesmo?$s",
+                "fall_Sat8_inlaw_Haley":"A Haley cozinha, hein? Você realmente despertou o que há melhor nela!$h#$e#Não quero ser estranho, mas estou curioso: Vocês têm algumas sobras?",
                 "fall_Sat4": "O salmão é definitivamente o meu tipo favorito de peixe. Especialmente nesta temporada.#$e#Só tem que ser cozido da maneira certa.",
                 "fall_Sat6": "Eu estava lendo sobre como o salmão tem muita... como você chama isso? 'Ácidos gordurosos de omega-3.'#$b#Então, no começo, eu era meio gordo, e então comecei dizer: \"Eu não preciso de gordura extra na minha dieta,\", mas é um pouco difícil deixar de lado o que gostamos de comer.",
                 "fall_Sat8": "Eu não tenho ideia de onde está meu pai. Passei muito tempo pensando no que diria se o visse novamente.#$e#Não seria legal... talvez algumas feridas estejam melhores fechadas.$a",
@@ -96,6 +99,13 @@
                 "winter_Mon8": "@, você sabe como as pessoas dizem que o ensino médio é o melhor ano de sua vida?$s#$b#E se isso for verdade?$s",
                 "winter_Mon10": "Penso que discordo que o ensino médio é o melhor ano da sua vida.#$b#Este ano, por exemplo, foi o melhor.$l",
                 "winter_Tue4_inlaw_Haley": "Admito... fiquei com ciúmes quando você e Haley se casaram. Mas, é uma chance para eu aprender algo novo sobre mim.$9",
+                "winter_Tue4":"Ei, @. Você poderia me fazer um favor?$l#$b#Se você se encontrar com a Haley, diga a ela que eu estou ocupado.$l#$e#Obrigado.",
+                "winter_Tue6":"Você é uma pessoa legal para sair, @. Sinto que aprendo algo novo toda vez que te vejo.",
+                "winter_Tue10":"Ei! Como vai?$h#$e#Você também está entediado? Que coincidência.$l#$e#Ei, podemos sair a qualquer hora.",
+                "winter_Wed4":"Eu não jogo videogames. Por que eu iria querer apertar botões e ver um cara jogar bola em uma tela...#$b#...quando eu poderia jogar bola na vida real?",
+                "winter_Wed6":"Então você não tem nada para plantar no inverno? Você deve estar com muito tédio.#$e#Ei, você e eu, amigo! Bem-vindo ao clube.$h^Ei, você e eu, @! Bem-vinda ao clube.$h",
+                "winter_Wed8":"Quer saber? Vou começar a ler um novo livro!",
+                "winter_Wed10":"Terminei de ler esse livro que minha avó dizia ser o favorito da minha mãe.#$b#Ele é sobre dois adolescentes que viajam no tempo e mudam a história.#$b#É tão estranho. Eu não tenho ideia de como que minha mãe gostava dessas coisas",
                 "winter_Thu4": "Ninguém sabe quem é o dono do Dusty, então eu o alimento de vez em quando, outras pessoas também.#$e#Esta casinha está aqui há tanto tempo quanto me lembro. Eu penso que já esteve aqui mais do que Dusty.",
                 "winter_Thu6": "Eu queria poder controlar o clima...",
                 "winter_Thu8": "Eu tive um sonho na outra noite em que minha mãe estava aqui. Então eu acordei.$s#$e#A realidade machuca às vezes.$a",
@@ -123,14 +133,13 @@
                 "fall_26_2": "Hm... amanhã terá aquele labirinto novamente, eu me pergunto se eu deveria trazer meu morcego.",
                 "winter_24_2": "Haverá muita comida boa amanhã! Eu só preciso tomar cuidado e me certificar de não exagerar.",
                 "winter_28_2": "O bom tempo está voltando! Mal posso esperar.",
-            }
-        },
-        {
-            "LogName": "Alex Marriage",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialogueAlex",
-            "Entries":
-            {
+			}
+		},
+		{
+			"LogName":"Alex Marriage",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/MarriageDialogueAlex",
+			"Entries":{
                 "Rainy_Day_0": "#$c .5#Com todo esse espaço, posso realmente realizar um treino de corpo inteiro.#Eu sei que você não é o tipo que cria gado de corte, mas tudo bem, eu posso pegar um pouco de bife na loja.",
                 "Rainy_Day_1": "#$c .5#Nunca tive muitos amigos na cidade, eu nem sei o que faria se não tivesse conhecido você.$9#Eu me pergunto o que meus velhos colegas de escola estão fazendo... hoje pode ser um bom dia para ligar para eles.",
                 "Rainy_Day_2": "#$c .5#Caramba... eu ia dar uma corrida lá fora. Mas não posso fazer isso com esse tempo.#Quer saber? Eu vou fazer melhor que isso hoje. A vida é muito curta para ficar se lamentando quando chove.",
@@ -178,6 +187,7 @@
                 "winter_10": "Quando eu era mais jovem, não achava que precisava de amigos... apenas respeito.$9#$e#Mas agora eu posso ver o que estava perdendo. É estranho pensar que passei por grande parte da minha vida com tão pouca conexão humana genuína...$9",
                 "winter_15": "Esses dias frios são bem difíceis para os meus avós. É melhor eu ir visitá-los hoje.",
                 "winter_22": "...Apenas mais um jogo de gridebol da temporada, mas pelo menos vai ser bom. O jogo do campeonato está chegando na véspera de ano novo.",
-            }
-        }]
+			}
+		}
+	]
 }

@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-        "LogName": "Year 2 Festival Egg Festival - spring13.xnb",
-        "Action": "EditData",
-        "Target": "Data/Festivals/spring13.xnb",
-        "Entries":
-        {
+	"Changes":[
+		{
+			"LogName":"Year 2 Festival Egg Festival - spring13.xnb",
+			"Action":"EditData",
+			"Target":"Data/Festivals/spring13.xnb",
+			"Entries":{
             "Abigail": "Sam? Sebastian? Vocês ao menos tentaram ano passado?",
             "Robin": "Ei, @. Que bom te ver aqui.#$e#Você deve estar a todo vapor com sua plantação agora, né?",
             "Demetrius": "O buffet do Gus está espetacular esse ano. Algum dos ovos dele vieram da sua fazenda?",
@@ -34,17 +33,15 @@
             "Vincent": "Eu ouvi que o prêmio esse ano pode ser 1000G! Isso é TANTO dinheiro!$h#$b#É tipo... O bastante pra comprar 1000G de sorvete!$h",
             "Willy": "As crianças dessa cidade não ligam muito para o que eu passo a maior parte do meu tempo fazendo. Está tudo bem.#$b#Ajudar nesse evento me ajuda a conectar com eles um pouco, mesmo que indiretamente.$h",
         },
-        "When":
-        {
-            "Year |contains=2": false
+        "When":{
+            "Year |contains=2":false
         }
     },
     {
-        "LogName": "Year 2 Festival Flower Dance - spring24.xnb",
-        "Action": "EditData",
-        "Target": "Data/Festivals/spring24.xnb",
-        "Entries":
-        {
+        "LogName":"Year 2 Festival Flower Dance - spring24.xnb",
+        "Action":"EditData",
+        "Target":"Data/Festivals/spring24.xnb",
+        "Entries":{
             "Abigail": "Não podemos apenas ter uma dança de flores sem a dança? Eu não me importo com o vestido.$u",
             "Robin": "Um recurso de flor pode realmente fazer a estética de sua casa se unir. Você viu a receita de artesanato que Pierre tem para venda?",
             "Demetrius": "Isso me deixa muito orgulhoso de ver Maru neste festival. As crianças certamente crescem rápido.",
@@ -72,14 +69,13 @@
             "Jas": "Eu quero ver o vestido de flores da Srta. Penny!$h",
             "Vincent": "Se você dança com alguém, isso não significa que você tem que prometer casar com eles, certo?$u",
             "Willy": "Hm... O que há para alguém como eu fazer em um festival como este?#$e#Acho que vou ficar até a dança terminar. É apenas educação.",
-        },
+        }
     },
     {
-        "LogName": "Year 2 Festival Luau - summer11.xnb",
-        "Action": "EditData",
-        "Target": "Data/Festivals/summer11.xnb",
-        "Entries":
-        {
+        "LogName":"Year 2 Festival Luau - summer11.xnb",
+        "Action":"EditData",
+        "Target":"Data/Festivals/summer11.xnb",
+        "Entries":{
             "Governor": "Ah, sim, a beleza natural aqui é linda Lewis, mas a campanha para o Vale do Orvalho como destino turístico ainda está por ser decidida.#$e#Me fale sobre a feira anual de outono.Podemos esperar que seja preenchido com alguma delicia caseira este ano?",
             "Abigail": "Ei, acho que vi uma baleia esguichando no horizonte.#$e#Veja! está fazendo novamente!$h",
             "Robin": "Emily está bem, ela dança assim o tempo todo na aula de aeróbica.",
@@ -110,14 +106,13 @@
             "Jas": "Ninguém precisa de uma pistola d'água para dançar, Vincent.",
             "Vincent": "Você deve pegar uma pistola d'água e atirar nos meus pés, como um cowboy! Então eu vou dançar como um, woo-woo-woo!",
             "Willy": "Espero que todos limpem melhor do que no ano passado. Isso pode muito bem ser meu quintal.",
-        },
+        }
     },
     {
-        "LogName": "Year 2 Festival Moonlight Jellies - summer28.xnb",
-        "Action": "EditData",
-        "Target": "Data/Festivals/summer28.xnb",
-        "Entries":
-        {
+        "LogName":"Year 2 Festival Moonlight Jellies - summer28.xnb",
+        "Action":"EditData",
+        "Target":"Data/Festivals/summer28.xnb",
+        "Entries":{
             "Abigail": "Ah, meu dia favorito do verão. E não é porque está acabando.",
             "Robin": "Meu primeiro ano na cidade, eu vi o velho veleiro que eles estavam usando, e eu disse, \"Ei, eu posso fazer algo parecido com isto.\"#$b#Então eu fui em frente e fiz um, e Lewis gostou.",
             "Demetrius": "No meu campo de estudo, ajuda de vez em quando a simplesmente pausar e absorver verdadeiramente a beleza do mundo natural.#$b#Isso me lembra que temos muito mais a aprender sobre a natureza. No grande plano, acabamos de começar.",
@@ -147,14 +142,13 @@
             "Jas": "Espero ver a rara Medusa-da-Lua verde como Vincent viu no ano passado.",
             "Vincent": "Jas disse que havia bebês no ano passado. Vou procurá-los desta vez.",
             "Willy": "Este pode ser meu festival favorito. Pescadores de todo o mundo dariam um braço e uma perna só para testemunhar isso uma vez.",
-        },
+        }
     },
     {
-        "LogName": "Year 2 Festival SDV Fair - fall16.xnb",
-        "Action": "EditData",
-        "Target": "Data/Festivals/fall16.xnb",
-        "Entries":
-        {
+        "LogName":"Year 2 Festival SDV Fair - fall16.xnb",
+        "Action":"EditData",
+        "Target":"Data/Festivals/fall16.xnb",
+        "Entries":{
             "Abigail": "Eu gostaria que tivéssemos uma 'Tenda dos Horrores' ou algo assim, como um lugar para gastar fichas de estrelas.",
             "Robin": "Tem sido bom recuperar o atraso com Leah! Nós normalmente não nos deparamos muito, mas temos muito em comum.$h",
             "Demetrius": "Eu pensei em fazer um display grande, mas se fosse realmente uma representação do meu melhor trabalho...#$b#...Você teria que olhá-lo sob um microscópio.#$e#Assim... Isso é um pouco problemático.$h",
@@ -185,14 +179,13 @@
             "Vincent": "Eu quero montar um.#$e#Você vai me levantar por cima da cerca?#$e#Ah, vamos!#$e#...Cade o Sam?",
             "Marlon": "Gostaria de saber se conseguiria meu investimento de volta se eu comprasse uma ou duas dessas lâminas para as ações da guilda?",
             "Willy": "Estou mais orgulhoso disso, Dorado. Você já pegou um deles antes?#$e#É difícil montar uma exibição quando a vida útil de um belo peixe é tão curta.",
-        },
+        }
     },
     {
-        "LogName": "Year 2 Festival Spirits Eve - fall27.xnb",
-        "Action": "EditData",
-        "Target": "Data/Festivals/fall27.xnb",
-        "Entries":
-        {
+        "LogName":"Year 2 Festival Spirits Eve - fall27.xnb",
+        "Action":"EditData",
+        "Target":"Data/Festivals/fall27.xnb",
+        "Entries":{
             "Abigail": "Nnnngh... Eu estava esperando que as aranhas não estivessem aqui nesse ano também.$s",
             "Robin": "O que você está planejando fazer no seu próximo período de final de temporada?",
             "Demetrius": "Este festival é divertido, mas eu sinto que às vezes as pessoas podem levar suas próprias idéias de diversão um pouco longe demais.",
@@ -217,14 +210,13 @@
             "Jas": "Tia Marnie, sei que não existem monstros e fantasmas. Por que não posso entrar?",
             "Vincent": "Eu aposto que o Sam devia entrar no labirinto o tempo inteiro quando tinha a minha idade$s",
             "Marlon": "Matar um esqueleto não é tão difícil, agora capturar um é completamente diferente, imagine dois!",
-        },
+        }
     },
     {
-        "LogName": "Year 2 Festival Ice Festival - winter8.xnb",
-        "Action": "EditData",
-        "Target": "Data/Festivals/winter8.xnb",
-        "Entries":
-        {
+        "LogName":"Year 2 Festival Ice Festival - winter8.xnb",
+        "Action":"EditData",
+        "Target":"Data/Festivals/winter8.xnb",
+        "Entries":{
             "Abigail": "Eu acho que agora vou tentar abrir a barriga deste boneco de neve e fazer algum tipo de criatura rastejando para fora.#$b#Talvez eu possa usar alguns peixes da competição.!$h",
             "Robin": "Isso deve estar pronto em uma ou duas horas. Eu espero que algumas pessoas ainda estejam por perto para ver.",
             "Demetrius": "Você pode acreditar em como o tropical limítrofe estará por aqui, em apenas meio ano?",
@@ -253,14 +245,13 @@
             "Harvey": "Bem, ninguém teve hipotermia no ano passado, então eu acho que posso aliviar um pouco.$h",
             "Jas": "Sra. Penny, você tem algum chapéu que podemos usar?",
             "Vincent": "Veja! Se você pisar muito forte, pequenas rachaduras aparecem no gelo.#$e#O quê? Por que isso é ruim?$u#$e#Ah!...$u",
-        },
+        }
     },
     {
-        "LogName": "Year 2 Festival Winter Star - winter25.xnb",
-        "Action": "EditData",
-        "Target": "Data/Festivals/winter25.xnb",
-        "Entries":
-        {
+        "LogName":"Year 2 Festival Winter Star - winter25.xnb",
+        "Action":"EditData",
+        "Target":"Data/Festivals/winter25.xnb",
+        "Entries":{
             "Abigail": "Mãe, você está bem?$h",
             "Robin": "@, felicidades para você, por dois grandes anos com você na Vila Pelicanos!$h",
             "Demetrius": "Que ótimo momento para viver!$h",
@@ -289,6 +280,7 @@
             "Jas": "Tia Marnie, podemos comer agora?",
             "Vincent": "Preseeeeeentes!$h",
             "Marlon": "Passei algum tempo nas minas de lava esta manhã. Meu corpo não está devidamente bem para este frio.",
-        },
-    }]
+        }
+    }
+]
 }

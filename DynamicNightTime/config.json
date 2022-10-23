@@ -2,5 +2,6 @@
   "Latitude": 33.24,
   "SunsetTimesAreMinusThirty": false,
   "NightDarknessLevel": 3,
-  "MoreOrangeSunrise": false
+  "MoreOrangeSunrise": false,
+  "IslandLatDifference": 25.0
 }

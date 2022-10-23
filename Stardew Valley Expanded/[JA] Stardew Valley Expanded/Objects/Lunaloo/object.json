@@ -9,6 +9,7 @@
 	"IsColored": false,
 	"GiftTastes":
 	{
-		"Like": ["Wizard", "Willy"],
+		"Like": ["Wizard", "Willy", "Lance"],
 	},
+	"TranslationKey": "object.lunaloo",
 }

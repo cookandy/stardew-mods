@@ -1,18 +1,18 @@
 {
 "Changes": [
-	
+
 //------------------------
-// FESTIVAL DIALOGUE   
+// FESTIVAL DIALOGUE
 //------------------------
 
 	//Egg Festival----------------------
-	
+
 		{
 			"LogName": "EggFestival",
 			"Action": "EditData",
 			"Target": "Data/Festivals/spring13",
 			"Entries": {
-			
+
 			//Non-Dateables
 				"Aguar": "{{i18n:Festivals.EggFest.Aguar}}",
 				"Bert": "{{i18n:Festivals.EggFest.Bert}}",
@@ -45,7 +45,8 @@
 				"Malaya": "{{i18n:Festivals.EggFest.Malaya}}",
 				"Kimpoi": "{{i18n:Festivals.EggFest.Kimpoi}}",
 				"Naomi": "{{i18n:Festivals.EggFest.Naomi}}",
-			
+				"Torts": "{{i18n:Festivals.EggFest.Torts}}",
+
 			//Dateables
 				"Alissa": "{{i18n:Festivals.EggFest.Alissa}}",
 				"Alissa_spouse": "{{i18n:Festivals.EggFest.Alissa_spouse}}",
@@ -71,7 +72,13 @@
 				"Daia_spouse": "{{i18n:Festivals.EggFest.Daia_spouse}}",
 				"Jio": "{{i18n:Festivals.EggFest.Jio}}",
 				"Jio_spouse": "{{i18n:Festivals.EggFest.Jio_spouse}}",
+
+				"Anton_spouse": "{{i18n:Festivals.EggFest.Anton_spouse}}",
+				"Kiarra_spouse": "{{i18n:Festivals.EggFest.Kiarra_spouse}}",
+				"Sean_spouse": "{{i18n:Festivals.EggFest.Sean_spouse}}",
+				"Paula_spouse": "{{i18n:Festivals.EggFest.Paula_spouse}}",
+				"Blair_spouse": "{{i18n:Festivals.EggFest.Blair_spouse}}",
 			},
-		},	
+		},
 ]
 }

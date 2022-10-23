@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Krobus",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Krobus",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Krobus",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Krobus",
+			"Entries":{
                 "Mon": "Ei, não se assuste... eu não sou igual aos outros.#$e#Eu passei muito tempo observando vocês e vi que você gosta de comprar... eu tenho algo pra vender, quer ver?",
                 "Mon2": "Você de novo? Isso se encaixa na minha pesquisa sobre comportamento humano.",
                 "Mon4": "Você já encontrou outros como eu na caverna?... Desculpe se somos hostís, mas muitos humanos atacam sem avisar, e nós não queremos arriscar.#$e#Você... não matou nenhum, né?",
@@ -33,6 +32,9 @@
                 "Sat10": "Agradeço pelo respeito com a minha devoção ao silêncio às sextas-feiras...",
                 "Sun2": "Por favor, mantenha minha localizaçao em segredo... os anões me matariam se me descobrissem.",
                 "Sun6": "Andei protegendo o Cetro de Retorno durante muito tempo...#$e#Sua origem é mística, eu não posso te vendê-lo por um preço normal.",
-            }
-        }]
+				"summer_Thu6":"Por favor, não conte a ninguém sobre mim.#$b#A maioria dos humanos tem medo de nós, pessoas sombra... talvez por uma boa razão.$s#$b#Mas independentemente disso, se as pessoas da cidade soubessem sobre mim, eu poderia não estar seguro aqui.",
+				"winter_Wed6":"Se você colocar sua orelha no tubo certo, você pode ouvir em qualquer casa daqui de baixo.#$b#Embora, eu não escutaria.$3",																																			
+			}
+		}
+	]
 }

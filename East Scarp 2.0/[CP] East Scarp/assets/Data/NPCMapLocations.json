@@ -36,12 +36,6 @@
 				"Duck2NPC": {
 					"Exclude": true
 				},
-				"OliverK": {
-					"Exclude": true
-				},
-				"JosephineK": {
-					"Exclude": true
-				},
 				"Kataryna": {
 					"Exclude": true
 				},
@@ -53,6 +47,23 @@
 				}
 			}
 		},
+		/*{
+			"LogName": "ES NPC Sprite Offsets",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=Yagisan.NPCMapLocationsForNPCs": false,
+				"HasSeenEvent |contains=57873000": false
+			},
+			"Entries": {
+				"OliverK": {
+					"Exclude": true
+				},
+				"JosephineK": {
+					"Exclude": true
+				}
+			}
+		},*/
 		{
 			"LogName": "East Scarp - Location Support",
 			"Action": "EditData",
@@ -289,7 +300,7 @@
 			},
 			"Entries": {
 				// If SVE is installed, this remains in Pelican Town.
-				"ClearingHouse": {
+				"Custom_LK_ClearingHouse": {
 					"MapVectors": [
 						{
 							"TileX": 0,

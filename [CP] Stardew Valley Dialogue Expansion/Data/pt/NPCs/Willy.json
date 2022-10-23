@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Willy",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Willy",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Willy",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Willy",
+			"Entries":{
                 "Mon": "Algum progresso com a pesca ainda? Oxe fique com ela. Vai ficar mais fácil com o tempo.",
                 "Mon2": "Ahoy lá, colega.#$B#Parece bom tempo pra pescar, hein?",
                 "Mon6": "Pierre mim ajuda a vender um monte de peixe! que vem pora aqui. Talvez se você pudesse vender algumas das suas capturas, você as verá aparecer em sua loja!",
@@ -36,9 +35,13 @@
                 "spring_Fri8": "Se você pegar um peixe muito comum, é realmente mais lucrativo limpá-lo e cortá-lo sozinho.#$e#Isso é se você está vendendo em outro lugar. Eu só compro peixe inteiro.",
                 "summer_Thu2": "É temporada de truta arco-íris.#$b#E esta é a única época em que você pode pegá-los. tente de estocar se você gosta de cozinhar com eles.",
                 "summer_Thu6": "Se você está pescando tilápia neste verão, tente pegar ele manhã.#$e#Às vezes, eles aparecem no início da tarde, mas não com muita frequência.",
+				"summer_Wed2":"Essa carpinteira Robin vai construir um lago de peixes, mmm? Isso pode funcionar. Apenas certifique-se de tratar esses peixes extra bem.#$e#Alguns deles só precisam do oceano selvagem, ou dos córregos, sabe? Nem todos os peixes vivem em lagoas por uma razão.",
+				"summer_Wed10": "Você sabe, eu estou concordando com a ideia de peixe criado em fazenda. Se alguém vai ouvir os peixes e o que eles querem, seria você, hmm?",
                 "fall_Mon2": "O Walleye é um dos peixes mais raros que você encontrará nessas redondezas. Tente lançar uma linha em água doce quando chove nesta temporada.",
                 "fall_Fri2": "Quando chover este mês, não se esqueça de pegar algumas enguias no oceano. Caso contrário, você terá que esperar até a primavera.",
                 "fall_Fri6": "Um monte de salmão veio nadando rio acima. Tente pegar eles enquanto estiverem aqui.#$e#Você só pode encontrar salmão no outono.",
+				"winter_Tue":"É, realmente não é a mesma batida, peixes selvagens, quando se trata de gosto. E nutrição.#$b#As pessoas que vivem muito longe do interior não sabem realmente o que estão faltando.#$e#Se eles comem peixes criados na fazenda, é como uma comida totalmente diferente.",
+				"winter_Tue8":"Acho que tenho que ser grato pelo peixe criado na fazenda.#$b#Se todos comerem nada além das coisas boas que eu gosto de pegar, nós apenas vamos pescar todo o oceano para cima.",
                 "spring_1_2": "Ahoy lá! Um feliz ano novo pra você também!$h#$e#Estou surpreso que você tenha encontrado tempo para me visitar. Hoje é um dia tão ocupado para a sua fazenda, certo?$h",
                 "summer_4": "Parece que o atum apareceu na costa da nossa praia. Tente estocar eles. Eles vão embora novamente até o inverno.",
                 "winter_7": "Você vai pescar no gelo amanhã no festival? Eu nem me importo se eu ganho esses dias. Eu só gosto de ver mais gente pescando.$h",
@@ -47,6 +50,7 @@
                 "winter_7_2": "Você vai pescar no gelo amanhã no festival? Eu nem me importo se eu ganho esses dias. Eu só gosto de ver mais gente pescando.$h",
                 "winter_15_2": "Acho que vou precisar de paz e tranquilidade no mercado noturno depois dos próximos dias.#$e#Eu só vou ter que gerenciar até então.",
                 "winter_28_2": "Mais um ano pra baixo. A passagem do tempo é uma coisa linda se você puder aprender a apreciá-la.",
-            }
-        }]
+			}
+		}
+	]
 }

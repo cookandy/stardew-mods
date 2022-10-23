@@ -84,7 +84,7 @@
     "data.npc.pet.description": "Dein treues Haustier.",
     "data.npc.horse.description": "Dein treues Ross.",
     "data.npc.junimo.description": "Ein Waldgeist aus der Geisterwelt. Es ist nur wenig über sie bekannt.",
-    "data.npc.trashbear.description": "Ein freundlicher Geist, der Müll beseitigt.",
+    "data.npc.trash-bear.description": "Ein freundlicher Geist, der Müll beseitigt.",
 
     // item types
     "data.type.debris": "Verwilderung",
@@ -445,6 +445,30 @@
 
 
     /*********
+    ** Item > melee weapon lookups
+    *********/
+    // labels
+    // TODO
+    "item.melee-weapon.accuracy": "Accuracy",
+    "item.melee-weapon.critical-chance": "Critical chance",
+    "item.melee-weapon.critical-damage": "Critical damage",
+    "item.melee-weapon.damage": "Damage",
+    "item.melee-weapon.defense": "Defense",
+    "item.melee-weapon.knockback": "Knockback",
+    "item.melee-weapon.reach": "Reach",
+    "item.melee-weapon.speed": "Attack speed",
+
+    // values
+    // TODO
+    "item.melee-weapon.critical-damage.label": "{{multiplier}} times normal damage (before player bonuses)",
+    "item.melee-weapon.defense.label": "{{amount}} while equipped",
+    "item.melee-weapon.knockback.label": "{{amount}} ({{multiplier}} times normal distance)",
+    "item.melee-weapon.reach.label": "{{amount}} pixels",
+    "item.melee-weapon.speed.shown-vs-actual": "shown: {{shownSpeed}}{{lineBreak}}actual: {{actualSpeed}}",
+    "item.melee-weapon.speed.summary": "{{speed}} ({{milliseconds}} milliseconds per swing frame, before player speed bonuses)",
+
+
+    /*********
     ** Item > movie lookups
     *********/
     // labels
@@ -453,6 +477,7 @@
     "item.movie-ticket.loves-movie": "Liebt Film",
     "item.movie-ticket.likes-movie": "Mag Film",
     "item.movie-ticket.dislikes-movie": "Mag Film nicht",
+    "item.movie-ticket.rejects-movie": "Möchte den Film nicht sehen",
 
     // values
     "item.movie-snack-preference.love": "{{name}} liebt das",
@@ -610,7 +635,7 @@
     *********/
     // labels
     "puzzle.island-shrine.title": "Edelsteinvogel Rätsel",
-    "puzzle.island-shrine.description": "Lege den Edelstein auf den Sockel der vom Edelsteinvogel am passenden Ort bei Regen gelegt wurde. Die Edelsteine sind für jeden Speicherstand zufällig.",
+    "puzzle.island-shrine.solution": "Lege den Edelstein auf den Sockel der vom Edelsteinvogel am passenden Ort bei Regen gelegt wurde. Die Edelsteine sind für jeden Speicherstand zufällig.",
 
     // values
     "puzzle.island-shrine.solution.east": "Osten: {{item}}",
@@ -674,5 +699,50 @@
     "tree.stages.sapling": "Setzling",
     "tree.stages.bush": "Busch",
     "tree.stages.smallTree": "Kleiner Baum",
-    "tree.stages.tree": "Baum"
+    "tree.stages.tree": "Baum",
+
+
+    /*********
+    ** Generic Mod Config Menu UI
+    *********/
+    // main options
+    "config.title.main-options": "Haupt Optionen",
+    "config.progression-mode.name": "Fortschritts Modus",
+    "config.progression-mode.desc": "Ob bestimmte Inhalte (z. B. Geschenkvorlieben und Rätsellösungen) versteckt werden sollen, bis man sie im Spiel entdeckt hat.",
+    "config.highlight-unrevealed-gift-tastes.name": "Hebe unentdeckte Geschenkvorlieben hervor",
+    "config.highlight-unrevealed-gift-tastes.desc": "Hervorhebung von Gegenstandsgeschenken, die im NSC-Profil noch nicht offenbart wurden. Wenn diese Option aktiviert ist, werden nicht enthüllte Geschenkvorlieben fett dargestellt und es werden auch ungeliebte/gehasste Geschenke angezeigt.",
+    "config.show-all-gift-tastes.name": "Zeige alle Geschenk Vorlieben",
+    "config.show-all-gift-tastes.desc": "Ob alle Geschenkvorlieben bei der Suche nach NSCs und Gegenständen angezeigt werden sollen; wenn deaktiviert, werden nur die relevantesten Vorlieben (z.B. geliebte oder beliebte Geschenke) angezeigt.",
+
+    // advanced options
+    "config.title.advanced-options": "Erweiterte Optionen",
+    "config.tile-lookups.name": "Nachschlagen von Kacheln",
+    "config.tile-lookups.desc": "Ob Kartenkacheln als Nachschlageziele einbezogen werden sollen.",
+    "config.data-mining-fields.name": "Data Mining Felder anzeigen",
+    "config.data-mining-fields.desc": "Ob Rohdaten angezeigt werden sollen, die für Data Miner nützlich sind (als separate Felder am Ende der Suchergebnisse). Dies ist eine erweiterte Funktion, die nicht für die meisten Spieler gedacht ist.",
+    "config.force-full-screen.name": "Erzwinge Vollbild",
+    "config.force-full-screen.desc": "Legt fest, ob das Menü immer als Vollbild angezeigt werden soll, anstatt in der Mitte des Fensters. Dies ist vor allem bei der Anzeige von Data Mining Feldern nützlich.",
+    "config.target-redirection.name": "Ziel Umleitung",
+    "config.target-redirection.desc": "In manchen Fällen legt das Spiel eine temporäre Entität an, um eine andere zu repräsentieren. Zum Beispiel ist Abigail in den Minen in Wirklichkeit ein temporärer NSC mit dem Namen 'AbigailMine', so dass die Suche nach ihr dort nicht Abigails wirkliche Informationen zeigen wird. Wenn diese Option aktiviert ist, sucht Lookup Anything stattdessen nach der ursprünglichen Abigail.",
+    "config.scroll-amount.name": "Scroll Anzahl",
+    "config.scroll-amount.desc": "Die Anzahl an Pixeln um welche der Inhalt verschoben wird bei jedem hoch/runter scrollen.",
+
+    // controls section
+    "config.title.controls": "Steuerung",
+    "config.hide-on-key-up.name": "Verstecke beim Loslassen der Taste",
+    "config.hide-on-key-up.desc": "Ob die Lookup-Oberfläche ausgeblendet werden soll, wenn Sie die Lookup-Taste loslassen.",
+    "config.toggle-lookup.name": "Lookup umschalten",
+    "config.toggle-lookup.desc": "Die Tasten, die die Lookup-Oberfläche für etwas unter dem Cursor umschalten.",
+    "config.toggle-search.name": "Suche umschalten",
+    "config.toggle-search.desc": "Die Tasten, mit denen die Suchoberfläche umgeschaltet wird.",
+    "config.scroll-up.name": "Hoch scrollen",
+    "config.scroll-up.desc": "Die Tasten, die lange Inhalte um einige Zeilen nach oben scrollen.",
+    "config.scroll-down.name": "Runter scrollen",
+    "config.scroll-down.desc": "Die Tasten, die lange Inhalte um einige Zeilen nach unten scrollen.",
+    "config.page-up.name": "Seite hoch",
+    "config.page-up.desc": "Die Tasten, die lange Inhalte um eine ganze Seite nach oben blättern.",
+    "config.page-down.name": "Seite runter",
+    "config.page-down.desc": "Die Tasten, die lange Inhalte um eine ganze Seite nach unten blättern.",
+    "config.toggle-debug.name": "Debug umschalten",
+    "config.toggle-debug.desc": "Die Tasten, mit denen die Anzeige der Debug-Informationen umgeschaltet wird."
 }

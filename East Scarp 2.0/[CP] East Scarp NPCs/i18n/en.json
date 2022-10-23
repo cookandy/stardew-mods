@@ -60,11 +60,11 @@
     "gifts.eloise.hate": "Ewww, this is gross!",
     "gifts.eloise.neutral": "Thank you for the kind gift.",
     //Lexi
-    "gifts.lexi.love": "Oh, very kind! I love the sweetness, yes.",
+    "gifts.lexi.love": "Oh, you are very kind! I love the sweetness, yes.",
     "gifts.lexi.like": "I am grateful for your gift.",
     "gifts.lexi.dislike": "This ... it is unpleasant. I do not want it.",
     "gifts.lexi.hate": "This thing... I don't like it",
-    "gifts.lexi.neutral": "You are kind. Am grateful, yes.",
+    "gifts.lexi.neutral": "You are kind. I am grateful, yes.",
     //Oliver
     "gifts.oliver.love": "Thanks. This is really cool!",
     "gifts.oliver.like": "Thanks, I like this.",
@@ -114,7 +114,8 @@
     "57879901.02": "The courier shall be picking them up this afternoon, and they shall adorn Zuzu's annual flower festival!$1#$b#Is that not most terribly exciting?$7",
     "57879901.03": "Oh yes! That's right. I requested you stop by because I have a little something for you. Please, wait a moment.",
     "57879901.04": "Here they are.",
-    "57879901.05": "Perhaps you would consider sharing the flowers with me?",
+    "57879901.05": "These were a gift from a botanist. He assured me they would produce a fine bloom.#$b#I ... well I thought that you might have more success with them than I.",
+    "57879901.06": "Perhaps you would consider sharing the flowers with me?",
     //Slay Crabs Reward (Dialogue is Eloise)
     "57879902.01": "Ssshhh!",
     "57879902.02": "(Look farmer @! It's a fairy penguin!)",
@@ -174,13 +175,13 @@
     // Lexi
     "movies.lexi.1": "Not feel should be in here. People stare.$2",
     "movies.lexi.2": "Poor plant. All alone.",
-    "movies.lexi.3": "Feel weird in my heart. Maybe happy-sad? What that feeling called?",
-    "movies.lexi.4": "This place strange... far from sea. Little scared.$2",
+    "movies.lexi.3": "Feel weird in my heart. Maybe little bit happy, little bit sad? What's that feeling called?",
+    "movies.lexi.4": "This place strange... it is so far from sea. I am a little scared.$2",
     "movies.lexi.5": "This.. it is wonderful!.",
-    "movies.lexi.6": "Feel, what is word? Inspired. Thank you!",
+    "movies.lexi.6": "Feel, what is the word? Inspired. Thank you!",
     "movies.lexi.7": "This place... so strange. Not feel comfortable! People stare.",
-    "movies.lexi.8": "It dark... so noisy. Not understand.",
-    "movies.lexi.9": "Not want to go there again. Not pleasant. Sorry...$2",
+    "movies.lexi.8": "It is dark... so noisy. I do not understand.",
+    "movies.lexi.9": "Not want to go there again. Was not pleasant. Sorry...$2",
     // Josephine
     "movies.josephine.1": "I'm really not sure about this one.",
     "movies.josephine.2": "(Josephine's eyes are tightly closed)",
@@ -231,6 +232,8 @@
     "festivals.jacob.spring13": "Hello @. Eloise loves birds, but she's never been particularly interested in the egg hunt. Probably because Abigail always wins.",
     "festivals.josephine.spring13": "What a whimsical celebration! I'll have to take a photo in that rabbit; Guvvie will be most amused.#$b#It's a pity he couldn't join us... but he's a very busy man.$2",
     "festivals.oliver.spring13": "Hey there! I'm totally just here for the food. And this eggnog! It's wicked-good. You should try some.#$b#What do you mean I shouldn't be drinking it? Why? What's wrong with it?$4#$b#Oh... Please don't tell Mom, okay?$2",
+    "festivals.ladysheba.spring13.false": "Mirrup!$1",
+    "festivals.ladysheba.spring13.true": "I find color egg! Play with. Is fun!$1",
     // flower dance
     //*************
     "festivals.aideen.spring24": "Folk dancing? How very rustic. This bears little semblance to the dances I attended in Grampleton. Now, those were sophisticated affairs.",
@@ -245,8 +248,8 @@
     "festivals.jacob.summer11": "Hello @. Just grabbing a little space to myself.",
     "festivals.jacob.summer11.MrG": "Hello @. Just hanging out here with my good buddy Coppernicus.",
     "festivals.jacob.summer11.tris": "Hello @. Oh, we're just hanging out - two dads, boosting about our girls!$1",
-    "festivals.oliver.summer11": "$1 Oliver_Meet#Hi. You're the farmer, right? I'm Oliver. Dad dragged me here to check out this lame-as festival... I'm bored already.$2#$e#I like it here, it's quiet... but I 'spose I'd better head up soon, try the soup. Do you think it'll be any good?$2",
-    "festivals.josephine.summer11": "$1 Josephine_Meet#Oh, hello! I'm Josephine, the Governor's wife. It's a pleasure to meet you... You haven't seen our son, Oliver around have you?#$e#Hello @! I wish Oliver would be a little more social... He needs some friends that aren't behind a screen.$2",
+    "festivals.oliver.summer11": "Hi. You're the farmer, right? I'm Oliver. Dad dragged me here to check out this lame-as festival... I'm bored already.$2#$e#I like it here, it's quiet... but I 'spose I'd better head up soon, try the soup. Do you think it'll be any good?$2",
+    "festivals.josephine.summer11": "Oh, hello! I'm Josephine, the Governor's wife. It's a pleasure to meet you... You haven't seen our son, Oliver around have you?#$e#Hello @! I wish Oliver would be a little more social... He needs some friends that aren't behind a screen.$2",
     "festivals.oliver.summer11.3005": "You know... I'm getting to kinda like this festival. Willy's been telling me some of his fishing yarns.$1",
     "festivals.aideen.summer11": "Oh, the sun is overbearing! I seek sanctuary, here amongst my friends, the trees.",
     "festivals.josephine.summer11.3005": "You haven't seen Olly around have you? If you do, let him know that he'd better spend some time with his parents!$1",
@@ -259,7 +262,7 @@
     "festivals.josephine.summer28": "I really appreciate how your little village keeps these quaint traditions alive.$1#$b#Nature really is fascinating!",
     "festivals.oliver.summer28": "I can see something moving over there! No, not the jellies, something... larger.$1#$b#No? Must be my imagination.",
     "festivals.oliver.summer28.2012": "Lexi's here too, can you see them, @? They didn't want to come too close and scare the jellies.#$b#I wish they didn't have to hide.$2",
-    "festivals.lexi.summer28": "Jellies is pretty, yes?$1",
+    "festivals.lexi.summer28": "Jellies are so pretty, yes? They do not have many tales to tell though.$1",
     // fair
     //*************
     "festivals.aideen.fall16": "Are you intending to get your fortune told, @?#$b#Oh! I've already had mine! Apparently my quest for a suitor shall be fulfilled before the year reaches its end!$4",
@@ -294,7 +297,8 @@
     "festivals.jacob.winter25": "Hello @. Happy Winter Star. Jodi has been gracious enough to invite me to join her family.#$b#Now if only I could drag Ellie away from the presents!",
     "festivals.josephine.winter25": "Merry Winter Star, @! I'm keeping Mayor Lewis company today.#$b#*whispers* He believes I'm here representing my husband, but really it's for the company.$1",
     "festivals.oliver.winter25": "Hey @. Yeah, Dad couldn't make it... he's helping out with some charity in Zuzu.$2#$b#Still, the food's good, and Dr. Jacob said I could join him, so it's cool. Literally.$1",
-    //
+    "festivals.ladysheba.winter25.false": "Mirrup?$3",
+    "festivals.ladysheba.winter25.true": "Is many people. Scared. Stay here, okay? Bring present, yes?$3", //
     //**************************************
     // E N G A G E M E N T   D I A L O G U E
     //**************************************
@@ -310,7 +314,7 @@
     //**************************************************************************************
     //Lewis approaches Farmer to inform them of the Governor's pending visit
     //all dialogue Lewis
-    "57873000.01": "Good morning, @. I'm pleased to have caught you at home.#$b#I have a very important task for you",
+    "57873000.01": "Good morning, @. I'm pleased to have caught you at home.#$b#I have a very important task for you.",
     "57873000.02": "The Governor is sending his wife and son to stay here, in Pelican Town!$1",
     "57873000.03": "Apparently the child's not well, and he's hoping the country air will help. Poor kid...$2#$b#But what an opportunity for us!$1",
     "57873000.04": "They're moving into East Scarpe Inn for the winter, and I'm relying on you, @, to help make them feel welcome.#$b#What do you say?",
@@ -644,6 +648,7 @@
     "57870013.Eloise_MatchMaker.04": "Jacob, I really like you. Would you like to go out with me?",
     "57870013.Eloise_MatchMaker.05": "I'm fond of you too. But as friends. Nothing more.",
     "57870013.Eloise_MatchMaker.06": "It's ridiculous. You're the last person I'd want to date.",
+    "57870013.Eloise_MatchMaker.09": "Ah, kids, right? Let's eat!",
     "57870013.Eloise_MatchMaker.07": "Err, well that's sorted. Shall we have dessert now then?",
     "57870013.Eloise_MatchMaker.08": "The melon cake is pretty good too, and the evening is most enjoyable.",
     "57870013.Jacob_PseudoDate.01": "I'm sorry, @. I like you too... well, a lot. But it wouldn't be fair on you.$2#$b#I'm not ready for a longterm commitment, not again. And Ellie... well she must always be my first priority.#$b#I'm sorry. I most genuinely am.$2",
@@ -753,39 +758,39 @@
     // Lexi intro event
     //all dialogue Lexi or farmer
     "57872004.01": "Eek! A human!",
-    "57872004.02": "You not here to hurt Lexi?",
+    "57872004.02": "You're not here to hurt Lexi?",
     "57872004.03": "I'm here to be your friend.",
     "57872004.04": "I'm sorry. I didn't mean to disturb you.",
     "57872004.05": "Only if you hurt me first.",
     "57872004.06": "Friend? I like new friends. Did mother send you?$1",
-    "57872004.07": "It okay. Just surprise is all! I not get many guest.$2",
-    "57872004.08": "Oh... You worry I maybe cause hurt? No, never hurt!$2",
+    "57872004.07": "It is okay. Just surprised is all! I do not get many guests.$2",
+    "57872004.08": "Oh... You worry I maybe cause you hurt? No, I would never hurt! Well, maybe fish for food...$2",
     "57872004.09": "Name is Lexi. It is good name, it is my name. What be your name, stranger person?",
     "57872004.10": "(Tell them your name)", //farmer
     "57872004.11": "It's none of your business.", //farmer
-    "57872004.12": "Hello @. Is good to meet you, yes!#$b#Will you come visit me again, @?$1",
-    "57872004.13": "Hello None-of-your-business. That is funny name, bit weird, but I like you anyway.$1#$b#Will you come visit me again, None-of-your-business?",
+    "57872004.12": "Hello @. It is good to meet you, yes!#$b#Will you come visit me again, @?$1",
+    "57872004.13": "Hello None-of-your-business. That is a funny name, bit weird, but I like you anyway.$1#$b#Will you come visit me again, None-of-your-business?",
     //Lexi 2-heart event
-    "57872004.14": "You back! Am very happy to see you, yes.$1.",
-    "57872005.01": "My plant... they is dead... I not understand.$2",
-    "57872005.02": "Mother... she be plant mother. Have green fingers, she say! Make things grow, bring life and color. But me... I cannot. I try...$2#$b#I water. I sing. Like she say to. But still... they die.$2",
+    "57872004.14": "You're back! I am very happy to see you, yes.$1.",
+    "57872005.01": "My plant... she is dead... I not understand.$2",
+    "57872005.02": "Mother... she's a plant mother, with green fingers, is what she says! She makes things grow, brings life and color. But me... I cannot. I try...$2#$b#I water. I sing. Like Mother said to do. But still... they die.$2",
     "57872005.03": "Plants need sunlight.", //farmer
     "57872005.04": "Plants can't drink salt water.", //farmer
     "57872005.05": "You must have a terrible singing voice.", //farmer
-    "57872005.06": "Sunlight! Oh, I not think. Not remember.#$b#Is too dark in here, yes?... I am sorry, my plant.$2",
-    "57872005.07": "Is only water I have... But maybe...#$b#Maybe find more, in neighbor cave. But scary cave. Many beasts that screech and snap and bite.$2",
-    "57872005.08": "That not kind thing to say... Mother always say Lexi sing well. You say Mother lie?$a#$b#Not like that. Mother never lie. You never hear me sing, no?",
-    "57872005.09": "Maybe next plant have better life. You find plant that grow in cave? Maybe bring to me, friend?$1#$b#Mother says plants are good for earth, good for soul.",
-    "57872005.10": "Wish I good for plants...$2",
+    "57872005.06": "Sunlight! Oh, I not think. I did not remember.#$b#It is too dark in here, yes?... I am sorry, my plant.$2",
+    "57872005.07": "Is only water I have... But maybe...#$b#Maybe find more, in neighbor cave. But it is a scary cave, with many beasts that screech and snap and bite.$2",
+    "57872005.08": "That is not kind thing to say... Mother always say Lexi sing well. You say Mother lie?$a#$b#Not like that. Mother would not lie. You never even heard me sing, no?",
+    "57872005.09": "Maybe next plant will have better life. If you find plant that grows in cave: Maybe bring to me, please?$1#$b#Mother says plants are good for the earth, and good for soul.",
+    "57872005.10": "I wish I was good for plants...$2",
     // Lexi 4-heart event
-    "57872007.01": "You have gift for me, friend gull?",
-    "57872007.02": "Is pretty! Yes! Thank you friend gull.$1",
+    "57872007.01": "You have a gift for me, friend gull?",
+    "57872007.02": "Oooh! So pretty! Thank you friend gull.$1",
     "57872007.03": "Another friend!",
     "57872007.04": "Not be grumpy, friend gull. This is friend ",
-    "57872007.041": "They is good friend, bring me gift from land.",
-    "57872007.05": "Friend gull bring gift from sea.",
-    "57872007.06": "Sorry friend gull jealous. He like be only friend.$2#$b#He bring many gift from sea. You like gift from sea?$3",
-    "57872007.07": "Good, yes! Come visit this day next week, bring berry-sweetness and trade for gift from sea, yes?$1",
+    "57872007.041": "They are a good friend, and bring me gifts from land.",
+    "57872007.05": "Friend gull brings gift from sea.",
+    "57872007.06": "Sorry friend gull is jealous. He likes to be only friend.$2#$b#He brings many gifts. Would you like gift from sea?$3",
+    "57872007.07": "Good, yes! Come visit me on this day next week, bring berry-sweetness and we can trade for gifts from sea, yes?$1",
     "57872007.08": "Lexi will now trade with you on Saturdays",
     // Lexi and Oliver (most dialogue Lexi to Oliver)
     "57872012.01": "Hello?", //Oliver
@@ -793,12 +798,12 @@
     "57872012.03": "Are you here?", //Oliver
     "57872012.04": "Hello", //Lexi
     "57872012.05": "Oh! Holy Yoba, you scared me!$2", //Oliver
-    "57872012.06": "Sorry, so, so sorry! I not mean to scare!$2#$b#Just excited to see new friend, yes...$3#$b#Olly not mad, are you?$2", //Lexi
+    "57872012.06": "Sorry, so, so sorry! I do not mean to scare you!$2#$b#Just excited to see new friend, yes...$3#$b#Olly, you are not mad, are you?$2", //Lexi
     "57872012.07": "No, I'm not mad, Lexi! I came to visit you.", //Oliver
     "57872012.08": "I um... brought you something. Rosa's been baking cookies. And I thought you might like some?$2", //Oliver
     "57872012.09": "Cookies?! Yes, I like cookies very much, thank you.", //Lexi
-    "57872012.10": "They are still warm! Smell so good.#$b#Like happiness.$3", //Lexi
-    "57872012.11": "But have nothing to exchange for them.$2",
+    "57872012.10": "They are still warm! They smell really good.#$b#Like happiness.$3", //Lexi
+    "57872012.11": "But I have nothing to exchange for them.$2",
     "57872012.12": "That's okay! They're a gift.$1", //Oliver
     "57872012.13": "But I want to give gift to you too, Olly-friend.$2", //Lexi
     "57872012.14": "Oh! Welcome @.#$b#Look! Olly came to visit me.#$b#He brought me a cookie.$3#$b#Only... I have no things to swap it for.$2", //Lexi (to farmer)
@@ -816,30 +821,30 @@
     //Lexi and Friend Gull and Oliver (Friend Gull is a bird)
     "57872019.01": "Friend gull, is your turn now!$1", //Lexi
     "57872019.02": "Hi", //Oliver
-    "57872019.03": "Oliver friend! Not expect see you today.$4#$b#Is try teach friend gull to play sternhalma. He not so good.", //Lexi
-    "57872019.04": "Sorry friend gull! Not mean offend.$2", //Lexi
-    "57872019.05": "You come play sternhalma, yes? I think maybe you win, this time?", //Lexi
-    "57872019.06": "Oliver friend! What wrong? Have I done bad thing to make you sad?$2", //Lexi
+    "57872019.03": "Oliver friend! Not expect to see you today.$4#$b#I am trying to teach friend gull to play sternhalma. He is not very good.", //Lexi
+    "57872019.04": "Sorry friend gull! I did not mean to offend.$2", //Lexi
+    "57872019.05": "You come play sternhalma, yes? I think maybe you will win, this time?", //Lexi
+    "57872019.06": "Oliver friend! What is wrong? Have I done bad thing to make you sad?$2", //Lexi
     "57872019.07": "No...", //Oliver
     "57872019.08": "... I've done something foolish.$3", //Lexi
     "57872019.09": "Be kind!", //Lexi (to Friend Gull who is mocking Oliver)
     "57872019.10": "I showed one of my friends the picture of us.$2", //Oliver
-    "57872019.11": "Is come visit? Friend of Olly be friend of Lexi to?$1", //Lexi
+    "57872019.11": "Is friend coming to visit? Any friend of Olly is friend ti Lexi too, maybe?$1", //Lexi
     "57872019.12": "I'm afraid not, Lexi.$2", //Oliver
     "57872019.13": "Oh...", //Lexi
-    "57872019.14": "Is used to people be scared of me.$2", //Lexi
+    "57872019.14": "I am used to people be scared of me.$2", //Lexi
     "57872019.15": "Oh Lexi.", //Oliver
     "57872019.16": "My friend... her name is Kennedy. She wasn't scared of you. But...", //Oliver
     "57872019.17": "She told someone about you... a journalist.$3", //Oliver
     "57872019.18": "A journalist is a person who writes stories about things. Real things. And puts them into a magazine.", //Oliver
-    "57872019.19": "Know magazine! Would cut out pictures, make collage!$1#$b#This journal-person want put me in collage? That not so bad?", //Lexi
+    "57872019.19": "Oooh! I know magazines! We would cut out pictures, and make a collage!$1#$b#This journal-person wants put me in collage? That's not so bad?", //Lexi
     "57872019.20": "Not quite.", //Oliver
     "57872019.21": "She would tell the world about you, Lexi. People might come here to try and find you. People might...", //Oliver
     "57872019.22": "... People might... They might hurt you, Lexi.$2", //Oliver
     "57872019.23": "And I don't want that to happen.$3", //Oliver
-    "57872019.24": "I not want that happen either, Oliver friend. But also know you good person.$4#$b#And you not let it happen.", //Lexi
+    "57872019.24": "I do not want that to happen either, Oliver friend. But also know you are a good person.$4#$b#And you will not let it happen.", //Lexi
     "57872019.25": "You're not mad at me, Lexi? You've every right to be.$3", //Oliver
-    "57872019.26": "Mad? Why would be mad? You want help me find more friends. That not thing to be mad about.", //Lexi
+    "57872019.26": "Mad? Why would I be mad? You want to help me find more friends. That is not a thing to be mad about.", //Lexi
     "57872019.27": "No... I guess it's not a thing to be mad about...$2", //Oliver
     //Oliver finds injured Friend Gull 
     "57872008.01": "Oh!", //Oliver
@@ -873,15 +878,15 @@
     //farmer meets Lexi on the beach
     "57872010.01": "friend gull...", //Lexi
     "57872010.02": "Oh, ",
-    "57872010.021": "Am so worried! Human youngling... take friend gull away!$2", //Lexi
-    "57872010.03": "Not want eat him, no?$2", //Lexi
-    "57872010.04": "Of course not! He wants to help him", //farmer
+    "57872010.021": "Am so worried! Human youngling... he took friend gull away!$2", //Lexi
+    "57872010.03": "I hope he not want eat him!$2", //Lexi
+    "57872010.04": "Of course not! He wants to help him.", //farmer
     "57872010.05": "(jokingly) Oh, probably.", //farmer
-    "57872010.06": "Oh! Am glad. So why he take him away?$2", //Lexi
-    "57872010.07": "Wait... that is joke, yes? Is not very funny one.$5#$b#So, where he take him then?$2", //Lexi
+    "57872010.06": "Oh! I am glad. But why would he take him away?$2", //Lexi
+    "57872010.07": "Wait... that is a joke, yes? It is not a very funny one.$5#$b#Where he take him then? Do you know?$2", //Lexi
     "57872010.08": "To the vet-man? And he will fix friend gull?", //Lexi
-    "57872010.09": "Oh... I feel little better now. But still worry. Friend gull be frightened. Not like be alone.$2", //Lexi
-    "57872010.10": "No one like to be alone...$2", //Lexi
+    "57872010.09": "Oh... I feel little better now. But I am still worried. Friend gull will be frightened. He not like be alone.$2", //Lexi
+    "57872010.10": "No one likes to be alone...$2", //Lexi
     //Releasing the Gull a week later (With farmer)
     "57872011.01": "Thanks for coming with me to release the gull, @.$7#$b#Eloise was gutted that she had to go to school instead.$6", //Oliver
     "57872011.02": "I know, you're eager to be home, aren't you!$7", //Oliver
@@ -896,8 +901,8 @@
     "57872011.11": "Th-the gull's friend?$2", //Oliver
     "57872011.12": "A friend?", //Lexi
     "57872011.13": "Not a monster!", //Lexi
-    "57872011.14": "Name is Lexi. Am friend to gull, and friend to ",
-    "57872011.141": "Friend to you too? If you want?$2", //Lexi
+    "57872011.14": "Name is Lexi. I am friend to gull, and friend to ",
+    "57872011.141": "I could be friend to you too? If you want?$2", //Lexi
     "57872011.15": "Hello Lexi. I've never met someone like you before.#$b#I'm pleased to meet you. Um... I'm Oliver. Or Olly, if you like.", //Oliver
     "57872011.16": "Oh yes, pleased to meet you too, Olly if you like!$1", //Lexi
     "57872011.17": "Just Olly is fine!$1", //Oliver
@@ -905,18 +910,18 @@
     "57872011.19": "Olly!", //Oliver
     "57872011.20": "I know. Just as know ", //Lexi - don't change the spaces!
     "57872011.201": " is @.#$b#Thank you for helping friend gull.", //Lexi - spaces are important here, don't change them!
-    "57872011.21": "For long time, friend gull was only friend. But now have @.", //Lexi
-    "57872011.22": "And maybe you too, Olly? You will be friend to Lexi?$2", //Lexi
+    "57872011.21": "For a long time, friend gull was my only friend. But now have @ too.", //Lexi
+    "57872011.22": "And maybe you too, Olly? Will you be a friend to Lexi?$2", //Lexi
     //Kataryna and Oliver on the beach
     "57872020.01": "...a joke? Four hours in a bus, with a little brat kicking the seat behind me... and you tell me my niece has sent me on a wild goose chase?$a", //Kataryna
     "57872020.02": "I'm sorry, ma'am. Please don't be mad at Kennedy.$3", //Oliver
     "57872020.03": "I'll be mad at whomever I want. And don't you ma'am me.$3", //Kataryna
     "57872020.04": "I should bill you for wasting my time.$a", //Kataryna
     "57872020.05": "It's a... You're a...", //Kataryna
-    "57872020.06": "Name is Lexi. Oliver my friend. And you are big bully!$4",
+    "57872020.06": "My name is Lexi. Oliver is my friend. And you are big bully!$4",
     "57872020.07": "...absolutely marvellous!", //Kataryna
-    "57872020.08": "You not scared? I show you scary face. Many teeth. Grr!$1", //Lexi
-    "57872020.09": "Not nearly as scary as the beast that terrorized West Springs. Though that turned out to be a bear with mange. Most disappointing.#$b# But you! You're the real deal, aren't you? This isn't latex or some sort of bizarre wetsuit!", //Kataryna
+    "57872020.08": "You're not scared? I showed you scary face. Many teeth. Grr!$1", //Lexi
+    "57872020.09": "Not nearly as scary as the beast that terrorized West Springs. Though that turned out to be a bear with mange. Most disappointing.$2#$b# But you! You're the real deal, aren't you? This isn't latex or some sort of bizarre wetsuit!$1", //Kataryna
     "57872020.10": "Please... please don't tell everyone about them.$3#$b#Lexi! I wanted you to stay safe, to stay hidden.$2", //Oliver
     "57872020.11": "That's why I lied to you Ms. Kataryna. Lexi's my friend, and I don't want anyone to come out here and hunt them.$3", //Oliver
     "57872020.12": "Hunt them? Let me assure you, young Oliver...", //Kataryna
@@ -939,12 +944,12 @@
     "57872020.29": "Are you threatening me?$3", //Kataryna
     "57872020.30": "Just stating a fact.", //Oliver
     "57872020.31": "I think you should leave now.$5#$b#Sorry you were dragged all the way out here for nothing.$3", //Oliver
-    "57872020.32": "Please no hurt friend Oliver!$2", //Lexi
-    "57872020.33": "Okay fine.$2", //Kataryna
-    "57872020.34": "Please forgive my impertinence. You have no idea how many times I get called out and it turns out to be a hoax. Or a hermit in a fur coat.#$b#It's extremely rare to meet a genuine cryptid. And even rarer to find one that can hold a conversation.#$b#So, forgive me Lexi, for my manners, or lack there-of.#$b#And if you ever decide you want to go public... well, give me a call or shoot me an email or something.", //Kataryna
+    "57872020.32": "Please do not hurt friend Oliver!$2", //Lexi
+    "57872020.33": "Okay fine.", //Kataryna
+    "57872020.34": "Please forgive my impertinence. You have no idea how many times I get called out and it turns out to be a hoax. Or a hermit in a fur coat.$3#$b#It's extremely rare to meet a genuine cryptid. And even rarer to find one that can hold a conversation.#$b#So, forgive me Lexi, for my manners, or lack there-of.#$b#And if you ever decide you want to go public... well, give me a call or shoot me an email or something.$1", //Kataryna
     "57872020.35": "An... email?", //Lexi
     "57872020.36": "Or write me a letter. Whatever.#$b#Now, is there a pub or something around here? I could go a cold cider and a bowl of something deep-fried. Any of you folks want to join me?", //Kataryna
-    "57872020.37": "What about you? Seen anything weird around here. Monsters or what-not?#$b#Preferably ones that won't need to sign a release form?", //Kataryna
+    "57872020.37": "What about you? Seen anything weird around here. Monsters or what-not?$1#$b#Preferably ones that won't need to sign a release form?", //Kataryna
     /***********************************
     // O L I V E R
     // J O S E P H I N E
@@ -1216,22 +1221,22 @@
     //Oliver tells Lexi he has to leave
     "57872021.01": "Hah! I win!", //Lexi
     "57872021.02": "Lexi, you always win. You're like the king of Sternhalma.$2", //Oliver
-    "57872021.03": "Or maybe queen! Have not decided yet. Is true though, I rule. Play again?$1", //Lexi
+    "57872021.03": "Or maybe I am queen! I have not decided yet. It is true though, I rule. Play again?$1", //Lexi
     "57872021.04": "Maybe just one more game...$2",
-    "57872021.05": "Oliver-friend, face go all turny-down at corners. Why you sad? Sorry I beat you. Maybe this time, I let you win?$3", //Lexi
+    "57872021.05": "Oliver-friend, your face has gone all turny-down at corners. Why are you sad? I am sorry I beat you. Maybe this time, I will let you win?$3", //Lexi
     "57872021.06": "No Lexi. I don't mind that you beat me. Every time.$1#$b#It's just... I'm gonna miss you.$2", //Oliver
     "57872021.07": "Miss me?", //Lexi
-    "57872021.08": "But you no aim at me?$4", //Lexi
+    "57872021.08": "But you did not aim at me?$4", //Lexi
     "57872021.09": "I have to leave soon. Go back to the city. Zuzu.$2", //Oliver
     "57872021.10": "You are leaving me, Oliver-friend?$2", //Lexi
     "57872021.11": "Yeh. Sorry Lexi. Mom's got her big concert, and Dad's a very important man...$3", //Oliver
-    "57872021.12": "But city not good place for Oliver-friend? Air heavy, thick, make lungs hurt.$2#$b#Why you want to leave, Oliver-friend? Is to see friend Kennedy?$4#$b#You come back and visit, yes?$3", //Lexi
+    "57872021.12": "But city is not a good place for Oliver-friend? Air is heavy and thick. It makes my lungs hurt.$2#$b#Why you want to leave, Oliver-friend? Is it to see friend Kennedy?$4#$b#Maybe you can come back and visit, yes?$3", //Lexi
     "57872021.13": "I don't know if I can, Lexi. I'm sorry. Dad's very busy.$3", //Oliver
-    "57872021.14": "But Oliver not busy, and still he let them say what he can and can't do.", //Lexi
+    "57872021.14": "But Oliver is not busy, and still he lets them say what he can and can't do.", //Lexi
     "57872021.15": "They're my parents!$3", //Oliver
-    "57872021.16": "Mother set me free, she knew her home my cage. Your home, also cage. Stuck like fish in trap.", //Lexi
+    "57872021.16": "Mother set me free, she knew her home my cage. Your home, it is also cage. You are stuck like fish in trap.", //Lexi
     "57872021.17": "It's not that simple Lexi...$5", //Oliver
-    "57872021.18": "Is simple! Oliver want to leave. Never see Lexi-friend again!$4#$b#Is fine. Not need Oliver either. Friend Gull never leave me.$2", //Lexi
+    "57872021.18": "Is simple! Oliver wants to leave and never see Lexi-friend again!$4#$b#That is fine. I not need Oliver either. Friend Gull will never leave me.$2", //Lexi
     "57872021.19": "Lexi", //Oliver
     "57872021.20": "Oh, stop looking so smug, you silly bird.$4", //Oliver
     "57872021.21": "Hey...", //Oliver
@@ -1246,7 +1251,7 @@
     "57872021.30": "Heh, I wonder if Dr. Jacob would like to take on an apprentice.", //Oliver
     "57872021.31": "You're right! That's not a silly idea at all! I should ask him!$1", //Oliver
     "57872021.32": "Mom's not gonna be too keen on the idea...$2", //Oliver
-    "57872021.33": "Oliver tell me goodbye and I angry at him. Not want him to leave me angry. Tell him I sorry, please?$2#$b#I will miss him lots.$2", //Lexi
+    "57872021.33": "Oliver told me goodbye and I was angry at him. But I do not want him to leave thinking me angry.#$b#Tell him I sorry, please? I will miss him lots.$2", //Lexi
     // dinner party with Lewis and the Governor
     "57873050.01": "You're here!",
     "57873050.02": "I'm glad you could make it! I'm just putting the finishing touches on a five-course dinner.#$b#Well, when I say finishing up, I mean heating. Gus prepared it. Wouldn't trust my cooking!$1#$b#... Oh, I'm waffling, aren't I!",
@@ -1275,7 +1280,7 @@
     "57873050.AwkwardMayorTalk.09": "You've definitely earned your loyalty here, Mayor Lewis!",
     "57873050.DinnerPartyConclusion.01": "Well, it's been lovely getting to know you a bit better. It's a shame Josie and Ollie will be leaving soon.#$b#But it's time the boy returned to school, and I have rather missed my wife!",
     "57873050.DinnerPartyConclusion.02": "Speaking of, Lewis old chap, still enjoying the bachelor life?#$b#I have to say, living alone may have its perks, but the older I get, the longer and lonelier the evenings become.$2#$b#There's no special someone in your life?$1",
-    "57873050.DinnerPartyConclusion.03": "Anyway, Josie's got her big reunion concert soon.#$b#And I'm sure Oliver'll be deligthed to see his old school friends again. Won't you lad?",
+    "57873050.DinnerPartyConclusion.03": "Anyway, Josie's got her big reunion concert soon.#$b#And I'm sure Oliver'll be delighted to see his old school friends again. Won't you lad?",
     "57873050.DinnerPartyConclusion.04": "Well Dad... there's something I've been wanting to talk about...$2",
     "57873050.DinnerPartyConclusion.05": "Well, best be off. Don't want to outstay our welcome, heh?",
     "57873050.DinnerPartyConclusion.06": "He never listens...",
@@ -1283,7 +1288,7 @@
     "57873050.DinnerPartyConclusion.08": "Pleased to meet you, @. Remember what I said! Mayoral elections!$1#$b#I'll see you again at the next luau. You can give me your verdict then.",
     "57873050.DinnerPartyConclusion.09": "Come, Josie.",
     "57873050.DinnerPartyConclusion.10": "Come Oliver",
-    "57873050.DinnerPartyConclusion.11": "Dad! I'm not leaving with you tomorrow.$4",
+    "57873050.DinnerPartyConclusion.11": "Dad! I'm not leaving with you.$4",
     "57873050.DinnerPartyConclusion.12": "I want to stay here. In Pelican Town.",
     "57873050.DinnerPartyConclusion.13": "You what?!",
     "57873050.DinnerPartyConclusion.14": "Mayoral Elections, eh? Quite a sense of humor the Governor has, don't you think?$2",
@@ -1352,33 +1357,33 @@
     "57874000.06": "How was I supposed to know someone else was here?#$b#Oh, never mind.$1",
     "57874000.07": "Look at this mess!$2#$b#I hope you didn't get sprayed by any melon juice.$2",
     "57874000.08": "Well, that's a relief. The name's Rosa, by the way.",
-    "57874000.09": "I'm from Fort Josa. I'm working here temporarily.",
+    "57874000.09": "I'm from Fort Josa. Yeh, I know... Rosa from Josa. My parents had a weird sense of humor!$1#$b#I'm working here temporarily.",
     "57874000.10": "The owners of the inn are away for a while, so I'm keeping an eye on it.#$b#Maybe if I'm lucky we'll even get some guests!$1",
     "57874000.11": "As you can probably smell, I enjoy baking. And this place has a great kitchen!$1#$b#So, if you ever find yourself in need of baked goods or coffee, I'll be selling them at the counter. Feel free to stop by!",
     "57874000.12": "Anyway, I'd better get this messed up melon in the bin.#$b#Don't be a stranger... Er, what did you say your name was again?",
     "57874000.13": "Okay, don't be a stranger, @.",
     // Lexi 8-heart 
     //all dialogue Lexi (gender neutral or femininized) and Mona (feminine)
-    "57872023.01": "Oh, Hello @! Sorry. Is lost in thoughts. Remembering old friend.",
-    "57872023.02": "No, you and Friend Gull and Mother not only friends. Had another friend once. But she gone now.$2",
+    "57872023.01": "Oh, Hello @! Sorry. I was lost in thoughts. Remembering a long-time ago friend.",
+    "57872023.02": "No, you and friend gull and Mother are not my only friends. I had another friend once. But she is gone now.$2",
     "57872023.03": "You would like to hear tale?",
-    "57872023.04": "Is long time go. Maybe more than two hand, less than three hand years. When I was child.#$b#I lived with Mother, in big house in forest.",
-    "57872023.05": "I love Mother very much, but not love be indoors. Love outside; rain on face and wind on whisker-gill!$1#$b#But is not safe to go out when sun high in sky. Sun too hot, make skin feel bad. And too many eyes to see. Too many voices to scream 'Monster'!",
-    "57872023.06": "Thank you for not scream 'Monster', @. For make me feel like person, not like thing to be afraid of.",
-    "57872023.07": "So, in dawn, when sky painted in orange-pink, I would swim. In river, swim to beach, and collect shells for Mother.",
-    "57872023.08": "But I was very silly child. For though I love water, was scared of waves.$2",
-    "57872023.09": "And then... some person other come to swim.",
-    "57872023.10": "New person, she not scared of waves at all!$1",
-    "57872023.11": "After that, she come every day. No peaceful swim no more!$1#$b#Is sad. Want to talk to her. Be friends. But scared. Not good memory of people.$2#$b#Then, one day she come to swim... and everything change...",
+    "57872023.04": "It is a long time go. Maybe more than two-hand, less than three-hand years, when I was child.#$b#I lived with Mother, in a big house in the forest.",
+    "57872023.05": "I loved Mother very much, but did not love to be indoors. Loved the outside, with rain on my face and wind on my whisker-gill!$1#$b#But it was not safe to go out when the sun high in the sky. Sun was too hot, it made my skin feel bad. And there were too many eyes to see. Too many voices to scream 'Monster'!",
+    "57872023.06": "Thank you for not screaming 'Monster', @. For making me feel like person, not like a thing to be afraid of.",
+    "57872023.07": "So, in dawn, when the sun painted the sky in orange-pink, I would swim. In river, to swim to beach, where I'd collect shells for Mother.",
+    "57872023.08": "But I was a very silly child. For though I love water, I was scared of waves.$2",
+    "57872023.09": "And then... some person other came to swim.",
+    "57872023.10": "This new person, she was not scared of the waves. Not at all!$1",
+    "57872023.11": "After that, she would come every day. No peaceful swim for more, not any more!$1#$b#I was sad. I wanted to talk to her and be friends. But I was scared. Have not good memories of people.$2#$b#Then, one day she come to swim... and everything changed...",
     "57872023.12": "She gone!",
-    "57872023.13": "Not scared of wave! More scared she drown.$1#$b#Find her, bring to shore.#$b#She cough, cough, cough up water. Then look up at me. I think she scream.#$b#She not.$1",
+    "57872023.13": "Not scared of wave, not anymore! No, I was more scared she drown.$1#$b#So dive in, find her, and bring her back to shore.#$b#She cough, cough, cough up water. Then look up at me. I think she might scream.#$b#She did not.$1",
     "57872023.14": "You saved me!", //Mona
     "57872023.15": "Thank you", //Mona
     "57872023.16": "Is okay.",
     "57872023.17": "My name's Mona", //Mona
-    "57872023.18": "I is Lexi.",
+    "57872023.18": "I am Lexi.",
     "57872023.19": "Pleased to meet you, Lexi.", //Mona
-    "57872023.20": "We become friends. Swim together. Race, play games together. Was happy.$1#$b#But after time, things change. Mona find her mate, spend more time in mountains than in sea.#$b#I go to sea, try find mate of own. But that story for different day.$2#$b#Today, remember good times, not sad times,yes?",
+    "57872023.20": "We become friends. Would swim together. Race, play games. We were happy.$1#$b#But after some time, things changed. Mona found her mate, and spent more time in mountains, or underground, than in sea.#$b#So, I go to sea, to try find a mate of own, and when I came back, she was gone.#$b#But that is a story for a different day.$2#$b#Today, we remember the good times, not sad times,yes?",
     //M O R E   E VE N T S   T O   C O M E
     //
     //
@@ -1473,4 +1478,387 @@
     "strings.jacob.fri002": "Hi @. Just checking in to make sure Miss Marnie's animals are all doing well.",
     "strings.jacob.sat001": "On a clear day, you can see almost all the way to the Fern Islands. Del used to love this view.",
     "strings.jacob.winter17": "I've given Ellie a little pocket money to spend - it's not often we get such exotic visitors!#$b#I hope she doesn't buy that parrot...$3",
+    /******************************
+    N  E  W    w i t h   2.1
+    ******************************/
+    "ES_IntroMail": "Hi farmer!^My name's Eloise, and my father and I live in a neighborhood called East Scarp. There's a beach, and a pond, and loads of berries!^My dad's a vet, and you're a farmer, so I think you two will be friends. I hope we can be friends too.^You should come visit us sometimes. But not on a school day... because then I'm in class with Jas and Vinny!^Hope to see you soon!^Eloise.",
+    "ES_IntroMail.Title": "A letter from Eloise",
+    "strings.lexi.CS101": "Oh! Please not touch that. Was gift from Mother!$2", //Lexi
+    //New Events
+    //Tristan and Jas builta cat door for Lady Sheba (Stray cat)
+    "57879001.01": "She's going to love it!", //Jas
+    "57879001.02": "She'd better! Given how many times I whacked my thumb.$2", //Tristan
+    "57879001.03": "Hello!", //Jas
+    "57879001.04": "Hey, hi there @. Check out my handiwork!", //Tristan
+    "57879001.05": "We're putting in a cat door for Lady Sheba! So she can keep warm for winter!$1", //Jas
+    "57879001.06": "Jas's very persuasive, and I'm just a soft touch.$4#$b#Still, all cats deserve a home. I know that from experience.", //Tristan
+    "57879001.07": "She can't come inside, Munchie doesn't like her much.$2", //Jas
+    "57879001.08": "Sad but true.$2#$b#Then again, I think Munchington only tolerates me because I can operate a can opener.$1", //Tristan
+    "57879001.09": "Sssh", //Jas
+    "57879001.10": "Here she comes.$3", //Jas
+    "57879001.11": "It's okay, you can go in.", //Jas
+    "57879001.12": "Thanks Dad.", //Jas
+    // ********************   R O S A   *********************
+    //Rosa and Juliet in the JojaMart
+    "57874005.01": "Hey cowgirl!", //Juliet
+    "57874005.02": "Howdy shop girl!", //Rosa
+    "57874005.03": "Baking, huh? Gonna be working some dough this weekend then, ah ya?#$b#Kneading it until it's soft and pliant?$1", //Juliet
+    "57874005.04": "I thought I might bake maple bars actually. No kneading required.$5#$b#I'll be whipping the butter and sugar though.$1", //Rosa
+    "57874005.05": "Come on kids.", //Pam
+    "57874005.06": "I ain't got all day.$4", //Pam
+    "57874005.07": "Oh, calm the farm, Pam. It's not like the saloon's going anywhere.", //Juliet
+    "57874005.08": "Don't make me talk to Morris.... I'm your best customer.$3", //Pam
+    "57874005.09": "Oh... whatever.", //Juliet
+    "57874005.10": "Kids these days... no respect.", //Pam (to farmer)(textAboveHead, so ^ not possible)
+    "57874005.11": "Sorry 'bout that, cowgirl. That'll be 300g.", //Juliet
+    "57874005.12": "Thanks.", //Rosa
+    "57874005.13": "Wait!", // Juliet
+    "57874005.14": "And don't forget to save me a slice. Maple bars are my favorite.$1", //Juliet
+    "57874005.15": "(I know.)", //Rosa
+    //Rosa and Juliet watch a movie together (both female)
+    "57874006.01": "That was great!",
+    "57874006.02": "Best movie ever!",
+    "57874006.03": "Ugh.",
+    "57874006.04": "What's wrong cowgirl? You look like you've seen a ghost.$1",
+    "57874006.05": "I'm fine.",
+    "57874006.06": "Thanks for inviting me to the movies, Jules. It was... an experience.$2",
+    "57874006.07": "Rosa...",
+    "57874006.08": "You hated it, didn't you.$2",
+    "57874006.09": "I'm just not a fan of horror movies... is all.$2",
+    "57874006.10": "But you love Spirit's Eve and all that kooky spooky stuff!$5#$b#Don't you?$2",
+    "57874006.11": "Yeh... I love Spirit's Eve, with its plastic skeletons and tacky decorations, and pumpkin spice everything... but not...$4",
+    "57874006.12": "...I don't like being scared. I'm sorry.$2",
+    "57874006.13": "Oh...",
+    "57874006.14": "I... I think I'd like to go home now.$2#$b#Home to my empty old inn... with its creaking walls and strange scratching noises...$4",
+    "57874006.15": "Wait!",
+    "57874006.16": "... I'm sorry. I should've checked with you before dragging you into a stupidly creepy movie.$2",
+    "57874006.17": "Hey, it's not your fault. I could've told you. I guess I just didn't want you to think I was a scaredy-cat who'd jump at shadows.$2",
+    "57874006.18": "Plus I really wanted to hang out with you. I think you're pretty swell.$5",
+    "57874006.19": "Hey Rosa?$1",
+    "57874006.20": "Instead of going back to that creepy inn... how about you come back to the lodging house with me?#$b#It's old, and the floorboards creak - but there's hot choc in the pantry, and we could watch some total-fluff movie or something.#$b#Sound good?",
+    "57874006.21": "Sounds great.$1",
+    //Rosa heart events
+    //all dialogue Rosa
+    "57874001.01": "Oh, howdy @! How's things?",
+    "57874001.02": "Hey, I've been doing a bit of... err .... cooking.#$b#I've been thinking of my family, and thought I'd try out my Nonna's secret spanakopita recipe.",
+    "57874001.03": "Yeh, I know... it didn't come our right. Nonna lives in Fort Josa, and I can't get all the ingredients here. So I've sorta .... substituted.#$b#Ugh, look at this mess... she'd be so disappointed.$2",
+    "57874001.04": "That's the most disgusting thing I've ever seen!",
+    "57874001.05": "I'm sure it'll taste fine!",
+    "57874001.06": "I get that. I feel like I can't live up to my Grandfather too.",
+    "57874001.07": "Ouch!",
+    "57874001.08": "Talk about not protecting my ego. Luckily I'm thick-skinned.#$b#It really is gross, isn't it?$1",
+    "57874001.09": "Hah, thanks for the ego boost, but seriously, I can see how terrible this looks... and smells.$1#$b#Really not fit for human consumption.$2",
+    "57874001.10": "I hadn't thought about it that way... but yeah, you're right.",
+    "57874001.11": "Gran'd cook it for us every Sunday, and the whole family would sit around the table and laugh.#$b#That was, you know, before... $2",
+    "57874001.12": "Oh, the fights and the divorce and stuff. It's fine now. Really.#$b#I was just hoping to capture a bit of the memory though, y'know?",
+    "57874001.13": "And look at it! I don't think even the ducks would eat this.$2",
+    "57874001.14": "Not that I'd try it, mind you. Wouldn't want to face Eloise's wrath!$1",
+    "57874001.15": "You're right, it's foolish to try and impress people that are gone. Sometimes you've just gotta figure out how to be yourself.$1",
+    "57874001.16": "Thanks for stopping by today, @. Tomorrow's baking will be edible, promise!",
+    //all dialolgue Rosa unless specified otherwise
+    "57874003.01": "Careful! I've just waxed those floors. I hope you haven't dragged any mud in!$3", //Rosa to farmer
+    "57874003.02": "Oh, sorry... I'm just a bit tense...$2", //Rosa to farmer
+    "57874003.03": "This weather... we had terrible storms in Fort Josa. And hurricanes...$2", //Rosa to farmer
+    "57874003.04": "Oh! It's you.", //Rosa talking to Jacob
+    "57874003.05": "Sorry, about the mud. It's really pouring out there.$2#$b#I'm just dropping by to pick up something for dinner.$1", //Jacob
+    "57874003.06": "Oh, yes, of course! I'll just go and get it.$1#$b#Come in, make yourself at home. Oh, but please wipe your feet!", //Rosa talking to Jacob
+    "57874003.07": "Of course!", //Jacob
+    "57874003.08": "Rosa's so good to us... I'm so busy with the animals, I hardly have time to cook.$3#$b#I've probably come to rely on her too much...$2", //Jacob
+    "57874003.09": "Here you go!", //Rosa talking to Jacob
+    "57874003.10": "Thank you so much. I really do appreciate it.", //Jacob
+    "57874003.11": "Take care, @.", //Jacob
+    "57874003.12": "I appreciate it too. I'm pleased someone enjoys my cooking.$1", //Rosa to farmer
+    //all dialogue Rosa talking to farmer
+    "57874004.01": "Howdy",
+    "57874004.02": "Hey, sorry I'm covered in cobwebs. I've just been up in the attic. Lewis has me looking for something. Some sort of old trophy.#$b#Apparently once upon a time the farmers around here used to compete to see who was the 'best'. Whatever that means! Crazy, right?$1",
+    "57874004.03": "Hey, you want to come up and take a look?$1",
+    "57874004.04": "Sweet.",
+    "57874004.05": "Just head up the stairs there!",
+    "57874004.06": "Mind your head!",
+    "57874004.07": "Sorry...Oof! That's gotta hurt...$2",
+    "57874004.08": "*cough cough*",
+    "57874004.09": "Sorry about the dust. You have no idea how hard it is to keep a place like this clean.",
+    "57874004.10": "Wanna go through a couple of boxes?",
+    "57874004.11": "Okay, you take the one by the door. I'll get this one here. I guess we're looking for something shiny.",
+    "57874004.12": "Well, this one's just full of old junk. Any luck with yours?",
+    "57874004.13": "You've found a dusty old journal!",
+    "57874004.14": "Hmmm... There's a name on it. Lily-Anne Cheridan... Cheridan... Why does that name sound familiar?$2",
+    "57874004.15": "Oh, I know! Cheridan - Cherry. Cherry Orchards! They brewed artisan liquors, back oh, 50, 60 years ago.$1#$b#Then there was some sort of scandal... and the orchard was abandoned.$2",
+    "57874004.16": "Maybe this'll hold some sort of clue as to what happened!#$b#I'll let you know if I find anything interesting!$1",
+    //Rosa babysitting Eloise
+    "57874002.01": "Howdy @! Whew, busy day, right?", //Rosa to farmer
+    "57874002.02": "Oh yeah, Jacob got a call-out early this morning...", //Rosa to farmer
+    "57874002.03": "Something about a cow stuck in a ditch.", //Rosa to farmer
+    "57874002.04": "I offered to come out and help him move her.", //Rosa to farmer
+    "57874002.05": "But he needed someone to keep an eye on Eloise.", //Rosa to farmer
+    "57874002.06": "She's a good kid, for all the questions. Reminds me of myself at her age!", //Rosa to farmer
+    "57874002.07": "Although I can't say I'm so fond of birds.$1", //Rosa to farmer
+    "57874002.08": "Anyway, this is almost done, so... shall we stop for a snack, Eloise?$1", //Rosa to Eloise (who has wandered off)
+    "57874002.09": "Eloise?",
+    "57874002.10": "ELOISE?!",
+    "57874002.11": "Where'd she go? She was right there... reading!$2", //Rosa to farmer
+    "57874002.12": "We've gotta find her!", //Rosa to farmer
+    "57874002.13": "Oh Yoba, what if the pelicans ate her!$2", //Rosa to farmer
+    "57874002.14": "Rosa? Rosa!$2", //Eloise
+    "57874002.15": "Ellie! I'm coming!", //Rosa to Eloise
+    "57874002.16": "Eloise!",
+    "57874002.17": "Why'd you run off like that Ellie? I was so worried!$2", //Rosa to Eloise
+    "57874002.18": "I thought I saw an ivory woodpecker... they're really really really rare.... but it was just a pileated...$2", //Eloise to Rosa
+    "57874002.19": "I'm sorry", //Eloise
+    "57874002.20": "It's okay, chickadee. But please... just don't do it again.$2", //Rosa to Eloise
+    "57874002.21": "I didn't mean to scare you Miss Rosa...$2#$b#You won't tell Dad, will you?$2", //Eloise
+    "57874002.22": "We'll see.$3", //Rosa to Eloise
+    "57874002.23": "Come on, let's go back to the inn and have some lemonade. I think we've had quite enough adventures today!$1", //Rosa to Eloise
+    "57874002.24": "Okay!", //Eloise
+    "57874002.25": "What is this place?$2", //Rosa to self
+    //Rosa and Gus chat in the saloon
+    "57874007.01": "Oh Gus, you would've wept if you'd seen it! The pastry was soggy, and the texture... ugh... so coarse.$2#$b#I couldn't have fed it to a pig, let alone a guest.$3", //Rosa
+    "57874007.02": "I thought kale would prove a decent alternative for spinach, but I was very wrong.$2", //Rosa
+    "57874007.03": "Oh, but you can! You've just got to understand kale's temperament! It's more robust than spinach.$1#$b#You have to saute in oil first, give it a chance to wilt.", //Gus
+    "57874007.04": "Why the sudden interest in cooking, Rosa? Looking to impress someone?$1", //Gus
+    "57874007.05": "Hello", //Gus
+    "57874007.06": "What impeccable timing! We were just thinking about you!$1", //Gus
+    "57874007.07": "We were?", //Rosa
+    "57874007.08": "Do you want to know the real secret to making delicious food?", //Gus
+    "57874007.09": "You need to start with quality ingredients, and fresh produce is always best.$1#$b#Perhaps @ could supply you with some?", //Gus
+    "57874007.10": "Oh no! I couldn't possibly ask for something so valuable!$2", //Rosa
+    "57874007.11": "You'd prefer to sell your produce right? Profit from it, rather than have it used in a failed cooking experiment?", //Rosa
+    "57874007.12": "I'm afraid I would. It's my livelihood, after all.", //farmer
+    "57874007.13": "I'd love to share some ingredients with you.", //farmer
+    "57874007.14": "Sorry Gus. Guess I'll just have to fumble along with Joja produce, until I get the knack of it.", //Rosa
+    "57874007.15": "You would!", //Rosa
+    "57874007.16": "Thank you, @. That's very generous.$5#$b#I'll send you a list of what I need.", //Rosa
+    "57874007.17": "And maybe I could help out in the kitchen? Wash the dishes and watch the master chef at work?$1", //Rosa
+    "57874007.18": "Hah, of course! It'd be my pleasure.$1", //Gus
+    "57874007.19": "Thanks Gus. That'd be wicked.", //Rosa
+    "57874007.20": "Hey @, one day I'll cook you dinner - give you a taste of Josa. And that's a promise!$1", //Rosa to farmer
+    //Rosa talks to Gunther about the journal the two of you found.
+    "57874008.01": "It's well before my time, sorry Miss Rosa, but you're welcome to dig through the archives.#$b#Otherwise might I recommend you speak with Mr. Mullner?", //Gunther
+    "57874008.02": "I'll try that. Thanks for your time, Professor Gunther.$1", //Rosa
+    "57874008.03": "Always a pleasure, Miss Rosa. And, once you're finished with that journal, would you consider donating it to the museum?#$b#A piece of history like that? I'd love to add it to the collection.", //Gunther
+    "57874008.04": "Of course!", //Rosa
+    "57874008.05": "See you again soon, Professor Gunther!", //Rosa
+    "57874008.06": "Woah @! You startled me!", //Rosa to farmer
+    "57874008.07": "Regardless, I'm glad I ran into you. Remember that journal we found?",
+    "57874008.08": "Sorry - YOU found! Well, I read it. Most of it anyway.#$b#Poor Lily-Anne, she was only sixteen when her parents died... and she was sent here, to live with her ailing grand-", //Rosa to farmer
+    "57874008.09": "Anyway, we should probably take this outside, rather than chat in the doorway.", //Rosa to farmer
+    //This is two versions of the same event
+    "ESOrchard_part2.01": "East Scarp was a mining town in those days, full of people - and she's written about all of them. Mr. Mullner included!$1#$b#There's illustrations too. Although she's not the best artist.",
+    "ESOrchard_part2.02": "Life was pretty rough, and by her accounts, it seems her grandfather was probably in the stages of advanced dementia.$2",
+    "ESOrchard_part2.03": "Yet, she writes with humor, insight, and a touch of melancholy.",
+    "ESOrchard_part2.04": "It's crazy, but I think I might be a little bit in love with her.$5",
+    "ESOrchard_part2.05": "The last fifty pages or so... they're just sort of melted away. Whatever was written on them is impossible to read.$2",
+    "ESOrchard_part2.06": "I wonder what happened to her?",
+    "ESOrchard_part2.07": "I'm sure she left town and lived her best life.", //farmer
+    "ESOrchard_part2.08": "She was probably dissolved by slimes.", //farmer
+    "ESOrchard_part2.09": "That's what I'd like to think too.$1",
+    "ESOrchard_part2.10": "Ugh, please, don't make me think of that, @.$2",
+    "ESOrchard_part2.11": "There's only one way to find out, I guess... we have to investigate the old orchard house.#$b#Are you up for a bit of detective work, @?",
+    "ESOrchard_part2.12": "Sweet. I'll meet you at the orchard tomorrow around noon. Wear sturdy shoes!",
+    "ESOrchard_part2.13": "Now, I'd better go and talk to Mr Mullner.",
+    //This one involves Rosa and Juliet
+    "57874008.juliet.ESOrchard_part2.01": "East Scarp was a mining town then, full of people - and she's written about all of them. Mr. Mullner included!$1#$b#There's illustrations too. Although she's not the best artist.", //Rosa to farmer
+    "57874008.juliet.ESOrchard_part2.02": "Life was pretty rough back then, and by all accounts, it seems her grandfather was probably in the stages of advanced dementia.$2", //Rosa to farmer
+    "57874008.juliet.ESOrchard_part2.03": "Yet, she writes with humor, insight, and a touch of melancholy.", //Rosa to farmer
+    "57874008.juliet.ESOrchard_part2.04": "It's crazy, but I think I might be a little bit in love with her.$2#$b#Don't tell Jules... she'd never let me live it down.$5", //Rosa to farmer
+    "57874008.juliet.ESOrchard_part2.05": "Don't tell Jules what?", //Juliet
+    "57874008.juliet.ESOrchard_part2.06": "Hey cowgirl!", //Juliet to Rosa
+    "57874008.juliet.ESOrchard_part2.07": "Howdy shop girl.", //Rosa to Juliet
+    "57874008.juliet.ESOrchard_part2.08": "What are you doing down here? Dodging work?$1", //Rosa
+    "57874008.juliet.ESOrchard_part2.09": "Hah, like you can talk - skiving off your duties! With farmer no less. Hi @.#$b#I'm actually on break, but you're welcome to think the worst of me.$1", //Juliet
+    "57874008.juliet.ESOrchard_part2.10": "We were cleaning out the old attic, and @ found a journal... it belonged to a girl named Lily-Anne...", //Rosa
+    "57874008.juliet.ESOrchard_part2.11": "...and the last fifty pages or so... the paper is just sort of... melted away. Whatever was written on them is impossible to read.$2", //Rosa
+    "57874008.juliet.ESOrchard_part2.12": "Wicked!", //Juliet
+    "57874008.juliet.ESOrchard_part2.13": "So, cowgirl - are you proposing we go on a ghost hunt? Cos there's definitely something very freaky about that old cottage.$1",
+    "57874008.juliet.ESOrchard_part2.14": "Actually, it's more like research-", //Rosa
+    "57874008.juliet.ESOrchard_part2.15": "Hah, researching? That journals what, fifty, sixty years old? And something melted it?#$b#Say it like it is, cowgirl - it's a ghost hunt.", //Juliet
+    "57874008.juliet.ESOrchard_part2.16": "You agree with me, right, @? She's defo dead?#$b#That orchard is way too creepy and abandoned to not be haunted by some teenage girl's ghost.", //Juliet
+    "57874008.juliet.ESOrchard_part2.17": "Yep, pretty sure she must be dead.", //farmer
+    "57874008.juliet.ESOrchard_part2.18": "Seventy isn't that old.", //farmer
+    "57874008.juliet.ESOrchard_part2.19": "A creepy orchard doesn't prove anything.", //farmer
+    "57874008.juliet.ESOrchard_part2.20": "Sorry cowgirl, looks like me and @ are in agreement.", //Juliet
+    "57874008.juliet.ESOrchard_part2.21": "It's practically prehistoric! But sure, believe what you want.$a", //Juliet
+    "57874008.juliet.ESOrchard_part2.22": "Proves something bad happened there. And her journal dissolved - that's what we call a 'clue'.", //Juliet
+    "57874008.juliet.ESOrchard_part2.23": "Anyhow, it's agreed! Ghost hunt it is.$1#$b#I'll meet you at the orchard, tomorrow after 6? Sound good?", //Juliet
+    "57874008.juliet.ESOrchard_part2.24": "Actually, wouldn't it be better to go during the day? We have to cross that river.$2", //Rosa
+    "57874008.juliet.ESOrchard_part2.25": "Can't have a ghost hunt during the day! 'Sides the bossman'd skin me alive if I skived off unannounced.$1", //Juliet
+    "57874008.juliet.ESOrchard_part2.26": "Wait, you're not scared, are you cowgirl?$2#$b#'Cos we can go during the day if you prefer?", //Juliet
+    "57874008.juliet.ESOrchard_part2.27": "No. I'm not scared. After dark is fine. Unless @ objects?$2", //Rosa
+    "57874008.juliet.ESOrchard_part2.28": "Night-time is fine.", //farmer
+    "57874008.juliet.ESOrchard_part2.29": "Daylight sounds better.", //farmer
+    "57874008.juliet.ESOrchard_part2.30": "Tomorrow night it is!", //Juliet
+    "57874008.juliet.ESOrchard_part2.31": "Okay, fine. I'll call in sick tomorrow.", //Juliet
+    "57874008.juliet.ESOrchard_part2.32": "And don't worry, cowgirl. If shit gets weird, I'll hold your hand.#$b#And you'll protect us, right @? I hear you're good with a sword.$1", //Juliet
+    //This is four versions of the same event
+    //Rosa, Juliet, Void and Lavril
+    "57874009.LavrilJuliet.01": "@! You made it. Rosa and me were just planning our investigation.#$b#You know there's a very special kid living here, right?", //Juliet
+    "57874009.LavrilJuliet.02": "Oh yeah, of course you do! Sorry... My memory's all a bit hazy about that night.", //Juliet
+    "57874009.LavrilJuliet.03": "I told you about Lavril, didn't I?$2", //Juliet
+    "57874009.LavrilJuliet.04": "Anyhoo, would be rude to barge right in to someone's house, so I figured we should wait for you @.#$b#Since you know Lavril better than the rest of us.", //Juliet
+    "57874009.LavrilJuliet.05": "Who's there? Uh, I mean-- What's the password?", //Void
+    "57874009.LavrilJuliet.06": "...Void is great and mighty.", //farmer
+    "57874009.LavrilJuliet.07": "I brought cookies!", //farmer
+    "57874009.LavrilJuliet.08": "Open Sesame?", //far,er
+    "57874009.LavrilJuliet.09": "Hehe! I knew it was you, human!#$b#I am indeed great and mighty! I'm also very handsome!", //Void
+    "57874009.LavrilJuliet.10": "R-Really? You better not be lying to me!#$b#Otherwise I will be very disappointed!", //Void
+    "57874009.LavrilJuliet.11": "(Oooh, that's a good one. I need to share that with Vincent.)#$b#Ahem! You guessed correctly. You may come in, but only if you brought a gift!$h", //Void
+    "57874009.LavrilJuliet.12": "Course I did!", //Juliet
+    "57874009.LavrilJuliet.13": "So yeh, we brought you something. It's not much but...", //Juliet
+    "57874009.LavrilJuliet.14": "Rosa made it.", //Juliet
+    "57874009.LavrilJuliet.15": "You made this for me?$16", //Lavril
+    "57874009.LavrilJuliet.16": "Thank you!$19", //Lavril
+    "57874009.LavrilJuliet.17": "We've come here looking for someone, Lavril.", //Rosa
+    "57874009.LavrilJuliet.18": "You have?", //Lavril
+    "57874009.LavrilJuliet.19": "Her name was Lily-Anne. We think she might be a ... ghost.", //Rosa
+    "57874009.LavrilJuliet.20": "Another ghost?$7#$b#Hmm... I don't think so. Void and @ scared all the bad ones away.$4", //Lavril
+    "57874009.LavrilJuliet.21": "Huh? What was that?", //Lavril
+    "57874009.LavrilJuliet.22": "Thank you!$h", //Lavril
+    "57874009.LavrilJuliet.23": "Our friend says that person lived here once... A very long time ago.#$b#She's not here anymore... But she left some of her sadness behind.$2", //Lavril
+    "57874009.LavrilJuliet.24": "See, I knew she wasn't dead!$1", //Rosa
+    "57874009.LavrilJuliet.25": "Now, let's not be too hasty there!", //Julist
+    "57874009.LavrilJuliet.26": "May we have a look around? Please? We're trying to find out what happened to her.", //Rosa
+    "57874009.LavrilJuliet.27": "Lavril has agreed that you may. Now if you'll excuse us. We've important, top secret business to attend to.", //Void
+    "57874009.LavrilJuliet.28": "I hope you find what you're looking for!$5", //Lavril
+    "57874009.LavrilJuliet.29": "She's a sweet kid. Now, we need to look for clues. Juliet could you pick up all these pieces of paper?#$b#@, take a look at the book on the floor over there. I'll take a look at this arcane-", //Rosa
+    "57874009.LavrilJuliet.30": "It's back!", //Rosa
+    "57874009.LavrilJuliet.31": "The bookcase!", //Julist
+    "57874009.LavrilJuliet.32": "There's something under here! Come on, help me move it!", //Juliet
+    "57874009.LavrilJuliet.33": "Ooof, this is heavy!$2", //Rosa
+    "57874009.LavrilJuliet.34": "I can feel it slipping!$2", //Juliet
+    "57874009.LavrilJuliet.35": "A trapdoor!", //Rosa
+    "57874009.LavrilJuliet.36": "Oooh, I bet it leads to hidden treasure!$1#$b#You should open it @, in case something horrible jumps out!$1", //Rosa
+    "57874009.LavrilJuliet.37": "Oh... it's rusted shut?", //Rosa
+    "57874009.LavrilJuliet.38": "I guess we'd better come back with some oil.$2", //Rosa
+    //Rosa, Lavril, Void and farmer (no Juliet)
+    "57874009.Lavril.01": "@! I'm so glad you made it.#$b#A friend of yours lives here, right? Lavril?", //Rosa
+    "57874009.Lavril.02": "That's one reason I waited for you.", //Rosa
+    "57874009.Lavril.03": "Okay, yeah, the other reason's that I'm just a little bit nervous... even though it's daylight and...$2", //Rosa
+    "57874009.Lavril.04": "I think I'd like to go inside now, please. Unless there's more of those things in there?", //Rosa
+    "57874009.Lavril.05": "Who's there? Uh, I mean-- What's the password?", //Void
+    "57874009.Lavril.06": "...Void is great and mighty.", //farmer
+    "57874009.Lavril.07": "I brought cookies!", //farmer
+    "57874009.Lavril.08": "Open Sesame?", //farmer
+    "57874009.Lavril.09": "Hehe! I knew it was you, human!#$b#I am indeed great and mighty! I'm also very handsome!", //Void
+    "57874009.Lavril.10": "R-Really? You better not be lying to me!#$b#Otherwise I will be very disappointed!", //Void
+    "57874009.Lavril.11": "(Oooh, that's a good one. I need to share that with Vincent.)#$b#Ahem! You guessed correctly. You may come in, but only if you brought a gift!$h",
+    "57874009.Lavril.12": "I did!", //Rosa
+    "57874009.Lavril.13": "You mentioned a gift?", //Void
+    "57874009.Lavril.14": "I baked them this morning. I hope you like them. They're chocolate chip.$1", //Rosa
+    "57874009.Lavril.15": "You made these for me?$16", //Lavril
+    "57874009.Lavril.16": "Thank you!$19", //Lavril
+    "57874009.Lavril.17": "We've come here looking for someone, Lavril.", //Rosa
+    "57874009.Lavril.18": "You have?", //Lavril
+    "57874009.Lavril.19": "Her name was Lily-Anne. I'm worried she might be a ... ghost.$2", //Rosa
+    "57874009.Lavril.20": "Another ghost?$7#$b#Hmm... I don't think so. Void and @ scared all the bad ones away.$4", //Lavril
+    "57874009.Lavril.21": "Huh? What was that?", //Lavril
+    "57874009.Lavril.22": "Thank you!$h", //Lavril
+    "57874009.Lavril.23": "Our friend says that person lived here once... A very long time ago.#$b#She's not here anymore... But she left some of her sadness behind.$2",
+    "57874009.Lavril.24": "I knew she wasn't dead!$1", //Rosa
+    "57874009.Lavril.25": "May we have a look around? Please? We're trying to find out what happened to her.", //Rosa
+    "57874009.Lavril.26": "Lavril has agreed that you may. Now if you'll excuse us. We've important, top-secret business to attend to.", //Void
+    "57874009.Lavril.27": "I hope you find what you're looking for!$5", //Lavril
+    "57874009.Lavril.28": "Me too.", //Rosa
+    "57874009.Lavril.29": "She's a sweet kid. Now, we need to look for clues. @ would you mind picking up all these pieces of paper?#$b#I'll take a look at these books.", //Rosa
+    "57874009.Lavril.30": "It's back!", //Rosa
+    "57874009.Lavril.31": "The bookcase!", //Rosa
+    "57874009.Lavril.32": "There's something under here! Come on, help me move it!", //Rosa
+    "57874009.Lavril.33": "Ooof, this is heavy!$2#$b#I can feel it slipping!$2", //Rosa
+    "57874009.Lavril.34": "A trapdoor!", //Rosa
+    "57874009.Lavril.35": "Maybe it leads to a secret passage.$1#$b#Can you open it, please, @?$1", //Rosa
+    "57874009.Lavril.36": "Oh... it's rusted shut?", //Rosa
+    "57874009.Lavril.37": "I guess we'd better come back with some oil.$2", //Rosa
+    //Rosa, Juliet and Farmer (no Lavril/Void) the 'it' is a junimo that shows them the clue
+    "57874009.Juliet.01": "@! You made it. Rosa and me were just planning our ghost hunt.", //Juliet
+    "57874009.Juliet.02": "Investigation!", //Rosa
+    "57874009.Juliet.03": "We've both got very different ideas on what to call it.", //Juliet
+    "57874009.Juliet.04": "Anyhoo, you ready, farmer? Got your sword?#$b#We've got our running shoes on - and I reckon I could outrun Cowgirl if spook came to shove.$1", //Juliet
+    "57874009.Juliet.05": "Hey!", //Rosa
+    "57874009.Juliet.06": "No one home? Okay, after you, brave warrior!", //Juliet
+    "57874009.Juliet.07": "You still okay with this Cowgirl?$2", //Juliet
+    "57874009.Juliet.08": "Boo!", //Juliet
+    "57874009.Juliet.09": "Now this is interesting.", //Juliet
+    "57874009.Juliet.10": "Did you hear that?$2", //Rosa
+    "57874009.Juliet.11": "Hear what?", //Juliet
+    "57874009.Juliet.12": "You guys are really jumpy tonight! Must be the spooky vibes.$1", //Juliet
+    "57874009.Juliet.13": "You can hear them too, can't you @? Like mice... only not.$2", //Rosa
+    "57874009.Juliet.14": "Hear what? What's going on?$2", //Juliet
+    "57874009.Juliet.15": "Are you guys messing me with me?$a", //Juliet
+    "57874009.Juliet.16": "Quiet!", //Rosa
+    "57874009.Juliet.17": "You'll scare it.", //Rosa
+    "57874009.Juliet.18": "Scare what?$a", //Juliet
+    "57874009.Juliet.19": "It's trying to tell us something. Hello little fella.#$b#You're awfully cute, aren't you? Don't be afraid...$2", //Rosa
+    "57874009.Juliet.20": "No...", //Rosa
+    "57874009.Juliet.21": "Please don't run away... we won't hurt you!$2", //Rosa
+    "57874009.Juliet.22": "It was trying to show us! There's something under this bookcase!$1#$b#Come on, help me move it!",
+    "57874009.Juliet.23": "Ooof, this is heavy!$2", //Rosa
+    "57874009.Juliet.24": "I can feel it slipping!$2", //Juliet
+    "57874009.Juliet.25": "A trapdoor!", //Rosa
+    "57874009.Juliet.26": "Oooh, I bet it leads to hidden treasure!$1#$b#You should open it @, in case something horrible jumps out!$1", //Juliet
+    "57874009.Juliet.27": "Oh... it's rusted shut?", //Rosa
+    "57874009.Juliet.28": "I guess we'd better come back with some oil.$2#$b#And maybe a gift for our little friend.", //Rosa
+    // Rosa and Farmer (all dialogue Rosa)
+    "57874009.01": "@! I'm so glad you made it. My temporary bridge worked okay?",
+    "57874009.02": "Okay, yeah, I'm just a little bit nervous... even though it's daylight and...$2",
+    "57874009.03": "I think I'd like to go inside now, please. Unless there's more of those things in there?",
+    "57874009.04": "No one home? I guess its safe to go in?$2",
+    "57874009.05": "Yes, I want to do this... it's just an old, empty house, that's all.$2",
+    "57874009.06": "This is interesting.",
+    "57874009.07": "Did you hear that?$2",
+    "57874009.08": "You can hear them too, can't you @? Like mice... only not.$2",
+    "57874009.09": "Quiet!",
+    "57874009.10": "You'll scare it.",
+    "57874009.11": "It's trying to tell us something. Hello little fella.#$b#You're awfully cute, aren't you? Don't be afraid...$2",
+    "57874009.12": "No...",
+    "57874009.13": "Please don't run away... we won't hurt you!$2",
+    "57874009.14": "It was trying to show us! There's something under this bookcase!$1#$b#Come on, help me move it!",
+    "57874009.15": "Ooof, this is heavy!$2",
+    "57874009.16": "I can feel it slipping!$2",
+    "57874009.17": "A trapdoor!",
+    "57874009.18": "Maybe it leads to a secret passage.$1#$b#Can you open it, please, @?$1",
+    "57874009.19": "Oh... it's rusted shut?",
+    "57874009.20": "I guess we'd better come back with some oil.$2#$b#And maybe a gift for our little friend.",
+    //An almost no dialogue at all event
+    "57874010.01": "Sounds like something's down there, better come back with a sword, tomorrow.", //message to farmer
+    //Returning to tell Rosa what you have found (and showing her the ruby ring)
+    "57874012.01": "Howdy",
+    "57874012.02": "You opened the trapdoor without me! Are you alright?",
+    "57874012.03": "That's a relief.",
+    "57874012.04": "Did you Find anything interesting?$1",
+    "57874012.05": "Lily-Anne wrote about a ruby ring. Her mother's engagement ring.#$b#This must be it.$2",
+    "57874012.06": "What else did you find,",
+    "57874012.07": "A cave filled with slimes and signs of a struggle.",
+    "57874012.08": "Letters mentioning a place called Point Drake and a man named Clement.",
+    "57874012.09": "Point Drake... that's a peninsula. There's a seaport with connections to the Gem Isles.",
+    "57874012.10": "She must've ended up with Clement then. He was her 'boy next door'. Handsome enough, if not the sharpest tool in the shed.",
+    "57874012.11": "Sorry, you should've read what she wrote about him. Everything is absolutely dramatic when you're a teenager in 'love'.$1#$b#Personally, I was hoping she'd have chosen Vin - he was more the strong, quiet type.#$b#Although I'd rather she settled for neither.$2",
+    "57874012.12": "Thank you, @. Now I can imagine her and handsome Clem. Both of them old and grey, side by side on a bench overlooking the ocean.#$b#Oh, I know that's foolish - and they're real people, not characters in a book.#$b#But still... I want a happy ending for them. Is that too weird?$5",
+    "57874012.Lily-Anne_Dead.01": "That's it then... she's dead. I guess I always knew she was.#$b#Even if she'd survived, she'd be in her seventies now.$2",
+    "57874012.Lily-Anne_Dead.02": "I know it was foolish of me to want to be friends with someone I'd never met.$2#$b#Someone I didn't have much in common with then, and definitely wouldn't now.#$b#If she were alive, not dissolved by slimes...$2",
+    "57874012.Lily-Anne_Dead.03": "... It's best to remember her as a watchful young woman, with a wicked sense of humor.#$b#Heh, remind you of anyone?$5",
+    "57874012.57874012_Finale.01": "Here, you should hang onto this. I'll donate the journal tomorrow.",
+    "57874012.57874012_Finale.02": "Rosa passes the Ruby Ring back to you.",
+    "57874012.57874012_Finale.03": "Wait... something feels a bit fishy...#$b#I'd like to visit this cave, @.",
+    "57874012.57874012_Finale.04": "You've cleaned out the slimes, right?$2",
+    ////////////////////////////////////////
+    ///////////////////////////////////////
+    /* C O N V E R S A T I O N   T O P I C S
+    (discussing the missing woman mentioned earlier name at end is the NPC who speaks the dialogue)*/
+    "LilyAnneDiscuss_George": "Lily-Anne Cheridan... now there's a name I haven't heard in years! Do I remember her?#$b#Course I do. Ain't nothing wrong with my memory!$a#$b#She was an odd one, always scribbling away in a notebook or what-not.#$b#Many of the lads had their eye on her. Not me, of course, even then, the only one for me was my Evelyn.$1#$b#Not sure what happened. Figure she must've left when the old man died. Folks were always coming and going.",
+    "LilyAnneDiscuss_Evelyn": "Lily-Anne? I always felt sorry for her. She seemed lost and out of place here. She hardly spoke to anyone.$2#$b#If I remember, she was pretty close to one of the muckers: a tall, broad fellow with pale hair. There was something odd about him; he was foreign.$1#$b#Anyhow, after Mr. Cheridan died, we all just assumed she returned to the city. Was no life for a lass like her here.",
+    "LilyAnneDiscuss_Eyvinder1": "Lily-Anne? I tried to keep an eye on her... but it was hard, me being in the mines most days, and her old grandfather being what he was.$a#$b#No-one saw her leave, but there were other ways out than that bridge. I hope she took one of them.$2",
+    "LilyAnneDiscuss_Eyvinder2": "Lily-Anne? Yes, I knew her. We were friends: nothing more, nothing less.$2#$b#I'll tell you about her sometime, but know everything ain't as it seems.",
+    "LilyAnneDiscuss_Jasper": "I'm afraid I cannot tell you anything about Miss Lily-Anne, but when the mines were opened, there was considerably evidence that smugglers had made use of the natural caves in the area.#$b#It is not impossible that her ancestors were involved in such activities; and entirely possible to leave the valley without setting foot above ground.",
+    "LilyAnneDiscuss_Beatrice": "I know naught about this Lily-Anne, mon cher!$1^I know naught about this Lily-Anne, ma chérie!#$b#But my Raoul, he always said that this coastline was a smugglers' haven, with its many coves an' natural caves.#$b#He always was fond of tales: of pirates and smugglers and ne'er-do-wells. Oh, I do miss him, rest his soul.$2",
+    "LilyAnneDiscuss_Jacob": "Doing a bit of research on the history around here? I grew up in Chestervale, but I can write to my mother, if you like?$3#$b#She used to live around here; she'll probably know more.",
+    // CUSTOM COMPANION INSPECTION DIALOGUE
+    "Munchboi.01": "The Baron does not look impressed.",
+    "Munchboi.02": "",
+    "Munchboi.03": "",
+    "Munchboi.04": "",
+    "Munchboi.05": "",
+    "Munchboi.06": "",
+    "Munchboi.07": "",
+    "Munchboi.08": "",
+    "Munchboi.09": "",
+    "Munchboi.10": "",
 }

@@ -1,7 +1,7 @@
 {
     //Location Names for Event LookUp
     //*******************************
-    "EastScarp.Locations.EastScarp": "东斯卡普村",
+    "EastScarp.Locations.EastScarp": "东斯卡普",
     "EastScarp.Locations.Lighthouse": "灯塔",
     "EastScarp.Locations.Aideen": "艾登的家",
     "EastScarp.Locations.BirdHide": "爱洛伊斯的观鸟处",
@@ -16,16 +16,17 @@
     "EastScarp.Locations.Smuggler": "走私者棚屋",
     "EastScarp.Locations.SeaCave": "东斯卡普海边洞窟",
     "EastScarp.Locations.Inn": "斯卡普客栈",
+	"EastScarp.Locations.ARV":"库珀们的家",
     //Location Names For NPC Map Locations
     //************************************
-    "LocationName.EastScarp": "东斯卡普村",
+    "LocationName.EastScarp": "东斯卡普",
     "LocationName.Orchard": "果园",
     "LocationName.MeadowFarm": "草地农场",
     "LocationName.DeepMountains": "深山",
     //Locational Messages
     //*******************
     "Strings.GrampletonES.00": "格兰普顿原野 >",
-    "Strings.EastScarpe.00": "@ 鹈鹕镇中心^东斯卡普村 >",
+    "Strings.EastScarpe.00": "@ 鹈鹕镇中心^东斯卡普 >",
     "Strings.EastScarpe.1": "流动兽医，雅各布·特伦顿医生的住所。",
     "Strings.EastScarpe.2": "\"亲爱的德莱拉。尽管你早早逝去，但始终活在我们心里。\" 看起来被照料得很好。",
     "Strings.EastScarpe.3": "里面传来一股让人很不愉快的奇怪气味，像是暗影、烟雾和更黑暗的东西混合在一起的产物。你觉得还是不要再往里探索了。",
@@ -93,7 +94,7 @@
     "Strings.ESOrchard.4": "你能听到门后有什么东西的抓挠声，显然是比老鼠大得多的家伙。",
     "Strings.ESOrchard.6": "这玩意儿以前好像不在这里．．．不过看起来也很危险！",
     "Strings.ESOrchard.7": "禁 止 入 侵", //No Tresspassers with missing letters
-    "Strings.ESMountainSC.1": "@鹈鹕镇中心^东斯卡普村 >",
+    "Strings.ESMountainSC.1": "@鹈鹕镇中心^东斯卡普 >",
     "Strings.SeaCave.01": "里面飘出了甜甜的水果香气，让你想到了家的味道。",
     "Strings.SeaCave.03": "你闻到了一股苦苦的刺激性气味，眼眶不禁湿润了。",
     "Strings.SeaCave.04": "这个花瓶的做工看起来很精细，只是釉面有些开裂了。",
@@ -105,6 +106,7 @@
     "Strings.SeaCave.10": "这里是死路吗？",
     "Strings.SeaCave.13": "木板已经腐烂了，它肯定在这里放了好多年，好几十年也说不定。",
     "Strings.SeaCave.02": "破旧的洋娃娃用空洞的目光看着你。等等，有一个是动了一下吗？^噢，只是一只藏起来的螃蟹而已。真是吓人！",
+    "Strings.SeaCave.14": "强劲的水流让你无法离开",
     "Strings.DeepMountains.1": "^ 埃弗莫尔山。道路维修，暂时封闭。",
     "Strings.DeepMountains.2": "里面传来一股让人很不愉快的奇怪气味，像是暗影、烟雾和更黑暗的东西混合在一起的产物。你觉得还是不要再往里探索了。",
     "Strings.DeepMountains.3": "远离此地！^^静止入侵者进如。",
@@ -131,6 +133,7 @@
     "Strings.ESInn.18": "空荡荡的抽屉，里面只有客栈的优惠券。每个上面都有两个截然不同的签名。",
     "Strings.ESInn.19": "这些器皿似乎因为频繁使用而磨损了。",
     "Strings.ESInn.20": "电视机似乎很少有人使用，它的状况依旧良好。",
+    "Strings.ESInn.21":"仅限员工出入",//**New**
     "Strings.InnBath.01": "假叶子上有着凝结而成的水珠。",
     "Strings.InnBath.02": "淋浴处飘散着一股淡淡的松香。",
     "Strings.InnBath.03": "作为公共洗手间来说，这个水槽真是出乎意料的干净。",
@@ -157,5 +160,20 @@
     "Strings.HartResidence.18": "这里有超多电子游戏，斯黛拉在上面贴了一些标签。看起来她是把游戏当成了灵感来源。",
     "Strings.HartResidence.19": "很多教科书！",
     "Strings.InnOuter.01": "斯卡普客栈：全天二十四小时开放。^大厅招待时间：9:00 - 6:00",
-    "Strings.EastScarpVineyard.0": "看起来没人住在这里。"
+    "Strings.EastScarpVineyard.0": "看起来没人住在这里。",
+    //OrchardHouse and Underground Strings
+    "Strings.ESSmugglersDen.1":"终于，我能离开这里了！我准备搭乘一艘货船，前往芬恩群岛上一处繁忙的港口。我可以让一切重新开始...全新的名字，全新的人生。^^嗯...我的新名字该叫什么呢？我一直希望能有个异国情调风格的名字。露西尔？伊摩根？还是凯丽德温？噢，反正我最后总会打定主意的！^^而且，我也能再次见到我亲爱的克莱姆。",
+    "Strings.ESSmugglersDen.2":"我已经被困一段时间了，史莱姆正在寻找入侵的方式。要是我没法离开这里，请告诉克莱我爱--（剩下的页数消失了）",
+    "Strings.ESSmugglersDen.3":"“从孤独群岛前往芬恩群岛的指南”，德雷克角被标注了出来。",
+    "Strings.ESSmugglersDen.4":"从周围酸灼烧的痕迹和木头碎片来看，有人曾经把这里用作屏障。",
+    "Strings.OrchardHouse.letter1":"又是一个不眠之夜。爷爷变得十分焦躁，发出了恶魔般的嚎叫声，好像有虚空在追逐着他似的。^^然而今天早些时候，我们还在一起下棋，他的头脑清晰而冷静--甚至和我谈论起了戈特洛帝国的陶器和庄园里的发酵葡萄酒。^^我不明白。他到底是怎么了？为什么他一会儿拥有理性，一会儿又完全陷入了疯狂？",
+    "Strings.OrchardHouse.letter2":"亲爱的（名字被用力划去了）：^^我知道你对我的感情和我对你的并不相同...但我无法控制自己。我爱你。",
+    "Strings.OrchardHouse.letter3":"史莱姆瘟疫正在蔓延。我总能听见它们的声音。噗嗤...噗嗤...爷爷啊，你到底做了什么？",
+    "Strings.OrchardHouse.letter4":"今天一个男人来到了庄园，提出要拜访我的爷爷。他戴着宽边帽子和太阳眼镜，皮肤散发着不同寻常的颜色。说不定是灯光让我产生了错觉？^^我不喜欢他的样子，于是我让他转头去墓地看看。他似乎很不满意。看来爷爷欠他不少钱--很大一笔钱。他一定会回来讨要这笔债务的，我对此毫不怀疑。",
+    "Strings.OrchardHouse.Book5":"《葡萄栽培：导论》。书脊裂开了，似乎有人把它狠狠扔到了墙上。",
+    "Strings.OrchardHouse.Book6":"《业余者的驱魔指南》，其中几页被反复翻阅了很多遍。",
+    "Strings.OrchardHouse.letter7":"如果我是书里的女主角，一定会有一位英俊的王子解救我逃离这个诅咒。但我不是。我只是一个孤儿，身边只有一位发疯了的爷爷，还有一座满是怪物的樱桃园。^^天哪，我真是太矫情了！我才不是独自一人。我有维恩，还有亲爱的、可爱的克莱姆。如果我愿意让那个可怜的家伙拯救我的话，他一定会毫不犹豫的。^^谁知道呢，说不定我有朝一日真会这么做。 <",
+    "Strings.OrchardHouse.letter8":"昨晚有人闯了进来，洗劫了这座房子，显然是为了寻找爷爷的“宝藏”。我从窗户爬了出去，躲在了果园里。^我不敢回到房子里，直到黎明降临。我已经看不见那些入侵者了，但房子里被翻了个底朝天。我不觉得他们找到了想要的东西--我甚至不觉得“宝藏”真的存在。那些人从隧道溜走了，真希望史莱姆把他们全部吃掉。^维恩帮我把书架扶了起来。我一个人肯定搬不动。",
+    "Strings.OrchardHouse.letter9":"亲爱的莉莉安：^德雷克角这里很美。我找到了一份工作，是一名船上的搬运工。而且我还租下了一间小房子。虽然不算很大，但也能算得上是家。当然，如果你也在的话，这里就真是我的家了。希望能尽快见到你。^^你的克莱姆",
+    "Strings.OrchardHouse.Book10":"这是一本账簿，记录着葡萄酒的年份和价值。帐簿里有不少红色的负收入。"
 }

@@ -38,7 +38,7 @@
 					"Exclude": true
 				},
 				"Lance": {
-					"Exclude": true
+					"MarkerCropOffset": 0
 				},
 				"MarlonFay": {
 					"MarkerCropOffset": 1

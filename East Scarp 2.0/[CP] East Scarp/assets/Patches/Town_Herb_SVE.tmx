@@ -3044,22 +3044,22 @@
  <objectgroup id="2" name="Back">
   <object id="5" name="TileData" x="80" y="16" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_TownEast 2 20"/>
+    <property name="TouchAction" value="Warp Custom_Garden 4 28"/>
    </properties>
   </object>
   <object id="6" name="TileData" x="80" y="32" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_TownEast 2 20"/>
+    <property name="TouchAction" value="Warp Custom_Garden 4 28"/>
    </properties>
   </object>
   <object id="7" name="TileData" x="80" y="48" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_TownEast 2 20"/>
+    <property name="TouchAction" value="Warp Custom_Garden 4 28"/>
    </properties>
   </object>
   <object id="8" name="TileData" x="80" y="64" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_TownEast 2 20"/>
+    <property name="TouchAction" value="Warp Custom_Garden 4 28"/>
    </properties>
   </object>
  </objectgroup>

@@ -26,6 +26,9 @@
 					"Default": "1"},
 		"housefoliage":{"AllowValues": "less, more",
 					"Default": "more"},
+		"HousePorch": {"AllowValues": "true, false",
+					"Default": "true",
+					"Description": "Adds floring/porch for house options 2,3 and 4" },
 		"greenhouseoption":{"AllowValues": "1, 2, 3",
 					"Default": "1"},
 		"greenhousefoliage":{"AllowValues": "less, more",
@@ -132,10 +135,11 @@
 					"AllowBlank": true,
 					"Default": "",
 					"Description": "If you want to manually change recolor palette" },
-					
+		
+		
 		"MapEdit":{"AllowValues": "true, false",
 					"Default": "true",
-					"Description": "Enable/disable map edit adding grass under farmhouse porch" },
+					"Description": "Enable/disable map edit adding grass under farmhouse porch for options 2,3 and 4" },
 	},
 	
 	
@@ -248,12 +252,24 @@
 		},
 		{
 		"Name": "CustomFarmMap",
+		"Value": "SVEIF2R",
+			"When": { "HasMod": "flashshifter.immersivefarm2remastered",
+					"FarmType": "Standard" },
+		},
+		{
+		"Name": "CustomFarmMap",
 		"Value": "SmallBeachFarm",
 			"When": { "HasMod": "Pathoschild.SmallBeachFarm",
 					"FarmType": "Beach" },
 		},
+		{
+		"Name": "CustomFarmMap",
+		"Value": "IF2FIX",
+			"When": { "HasMod": "zander.immersivefarm2",
+					"FarmType": "Standard" },
+		},
 	],
-	
+
 	"Changes": [
 	
 /*	
@@ -268,12 +284,24 @@
  
 //House
         {
+		"LogName": "House main",
         "Action": "EditImage",
         "Target": "Buildings/houses",
         "FromFile": "assets/{{Recolour}}/{{season}}_{{houseoption}}_{{housefoliage}}.png",
 			"FromArea": { "X": 0, "Y": 0, "Width": 160, "Height": 432 },
 			"ToArea": { "X": 0, "Y": 0, "Width": 160, "Height": 432 },
 			"When": { "BuildingsReplaced": "House" },
+        },
+		{
+		"LogName": "House porch adding",
+        "Action": "EditImage",
+			"PatchMode": "Overlay",
+        "Target": "Buildings/houses",
+        "FromFile": "assets/House Porch/{{houseoption}}_{{season}}_{{housefoliage}}.png",
+			"ToArea": { "X": 0, "Y": 0, "Width": 160, "Height": 432 },
+			"When": { "BuildingsReplaced": "House",
+					"houseoption |contains=2, 3, 4": true,
+					"HousePorch": "true" },
         },
 //Greenhouse
 		{
@@ -1030,10 +1058,54 @@
 	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
+		
 		{
         "Action": "EditImage",
-        "Target": "Buildings/Big Shed_PaintMask, Buildings/Deluxe Barn_PaintMask, Buildings/Deluxe Coop_PaintMask, Buildings/houses_PaintMask, Buildings/Log Cabin_PaintMask, Buildings/Plank Cabin_PaintMask, Buildings/Stable_PaintMask, Buildings/Stone Cabin_PaintMask",
+        "Target": "Buildings/Big Shed_PaintMask",
         "FromFile": "assets/Mask/{{TargetWithoutPath}}.png",
+			"When": { "BuildingsReplaced": "Big Shed" },
+        },
+		{
+        "Action": "EditImage",
+        "Target": "Buildings/Deluxe Barn_PaintMask",
+        "FromFile": "assets/Mask/{{TargetWithoutPath}}.png",
+			"When": { "BuildingsReplaced": "Deluxe Barn" },
+        },
+		{
+        "Action": "EditImage",
+        "Target": "Buildings/Deluxe Coop_PaintMask",
+        "FromFile": "assets/Mask/{{TargetWithoutPath}}.png",
+			"When": { "BuildingsReplaced": "Deluxe Coop" },
+        },
+		{
+        "Action": "EditImage",
+        "Target": "Buildings/houses_PaintMask",
+        "FromFile": "assets/Mask/{{TargetWithoutPath}}.png",
+			"When": { "BuildingsReplaced": "House" },
+        },
+		{
+        "Action": "EditImage",
+        "Target": "Buildings/Log Cabin_PaintMask",
+        "FromFile": "assets/Mask/{{TargetWithoutPath}}.png",
+			"When": { "BuildingsReplaced": "Log Cabin" },
+        },
+		{
+        "Action": "EditImage",
+        "Target": "Buildings/Plank Cabin_PaintMask",
+        "FromFile": "assets/Mask/{{TargetWithoutPath}}.png",
+			"When": { "BuildingsReplaced": "Plank Cabin" },
+        },
+		{
+        "Action": "EditImage",
+        "Target": "Buildings/Stable_PaintMask",
+        "FromFile": "assets/Mask/{{TargetWithoutPath}}.png",
+			"When": { "BuildingsReplaced": "Stable" },
+        },
+		{
+        "Action": "EditImage",
+        "Target": "Buildings/Stone Cabin_PaintMask",
+        "FromFile": "assets/Mask/{{TargetWithoutPath}}.png",
+			"When": { "BuildingsReplaced": "Stone Cabin" },
         },
 
 /*	
@@ -1052,7 +1124,9 @@
 		"Target": "Maps/{{FarmMap}}",
 		"FromFile": "assets/Map Edits/{{FarmMap}}.tbin",
 		"ToArea": { "X": 59, "Y": 11, "Width": 9, "Height": 6 },
-			"When": { "MapEdit": "true",
+			"When": { "HousePorch": "false",
+					"houseoption |contains=2, 3, 4": true,
+					"MapEdit": "true",
 					"CustomFarmMap" : "false" },
 		},
 		{
@@ -1062,8 +1136,34 @@
 		"Target": "Maps/{{FarmMap}}",
 		"FromFile": "assets/Map Edits/{{CustomFarmMap}}.tmx",
 		"ToArea": { "X": 59, "Y": 11, "Width": 9, "Height": 6 },
-			"When": { "MapEdit": "true",
+			"When": { "HousePorch": "false",
+					"houseoption |contains=2, 3, 4": true,
+					"MapEdit": "true",
 					"CustomFarmMap" : "SmallBeachFarm" },
+		},
+		{
+		"LogName": "Immersive Farm 2 FIX",
+		"Action": "EditMap",
+			"PatchMode": "Overlay",
+		"Target": "Maps/{{FarmMap}}",
+		"FromFile": "assets/Map Edits/{{CustomFarmMap}}.tbin",
+		"ToArea": { "X": 59, "Y": 15, "Width": 9, "Height": 3 },
+			"When": { "HousePorch": "false",
+					"houseoption |contains=2, 3, 4": true,
+					"MapEdit": "true",
+					"CustomFarmMap" : "IF2FIX" },
+		},
+		{
+		"LogName": "Immersive Farm 2R from SVE",
+		"Action": "EditMap",
+			"PatchMode": "Overlay",
+		"Target": "Maps/{{FarmMap}}",
+		"FromFile": "assets/Map Edits/{{CustomFarmMap}}.tbin",
+		"ToArea": { "X": 59, "Y": 14, "Width": 9, "Height": 3 },
+			"When": { "HousePorch": "false",
+					"houseoption |contains=2, 3, 4": true,
+					"MapEdit": "true",
+					"CustomFarmMap" : "SVEIF2R" },
 		},
 		{
 		"LogName": "Grandpas Farm from SVE",
@@ -1072,7 +1172,9 @@
 		"Target": "Maps/{{FarmMap}}",
 		"FromFile": "assets/Map Edits/{{CustomFarmMap}}.tbin",
 		"ToArea": { "X": 91, "Y": 49, "Width": 7, "Height": 2 },
-			"When": { "MapEdit": "true",
+			"When": { "HousePorch": "false",
+					"houseoption |contains=2, 3, 4": true,
+					"MapEdit": "true",
 					"CustomFarmMap" : "SVEGrandpas" },
 		},
 	]

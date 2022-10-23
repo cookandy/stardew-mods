@@ -77,7 +77,7 @@
 	"Thu4": "That parrot is the craziest thing. Ellie loves him... but he knows far too many words, and not all of them are polite.$1",
 	"Thu8": "Ellie was only six when her mother died. She handled it far better than me. I was a mess for months... Ellie's so pragmatic, sometimes I worry she had to grow up too fast.$2",
 	"Fri": "Hello, um... are you enjoying the weather?",
-	"Fri4": "That wretched parrot... the Mayor dropped by the other day and Richie had some choice words for him...$2#$b#He belonged to my father, you know - and Dad swore like a sailor.$1",
+	"Fri4": "That wretched parrot... the Mayor dropped by the other day and Richie had some choice words for him...$2#$b#He belonged to my father - and the old man swore like a sailor.$1",
 	"Fri8": "Del's been gone more than two years now. You'd think time would make things easier... but it doesn't. I miss her everyday.#$b#Sorry, you didn't come here to listen to me delve into self pity.$2",
 	"Sat": "Do you need help with your animals?#$b#No? Oh, I thought that was why you'd come to see me.",
 	"Sat4": "Ellie's so outgoing, she's the life of the party. Just like her mom was.$2.#$b#Me? I'm generally the one standing in the corner, feigning fascination in the bookcase.",
@@ -110,7 +110,8 @@
 	"Jacob_DinnerDate": "Oh yes, you are definitely invited to join us for dinner.#$b#Eloise is very enthusiastic about it; she's planned out a menu and everything.$1#$e#Insisted on writing the invite too, you probably noticed. I've never known anyone to love an exclamation mark so much.#$b#Did I read it first? No. Should I have?$2",
 	"Jacob_Date": "You do??!$4",
 	"Jacob_Friendzone": "Oh, to be honest, @, as fond of you as I am, that's a relief.$1#$b#After Del... well, I've lost my soulmate, and I doubt I'll ever find a love like that again.$2#$b#But good friends, and fine company? That is something I will most happily embrace.$1",
-	"Jacob_Ditched": "I suppose your honesty is to be admired.$3#$b#Although, you should really work on your tact.$2"
+	"Jacob_Ditched": "I suppose your honesty is to be admired.$3#$b#Although, you should really work on your tact.$2",
+	"Jacob_KidsRight":"Hah, yes. Where do they get these ideas from?$1"
 	
 	//"Talk about something other than being a vet or Eloise? Uh..... {{random: Have you read any good books lately?, Have you seen the latest Livin' Off the Land?, nice weather today, isn't it?}}",
 	

@@ -190,6 +190,14 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Eloise",
             "Entries": {
+                "Resort_Entering": "Oh wow! This place is wicked!",
+                "Resort_Leaving": "Bye bye parrots! See you again soon.$1",
+                "Resort_Shore": "Look at all these pretty shells! Want to help me make a necklace, farmer @?",
+                "Resort_Umbrella": "Dad says I've can't stay in the sun all day.",
+                "Resort_Towel": "I'm drawing the birds, farmer @. Just like a true naturalist.$1",
+                "Resort_Wander": "I bet these all sorts of really cool birds around here.",
+                "Resort_Bar": "Gus made me a special punch with coconut water and mango. Look, it has am umbrella in it and everything!$1",
+                "Resort": "There's parrots here, @! Aren't they amazing!#$b#Parrots are super-smart you know! Some of them even use tools.",
                 "Introduction": "Hi! I'm Eloise, but you can call me Ellie if you like.#$b#You're the new farmer, right?",
                 "Mon": "Can I come poke around on your farm sometimes? I'm sure it's filled with all sorts of interesting things!",
                 "Mon2": "There's a stray cat that lives near the beach. She's super-skinny and scared. I've been trying to make friends with her, but she's not keen on the idea...",
@@ -214,17 +222,17 @@
                 "Thu4": "Sometimes after the rain, I go looking for shells on the beach.",
                 "Thu6": "Do you know what an invasive pest is, farmer @? It's an animal that doesn't live naturally in a place, but is introduced there by people - sometimes on accident, sometimes on purpose - and displaces - that means pushes out or kills - the animals that already live there.#$b#Like the rock crabs that live on the beach. Dad says we need to keep them under control, or they'll spread onto the other beaches and maybe take over the whole world!",
                 "Thu8": "I'm worried abour Sora. It must be so scary living in Gotoro. I wish there was a way we could get him safe here - and his Mom and baby sister too.",
-                "Fri": "Dad's real smart, but he's also real busy, so I'm glad Miss Penny can teach us stuff!#$b#Jas is my bestest friend in the whole wide world, and Vinny's okay. For a boy!",
+                "Fri": "Dad's real smart, but he's also real busy, so I'm glad Miss Penny can teach us stuff!#$b#Jas is my bestest friend in the whole wide world, and Vinnie's okay. For a boy!",
                 "Fri2": "Miss Penny says I ask a lot of questions. Too many for her to keep up! But there's just so much I want to learn!",
-                "Fri4": "Miss Penny told us to choose our favorite animal for a project. I chose the pelican, cos they're wicked-cool, and Jas picked blue jay.#$b#Vinny chose a spider - a common house spider, to be precise - and brought it to class in a matchbox!$1#$b#Miss Penny was not impressed.$3",
-                "Fri6": "Vinny said that only 'girly-girls' wear pink dresses and stuff, and I wasn't a girly-girl cos I like to climb trees and dig through leaves looking for bugs and stuff.#$b#But I can wear pretty dresses too, if I want to, can't I?#$b#I think he's jealous; his mom won't let him dress up nice cos he gets himself dirty all the time.",
+                "Fri4": "Miss Penny told us to choose our favorite animal for a project. I chose the pelican, cos they're wicked-cool, and Jas picked blue jay.#$b#Vinnie chose a spider - a common house spider, to be precise - and brought it to class in a matchbox!$1#$b#Miss Penny was not impressed.$3",
+                "Fri6": "Vinnie said that only 'girly-girls' wear pink dresses and stuff, and I wasn't a girly-girl cos I like to climb trees and dig through leaves looking for bugs and stuff.#$b#But I can wear pretty dresses too, if I want to, can't I?#$b#I think he's jealous; his mom won't let him dress up nice cos he gets himself dirty all the time.",
                 "Sat": "You've gotta be quiet if you're gonna watch birds. Dad says I'm a regular chatterbox - but I do know how to shush!",
                 "Sat2": "Princess Midnight is the laziest cat in the world. She almost never leaves the house.#$b#So, I'm not worried about her catching my bird friends.",
                 "Sat4": "Lots of berries grow here in spring and fall. That's why the birds love East Scarpe!",
                 "Sun": "Dad always visits Mom on Sundays. It makes him kinda sad. I miss her, even though I don't remember her too well.",
                 "Sun2": "We're going to the beach! Maybe I'll find some pretty shells. My favorites are the really colorful ones.#$b#And the pelicans make me laugh. They're such funny looking birds.$1",
                 "Sun4": "Did you know birds descended from dinosaurs, farmer @? The first birds were called the archae- Archaeopteryx. It means 'feather wing'.#$b#It's funny to think that dinosaurs might've looked like pelican or geese!",
-                "summer_Mon": "Summer's boring for bird-watching. The Fern Islands are covered in fruit and stuff, so they go on vacation - just like people do!",
+                "summer_Mon": "Summer's boring for bird-watching. The Fern Islands are covered in fruit and stuff, so the songbirds go on vacation - just like people do!",
                 "summer_12": "I'm going to the beach tomorrow, farmer @! The crested flamingo stop here to eat before migrating to Gotoro. Wanna come watch for them with me?",
                 "ArchaeologyHouse": "Miss Penny's a pretty good teacher. She knows all sorts of things about the valley.",
                 "spring_1_2": "Yay, it's spring! Have you got any baby animals on your farm? ",
@@ -252,13 +260,13 @@
                 "engageB": "Oh, that's a pretty shell! Is that for your betrothed?",
                 "marriedA": "Oh, I'm sure %spouse will love that!",
                 "marriedB": "That's really pretty. Is it for %spouse?",
-                "winter_Tue2": "$q 5787001/5787002 winter_Tue#What are your parents like, farmer @?#$r 5787001 25 Parents_proud#They're proud of me for taking over the farm.#$r 5787001 25 Parents_love#They're wonderful, and I love them very much.#$r 5787001 25 Parents_good#They're good folk, even if we don't always get along.#$r 5787002 0 Parents_personal#That's personal, and not polite to ask.#$r 5787002 -25 Parents_rude#That's personal, stop being nosy!",
+                "winter_Tue2": "$q 5787001/5787002 winter_TueBack#What are your parents like, farmer @?#$r 5787001 25 Parents_proud#They're proud of me for taking over the farm.#$r 5787001 25 Parents_love#They're wonderful, and I love them very much.#$r 5787001 25 Parents_good#They're good folk, even if we don't always get along.#$r 5787002 0 Parents_personal#That's personal, and not polite to ask.#$r 5787002 -25 Parents_rude#That's personal, stop being nosy!",
                 "Parents_proud": "Of course they are! I'm sure your farm is very beautiful.$1",
                 "Parents_love": "That's good! I love my Dad a lot too!$1",
                 "Parents_good": "Me and Dad don't always get along, but we love each other heaps! I bet it's like that with your family too.$1",
                 "Parents_personal": "Oh... I'm sorry... Dad always says my tongue's too fast for my brain. I'll try and get better and think first next time. Promise!$3",
                 "Parents_rude": "Sorry...$2",
-                "winter_Tue": "Winter's not a good time for birds, farmer @. It's hard to find food!#$b#Sometimes I sprinkle seed on the lawn. The cardinals love it!",
+                "winter_TueBack": "Winter's not a good time for birds, farmer @. It's hard to find food!#$b#Sometimes I sprinkle seed on the lawn. The cardinals love it!",
                 //New Dialogue
                 "spring_Fri10": "Did you know baby birds - fledglings - can't fly when they first leave the nest?#$b#If you see any, and there's no predators around, they'll be okay. Don't touch them!$3",
                 "Sat10": "I've been reading my letters from Sora again. I hope he's okay. His life sounds pretty scary.#$b#I'm glad Dad and Mom and me back here before everything went horrible. I wish we'd brought Sora and his family too though.$2",
@@ -283,7 +291,14 @@
                 "winter_Thu10": "It's my Uncle's birthday soon. I wanted to give him a gift. Dad said I could draw him a picture.#$b#But what if he doesn't like it?$2",
                 "winter_Fri10": "Dad got called out to an emergency in the middle of the night. Don't worry, Miss Rosa came to keep me company.#$b#I like her. She's been to so many places! Maybe one day I'll travel the world too.$1",
                 "winter_Sat10": "Grandma gives the best Winter Star gift! This year I got a shimmery-shiny notebook!$!#$b#It's got a padlock on it too, so no-one can read my secrets.",
-                "winter_Sun10": "Sometimes we find rubbish on the beach. We always pick it up and throw it out.#$b#Cos if we don't, animals could eat it and get sick. That makes me sad.$2#$b#You don't litter, do you farmer @?$3"
+                "winter_Sun10": "Sometimes we find rubbish on the beach. We always pick it up and throw it out.#$b#Cos if we don't, animals could eat it and get sick. That makes me sad.$2#$b#You don't litter, do you farmer @?$3",
+                //Unique Gift Responses *** N E W ***
+                "GiftReaction_Duck_Feather": "Oooh! I'm going to add this to my collection. Thank you @!",
+                "GiftReaction_Rice_Pudding": "It's so sticky! Dad hates it, so we don't eat it at home.",
+                "GiftReaction_Dinosaur_Egg": "It's so big! I can hardly carry it. I wonder what sort of bird laid this?",
+                "GiftReaction_Dinosaur_Egg~1": "This is so cool. I hope Dad lets me hatch it!",
+                "GiftReaction_Void_Egg": "I've never seen an egg like this before! It feels kinda weird.#$b#I love it!",
+                "GiftReaction_Blobfish": "Ugh, gross! This poor fish. You're really mean!$2"
             }
         },
         /*************************
@@ -612,7 +627,8 @@
                 //Visiting Pierre's
                 "SeedShop_Mon": "And all this produce is locally sourced! How absolutely delightful.#$b#You grew it? Oh, you must be proud!",
                 "SeedShop_Wed": "I walked in earlier and caught the shopkeeper singing to himself.#$b#Oh, I wouldn't mention it, he looked a little sheepish.#$b#Although I might say, he's not a bad tenor, if a little rough around the edges.$1",
-                "SeedShop_Fri": "Have you heard about the tradition about the gift of a bouquet? It's most wonderfully whimsical!$1#$b#I wonder if I could persuade my Guvvie to give me one."
+                "SeedShop_Fri": "Have you heard about the tradition about the gift of a bouquet? It's most wonderfully whimsical!$1#$b#I wonder if I could persuade my Guvvie to give me one.",
+                "election": "@! I just heard about the election. I really feel for poor Lewis... I wonder why he didn't tell us it was happening?$2#$b#I couldn't have voted, of course, but I would have provided moral support.$2" // *** N E W ***
             }
         },
         /*************************
@@ -680,7 +696,8 @@
                 "OliverLexi_B": "Yeh... and make myself look like an attention-seeking liar. But... I guess you're right. It's the best way. And I'm sure they're used to hoaxs.$2#$b#I don't suppose you'd consider putting on a rubber suit, would you?$3",
                 "OliverLexi_C": "I'm worried they'll be mad at me. But you're right, they deserve to know. And, who knows? Maybe Lexi'll want to become a celebrity.$3",
                 //Conversation Topics ....................................................
-                "TalkOllyLexi": "No, not here! We'll talk at the Inn. Okay?$2"
+                "TalkOllyLexi": "No, not here! We'll talk at the Inn. Okay?$2",
+                "election": "So Mom tells me Morris is Mayor now. That's gotta be a shock for May- err Mr. Lewis. Poor ol' duffer.$2#$b#Change is good... but trading in the lord of the manor for a corporate bigwig? Feels kinda like we're charging headlong into a dystopic future, right?$1" //** N E W **
             }
         },
         /*************************
@@ -711,7 +728,7 @@
                 "winter_Fri6": "Will you tell me a story, @? Mother told stories.#$b#There were brave women who climbed mountains or flew like birds!",
                 "winter_Sat": "Is too cold to swim now, water icy. All my fish-friends swim away, go to warm places far, far away.",
                 "winter_Mon4": "Sometimes I sing to the rock crabs. But they do not like my song.",
-                // N E W   D I A L O G U E
+                // N E W   D I A L O G U E *** N E W ***
                 "Mon8": "Friend Gull come visit, bring news. He big gossip!#$b#Talk of fire island, and funny boy who think he parrot!$1#$b#Friend Gull have big imagination!$3",
                 "summer_Tue10": "Summer is nice time. People come, play in water.$1#$b#I watch the little ones. Worry not swim good, and nasty current take them.",
                 "Fri8": "Some day I think may write a story of own. Story of orphan, cast up on beach.#$b#Will have happy ending, you think? Or sad?#$b#Perhaps one day I know.",
@@ -723,7 +740,11 @@
                 "Wed10": "I wonder what it be like to swim up, up river, all the way. What adventure might I find?",
                 "fall_Wed2": "At night, it's nice to stand on beach under watchful gaze of the Mr. Moon.$1#$b#You hear story about Man in Moon? Sometimes I think I see him.#$b#Is probably wishful thinking.$3",
                 "winter_Thu": "Mermaids come visit town, yes? See them swimming sometimes. Far, far away, never close.#$b#Their songs are like a magic. My song... is not like magic.",
-                "summer_Tue6": "Have you met Mother? She be a human person, like you?$1#$b#Find me as baby, all wash up on beach, like driftwood.#$b#Sometimes I look on beach, think maybe find another baby me."
+                "summer_Tue6": "Have you met Mother? She be a human person, like you?$1#$b#Find me as baby, all wash up on beach, like driftwood.#$b#Sometimes I look on beach, think maybe find another baby me.",
+                //Unique Gift Responses
+                "GiftReaction_-74": "These make me thing of Mother. I will plant, nourish it. Hope it grow.#$b#Thank you.$4",
+                "GiftReaction_Beer": "Ugh! This smells horrible... and tastes like rotten weeds. Why do you give me this?",
+                "GiftReaction_Mead": "It's so sweet! Like drinking honey. Thank you.",
             }
         },
         /*************************
@@ -739,9 +760,14 @@
                 "Mon": "When I have the money, I'll catch a train into Zuzu City; my mom teaches there.",
                 "Mon4": "I've worked a few jobs, here and there. Fruit picking, dog-walking.#$b#Cleaning fish. Ugh! I didn't enjoy that one bit!$2#$b#I got hired to herd ducks once. That was something of a challenge!$1",
                 "winter_Mon4": "Do you think this place is haunted, @? Could've sworn I heard footsteps up and down the hall all night.",
-                "summer_Mon": "It's beautiful here, isn't it? The locals seem a little wary of outsiders though, don't you think?",
+                "summer_Mon": "It's beautiful here, isn't it? The locals seem a little wary of outsiders though.",
+                "summer_Mon10": "I rang my dad last night, @. It's always great to chat with him.#$b#He's happy, and the bakery's doing well.#$b#I do miss him though.",
                 "fall_Mon": "Are you interested in traveling, @?#$b#I am... I've done a bit of back-packing around the Ferngill republic.",
+                "fall_Mon4": "On these cooler days, there's nothing quite like curling up in front of the fire with a book, is there?$1",
+                "fall_Mon10": "Read any good books lately, @? Pretty sure I've read every mystery the library has to offer.$1",
                 "winter_Mon": "Oh! Can you brush the snow off your boots please? I've just polished the floors.$2", //change this if ItsBenter's family installed
+                "winter_Mon6": "I hope we don't get snowed in, @. With the empty rooms, the boiler downstairs, and the isolation...#$b#Well, let's just say, I'm having flashbacks to a certain horror novel I really regret reading.$2",
+                "winter_Mon10": "Brrr, winter is the time I miss Fort Josa the most!#$b#Nah, I'm not homesick; I've made too many friends here to let you go so easily. Just looking forward to spring, is all!$1",
                 //Tue
                 "Tue": "Back in Fort Josa, my Dad's bakery had the most wonderful aromas.#$b#The war rationing stopped us from making cakes or sweets, but we improvised.$s",
                 "Tue2": "Do you love the smell of fresh baked bread? It reminds me of home.",
@@ -750,7 +776,9 @@
                 "summer_Tue4": "Ever been surfing, @?#$b#Me? Hah, no. But I did a brief stint as a lifeguard, so I rescued a few!",
                 "summer_Tue": "Be careful, @. When I was walking home last night, a giant crab lunged at me!$2#$b#Dr. Jacob says they're an invasive species, and prey on the native wildlife. Pretty nasty!",
                 "fall_Tue": "There's a lot of little trails around here.#$b#Follow them, and you never know where you might end up.$1",
+                "fall_Tue6": "Howdy @! Be right with you. Just trying to get my head around the big reveal from the book I'm reading.#$b#I thought I'd figured it out, but that twist... it completely sidelined me!$1",
                 "winter_Tue": "I think I'll stay in here where it's warm.#$b#Oh, no fire - we've got a boiler room. Central heating is the way to go.$1",
+                "winter_Tue6": "That poor wee stray cat was prowling around again. I gave her some food scraps.#$b#I'd let her in, but I don't think the Hart's would approve. And it's their inn. I'm just the caretaker.$2",
                 //Wed
                 "Wed": "Fort Josa used to supply all of the nearby factories and steam ships with coal.#$b#When oil began to boom the town started to fall apart... Bit like this place, I guess.$s",
                 "Wed2": "It's nice here, but a bit lonely. I wish I had someone to hang out with.$2",
@@ -758,28 +786,33 @@
                 "Wed8": "I invited my first girlfriend home when we were seventeen. Mom was pretty stoked I'd found someone.$1#$b#Didn't work out though.$2#$b#Nah, it's fine; we still keep in touch.",
                 "fall_Wed4": "Why is fall the most popular season? I don't get it.#$b#Then again, I have spent the whole morning sweeping leaves out of the gutter.$3#$b#Well, I guess it's called 'fall' for a reason...$1",
                 "summer_Wed": "It's too hot for baking today. Maybe I'll make a cheesecake instead.",
+                "summer_Wed4": "Ugh... this warm summer weather is bringing the ants indoors. I found them in my sugar bowl this morning.$3#$b#What a waste...$2",
                 "fall_Wed": "Drat... I'm out of flour. Guess I'm going to have to head into town tomorrow.#$b#Still, it's a nice walk.$1",
                 "winter_Wed": "The bear in the Inn hallway? Oh, pretty sure he died of natural causes.#$b#I've named him Humphrey. I hope he doesn't mind.$1",
+                "winter_Wed6": "Do I get lonely out here in this big, empty inn? Of course not. Eloise comes to visit sometimes.#$b#As long as she never brings a tricycle, we're sweet.$1",
                 //Thursday
                 "Thu": "I always enjoy the walk into town. The air's so fresh here, not like Fort Josa. It always smelt of smoke.",
                 "JojaMart": "Howdy @. Just picking up some supplies. Got a baking marathon planned!",
                 "SeedShop": "Howdy @. Just picking up some supplies. The fruit here's always pretty fresh. I wonder where Pierre gets it from?",
-                "Thu4": "Have you meet Aideen? She's pretty, isn't she?#$b#Are we friends? No. But her cat visits sometimes!$1",
+                "Thu4": "Have you meet Aideen? She's pretty, isn't she?#$b#Are we friends? No, not really. But her cat visits sometimes!$1",
+                "spring_Thu6": "Sorry if I'm a bit dusty. The dratted birds are trying to nest in the eaves again, and I'm trying to discourage it.#$b#Oh, I'm fine with birds really... just not in my roof.$2",
                 "fall_Thu4": "Argh, today's been a bit of a rough day. Just feelings, you know?$2#$b#Anyhow, I decided to do some baking... and now I've got enough to feed the whole town. Ugh. Have a muffin.[651]",
                 "summer_Thu": "Have you seen the little grey cat wandering around?#$b#Sometimes I leave scraps out for her. Poor wee thing.$2",
                 "fall_Thu": "Do you keep in touch with anyone back home, @?#$b#Yeah, Mom rang last night. It was nice. Made me a little.. nostalgic? Not sure that's the right word. But homesick isn't either.$2",
-                "winter_Thu": "The snow here's so fresh and clean. It makes the world seem kind of new, don't you think?#$b#Cold though!",
+                "winter_Thu": "The snow here's so fresh and clean. It makes the world seem kind of new.#$b#Cold though!",
+                "winter_Thu6": "There was something scratching in the walls all night. Again...#$b#Probably mice. Ugh, I hope it's not rats. Maybe I should ask Aideen if I can borrow her cat.$1",
+                "winter_Thu10": "Howdy sunshine! Wanna pop over tonight and watch a movie?#$b#Maybe some sort of mindless action flick? I'd appreciate the company.",
                 //Friday
                 "Fri": "Some evenings, I like to take a walk down to the lighthouse. The sunset's really nice.#$b#Would be better if I had someone to watch it with though...$2",
                 "Fri4": "I've always had a sweet tooth. Mom used to tease me about it.",
                 "Fri8": "My parents split a few years back. Sometimes I think they only stayed together that long cos of me.$2",
-                "summer_Fri8": "Fort Josa's a coastal town, so we used to swim all the time. Sometimes we'd even see dolphins.#$b#That was until the war... after that, well, let's just say swimming became a lot less fun.$2",
-                "summer_Fri": "Maybe I'll go for a swim tomorrow. Although Eloise told me there are fish that will nibble your toes.#$b#Not sure how keen I am on that idea!$1",
+                "summer_Fri8": "Fort Josa's a coastal town, so we used to play in the water all the time. Sometimes we'd even see dolphins.#$b#That was until the war... after that, well, let's just say swimming became a lot less fun.$2",
+                "summer_Fri": "Maybe I'll dip my feet in the ocean tomorrow. Although Eloise told me there are fish that will nibble your toes.#$b#Not sure how keen I am on that idea!$1",
                 "fall_Fri": "You know, a lot of ships sunk around here. It's why they build the lighthouse.#$b#Do you reckon there's treasure, hidden out there on the reef?",
                 "winter_Fri": "Hey, would you like to hang around for a bit? I'm bored and could do with some company.",
                 //Saturday
                 "Custom_EastScarpeInn_Sat": "This? Oh, it's temp work, until the owners return. Free food and board? Can't argue with that!$1",
-                "Sat": "It's a pity more people don't come to this beach. It's kinda like Pelican Town's hidden gem, don't you think?$1#$b#More visitors might be better for business, but it would kinda ruin the atmosphere though.",
+                "Sat": "It's a pity more people don't come to this beach. It's kinda like Pelican Town's hidden gem.$1#$b#More visitors might be better for business, but it would kinda ruin the atmosphere though.",
                 "Sat_4": "Aideen's cat came to visit yesterday. Please don't tell her, but I fed him...#$b#He really likes fish!$1",
                 "Sat4": "I go into town sometimes, but the groups here... they're so tight-knit.#$b#It's easy to feel like a stranger, don't you find?$2",
                 "summer_Sat2": "Do you enjoy walking on the beach, @? I love the feeling of sand between my toes.",
@@ -792,21 +825,27 @@
                 "Sun6": "Sometimes I miss Fort Josa, you know. Nah, not homesickness, more something else...#$b#Yearning, perhaps? Although I've got to say, it's pretty nice here.",
                 "winter_Sun4": "Goodness, Ellie can really chew your ears off, can't she?#$b#She caught me throwing bread scraps to the birds... Oh, did I ever get a telling off!$1",
                 "summer_Sun": "Have you ever seen a mermaid, @?#$b#I can't be 100 percent certain, but I know I saw someone - or something - swimming off the bay.",
-                "fall_Sun": "Want a game of pool? I got talked into entering a tournmanent once.#$b#Oh, I was utterly garbage; it's really not my game. Fun though!",
+                "fall_Sun": "Want a game of pool? I got talked into entering a tournament once.#$b#Oh, I was utterly garbage; it's really not my game. Fun though!",
                 "winter_Sun": "Are you a fan of horror movies, @?#$b#I watched one last night... it was set in an empty hotel. Closed for the winter...#$b#Possibly not the brightest idea I've ever had!$1",
                 //Specific Dates
                 "spring_23": "Are you going to being dancing tomorrow, @?#$b#Me? Oh, I suppose so! If the right person asked, of course!",
                 "spring_23_2": "I'm looking forward to the dance tomorrow.$1#$b#Yeh, it's corny but fun. I love these old traditions, don't you?",
                 "fall_26_2": "Spirit's Eve is my favourite festival. You know what? I'm totally going to host a party here. What do you say?",
                 //Conversation Topics
-                "Josaphine_Arrives": "Oh @! Lewis just called to tell me the Governor's wife and son are arriving tomorrow!$1#$b#My first guests! I really hope I don't let him down.$2",
+                "Josephine_Arrives": "Oh @! Lewis just called to tell me the Governor's wife and son are arriving tomorrow!$1#$b#My first guests! I really hope I don't let him down.$2",
                 "Tristan_Returns": "I heard some weird rumor about a guy that was a cat?#$b#Sounds like a fairy tale to me. Know anything about it, @?",
                 "cc_Complete": "I saw the JojaMart is all boarded up. What happened?#$b#I guess that means the cute redhead's left... I never got to say 'goodbye'.$2",
+                "CherryOrchard_Rosa": "Hey @, remember that weird place Eloise found? Cherry Orchard? I asked Mayor Lewis about it.#$b#He said it closed down when he was a child, some sort of family feud. All the kids in town were warned away from playing there. Dangerous, apparently.$2",
+                "spring_15_2": "Hmm, I think I'll bake maple bars today. Why? Oh, no reason.$5",
                 //Resort dialogue courtesy of Calcite
-                "Resort_Entering": "This island is lovely! Too bad the inn isn't located here...",
+                "Resort_Entering": "This island is lovely! Too bad the inn isn't located here.$1",
                 "Resort": "Did you know they had a string of forts along islands just like this one? Why couldn't my family choose to live in one of those?",
                 "Resort_Shore": "Ouch! I think that crab just pinched me. Where's Willy when you need him?",
-                "Resort_Wander": "Shh, don't tell Juliet but I'm taking her to see the mermaid later."
+                "Resort_Wander": "Now what's this I hear about a mermaid?$1",
+                "rejectNPCA": "You know I'm only attracted to girls, right?^Too soon, sunshine, I'd rather we got to know each other first.$1",
+                "rejectNPCB": "Sorry no, you're not my type.^Sorry sunshine, I'd rather we remain friends for now. Hope that's okay with you?",
+                //Custom Gift Dialogue
+                "GiftReaction_Ruby_Ring": "You want me to have it? Thank you @. I'll cherish it.$5#$b#Who knows? Maybe one day I'll find Lily-Anne and return it to her.$1"
             }
         },
         //With Juliet
@@ -818,8 +857,9 @@
                 "HasMod": "LemurKat.JulietHouse.NPC"
             },
             "Entries": {
+                "Resort_Wander": "Shh, don't tell Juliet, but I'm taking her to see the mermaid later.",
                 "cc_Complete": "I saw the JojaMart is all boarded up. What happened?#$b#I hope that doesn't mean Juliet's going to leave.$2",
-                "summer_Fri2": "$d joja#Hey, you know Juliet? The cute clerk at the JojaMart? She's such a hoot.#$b#You won't believe what she said to me yesterday! Yep, something about melons.$1#$b#I bought two. Shes' err... very persuasive.$4|Have you seen you Juliet around? Now, there's a woman who knows her own mind!$1"
+                "summer_Tue": "Are you friends with Juliet? Now, there's a woman who knows her own mind!$1",
             }
         },
         {
@@ -828,11 +868,14 @@
             "Target": "Characters/Dialogue/Rosa",
             "When": {
                 "HasMod": "LemurKat.JulietHouse.NPC",
-                "HasSeenEvent": "57874001"
+                "HasSeenEvent": "57874015"
             },
             "Entries": {
-                "fall_Fri6": "Jules and I have been talking about a seance. Spooky time of year and all that.#$b#Do you want in on it?",
-                "Sun6": "Hah, you should come join us sometime on Saturday night. Jules and me have been shooting pool down at the Stardrop.#$b#She's not quite the poolshark she thinks she is!$1#$e#But she does this cute little dance when she wins... so sometimes I miss on purpose.#$e#That's our little secret, 'k?$4"
+                "Resort_Wander": "Shh, don't tell Juliet, but I'm taking her to see the mermaid later.",
+                "winter_Fri10": "Jules dropped by last night. She's convinced this place is haunted.#$b#Honestly, I'm not sure if she's here to see me, or try and catch a ghost.#$b#I'm happy for her company either way!$1",
+                "fall_Fri6": "Jules and I have been talking about a seance. Spooky time of year and all that.#$b#Not really my scene, but you know what she's like. Do you want in on it?",
+                "Sun6": "Hah, you should come join us sometime on Saturday night. Jules and me have been shooting pool down at the Stardrop.#$b#She's not quite the poolshark she thinks she is!$1#$e#But she does this cute little dance when she wins... so sometimes I miss on purpose.#$e#That's our little secret, 'k?$4",
+                "fall_Fri10": "Jules dropped by last night. We watched a movie, and she fell asleep against my shoulder.#$b#It was pretty cute, even if she did drool a bit.$1"
             }
         },
         /************************************************************* 

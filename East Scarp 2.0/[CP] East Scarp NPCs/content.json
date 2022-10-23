@@ -26,6 +26,11 @@
 			"AllowValues": "true,false",
 			"Description": "Enable East Scarp Special Orders",
 			"Default": "true"
+		},
+		"AllowNagito": {
+			"AllowValues": "true,false",
+			"Description": "If set to true, Nagito's house will move to East Scarp",
+			"Default": "false"
 		}
 	},
 	"DynamicTokens": [
@@ -40,6 +45,7 @@
 				"HasFlag": "LexiNoneBusiness"
 			}
 		},
+		//Do cats talk?
 		{
 			"Name": "cattalk",
 			"Value": "false",
@@ -54,13 +60,14 @@
 				"HasSeenEvent |contains=50706121": true
 			}
 		},
+		//Sheba schedule
 		{
 			"Name": "Sheba.nap",
-			"Value": "{{Random:Custom_EastScarpe 7 83 2 sheba_nap,Custom_EastScarpe 65 76 2 sheba_nap,Custom_EastScarpe 23 79 2 sheba_nap,Custom_EastScarpe 3 101 2 sheba_nap}}"
+			"Value": "{{Random:Custom_EastScarpe 8 85 2 sheba_nap,Custom_EastScarpe 65 76 2 sheba_nap,Custom_EastScarpe 23 79 2 sheba_nap,Custom_EastScarpe 3 101 2 sheba_nap}}"
 		},
 		{
 			"Name": "Sheba.sit",
-			"Value": "{{Random:Custom_EastScarpe 10 86 2 sheba_sit,Custom_EastScarpe 28 104 2 sheba_sit,Custom_EastScarpe 1 12 2 sheba_sit,Custom_EastScarpe 23 102 2 sheba_sit,Custom_ESOrchard 2 15 sheba_sit}}"
+			"Value": "{{Random:Custom_EastScarpe 11 86 2 sheba_sit,Custom_EastScarpe 28 104 2 sheba_sit,Custom_EastScarpe 1 12 2 sheba_sit,Custom_EastScarpe 23 102 2 sheba_sit,Custom_ESOrchard 2 15 sheba_sit}}"
 		},
 		{
 			"Name": "Sheba.wander",
@@ -69,7 +76,84 @@
 		{
 			"Name": "Sheba.groom",
 			"Value": "{{Random:Custom_EastScarpe 11 62 2 sheba_grooming,Custom_EastScarpe 8 53 2 sheba_grooming,Custom_EastScarpe 29 98 2 sheba_grooming,Custom_EastScarpe 53 61 2 sheba_grooming,Custom_EastScarpe 13 92 2 sheba_grooming}}"
-		}
+		},
+		//Seasonal crops
+		{
+			"Name": "ESCrop",
+			"Value": "A"
+		},
+		{
+			"Name": "ESCrop",
+			"Value": "B",
+			"When": {
+				"Day": "{{range:15,28}}"
+			}
+		},
+		//Compatibililty with Piper mod
+		{
+			"Name": "pierreorpiper",
+			"Value": "pierre",
+		},
+		{
+			"Name": "pierreorpiper",
+			"Value": "piper",
+			"When": {
+				"HasMod": "piper.holychurros"
+			}
+		},
+		//Joja event with and without SVE chars
+		{
+			"Name": "JojaMartActors",
+			"Value": "farmer 13 17 3"
+		},
+		{
+			"Name": "JojaMartActors",
+			"Value": "farmer 13 17 3 MorrisTod 24 26 3 Claire 22 26 1",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		//Rosa Event with and without Juliet
+		{
+			"Name": "JulietRef",
+			"Value": "false"
+		},
+		{
+			"Name": "JulietRef",
+			"Value": "juliet",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		{
+			"Name": "57874008Actors",
+			"Value": "Gunther 3 8 2 Rosa 3 10 0 farmer -1000 -1000 0"
+		},
+		{
+			"Name": "57874008Actors",
+			"Value": "Gunther 3 8 2 Rosa 3 10 0 farmer -1000 -1000 0 Juliet -1000 -1000 2",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		{
+			"Name": "57874008Actors",
+			"Value": "{{57874008Actors}} Alex 88 91 2",
+			"When": {
+				"Season": "summer"
+			}
+		},
+		{
+			"Name": "jojaORcc",
+			"Value": "jj"
+		},
+		{
+			"Name": "jojaORcc",
+			"Value": "cc",
+			"When": {
+				"IsCommunityCenterComplete": true
+			}
+		},
 	],
 	"Changes": [
 		/*{
@@ -205,12 +289,12 @@
 				"DuckNPC": "All",
 				"Duck2NPC": "All",
 				"RichieTheMacaw": "All",
-				"Leximonster": "PerfectFriend,IslandVisit,TownQuest",
+				"Leximonster": "PerfectFriend,IslandVisit,TownQuest,WinterStar",
 				"OliverK": "All",
 				"JosephineK": "All",
 				"LKKataryna": "All",
 				"LadySheba": "All",
-				"Rosa": "IslandVisit"
+				"Rosa": "IslandVisit, WinterStar"
 			}
 		},
 		{
@@ -355,17 +439,42 @@
 			"LogName": "Stray Cat Dialogue and Schedule",
 			"Action": "Load",
 			"Target": "Characters/Dialogue/LadySheba, Characters/schedules/LadySheba",
-			"FromFile": "assets/{{Target}}.json",
-			"When": {
-				"HasSeenEvent": "57879903"
-			}
+			"FromFile": "assets/{{Target}}.json"
 		},
 		{
 			"LogName": "Stray Cat Dialogue and Schedule",
 			"Action": "EditData",
 			"Target": "Characters/schedules/LadySheba",
 			"Entries": {
-				"spring": "900 {{sheba.groom}}/1100 {{sheba.wander}}/1300 {{sheba.nap}}/1500 {{sheba.sit}}/1800 {{sheba.wander}}/2200 Custom_ES_CatWarpRoom 2 4 sheba_nap"
+				"spring": "900 {{sheba.groom}}/1100 {{sheba.wander}}/1300 {{sheba.nap}}/1500 {{sheba.sit}}/1800 {{sheba.wander}}/2200 Custom_ES_CatWarpRoom 2 4 sheba_nap",
+				"rain": "610 Custom_ES_CatWarpRoom 2 4 sheba_nap/900 Custom_ESHouse4 9 14 sheba_nap/1400 Custom_EastScarpe 11 62 2 sheba_grooming/1800 Custom_EastScarpe 45 66 0 square 5_0/2100 Custom_ES_CatWarpRoom 2 4 sheba_nap",
+				"winter": "GOTO rain"
+			},
+			"When": {
+				"HasSeenEvent": "57879903"
+			},
+		},
+		{
+			"LogName": "Stray Cat Dialogue and Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/LadySheba",
+			"When": {
+				"HasMod": "skellady.dialacafe.CP"
+			},
+			"Entries": {
+				"rain": "610 Custom_ES_CatWarpRoom 2 4 sheba_nap/900 Custom_EastScarpe 58 84 sheba_nap/1400 Custom_EastScarpe 11 62 2 sheba_grooming/1800 Custom_EastScarpe 45 66 0 square 5_0/2100 Custom_ES_CatWarpRoom 2 4 sheba_nap"
+			}
+		},
+		{
+			"LogName": "Stray Cat Dialogue and Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/LadySheba",
+			"When": {
+				"HasSeenEvent": "57879001",
+				"HasMod": "Lemurkat.Tristan.CP"
+			},
+			"Entries": {
+				"rain": "610 Custom_ES_CatWarpRoom 2 4 sheba_nap/900 Custom_ES_Playhouse 4 5 sheba_nap/1400 Custom_EastScarpe 11 62 2 sheba_grooming/1800 Custom_EastScarpe 45 66 0 square 5_0/2100 Custom_ES_CatWarpRoom 2 4 sheba_nap"
 			}
 		},
 		{
@@ -454,6 +563,15 @@
 				"HasMod": "attonbomb.Beatrice"
 			}
 		},
+		{ // To activate, delete [TMX] Beatrice Festival Locations folder
+			"LogName": "BeatriceFestival",
+			"Action": "Include",
+			"FromFile": "assets/Festivals/Beatrice.json",
+			"When": {
+				"HasMod": "attonbomb.Beatrice",
+				"HasMod |contains=attonbomb.beatricelocations": "false"
+			}
+		},
 		{
 			"LogName": "Beatrice Summer",
 			"Action": "EditData",
@@ -498,7 +616,8 @@
 			"Action": "EditData",
 			"Target": "Characters/schedules/Nagito",
 			"When": {
-				"HasMod": "Lavender.Nagito"
+				"HasMod": "Lavender.Nagito",
+				"AllowNagito": true
 			},
 			"Entries": {
 				"spring": "700 NagitoCottage 11 5 0/800 Custom_EastScarpe 15 107 2 nagito_read/1700 NagitoCottage 5 5 2/2300 NagitoCottage 1 6 0 nagito_sleep",
@@ -513,7 +632,8 @@
 				"Warp": "7 12 Custom_EastScarpe 4 97 8 12 Custom_EastScarpe 4 97"
 			},
 			"When": {
-				"HasMod": "Lavender.Nagito"
+				"HasMod": "Lavender.Nagito",
+				"AllowNagito": true
 			}
 		},
 		//NPC for visiting "When": {"HasFlag":"Capsule_Broken"}
@@ -522,7 +642,15 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Farm",
 			"Entries": {
+				"57870000/x EastScarp_IntroMail true": "null",
 				"57873000/j 153/z summer/z winter/z spring/u 28/Hn Oliver_Meet/Hn Josephine_Meet": "continue/64 15/farmer 64 16 2 Lewis 64 18 0/addConversationTopic Josephine_Arrives 1/addConversationTopic Josephine_Introduction 7/pause 1500/speak Lewis \"{{i18n:57873000.01}}\"/pause 500/emote farmer 8/pause 1500/speak Lewis \"{{i18n:57873000.02}}\"/pause 500/jump farmer 3/emote farmer 16/pause 1500/speak Lewis \"{{i18n:57873000.03}}\"/emote farmer 60/speak Lewis \"{{i18n:57873000.04}}\"/pause 500/emote farmer 40/quickQuestion #{{i18n:57873000.q1}}#{{i18n:57873000.q2}}#{{i18n:57873000.q3}}#{{i18n:57873000.q4}}(break)emote Lewis 24\\pause 1000\\speak Lewis \"{{i18n:57873000.r1}}\"(break)emote Lewis 40\\pause 500\\speak Lewis \"{{i18n:57873000.r2}}\"(break)emote Lewis 28\\pause 500\\speak Lewis \"{{i18n:57873000.r3}}\"(break)emote Lewis 12\\speak Lewis \"{{i18n:57873000.r4}}\"/pause 1000/speak Lewis \"{{i18n:57873000.05}}\"/pause 1500/faceDirection Lewis 2/emote farmer 28/pause 1000/end"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Custom_ESMeadowFarm",
+			"Entries": {
+				"57879002/t 0600 1800": "continue/-100 -100/farmer -1000 -1000 0 Jacob 31 38 1/skippable/addTemporaryActor MidnightBlackKitty 32 32 -1000 -1000 3 false/viewport 31 34 clamp true/pause 500/textAboveHead Jacob \"{{i18n:57879002.01}}\"/pause 1000/move Jacob 5 0 0/textAboveHead Jacob \"{{i18n:57879002.02}}\"/pause 500/warp farmer 30 40/move farmer 0 -2 1/emote farmer 56/faceDirection Jacob 3/pause 500/speak Jacob \"{{i18n:57879002.03}}\"/pause 500/emote farmer 36/pause 2000/move Jacob -4 0 3/emote Jacob 40/speak Jacob \"{{i18n:57879002.04}}\"/pause 500/emote farmer 28/pause 500/speak Jacob \"{{i18n:57879002.05}}\"/faceDirection Jacob 0/speak Jacob \"{{i18n:57879002.06}}\"/faceDirection farmer 0/pause 500/speak Jacob \"{{i18n:57879002.07}}\"/move farmer 1 0 0/speak Jacob \"{{i18n:57879002.08}}\"/faceDirection Jacob 3/emote Jacob 40/playSound cat/jump Jacob 5 true/jump farmer 5 true/faceDirection farmer 0 true/faceDirection Jacob 0 true/warp MidnightBlackKitty 36 36/pause 500/playSound cat/move MidnightBlackKitty -5 0 2/pause 500/animate MidnightBlackKitty false false 120 16 17 18 18 18/textAboveHead Jacob \"{{i18n:57879002.09}}\"/animate MidnightBlackKitty false true 1000 18/pause 3000/emote farmer 32/pause 1000/playSound cat/pause 1000/end"
 			}
 		},
 		{
@@ -541,6 +669,18 @@
 			"When": {
 				"HasMod": "Lemurkat.Tristan.CP"
 			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/mail",
+			"Entries": {
+				"EastScarp_IntroMail": "{{i18n:ES_IntroMail}}[letterbg Mods/LemurKat.EastScarpe.CP/LetterBackgrounds 0][textcolor black][#]{{i18n:ES_IntroMail.Title}}"
+			}
+		},
+		{ //loads stationery
+			"Action": "Load",
+			"Target": "Mods/LemurKat.EastScarpe.CP/LetterBackgrounds",
+			"FromFile": "assets/Images/Stationery.png"
 		},
 		/*******************************************
             A N I M A L   N P C S
@@ -634,6 +774,11 @@
 			}
 		},
 		{ //edits in additional dialogue and/or translations
+			"LogName": "Spouse stuff",
+			"Action": "Include",
+			"FromFile": "assets/Spouses.json",
+		},
+		{ //edits in additional dialogue and/or translations
 			"LogName": "Translated Dialogue",
 			"Action": "Include",
 			"FromFile": "assets/Translations/{{Language}}.json",
@@ -641,11 +786,40 @@
 				"HasFile:{{FromFile}}": true
 			}
 		},
-		{ //edits in additional dialogue and/or translations
-			"LogName": "Spouse stuff",
-			"Action": "Include",
-			"FromFile": "assets/Spouses.json",
-		}
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_ESDeepMountains",
+			"FromFile": "assets/Maps/{{season}}_TrollGarden.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 12,
+				"Height": 12
+			},
+			"ToArea": {
+				"X": 23,
+				"Y": 11,
+				"Width": 12,
+				"Height": 12
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_ESClearingHouse",
+			"FromFile": "assets/Maps/{{season}}{{ESCrop}}_DaoCrop.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 6,
+				"Height": 6
+			},
+			"ToArea": {
+				"X": 45,
+				"Y": 33,
+				"Width": 6,
+				"Height": 6
+			}
+		},
 		/* Event Key:
 				57870000+ = Jacob and Eloise
 				57871000+ = Aideen

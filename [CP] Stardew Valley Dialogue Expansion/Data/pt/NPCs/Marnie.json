@@ -1,16 +1,15 @@
 {
-    "Changes": [
-    {
-            "LogName": "Marnie",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Marnie",
-            "Entries":
-            {
-                "Saloon": null,
-                "Saloon_Tue": null,
-                "Saloon_Wed": null,
-                "Saloon_Sun": null,
-                "Saloon_Sat": null,
+	"Changes":[
+		{
+			"LogName":"Marnie",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Marnie",
+			"Entries":{
+				"Saloon":null,
+				"Saloon_Tue":null,
+				"Saloon_Wed":null,
+				"Saloon_Sun":null,
+				"Saloon_Sat":null,
                 "Mon2": "Eu encomendo todos os nossos suprimentos de uma empresa com quem fiz negócios por quase duas décadas.#$e#Eu tenho um acordo especial resolvido, então é mais barato eu pedir o equipamento.",
                 "Mon4": "Leah tem sido uma boa vizinha, ela tem um profundo amor pela natureza.#$b#E isso inclui animais, claro.$h",
                 "Mon6": "Os animais são tão inocentes, tão doces... se eu não cuidar deles, quem vai?$s#$e#Eu espero que minhas galinhas não fiquem chateadas quando eu pego seus ovos.$s",
@@ -30,6 +29,8 @@
                 "Sat4": "Lily era minha vaca favorita quando era criança. Eu nunca tive outra vaca como ela.#$e#Ela era uma alma amorosa, pura e simples.",
                 "Sat6": "Eu sempre vejo Clint no salão, mas ele não fala com ninguém. Ele apenas olha por cima do ombro de vez em quando.$s",
                 "Sat8": "Às vezes eu sinto que sou o única que pode manter esta família.$s#$e#Sim... eu não queria me sentir assim, mas não posso contar com mais ninguém afinal.$s",
+				"Sat8_inlaw_Shane":"Às vezes sinto que sou a única que pode manter essa família funcionando.$s#$e#Então, novamente, isso não é de toda verdade. Você também é da família! E você fez coisas maravilhosas para Shane.$h",
+				"Sun2":"Se você quiser chocar suas próprias galinhas, você vai precisar da melhoria do galinheiro grande da Robin.#$e#Até que ponto, porém, eu vou vender-lhe quantas galinhas você gostaria.",
                 "Sun4": "Você já pensou em criar uma máquina de maionese?#$e#Eu nunca gostei de maionese até que eu tentei fazer um caseiro. Maionese comprada na loja não se compara a feita em casa.",
                 "Sun6": "Se eu passar minha vida cuidando das pessoas e animais que eu amo, então eu diria que é uma vida bem vivida.$h",
                 "summer_Mon2": "Uma das nossas vacas deu luz ontem à noite.$h#$e#Eu não acho que vou me cansar de ver como a vida continua assim. A vida sempre encontrará uma maneira de nos surpreender.",
@@ -60,6 +61,7 @@
                 "fall_15_2": "Eu tenho me esforçado muito para conseguir uma boa exposição para a feira de amanhã, e você?#$e#Vou vencer dessa vez.$h",
                 "winter_24_2": "Oi! Você vai pra festa amanhã?$h",
                 "winter_28_2": "Mais um ano se passou! Nossos animais passaram novamente pelo inverno.$h",
-            }
-        }]
+			}
+		}
+	]
 }

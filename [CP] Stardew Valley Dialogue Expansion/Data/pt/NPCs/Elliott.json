@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Elliott",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Elliott",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Elliott",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Elliott",
+			"Entries":{
                 "Mon2": "Esse lugar é maravilhoso, sabia que me encaixaria no primeiro momento que cheguei aqui.#$e#Espero que você esteja sentindo o mesmo.$h",
                 "Mon4": "Espero que você trate o vale como um lar, é um ótimo lugar para viver.",
                 "Mon6": "Eu acredito que a beleza está nos olhos de quem vê.#$b#E nosso cérebro funciona como um telescópio, você não acha?",
@@ -97,14 +96,13 @@
                 "summer_27_2": "A Dança das Medusas-da-Lua foi uma experiência maravilhosa no ano passado. Espero que este ano não seja diferente.#$e#E você não consegue vencer a localização da minha casa!$h",
                 "winter_15_2": "O mercado noturno está de volta. Eu nunca imaginei que teria esse tipo de espetáculo maravilhoso em frente a porta da minha casa.$h",
                 "winter_28_2": "Aqui está outro capítulo de nossas vidas! [459]$h#$e#Felicidades.",
-            }
-        },
-        {
-            "LogName": "Elliott Marriage",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialogueElliott",
-            "Entries":
-            {
+			}
+		},
+		{
+			"LogName":"Elliott Marriage",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/MarriageDialogueElliott",
+			"Entries":{
                 "Rainy_Day_0": "#$c .5#Essa chuva me traz tanta inspiração.#Eu amo andar pela casa ouvindo esse som, você não?$h",
                 "Rainy_Day_1": "Esse som de chuva me lembra um pouco da minha cabana na praia.#$e#$c .5#Vou fazer uma visita lá em breve.#A fazenda é maravilhosa também, esse cheiro de terra molhada... não tem como ficar melhor.$h",
                 "Rainy_Day_2": "Eu levantei cedo e fiz um pouco de café para nós.[395]#$e#$c .5#É uma mistura deliciosa, eu já me acostumei com o gosto do café, maravilhoso.$h#Descobri que além de confortante fazem nossa mente se abrir com mais facilidade, você sabia disso?",
@@ -156,6 +154,7 @@
                 "winter_12": "Devo dizer, é deliciosamente acolhedor aqui! Minha velha cabana ficou tão fria.$h#$b#Assim como eu deveria ter começado a esquecê-la, eu me lembro como era realmente rudimentar.",
                 "winter_16": "Meus dedos costumavam ficar tão duros quanto eu escrevia naquela cabana velha e fria.#$b#Eu nunca tenho que me preocupar com isso aqui.$h",
                 "winter_21": "Eu sempre pensei, contanto que falar seja uma das coisas mais fundamentalmente humanas que fazemos, eu poderia muito bem me orgulhar disso.$h#$e#Eu digo que devo falar com melancolia, mesmo que outros achem estranho.#$b#No entanto, você me conhece bem, querida. Seria estranho se eu não falasse com minha voz mais autêntica, não seria?",
-            }
-        }]
+			}
+		}
+	]
 }

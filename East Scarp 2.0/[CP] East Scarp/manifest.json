@@ -1,7 +1,7 @@
 {
-    "Name": "[CP] East Scarpe",
+    "Name": "[CP] East Scarp",
     "Author": "LemurKat",
-    "Version": "2.0.4",
+    "Version": "2.1.4",
     "Description": "Adds an area east of town.",
     "UniqueID": "LemurKat.EastScarpe.CP",
     "MinimumApiVersion": "1.0.0",
@@ -10,7 +10,7 @@
       { "UniqueID": "LemurKat.EastScarpe.SMAPI" },
       { "UniqueID": "DaisyNiko.Tilesheets" },
       { "UniqueID": "Lumisteria.LumiTilesheetsIndoor" },
-      { "UniqueID": "Platonymous.Toolkit" },
+      //{ "UniqueID": "Platonymous.Toolkit" },
 	//false requirements (Added for load order purposes)
       { "UniqueID": "SEnhanced.Shortcuts",  "IsRequired": false },
       { "UniqueID": "minervamaga.CP.eemieMapRecolour", "IsRequired": false   },

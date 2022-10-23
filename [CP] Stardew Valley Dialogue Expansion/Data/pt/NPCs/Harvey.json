@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Harvey",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Harvey",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Harvey",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Harvey",
+			"Entries":{
                 "Mon4": "É importante manter um Hobby, você tem um?#$q 080/081/082/083 Mon_old#Qual seu maior passatempo fora da agricultura?, @?#$r 080 5 Mon_080#Pescaria.#$r 081 5 Mon_081#Conversar.#$r 082 5 Mon_082#Decoração.#$r 083 -50 Mon_083#BEBE CAÍ E LEVANTÁ.",
                 "Mon_old": "$p 083#Como seu médico, tenho que perguntar, você encontrou uma saída saudável que não envolva álcool? | Sem um pouco de variedade, fica fácil ficar doente.",
                 "Mon_080": "Ah, sim! É uma bela região para pescar.$h#$b#Além disso, imagino que você poderia preparar ótimas refeições com o que você pesca.",
@@ -24,8 +23,10 @@
                 "Thu2": "Alimentos fermentados são ótimos para o sistema digestivo. Nem todo mundo é fã, mas humanos em todo o mundo sobreviveram assim por milênios.#$e#Como tal, nossos corpos ainda dependem deles para os probióticos.",
                 "Thu4": "Desculpe se já soei paternalista com o meu conselho médico. É meu trabalho lembrar as pessoas dos hábitos básicos de cuidados.#$e#Eu gostaria que não fosse necessário, mas as estatísticas mostram que um número alarmante de pessoas não aceitam os conselhos que recebemos na escola.",
                 "Thu6": "Todos os registros médicos dos meus pacientes são estritamente confidenciais. Espero que você entenda porque eu não posso sempre conversar.",
+                "Thu8":"Eu nunca desenvolvi o complexo de mártir que tantos médicos desenvolvem.#$e#Sinto que tenho um trabalho decentemente difícil e que estou tecnicamente de plantão 24 horas por dia, 7 dias por semana, mas também quero estar presente para minha própria vida.",
                 "Thu10": "É muito trabalhoso ser médico, eu não como tão bom quanto deveria.$s#$e#Se eu não morasse sozinho, acho que seria mais fácil.$l",
                 "Fri2": "O médico que trabalhou aqui antes de mim deve ter estado por perto quando a Vila Pelicanos ainda estava sendo construída.#$b#Imagino quantos casos de problemas respiratórios com os quais ele teve de lidar.$s",
+                "Fri6":"Ouvi falar do seu antigo emprego na Joja Co. Parece que você saiu de lá bem na hora.#$e#Foi um grande risco para você deixar sua antiga vida para trás. No entanto, estou feliz que você está aqui.",
                 "Fri8": "Às vezes é um desafio equilibrar os papéis de 'médico' e 'vizinho' com os outros moradores da cidade.#$e#Eu ainda vou assumir o anonimato de só ver a maioria dos pacientes uma vez por ano.",
                 "Sat": "Hoje é meu dia de folga, mas penso que não devo ficar parado o dia todo.",
                 "Sat2": "Posso te dizer uma coisa?#$e#Se cuide.",
@@ -72,14 +73,13 @@
                 "summer_10_2": "Eu realmente espero que ninguém fique doente com a sopa comunitária amanhã.#$e#Potencialmente, é um desastre esperando para acontecer. Mas esta cidade com certeza ama suas tradições.",
                 "winter_7_2": "Com todo mundo lá fora no frio amanhã? Não estou preocupado. Não mais do que o habitual, de qualquer maneira.#$e#O clima frio em si não é o que causa a doença. As pessoas ainda devem se agrupar.",
                 "winter_28_2": "Então... quando o próximo ano terminar, vou ter… quantos anos mesmo? Hm.$s",
-            }
-        },
-        {
-            "LogName": "Harvey Marriage",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
-            "Entries":
-            {
+			}
+		},
+		{
+			"LogName":"Harvey Marriage",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/MarriageDialogueHarvey",
+			"Entries":{
                 "Rainy_Day_0": "#c .5#Você deveria usar uma capa de chuva hoje.#É falso que a chuva causa a gripe mas... cuidado para não escorregar na lama!#$e#Se cuida.$h",
                 "Rainy_Day_1": "#c .5#Era bastante solitário ficar naquela clínica, mas as coisas estão melhores agora.$h#Também já me acostumei a acordar cedo, nunca cheguei a acordar essa hora quando trabalhava na clínica!",
                 "Rainy_Day_2": "#c .5#Você dormiu bem? Eu levantei antes e tomei cuidado para não te acordar.#Ah, você não vai usar uma capa de chuva mesmo que eu te peça, não é?$s",
@@ -131,6 +131,7 @@
                 "winter_16": "Quando você abriu aquela carta do seu avô… sabe, aquela que você me contou?#$b#É estranho pensar como eu nem te conhecia, mas esse momento mudou a direção da minha vida para sempre.$l#$e#Isso faz você pensar... o que mais está acontecendo no mundo agora, que nós não sabemos, mas vai mudar nossas vidas para sempre?",
                 "winter_24": "Ah, sim, a festa é amanhã! Eu mal posso esperar!$h#$e#Vamos comer bem, mas com segurança, sim?$h",
                 "winter_26": "Ei, isso aqui ficou sobrando da festa! [348]$h#$e#Hoje teremos uma noite maravilhosa.$l",
-            }
-        }]
+			}
+		}
+	]
 }

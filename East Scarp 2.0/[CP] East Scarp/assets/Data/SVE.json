@@ -92,7 +92,7 @@
             "Action": "EditMap",
             "Target": "Maps/Custom_ShearwaterBridge",
             "MapProperties": {
-                "Warp": "-1 19 Town 118 70 -1 20 Town 118 71 -1 21 Town 118 72 -1 22 Town 118 73 -1 23 Town 118 73 60 19 Custom_EastScarpe 0 70 60 20 Custom_EastScarpe 0 71 60 21 Custom_EastScarpe 0 72 60 22 Custom_EastScarpe 0 73 60 23 Custom_EastScarpe 0 74"
+                "Warp": "-1 19 Town 118 72 -1 20 Town 118 72 -1 21 Town 118 72 -1 22 Town 118 72 -1 23 Town 118 72 60 19 Custom_EastScarpe 0 70 60 20 Custom_EastScarpe 0 71 60 21 Custom_EastScarpe 0 72 60 22 Custom_EastScarpe 0 73 60 23 Custom_EastScarpe 0 74"
                 // 60 24 Custom_EastScarpe 0 74 60 25 Custom_EastScarpe 0 74 60 26 Custom_EastScarpe 0 74"
             },
             "When": {
@@ -125,7 +125,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_EastScarpe 78 33"
+                        "TouchAction": "Warp Custom_EastScarpe 78 33"
                     }
                 },
                 {
@@ -135,7 +135,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_EastScarpe 78 34"
+                        "TouchAction": "Warp Custom_EastScarpe 78 34"
                     }
                 },
                 {
@@ -145,7 +145,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_EastScarpe 78 35"
+                        "TouchAction": "Warp Custom_EastScarpe 78 35"
                     }
                 }
             ],
@@ -181,7 +181,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_TownEast 2 20"
+                        "TouchAction": "Warp Custom_Garden 2 20"
                     }
                 },
                 {
@@ -191,7 +191,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_TownEast 2 20"
+                        "TouchAction": "Warp Custom_Garden 2 20"
                     }
                 },
                 {
@@ -201,7 +201,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_TownEast 2 20"
+                        "TouchAction": "Warp Custom_Garden 2 20"
                     }
                 }
             ],

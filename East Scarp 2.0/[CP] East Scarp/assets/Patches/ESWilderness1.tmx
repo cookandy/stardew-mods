@@ -3109,37 +3109,37 @@
  <objectgroup id="4" name="Buildings">
   <object id="38" name="TileData" x="176" y="80" width="16" height="16">
    <properties>
-    <property name="Action" value="Say A landslide has completely covered the mine entrance."/>
+    <property name="Action" value="Message &quot;ESWilderness.1&quot;"/>
    </properties>
   </object>
   <object id="41" name="TileData" x="192" y="96" width="16" height="16">
    <properties>
-    <property name="Action" value="Say It's old and rusty, and will never run again."/>
+    <property name="Action" value="Message &quot;ESWilderness.2&quot;"/>
    </properties>
   </object>
   <object id="42" name="TileData" x="112" y="112" width="16" height="16">
    <properties>
-    <property name="Action" value="Say The inside is black with coal dust."/>
+    <property name="Action" value="Message &quot;ESWilderness.3&quot;"/>
    </properties>
   </object>
   <object id="43" name="TileData" x="96" y="112" width="16" height="16">
    <properties>
-    <property name="Action" value="Say The inside is black with coal dust."/>
+    <property name="Action" value="Message &quot;ESWilderness.4&quot;"/>
    </properties>
   </object>
   <object id="44" name="TileData" x="208" y="208" width="16" height="16">
    <properties>
-    <property name="Action" value="Say Someone has put out water for the wildlife."/>
+    <property name="Action" value="Message &quot;ESWilderness.5&quot;"/>
    </properties>
   </object>
   <object id="47" name="TileData" x="288" y="432" width="16" height="16">
    <properties>
-    <property name="Action" value="Warp 44 31 EastScarpeInn"/>
+    <property name="Action" value="Warp 44 35 Custom_EastScarpeInn"/>
    </properties>
   </object>
   <object id="48" name="TileData" x="304" y="432" width="16" height="16">
    <properties>
-    <property name="Action" value="Warp 44 31 EastScarpeInn"/>
+    <property name="Action" value="Warp 44 35 Custom_EastScarpeInn"/>
    </properties>
   </object>
   <object id="49" name="TileData" x="320" y="432" width="16" height="16">

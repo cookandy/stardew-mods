@@ -22,6 +22,7 @@
                 "{{spacechase0.JsonAssets/ObjectId:Ornate Nudibranch}}": "Ornate Nudibranch/80/floater/1/3/1000 1800/spring/both/683 .2 689 .4/4/.1/.25/0",
                 "{{spacechase0.JsonAssets/ObjectId:Sea Bunny Nudibranch}}": "Sea Bunny Nudibranch/80/sinker/1/3/1000 1800/summer/both/683 .2 689 .4/4/.1/.25/0",
                 "{{spacechase0.JsonAssets/ObjectId:Sunset Nudibranch}}": "Sunset Nudibranch/85/mixed/1/3/1000 1800/fall/both/683 .2 689 .4/4/.1/.25/0",
+                "{{spacechase0.JsonAssets/ObjectId:Red Herring}}": "Red Herring/65/dart/8/20/600 2600/spring summer fall winter/both/685 .2/3/.33/.1/0"
             },
             "When": {
                 "HasMod |contains=spacechase0.JsonAssets": true
@@ -32,6 +33,7 @@
             "Target": "Data/Locations",
             "Entries": {
                 "Custom_ESDeepMountains": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/269 -1 699 -1 {{spacechase0.JsonAssets/ObjectId:Golden Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}} -1/699 -1 {{spacechase0.JsonAssets/ObjectId:Golden Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}} -1/139 -1 269 -1 699 -1 {{spacechase0.JsonAssets/ObjectId:Golden Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}} -1/269 -1 699 -1 {{spacechase0.JsonAssets/ObjectId:Golden Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}} -1/100 1 101 .31 103 .8 105 .7 106 .1 107 .65 114 .1",
+                "Custom_ESSmugglerDen": "-1/-1/-1/-1/153 -1 157 -1 147 -1 156 -1 796 -1 {{spacechase0.JsonAssets/ObjectId:Red Herring}} -1/153 -1 157 -1 147 -1 156 -1 796 -1 {{spacechase0.JsonAssets/ObjectId:Red Herring}} -1/153 -1 157 -1 147 -1 156 -1 796 -1 {{spacechase0.JsonAssets/ObjectId:Red Herring}} -1/153 -1 157 -1 147 -1 156 -1 796 -1 {{spacechase0.JsonAssets/ObjectId:Red Herring}} -1/330 1"
             },
             "When": {
                 "HasMod |contains=spacechase0.JsonAssets": true
@@ -118,6 +120,56 @@
             ]
         },
         {
+            "Action": "EditData",
+            "LogName": "Fish Location Data",
+            "Target": "Data/Locations",
+            "When": {
+                "HasMod |contains=spacechase0.JsonAssets": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Custom_ESSeaCave",
+                        4
+                    ],
+                    "Value": "{{spacechase0.JsonAssets/ObjectId:Ornate Nudibranch}} -1",
+                    "Delimiter": " " // if there are already values, add a space between them and the new ones
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Custom_ESSeaCave",
+                        5
+                    ],
+                    "Value": "{{spacechase0.JsonAssets/ObjectId:Sea Bunny Nudibranch}} -1",
+                    "Delimiter": " " // if there are already values, add a space between them and the new ones
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Custom_ESSeaCave",
+                        6
+                    ],
+                    "Value": "{{spacechase0.JsonAssets/ObjectId:Sunset Nudibranch}} -1",
+                    "Delimiter": " " // if there are already values, add a space between them and the new ones
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Custom_ESSeaCave",
+                        7
+                    ],
+                    "Value": "{{spacechase0.JsonAssets/ObjectId:Cerulean Nudibranch}} -1",
+                    "Delimiter": " " // if there are already values, add a space between them and the new ones
+                }
+            ]
+        },
+        {
             "LogName": "Aquarium Data",
             "Action": "EditData",
             "Target": "Data/AquariumFish",
@@ -130,7 +182,8 @@
                 "{{spacechase0.JsonAssets/ObjectId:Cerulean Nudibranch}}": "145/crawl",
                 "{{spacechase0.JsonAssets/ObjectId:Ornate Nudibranch}}": "146/float",
                 "{{spacechase0.JsonAssets/ObjectId:Sea Bunny Nudibranch}}": "143/crawl",
-                "{{spacechase0.JsonAssets/ObjectId:Sunset Nudibranch}}":"144/crawl"
+                "{{spacechase0.JsonAssets/ObjectId:Sunset Nudibranch}}": "144/crawl",
+                "{{spacechase0.JsonAssets/ObjectId:Red Herring}}": "142/fish"
             }
         },
         {
@@ -302,6 +355,42 @@
                         ],
                         "8": [
                             "908 2"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FishPondData",
+            "Entries": {
+                "item_red_herring": {
+                    "RequiredTags": [
+                        "item_red_herring"
+                    ],
+                    "SpawnTime": 1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 1.0,
+                            "ItemID": 812,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 8,
+                            "Chance": 0.1,
+                            "ItemID": 64,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                    "PopulationGates": {
+                        "4": [
+                            "169 3"
+                        ],
+                        "6": [
+                            "393"
                         ]
                     }
                 }

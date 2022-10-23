@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Evelyn",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Evelyn",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Evelyn",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Evelyn",
+			"Entries":{
                 "Introduction": "Nossa! Você chegou agora? Espero que se encaixe na nossa querida comunidade, querido!^Nossa! Você chegou agora? Espero que se encaixe na nossa querida comunidade, querida!#$b#Você pode me chamar de vovó se quiser.$h",
                 "Mon4": "Costumava ter muitas crianças correndo pela cidade, mas nossa! Como crescem!",
                 "Mon6": "Eu tenho dias bons e ruins por causa da minha idade, mas hoje é um dia muito bom!#$e#E os dias ruins fazem parte também.$h",
@@ -27,6 +26,7 @@
                 "summer_Thu6": "Sempre temos mais visitas quando eu faço biscoitos, por isso nunca sobra.$h#$e#Foi minha mãe que ensinou a receita para fazer eles.",
                 "summer_Thu8": "Acho que vou fazer pão caseiro hoje.#$e#Eu só preciso ir comprar os ingredientes.",
                 "summer_Sun10": "*Sniff*...Olá, @, tudo bem?$s#$e#Sinto muito por você me ver assim. Foi nessa época do ano que perdemos nossa filha, a mãe do Alex.$s#$e#Eu vou ficar bem, obrigada por perguntar.$s",
+                "fall_Tue6":"O que fazem os jovens hoje em dia?#$e#Acho que teria que visitar a cidade de Zuzu para ter certeza. A Vila Pelicanos não deve ser como muitos outros lugares.",
                 "fall_Wed8": "Qual o segredo para um casamento durar tanto? Que ótima pergunta!#$b#Claro, tem muitos fatores, mas uma coisa é...#$b#...O amor, querido, o amor é a base para evitar os motivos que leva à separação.^...O amor, querida, o amor é a base para evitar os motivos que leva à separação.",
                 "fall_Thu4": "Hoje estarei assando biscoitos de novo! Dessa vez em formato de espadas!$h#$e#Você tem algum outro formato para recomendar?",
                 "fall_Thu6": "Eu vou tentar algo diferente hoje... Biscoitos em formato de calçinha!$h#$e#O quê? Eu disse pãozinhos.",
@@ -53,6 +53,7 @@
                 "summer_10_2": "Mais um ano maravilhoso, espero que todos contribuam para a sopa.#$e#Traga algo delicioso para a sopa.",
                 "winter_7_2": "Nossa! Está muito frio!#$e#Mas eu e George vamos para o festival sim, não se preocupe.$h",
                 "winter_28_2": "É uma benção ter você na comunidade, @, Feliz Ano Novo!$h",
-            }
-        }]
+			}
+		}
+	]
 }

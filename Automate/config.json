@@ -1,5 +1,5 @@
 {
-  "PullGemstonesFromJunimoHuts": false,
+  "Enabled": true,
   "AutomationInterval": 60,
   "Controls": {
     "ToggleOverlay": "U"
@@ -8,10 +8,10 @@
     "Workbench",
     "Stepping Stone Path"
   ],
-  "ModCompatibility": {
-    "BetterJunimos": true,
-    "WarnForMissingBridgeMod": true
-  },
+  "JunimoHutBehaviorForGems": "AutoDetect",
+  "JunimoHutBehaviorForFertilizer": "AutoDetect",
+  "JunimoHutBehaviorForSeeds": "AutoDetect",
+  "WarnForMissingBridgeMod": true,
   "MachineOverrides": {
     "ShippingBin": {
       "Priority": -1,

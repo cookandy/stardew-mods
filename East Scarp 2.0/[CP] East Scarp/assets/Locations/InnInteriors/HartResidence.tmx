@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="18" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="107">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="18" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="107">
  <editorsettings>
   <export target="VetHouse.tmx" format="tmx"/>
  </editorsettings>
@@ -8,7 +8,7 @@
   <property name="DayTiles" value="Front 6 2 469 Front 6 3 501 Front 7 2 469 Front 7 3 501 Back 3 13 539 Front 3 9 256 Front 3 10 288 Front 12 9 256 Front 12 10 288 Back 14 12 31 Back 14 13 63 Front 14 9 256 Front 14 10 288 Back 11 24 228 Back 11 25 260 Front 11 21 256 Front 11 22 288 Back 12 24 228 Back 12 25 260 Front 12 21 256 Front 12 22 288"/>
   <property name="Doors" value="6 31 1 120 7 18 1 120 10 18 1 120"/>
   <property name="NightTiles" value="Front 6 2 1219 Buildings 6 3 1251 Front 7 2 1219 Front 7 3 1251 Back 3 13 635 Front 3 9 1253 Front 3 10 1285 Front 12 9 1253 Front 12 10 1285 Back 14 12 28 Back 14 13 60 Front 14 9 1253 Front 14 10 1285 Back 11 24 199 Back 11 25 232 Front 11 21 1253 Front 11 22 1285 Back 12 24 200 Back 12 25 232 Front 12 21 1253 Front 12 22 1285"/>
-  <property name="Warp" value="-1 29 Custom_EastScarpeInn 50 21 14 31 Custom_EastScarpe 49 64"/>
+  <property name="Warp" value="-1 29 Custom_EastScarpeInn 49 23 14 31 Custom_EastScarpe 49 64"/>
  </properties>
  <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
@@ -23,8 +23,8 @@
  <tileset firstgid="2177" name="p" tilewidth="16" tileheight="16" tilecount="36" columns="4">
   <image source="paths.png" width="64" height="144"/>
  </tileset>
- <tileset firstgid="2213" name="lemurfurniture" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
-  <image source="lemurfurniture.png" width="512" height="1024"/>
+ <tileset firstgid="2213" name="lemurfurniture" tilewidth="16" tileheight="16" tilecount="2624" columns="32">
+  <image source="lemurfurniture.png" width="512" height="1312"/>
  </tileset>
  <layer id="1" name="Back" width="18" height="40">
   <data encoding="csv">
@@ -428,7 +428,7 @@
 </data>
  </layer>
  <objectgroup id="6" name="Front"/>
- <layer id="7" name="Paths" width="18" height="40" visible="0">
+ <layer id="7" name="Paths" width="18" height="40">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

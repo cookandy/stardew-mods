@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Pierre",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Pierre",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Pierre",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Pierre",
+			"Entries":{
                 "Mon2": "Como vai a fazenda?#$e#Eu realmente acho que poderíamos ter uma boa relação de negócios, eu e você.#$b#Então espero te ver por aí!",
                 "Mon4": "Oi @, precisando de sementes ou mudas de árvores?",
                 "Mon6": "Caroline e eu nos conhecemos durante o ensino médio...#$e#Está indo bem, até agora!$h",
@@ -14,6 +13,7 @@
                 "Tue4": "Se ajudarmos uns aos outros, nossa comunidade certamente irá prosperar.#$e#De qualquer forma, gostaria de comprar algo?$h",
                 "Tue10": "$d Joja#Parece que a mercearia de Grampleton anda com alguns problemas... imagino quando será minha vez.$s|Eu estive observando... parece que a Joja estava tendo bastante prejuízo. Sua estratégia geral nem ao menos fornece lucro enquanto as empresas locais não estiverem extintas.",
                 "Wed6": "#$1 pierre1#Não importa o quão bem estejam indo os negócios, nunca é o suficiente para satisfazer meu desejo. Talvez eu esteja apenas entediado com a vida doméstica.$s#$e#Algum dia irei abrir uma nova loja na cidade e fazer uma grana.#$e#Infelizmente, os negócios estão indo muito devagar e eu mal consigo juntar dinheiro...$s",
+				"Wed10":"Hey, imagine você trabalhar no balcão por algumas horas, enquanto eu vou trabalhar na sua fazenda?#$e#Haha, to apenas brincando.$h#$e#...*suspiro*$s",
                 "Thu4": "Ei, se tudo der certo, farei promoções pra você!",
                 "Thu6": "$d Joja#Eu apoio um mercado livre tanto quanto qualquer um, mas quem exatamente é \"livre\" quando Joja detém a quantidade de poder que tem?$s|Apenas outro lindo dia em nossa vizinhança!",
                 "Thu8": "É mais fácil ficar de bom humor quando há rostos familiares por aqui.#$e#Então muito obrigado pela visita!$h",
@@ -34,7 +34,7 @@
                 "summer_Fri6": "O verão é um bom momento para comer uma boa salada, não acha?",
                 "fall_1": "As sementes de outono estão aqui! Sementes não germinam no inverno, então essa é sua última chance até a primavera.#$b#É melhor se empenhar, hein?",
                 "fall_Mon4": "Eu simplesmente não consigo acompanhar os jogos de gridebol.#$e#Mas consigo ouvir o rádio às vezes.",
-                "fall_Mon8": "Ouvi dizer que teve um jogão ontem à noite.#$e#Joseph correu por todas as jardas e marcou o gol.#$e#IHÁÁÁ!$h",
+                "fall_Mon8": "Ouvi dizer que teve um jogão ontem à noite.#$e#Joseph correu por todas as jardas e marcou o gol.#$e#IHÁÁÁ!$h",																	   
                 "fall_Mon_inlaw_Abigail": "Oi @, tudo bem?",
                 "fall_Mon4_inlaw_Abigail": "Oi, @. Como vai a Abigail? Diga a ela que estamos com saudades por aqui.",
                 "fall_Sun": "Olá! Está tudo certo com a fazenda?#$e#Talvez algumas de minhas sementes possam deixá-la ainda mais bonita.$h",
@@ -64,6 +64,7 @@
                 "fall_15_2": "Estou quase certo de que vou ganhar com a minha exposição de amanhã.$h#$b#Mas toda competição é bem-vinda.",
                 "fall_26_2": "Estarei vendendo produtos raros novamente durante a Véspera dos Espíritos. Espero que você venha dar uma olhada!",
                 "winter_28_2": "Feliz ano novo, @. Obrigado pela visita.",
-            }
-        }]
+			}
+		}
+	]
 }

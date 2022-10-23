@@ -1,12 +1,12 @@
 {
-    "Changes": [
-    {
-            "LogName": "Abigail",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Abigail",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Abigail",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Abigail",
+			"Entries":{
                 "Mon4": "Eu poderia praticar esgrima com alguém...#$b#Mas ninguém parece fazer meu estilo, você acha que Marlon aceitaria?$u",
+                "Mon6":"À medida que envelheci, descobri uma maneira de dar um olhar assustador aos meus pais.#$e#Eu acho que eles tem medo dele.$h",
                 "Mon8": "@! Como vai?$h#$e#Você já visitou aquela mulher que lê o futuro? Eu aprendi um pouco a como ler a mão, vem aqui.$h",
                 "Tue4": "Será que os pais de todos são foras da realidade como os meus?$s#$e#A ideia de uma garota usando uma espada é algo fora da realidade para eles.$u",
                 "Tue6": "Ei, @!$h#$e#Eu quero limpar minha mente, você quer conversar?",
@@ -17,6 +17,7 @@
                 "Wed10": "Quando eu tiver filhos vou deixar que sejam o que querem.#$e#Mesmo que vá contra minha opinião, é certo, não acha?",
                 "Thu": "Não estou de bom humor agora.$s#$e#Eu disse que... você pode me deixar em paz?$a",
                 "Thu2": "Sebastian é de longe meu melhor amigo hoje em dia.#$e#Nós crescemos juntos.$h",
+                "Thu4":"#$1 Abigail1#Ah não, acho que meu pai vai fazer o jantar hoje à noite...$s#$e#Não estou com vontade de fazer nada hoje...$u",
                 "Thu6": "Eu tocava bateria quando era criança.#$e#É por isso que sou rápida com a espada hoje em dia.$h",
                 "Thu4": "Você sabia que existe uma caverna perto do Oásis no deserto?#$b#Marlon disse que tem múmias que não morrem com cortes simples naquele lugar.$3#$e#Ele disse que você precisa usar explosivos para dar fim nelas de uma vez, então...$3#$b#Você pode anexar explosivos em um estilingue, você sabia disso?$h",
                 "Thu10": "Oie.$l#$e#Você já sentiu como se tudo fosse uma ilusão em sua volta?#$b#Podemos estar sob efeito de um genjutsu nesse momento.$h",
@@ -105,14 +106,13 @@
                 "fall_26_2": "Você estará no festival dos espíritos amanhã? Me procure no labirinto.",
                 "winter_24_2": "Eu vou comer tanto amanhã?$h",
                 "winter_28_2": "Ei! Você pretende madrugar?#$e#Ah, você tem trabalho amanhã.$3",
-            }
-        },
-        {
-            "LogName": "Abigail Marriage",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialogueAbigail",
-            "Entries":
-            {
+			}
+		},
+		{
+			"LogName":"Abigail Marriage",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/MarriageDialogueAbigail",
+			"Entries":{
                 "Rainy_Day_0": "#$c .5#Hm... hoje seria um belo dia para desenhar algum tipo de monstro.#Você que já viu tantos, pode me contar sobre um?$l",
                 "Rainy_Day_1": "Essa chuva me lembra daquele dia quando tocamos embaixo daquela árvore...#$e#$c .5#Você me surpreendeu muito com aquela harpa, de onde você tirou ela?#É por isso que eu te amo!$l",
                 "Rainy_Day_2": "Eu, olhe o que eu achei. [768 767 769 66 82]#$e#$c .5#Como eu saí da cama sem você perceber?#Ah! Você casou com uma ninja!$h",
@@ -157,6 +157,7 @@
                 "winter_19": "Hoje pretendo ir ao salão, por que você também não vem?#$e#Eu sempre me encontro com meus amigos nesse dia.$h",
                 "winter_24": "Eu passei a gostar mais do dia de ações de graças depois que comecei a ter mais pelo que agradecer.#$e#Não tem sido uma vida ruim até agora, sabe?$l",
                 "winter_28": "Eu sei que não costumo beber isso, mas ei, vamos curtir o último dia do ano! [346][346]",
-            }
-        }]
+			}
+		}
+	]
 }

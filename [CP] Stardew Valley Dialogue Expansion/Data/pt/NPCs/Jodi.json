@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Jodi",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Jodi",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Jodi",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Jodi",
+			"Entries":{
                 "spring_1_2": "O dia está maravilhoso! Nossa família tem muito pra agradecer!$h#$e#Eu vou vou esquecer o dia que vi o Kent saindo daquele ônibus.$h",
                 "Mon2": "#$1 JodiAltar#Ontem visitei o altar de Yoba para pedir o retorno seguro do meu marido.#$e#Estou tentando ficar positiva, mas às vezes não dá...$s",
                 "Mon4": "O sam já te ensinou alguma coisa sobre guitarras?#$e#Ele é muito bom nisso.$h",
@@ -89,6 +88,7 @@
                 "winter_28": "Os garotos estão ficando acordados até tarde, mas eu ainda tenho muitas orações para fazer hoje à noite.",
                 "winter_24_2": "Vicent está tão animado para amanhã!$h",
                 "winter_28_2": "Tudo parece tão promissor na virada do ano.$h",
-            }
-        }]
+			}
+		}
+	]
 }

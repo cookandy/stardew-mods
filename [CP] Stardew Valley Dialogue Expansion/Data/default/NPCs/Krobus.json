@@ -32,8 +32,15 @@
 				"Sat10":"Thank you for being respectful toward my devotion of silence on Fridays.",
 				"Sun2":"Please keep my location a secret. If the dwarves knew of me, they'd surely send an assassin.",
 				"Sun6":"I have safeguarded the Return Scepter for many years. Its origin predates both our species, significantly.#$e#As such, I hope you understand why I cannot sell it for an ordinary price.",
+				"summer_Mon10":"Do you, too, feel comfortable in the darkness? I heard the human body needs sunlight to stay healthy. Is it harmful for you to spend too much time down here?",
+				"summer_Tue10":"I know that I cannot spend too much time in the sun. Can you not spend much time in the dark?",
+				"summer_Wed6":"If you put your ear up to the right pipe, you can hear into any house from down here.#$b#I wouldn't eavesdrop, though!$3",
 				"summer_Thu6":"Please don't tell anyone about me.#$b#Most humans are frightened by us shadow people... maybe for good reason.$s#$b#But regardless, if the townspeople knew about me, I might not be safe here.",
-				"winter_Wed6":"If you put your ear up to the right pipe, you can hear into any house from down here.#$b#I wouldn't eavesdrop, though!$3"
+				"fall_Thu10":"There are plenty of delicious things to eat down here. Flies. Slugs. Roaches.#$e#Recently, I saw a mantis who was lost.",
+				"fall_Sun10":"Seems you may have found some secret notes.#$e#Yes, I apologize. Some of my kind enjoy snatching notes from humans' houses at night. We sometimes discard them in unusual places.",
+				"winter_Tue10":"It's too cold for the tiny bugs to survive. My food supply is a bit short.$s",
+				"winter_Wed6":"If you put your ear up to the right pipe, you can hear into any house from down here.#$b#I wouldn't eavesdrop, though!$3",
+				"winter_Thu6":"Please don't tell anyone about me.#$b#Most humans are frightened by us shadow people... maybe for good reason.$s#$b#But regardless, if the townspeople knew about me, I might not be safe here.",
 			}
 		}
 	]

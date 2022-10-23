@@ -1,10 +1,12 @@
 {
-    "Name": "Jacob & Eloise",
+    "Name": "East Scarp NPCs",
     "Author": "Lemurkat",
-    "Description": "Adds Dr Jacob and his daughter, Eloise plus assorted other NPCs",
-    "Version": "2.0.4",
+    "Description": "Adds Dr Jacob, Eloise, Aideen, Rosa and more!",
+    "Version": "2.1.4",
     "UniqueID": "Lemurkat.JacobEloise.CP",
-    "UpdateKeys": ["Nexus:???"],
+    "UpdateKeys": [
+        "Nexus:???"
+    ],
     "ContentPackFor": {
         "UniqueID": "Pathoschild.ContentPatcher"
     },
@@ -12,12 +14,14 @@
         {
             "UniqueID": "LemurKat.EastScarpe.CP"
         },
-        
+        {
+            "UniqueID": "PeacefulEnd.CustomCompanions"
+        },
         {
             "UniqueID": "attonbomb.Beatrice",
             "IsRequired": false
         },
-{
+        {
             "UniqueID": "Lavender.Nagito",
             "IsRequired": false
         }

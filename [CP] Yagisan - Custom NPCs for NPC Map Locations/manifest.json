@@ -2,7 +2,7 @@
   "$schema": "https://smapi.io/schemas/manifest.json",
   "Name": "[CP] Yagisan - Custom NPCs for NPC Map Locations",
   "Author": "Yagisan",
-  "Version": "1.1.16",
+  "Version": "1.1.21",
   "Description": "Setup Custom NPCs for the NPC Map Location mod",
   "UniqueID": "Yagisan.NPCMapLocationsForNPCs",
   "MinimumApiVersion": "3.0.0",
@@ -11,7 +11,7 @@
   ],
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher",
-    "MinimumVersion": "1.24.0"
+    "MinimumVersion": "1.25.0"
   },
   "Dependencies": [
     {
@@ -54,6 +54,10 @@
     },
     {
       "UniqueID": "LemurKat.Mr.Ginger.NPC",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Lemurkat.Tristan.CP",
       "IsRequired": false
     },
     {
@@ -158,6 +162,34 @@
     },
     {
       "UniqueID": "Himetarts.ARV.CP",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "ZoeDoll.GingerIslandNPCTweaks",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Xiaoxingruo.Socialbliss",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Rinny.Aro.CP",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "skellady.DNDCP",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "TiaraPhoenixCupcake.cp.PlumForrest",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "CreatorKami.TYRSA.CP",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Fellowclown.JohnNpc",
       "IsRequired": false
     }
   ]

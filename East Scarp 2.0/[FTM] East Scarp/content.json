@@ -563,6 +563,106 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "Category": "Item",
+            "Name": "Ruby Ring"
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "Category": "Item",
+            "Name": "Ruby Ring"
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "Category": "Item",
+            "Name": "Ruby Ring"
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "Category": "Item",
+            "Name": "Ruby Ring"
+          }
+        ],
+        "UniqueAreaID": "SmugglerDen",
+        "MapName": "Custom_ESSmugglerDen",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "33,7;33,7"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "SpringItemIndex": [
+          109
+        ],
+        "SummerItemIndex": [
+          109
+        ],
+        "FallItemIndex": [
+          109
+        ],
+        "WinterItemIndex": [
+          109
+        ],
+        "UniqueAreaID": "Custom_ESSmugglerDen forage area 1",
+        "MapName": "Custom_ESSmugglerDen",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "5,7;5,7"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": 0
       }
     ],
     "PercentExtraSpawnsPerForagingLevel": 0,
@@ -639,7 +739,7 @@
           "1,9/31,54"
         ],
         "ExcludeCoordinates": [
-          "16,15/31,34"
+          "16,15/31,45"
         ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
@@ -661,6 +761,65 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": {
+          "Stone": 65,
+          "Copper": 5,
+          "Iron": 5,
+          "Gold": 3,
+          "Iridium": 1,
+          "Geode": 5,
+          "FrozenGeode": 2,
+          "MagmaGeode": 2,
+          "OmniGeode": 2,
+          "Gem": 2,
+          "Mystic": 0,
+          "Radioactive": 0,
+          "Diamond": 1,
+          "Ruby": 1,
+          "Jade": 1,
+          "Amethyst": 1,
+          "Topaz": 1,
+          "Emerald": 1,
+          "Aquamarine": 1,
+          "Mussel": 0,
+          "Fossil": 0,
+          "Clay": 0,
+          "CinderShard": 0
+        },
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "Custom_ESSmugglerDen ore area 1",
+        "MapName": "Custom_ESSmugglerDen",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 4,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "24,11/29,15"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
       }
     ],
     "PercentExtraSpawnsPerMiningLevel": 0,
@@ -669,6 +828,7 @@
       "Geode": 0,
       "FrozenGeode": 0,
       "MagmaGeode": 0,
+      "OmniGeode": 0,
       "Gem": 0,
       "Copper": 0,
       "Iron": 0,
@@ -682,13 +842,18 @@
       "Amethyst": 0,
       "Topaz": 0,
       "Emerald": 0,
-      "Aquamarine": 0
+      "Aquamarine": 0,
+      "Mussel": 0,
+      "Fossil": 0,
+      "Clay": 0,
+      "CinderShard": 0
     },
     "StartingSpawnChance": {
       "Stone": 80,
       "Geode": 4,
       "FrozenGeode": 0,
       "MagmaGeode": 0,
+      "OmniGeode": 0,
       "Gem": 1,
       "Copper": 10,
       "Iron": 1,
@@ -702,13 +867,18 @@
       "Amethyst": 1,
       "Topaz": 1,
       "Emerald": 0,
-      "Aquamarine": 1
+      "Aquamarine": 1,
+      "Mussel": 0,
+      "Fossil": 0,
+      "Clay": 0,
+      "CinderShard": 0
     },
     "LevelTenSpawnChance": {
       "Stone": 68,
       "Geode": 10,
       "FrozenGeode": 0,
       "MagmaGeode": 0,
+      "OmniGeode": 0,
       "Gem": 1,
       "Copper": 5,
       "Iron": 5,
@@ -722,7 +892,11 @@
       "Amethyst": 2,
       "Topaz": 2,
       "Emerald": 2,
-      "Aquamarine": 2
+      "Aquamarine": 2,
+      "Mussel": 0,
+      "Fossil": 0,
+      "Clay": 0,
+      "CinderShard": 0
     },
     "CustomTileIndex": []
   },
@@ -825,22 +999,14 @@
       {
         "MonsterTypes": [
           {
-            "MonsterName": "Rock Crab",
-            "Settings": {}
-          },
-          {
-            "MonsterName": "Wilderness Golem",
-            "Settings": {}
-          },
-          {
-            "MonsterName": "Bat",
+            "MonsterName": "Iridium Bat",
             "Settings": {}
           }
         ],
         "UniqueAreaID": "Abandoned Mine Monsters",
         "MapName": "Custom_ESMineEntrance",
-        "MinimumSpawnsPerDay": 5,
-        "MaximumSpawnsPerDay": 20,
+        "MinimumSpawnsPerDay": 15,
+        "MaximumSpawnsPerDay": 50,
         "IncludeTerrainTypes": [
           "All"
         ],
@@ -917,6 +1083,74 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Green Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Blue Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Red Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Purple Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Big Green Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Big Blue Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Big Red Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Big Purple Slime",
+            "Settings": {}
+          }
+        ],
+        "UniqueAreaID": "Smugglers Den",
+        "MapName": "Custom_ESSmugglerDen",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 20,
+        "IncludeTerrainTypes": [
+          "All"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "24,11/29,15"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": 0
       }
     ],
     "CustomTileIndex": []

@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Sandy",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Sandy",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Sandy",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Sandy",
+			"Entries":{
                 "Mon2": "Nossa você chegou! Oi!$h#$e#Aconteceu algo novo no vale?",
                 "Mon4": "Teve uma vez onde um casal muito fofo acampou aqui na lua de mel... fofo, não acha?",
                 "Mon6": "Eu liguei para a Emily um tempinho atrás, ela está ótima como sempre.$h#$e#Nós falamos sobre você também... as coisas boas, juro!$h",
@@ -23,6 +22,7 @@
                 "Thu4": "Ei, eu acho que posso confiar em você... posso te contar um segredo?#$b#Esse cara aí atrás... é parte de um clube exclusivo. Eu nunca estive lá, mas me pagam bem por estar aqui então nunca faço perguntas.#$e#Ah! Como está o vale?",
                 "Thu6": "Aqueles pilares no deserto? Eu não sei pra que estão ali...#$e#Eu já vi eles aparecerem em um livro um dia desses...#$e#Devem estar lá por algum motivo, esperando o 'arco-íris' o tocarem.$h",
                 "Thu8": "Eu sei que não parece, mas os negócios tem sido decente ultimamente.#$e#Parte disso é graças a você. O custo de vida aqui é muito barato, então apenas uma simples compra de sementes vai longe!$h",
+				"Fri": "Aquele comerciante com o camelo vem por aqui com muita frequência. Eu não sei como ela espera fazer qualquer negócio, embora .#$e#Hey, eu falo por experiência. É difícil aqui fora.",
                 "Fri2": "Acho que a coisa que mais sinto falta do vale são as flores...#$e#Você... pode trazer algumas pra mim?",
                 "Fri4": "Olha quem chegou! Você está bem?#$e#Eu costumo ler muito aqui, já que não tem muito o que fazer...",
                 "Fri6": "Eu sempre ouço o rádio... mas é bem rápido de enjoar.$s",
@@ -39,6 +39,10 @@
                 "Sun10": "A caverna? Você vai lá? mas...$s#$e#Se cuide, @.$s",
                 "winter_Fri": "Eu não posso acreditar que tem neve agora onde você mora...#$e#Eu pretendo visitar o vale em algum inverno, quero saber como é.",
                 "winter_Fri6": "Temperaturas são extremas no deserto... faz muito frio aqui durante o inverno.",
-            }
-        }]
+				"fall_Fri":"Você não teria muita sorte cultivando aqui, querido.#$e#Bem, a menos que você fosse um fazendeiro de cactos.$h",
+				"fall_Fri4":"Parece que o comerciante do deserto geralmente sabe como prever quando você vai aparecer.#$b#Então ele vai para casa assim que você sai. Ele pode prever o futuro ou algo assim?#$e#Gostaria de poder fazer isso...",
+				"summer_Fri6":"O comerciante do deserto entrou e olhou em volta um pouco no outro dia. Ela não disse muito. Também não comprou nada.#$e#Que pessoa misteriosa. Eu me pergunto como é a vida real dela?",																												  																																															
+			}
+		}
+	]
 }

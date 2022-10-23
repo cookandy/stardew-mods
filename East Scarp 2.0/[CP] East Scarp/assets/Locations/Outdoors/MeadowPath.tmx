@@ -3071,17 +3071,17 @@
  <objectgroup id="2" name="Back">
   <object id="42" name="TileData" x="464" y="640" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_EastScarpe 74 1"/>
+    <property name="TouchAction" value="Warp Custom_EastScarpe 74 1"/>
    </properties>
   </object>
   <object id="43" name="TileData" x="480" y="640" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_EastScarpe 74 1"/>
+    <property name="TouchAction" value="Warp Custom_EastScarpe 74 1"/>
    </properties>
   </object>
   <object id="44" name="TileData" x="496" y="640" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_EastScarpe 74 1"/>
+    <property name="TouchAction" value="Warp Custom_EastScarpe 74 1"/>
    </properties>
   </object>
  </objectgroup>

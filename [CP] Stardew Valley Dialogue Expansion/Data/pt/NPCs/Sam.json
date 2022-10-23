@@ -1,14 +1,14 @@
 {
-    "Changes": [
-    {
-            "LogName": "Sam",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Sam",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Sam",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Sam",
+			"Entries":{
                 "Mon2": "Ei, como vai?#$e#Ontem fiquei até tarde tocando guitarra, meus dedos ainda doem...$s#$e#Eu... preciso fazer algo.",
                 "Mon4": "Eu comecei a andar de skate quando ainda era pequeno.#$e#É legal ter o mesmo hobby quando adulto, você acaba vendo o quanto evoluiu.",
                 "Tue2": "Ei, tudo bem?#$e#Então, você joga vídeo game?",
+                "Tue4_1":"Mamãe está sempre preocupada com Vincent. Pessoalmente, acho que ele vai ficar bem.#$e#Quero dizer, ela esqueceu como eu era naquela idade, ou algo assim?$h",
                 "Tue4_2": "Eu tentei servir cereal para o meu pai hoje cedo...#$b#Ele pulou da cadeira assim que o cereal começou bater na tigela.$s#$b#O que aconteceu com ele?$s",
                 "Tue8": "É estranho ver como as pessoas mudam...$s#$e#É chato ter que abandonar as sensações da infância, porque todos são assim?$s",
                 "Tue8_2": "É chato ter que falar com as pessoas e perceber que não são mais as mesmas...$s#$e#Mas tudo bem, eu também odiaria viver com a mesma cabeça a vida toda.",
@@ -72,6 +72,7 @@
                 "fall_Sun6": "É difícil se divertir no domingo, eu continou pensando em ter que ir pro trabalho amanhã.$s",
                 "fall_Sun8": "O que você faz quando quer se divertir mas precisa acordar cedo para trabalhar?#$e#Ah, é verdade, você não tira folga...#$b#Eu te invejo, você deve gostar muito do que faz.$h",
                 "winter_Mon2": "É difícil tocar guitarra no inverno, todo mundo fica em casa e é tão silencioso...$s",
+                "winter_Mon4":"Tivemos mais um bom ensaio de banda neste fim de semana! As coisas estão melhorando.$h#$e#Ah, não se preocupe, com certeza vou conseguir ingressos para o nosso primeiro show.",
                 "winter_Mon6": "Estamos treinando muito para melhorar as notas musicais, um dia chegaremos lá.$h#$e#Ei, não se preocupe, você não pagará o primeiro show.",
                 "winter_Mon10": "Você ficaria com raiva se ouvisse o show de guitarra pela manhã?#$e#Minha mãe odeia.$s",
                 "winter_Tue8": "Eu costumava sair muito com a Penny quando era criança.#$e#Nós ainda nos vemos, mas é estranho...$s",
@@ -109,14 +110,13 @@
                 "fall_26_2": "O mago sempre pede para que todos fiquem longe da vila enquanto ele trabalha no labirinto.#$b#Um dia eu não vou aguentar a curiosidade.$h",
                 "summer_10_2": "Eu não trabalho amanhã, AEEEEEHOOOOOOOOO!$h",
                 "winter_24_2": "Você não acha que esse é um dos festivais mais bonitos?#$b#Sim, a comida é ótima também.$h",
-            }
-        },
-        {
-            "LogName": "Sam Marriage",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialogueSam",
-            "Entries":
-            {
+			}
+		},
+		{
+			"LogName":"Sam Marriage",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/MarriageDialogueSam",
+			"Entries":{
                 "Rainy_Day_0": "#$c .5#O dia está ótimo para sentar e tocar guitarra.$h#Ei, parece que a natureza resolveu te ajudar hoje, não é?$h",
                 "Rainy_Day_1": "#$c .5#Ei, você acha que Sebby e Abby vão se conectar algum dia?$h#Sebastian é só um pouco mais velho que eu.",
                 "Rainy_Day_2": "#$c .5#Ei, eu achei isso fuçando por aí. [90 88 86 535]Pode ser útil pra você.#Puts, eu queria andar de skate hoje...$s",
@@ -167,6 +167,7 @@
                 "winter_14": "Ei, vamos passar um tempo juntos assim que terminar seu trabalho, belê?$l",
                 "winter_20": "Espero que Vincent ganhe o que tanto quer, é bom ver o maninho feliz.",
                 "winter_26": "Eu me pergunto o que meu pai está fazendo...$7",
-            }
-        }]
+			}
+		}
+	]
 }

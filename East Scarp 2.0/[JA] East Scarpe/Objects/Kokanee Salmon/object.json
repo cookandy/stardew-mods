@@ -7,27 +7,15 @@
 	"EdibleBuffs": null,
 	"Price": 120,
 	"IsColored": false,
-	"GiftTastes":
-	{
-		"Love": ["MisterGinger" ],
-		"Like": ["Willy","Kent", "Eyvinder",]
+	"GiftTastes": {
+		"Love": [
+			"MisterGinger"
+		],
+		"Like": [
+			"Willy",
+			"Kent",
+			"Eyvinder",
+		]
 	},
-	"NameLocalization":
-	{
-		/*to be added in*/
-		"ko": "코카니 연어",
-		"zh": "科卡尼鲑鱼",
-	},
-	"DescriptionLocalization":
-	{
-		/*to be added in*/
-		"ko": "붉은 빛의 연어에 비해 더 작은 크기입니다.",
-		"zh": "红鲑的近亲，体型更小。",
-	},
-	"CategoryLocalization":
-	{
-		/*to be added in*/
-		"ko": "물고기",
-		"zh": "鱼",
-	}
+	"TranslationKey": "object.kokaneesalmon-fish",
 }

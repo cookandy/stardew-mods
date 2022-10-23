@@ -2956,12 +2956,12 @@
  <objectgroup id="2" name="Back">
   <object id="26" name="TileData" x="48" y="80" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_EastScarpe 3 1"/>
+    <property name="TouchAction" value="Warp Custom_EastScarpe 3 1"/>
    </properties>
   </object>
   <object id="27" name="TileData" x="64" y="80" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap Custom_EastScarpe 4 1"/>
+    <property name="TouchAction" value="Warp Custom_EastScarpe 4 1"/>
    </properties>
   </object>
  </objectgroup>

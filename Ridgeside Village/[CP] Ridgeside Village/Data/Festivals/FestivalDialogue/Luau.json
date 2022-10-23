@@ -1,18 +1,18 @@
 {
 "Changes": [
-	
+
 //------------------------
-// FESTIVAL DIALOGUE   
+// FESTIVAL DIALOGUE
 //------------------------
 
 	//Luau----------------------
-	
+
 		{
 			"LogName": "Luau",
 			"Action": "EditData",
 			"Target": "Data/Festivals/summer11",
 			"Entries": {
-			
+
 			//Non-Dateables
 				"Aguar": "{{i18n:Festivals.Luau.Aguar}}",
 				"Bert": "{{i18n:Festivals.Luau.Bert}}",
@@ -45,6 +45,7 @@
 				"Malaya": "{{i18n:Festivals.Luau.Malaya}}",
 				"Kimpoi": "{{i18n:Festivals.Luau.Kimpoi}}",
 				"Naomi": "{{i18n:Festivals.Luau.Naomi}}",
+				"Torts": "{{i18n:Festivals.Luau.Torts}}",
 
 			//Dateables
 				"Alissa": "{{i18n:Festivals.Luau.Alissa}}",
@@ -71,6 +72,12 @@
 				"Daia_spouse": "{{i18n:Festivals.Luau.Daia_spouse}}",
 				"Jio": "{{i18n:Festivals.Luau.Jio}}",
 				"Jio_spouse": "{{i18n:Festivals.Luau.Jio_spouse}}",
+
+				"Anton_spouse": "{{i18n:Festivals.Luau.Anton_spouse}}",
+				"Kiarra_spouse": "{{i18n:Festivals.Luau.Kiarra_spouse}}",
+				"Sean_spouse": "{{i18n:Festivals.Luau.Sean_spouse}}",
+				"Paula_spouse": "{{i18n:Festivals.Luau.Paula_spouse}}",
+				"Blair_spouse": "{{i18n:Festivals.Luau.Blair_spouse}}",
 			},
 		},
 

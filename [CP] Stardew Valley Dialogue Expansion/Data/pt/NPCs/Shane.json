@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Shane",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Shane",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Shane",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Shane",
+			"Entries":{
                 "Introduction": "Eu não te conheço, o que você quer?",
                 "JojaMart": "%Shane está trabalhando duro. Ele não parece interessado em conversar.",
                 "Mon": "Quem é você?",
@@ -39,6 +38,7 @@
                 "summer_Thu8": "Essas galinhas só fazem bagunça, brigando e quebrando as coisas...#$b#Pelo menos elas precisam de mim para alguma coisa.$h",
                 "summer_Thu10": "É difícil quando seus dois melhores amigos morrem no mesmo dia... isso mexe muito com você.$s#$e#Eu já tinha meus problemas, mas depois daquilo.",
                 "summer_Fri6": "Que calor... preciso passar no Gus pra pegar uma gelada.#$e#O quê? Você também quer?",
+				"summer_Fri4":"Que dia quente. Eu realmente queria um pouco de frio.#$e#Você não?",
                 "summer_Fri8": "Depois de ver tanta gente que tem tudo...#$b#Minha vida fica ainda mais deprimente.#$e#EI CARA, PARABÉNS PELA SUA NOTA 10 NA PROVA DE MATEMATICA, VAMOS TOMAR UM SORVETE!$10#$b#...$u",
                 "summer_Fri10": "Entre um milhão de pessoas, você parece a única que ainda não desistiu de mim.#$e#Eu não levo essas coisas como garantia.",
                 "summer_Sun6": "Até que estou tomando coragem pra mudar... um dia eu serei fera!$h",
@@ -79,14 +79,13 @@
                 "winter_28": "O ano já acabou?$u#$e#Alguma ideia para virar a noite?",
                 "spring_1_2": "Minha cabeça está doendo...$s#$e#Eu poderia dormir pelo resto do ano...$s",
                 "winter_28_2": "Mais um ano se foi...$u#$e#Alguma ideia do que fazer para virar a noite?",
-            }
-        },
-        {
-            "LogName": "Shane Marriage",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialogueShane",
-            "Entries":
-            {
+			}
+		},
+		{
+			"LogName":"Shane Marriage",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/MarriageDialogueShane",
+			"Entries":{
                 "Rainy_Day_0": "Espero que Jas e Marnie estejam indo bem sem mim.#$e#Eu nem estou muito preocupado... Jas é velha o bastante para cuidar dos animais sozinha.",
                 "Rainy_Day_1": "#$c .5#Sabe? Acho que perdi peso desde que passei a morar com você.$6#Meus joelhos estão meio duros hoje... isso já aconteceu com você?$s",
                 "Rainy_Day_2": "#$c .5#Ei, eu tenho algo pra você.[346 174 303 305 215] Comprei há algum tempo atrás...#Ei, fique com isso. [346 346 303] Não trabalhe demais.",
@@ -138,6 +137,7 @@
                 "fall_23": "Você já parou pra pensar que a gente só vive pra dormir?$h#$b#Estou brincando, tem muita coisa pra fazer fora ficar em casa...#$b#Tipo comer?$h",
                 "winter_1": "Algum plano para o inverno? Acho que vou ficar em casa assistindo alguma série.",
                 "winter_28": "Parece que eu envelheci um pouco depois desses anos.$6",
-            }
-        }]
+			}
+		}
+	]
 }

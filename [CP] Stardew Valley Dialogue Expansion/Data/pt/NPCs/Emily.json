@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Emily",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Emily",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Emily",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Emily",
+			"Entries":{
                 "cc_Bus": "O ônibus está finalmente funcionando, agora podemos ir para o deserto! Você já conheceu minha amiga, Sandy?$h#$e#Também estou feliz que Pam voltou a trabalhar.$h",
                 "Tue2": "Leah vai no salão com certa frequência, você deveria falar com ela.#$e#Ela é uma verdadeira fofa!$h",
                 "Tue10": "Ei, @.$l#$b#%*beijo*#$b#Voce não se importa com isso, não é? Hm... toque físico é importante pra mim.$l",
@@ -37,6 +36,7 @@
                 "Thu_042": "Ei, talvez tudo seja a melhor maneira de ser! Há tanto para se admirar no universo.",
                 "summer_Thu8": "Estamos apenas de pé aqui, mas o universo nos trouxe a esse exato momento!$h#$b#É absolutamente incrível se você parar e pensar sobre isso.",
                 "summer_Sat4": "É importante tratar todos com respeito, e amor...#$e#Eu sempre tento tratar todos iguais, mesmo que alguns não colaborem.#$e#Mas você eu trato como se fosse da familia!$h",
+                "summer_Sat8":"Minha máquina de costura está tendo ótimos exercícios neste verão. Eu tenho tantos projetos.#$e#Talvez eu consiga fazer uma boa roupa para Haley, mas também tenho que aceitar que talvez ela nunca vista.$u#$b#Ah bem. *encolhe os ombros*",
                 "summer_Sat10": "Eu quero amar a todos igualmente, @, mas não posso negar que o que sinto por você é... um pouco diferente.$u#$e#V-Você pretende ficar aqui por muito tempo?$u",
                 "summer_Sun6": "Oie, @! Tudo bom?$h#$e#Sim, eu adoro conversar com você!$h",
                 "summer_Sun8": "Olá, @! Tudo bem?$h#$e#Pode soar estranho mas... estive pensando em você sobre... ah, não, esquece.",
@@ -48,6 +48,7 @@
                 "fall_Wed8": "Eu queria que Gus evitasse de fazer as receitas que usem salmão, eu temo uma possível extinção deles...$s",
                 "fall_Thu2": "Eu vi alguns cogumelos embaixo daquela árvore perto da fonte...$l#$e#Lindinhas!$h",
                 "fall_Thu4": "Eu pratico meditação regularmente, isso é importante para sair um pouco do mundo físico e recarregar suas energias.",
+                "fall_Thu8":"Eu gostaria de visitar o deserto novamente. Eu tenho que ver a Sandy, mas...#$b#...também tem aquele comerciante que vende produtos simplesmente incríveis.#$e#Leve algumas gemas caso você vá lá.",
                 "fall_Fri4": "Sentir esse ar limpinho é ótimo!$h#$b#Eu espero que a Joja não destrua isso com suas fábricas...$u",
                 "fall_Fri8": "A vida não é para sempre, então é importante que a gente se ame a todo momento!#$b#Eu te amo!...$h",
                 "fall_Fri10": "Tudo bem que alguém veja a gente se beijando... todos sabem que eu sou assim.#$e#...$l#$b#%*beijo*#$b#Ha!...$h",
@@ -57,6 +58,7 @@
                 "fall_Sun4": "Há tantas barreiras nos impedindo, porque todos não deixam isso de lado e vão se divertir?#$e#É como dizem, você não pode prender um animal selvagem.$h",
                 "fall_Sun8": "Você é tão legal... obrigada, @.$h",
                 "fall_Sun10": "Você é a melhor pessoa do mundo! Eu te amo!$l",
+                "winter_Mon2":"De vez em quando, fico com vontade de comer um bom hambúrguer vegano.#$e#Na verdade, não sou vegana, nem vegetariana. Eu apenas como o que parece mais nutritivo para o meu corpo e espírito.",
                 "winter_Mon4": "Às vezes me dá vontade de experimentar aquele hamburguer com vegetais.#$e#Eu não sou vegetariana mas isso não impede minha curiosidade.$h",
                 "winter_Mon8": "Cuidado com as pedras que você quebrar, não quero que você se machuque!",
                 "winter_Mon10": "@, um segundinho...$l#$b#%*beijo*#$b#...$h#$b#Pode ir!$h",
@@ -64,6 +66,7 @@
                 "winter_Tue8": "Espero que todos possamos aprender a envelhecer, assim como a mudança das estações.",
                 "winter_Wed": "Eu queria que Haley conseguisse um emprego... ou que me ajudasse a limpar a casa.$s#$e#Acho que ela está esperando casar com alguém rico.$u",
                 "winter_Wed2": "A Haley deveria me ajudar a limpar a casa... estou cansada.#$e#Eu tenho certeza que ela aprenderia como responsabilidades funcionam.",
+                "winter_Wed4":"A última vez que visitei o Deserto de Calico, encontrei uma mercadora com um camelo. Ela tinha tantas coisas lindas à venda. Quase me tirou o fôlego.#$e#Da próxima vez que eu for, vou levar um pouco das minhas gemas. Ela não aceita dinheiro.",
                 "winter_Wed6": "Haley esteve me ajudando mais nas tarefas domésticas, você acredita?$h",
                 "winter_Wed8": "Esteve bem mais fácil manter a casa limpa agora que Haley decidiu me ajudar.",
                 "winter_Wed10": "É difícil falar com minha irmã sobre outros assuntos... eu só penso em você...$l",
@@ -95,14 +98,13 @@
                 "fall_26_2": "Eu gosto desse festival mas não participo muito do labirinto!",
                 "winter_9_2": "Lewis já me disse que devolverá os peixes para o oceano após o fim do festival, ainda bem.$h",
                 "winter_24_2": "Estou cansada...#$b#Esse festival em especial é o que mais dá trabalho, mas é maravilhoso aproveitá-lo!$h",
-            }
-        },
-        {
-            "LogName": "Emily Marriage",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialogueEmily",
-            "Entries":
-            {
+			}
+		},
+		{
+			"LogName":"Emily Marriage",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/MarriageDialogueEmily",
+			"Entries":{
                 "Rainy_Day_0": "#$c .5#Para onde vão os insetos voadores quando chove? Os pingos da chuva são um perigo para eles?#Talvez estejam dormindo... em um lugar seguro.",
                 "Rainy_Day_1": "#$c .5#O dia está maravilhoso.$l#Não é interessante pensar que os pingos são trazidos pelo vento e caem diretamente em você? Parece o destino.$h",
                 "Rainy_Day_2": "#$c .5#Eu tenho um presente pra você, amor! [428 440 444 338 207]#Está chovendo bastante... se cuida.$l",
@@ -153,6 +155,7 @@
                 "winter_10": "Sabe, notei que Haley está finalmente mantendo a casa limpa!#$e#Quem diria que tudo que eu tinha que fazer era sair, e ela de repente iria cair na real?$h",
                 "winter_22": "@, eu só queria te dizer, há quanto tempo nos conhecemos, você nunca tentou mudar da pessoa que sou.$u#$b#Eu sei que muitas pessoas não me entendem, e possivelmente às vezes eu faço coisas que até te confundem um pouco, também...$u#$b#...Mas você sempre me aceitou.$u#$e#Então... obrigada, amor.$l",
                 "winter_16": "Espero que Shane e Clint estejam bem, eu mal os vejo mais...$u",
-            }
-        }]
+			}
+		}
+	]
 }

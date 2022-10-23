@@ -4,7 +4,8 @@
 			"LogName":"Sandy",
 			"Action":"EditData",
 			"Target":"Characters/Dialogue/Sandy",
-			"Entries":{
+			"Entries":
+			{
 				"Mon2":"You made it out here again! I'm so glad.$h#$e#What's new in the valley?",
 				"Mon4":"One time, a couple literally camped out here for their honeymoon. Whatever floats their boat, right?",
 				"Mon6":"I got lunch with Emily not too long ago! It was so great to catch up with her.$h#$e#We talked for a bit about you, actually. All good things, I promise!$h",
@@ -37,11 +38,29 @@
 				"Sun6":"I guess I've seen at least one guy from the back room who occasionally heads up north.#$e#I wonder if he's headed for that freakish cavern?$s",
 				"Sun8":"I took a trip to Zuzu City last month. Can't miss out on living it up at the clubs every once in a while!$h#$e#I don't waste a second. I stay out all night.#$e#There are college kids who can't even keep up with me! Heehee!$h",
 				"Sun10":"The cavern? Look, if you've been in there, I don't wanna know.$s#$e#I trust you'd stay safe if you did, though, huh?",
-				"winter_Fri":"I can't believe there's snow right now where you live.#$e#Oh well. Sand is kind of like snow. It'll have to do for me.",
-				"winter_Fri6":"At least it's a little cooler here in the winter. That sun sure doesn't let up, though.",
+				"summer_Mon10":"Are my roots showing? My hairdresser canceled on my again.$s#$e#*sigh* It's such a long journey into the city, too, I cant' just reschedule for the next day.$s",
+				"summer_Tue10":"How's the desert trader's camel doing? Is she up for some pets?",
+				"summer_Wed10":"I listen to the radio sometimes. After you hear the same pop song twice an hour for a month, though, it's tough to keep it going.$s",
+				"summer_Thu10":"If you see Emily, be sure to let her know that I'm free to meet up with her at the time she mentioned.",
+				"summer_Fri6":"The desert trader came in and looked around for a bit the other day. She didn't say much. Didn't buy anything, either.#$e#What a mysterious person. I wonder what her real life is like?",
+				"summer_Sat10":"I complain about the heat nonstop, but nothing can really beat the coolness of the desert when the sun goes down.#$e#The way a desert sunset looks is hard to beat, too.",
+				"summer_Sun10":"Ohhh! I just got the cutest shirt in stock! Want to try it on?$h",
+				"fall_Mon10":"I took a trip to Zuzu City last month. Can't miss out on living it up at the clubs every once in a while!$h#$e#I don't waste a second. I stay out all night.#$e#There are college kids who can't even keep up with me! Heehee!$h",
+				"fall_Tue10":"I guess I've seen at least one guy from the back room who occasionally heads up north.#$e#I wonder if he's headed for that freakish cavern?$s",
+				"fall_Wed10":"Good thing you showed up! I haven't had a customer all day!#$e#...as expected.$s",
+				"fall_Thu10":"Well hellooooooo ~ What brings you to the desert today?#$e#Treasure hunting? Coconut foraging? ...Meeeeee? <$h#$e#Haha, just kidding.",
 				"fall_Fri":"You wouldn't have much luck farming out here, honey.#$e#Well, unless you were a cactus farmer.$h",
 				"fall_Fri4":"Seems like that desert trader usually knows how to predict when you'll show up.#$b#Then she heads home just as soon as you leave. Can she predict the future or something?#$e#Wish I could do that...",
-				"summer_Fri6":"The desert trader came in and looked around for a bit the other day. She didn't say much. Didn't buy anything, either.#$e#What a mysterious person. I wonder what her real life is like?"
+				"fall_Sat10":"I floated around in the valley for a few years. Wish I could live there, but it's pretty hard to find reliable work.#$e#So that's how I wound up here!",
+				"fall_Sun10":"Those antenna-like structures northeast of here? No idea.#$e#Apparently, they were featured on an old episode of 'Mysteries of the Unknown.'#$e#They must have been built there for some reason, anyway!",
+				"winter_Mon10":"My name's not really Sandy, you know. It's just good for business.#$e#But everyone calls me Sandy anyway, so I've just gotten used to it.",
+				"winter_Tue10":"One time, a couple literally camped out here for their honeymoon. Whatever floats their boat, right?",
+				"winter_Wed10":"Emily's got a real knack for reading people. It's like she's on a different wavelength, or something.#$e#She can't help but treat everyone with equal respect, though, no matter how the other person acts. I admire that.",
+				"winter_Thu10":"@! Come on in. I've got a treat for you. [233]#$e#I figured you'd love it.$h",
+				"winter_Fri":"I can't believe there's snow right now where you live.#$e#Oh well. Sand is kind of like snow. It'll have to do for me.",
+				"winter_Fri6":"At least it's a little cooler here in the winter. That sun sure doesn't let up, though.",
+				"winter_Sat10":"Do you go fishing in that pond across the street?#$e#I've seen those fish. I can't imagine eating something like that! Blech.",
+				"winter_Sun10":"What do you think about having a store cat who lives here?#$e#The owner of the building would definitely say no, I'm sure, but I think a cat would love living in the desert.#$e#There's even a mysterious cat totem a stone's throw from here. You've seen it, yeah?",
 			}
 		}
 	]

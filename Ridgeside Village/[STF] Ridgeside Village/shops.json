@@ -1,13 +1,13 @@
 {
   "Shops": [
-  
+
 	//------------
-	//JericShop   
+	//JericShop
 	//------------
 	{
 	"ShopName": "RSVJericShop",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -19,-74 ],
+	"CategoriesToSellHere": [ -19,-74 ],
 	"PortraitPath": "assets/JericShop.png",
 	"Quote": "Hey! How can I help you?",
 	"ClosedMessage": "Closed! Come back next time!",
@@ -15,9 +15,9 @@
 	"MaxNumItemsSoldInStore": 5,
 	"DefaultSellPriceMultiplier": 0.7,
 	"PriceMultiplierWhen": {
-		"0.6": ["f Jeric 2000"] 
+		"0.6": ["f Jeric 2000"]
 		},
-	"When": ["NPCAt Jeric 2 13/t 900 1600"],
+	"When": ["NPCAt Jeric 2 13"],
 	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
@@ -32,7 +32,7 @@
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
     	},
-   "LocalizedClosedMessage": {
+	"LocalizedClosedMessage": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -45,7 +45,7 @@
         //"ru": "PLACEHOLDER",
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
-    	},	
+    	},
 	"ItemStocks": [
 		//Spring Jeric less than 8 hearts
 		{
@@ -57,7 +57,7 @@
 				"Parsnip Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z spring" ] 
+			"When": [ "!z spring" ]
 		},
 		//Spring Jeric 8 hearts
 		{
@@ -67,7 +67,7 @@
 				],
 			"Stock": 6,
 			"StockPrice": 100,
-			"When": [ "f Jeric 2000/!z spring" ] 
+			"When": [ "f Jeric 2000/!z spring" ]
 		},
 		//Summer
 		{
@@ -80,7 +80,7 @@
 				"Tomato Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z summer" ] 
+			"When": [ "!z summer" ]
 		},
 		//Summer Jeric 8 hearts
 		{
@@ -90,7 +90,7 @@
 				],
 			"Stock": 6,
 			"StockPrice": 100,
-			"When": [ "f Jeric 2000/!z summer" ] 
+			"When": [ "f Jeric 2000/!z summer" ]
 		},
 		//Fall
 		{
@@ -102,7 +102,7 @@
 				"Pumpkin Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z fall" ] 
+			"When": [ "!z fall" ]
 		},
 		//Winter
 		{
@@ -112,7 +112,7 @@
 				],
 			"Stock": 6,
 			"StockPrice": 100,
-			"When": [ "!z winter" ] 
+			"When": [ "!z winter" ]
 		},
 		//PPJA Fruit & Veg - Spring Jeric less than 8 hearts Y1
 		{
@@ -125,17 +125,17 @@
 				"Spinach Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z spring" ] 
+			"When": [ "!z spring" ]
 		},
 		//PPJA Fruit & Veg - Spring Jeric 8 hearts Y1
 		{
 			"ItemType": "Object",
 			"ItemNames": [
-				"Passion Fruit Seeds",	
+				"Passion Fruit Seeds",
 				],
 			"Stock": 6,
 			"StockPrice": 100,
-			"When": [ "f Jeric 2000/!z spring" ] 
+			"When": [ "f Jeric 2000/!z spring" ]
 		},
 		//PPJA Fruit & Veg - Spring Y2
 		{
@@ -143,11 +143,11 @@
 			"ItemNames": [
 				"Buckwheat Seeds",
 				"Muskmelon Seeds",
-				"Suger Beet Seeds",
+				"Sugar Beet Seeds",
 				"Sweet Canary Melon Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z spring/y 2" ] 
+			"When": [ "!z spring/y 2" ]
 		},
 		//PPJA Fruit & Veg - Spring Y3
 		{
@@ -157,7 +157,7 @@
 				"Rapeseed Flower Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z spring/y 3" ] 
+			"When": [ "!z spring/y 3" ]
 		},
 		//PPJA Fruit & Veg - Spring Y4
 		{
@@ -170,7 +170,7 @@
 				"Shiitake Mushroom Starter",
 				],
 			"Stock": 6,
-			"When": [ "!z spring/y 4" ] 
+			"When": [ "!z spring/y 4" ]
 		},
 		//PPJA Fruit & Veg - Summer Jeric less than 8 hearts Y1
 		{
@@ -184,7 +184,7 @@
 				"Perilla Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z summer" ] 
+			"When": [ "!z summer" ]
 		},
 		//PPJA Fruit & Veg - Summer Jeric 8 hearts Y1
 		{
@@ -195,7 +195,7 @@
 				"Wasabi Seeds",
 				],
 			"Stock": 6,
-			"When": [ "f Jeric 2000/!z summer" ] 
+			"When": [ "f Jeric 2000/!z summer" ]
 		},
 		//PPJA Fruit & Veg - Summer Y2
 		{
@@ -207,7 +207,7 @@
 				"Raspberry Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z summer/y 2" ] 
+			"When": [ "!z summer/y 2" ]
 		},
 		//PPJA Fruit & Veg - Summer Y3
 		{
@@ -219,7 +219,7 @@
 				"Zucchini Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z summer/y 3" ] 
+			"When": [ "!z summer/y 3" ]
 		},
 		//PPJA Fruit & Veg - Summer Y4
 		{
@@ -234,7 +234,7 @@
 				"Sulfur Shelf Mushroom Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z summer/y 4" ] 
+			"When": [ "!z summer/y 4" ]
 		},
 		//PPJA Fruit & Veg - Fall Jeric less than 8 hearts y1
 		{
@@ -249,7 +249,7 @@
 				"Thyme Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z fall" ] 
+			"When": [ "!z fall" ]
 		},
 		//PPJA Fruit & Veg - Fall Jeric 8 hearts y1
 		{
@@ -261,7 +261,7 @@
 				"Watermelon Seeds",
 				],
 			"Stock": 6,
-			"When": [ "f Jeric 2000/!z fall" ] 
+			"When": [ "f Jeric 2000/!z fall" ]
 		},
 		//PPJA Fruit & Veg - Fall Jeric less than 8 hearts y2
 		{
@@ -272,7 +272,7 @@
 				"Celery Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z fall/y 2" ] 
+			"When": [ "!z fall/y 2" ]
 		},
 		//PPJA Fruit & Veg - Fall Jeric 8 hearts y2
 		{
@@ -284,7 +284,7 @@
 				"Soybean Seeds",
 				],
 			"Stock": 6,
-			"When": [ "f Jeric 2000/!z fall/y 2" ] 
+			"When": [ "f Jeric 2000/!z fall/y 2" ]
 		},
 		//PPJA Fruit & Veg - Fall y3
 		{
@@ -297,7 +297,7 @@
 				"Tabasco Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z fall/y 3" ] 
+			"When": [ "!z fall/y 3" ]
 		},
 		//PPJA Fruit & Veg - Fall y4
 		{
@@ -309,7 +309,7 @@
 				"Sulfur Shelf Mushroom Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z fall/y 4" ] 
+			"When": [ "!z fall/y 4" ]
 		},
 		//PPJA Fruit & Veg - Winter Y1
 		{
@@ -319,7 +319,7 @@
 				"Mint Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z winter" ] 
+			"When": [ "!z winter" ]
 		},
 		//PPJA Fruit & Veg - Winter Y2
 		{
@@ -328,38 +328,7 @@
 				"Elderberry Seeds",
 				],
 			"Stock": 6,
-			"When": [ "!z winter/y 2" ] 
-		},
-		//Grapes of Ferngill - All year 
-		{
-			"ItemType": "Object",
-			"ItemNames": [
-				"Dried Crackle Berry Grapes",
-				"Crackle Berry Grape Sparkling Wine",
-				"Crackle Berry Grape Vinegar",
-				"Crackle Berry Grape Wine",
-				],
-			"Stock": 6,
-		},
-		//Grapes of Ferngill - Summer
-		{
-			"ItemType": "Object",
-			"ItemNames": [
-				"Crackle Berry Grape Grappa",
-				],
-			"Stock": 6,
-			"When": [ "!z summer" ] 
-		},
-		//Grapes of Ferngill - Winter
-		{
-			"ItemType": "Object",
-			"ItemNames": [
-				"Crackle Berry Grape",
-				"Crackle Berry Grape Fortified Wine",
-				"Crackle Berry Grape Sweet Wine",
-				],
-			"Stock": 6,
-			"When": [ "!z winter" ] 
+			"When": [ "!z winter/y 2" ]
 		},
 		//PPJA More Trees - Spring Y1
 		{
@@ -372,7 +341,7 @@
 				"Vanilla Sapling",
 				],
 			"Stock": 6,
-			"When": [ "!z spring" ] 
+			"When": [ "!z spring" ]
 		},
 		//PPJA More Trees - Spring Y2
 		{
@@ -381,7 +350,7 @@
 				"Cocoa Sapling",
 				],
 			"Stock": 6,
-			"When": [ "!z spring/y 2" ] 
+			"When": [ "!z spring/y 2" ]
 		},
 		//PPJA More Trees - Summer
 		{
@@ -390,7 +359,7 @@
 				"Ume Sapling",
 				],
 			"Stock": 6,
-			"When": [ "!z summer" ] 
+			"When": [ "!z summer" ]
 		},
 		//PPJA More Trees - Summer Y2
 		{
@@ -399,7 +368,7 @@
 				"Avocado Sapling",
 				],
 			"Stock": 6,
-			"When": [ "!z summer/y 2" ] 
+			"When": [ "!z summer/y 2" ]
 		},
 		//PPJA More Trees - fall Y1
 		{
@@ -412,7 +381,7 @@
 				"Walnut Sapling",
 				],
 			"Stock": 2,
-			"When": [ "!z fall" ] 
+			"When": [ "!z fall" ]
 		},
 		//PPJA More Trees - fall Y2
 		{
@@ -422,7 +391,7 @@
 				"Olive Sapling",
 				],
 			"Stock": 2,
-			"When": [ "!z fall/y 2" ] 
+			"When": [ "!z fall/y 2" ]
 		},
 		//PPJA More Trees - fall Y3
 		{
@@ -431,7 +400,7 @@
 				"Pecan Sapling",
 				],
 			"Stock": 2,
-			"When": [ "!z fall/y 3" ] 
+			"When": [ "!z fall/y 3" ]
 		},
 		//PPJA More Trees - Winter
 		{
@@ -441,7 +410,7 @@
 				"Yuzu Sapling",
 				],
 			"Stock": 2,
-			"When": [ "!z winter" ] 
+			"When": [ "!z winter" ]
 		},
 		//PPJA More Trees - Winter Y2
 		{
@@ -453,7 +422,7 @@
 				"Pomelo Sapling",
 				],
 			"Stock": 2,
-			"When": [ "!z winter/y 2" ] 
+			"When": [ "!z winter/y 2" ]
 		},
 		//PPJA More Trees - Winter Y3
 		{
@@ -462,7 +431,7 @@
 				"Camphor Sapling",
 				],
 			"Stock": 2,
-			"When": [ "!z winter/y 3" ] 
+			"When": [ "!z winter/y 3" ]
 		},
 		//Bonsters Crops - Spring Jeric 4 hearts Y2
 		{
@@ -474,7 +443,7 @@
 				"White Apline Strawberry Seeds",
 				],
 			"Stock": 6,
-			"When": [ "f Jeric 1000/!z spring/y 2" ] 
+			"When": [ "f Jeric 1000/!z spring/y 2" ]
 		},
 		//Bonsters Crops - Spring Jeric 8 hearts Y3
 		{
@@ -485,14 +454,14 @@
 				"Rose Hip Seeds",
 				],
 			"Stock": 6,
-			"When": [ "f Jeric 2000/z spring/y 3" ] 
+			"When": [ "f Jeric 2000/z spring/y 3" ]
 		},
 		//Bonsters Crops - Summer Jeric 4 hearts Y2
 		{
 			"ItemType": "Object",
 			"ItemNames": [
 				"Benne Sesame Seeds",
-				"BLue Corn Seeds",
+				"Blue Corn Seeds",
 				"Cardamom Seeds",
 				"Chayote Seeds",
 				"Cowpeas Seeds",
@@ -503,7 +472,7 @@
 				"Sunchoke Seeds",
 				],
 			"Stock": 6,
-			"When": [ "f Jeric 1000/!z summer/y 2" ] 
+			"When": [ "f Jeric 1000/!z summer/y 2" ]
 		},
 		//Bonsters Crops - Summer Jeric 8 hearts Y3
 		{
@@ -515,7 +484,7 @@
 				"Roselle Hibiscus Seeds",
 				],
 			"Stock": 6,
-			"When": [ "f Jeric 2000/!z summer/y 3" ] 
+			"When": [ "f Jeric 2000/!z summer/y 3" ]
 		},
 		//Bonsters Crops - Fall Jeric 4 hearts Y2
 		{
@@ -532,7 +501,7 @@
 				"Sunchoke Seeds",
 				],
 			"Stock": 6,
-			"When": [ "f Jeric 1000/!z fall/y 2" ] 
+			"When": [ "f Jeric 1000/!z fall/y 2" ]
 		},
 		//Bonsters Crops - Fall Jeric 8 hearts Y3
 		{
@@ -541,7 +510,7 @@
 				"White Currant Seeds",
 				],
 			"Stock": 6,
-			"When": [ "f Jeric 2000/!z fall/y 3" ] 
+			"When": [ "f Jeric 2000/!z fall/y 3" ]
 		},
 		//Bonsters Trees - Spring Jeric 4 hearts Y2
 		{
@@ -555,7 +524,7 @@
 				"Tamarind Sapling",
 				],
 			"Stock": 2,
-			"When": [ "f Jeric 1000/!z spring/y 2" ] 
+			"When": [ "f Jeric 1000/!z spring/y 2" ]
 		},
 		//Bonsters Trees - Summer Jeric 4 hearts Y2
 		{
@@ -567,7 +536,7 @@
 				"Purple Pluot Sapling",
 				],
 			"Stock": 2,
-			"When": [ "f Jeric 1000/!z summer/y 2" ] 
+			"When": [ "f Jeric 1000/!z summer/y 2" ]
 		},
 		//Bonsters Trees - Fall Jeric 4 hearts Y2
 		{
@@ -580,7 +549,7 @@
 				"Pawpaw Sapling",
 				],
 			"Stock": 2,
-			"When": [ "f Jeric 1000/!z fall/y 2" ] 
+			"When": [ "f Jeric 1000/!z fall/y 2" ]
 		},
 		//Bonsters Trees - Winter Jeric 4 hearts Y2
 		{
@@ -590,28 +559,28 @@
 				"Quince Sapling",
 				],
 			"Stock": 2,
-			"When": [ "f Jeric 1000/!z winter/y 2" ] 
+			"When": [ "f Jeric 1000/!z winter/y 2" ]
 		},
 	],
 	},
 	//------------
-	//PikaShop    
+	//PikaShop
 	//------------
 	{
 	"ShopName": "RSVPikaShop",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -7 ],
+	"CategoriesToSellHere": [ -81,-75,-4,-5,-6,-7,-79,-26,-27 ],
 	"PortraitPath": "assets/PikaShop.png",
 	"Quote": "Welcome to Pika's!",
 	"ClosedMessage": "Sorry, we're closed!",
 	"ShopPrice": -1,
-	"MaxNumItemsSoldInStore": 5,
+	"MaxNumItemsSoldInStore": 8,
 	"DefaultSellPriceMultiplier": 0.7,
 	"PriceMultiplierWhen": {
-		"0.6": ["f Pika 2000"] 
+		"0.6": ["f Pika 2000"]
 		},
 	"When": ["t 930 2300/w sunny"],
-    "LocalizedQuote": {
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -625,7 +594,7 @@
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
     	},
-   "LocalizedClosedMessage": {
+	"LocalizedClosedMessage": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -638,59 +607,93 @@
         //"ru": "PLACEHOLDER",
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
-    	},	
+    	},
 	"ItemStocks": [
-		//Food
+    // Seasonal recipes
+    {
+			"ItemType": "Object",
+			"ItemNames": [
+				"Springtime Primetime",
+				],
+			"Stock": 1,
+			"When": [ "!z spring/n RSV.PikaSpring" ]
+		},
+    {
+			"ItemType": "Object",
+			"ItemNames": [
+				"Summer Mountain Blessing",
+				],
+			"Stock": 1,
+			"When": [ "!z summer/n RSV.PikaSummer" ]
+		},
+    {
+			"ItemType": "Object",
+			"ItemNames": [
+				"Autumnal Serenity",
+				],
+			"Stock": 1,
+			"When": [ "!z fall/n RSV.PikaFall" ]
+		},
+    {
+			"ItemType": "Object",
+			"ItemNames": [
+				"Winter Night Feast",
+				],
+			"Stock": 1,
+			"When": [ "!z winter/n RSV.PikaWinter" ]
+		},
+		//Normal Food
 		{
 			"ItemType": "Object",
 			"ItemNames": [
-				"Ridgeside Shaketini",
-				"Autumn Dew Drop Juice",
-				"Cherry Berry Shakey",
-				"Snowball Slurpee",
-				"Omelet",
 				"Arugula Roll",
+        "Autumn Dew Drop Juice",
+        "Bean Hotpot",
+        "Blackberry Cobbler",
+        "Cherry Berry Shakey",
+        "Coleslaw",
+        "Farmer's Lunch",
+        "Fish Taco",
 				"Fried Fish a la Ridge",
 				"Fried Mountain Greens",
+        "Ginger Arugula Fried Rice",
 				"Highland Ice Cream",
+        "Honey Ginger Whitefish",
 				"Honey Glazed Salad",
+        "Lucky Lunch",
+        "Omelet",
+        "Pepper Poppers",
+        "Pumpkin Soup",
 				"Ridge Fruity Plate",
+        "Ridgeside Shaketini",
+        "Salad",
 				"Snow Bowl Surprise",
+        "Snowball Slurpee",
+        "Spaghetti",
+        "Stir Fry",
+        "Tom Kha Soup",
 				"Zesty Tuna",
-				"Spaghetti",
-				"Lucky Lunch",
-				"Pumpkin Soup",
-				"Blackberry Cobbler",
-				"Salad",
-				"Pepper Poppers",
-				"Bean Hotpot",
-				"Tom Kha Soup",
-				"Stir Fry",
-				"Coleslaw",
-				"Fish Taco",
-				"Farmer's Lunch",
 				],
 			"Stock": 1,
 		},
 	],
 	},
 	//------------
-	//PikaShop Recipes 
+	//PikaShop Recipes
 	//------------
 	{
 	"ShopName": "RSVPikaRecipes",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -7 ],
 	"PortraitPath": "assets/PikaShop.png",
 	"Quote": "Welcome to Pika's!",
 	"ClosedMessage": "Sorry, we're closed!",
 	"ShopPrice": -1,
 	"DefaultSellPriceMultiplier": 0.5,
 	"PriceMultiplierWhen": {
-		"0.6": ["f Pika 2000"] 
+		"0.6": ["f Pika 2000"]
 		},
 	"When": ["t 930 2300/w sunny"],
-    "LocalizedQuote": {
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -704,7 +707,7 @@
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
     	},
-   "LocalizedClosedMessage": {
+	"LocalizedClosedMessage": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -717,25 +720,60 @@
         //"ru": "PLACEHOLDER",
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
-    	},	
+    	},
 	"ItemStocks": [
-		//Food
+    // Seasonal recipes
+    {
+			"ItemType": "Object",
+      "IsRecipe": true,
+			"ItemNames": [
+				"Springtime Primetime",
+				],
+			"When": [ "!z spring/n RSV.PikaSpring" ]
+		},
+    {
+			"ItemType": "Object",
+      "IsRecipe": true,
+			"ItemNames": [
+				"Summer Mountain Blessing",
+				],
+			"When": [ "!z summer/n RSV.PikaSummer" ]
+		},
+    {
+			"ItemType": "Object",
+      "IsRecipe": true,
+			"ItemNames": [
+				"Autumnal Serenity",
+				],
+			"When": [ "!z fall/n RSV.PikaFall" ]
+		},
+    {
+			"ItemType": "Object",
+      "IsRecipe": true,
+			"ItemNames": [
+				"Winter Night Feast",
+				],
+			"When": [ "!z winter/n RSV.PikaWinter" ]
+		},
+		//Normal food
 		{
 			"ItemType": "Object",
 			"IsRecipe": true,
 			"ItemNames": [
-				"Summit Iced Tea",
-				"Ridgeside Shaketini",
-				"Autumn Dew Drop Juice",
-				"Cherry Berry Shakey",
-				"Snowball Slurpee",
-				"Arugula Roll",
-				"Fried Fish a la Ridge",
+        "Arugula Roll",
+        "Autumn Dew Drop Juice",
+        "Cherry Berry Shakey",
+        "Fried Fish a la Ridge",
 				"Fried Mountain Greens",
+        "Ginger Arugula Fried Rice",
 				"Highland Ice Cream",
+        "Honey Ginger Whitefish",
 				"Honey Glazed Salad",
-				"Ridge Fruity Plate",
-				"Snow Bowl Surprise",
+        "Ridge Fruity Plate",
+				"Ridgeside Shaketini",
+        "Snow Bowl Surprise",
+				"Snowball Slurpee",
+        "Summit Iced Tea",
 				"Zesty Tuna",
 				],
 		},
@@ -743,18 +781,18 @@
 	},
 
 	//------------
-	//LolaShop    
+	//LolaShop
 	//------------
 	{
 	"ShopName": "RSVLolaShop",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -7,-98 ],
+	"CategoriesToSellHere": [ -28,-97,-98 ],
 	"PortraitPath": "assets/LolaShop.png",
 	"Quote": "Weapons available today.",
 	"MaxNumItemsSoldInStore": 2,
 	"ShopPrice": -1,
-	"DefaultSellPriceMultiplier": 1.0,
-    "LocalizedQuote": {
+	"DefaultSellPriceMultiplier": 10.0,
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -768,20 +806,6 @@
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
     	},
-   "LocalizedClosedMessage": {
-    	//remove the "//" from your language
-        //"es": "PLACEHOLDER",
-        //"ko": "PLACEHOLDER",
-        //"de": "PLACEHOLDER",
-        //"fr": "PLACEHOLDER",
-        //"hu": "PLACEHOLDER",
-        //"it": "PLACEHOLDER",
-        //"ja": "PLACEHOLDER",
-        //"pt": "PLACEHOLDER",
-        //"ru": "PLACEHOLDER",
-        //"tr": "PLACEHOLDER",
-        //"zh": "PLACEHOLDER",
-    	},	
 	"ItemStocks": [
 		//Weapons
 		{
@@ -804,16 +828,15 @@
 		},
 	],
 	},
-	
-	//------------      
-	//Mystic Falls 1    
-	//------------      
+
+	//------------
+	//Mystic Falls 1
+	//------------
 	{
 	"ShopName": "RSVMysticFalls1",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -98 ],
 	"Quote": "Mystic Falls of Companions: 'Those who bond with their neighbors and share their joy and sorrow are blessed by Yoba.'",
-    "LocalizedQuote": {
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -828,30 +851,9 @@
         //"zh": "PLACEHOLDER",
     	},
 	"ShopPrice": 0,
-	
+
 	"ItemStocks": [
 		//Weapons
-		{
-			"ItemType": "Weapon",
-			"ItemNames": [ "Bubble Club", ],
-			"StockItemCurrency": "Spiritual Essence",
-			"StockCurrencyStack": 50,
-			"When": [ "e 75160064/f Aguar 2500" ],
-		},
-		{
-			"ItemType": "Weapon",
-			"ItemNames": [ "Bladebane", ],
-			"StockItemCurrency": "Spiritual Essence",
-			"StockCurrencyStack": 50,
-			"When": [ "e 75160077/f Freddie 2500" ],
-		},
-		{
-			"ItemType": "Weapon",
-			"ItemNames": [ "Daggerkin", ],
-			"StockItemCurrency": "Spiritual Essence",
-			"StockCurrencyStack": 50,
-			"When": [ "e 75160093/f Lola 2500" ],
-		},
 		{
 			"ItemType": "Weapon",
 			"ItemNames": [ "Father's Sorrow", ],
@@ -885,7 +887,10 @@
 			"ItemNames": [ "The Green Gambler", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 50,
-			"When": [ "f Bert 2500" ],
+			"When": [
+        "e 75160068/f Bert 2500",
+        "e 75160069/f Bert 2500"
+      ],
 		},
 		{
 			"ItemType": "Weapon",
@@ -920,7 +925,7 @@
 			"ItemNames": [ "Ark Blade", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 100,
-			"When": [ "f Anton 2500" ],
+			"When": [ "f Anton 2500/!q 75163042" ],
 		},
 		{
 			"ItemType": "Weapon",
@@ -928,13 +933,6 @@
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 100,
 			"When": [ "f Ariah 2500" ],
-		},
-		{
-			"ItemType": "Weapon",
-			"ItemNames": [ "Death's Daughter", ],
-			"StockItemCurrency": "Spiritual Essence",
-			"StockCurrencyStack": 100,
-			"When": [ "f Blair 2500" ],
 		},
 		{
 			"ItemType": "Weapon",
@@ -959,13 +957,6 @@
 		},
 		{
 			"ItemType": "Weapon",
-			"ItemNames": [ "Free Lance", ],
-			"StockItemCurrency": "Spiritual Essence",
-			"StockCurrencyStack": 100,
-			"When": [ "f Kiarra 2500" ],
-		},
-		{
-			"ItemType": "Weapon",
 			"ItemNames": [ "Cutlasset", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 100,
@@ -978,19 +969,26 @@
 			"StockCurrencyStack": 100,
 			"When": [ "f Louie 2500" ],
 		},
+    {
+			"ItemType": "Weapon",
+			"ItemNames": [ "Safeguard's Edge", ],
+			"StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 100,
+			"When": [ "f Naomi 2500" ],
+		},
+		{
+			"ItemType": "Weapon",
+			"ItemNames": [ "The Madame", ],
+			"StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 100,
+			"When": [ "f Maive 2500" ],
+		},
 		{
 			"ItemType": "Weapon",
 			"ItemNames": [ "Military Saber", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 100,
-			"When": [ "f Paula 2500" ],
-		},
-		{
-			"ItemType": "Weapon",
-			"ItemNames": [ "Bronze Lance", ],
-			"StockItemCurrency": "Spiritual Essence",
-			"StockCurrencyStack": 100,
-			"When": [ "f Sean 2500" ],
+			"When": [ "f Paula 2500/!q 75163521" ],
 		},
 		{
 			"ItemType": "Weapon",
@@ -1009,16 +1007,15 @@
 
 	],
 	},
-	
-	//------------      
-	//Mystic Falls 2    
-	//------------      
+
+	//------------
+	//Mystic Falls 2
+	//------------
 	{
 	"ShopName": "RSVMysticFalls2",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -98 ],
 	"Quote": "Mystic Falls of Love: 'Being able to capture the heart of someone is both a blessing and a curse. But in the presence of these waterfalls, love prefers to be a blessing.'",
-    "LocalizedQuote": {
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -1033,73 +1030,108 @@
         //"zh": "PLACEHOLDER",
     	},
 	"ShopPrice": 0,
-	
+
 	"ItemStocks": [
 		//Weapons
-		{
+    { //Anton
 			"ItemType": "Weapon",
-			"ItemNames": [ "Battle Dancer's Fan", ],
+			"ItemNames": [ "Ark Blade", ],
 			"StockItemCurrency": "Spiritual Essence",
-			"StockCurrencyStack": 50,
-			"When": [ "e 75160145" ],
+			"StockCurrencyStack": 100,
+			"When": [ "e 75160392" ],
 		},
-		{
+    { //Kenneth
 			"ItemType": "Weapon",
 			"ItemNames": [ "Battery-Powered Battle Hammer", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 50,
 			"When": [ "e 75160161" ],
 		},
-		{
+		{ //Ysabelle
+			"ItemType": "Weapon",
+			"ItemNames": [ "Battle Dancer's Fan", ],
+			"StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 50,
+			"When": [ "e 75160145" ],
+		},
+    { //Sean
+			"ItemType": "Weapon",
+			"ItemNames": [ "Bronze Lance", ],
+			"StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 50,
+			"When": [ "e 75160368" ],
+		},
+    { //Blair
+			"ItemType": "Weapon",
+			"ItemNames": [ "Death's Daughter", ],
+			"StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 100,
+			"When": [ "f Blair 2500" ],
+		},
+    { //Kiarra
+			"ItemType": "Weapon",
+			"ItemNames": [ "Free Lance", ],
+			"StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 50,
+			"When": [ "e 75160365" ],
+		},
+		{ //Maddie
 			"ItemType": "Weapon",
 			"ItemNames": [ "Heartbreaker", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 50,
 			"When": [ "e 75160139" ],
 		},
-		{
+		{ //Corine
 			"ItemType": "Weapon",
 			"ItemNames": [ "Icreon", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 50,
 			"When": [ "e 75160127" ],
 		},
-		{
+		{ //Ian
 			"ItemType": "Weapon",
 			"ItemNames": [ "Laborforce", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 50,
 			"When": [ "e 75160150" ],
 		},
-		{
+    { //Paula
 			"ItemType": "Weapon",
-			"ItemNames": [ "Observer's Axe", ],
+			"ItemNames": [ "Military Saber", ],
+			"StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 100,
+			"When": [ "e 75160390" ],
+		},
+		{ //Flor
+			"ItemType": "Weapon",
+			"ItemNames": [ "Observer's Hatchet", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 50,
 			"When": [ "e 75160133" ],
 		},
-		{
+		{ //Philip
 			"ItemType": "Weapon",
 			"ItemNames": [ "Sword of Idols", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 50,
 			"When": [ "e 75160167" ],
 		},
-		{
+		{ //Jeric
 			"ItemType": "Weapon",
 			"ItemNames": [ "The Lucky Penny", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 50,
 			"When": [ "e 75160155" ],
 		},
-		{
+		{ //Alissa
 			"ItemType": "Weapon",
 			"ItemNames": [ "The Singing Dagger", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 50,
 			"When": [ "e 75160121" ],
 		},
-		{
+		{ //Shiro
 			"ItemType": "Weapon",
 			"ItemNames": [ "The Unbroken", ],
 			"StockItemCurrency": "Spiritual Essence",
@@ -1108,16 +1140,15 @@
 		},
 	],
 	},
-	
-	//------------      
-	//Mystic Falls 3    
-	//------------      
+
+	//------------
+	//Mystic Falls 3
+	//------------
 	{
 	"ShopName": "RSVMysticFalls3",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -98, -95 ],
 	"Quote": "Mystic Falls of Sacrifice: 'Among the heaviest of burdens are those carried by those who fight for the greater good.'",
-    "LocalizedQuote": {
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -1132,10 +1163,24 @@
         //"zh": "PLACEHOLDER",
     	},
 	"ShopPrice": 0,
-	
+
 	"ItemStocks": [
 		//Weapons
-		{
+    {
+			"ItemType": "Weapon",
+			"ItemNames": [ "Bladebane", ],
+			"StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 50,
+			"When": [ "e 75160077/f Freddie 2500" ],
+		},
+    {
+			"ItemType": "Weapon",
+			"ItemNames": [ "Bubble Club", ],
+			"StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 50,
+			"When": [ "e 75160064/f Aguar 2500" ],
+		},
+    {
 			"ItemType": "Weapon",
 			"ItemNames": [ "Cute but Deadly Knife", ],
 			"StockItemCurrency": "Spiritual Essence",
@@ -1144,17 +1189,17 @@
 		},
 		{
 			"ItemType": "Weapon",
-			"ItemNames": [ "Occult Blade", ],
+			"ItemNames": [ "Daggerkin", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 50,
-			"When": [ "e 75160081/f Jio 2500" ],
+			"When": [ "e 75160093/f Lola 2500" ],
 		},
 		{
 			"ItemType": "Weapon",
 			"ItemNames": [ "Dusked Kunai", ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 50,
-			"When": [ "e 75160205/f Daia 2500" ],
+			"When": [ "e 75160208/f Daia 2500" ],
 		},
 		{
 			"ItemType": "Weapon",
@@ -1163,6 +1208,20 @@
 			"StockCurrencyStack": 100,
 			"When": [ "f Kimpoi 2500" ],
 		},
+    {
+			"ItemType": "Weapon",
+			"ItemNames": [ "Occult Blade", ],
+			"StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 50,
+			"When": [ "e 75160200/f Jio 2500" ],
+		},
+    {
+			"ItemType": "Weapon",
+			"ItemNames": [ "Ridgeback Hardshell", ],
+			"StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 100,
+			"When": [ "e 75160286/f Torts 2500" ],
+		},
 		{
 			"ItemType": "Weapon",
 			"ItemNames": [ "Tide Bringer", ],
@@ -1170,36 +1229,34 @@
 			"StockCurrencyStack": 100,
 			"When": [ "f Malaya 2500" ],
 		},
-		{
-			"ItemType": "Weapon",
-			"ItemNames": [ "Safeguard's Edge", ],
-			"StockItemCurrency": "Spiritual Essence",
-			"StockCurrencyStack": 100,
-			"When": [ "f Naomi 2500" ],
-		},
-		{
-			"ItemType": "Weapon",
-			"ItemNames": [ "The Madame", ],
-			"StockItemCurrency": "Spiritual Essence",
-			"StockCurrencyStack": 100,
-			"When": [ "f Maive 2500" ],
-		},
 	],
 	},
-	
-	//------------      
-	//RSVFestPika   
-	//------------      
+
+	//------------
+	//RSVFestPika
+	//------------
 	{
 	"ShopName": "RSVFestPika",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -7 ],
 	"Quote": "Welcome to Gus and Pika's!",
-	"LocalizedQuote": { "en": "Welcome to Gus and Pika's!" },
+	"LocalizedQuote": {
+    	//remove the "//" from your language
+        //"es": "PLACEHOLDER",
+        //"ko": "PLACEHOLDER",
+        //"de": "PLACEHOLDER",
+        //"fr": "PLACEHOLDER",
+        //"hu": "PLACEHOLDER",
+        //"it": "PLACEHOLDER",
+        //"ja": "PLACEHOLDER",
+        //"pt": "PLACEHOLDER",
+        //"ru": "PLACEHOLDER",
+        //"tr": "PLACEHOLDER",
+        //"zh": "PLACEHOLDER",
+    	},
 	"DefaultSellPriceMultiplier": 0.8,
 	"MaxNumItemsSoldInStore": 20,
 	"ShopPrice": -1,
-	
+
 	"ItemStocks": [
 		{
 			"ItemType": "Object",
@@ -1246,16 +1303,15 @@
 		},
 	],
 	},
-	
-	//------------      
-	//RSVFestGirls   
-	//------------      
+
+	//------------
+	//RSVFestGirls
+	//------------
 	{
 	"ShopName": "RSVFestGirls",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -7 ],
 	"Quote": "Girls rule!!",
-    "LocalizedQuote": {
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -1272,7 +1328,7 @@
 	"ShopPrice": -1,
 	"MaxNumItemsSoldInStore": 8,
 	"DefaultSellPriceMultiplier": 1.0,
-	
+
 	"ItemStocks": [
 		{
 			"ItemType": "Object",
@@ -1379,16 +1435,15 @@
 		},
 	],
 	},
-	
-	//------------      
-	//RSVFestBoys   
-	//------------      
+
+	//------------
+	//RSVFestBoys
+	//------------
 	{
 	"ShopName": "RSVFestBoys",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -7 ],
 	"Quote": "Boys rule!!",
-    "LocalizedQuote": {
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -1405,7 +1460,7 @@
 	"ShopPrice": -1,
 	"MaxNumItemsSoldInStore": 8,
 	"DefaultSellPriceMultiplier": 1.0,
-	
+
 	"ItemStocks": [
 		{
 			"ItemType": "Object",
@@ -1506,16 +1561,16 @@
 		},
 	],
 	},
-	
-	//------------      
-	//Jio Shop    
-	//------------      
+
+	//------------
+	//Jio Shop
+	//------------
 	{
 	"ShopName": "RSVJioShop",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -98, -95 ],
+	"CategoriesToSellHere": [ -28,-95,-96,-97,-98 ],
 	"Quote": "What do you desire?",
-    "LocalizedQuote": {
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -1530,7 +1585,7 @@
         //"zh": "PLACEHOLDER",
     	},
 	"ShopPrice": 0,
-	
+
 	"ItemStocks": [
 		{
 			"ItemType": "Hat",
@@ -1540,26 +1595,50 @@
 		},
 		{
 			"ItemType": "Clothing",
-			"ItemNames": [ "Occult Dusk Top", ],
+			"ItemNames": [
+        "Occult Dusk Top",
+        "Occult Leather Jacket",
+      ],
 			"StockItemCurrency": "Spiritual Essence",
 			"StockCurrencyStack": 50,
 		},
-		{
-			"ItemType": "Clothing",
-			"ItemNames": [ "Occult Leather Jacket", ],
-			"StockItemCurrency": "Spiritual Essence",
-			"StockCurrencyStack": 50,
+    {
+			"ItemType": "Object",
+			"ItemNames": [
+				"Warp Totem: Ridgeside"
+				],
+      "StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 30
+		},
+    {
+			"ItemType": "Object",
+			"ItemNames": [
+				"The Beautiful Serpent's Ring",
+        "The Fairy Doe Fox's Ring"
+				],
+      "Stock": 1,
+      "StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 250,
+      "When": [ "n MythFlowerLetter" ],
+		},
+    {
+			"ItemType": "Weapon",
+			"ItemNames": [ "Mountain Mistblade" ],
+      "Stock": 1,
+      "StockItemCurrency": "Spiritual Essence",
+			"StockCurrencyStack": 500,
+      "When": [ "n SlayViperialLetter/w rainy" ],
 		},
 	],
 	},
 
 	//------------
-	//MalayaShop  
+	//MalayaShop
 	//------------
 	{
 	"ShopName": "RSVMalayaShop",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -7 ],
+	"CategoriesToSellHere": [ -5,-6,-79 ],
 	"PortraitPath": "assets/MalayaShop.png",
 	"Quote": "Welcome! What would you like, dear?",
 	"ClosedMessage": "Sorry, we're closed!",
@@ -1567,10 +1646,11 @@
 	"MaxNumItemsSoldInStore": 7,
 	"DefaultSellPriceMultiplier": 0.7,
 	"PriceMultiplierWhen": {
-		"0.6": ["f Malaya 2000"] 
+		"0.6": ["f Malaya 2000"]
 		},
-	"When": ["t 900 1600"],
-    "LocalizedQuote": {
+	"When": ["t 900 1600/d Sat/w sunny",
+           "t 900 1600/w rainy"],
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -1584,7 +1664,7 @@
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
     	},
-   "LocalizedClosedMessage": {
+	"LocalizedClosedMessage": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -1597,7 +1677,7 @@
         //"ru": "PLACEHOLDER",
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
-    	},	
+    	},
 	"ItemStocks": [
 		//Food
 		{
@@ -1616,12 +1696,13 @@
 				"Fluffy Apple Crumble",
 				"Forage Souffle",
 				"Forest Halva",
+        "Ginger Rangpur Meringue",
 				"Highland Blueberry Pie",
 				"Highland Revani",
 				"Holiday Ice",
 				"Jumpy Coffee Cake",
 				"Kedi Delight",
-				"Keks Style Shortcake",
+				"Kek's Style Shortcake",
 				"Kek's Small Dream",
 				"Pillowsoft Cheezy Sandwich",
 				"Pink Frosted Sprinkled Doughnut",
@@ -1641,43 +1722,30 @@
 				],
 			"Stock": 1,
 		},
-		//Pastry Recipes
-		{
+    {
 			"ItemType": "Object",
-			"IsRecipe": true,
 			"ItemNames": [
-				"Kedi Delight",
-				"Keks Style Shortcake",
-				"Kek's Small Dream",
-				"Pillowsoft Cheezy Sandwich",
-				"Pink Frosted Sprinkled Doughnut",
-				"Hundred Flavor Doughnut",
-				"Apricot Juice",
-				"Clementine Juice",
-				"Wild Apple Juice"
+				"Matcha Latte",
 				],
-			"When": [ "y 2" ], 
+      "Stock": 3,
+      "When": [ "n OlgaSOLetter" ],
 		},
 	],
 	},
 
 	//------------
-	//KimpoiShop   
+	//MalayaRecipes
 	//------------
 	{
-	"ShopName": "RSVKimpoiShop",
+	"ShopName": "RSVMalayaRecipes",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -19,-74 ],
-	"PortraitPath": "assets/KimpoiShop.png",
-	"Quote": "Seeds from our travels. Come take your pick.",
+	"CategoriesToSellHere": [ -5,-6,-79 ],
+	"Quote": "Malaya's Weekend Recipes!",
+	"ClosedMessage": "Recipes available during weekends!",
 	"ShopPrice": -1,
-	"DefaultSellPriceMultiplier": 0.5,
-	"PriceMultiplierWhen": {
-		"0.3": ["f Kimpoi 2000"] 
-		},
-	"When": ["t 900 1600"],
-	"ClosedMessage": "Sorry, we're closed!",
-    "LocalizedQuote": {
+	"DefaultSellPriceMultiplier": 0.7,
+	"When": ["d Mon Tue Wed Thu Fri"],
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -1691,7 +1759,7 @@
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
     	},
-   "LocalizedClosedMessage": {
+	"LocalizedClosedMessage": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -1704,8 +1772,73 @@
         //"ru": "PLACEHOLDER",
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
-    	},	
-	
+    	},
+	"ItemStocks": [
+		//Pastry Recipes
+		{
+			"ItemType": "Object",
+			"IsRecipe": true,
+			"ItemNames": [
+        "Apricot Juice",
+				"Clementine Juice",
+				"Wild Apple Juice",
+        "Ginger Rangpur Meringue",
+        "Hundred Flavor Doughnut",
+				"Kedi Delight",
+				"Kek's Style Shortcake",
+				"Kek's Small Dream",
+				"Pillowsoft Cheezy Sandwich",
+				"Pink Frosted Sprinkled Doughnut",
+				],
+		},
+	],
+	},
+
+	//------------
+	//KimpoiShop
+	//------------
+	{
+	"ShopName": "RSVKimpoiShop",
+	"StoreCurrency": "Money",
+	"CategoriesToSellHere": [ -19,-74 ],
+	"PortraitPath": "assets/KimpoiShop.png",
+	"Quote": "Seeds from our travels. Come take your pick.",
+	"ShopPrice": -1,
+	"DefaultSellPriceMultiplier": 2.5,
+	"PriceMultiplierWhen": {
+		".5": ["f Kimpoi 2000"]
+		},
+	"When": ["NPCAt Kimpoi 10 5"],
+	"ClosedMessage": "Sorry, we're closed!",
+	"LocalizedQuote": {
+    	//remove the "//" from your language
+        //"es": "PLACEHOLDER",
+        //"ko": "PLACEHOLDER",
+        //"de": "PLACEHOLDER",
+        //"fr": "PLACEHOLDER",
+        //"hu": "PLACEHOLDER",
+        //"it": "PLACEHOLDER",
+        //"ja": "PLACEHOLDER",
+        //"pt": "PLACEHOLDER",
+        //"ru": "PLACEHOLDER",
+        //"tr": "PLACEHOLDER",
+        //"zh": "PLACEHOLDER",
+    	},
+	"LocalizedClosedMessage": {
+    	//remove the "//" from your language
+        //"es": "PLACEHOLDER",
+        //"ko": "PLACEHOLDER",
+        //"de": "PLACEHOLDER",
+        //"fr": "PLACEHOLDER",
+        //"hu": "PLACEHOLDER",
+        //"it": "PLACEHOLDER",
+        //"ja": "PLACEHOLDER",
+        //"pt": "PLACEHOLDER",
+        //"ru": "PLACEHOLDER",
+        //"tr": "PLACEHOLDER",
+        //"zh": "PLACEHOLDER",
+    	},
+
 	"ItemStocks": [
 		{
 			"ItemType": "Object",
@@ -1718,34 +1851,66 @@
 				"Tropi Ugli Fruit Sapling",
 				],
 		},
-		//Year 2
+		//Year Two
 		{
 			"ItemType": "Object",
 			"ItemNames": [
 				"Desert Tangelo Sapling",
 				"Ember Blood Lime Sapling",
 				],
-			"When": [ "y 2" ] 
+			"When": [ "y 2" ]
+		},
+    {
+			"ItemType": "Object",
+			"ItemNames": [ "Tree Fertilizer", ],
+			"StockPrice": 150,
+      "When": [ "y 2" ]
 		},
 	],
 	},
 
 	//------------
-	//HeapsShop 
+	//HeapsShop
 	//------------
 	{
 	"ShopName": "RSVHeapsStore",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -2,-12,-5,-6,-14,-18,-26,-27,-28,-74,-75,-79,-80,-81 ],
+	"CategoriesToSellHere": [
+		-4, //fish
+		-5, //eggs
+		-6, //milk
+		-7, //cooking
+    -8, //crafting
+    -9, //bigCraftables
+    -16, //building resources
+    -17, //sellAtPierres
+    -18, //sellAtPierresAndMarnies
+    -19, //fertilizer
+    -21, //bait
+    -22, //tackle
+    -23, //sellAtFishShop
+    -24, //furniture
+    -25, //ingredients
+    -26, //artisan goods
+    -27, //syrup
+    -29, //equipment
+    -74, //seeds
+    -75, //vegetables
+    -79, //fruits
+    -80, //flowers
+    -81, //greens
+    -95, //hats
+    -96, //rings
+	],
 	"PortraitPath": "assets/HeapsShop.png",
 	"Quote": "Welcome! You can sell almost anything here too!",
 	"DefaultSellPriceMultiplier": 0.8,
 	"PriceMultiplierWhen": {
-		"0.6": ["f Lorenzo 2000"] 
+		"0.6": ["f Lorenzo 2000"]
 		},
-	"When": ["t 900 1800/d Sat"],
+	"When": ["NPCAt Lorenzo 8 7"],
 	"ClosedMessage": "Sorry, we're closed!",
-    "LocalizedQuote": {
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -1759,7 +1924,7 @@
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
     	},
-   "LocalizedClosedMessage": {
+	"LocalizedClosedMessage": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -1772,9 +1937,71 @@
         //"ru": "PLACEHOLDER",
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
-    	},	
-	
+    	},
+
 	"ItemStocks": [
+		{
+			"ItemType": "Object",
+			"ItemNames": [
+				"Rare Seed",
+				"Dinosaur Egg",
+				"Energy Tonic",
+				"Muscle Remedy",
+				"Iridium Bar",
+				"Truffle",
+				"Glow Ring",
+				"Warrior Ring",
+				"Sprinkler",
+				"Sprinkler",
+				"Sprinkler",
+				"Sprinkler",
+				"Sprinkler",
+				"Sprinkler",
+				"Sprinkler",
+				"Quality Sprinkler",
+				"Pomegranate Sapling",
+				"Orange Sapling",
+				"Cherry Bomb",
+				"Cherry Bomb",
+				"Cherry Bomb",
+				"Cherry Bomb",
+				"Cherry Bomb",
+				"Cherry Bomb",
+				"Cherry Bomb",
+				"Cherry Sapling"
+			],
+			"MaxNumItemsSoldInItemStock": 1,
+			"Stock": 1,
+			"StockPrice": 500,
+			"When": [ "r .1" ]
+		},
+		{
+			"ItemType": "Object",
+			"ItemNames": [
+				"Sprinkler",
+			],
+			"Stock": 3,
+			"StockPrice": 500,
+			"When": [ "q 75163581" ]
+		},
+		{
+			"ItemType": "Object",
+			"ItemNames": [
+				"Cherry Bomb",
+			],
+			"Stock": 12,
+			"StockPrice": 250,
+			"When": [ "q 75163582" ]
+		},
+		{
+			"ItemType": "Object",
+			"ItemNames": [
+				"Speed-Gro",
+			],
+			"Stock": 9,
+			"StockPrice": 50,
+			"When": [ "q 75163583" ]
+		},
 		{
 			"ItemType": "Object",
 			"ItemNames":[
@@ -1791,58 +2018,177 @@
 			"ItemNames":[
 				"Basic Fertilizer",
 			],
-			"StockPrice": 100,
+			"StockPrice": 80,
+      "When": [ "!f Lorenzo 2000" ]
+		},
+    {
+			"ItemType": "Object",
+			"ItemNames":[
+				"Basic Fertilizer",
+			],
+			"StockPrice": 60,
+      "When": [ "f Lorenzo 2000" ]
 		},
 		{
 			"ItemType": "Object",
 			"ItemNames":[
 				"Basic Retaining Soil",
 			],
-			"StockPrice": 100,
+			"StockPrice": 80,
+      "When": [ "!f Lorenzo 2000" ]
+		},
+    {
+			"ItemType": "Object",
+			"ItemNames":[
+				"Basic Retaining Soil",
+			],
+			"StockPrice": 60,
+      "When": [ "f Lorenzo 2000" ]
+		},
+    {
+			"ItemType": "Object",
+			"ItemNames":[
+				"Quality Retaining Soil",
+			],
+			"StockPrice": 160,
+      "When": [ "!f Lorenzo 2000" ]
 		},
 		{
 			"ItemType": "Object",
 			"ItemNames":[
 				"Quality Retaining Soil",
 			],
-			"StockPrice": 150,
+			"StockPrice": 120,
+      "When": [ "f Lorenzo 2000" ]
 		},
 		{
 			"ItemType": "Object",
 			"ItemNames":[
 				"Speed-Gro",
 			],
-			"StockPrice": 100,
+			"StockPrice": 80,
+      "When": [ "!f Lorenzo 2000" ]
 		},
-		{
+    {
+			"ItemType": "Object",
+			"ItemNames":[
+				"Speed-Gro",
+			],
+			"StockPrice": 60,
+      "When": [ "f Lorenzo 2000" ]
+		},
+    {
 			"ItemType": "Object",
 			"ItemNames":[
 				"Deluxe Speed-Gro",
 			],
-			"StockPrice": 150,
+			"StockPrice": 160,
+      "When": [ "!f Lorenzo 2000" ]
+		},
+    {
+			"ItemType": "Object",
+			"ItemNames":[
+				"Deluxe Speed-Gro",
+			],
+			"StockPrice": 120,
+      "When": [ "f Lorenzo 2000" ]
+		},
+    {
+			"ItemType": "Object",
+			"ItemNames": [
+				"Quality Fertilizer"
+			],
+			"StockPrice": 250,
+			"When": [ "y 1" ]
 		},
 		{
 			"ItemType": "Object",
 			"ItemNames": [
 				"Quality Fertilizer"
 			],
-			"StockPrice": 150,
-			//"Stock": 6,
-			"When": [ "y 2" ] 
-		}
+			"StockPrice": 100,
+			"When": [ "!f Lorenzo 2000/y 2" ]
+		},
+    {
+			"ItemType": "Object",
+			"ItemNames": [
+				"Quality Fertilizer"
+			],
+			"StockPrice": 80,
+			"When": [ "f Lorenzo 2000/y 2" ]
+		},
+    //Grapes of Ferngill - Year-round
+    {
+			"ItemType": "Object",
+			"ItemNames": [
+				"Deep Envy Grape Wine",
+				"Gallant Grove Grape Wine",
+				"Golden Aura Grape Wine",
+				"Passion Rouge Grape Wine",
+				"Sunset Blush Grape Wine",
+				"Rosy Riot Grape Wine",
+				],
+			"Stock": 3,
+			"MaxNumItemsSoldInItemStock": 2
+		},
+    //Grapes of Ferngill - Summer
+		{
+			"ItemType": "Object",
+			"ItemNames": [
+				"Deep Envy Sparkling Wine",
+				"Gallant Grove Sparkling Wine",
+				"Golden Aura Sparkling Wine",
+				"Passion Rouge Sparkling Wine",
+				"Sunset Blush Sparkling Wine",
+				"Rosy Riot Sparkling Wine",
+				],
+			"Stock": 3,
+			"MaxNumItemsSoldInItemStock": 2,
+			"When": [ "!z summer" ],
+		},
+    //Grapes of Ferngill - Fall
+		{
+			"ItemType": "Object",
+			"ItemNames": [
+				"Deep Envy Fortified Wine",
+				"Gallant Grove Fortified Wine",
+				"Golden Aura Fortified Wine",
+				"Passion Rouge Fortified Wine",
+				"Sunset Blush Fortified Wine",
+				"Rosy Riot Fortified Wine",
+				],
+			"Stock": 3,
+			"MaxNumItemsSoldInItemStock": 2,
+			"When": [ "!z fall" ],
+		},
+    //Grapes of Ferngill - Winter
+		{
+			"ItemType": "Object",
+			"ItemNames": [
+				"Deep Envy Sweet Wine",
+				"Gallant Grove Sweet Wine",
+				"Golden Aura Sweet Wine",
+				"Passion Rouge Sweet Wine",
+				"Sunset Blush Sweet Wine",
+				"Rosy Riot Sweet Wine",
+				],
+			"Stock": 3,
+			"MaxNumItemsSoldInItemStock": 2,
+			"When": [ "!z winter" ],
+		},
 	],
 	},
 
-	//------------      
-	//Faye Shop   
-	//------------      
+	//------------
+	//Faye Shop
+	//------------
 	{
 	"ShopName": "RSVFayeShop",
 	"StoreCurrency": "Money",
-	"CategoriesToSell": [ -98, -95 ],
+	"CategoriesToSellHere": [],
 	"Quote": "Place your order! Designs change everyday!",
 	"MaxNumItemsSoldInStore": 2,
-    "LocalizedQuote": {
+	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
         //"ko": "PLACEHOLDER",
@@ -1855,11 +2201,11 @@
         //"ru": "PLACEHOLDER",
         //"tr": "PLACEHOLDER",
         //"zh": "PLACEHOLDER",
-    	},	
+    	},
 	"ItemStocks": [
 		{
 			"ItemType": "Clothing",
-			"ItemNames": [ 
+			"ItemNames": [
 				"Juninja Shirt",
 				"Flora Golda Shirt",
 				"Pika Impersonation Shirt",
@@ -1867,6 +2213,75 @@
 				 ],
 			"StockPrice": 3000,
 			"Stock": 1,
+		},
+    {
+			"ItemType": "Clothing",
+			"ItemNames": [
+				"Cof-Faye Jacket",
+				 ],
+			"StockPrice": 5000,
+			"Stock": 1,
+      "When": [ "n RSV.FayeJacket" ]
+		},
+    {
+			"ItemType": "Clothing",
+			"ItemNames": [
+				"Cray-Faye Abstract Shirt",
+				 ],
+			"StockPrice": 5000,
+			"Stock": 1,
+      "When": [ "n RSV.FayeMisc" ]
+		},
+    {
+			"ItemType": "Clothing",
+			"ItemNames": [
+				"Faye-rytale Pastel",
+				 ],
+			"StockPrice": 5000,
+			"Stock": 1,
+      "When": [ "n RSV.FayePastel" ]
+		},
+	],
+	},
+
+	//------------
+	//EggFestKeahiTrinnie
+	//------------
+	{
+	"ShopName": "RSVEggFestKeahiTrinnie",
+	"StoreCurrency": "Money",
+	"Quote": "Keahi and Trinnie's Egg Kitchen!",
+	"LocalizedQuote": {
+    	//remove the "//" from your language
+        //"es": "PLACEHOLDER",
+        //"ko": "PLACEHOLDER",
+        //"de": "PLACEHOLDER",
+        //"fr": "PLACEHOLDER",
+        //"hu": "PLACEHOLDER",
+        //"it": "PLACEHOLDER",
+        //"ja": "PLACEHOLDER",
+        //"pt": "PLACEHOLDER",
+        //"ru": "PLACEHOLDER",
+        //"tr": "PLACEHOLDER",
+        //"zh": "PLACEHOLDER",
+    	},
+	"ShopPrice": -1,
+	"DefaultSellPriceMultiplier": 1.0,
+
+	"ItemStocks": [
+		{
+			"ItemType": "Object",
+			"ItemNames": [
+				"Egg",
+			],
+			"StockPrice": 50,
+		},
+		{
+			"ItemType": "Object",
+			"ItemNames": [
+				"Fried Egg",
+				"Omelet"
+			],
 		},
 	],
 	},

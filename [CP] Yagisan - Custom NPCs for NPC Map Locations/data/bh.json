@@ -31,7 +31,7 @@
 			"Entries": {
 				// Boarding House and Bus Stop Extension - https://www.nexusmods.com/stardewvalley/mods/4120
 				// NPC Map Locations complains if any maps don't have a location.  Put a fake entry in to hide these for now.
-				"Ruins": {
+				"Custom_BoardingHouse_Ruins": {
 					"MapVectors": [
 						{
 							"TileX": 0,
@@ -47,7 +47,7 @@
 						}
 					]
 				},
-				"Ruins_House1": {
+				"Custom_BoardingHouse_Ruins_House1": {
 					"MapVectors": [
 						{
 							"TileX": 0,
@@ -63,7 +63,7 @@
 						}
 					]
 				},
-				"Ruins_House2": {
+				"Custom_BoardingHouse_Ruins_House2": {
 					"MapVectors": [
 						{
 							"TileX": 0,
@@ -95,7 +95,7 @@
 						}
 					]
 				},
-				"TheLostValley": {
+				"Custom_BoardingHouse_TheLostValley": {
 					"MapVectors": [
 						{
 							"MapX": 506,
@@ -110,7 +110,7 @@
 						"PrimaryText": "Lost Valley"
 					}
 				},
-				"GregoryTent": {
+				"Custom_BoardingHouse_GregoryTent": {
 					"MapVectors": [
 						{
 							"MapX": 506,
@@ -118,7 +118,7 @@
 						}
 					]
 				},
-				"BuffalosRanch": {
+				"Custom_BoardingHouse_BuffalosRanch": {
 					"MapVectors": [
 						{
 							"MapX": 438,
@@ -133,7 +133,7 @@
 						"PrimaryText": "Buffalo Ranch"
 					}
 				},
-				"BoardingHouse": {
+				"Custom_BoardingHouse_BoardingHouse": {
 					"MapVectors": [
 						{
 							"MapX": 525,

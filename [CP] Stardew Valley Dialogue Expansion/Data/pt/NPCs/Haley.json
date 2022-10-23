@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-        "LogName": "Haley",
-        "Action": "EditData",
-        "Target": "Characters/Dialogue/Haley",
-        "Entries":
-        {
+	"Changes":[
+		{
+			"LogName":"Haley",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Haley",
+			"Entries":{
             "Mon4": "Eu passei quase o dia inteiro tentando fazer uma assinatura bonita.$2#$e#É bem idiota, eu sei.",
             "Mon6": "Eu reclamava que essa vila era muito pequena, mas eu estou começando a gostar...#$e#Se ela fosse maior, a gente não seria uma comunidade, não é?$2",
             "Tue2": "Será que tem alguma concha bonita na praia?$2#$e#Você sabe qual é a melhor estação para coletar conchas?",
@@ -111,11 +110,10 @@
         }
     },
     {
-        "LogName": "Haley Marriage",
-        "Action": "EditData",
-        "Target": "Characters/Dialogue/MarriageDialogueHaley",
-        "Entries":
-        {
+        "LogName":"Haley Marriage",
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/MarriageDialogueHaley",
+        "Entries":{
             "Rainy_Day_0": "#$c .5#Ah... eu até tinha planos pra sair hoje...$s#Eu ainda prefiro dias de sol.$s.",
             "Rainy_Day_1": "#$c .5#Envelhecer é uma ideia um pouco assustadora pra mim, ainda bem que tenho você.$l#Eu sonho com o dia que a gente vai se aposentador, relaxando em um dia ensolarado nas praias das Ilhas Samambaias!$h#$e#Será maravilhoso, você não acha?$l",
             "Rainy_Day_2": "Ei, eu levantei cedo e fiz algo pra você! [223 234 211 651 731]#$e#$c .5#Será que eu me daria bem em uma padaria?... Não parece tão divertido.#Ei, eu sei que você é forte, mas precisa comer bem!$h",
@@ -168,5 +166,6 @@
             "winter_24": "O natal é amanhã, o que você acha que vai ter embaixo daquela árvore?$h",
             "winter_28": "Feliz Ano Novo! Tenho algo para você [222 608]$h#$e#Vamos comemorar!$h",
         }
-    }]
+    }
+]
 }

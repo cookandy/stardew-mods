@@ -159,10 +159,18 @@
                 "Custom_Fellowclown.Nikolai_NikolaisProperty": {
                     "MapVectors": [
                         {
-                            "MapX": 730,
-                            "MapY": 160
+                            "MapX": 689,
+                            "MapY": 163,
+                            "TileX": 0,
+                            "TileY": 0
+                        },
+                        {
+                            "MapX": 722,
+                            "MapY": 180,
+                            "TileX": 31,
+                            "TileY": 35
                         }
-                    ]
+                    ],
                 }
             }
         },

@@ -152,6 +152,10 @@
                 "SeaCave"
             ]
         },
+        {
+            "Name": "Custom_ESSmugglerDen",
+            "FromMapFile": "assets/Locations/Underground/SmugglersDen.tmx",
+        },
         { // Inn (created by ItsBenter and used with permission)
             "Name": "Custom_EastScarpeInn",
             "FromMapFile": "assets/Locations/InnInteriors/EastScarpeInn.tmx",
@@ -181,34 +185,96 @@
     "ConfigSchema": {
         "TownMap": {
             "AllowValues": "default, karmylla, vanilla",
-            "Default": "default"
+            "Default": "default",
+            "Description": "Leave on Default Unless you are using multiple map changing mods"
         },
         "River": {
             "AllowValues": "true, false",
-            "Default": "false"
+            "Default": "false",
+            "Description": "Turns the dried-up quarry into water, more aesthitically pleasing and better for fishing and SVE compatability."
         },
         "Forest": {
             "AllowValues": "true, false",
-            "Default": "false"
+            "Default": "false",
+            "Description": "Removes two houses and adds a forested patch instead. Automatically deactivated if ARV is installed."
         },
         "Skin": {
-            "AllowValues": "Kaya, NewEastScarpe",
-            "Default": "NewEastScarpe"
+            "AllowValues": "Kaya, NewEastScarpe, Yri",
+            "Default": "NewEastScarpe",
+            "Description": "Changes the buildings to Kaya's Santorini buildings (Kaya) or Yri's Projecy Yellog buildings (Yri), or the original ES buildings (NewEastScarpe - default)."
         },
         "EnableMeadowFarm": {
             "AllowValues": "true, false",
-            "Default": "true"
+            "Default": "true",
+            "Description": "Adds the farmable map between East Scarp and Deep Mountains."
         },
         "WalkTidePools": {
             "AllowValues": "true, false",
-            "Default": "false"
+            "Default": "false",
+            "Description": "Allows you (and NPCs) to walk across the tidal pools. You can still fish in them!"
         },
         "ObeliskOptions": {
-            "AllowValues": "vanilla, glass, garden",
-            "Default": "vanilla"
+            "AllowValues": "vanilla, glass, garden, Yri",
+            "Default": "vanilla",
+            "Description": "Choose the Obelisk that best matches your style: vanilla, glass or garden (Overwritten by Gwen's)"
+        },
+        "FlowersSpring": {
+            "AllowValues": "False, RoseWhite, ClematisBlue, WisteriaBlue, WisteriaPink, WisteriaPurple, WisteriaRed, WisteriaWhite, WisteriaYellow",
+            "Default": "False",
+            "Description": "For Yri's Projecy Yellog only: choose your flower color per season"
+        },
+        "FlowersSummer": {
+            "AllowValues": "False, RoseWhite, ClematisBlue, WisteriaBlue, WisteriaPink, WisteriaPurple, WisteriaRed, WisteriaWhite, WisteriaYellow",
+            "Default": "False",
+            "Description": "For Yri's Projecy Yellog only: choose your flower color per season"
+        },
+        "FlowersFall": {
+            "AllowValues": "False, WisteriaFBlue, WisteriaFPink, WisteriaFPurple, WisteriaFRed, WisteriaFWhite, WisteriaFYellow",
+            "Default": "False",
+            "Description": "For Yri's Projecy Yellog only: choose your flower color per season"
+        },
+        "farmcave_trapdoorx": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
+            "Default": "2",
+            "Description": "X coordinate placement of where you would like a trapdoor to be placed in your farmcave"
+        },
+        "farmcave_trapdoory": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
+            "Default": "5",
+            "Description": "Y coordinate placement of where you would like a trapdoor to be placed in your farmcave"
+        },
+        "farmcave_exitx": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
+            "Default": "2",
+            "Description": "X coordinate placement of where you would like the trapdoor to exit in your farmcave (suggested, same X as the placement above)"
+        },
+        "farmcave_exity": {
+            "AllowValues": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
+            "Default": "6",
+            "Description": "Y coordinate placement of where you would like the trapdoor to be exit in your farmcave (suggested, Y + 1 from the placement above)"
         }
     },
     "DynamicTokens": [
+        //Yri Flower Tokens
+        {
+            "Name": "FlowerStyle",
+            "Value": "{{FlowersSpring}}"
+        },
+        {
+            "Name": "FlowerStyle",
+            "Value": "{{FlowersSummer}}",
+            "When": {
+                "season": "summer"
+            }
+        },
+        {
+            "Name": "FlowerStyle",
+            "Value": "{{FlowersFall}}",
+            "When": {
+                "season": "fall"
+            }
+        },
+        //Birds
         {
             "Name": "birdVar",
             "Value": "0"
@@ -249,6 +315,38 @@
         }
     ],
     "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe, Custom_ESClearingHouse, Custom_ESMeadowFarm",
+            "MapProperties": {
+                "Music": "{{season}}{{random:1,2,3}}"
+            },
+            "Update": "OnTimeChange",
+            "When": {
+                "Time": "{{range:0600,1800}}",
+                "Weather |contains=rain,storm": false
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESOrchard",
+            "MapProperties": {
+                "Music": "{{season}}_day_ambient",
+                "Weather |contains=rain,storm": false
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe,Custom_ESClearingHouse, Custom_ESMeadowFarm, Custom_ESOrchard",
+            "MapProperties": {
+                "Music": "nightTime"
+            },
+            "Update": "OnTimeChange",
+            "When": {
+                "Time": "{{range:1800, 2600}}",
+                "Weather |contains=rain,storm": false
+            }
+        },
         {
             "Action": "Load",
             "Target": "Maps/Custom_ArkOrchard",
@@ -317,6 +415,18 @@
             "Action": "Load",
             "Target": "Maps/spring_himeoutdoors, Maps/summer_himeoutdoors, Maps/fall_himeoutdoors , Maps/winter_himeoutdoors",
             "FromFile": "assets/TileSheets/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/ES_mine_desert, Maps/DeepDark_outdoorsTilesheet, Maps/MobileVanTeal, Maps/LemurCustom",
+            "FromFile": "assets/TileSheets/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Data/Yri.json",
+            "When": {
+                "Skin": "Yri"
+            }
         },
         // M A P   P A T C H E S
         //River Patch : Add water or not (Set config "river" to "true")
@@ -548,6 +658,27 @@
                 "HasMod": "LemurKat.JulietHouse.NPC"
             }
         },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESClearingHouse",
+            "FromFile": "assets/Patches/AntoineTreeHouse.tmx",
+            "ToArea": {
+                "X": 44,
+                "Y": 5,
+                "Width": 13,
+                "Height": 13
+            },
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 13,
+                "Height": 13
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod": "LemurSqueaks.CastlePoint.CP"
+            }
+        },
         /*{
             "Action": "EditMap",
             "Target": "Maps/Town",
@@ -598,7 +729,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESDeepMountains 60 60"
+                        "TouchAction": "Warp Custom_ESDeepMountains 60 60"
                     }
                 },
                 {
@@ -608,7 +739,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESDeepMountains 60 60"
+                        "TouchAction": "Warp Custom_ESDeepMountains 60 60"
                     }
                 },
                 {
@@ -618,7 +749,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESDeepMountains 60 60"
+                        "TouchAction": "Warp Custom_ESDeepMountains 60 60"
                     }
                 }
             ],
@@ -637,7 +768,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_EastScarpe 73 1"
+                        "TouchAction": "Warp Custom_EastScarpe 73 1"
                     }
                 },
                 {
@@ -647,7 +778,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_EastScarpe 74 1"
+                        "TouchAction": "Warp Custom_EastScarpe 74 1"
                     }
                 },
                 {
@@ -657,7 +788,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_EastScarpe 75 1"
+                        "TouchAction": "Warp Custom_EastScarpe 75 1"
                     }
                 }
             ],
@@ -677,7 +808,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESMeadowFarm 15 0"
+                        "TouchAction": "Warp Custom_ESMeadowFarm 15 0"
                     }
                 },
                 {
@@ -687,17 +818,17 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESMeadowFarm 15 0"
+                        "TouchAction": "Warp Custom_ESMeadowFarm 15 0"
                     }
                 },
                 {
                     "Position": {
                         "X": 61,
-                        "Y": 6
+                        "Y": 61
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESMeadowFarm 15 0"
+                        "TouchAction": "Warp Custom_ESMeadowFarm 15 0"
                     }
                 }
             ],
@@ -752,7 +883,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESDeepDark 14 67"
+                        "TouchAction": "Warp Custom_ESDeepDark 14 67"
                     }
                 },
                 {
@@ -762,7 +893,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESDeepDark 14 67"
+                        "TouchAction": "Warp Custom_ESDeepDark 14 67"
                     }
                 }
             ]
@@ -783,7 +914,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESMeadowFarm 30 39"
+                        "TouchAction": "Warp Custom_ESMeadowFarm 30 39"
                     }
                 },
                 {
@@ -793,7 +924,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESMeadowFarm 30 39"
+                        "TouchAction": "Warp Custom_ESMeadowFarm 30 39"
                     }
                 },
                 {
@@ -803,7 +934,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESMeadowFarm 30 39"
+                        "TouchAction": "Warp Custom_ESMeadowFarm 30 39"
                     }
                 }
             ]
@@ -878,7 +1009,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESDeepDark 14 67"
+                        "TouchAction": "Warp Custom_ESDeepDark 14 67"
                     }
                 },
                 {
@@ -888,7 +1019,7 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "TouchAction": "LoadMap Custom_ESDeepDark 14 67"
+                        "TouchAction": "Warp Custom_ESDeepDark 14 67"
                     }
                 }
             ]
@@ -904,7 +1035,9 @@
                 "Custom_ESVineyard": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/137 -1 132 -1 143 -1 145 -1 153 -1 706 -1/138 -1 132 -1 144 -1 145 -1 153 -1 706 -1 704 -1/139 -1 137 -1 132 -1 140 -1 143 -1 153 -1 706 -1 699 -1/132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 707 -1 699 -1/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
                 "Custom_ESClearingHouse": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/137 -1 132 -1 143 -1 145 -1 153 -1 706 -1/138 -1 132 -1 144 -1 145 -1 153 -1 706 -1 704 -1/139 -1 137 -1 132 -1 140 -1 143 -1 153 -1 706 -1 699 -1/132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 707 -1 699 -1/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
                 "Custom_ESMineEntrance": "-1/-1/-1/-1/136 -1 142 -1 153 -1 702 -1 700 -1/136 -1 142 -1 153 -1 138 -1 702 -1 700 -1 698 -1/136 -1 140 -1 142 -1 153 -1 702 -1 700 -1 269 -1/136 -1 140 -1 141 -1 153 -1 707 -1 702 -1 700 -1 698 -1 269 -1/382 .06 581 .1 378 .1 102 .15 390 .25 330 1",
-                "Custom_ESSeaCave": "-1/-1/-1/-1/152 -1 153 -1 148 -1 156 -1/152 -1 153 -1 156 -1/152 -1 153 -1 148 -1 154 -1 156 -1/152 -1 153 -1 154 -1 156 -1 1058 -1/110 .1 118 .1 100 .05 103 .05 106 .05 102 .15 390 .25 330 1",
+                "Custom_ESSeaCave": "-1/-1/-1/-1/152 -1 153 -1 148 -1 156 -1/152 -1 153 -1 156 -1/152 -1 153 -1 148 -1 154 -1 156 -1/152 -1 153 -1 154 -1 156 -1/110 .1 118 .1 100 .05 103 .05 106 .05 102 .15 390 .25 330 1",
+                "Custom_ESSmugglerDen": "-1/-1/-1/-1/153 -1 157 -1 147 -1 156 -1 796 -1/153 -1 157 -1 147 -1 156 -1 796 -1/153 -1 157 -1 147 -1 156 -1 796 -1/153 -1 157 -1 147 -1 156 -1 796 -1/330 1",
+                "Custom_ESMeadowFarm": "-1/-1/-1/-1/137 -1 132 -1 143 -1 145 -1 153 -1 706 -1/138 -1 132 -1 144 -1 145 -1 153 -1 706 -1 704 -1/139 -1 137 -1 132 -1 140 -1 143 -1 153 -1 706 -1 699 -1/132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 707 -1 699 -1/382 .05 770 .1 390 .25 330 1"
             }
         },
         {
@@ -1277,13 +1410,7 @@
         {
             "LogName": "Events for East Scarpe",
             "Action": "Load",
-            "Target": "Data/Events/Custom_EastScarpe, Data/Events/Custom_ESDeepMountains, Data/Events/Custom_ESSilo, Data/Events/Custom_ESHouse1, Data/Events/Custom_ESHouse2, Data/Events/Custom_ESHouse3, Data/Events/Custom_ESHouse4, Data/Events/Custom_EastScarpeInn, Data/Events/Custom_ESOrchard, Data/Events/Custom_ESSeaCave, Data/Events/Custom_ESClearingHouse",
-            "FromFile": "assets/Data/EastScarpeEvents.json"
-        },
-        {
-            "LogName": "Events for VetHouse",
-            "Action": "Load",
-            "Target": "Data/Events/Custom_ESVetHouse, Data/Events/Custom_ESBirdHide, Data/Events/Custom_ESOrchardHouse ",
+            "Target": "Data/Events/Custom_EastScarpe, Data/Events/Custom_ESDeepMountains, Data/Events/Custom_ESSilo, Data/Events/Custom_ESHouse1, Data/Events/Custom_ESHouse2, Data/Events/Custom_ESHouse3, Data/Events/Custom_ESHouse4, Data/Events/Custom_EastScarpeInn, Data/Events/Custom_ESOrchard, Data/Events/Custom_ESSeaCave, Data/Events/Custom_ESClearingHouse, Data/Events/Custom_ESDeepDark,Data/Events/Custom_ESVetHouse, Data/Events/Custom_ESBirdHide, Data/Events/Custom_ESOrchardHouse, Data/Events/Custom_ESSmugglerDen, Data/Events/Custom_ESMeadowFarm",
             "FromFile": "assets/Data/EastScarpeEvents.json"
         },
         //TileData messages
@@ -1342,15 +1469,30 @@
                 "HasMod": "LemurKat.CleanerSewer.CP",
                 "Hearts:Krobus": "{{Range: 4,14}}"
             },
+            "ToArea": {
+                "X": 25,
+                "Y": 1,
+                "Width": 1,
+                "Height": 3
+            },
+            "FromFile": "assets/Patches/doorway.tmx",
+           
+        }, {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESDeepDark",
+            "When": {
+                "HasMod": "LemurKat.CleanerSewer.CP",
+                "Hearts:Krobus": "{{Range: 4,14}}"
+            },
             "MapTiles": [
                 {
                     "Position": {
                         "X": 25,
                         "Y": 3
                     },
-                    "Layer": "Buildings",
+                    "Layer": "Back",
                     "SetProperties": {
-                        "Action": "LoadMap Sewer 32 40"
+                        "TouchAction": "Warp Sewer 32 40"
                         //"Warp 44 15 MonsterSaloon"
                     }
                 }
@@ -1361,7 +1503,7 @@
             "Target": "Maps/Sewer",
             "When": {
                 "HasMod": "LemurKat.CleanerSewer.CP",
-                // "HasMod |contains=MouseyPounds.ShadowFestival": false,
+               // "HasMod |contains=MouseyPounds.ShadowFestival": false,
                 "DayEvent |contains=spirit's eve": false
             },
             "MapTiles": [
@@ -1372,7 +1514,7 @@
                     },
                     "Layer": "Buildings",
                     "SetProperties": {
-                        "Action": "LoadMap Custom_ESDeepDark 25 4"
+                        "Action": "Warp 25 4 Custom_ESDeepDark"
                     }
                     //"Warp 1 6 MonsterSaloon"
                 }
@@ -1413,7 +1555,7 @@
                     },
                     "Layer": "Buildings",
                     "SetProperties": {
-                        "Action": "LoadMap Sewer 3 47"
+                        "Action": "Warp 3 47 Sewer"
                         //"Warp 44 15 MonsterSaloon"
                     }
                 }
@@ -1600,7 +1742,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/Custom_EastScarpe",
-            "Update": "OnLocationChange",
+            "Update": "OnTimeChange",
             "When": {
                 "HasMod": "PeacefulEnd.CustomCompanions",
                 "HasSeenEvent": "57870011",
@@ -1624,7 +1766,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/Custom_EastScarpe",
-            "Update": "OnLocationChange",
+            "Update": "OnTimeChange",
             "When": {
                 "HasMod": "PeacefulEnd.CustomCompanions",
                 "HasSeenEvent": "57870011",
@@ -1692,5 +1834,12 @@
                 "HasMod": "FlashShifter.StardewValleyExpandedCP"
             }
         },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Data/ShortCutWarps.json",
+            "When": {
+                "HasSeenEvent": "57874010"
+            }
+        }
     ]
 }

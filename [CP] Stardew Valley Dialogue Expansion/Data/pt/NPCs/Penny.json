@@ -1,11 +1,10 @@
 {
-    "Changes": [
-    {
-            "LogName": "Penny",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Penny",
-            "Entries":
-            {
+	"Changes":[
+		{
+			"LogName":"Penny",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Penny",
+			"Entries":{
                 "Introduction": "Oi, tudo bem?...#$e#Você precisa de alguma coisa?$3#$b#Ah, desculpa! Eu me chamo Penny.$h#$b#Estava pensando sobre um livro que ali agora pouco.",
                 "Mon": "Oi @.#$e#Espero que você consiga se encaixar na vila.$h",
                 "Mon2": "Você pretende ficar aqui pra sempre, @?",
@@ -98,14 +97,13 @@
                 "winter_7_2": "A neve parece trazer nossa criança interior... vamos nos divertir.$h",
                 "winter_24_2": "Amanhã é o melhor dia do ano!$h#$b#Eu amo ver as crianças abrindo seus presentes.$h",
                 "winter_28_2": "Feliz ano novo!... Daqui a pouco!$h#$e#Estou tão ansiosa para o próximo ano...",
-            }
-        },
-        {
-            "LogName": "Penny Marriage",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialoguePenny",
-            "Entries":
-            {
+			}
+		},
+		{
+			"LogName":"Penny Marriage",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/MarriageDialoguePenny",
+			"Entries":{
                 "Rainy_Day_0": "Você pretende trabalhar nessa chuva?#$b#Se cuida. [395]$l",
                 "Rainy_Day_1": "Você acha que Harvey e Maru ficarão juntos?#$b#Eu acho que eles se gostam, mas talvez a diferença idade esteja impedindo?$h",
                 "Rainy_Day_2": "#$c .5#Você já vai sair? Cuidado onde pisa. [395]#Você já se perguntou para onde vão os insetos voadores quando chove?$3",
@@ -163,6 +161,7 @@
                 "winter_16": "Brrr... terei uma longa caminhada até a biblioteca hoje de manhã.$s#$b#Mas vamos nos esforçar. [395]$h",
                 "winter_26": "Espero que o inverno acabe logo.$3#$e#Eu amo ver a primavera depois de um longo inverno, tudo fica tão vivo.$h",
                 "winter_28": "Feliz ano novo! Eu fiz algo para nós, aproveite! [220 221]$h",
-            }
-        }]
+			}
+		}
+	]
 }

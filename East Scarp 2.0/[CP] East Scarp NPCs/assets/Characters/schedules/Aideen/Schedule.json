@@ -8,7 +8,7 @@
     "Tue": "700 Custom_ESHouse1 19 19 0/800 Custom_ESHouse1 19 20 2/900 Forest 68 43 square_5_5/1400 JoshHouse 2 17 1/1900 Custom_ESHouse1 5 6 3/2100 Custom_ESHouse1 6 4 3 aideen_sleep", //visits Evelyn
     "Fri": "700 Custom_ESHouse1 19 19 0/800 Custom_ESHouse1 19 20 2/900 Mountain 49 33 1/1600 Custom_ESHouse1 19 20 2/2020 Custom_ESHouse1 5 6 3/2100 Custom_ESHouse1 6 4 3 aideen_sleep",
     "Thu": "700 Custom_ESHouse1 19 19 0/800 Custom_ESHouse1 4 11 2/1000 Custom_EastScarpe 24 13 0/1200 Custom_EastScarpe 63 17 1/1400 Custom_EastScarpe 48 16 2 square_3_3/1600 Custom_ESHouse1 19 20 2/1900 Custom_ESHouse1 3 10 0/2020 Custom_ESHouse1 5 6 3/2100 Custom_ESHouse1 6 4 3 aideen_sleep", //Jacob visits and Aideen walks with him up to Del's grave
-    "Marriage_Mon":"900 Custom_EastScarpe 24 13 0/1400 Custom_EastScarpe 48 16 2 square_3_3/1800 BusStop -1 23 3",
-    "Marriage_Wed":"900 Forest 68 43 square_5_5/1600 JoshHouse 2 17 1/2100 BusStop -1 23 3",
-    "Marriage_Fri":"900 Mountain 49 33 1/1400 Town 34 75 3 square_3_3/1700 JoshHouse 2 17 1/2100 BusStop -1 23 3",
+    "marriage_Mon":"900 Custom_EastScarpe 24 13 0/1400 Custom_EastScarpe 48 16 2 square_3_3/1800 BusStop -1 23 3",
+    "marriage_Wed":"900 Forest 68 43 square_5_5/1600 JoshHouse 2 17 1/2100 BusStop -1 23 3",
+    "marriage_Fri":"900 Mountain 49 33 1/1400 Town 34 75 3 square_3_3/1700 JoshHouse 2 17 1/2100 BusStop -1 23 3",
 }

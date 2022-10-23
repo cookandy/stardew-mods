@@ -33,7 +33,8 @@
 	"GiftTastes":
 	{
 	    "Love": [ "Gus", "Martin" ],
-		"Like": [ "Kent", "Vincent", "Jas" ],
+		"Like": [ "Kent", "Vincent", "Jas", "Lance", "Scarlett" ],
 		"Hate": [ "Dwarf", "Krobus", "Apples", "Sophia" ]
 	},
+	"TranslationKey": "object.big-bark-burger",
 }

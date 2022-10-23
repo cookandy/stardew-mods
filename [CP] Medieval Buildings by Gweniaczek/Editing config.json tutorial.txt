@@ -16,6 +16,7 @@ It should look like this:
   "IslandBuildingsReplaced": "House, Farm Obelisk",
   "houseoption": "3",
   "housefoliage": "more",
+  "HousePorch": "true",
   "greenhouseoption": "1",
   "greenhousefoliage": "more",
   "stableoption": "1",
@@ -129,10 +130,10 @@ All valid inputs are: Vanilla, DNEarthyRecolour, Eemie's, FoliageRedone, Starblu
 
 ================================================================================================
 
-Because some of my farm house designs don't have the usual porch in front i needed to add a small map edit to change messy tiles under it to grass.
+Because some of my farm house designs have an option to disable porch in front i needed to add a small map edit to change messy tiles under it to grass.
 They work perfectly fine with all vanilla maps and all custom maps that don't change farmhouse coordinates. 
-I added support for SVE's Grandpas Farm and Small Beach Farm. I may add more if needed.
-If you're using a custom farm map and the grass is messed try disabling the edit:
+I added support for SVE's Grandpas Farm, Immersive Farn 2 Remastered, Immersive Farm 2 Fix and Small Beach Farm. I may add more if needed.
+If you're using a custom farm map and the grass edit is not under the house ( blocking different part of your farm ) disabling the edit:
 
   "MapEdit": "false"
 

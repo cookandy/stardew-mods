@@ -21,17 +21,19 @@
 				},
 			}
 		},
-		// This is a legacy location. Used only for old installs. It will be removed. Non-Legacy maps are actually part of the East Scarp mod!
+		// This is an SVE location. Used only for SVE installs.
 		{
-			"LogName": "[Yagi] Juliet and Jessie - Legacy Location Support",
+			"LogName": "[Yagi] Juliet and Jessie - SVE Location Support",
 			"Action": "EditData",
 			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
 			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 				"HasMod: |contains=LemurKat.JulietHouse.NPC": true
 			},
 			"Entries": {
 				// Juliet and Jessie the Joja Clerks - https://www.nexusmods.com/stardewvalley/mods/6398
-				"ClearingHouse": {
+				"Custom_LK_ClearingHouse": {
 					"MapVectors": [
 						{
 							"TileX": 0,
