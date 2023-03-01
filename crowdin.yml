@@ -1,3 +1,5 @@
 files:
   - source: /Automate/*.json
     translation: /Document/%two_letters_code%/%original_file_name%
+  - source: /Automate/*.pdb
+    translation: /folder/%two_letters_code%/%original_file_name%
