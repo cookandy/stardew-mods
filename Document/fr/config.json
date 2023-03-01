@@ -1,0 +1,21 @@
+{
+  "Enabled": true,
+  "AutomationInterval": 60,
+  "Controls": {
+    "ToggleOverlay": "U"
+  },
+  "ConnectorNames": [
+    "Workbench",
+    "Stepping Stone Path"
+  ],
+  "JunimoHutBehaviorForGems": "AutoDetect",
+  "JunimoHutBehaviorForFertilizer": "AutoDetect",
+  "JunimoHutBehaviorForSeeds": "AutoDetect",
+  "WarnForMissingBridgeMod": true,
+  "MachineOverrides": {
+    "ShippingBin": {
+      "Priority": -1,
+      "Enabled": true
+    }
+  }
+}
