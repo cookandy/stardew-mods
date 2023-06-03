@@ -45,7 +45,6 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Custom NPC Fixes](https://www.nexusmods.com/stardewvalley/mods/3849) | Fixes NPC spawning in custom locations, pathing to custom locations, and schedules for new NPCs. | `1.2.4` | |
 | [DeepWoods](https://www.nexusmods.com/stardewvalley/mods/2571) | Adds an explorable forest to the secret woods. | `3.0.0-beta` | Modified to be slightly easier. See [wiki](https://github.com/cookandy/stardew-mods/wiki/DeepWoods)|
 | [Dynamic Night Time](https://www.nexusmods.com/stardewvalley/mods/2072) | Gives Stardew Valley a more dynamic daylight cycle. | `1.3.8` | |
-| [East Scarp](https://www.nexusmods.com/stardewvalley/mods/5787) | An expansion adding new NPCs; new locations; new fish; shops; special orders - and secrets. | `2.3.6` | |
 | [Event Reepeater](https://www.nexusmods.com/stardewvalley/mods/3642) | Add depth to your stories with the option to Repeat events over and over as you need them. | `6.5.5` | |
 | [Expanded Preconditions Utility](https://www.nexusmods.com/stardewvalley/mods/6529) | A utility mod built on top of the game's preconditions system to offer a conditions system any mod can use | `1.0.1`| |
 | [Extra Map Layers](https://www.nexusmods.com/stardewvalley/mods/9633) | Lets you display extra layers added to map modss. | `0.3.3` | |
@@ -70,8 +69,7 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [PPJA More Trees](https://www.nexusmods.com/stardewvalley/mods/1671) | Adds more tree types. | `1.6.11` | |
 | [PyTK](https://www.nexusmods.com/stardewvalley/mods/1726) | Toolkit for Smapi Mods. | `1.23.2` | |
 | [Producer Framework](https://www.nexusmods.com/stardewvalley/mods/4970) | Toolkit for Smapi Mods. | `1.7.4` | |
-| [Quest Framework](https://www.nexusmods.com/stardewvalley/mods/6414) | Framework for work with quests like create custom quests, define custom quest types and handle quests. | `1.4.2` | |
-| [Ridgeside Village](https://www.nexusmods.com/stardewvalley/mods/7286) | Adds 24 new NPCs, a new location, forage, custom music, and more. | `2.4.1` |
+| [Quest Framework](https://www.nexusmods.com/stardewvalley/mods/6414) | Framework for work with quests like create custom quests, define custom quest types and handle quests. | `1.4.2` | |s
 | [Running Late](https://www.nexusmods.com/stardewvalley/mods/3518) | Changes the digital clock on the HUD to update every in-game minute instead of every 10. | `1.2.0` | |
 | [SAAT](https://www.nexusmods.com/stardewvalley/mods/10747) | Audio API & Audio Management for SMAPI, without the need for Harmony. Add custom audio tracks. | `1.1.2` | |
 | [Save Anywhere](https://www.nexusmods.com/stardewvalley/mods/444) | Lets you save your game anywhere by pressing a key. | `2.13.0` | |
