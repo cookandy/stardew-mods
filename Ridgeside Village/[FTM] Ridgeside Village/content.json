@@ -1663,7 +1663,6 @@
         },
         "DaysUntilSpawnsExpire": 1
       },
-      // Summit Farm Ore Area
       {
         "MiningLevelRequired": {
           "Stone": 0,
@@ -1726,8 +1725,7 @@
         "MapName": "Custom_Ridgeside_SummitFarm",
         "MinimumSpawnsPerDay": 0,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": [
-        ],
+        "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
           "87,30/90,30",
@@ -1735,7 +1733,7 @@
           "82,32/90,32",
           "82,33/90,33",
           "82,34/90,34",
-          "85,35/90,35",
+          "85,35/90,35"
         ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",

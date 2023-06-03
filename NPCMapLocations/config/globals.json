@@ -8,6 +8,7 @@
   "ShowQuests": true,
   "ShowTravelingMerchant": true,
   "ShowMinimap": false,
+  "LockMinimapPosition": false,
   "ShowFarmBuildings": true,
   "MinimapToggleKey": "OemPipe",
   "MinimapX": 12,
@@ -175,6 +176,8 @@
     "Sonny": 0,
     "TreehouseGirl": 8,
     "Undreya": 8,
-    "Zayne": 0
+    "Zayne": 0,
+    "ScarlettFake": 5,
+    "Lance": 0
   }
 }
