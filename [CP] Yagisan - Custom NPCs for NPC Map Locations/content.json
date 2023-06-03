@@ -1,6 +1,6 @@
 {
 	"$schema": "https://smapi.io/schemas/content-patcher.json",
-	"Format": "1.24.0",
+	"Format": "1.28.0",
 	"Changes": [
 		// Tier 1 Supported.
 		////////////////////////////////////////////////////////////////////////////////
@@ -24,14 +24,6 @@
 		{
 			"Action": "Include",
 			"FromFile": "data/bh.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
-		// East Scarp 1.7 and older
-		{
-			"Action": "Include",
-			"FromFile": "data/es17.json",
 			"When": {
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
@@ -85,6 +77,46 @@
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},
+		// Lyell
+		{
+			"Action": "Include",
+			"FromFile": "data/lyell.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		// Nikolai
+		{
+			"Action": "Include",
+			"FromFile": "data/nikolai.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		// John
+		{
+			"Action": "Include",
+			"FromFile": "data/john.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		// Magical Family
+		{
+			"Action": "Include",
+			"FromFile": "data/magicalfamily.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		// Wilford and Sable
+		{
+			"Action": "Include",
+			"FromFile": "data/wilford.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
 		// Tier 2 Community Supported.
 		////////////////////////////////////////////////////////////////////////////////
 		// Stardew Valley Expanded (Unsupported)
@@ -99,20 +131,6 @@
 		{
 			"Action": "Include",
 			"FromFile": "data/tier_2_misc_npcs.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
-		{
-			"Action": "Include",
-			"FromFile": "data/lyell.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
-		{
-			"Action": "Include",
-			"FromFile": "data/nikolai.json",
 			"When": {
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
@@ -134,13 +152,6 @@
 		{
 			"Action": "Include",
 			"FromFile": "data/athanaeri.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
-		{
-			"Action": "Include",
-			"FromFile": "data/wilford.json",
 			"When": {
 				"HasMod": "Bouhm.NPCMapLocations"
 			}

@@ -1,8 +1,8 @@
 {
-    "Format": "1.15",
+    "Format": "1.20",
     "ConfigSchema": {
         "ManualRecolourSelection":{
-            "AllowValues":"Off, Vanilla, Earthy, Eemie, ProjectYellog, Starblue, VibrantPastoral, WittilyNamed",
+            "AllowValues":"Off, Vanilla, Earthy, Eemie, Starblue, VibrantPastoral, WittilyNamed",
             "Default":"Off"
         },
         "ManualInterfaceSelection":{
@@ -76,14 +76,14 @@
                 "ManualRecolourSelection":"Off"
             }
         },
-        {
+        /*{
             "Name":"recolour",
             "Value":"ProjectYellog",
             "When":{
                 "HasMod":"yri.ProjectYellogTownOverhaul",
                 "ManualRecolourSelection":"Off"
             }
-        },
+        },*/
         {
             "Name":"recolour",
             "Value":"{{ManualRecolourSelection}}",
@@ -147,6 +147,67 @@
             "When":{
                 "ManualInterfaceSelection |contains=Off":"false"
             }
+        },
+        //panorama stuff
+        {
+            "Name":"pan",
+            "Value":"vanilla",
+            "When":{"recolour":"Vanilla"}
+        },
+        {
+            "Name":"pan",
+            "Value":"desaturated",
+            "When":{"recolour |contains=Vanilla":false}
+        },
+        {
+            "Name":"seas",
+            "Value":null,
+            "When":{"Season":"spring,summer,fall"}
+        },
+        {
+            "Name":"seas",
+            "Value":"_snow",
+            "When":{"Season":"winter"}
+        },
+        {
+            "Name":"weath",
+            "Value":null,
+            "When":{"Weather":"sun,snow,wind"}
+        },
+        {
+            "Name":"weath",
+            "Value":"_rain",
+            "When":{"Weather":"rain,storm"}
+        },
+        {
+            "Name":"sunset",
+            "Value":"1830",
+            "When":{"Season":"spring,summer"}
+        },
+        {
+            "Name":"sunset",
+            "Value":"1730",
+            "When":{"Season":"fall"}
+        },
+        {
+            "Name":"sunset",
+            "Value":"1630",
+            "When":{"Season":"winter"}
+        },
+        {
+            "Name":"nighttime",
+            "Value":"2000",
+            "When":{"Season":"spring,summer"}
+        },
+        {
+            "Name":"nighttime",
+            "Value":"1900",
+            "When":{"Season":"fall"}
+        },
+        {
+            "Name":"nighttime",
+            "Value":"1800",
+            "When":{"Season":"winter"}
         }
     ],
     "Changes": [
@@ -186,6 +247,35 @@
             "Action":"Load",
             "Target":"Maps/desert_daisyextras",
             "FromFile":"assets/{{recolour}}/desert_daisyextras.png"
+        },
+        //panorama load
+        {
+            "Action":"Load",
+            "Target":"Maps/panorama",
+            "FromFile":"assets/Panorama/{{pan}}_day.png"
+        },
+        //panorama edit day
+        {
+            "Action":"EditImage",
+            "Target":"Maps/panorama",
+            "FromFile":"assets/Panorama/{{pan}}_day{{seas}}{{weath}}.png",
+            "Update":"OnDayStart"
+        },
+        //panorama edit evening
+        {
+            "Action":"EditImage",
+            "Target":"Maps/panorama",
+            "FromFile":"assets/Panorama/evening{{seas}}{{weath}}.png",
+            "When":{"Time":"{{Range:{{sunset}},{{nighttime}}}}"},
+            "Update":"OnTimeChange"
+        },
+        //panorama edit night
+        {
+            "Action":"EditImage",
+            "Target":"Maps/panorama",
+            "FromFile":"assets/Panorama/night{{seas}}{{weath}}.png",
+            "When":{"Time":"{{Range:{{nighttime}},2600}}"},
+            "Update":"OnTimeChange"
         },
        //arrows       
        //down replaces _       

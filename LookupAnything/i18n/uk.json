@@ -448,24 +448,22 @@
     ** Item > melee weapon lookups
     *********/
     // labels
-    // TODO
-    "item.melee-weapon.accuracy": "Accuracy",
-    "item.melee-weapon.critical-chance": "Critical chance",
-    "item.melee-weapon.critical-damage": "Critical damage",
-    "item.melee-weapon.damage": "Damage",
-    "item.melee-weapon.defense": "Defense",
-    "item.melee-weapon.knockback": "Knockback",
-    "item.melee-weapon.reach": "Reach",
-    "item.melee-weapon.speed": "Attack speed",
+    "item.melee-weapon.accuracy": "Точність",
+    "item.melee-weapon.critical-chance": "Критичний шанс",
+    "item.melee-weapon.critical-damage": "Критична шкода",
+    "item.melee-weapon.damage": "Шкода",
+    "item.melee-weapon.defense": "Захист",
+    "item.melee-weapon.knockback": "Відбиття",
+    "item.melee-weapon.reach": "Дальніть",
+    "item.melee-weapon.speed": "Швидкість атаки",
 
     // values
-    // TODO
-    "item.melee-weapon.critical-damage.label": "{{multiplier}} times normal damage (before player bonuses)",
-    "item.melee-weapon.defense.label": "{{amount}} while equipped",
-    "item.melee-weapon.knockback.label": "{{amount}} ({{multiplier}} times normal distance)",
-    "item.melee-weapon.reach.label": "{{amount}} pixels",
-    "item.melee-weapon.speed.shown-vs-actual": "shown: {{shownSpeed}}{{lineBreak}}actual: {{actualSpeed}}",
-    "item.melee-weapon.speed.summary": "{{speed}} ({{milliseconds}} milliseconds per swing frame, before player speed bonuses)",
+    "item.melee-weapon.critical-damage.label": "{{multiplier}} разів нормальних ушкоджень (до отримання бонусів гравця)",
+    "item.melee-weapon.defense.label": "{{amount}} при оснащенні",
+    "item.melee-weapon.knockback.label": "{{amount}} ({{multiplier}} разів нормальних ушкоджень)",
+    "item.melee-weapon.reach.label": "{{amount}} пікселів",
+    "item.melee-weapon.speed.shown-vs-actual": "показано: {{shownSpeed}}{{lineBreak}}насправді: {{actualSpeed}}",
+    "item.melee-weapon.speed.summary": "{{speed}} ({{milliseconds}} мілісекунд на кадр замаху, до отримання бонусів за швидкість гравця)",
 
 
     /*********
@@ -536,7 +534,7 @@
     "npc.friendship.need-bouquet": "Потрібен букет для наступн.",
     "npc.friendship.need-points": "Наступн. за {{count}}",
     "npc.undiscovered-gift-taste": "{{count}} незвіданих предметів",
-    "npc.undiscovered-gift-taste-appended": " та {{count}} незвіданих предметів",
+    "npc.unowned-gift-taste": "{{count}} unowned items", // TODO
 
 
     /*********
@@ -714,6 +712,8 @@
     "config.highlight-unrevealed-gift-tastes.desc": "Виділення улюблених подарунків, які не були виявлені в профілі НП. Якщо ввімкнено, не виявлені улюблені подарунки будуть жирними, а пошук також показуватиме подарунки, які не сподобалися/є жахливими.",
     "config.show-all-gift-tastes.name": "Показувати усі улюблені подарунки",
     "config.show-all-gift-tastes.desc": "Показ усіх улюблених подарунків для НП та пошуку предметів; якщо вимкнено, відображаються лише найбільш релевантні подарунки (наприклад, улюблені або ті, що сподобалися).",
+    "config.show-unowned-gifts.name": "Show unowned gift tastes", // TODO
+    "config.show-unowned-gifts.desc": "Whether to show gift tastes for items that the player doesn't own somewhere in the world.", // TODO
 
     // advanced options
     "config.title.advanced-options": "Розширені опції",

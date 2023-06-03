@@ -1583,7 +1583,11 @@
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "46,70/49,79",
+          "16,47/22,49",
+          "75,48/49,50"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -1663,6 +1667,7 @@
         },
         "DaysUntilSpawnsExpire": 1
       },
+      // Summit Farm Ore Area
       {
         "MiningLevelRequired": {
           "Stone": 0,
@@ -1725,7 +1730,8 @@
         "MapName": "Custom_Ridgeside_SummitFarm",
         "MinimumSpawnsPerDay": 0,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": [],
+        "IncludeTerrainTypes": [
+        ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
           "87,30/90,30",
@@ -1733,7 +1739,7 @@
           "82,32/90,32",
           "82,33/90,33",
           "82,34/90,34",
-          "85,35/90,35"
+          "85,35/90,35",
         ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
@@ -1932,7 +1938,6 @@
               "HP": 200,
               "Damage": 10,
               "SeesPlayersAtSpawn": false,
-              "DodgeChance": 30,
               "RelatedSkill": "Combat",
               "Sprite": "Characters/Monsters/RSVWraith",
               "EXP": 12,
@@ -1944,8 +1949,8 @@
         ],
         "UniqueAreaID": "RSV RidgeForest Wraith",
         "MapName": "Custom_Ridgeside_RidgeForest",
-        "MinimumSpawnsPerDay": 30,
-        "MaximumSpawnsPerDay": 40,
+        "MinimumSpawnsPerDay": 20,
+        "MaximumSpawnsPerDay": 35,
         "IncludeTerrainTypes": [
           "All"
         ],
@@ -2954,6 +2959,67 @@
       {
         "MonsterTypes": [
           {
+            "MonsterName": "royal serpent",
+            "Settings": {
+              "SpawnWeight": 1,
+              "HP": 1500,
+              "Damage": 20,
+              "SeesPlayersAtSpawn": true,
+              "DodgeChance": 0,
+              "RelatedSkill": "Combat",
+              "Sprite": "Characters/Monsters/RSVSerperial",
+              "EXP": 20,
+              "Segments": 11,
+              "Loot": [
+                "Spiritual Essence",
+                "Mountain Mistbloom",
+                "Mountain Mistbloom",
+                "Mountain Mistbloom",
+                "Mountain Mistbloom",
+                "Mountain Mistbloom",
+                "Mountain Mistbloom",
+                "Mountain Mistbloom"
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "RSV RidgeForest Serperial",
+        "MapName": "Custom_Ridgeside_RidgeForest",
+        "MinimumSpawnsPerDay": 5,
+        "MaximumSpawnsPerDay": 6,
+        "IncludeTerrainTypes": [
+          "All"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2550,
+          "MinimumTimeBetweenSpawns": 180,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [
+            "!HasItem Ancient Music Box"
+          ],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
             "MonsterName": "ghost",
             "Settings": {
               "SpawnWeight": 3,
@@ -3012,7 +3078,6 @@
               "HP": 200,
               "Damage": 10,
               "SeesPlayersAtSpawn": false,
-              "DodgeChance": 30,
               "RelatedSkill": "Combat",
               "Sprite": "Characters/Monsters/RSVWraith",
               "EXP": 12,
@@ -3197,7 +3262,68 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
-      }
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "royal serpent",
+            "Settings": {
+              "SpawnWeight": 1,
+              "HP": 1500,
+              "Damage": 20,
+              "SeesPlayersAtSpawn": true,
+              "DodgeChance": 0,
+              "RelatedSkill": "Combat",
+              "Sprite": "Characters/Monsters/RSVSerperial",
+              "EXP": 20,
+              "Segments": 11,
+              "Loot": [
+                "Spiritual Essence",
+                "Mountain Mistbloom",
+                "Mountain Mistbloom",
+                "Mountain Mistbloom",
+                "Mountain Mistbloom",
+                "Mountain Mistbloom",
+                "Mountain Mistbloom",
+                "Mountain Mistbloom"
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "RSV SpiritRealm Serperial",
+        "MapName": "Custom_Ridgeside_RSVSpiritRealm",
+        "MinimumSpawnsPerDay": 3,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [
+          "All"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2550,
+          "MinimumTimeBetweenSpawns": 240,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [
+            "k 75160263"
+          ],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
     ],
     "CustomTileIndex": []
   },

@@ -15,6 +15,20 @@
                 },
             }
         },
+        // Sable - New Custom NPC - https://www.nexusmods.com/stardewvalley/mods/12533
+        {
+            "LogName": "[Yagi] Wilford - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Fernandtea.NewNPCSabl": true
+            },
+            "Entries": {
+                "Sable": {
+                    "MarkerCropOffset": 6
+                },
+            }
+        },
         {
             "LogName": "[Yagi] Wilford - Location Support",
             "Action": "EditData",
@@ -24,7 +38,24 @@
             },
             "Entries": {
                 // Wilford - New Custom NPC - https://www.nexusmods.com/stardewvalley/mods/7313
-                "EastWoods": {
+                "Custom_EastWoods": {
+                    "MapVectors": [
+                        {
+                            "MapX": 960,
+                            "MapY": 250
+                        }
+                    ]
+                },
+                "Custom_WilfordHouse": {
+                    "MapVectors": [
+                        {
+                            "MapX": 960,
+                            "MapY": 250
+                        }
+                    ]
+                },
+                // Sable - New Custom NPC - https://www.nexusmods.com/stardewvalley/mods/12533
+                "Custom_SableRoom": {
                     "MapVectors": [
                         {
                             "MapX": 960,

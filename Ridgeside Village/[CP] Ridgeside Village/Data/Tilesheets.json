@@ -299,6 +299,11 @@
 },
 {
    "Action": "Load",
+   "Target": "Maps/zRSVZuzuCableCarView",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
    "Target": "Maps/zRSVOldKids",
    "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
 },
@@ -345,6 +350,21 @@
 {
    "Action": "Load",
    "Target": "Maps/zrsvfestivals",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_rsvAmethyneCrystals",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_rsvAmethyneCave",
+   "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/fire",
    "FromFile": "Assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
 },
 ]

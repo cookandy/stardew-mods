@@ -1,0 +1,40 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Magical Family - https://www.nexusmods.com/stardewvalley/mods/5653
+        {
+            "LogName": "[Yagi] Magical Family - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Fellowclown.MagicalFamily": true
+            },
+            "Entries": {
+                "Valerie": {
+                    "MarkerCropOffset": 4
+                },
+                "Dezerie": {
+                    "MarkerCropOffset": 2
+                },
+            }
+        },
+        {
+            "LogName": "[Yagi] Magical Family - Location Support",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": {
+                "HasMod: |contains=Fellowclown.MagicalFamily": true
+            },
+            "Entries": {
+                "Custom_Fellowclown_OldGraveYard": {
+                    "MapVectors": [
+                        {
+                            "MapX": 180,
+                            "MapY": 450
+                        }
+                    ]
+                },
+            },
+        }
+    ]
+}

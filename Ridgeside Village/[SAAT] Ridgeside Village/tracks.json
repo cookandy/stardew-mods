@@ -98,4 +98,25 @@
             "AddToJukebox": false
         }
     },
+
+    // June stuff
+    {
+      "Id": "doremi",
+			"Filepath": "Music/DoReMi.wav",
+			"Category": "Sound",
+			"Settings": {
+				"Loop": false,
+				"AddToJukebox": false
+			}
+		},
+
+    {
+      "Id": "JunePiano",
+			"Filepath": "Music/JunePiano.ogg",
+			"Category": "Music",
+			"Settings": {
+				"Loop": true,
+				"AddToJukebox": false
+			}
+		},
 ]

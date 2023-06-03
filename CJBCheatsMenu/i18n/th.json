@@ -96,7 +96,7 @@
     "professions.farming.rancher": "การทำฟาร์ม เลเวล 5 - คนเลี้ยงสัตว์",
     "professions.farming.tiller": "การทำฟาร์ม เลเวล 5 - ชาวไร่",
     "professions.farming.agriculturist": "การทำฟาร์ม เลเวล 10 - เกษตรกร",
-    "professions.farming.artisan": "การทำฟาร์ม เลเวล 10 - สายหมัก",
+    "professions.farming.artisan": "การทำฟาร์ม เลเวล 10 - ช่างฝีมือ",
     "professions.farming.coopmaster": "การทำฟาร์ม เลเวล 10 - คนดูแลเล้า",
     "professions.farming.shepherd": "การทำฟาร์ม เลเวล 10 - คนเลี้ยงแกะ",
     "professions.fishing.fisher": "การตกปลา เลเวล 5 - ชาวประมง",
@@ -225,6 +225,7 @@
     "flags.unlocked.room": "ห้อง: {{name}}",
     "flags.unlocked-content": "ปลดล็อกเนื้อหา",
     "flags.unlocked-content.dyes-and-tailoring": "การย้อมสี & การตัดเย็บ",
+    "flags.unlocked-content.junimo-text": "Can read Junimo text", // TODO
     "flags.community-center": "ศูนย์ชุมชน",
     "flags.community-center.door-unlocked": "ปลดล็อกประตู",
     "flags.jojamart.membership": "เป็นสมาชิกโจจ้า",

@@ -46,6 +46,7 @@
 				"Kimpoi": "{{i18n:Festivals.EggFest.Kimpoi}}",
 				"Naomi": "{{i18n:Festivals.EggFest.Naomi}}",
 				"Torts": "{{i18n:Festivals.EggFest.Torts}}",
+				"Bryle": "{{i18n:Festivals.EggFest.Bryle}}",
 
 			//Dateables
 				"Alissa": "{{i18n:Festivals.EggFest.Alissa}}",
@@ -78,6 +79,13 @@
 				"Sean_spouse": "{{i18n:Festivals.EggFest.Sean_spouse}}",
 				"Paula_spouse": "{{i18n:Festivals.EggFest.Paula_spouse}}",
 				"Blair_spouse": "{{i18n:Festivals.EggFest.Blair_spouse}}",
+
+				"Irene_spouse": "{{i18n:Festivals.EggFest.Irene_spouse}}",
+				"Zayne": "{{i18n:Festivals.EggFest.Zayne}}",
+				"Zayne_spouse": "{{i18n:Festivals.EggFest.Zayne_spouse}}",
+
+				"Faye_spouse": "{{i18n:Festivals.EggFest.Faye_spouse}}",
+				"Bryle_spouse": "{{i18n:Festivals.EggFest.Bryle_spouse}}",
 			},
 		},
 ]

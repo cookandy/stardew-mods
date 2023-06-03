@@ -46,6 +46,7 @@
 				"Kimpoi": "{{i18n:Festivals.Jellies.Kimpoi}}",
 				"Naomi": "{{i18n:Festivals.Jellies.Naomi}}",
 				"Torts": "{{i18n:Festivals.Jellies.Torts}}",
+				"Bryle": "{{i18n:Festivals.Jellies.Bryle}}",
 
 			//Dateables
 				"Alissa": "{{i18n:Festivals.Jellies.Alissa}}",
@@ -78,6 +79,13 @@
 				"Sean_spouse": "{{i18n:Festivals.Jellies.Sean_spouse}}",
 				"Paula_spouse": "{{i18n:Festivals.Jellies.Paula_spouse}}",
 				"Blair_spouse": "{{i18n:Festivals.Jellies.Blair_spouse}}",
+
+				"Irene_spouse": "{{i18n:Festivals.Jellies.Irene_spouse}}",
+				"Zayne": "{{i18n:Festivals.Jellies.Zayne}}",
+				"Zayne_spouse": "{{i18n:Festivals.Jellies.Zayne_spouse}}",
+
+				"Faye_spouse": "{{i18n:Festivals.Jellies.Faye_spouse}}",
+				"Bryle_spouse": "{{i18n:Festivals.Jellies.Bryle_spouse}}",
 			},
 		},
 

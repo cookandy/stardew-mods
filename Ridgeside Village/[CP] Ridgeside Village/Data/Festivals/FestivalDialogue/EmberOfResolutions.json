@@ -46,6 +46,7 @@
 				"Kimpoi": "{{i18n:Festivals.EoR.Kimpoi}}",
 				"Naomi": "{{i18n:Festivals.EoR.Naomi}}",
 				"Torts": "{{i18n:Festivals.EoR.Torts}}",
+				"Bryle": "{{i18n:Festivals.EoR.Bryle}}",
 
 			//Vanilla Non-Dateables
     			"Robin": "{{i18n:EmberNightDialogue.Robin}}",
@@ -67,6 +68,7 @@
 			    "Willy": "{{i18n:EmberNightDialogue.Willy}}",
 				"Marlon": "{{i18n:EmberNightDialogue.Marlon}}",
 				"Wizard": "{{i18n:EmberNightDialogue.Wizard}}",
+				"Leo": "{{i18n:EmberNightDialogue.Leo}}",
 
 			//Dateables
 				"Alissa": "{{i18n:Festivals.EoR.Alissa}}",
@@ -99,6 +101,13 @@
 				"Sean_spouse": "{{i18n:Festivals.EoR.Sean_spouse}}",
 				"Paula_spouse": "{{i18n:Festivals.EoR.Paula_spouse}}",
 				"Blair_spouse": "{{i18n:Festivals.EoR.Blair_spouse}}",
+
+				"Irene_spouse": "{{i18n:Festivals.EoR.Irene_spouse}}",
+				"Zayne": "{{i18n:Festivals.EoR.Zayne}}",
+				"Zayne_spouse": "{{i18n:Festivals.EoR.Zayne_spouse}}",
+
+				"Faye_spouse": "{{i18n:Festivals.EoR.Faye_spouse}}",
+				"Bryle_spouse": "{{i18n:Festivals.EoR.Bryle_spouse}}",
 
 			//Vanilla Dateables
 			    "Abigail": "{{i18n:EmberNightDialogue.Abigail}}",

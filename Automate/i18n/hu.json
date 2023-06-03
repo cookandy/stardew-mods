@@ -5,7 +5,7 @@
     // main options
     "config.title.main-options": "Fő beállítások",
     "config.enabled.name": "Engedélyezve",
-    "config.enabled.desc": "Az automatizálási funkciók engedélyezése. Ha ez ki van kapcsolva, akkor egyetlen gép sem lesz automatizálva, és az átfedés sem jelenik meg.",
+    "config.enabled.desc": "Az automatizálási funkciók engedélyezése. Ha ez ki van kapcsolva, akkor egyetlen gép sem lesz automatizálva, és az összekapcsolások sem jelennek meg.",
     "config.automation-interval.name": "Automatizálási időköz",
     "config.automation-interval.desc": "Az egyes automatizálási folyamatok közötti időközök száma (60 másodpercenként egyszer, 120 másodpercenként kétszer stb).",
     "config.toggle-overlay-key.name": "Átfedés váltó gomb",
@@ -15,31 +15,29 @@
 
     // connectors
     "config.title.connectors": "Engedélyezett csatlakozók",
-    "config.connector.desc": "A {{itemName}} összekapcsolja a gépeket és a ládákat.",
+    "config.connector.desc": "A(z) {{itemName}} összekapcsolja a gépeket és a ládákat.",
     "config.custom-connectors.name": "Egyedi csatlakozók",
-    "config.custom-connectors.desc": "A szomszédos gépeket összekötő elemek pontos angol neve. Több elemet is felsorolhat vesszővel elválasztva.", // Megjegyzés: A csatlakozók neveinek angolnak kell lennie, még akkor is, ha más nyelvet használsz.
+    "config.custom-connectors.desc": "A szomszédos gépeket összekötő elemek pontos angol neve. Több elemet is felsorolhatsz vesszővel elválasztva.", // Megjegyzés: A csatlakozók neveinek angolnak kell lennie, még akkor is, ha más nyelvet használsz.
 
     // Junimo hut options
-    // TODO
-    "config.title.junimo-huts": "Junimo hut behavior",
-    "config.junimo-hut-gems.name": "Gems",
-    "config.junimo-hut-gems.desc": "What Junimo huts should do with gemstone items. 'Auto-detect' will ignore them.",
-    "config.junimo-hut-fertilizer.name": "Fertilizer",
-    "config.junimo-hut-fertilizer.desc": "What Junimo huts should do with fertilizer items. 'Auto-detect' will ignore them if Better Junimos is installed, else move them from the hut into connected chests.",
-    "config.junimo-hut-seeds.name": "Seeds",
-    "config.junimo-hut-seeds.desc": "What Junimo huts should do with seed items. 'Auto-detect' will ignore them if Better Junimos is installed, else move them from the hut into connected chests.",
+    "config.title.junimo-huts": "Junimo kunyhó viselkedés",
+    "config.junimo-hut-gems.name": "Drágakövek",
+    "config.junimo-hut-gems.desc": "Mit tegyenek a Junimo kunyhók a drágakövekkel. Az 'Auto felismerés' mellőzve lesz.",
+    "config.junimo-hut-fertilizer.name": "Trágya",
+    "config.junimo-hut-fertilizer.desc": "Mit tegyenek a Junimo kunyhók a trágyával. Az 'Auto felismerés' mellőzve lesz, ha a 'Better Junimos' mod telepítve van, különben áthelyezi a kunyhókból a csatlakoztatott ládákba.",
+    "config.junimo-hut-seeds.name": "Magvak",
+    "config.junimo-hut-seeds.desc": "Mit tegyenek a Junimo kunyhók a magvakkal. Az 'Automatikus felismerés' figyelmen kívül hagyja, ha a 'Better junimos' mod telepítve van, különben áthelyezi a kunyhókból a csatlakoztatott ládákba.",
 
     // Junimo hut dropdown values
-    // TODO
-    "config.junimo-huts.auto-detect": "Auto-detect",
-    "config.junimo-huts.ignore": "Ignore them",
-    "config.junimo-huts.move-into-chests": "Move from Junimo huts into chests",
-    "config.junimo-huts.move-into-huts": "Move from chests into Junimo huts",
+    "config.junimo-huts.auto-detect": "Auto felismerés",
+    "config.junimo-huts.ignore": "Mellőzve",
+    "config.junimo-huts.move-into-chests": "Áthelyezés a Junimo kunyhókból a ládákba",
+    "config.junimo-huts.move-into-huts": "Áthelyezés a ládákból a Junimo kunyhókba",
 
     // machine overrides
     "config.title.machine-overrides": "Gépi felülbírálások",
     "config.override.ShippingBin-name": "Szállítmány",
     "config.override.MiniShippingBin-name": "Mini szállítmány",
-    "config.override.desc": "A {{machineName}} automatizálásának engedélyezése.",
-    "config.custom-overrides-note": "Az egyéni felülbíráláshoz látogasd meg a https://github.com/Pathoschild/StardewMods/tree/develop/Automate#configure oldalt a 'Config.json' fájl közvetlen szerkesztéséhez."
+    "config.override.desc": "A(z) {{machineName}} automatizálásának engedélyezése.",
+    "config.custom-overrides-note": "Az egyéni felülbíráláshoz látogass el a 'https://github.com/Pathoschild/StardewMods/tree/develop/Automate#configure' oldalt a 'Config.json' fájl közvetlen szerkesztéséhez."
 }

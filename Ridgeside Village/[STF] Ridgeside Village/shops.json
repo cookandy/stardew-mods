@@ -729,7 +729,7 @@
 			"ItemNames": [
 				"Springtime Primetime",
 				],
-			"When": [ "!z spring/n RSV.PikaSpring" ]
+			"When": [ "n RSV.PikaSpring" ]
 		},
     {
 			"ItemType": "Object",
@@ -737,7 +737,7 @@
 			"ItemNames": [
 				"Summer Mountain Blessing",
 				],
-			"When": [ "!z summer/n RSV.PikaSummer" ]
+			"When": [ "n RSV.PikaSummer" ]
 		},
     {
 			"ItemType": "Object",
@@ -745,7 +745,7 @@
 			"ItemNames": [
 				"Autumnal Serenity",
 				],
-			"When": [ "!z fall/n RSV.PikaFall" ]
+			"When": [ "n RSV.PikaFall" ]
 		},
     {
 			"ItemType": "Object",
@@ -753,7 +753,7 @@
 			"ItemNames": [
 				"Winter Night Feast",
 				],
-			"When": [ "!z winter/n RSV.PikaWinter" ]
+			"When": [ "n RSV.PikaWinter" ]
 		},
 		//Normal food
 		{
@@ -1588,6 +1588,12 @@
 
 	"ItemStocks": [
 		{
+			"ItemType": "Object",
+			"ItemNames": [ "Mistbloom Syrup", ],
+			"StockItemCurrency": "Mountain Mistbloom",
+			"StockCurrencyStack": 5,
+		},
+		{
 			"ItemType": "Hat",
 			"ItemNames": [ "Occult Red Scarf", ],
 			"StockItemCurrency": "Spiritual Essence",
@@ -2186,8 +2192,8 @@
 	"ShopName": "RSVFayeShop",
 	"StoreCurrency": "Money",
 	"CategoriesToSellHere": [],
-	"Quote": "Place your order! Designs change everyday!",
-	"MaxNumItemsSoldInStore": 2,
+	"Quote": "Fabulously place your order!",
+	"MaxNumItemsSoldInStore": 3,
 	"LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",
@@ -2212,7 +2218,6 @@
 				"Village Color Shirt",
 				 ],
 			"StockPrice": 3000,
-			"Stock": 1,
 		},
     {
 			"ItemType": "Clothing",
@@ -2220,7 +2225,6 @@
 				"Cof-Faye Jacket",
 				 ],
 			"StockPrice": 5000,
-			"Stock": 1,
       "When": [ "n RSV.FayeJacket" ]
 		},
     {
@@ -2229,7 +2233,6 @@
 				"Cray-Faye Abstract Shirt",
 				 ],
 			"StockPrice": 5000,
-			"Stock": 1,
       "When": [ "n RSV.FayeMisc" ]
 		},
     {
@@ -2238,8 +2241,20 @@
 				"Faye-rytale Pastel",
 				 ],
 			"StockPrice": 5000,
-			"Stock": 1,
       "When": [ "n RSV.FayePastel" ]
+		},
+		{
+			"ItemType": "Clothing",
+			"ItemNames": [
+				"Dragon Sweetie Top",
+				"Fab Dusk Suit",
+				"Fairy Cutie Top",
+				"Golden Mane Top",
+				"Phoenix Confidence Jacket",
+				"Winter Royalty Top"
+				 ],
+			"StockPrice": 3000,
+      "When": [ "e 75160449" ]
 		},
 	],
 	},

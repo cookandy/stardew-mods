@@ -16,7 +16,7 @@
             }
         },
         {
-            "LogName": "[Yagi] Lyell - Location Support 278,382",
+            "LogName": "[Yagi] Lyell - Location Support",
             "Action": "EditData",
             "Target": "Mods/Bouhm.NPCMapLocations/Locations",
             "When": {

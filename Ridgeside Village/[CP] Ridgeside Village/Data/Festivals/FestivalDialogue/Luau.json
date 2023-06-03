@@ -46,6 +46,7 @@
 				"Kimpoi": "{{i18n:Festivals.Luau.Kimpoi}}",
 				"Naomi": "{{i18n:Festivals.Luau.Naomi}}",
 				"Torts": "{{i18n:Festivals.Luau.Torts}}",
+				"Bryle": "{{i18n:Festivals.Luau.Bryle}}",
 
 			//Dateables
 				"Alissa": "{{i18n:Festivals.Luau.Alissa}}",
@@ -78,6 +79,13 @@
 				"Sean_spouse": "{{i18n:Festivals.Luau.Sean_spouse}}",
 				"Paula_spouse": "{{i18n:Festivals.Luau.Paula_spouse}}",
 				"Blair_spouse": "{{i18n:Festivals.Luau.Blair_spouse}}",
+
+				"Irene_spouse": "{{i18n:Festivals.Luau.Irene_spouse}}",
+				"Zayne": "{{i18n:Festivals.Luau.Zayne}}",
+				"Zayne_spouse": "{{i18n:Festivals.Luau.Zayne_spouse}}",
+
+				"Faye_spouse": "{{i18n:Festivals.Luau.Faye_spouse}}",
+				"Bryle_spouse": "{{i18n:Festivals.Luau.Bryle_spouse}}",
 			},
 		},
 

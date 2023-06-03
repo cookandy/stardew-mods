@@ -57,17 +57,31 @@
                 },
             }
         },
-        // Ayeisha - The Postal Worker (Custom NPC) - https://www.nexusmods.com/stardewvalley/mods/6427
+        // Delores - A New Custom NPC - https://www.nexusmods.com/stardewvalley/mods/5510
         {
-            "LogName": "[Yagi] Ayeisha - Sprite Offsets",
+            "LogName": "[Yagi] Delores - Sprite Offsets",
             "Action": "EditData",
             "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
             "When": {
-                "HasMod: |contains=TheLimeyDragon.Ayeisha": true
+                "HasMod: |contains=blaaze6.Delores": true
             },
             "Entries": {
-                "Ayeisha": {
-                    "MarkerCropOffset": 1
+                "Delores": {
+                    "MarkerCropOffset": 3
+                },
+            }
+        },
+        // Sorren - Original NPC - https://www.nexusmods.com/stardewvalley/mods/4040
+        {
+            "LogName": "[Yagi] Sorren - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=annachibi.SorrenNPC": true
+            },
+            "Entries": {
+                "Sorren": {
+                    "MarkerCropOffset": -3
                 },
             }
         },
@@ -99,6 +113,34 @@
                 },
                 "Void": {
                     "MarkerCropOffset": 16
+                },
+            }
+        },
+        // Primm from Secret of Mana NPC - https://www.nexusmods.com/stardewvalley/mods/15869
+        {
+            "LogName": "[Yagi] Primm - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Primm.Primm": true
+            },
+            "Entries": {
+                "Primm": {
+                    "MarkerCropOffset": 4
+                },
+            }
+        },
+        // Sydney - A Custom NPC - https://www.nexusmods.com/stardewvalley/mods/14158
+        {
+            "LogName": "[Yagi] Sydney - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Lex.Sydney": true
+            },
+            "Entries": {
+                "Sydney_Lex": {
+                    "MarkerCropOffset": 2
                 },
             }
         },

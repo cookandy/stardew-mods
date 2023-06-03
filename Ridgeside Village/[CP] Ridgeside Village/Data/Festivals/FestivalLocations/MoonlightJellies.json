@@ -6,7 +6,7 @@
         "Action": "EditData",
         "Target": "Data/Festivals/summer28",
         "When": {
-            "RSVNPCSAttendFestivals": true
+            "Rafseazz.RidgesideVillage/RSVNPCSAttendFestivals": true
         },
         "TextOperations": [
             {
@@ -23,7 +23,7 @@
         "Action": "EditData",
         "Target": "Data/Festivals/summer28",
         "When": {
-            "HasSeenEvent": 75160249, "RSVNPCSAttendFestivals": true
+            "HasSeenEvent": 75160249, "Rafseazz.RidgesideVillage/RSVNPCSAttendFestivals": true
         },
         "TextOperations": [
             {
@@ -40,13 +40,47 @@
         "Action": "EditData",
         "Target": "Data/Festivals/summer28",
         "When": {
-            "HasSeenEvent": 75160254, "RSVNPCSAttendFestivals": true
+            "HasSeenEvent": 75160254, "Rafseazz.RidgesideVillage/RSVNPCSAttendFestivals": true
         },
         "TextOperations": [
             {
                 "Operation": "Append",
                 "Target": ["Entries", "Set-Up_additionalCharacters"],
                 "Value": "Daia 69 6 down",
+                "Delimiter": "/"
+            },
+        ]
+    },
+
+    {
+        //Zayne Arrives
+        "Action": "EditData",
+        "Target": "Data/Festivals/summer28",
+        "When": {
+            "HasSeenEvent": 75160440, "Rafseazz.RidgesideVillage/RSVNPCSAttendFestivals": true
+        },
+        "TextOperations": [
+            {
+                "Operation": "Append",
+                "Target": ["Entries", "Set-Up_additionalCharacters"],
+                "Value": "Zayne 38 21 down",
+                "Delimiter": "/"
+            },
+        ]
+    },
+
+    {
+        //Bryle Arrives
+        "Action": "EditData",
+        "Target": "Data/Festivals/summer28",
+        "When": {
+            "HasSeenEvent": 75160375, "Rafseazz.RidgesideVillage/RSVNPCSAttendFestivals": true, "Query: {{RandomNumber}} <= 4": true,
+        },
+        "TextOperations": [
+            {
+                "Operation": "Append",
+                "Target": ["Entries", "Set-Up_additionalCharacters"],
+                "Value": "Bryle 92 17 down",
                 "Delimiter": "/"
             },
         ]
@@ -59,7 +93,7 @@
         "When": {
             "HasSeenEvent: anyPlayer|contains=75160377, 75160187": true,
 			"HasSeenEvent: anyPlayer|contains=75160188": true,
-            "RSVNPCSAttendFestivals": true
+            "Rafseazz.RidgesideVillage/RSVNPCSAttendFestivals": true
             },
         "TextOperations": [
             {
@@ -77,7 +111,7 @@
       "Action": "EditData",
       "Target": "Data/Festivals/summer28",
       "When": {
-            "RSVNPCSAttendFestivals": true
+            "Rafseazz.RidgesideVillage/RSVNPCSAttendFestivals": true
       },
       "TextOperations": [
         {
@@ -90,6 +124,31 @@
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
           "Value": "Torts 67 25 2",
+          "Delimiter": "/"
+        },
+      ]
+    },
+
+    {
+      "LogName": "June Midnight Jellies Location",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "When": {
+        "Relationship:June |contains=Married": true,
+        "Rafseazz.RidgesideVillage/RSVNPCSAttendFestivals": true,
+        "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
+          "Value": "June 90 40 2",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "June 90 40 2",
           "Delimiter": "/"
         },
       ]

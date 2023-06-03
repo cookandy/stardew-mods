@@ -1,0 +1,83 @@
+{
+    "Changes": [
+        {
+            "LogName": "Town events",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "578750050/e 101/w sunny/t 2000 2400": "nightTime/20 89/Emily 20 91 1 Clint 21 91 3 farmer -100 -100 2/skippable/addConversationTopic EmilyClintNo 7/pause 500/speak Emily \"{{i18n:578750050.01}}\"/pause 500/emote Clint 60/pause 500/speak Clint \"{{i18n:578750050.02}}\"/emote Emily 32/textAboveHead Clint \"{{i18n:578750050.03}}\"/speak Emily \"{{i18n:578750050.04}}\"/faceDirection Emily 0/move Emily 0 -2 0 true/faceDirection Clint 0/emote Clint 28/pause 500/speak Clint \"{{i18n:578750050.05}}\"/faceDirection Emily 2/pause 500/textAboveHead Emily \"{{i18n:578750050.06}}\"/speak Clint \"{{i18n:578750050.07}}\"/pause 50/emote Clint 28/pause 500/emote Emily 8/speak Clint \"{{i18n:578750050.08}}\"/showFrame Emily 26/jump Emily 3/shake Emily 240/pause 1000/showFrame Emily 27/textAboveHead Emily \"{{i18n:578750050.09}}\"/speak Emily \"{{i18n:578750050.10}}\"/textAboveHead Clint \"{{i18n:578750050.11}}\"/pause 500/speak Clint \"{{i18n:578750050.12}}\"/pause 500/move Clint 4 0 1/faceDirection Emily 0/faceDirection Clint 3/textAboveHead Clint \"{{i18n:578750050.13}}\"/warp Emily -1000 -1000/playSound doorClose/pause 500/end"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, aeki.ByeByeClintHelloClarice, nraittanna.LifeCycleEmilyClint, agentlyoko.rewrittenclint": false,
+                "HasSeenEvent": "101",
+                "TrentonFamilyDrama": true
+            }
+        },
+        {
+            "LogName": "Shane 7 Heart Replacers",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Fields": {
+                "831125/f Shane 1750/f Clint 500/f Emily 500/t 1000 1600/w sunny": {
+                    "19": "speak Clint \"{{i18n:831125.19}}\"",
+                    "25": "speak Clint \"{{i18n:831125.25}}\""
+                }
+            },
+            "When": {
+                "HasSeenEvent": "578750050"
+            },
+        },
+        {
+            "LogName": "Clothing Therapy event",
+            "Action": "EditData",
+            "Target": "Data/Events/ManorHouse",
+            "Fields": {
+                "2123243/e 2111194": {
+                    "212": "speak Clint \"{{i18n:2123243.212}}\""
+                }
+            },
+            "When": {
+                "HasSeenEvent": "578750050"
+            }
+        },
+        {
+            "LogName": "Town events",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries": {
+                "EmilyClintNo": "{{i18n:EmilyClintNo.emily}}"
+            }
+        },
+        {
+            "LogName": "Town events",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries": {
+                "EmilyClintNo": "{{i18n:EmilyClintNo.clint}}",
+                "ClintMomIssues": "{{i18n:ClintMomIssues}}"
+            }
+        },
+        {
+            "LogName": "Town events",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries": {
+                "Clint": "{{i18n:winter8.clint.postemily}}"
+            },
+            "When": {
+                "HasSeenEvent": "578750050"
+            },
+        },
+        {
+            "LogName": "Town events",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Clint": "{{i18n:spring24.clint.postemily}}",
+            },
+            "When": {
+                "HasSeenEvent": "578750050"
+            }
+        },
+    ]
+}
