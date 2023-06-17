@@ -1,0 +1,213 @@
+{
+    "Format": "1.19.0",
+    "Changes": [
+        {
+            "LogName": "Abigail",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Abigail.json"
+        },
+        {
+            "LogName": "Alex",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Alex.json"
+        },
+        {
+            "LogName": "Caroline",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Caroline.json"
+        },
+        {
+            "LogName": "Clint",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Clint.json"
+        },
+        {
+            "LogName": "Demetrius",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Demetrius.json"
+        },
+        {
+            "LogName": "Dwarf",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Dwarf.json"
+        },
+        {
+            "LogName": "Elliott",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Elliott.json"
+        },
+        {
+            "LogName": "Emily",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Emily.json"
+        },
+        {
+            "LogName": "Evelyn",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Evelyn.json"
+        },
+        {
+            "LogName": "George",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/George.json"
+        },
+        {
+            "LogName": "Gus",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Gus.json"
+        },
+        {
+            "LogName": "Haley",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Haley.json"
+        },
+        {
+            "LogName": "Harvey",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Harvey.json"
+        },
+        {
+            "LogName": "Jas",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Jas.json"
+        },
+        {
+            "LogName": "Jodi",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Jodi.json"
+        },
+        {
+            "LogName": "Kent",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Kent.json"
+        },
+        {
+            "LogName": "Krobus",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Krobus.json"
+        },
+        {
+            "LogName": "Leah",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Leah.json"
+        },
+        {
+            "LogName": "Leo",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Leo.json"
+        },
+        {
+            "LogName": "LeoMainland",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/LeoMainland.json"
+        },
+        {
+            "LogName": "Lewis",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Lewis.json"
+        },
+        {
+            "LogName": "Linus",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Linus.json"
+        },
+        {
+            "LogName": "Marnie",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Marnie.json"
+        },
+        {
+            "LogName": "Maru",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Maru.json"
+        },
+        {
+            "LogName": "Pam",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Pam.json"
+        },
+        {
+            "LogName": "Penny",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Penny.json"
+        },
+        {
+            "LogName": "Pierre",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Pierre.json"
+        },
+        {
+            "LogName": "Robin",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Robin.json"
+        },
+        {
+            "LogName": "Sam",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Sam.json"
+        },
+        {
+            "LogName": "Sandy",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Sandy.json"
+        },
+        {
+            "LogName": "Sebastian",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Sebastian.json"
+        },
+        {
+            "LogName": "Shane",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Shane.json"
+        },
+        {
+            "LogName": "Vincent",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Vincent.json"
+        },
+        {
+            "LogName": "Willy",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Willy.json"
+        },
+        {
+            "LogName": "Wizard",
+            "Action": "Include",
+            "FromFile": "Data/NPCs/Wizard.json"
+        },
+        {
+            "LogName": "Festival Y2",
+            "Action": "Include",
+            "FromFile": "Data/Festivals/Y2.json",
+            "When":
+            {
+                "Year": "2"
+            }
+        },
+        {
+            "LogName": "Festival Y3",
+            "Action": "Include",
+            "FromFile": "Data/Festivals/Y3.json",
+            "When":
+            {
+                "Year": "3"
+            }
+        },
+        {
+            "LogName": "Festival Randomized (After Y3)",
+            "Action": "Include",
+            "FromFile": "Data/Festivals/Y{{Random:null, 2, 3}}.json",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "Year |contains= 1, 2, 3": false
+            }
+        },
+        {
+            "LogName": "Misc Dialogue",
+            "Action": "Include",
+            "FromFile": "Data/Misc/MiscDialogue.json",
+        },
+    ]
+}
