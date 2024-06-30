@@ -29,6 +29,7 @@
                 },
             }
         },
+        /*
         {
             "LogName": "[Yagi] Wilford - Location Support",
             "Action": "EditData",
@@ -65,5 +66,6 @@
                 }
             }
         },
+        */
     ]
 }

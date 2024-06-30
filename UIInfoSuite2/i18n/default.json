@@ -1,16 +1,41 @@
 {
+  // GUI - Game Menu
+  "OptionsTabTooltip": "UI Info Suite 2 Options",
   //GUI - Billboard
   "Billboard": "Billboard",
   "Calendar": "Calendar",
+  "SlayerGoals": "Monster Eradication Goals",
   //GUI - Seed shop
   "HarvestPrice": "Harvest price",
   //Production
   "Days": "days",
   "Hours": "hours",
   "Minutes": "minutes",
+  "MachineProcessing": "Processing",
+  "MachineDone": "Done",
   //Harvest
   "DaysToMature": "days to mature",
-  "ReadyToHarvest": "Ready To Harvest!",
+  "ReadyToHarvest": "Ready to harvest!",
+  "With": "with",
+  "Fertilized": "fertilized",
+  "DoesNotProduceThisSeason": "Does not produce this season",
+  //Tree
+  "Stump": "stump",
+  // This space is required for languages that use a space between words, delete otherwise (e.g. Korean)
+  "Tree": " Tree",
+  "stage": "Stage",
+  "Oak": "Oak",
+  "Maple": "Maple",
+  "Pine": "Pine",
+  "Palm": "Palm",
+  "Mushroom": "Mushroom",
+  "Mahogany": "Mahogany",
+  "PalmJungle": "Palm (Jungle)",
+  "GreenRainType1": "Green Rain Type 1",
+  "GreenRainType2": "Green Rain Type 2",
+  "GreenRainType3": "Green Rain Type 3",
+  "Mystic": "Mystic",
+  "VmvBirch": "(VMV) Birch",
   //Display icons - General
   "TodaysRecipe": "Today's Recipe: ",
   "TravelingMerchantIsInTown": "Traveling merchant is in town!",
@@ -19,10 +44,11 @@
   "SnowNextDay": "There will be snow tomorrow",
   "IslandRainNextDay": "There will be rain on the island tomorrow",
   "IslandThunderstormNextDay": "There will be a thunderstorm on the island tomorrow",
-  "DaysUntilToolIsUpgraded": "{0} days until {1} is finished being upgraded",
+  "DaysUntilToolIsUpgraded": "{0} day(s) until {1} is finished being upgraded",
   "ToolIsFinishedBeingUpgraded": "{0} is finished!",
   "NpcBirthday": "{0}'s birthday",
   "RobinBuildingStatus": "Robin will finish your new building in {0} day(s)",
+  "RobinHouseUpgradeStatus": "Robin will finish upgrading your house in {0} day(s)",
   // Display icons - Foragables
   "CanFindSalmonberry": "You can find Salmonberries today",
   "CanFindBlackberry": "You can find Blackberries today",

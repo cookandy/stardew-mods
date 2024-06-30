@@ -1,0 +1,75 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Camilla's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Camilla_Spring, Portraits/Camilla_Summer, Portraits/Camilla_Fall, Portraits/Camilla_Winter, Characters/Camilla_Spring, Characters/Camilla_Summer, Characters/Camilla_Fall, Characters/Camilla_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/Camilla/{{TargetWithoutPath}}.png"
+		},
+
+		//APPEARANCE DATA 
+		{
+			"LogName": "Camilla Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Camilla", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.CamillaSpring": {
+					"Id": "{{ModId}}.CamillaSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Camilla_Spring",
+					"Portrait": "Portraits/Camilla_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.CamillaSummer": {
+					"Id": "{{ModId}}.CamillaSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Camilla_Summer",
+					"Portrait": "Portraits/Camilla_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.CamillaFall": {
+					"Id": "{{ModId}}.CamillaFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Camilla_Fall",
+					"Portrait": "Portraits/Camilla_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.CamillaWinter": {
+					"Id": "{{ModId}}.CamillaWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Camilla_Winter",
+					"Portrait": "Portraits/Camilla_Winter",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+			},
+		},
+		
+		//MISCELLANIOUS
+		
+		{
+            "Action": "EditImage",
+            "Target": "Characters/KrobusRaven",
+            "FromFile": "Assets/Tilesheets/CamillaMagicCarpet_{{Season}}.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 64,
+                "Width": 160,
+                "Height": 39
+            },
+            "When": {
+                "Spouse |contains=Wizard": true,
+            },
+        },
+	]
+}

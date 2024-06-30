@@ -1,0 +1,119 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Morris's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/MorrisTod_Spring, Portraits/MorrisTod_Summer, Portraits/MorrisTod_Fall, Portraits/MorrisTod_Winter_Outdoor, Portraits/MorrisTod_Winter_Indoor, Characters/MorrisTod_Spring, Characters/MorrisTod_Summer, Characters/MorrisTod_Fall, Characters/MorrisTod_Winter_Outdoor, Characters/MorrisTod_Winter_Indoor",
+			"FromFile": "assets/{{TargetPathOnly}}/MorrisTod/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Morris Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["MorrisTod", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.MorrisTodSpring": {
+					"Id": "{{ModId}}.MorrisTodSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/MorrisTod_Spring",
+					"Portrait": "Portraits/MorrisTod_Spring",
+					"Precedence": -130,
+				},
+
+				"{{ModId}}.MorrisTodSummer": {
+					"Id": "{{ModId}}.MorrisTodSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/MorrisTod_Summer",
+					"Portrait": "Portraits/MorrisTod_Summer",
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.MorrisTodFall": {
+					"Id": "{{ModId}}.MorrisTodFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/MorrisTod_Fall",
+					"Portrait": "Portraits/MorrisTod_Fall",
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.MorrisTodWinterIndoor": {
+					"Id": "{{ModId}}.MorrisTodWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/MorrisTod_Winter_Indoor",
+					"Portrait": "Portraits/MorrisTod_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.MorrisTodWinterOutdoor": {
+					"Id": "{{ModId}}.MorrisTodWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/MorrisTod_Winter_Outdoor",
+					"Portrait": "Portraits/MorrisTod_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -130,
+				},	
+			},
+		},
+			//Backup Appearance (Regular Morris)
+		{
+			"LogName": "Morris Appearance Data - Vanilla Morris",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Morris", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.MorrisTodSpring": {
+					"Id": "{{ModId}}.MorrisTodSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/MorrisTod_Spring",
+					"Portrait": "Portraits/MorrisTod_Spring",
+					"Precedence": -130,
+				},
+
+				"{{ModId}}.MorrisTodSummer": {
+					"Id": "{{ModId}}.MorrisTodSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/MorrisTod_Summer",
+					"Portrait": "Portraits/MorrisTod_Summer",
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.MorrisTodFall": {
+					"Id": "{{ModId}}.MorrisTodFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/MorrisTod_Fall",
+					"Portrait": "Portraits/MorrisTod_Fall",
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.MorrisTodWinterIndoor": {
+					"Id": "{{ModId}}.MorrisTodWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/MorrisTod_Winter_Indoor",
+					"Portrait": "Portraits/MorrisTod_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.MorrisTodWinterOutdoor": {
+					"Id": "{{ModId}}.MorrisTodWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/MorrisTod_Winter_Outdoor",
+					"Portrait": "Portraits/MorrisTod_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -130,
+				},	
+			},
+		},
+	]
+}

@@ -11,11 +11,11 @@
             "Action": "EditData",
             "Target": "data/events/woods",
             "Entries": {
-                "7134028": "none/-1000 -1000/Wizard -20 -20 0/pause 50/end"
+                "7134028/": "none/-1000 -1000/Wizard -20 -20 0/pause 50/end"
             },
         },
         {
-            "Action": "Load",
+            "Action": "Load", "Priority": "Low",
             "Target": "Characters/LeahLaptopProp",
             "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/LeahLaptopProp.png"
         },

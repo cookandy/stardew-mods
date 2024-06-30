@@ -1,0 +1,68 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Alesia's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Alesia_Spring, Portraits/Alesia_Summer, Portraits/Alesia_Fall, Portraits/Alesia_Winter, Portraits/Alesia_FlowerDance, Characters/Alesia_Spring, Characters/Alesia_Summer, Characters/Alesia_Fall, Characters/Alesia_Winter, Characters/Alesia_FlowerDance",
+			"FromFile": "assets/{{TargetPathOnly}}/Alesia/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Alesia Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Alesia", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.AlesiaSpring": {
+					"Id": "{{ModId}}.AlesiaSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Alesia_Spring",
+					"Portrait": "Portraits/Alesia_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.AlesiaSummer": {
+					"Id": "{{ModId}}.AlesiaSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Alesia_Summer",
+					"Portrait": "Portraits/Alesia_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.AlesiaFall": {
+					"Id": "{{ModId}}.AlesiaFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Alesia_Fall",
+					"Portrait": "Portraits/Alesia_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.AlesiaWinter": {
+					"Id": "{{ModId}}.AlesiaWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Alesia_Winter",
+					"Portrait": "Portraits/Alesia_Winter",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.AlesiaFlowerDance": {
+					"Id": "{{ModId}}.AlesiaFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/Alesia_FlowerDance",
+					"Portrait": "Portraits/Alesia_FlowerDance",
+					"Precedence": -1000,
+				},	
+			},
+		},
+	]
+}

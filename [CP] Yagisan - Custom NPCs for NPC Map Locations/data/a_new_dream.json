@@ -1,0 +1,34 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // A New Dream - https://www.nexusmods.com/stardewvalley/mods/20295
+        {
+            "LogName": "[Yagi] A New Dream - Barron Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Fellowclown.AND": true,
+                "HasSeenEvent |contains=Fellowclown.AND_BarronIntroduction": "true"
+            },
+            "Entries": {
+                "FC.Barron": {
+                    "MarkerCropOffset": -2
+                },
+            },
+        },
+        {
+            "LogName": "[Yagi] A New Dream - John Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Fellowclown.AND": true,
+                "HasSeenEvent |contains=Fellowclown.AND_JohnIntroduction": "true"
+            },
+            "Entries": {
+                "FC.John": {
+                    "MarkerCropOffset": 2
+                },
+            },
+        }
+    ]
+}

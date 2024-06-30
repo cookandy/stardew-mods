@@ -1,0 +1,68 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Lance's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Lance_Spring, Portraits/Lance_Summer, Portraits/Lance_Fall, Portraits/Lance_Winter, Portraits/Lance_FlowerDance, Characters/Lance_Spring, Characters/Lance_Summer, Characters/Lance_Fall, Characters/Lance_Winter, Characters/Lance_FlowerDance",
+			"FromFile": "assets/{{TargetPathOnly}}/Lance/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Lance Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Lance", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.LanceSpring": {
+					"Id": "{{ModId}}.LanceSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Lance_Spring",
+					"Portrait": "Portraits/Lance_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.LanceSummer": {
+					"Id": "{{ModId}}.LanceSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Lance_Summer",
+					"Portrait": "Portraits/Lance_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.LanceFall": {
+					"Id": "{{ModId}}.LanceFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Lance_Fall",
+					"Portrait": "Portraits/Lance_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.LanceWinter": {
+					"Id": "{{ModId}}.LanceWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Lance_Winter",
+					"Portrait": "Portraits/Lance_Winter",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.LanceFlowerDance": {
+					"Id": "{{ModId}}.LanceFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/Lance_FlowerDance",
+					"Portrait": "Portraits/Lance_FlowerDance",
+					"Precedence": -1000,
+				},	
+			},
+		},
+	]
+}

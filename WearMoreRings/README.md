@@ -7,11 +7,12 @@ Configure the amount of ring slots in your inventory. By default adds 6 addition
 *Note: run Stardew Valley once with this mod enabled to generate the `config.json` file.*
 
 * `Rings`: Number of ring slots available. Normally this is 2, this mod increases it to 8. Max = 20.
+* `BonusTrinket`: Whether unlocking trinkets gives you two slots instead of one (untested).
 
 ## Console Commands
 * `player_openforge`:        Opens the forge menu.
-* `player_resetmodifiers`:   Clears buffs, then resets and reapplies the modifiers applied by boots & rings.
 * `world_destroyringchests`: Removes the chests used for storing player's rings. Any items contained therein will be dropped at your feet.
+
 ## Dependencies
 This mod requires the following mods to be installed:
 
@@ -24,12 +25,31 @@ Please report bugs on [GitHub](https://github.com/bcmpinc/StardewHack/issues).
 * The forge menu does not show your ring slots.
 * This mod does not support android / mobile.
 * This mod might be incompatible with [Multiplayer Time](https://www.nexusmods.com/stardewvalley/mods/2543). Using both will cause save game corruption. This can (hopefully) be fixed by uninstalling either of these mods. If you keep Multiplayer Time, the mod should resolve the issue automatically. If you use Wear More Rings you need to execute the `player_resetmodifiers` console command manually.
+* This mod is incompatible with [BalancedCombineManyRings](https://www.nexusmods.com/stardewvalley/mods/8981) mod.
 * Ring Slots in the Inventory screen can overlap with other text in the UI, especially with a high `Rings` setting. This won't be fixed.
 
 ## API
 Mods adding additional rings most should work out of the box. For backwards compatibility this mod provides an API to access the equipped rings: [IWearMoreRingsAPI](https://github.com/bcmpinc/StardewHack/blob/master/WearMoreRings/IWearMoreRingsAPI.cs).
 
 ## Changes
+#### 7.5:
+* French, Turkish & Chinese translations.
+
+#### 7.4:
+* Fix issue with equipping rings removing the effects and unequipping adding them.
+
+#### 7.3:
+* Fix issue with ring effects (e.g. magnetism) not being applied.
+
+#### 7.2:
+* Fixed compatibility issue with SpaceCore mod.
+
+#### 7.1:
+* Updated for Stardew Valley 1.6
+* Added config option for bonus trinket (untested).
+* Localization support.
+* Russian & Ukrainian translation
+
 #### 6.4:
 * Fixed null pointer error when saving in generic mod config menu.
 
@@ -59,7 +79,7 @@ Mods adding additional rings most should work out of the box. For backwards comp
 * Add 64-bit support
 
 #### 3.4:
-* Rearanged ring slots. The right ring is now positioned in the first column, second from the top.
+* Rearranged ring slots. The right ring is now positioned in the first column, second from the top.
 * Added config parameter `Rings` for the amount of ring slots. Anything above 8 will result in text overlaying the ring slots.
 
 #### 3.3:

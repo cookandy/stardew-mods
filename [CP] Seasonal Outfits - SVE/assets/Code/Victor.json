@@ -1,0 +1,93 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Victor's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Victor_Spring, Portraits/Victor_Summer, Portraits/Victor_Fall, Portraits/Victor_Winter_Outdoor, Portraits/Victor_Winter_Indoor, Portraits/Victor_FlowerDance, Portraits/Victor_SpiritsEve, Portraits/Victor_Luau, Characters/Victor_Spring, Characters/Victor_Summer, Characters/Victor_Fall, Characters/Victor_Winter_Outdoor, Characters/Victor_Winter_Indoor, Characters/Victor_FlowerDance, Characters/Victor_SpiritsEve, Characters/Victor_Luau",
+			"FromFile": "assets/{{TargetPathOnly}}/Victor/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Victor Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Victor", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.VictorSpring": {
+					"Id": "{{ModId}}.VictorSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Victor_Spring",
+					"Portrait": "Portraits/Victor_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.VictorSummer": {
+					"Id": "{{ModId}}.VictorSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Victor_Summer",
+					"Portrait": "Portraits/Victor_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.VictorFall": {
+					"Id": "{{ModId}}.VictorFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Victor_Fall",
+					"Portrait": "Portraits/Victor_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.VictorWinterIndoor": {
+					"Id": "{{ModId}}.VictorWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Victor_Winter_Indoor",
+					"Portrait": "Portraits/Victor_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.VictorWinterOutdoor": {
+					"Id": "{{ModId}}.VictorWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Victor_Winter_Outdoor",
+					"Portrait": "Portraits/Victor_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.VictorFlowerDance": {
+					"Id": "{{ModId}}.VictorFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/Victor_FlowerDance",
+					"Portrait": "Portraits/Victor_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.VictorLuau": {
+					"Id": "{{ModId}}.VictorLuau",
+					"Condition": "IS_EVENT festival_summer11",
+					"Sprite": "Characters/Victor_Luau",
+					"Portrait": "Portraits/Victor_Luau",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.VictorSpirit": {
+					"Id": "{{ModId}}.VictorSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+					"Sprite": "Characters/Victor_SpiritsEve",
+					"Portrait": "Portraits/Victor_SpiritsEve",
+					"Precedence": -1000,
+				},	
+			},
+		},
+	]
+}

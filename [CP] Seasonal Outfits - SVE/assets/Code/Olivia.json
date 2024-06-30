@@ -1,0 +1,103 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Olivia's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Olivia_Spring, Portraits/Olivia_Summer, Portraits/Olivia_Fall, Portraits/Olivia_Winter_Outdoor, Portraits/Olivia_Winter_Indoor, Portraits/Olivia_FlowerDance, Portraits/Olivia_SpiritsEve, Portraits/Olivia_Aerobics, Portraits/Olivia_EggFestival, Characters/Olivia_Spring, Characters/Olivia_Summer, Characters/Olivia_Fall, Characters/Olivia_Winter_Outdoor, Characters/Olivia_Winter_Indoor, Characters/Olivia_FlowerDance, Characters/Olivia_SpiritsEve, Characters/Olivia_Aerobics, Characters/Olivia_EggFestival",
+			"FromFile": "assets/{{TargetPathOnly}}/Olivia/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Olivia Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Olivia", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.OliviaSpring": {
+					"Id": "{{ModId}}.OliviaSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Olivia_Spring",
+					"Portrait": "Portraits/Olivia_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.OliviaSummer": {
+					"Id": "{{ModId}}.OliviaSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Olivia_Summer",
+					"Portrait": "Portraits/Olivia_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.OliviaFall": {
+					"Id": "{{ModId}}.OliviaFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Olivia_Fall",
+					"Portrait": "Portraits/Olivia_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.OliviaWinterIndoor": {
+					"Id": "{{ModId}}.OliviaWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Olivia_Winter_Indoor",
+					"Portrait": "Portraits/Olivia_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.OliviaWinterOutdoor": {
+					"Id": "{{ModId}}.OliviaWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Olivia_Winter_Outdoor",
+					"Portrait": "Portraits/Olivia_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.OliviaEggFestival": {
+					"Id": "{{ModId}}.OliviaEggFestival",
+					"Condition": "IS_EVENT festival_spring13",
+					"Sprite": "Characters/Olivia_EggFestival",
+					"Portrait": "Portraits/Olivia_EggFestival",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.OliviaFlowerDance": {
+					"Id": "{{ModId}}.OliviaFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/Olivia_FlowerDance",
+					"Portrait": "Portraits/Olivia_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.OliviaSpirit": {
+					"Id": "{{ModId}}.OliviaSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+					"Sprite": "Characters/Olivia_SpiritsEve",
+					"Portrait": "Portraits/Olivia_SpiritsEve",
+					"Precedence": -1000,
+				},
+
+				//Aerobics
+				
+				"{{ModId}}.OliviaAerobics": {
+					"Id": "{{ModId}}.OliviaAerobics",
+					"Condition": "ANY \"LOCATION_NAME Target SeedShop, DAY_OF_WEEK Tuesday, WEATHER Target Sun Wind Snow\" \"IS_EVENT 58\"",
+					"Portrait": "Portraits/Olivia_Aerobics",
+					"Sprite": "Characters/Olivia_Aerobics",
+					"Precedence": -10000,
+				},
+			},
+		},
+	]
+}

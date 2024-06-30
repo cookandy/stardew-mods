@@ -1,0 +1,38 @@
+{
+    "Changes": [
+        {
+            "Action": "Load", "Priority": "Low",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/JojaLedger",
+            "FromFile": "assets/CharacterFiles/Shops/Ledgers/JojaLedger.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "FlashShifter.StardewValleyExpandedCP_AuroraLedger": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Dialogues": [
+                                {
+                                "Id": "FlashShifter.StardewValleyExpandedCP_Default",
+                                "Dialogue": "", 
+                                },
+							],
+                            "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\JojaLedger"
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Aurora_Vineyard_Property_Deed",
+                            "ItemId": "FlashShifter.StardewValleyExpandedCP_Aurora_Vineyard_Property_Deed",
+                            "Price": 5000000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Global"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

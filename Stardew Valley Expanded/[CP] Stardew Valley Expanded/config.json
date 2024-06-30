@@ -1,4 +1,8 @@
 {
+  "WarpLocation": "default",
+  "Custom Farm Map's MapName": "default",
+  "EnchantedGroveWarpX": "48",
+  "EnchantedGroveWarpY": "7",
   "SeasonalEdits": "true",
   "ReplaceDefaultFences": "false",
   "ReplaceHardwoodFences": "false",

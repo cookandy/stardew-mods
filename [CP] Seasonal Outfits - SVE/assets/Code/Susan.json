@@ -1,0 +1,102 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Susan's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Susan_Spring, Portraits/Susan_Summer, Portraits/Susan_Fall, Portraits/Susan_Winter_Outdoor, Portraits/Susan_Winter_Indoor, Portraits/Susan_FlowerDance, Portraits/Susan_SpiritsEve, Portraits/Susan_Luau, Characters/Susan_Spring, Characters/Susan_Summer_Indoor, Characters/Susan_Summer_Outdoor, Characters/Susan_Fall, Characters/Susan_Winter_Outdoor, Characters/Susan_Winter_Indoor, Characters/Susan_FlowerDance, Characters/Susan_SpiritsEve, Characters/Susan_Luau",
+			"FromFile": "assets/{{TargetPathOnly}}/Susan/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Susan Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Susan", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.SusanSpring": {
+					"Id": "{{ModId}}.SusanSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Susan_Spring",
+					"Portrait": "Portraits/Susan_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.SusanSummer": {
+					"Id": "{{ModId}}.SusanSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Susan_Summer_Outdoor",
+					"Portrait": "Portraits/Susan_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SusanSummerIndoor": { //No matching portrait, if needed remove
+					"Id": "{{ModId}}.SusanSummerIndoor",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Susan_Summer_Indoor",
+					"Portrait": "Portraits/Susan_Summer",
+					"Outdoors": false,
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.SusanFall": {
+					"Id": "{{ModId}}.SusanFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Susan_Fall",
+					"Portrait": "Portraits/Susan_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SusanWinterIndoor": {
+					"Id": "{{ModId}}.SusanWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Susan_Winter_Indoor",
+					"Portrait": "Portraits/Susan_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SusanWinterOutdoor": {
+					"Id": "{{ModId}}.SusanWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Susan_Winter_Outdoor",
+					"Portrait": "Portraits/Susan_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.SusanFlowerDance": {
+					"Id": "{{ModId}}.SusanFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/Susan_FlowerDance",
+					"Portrait": "Portraits/Susan_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SusanLuau": {
+					"Id": "{{ModId}}.SusanLuau",
+					"Condition": "IS_EVENT festival_summer11",
+					"Sprite": "Characters/Susan_Luau",
+					"Portrait": "Portraits/Susan_Luau",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SusanSpirit": {
+					"Id": "{{ModId}}.SusanSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+					"Sprite": "Characters/Susan_SpiritsEve",
+					"Portrait": "Portraits/Susan_SpiritsEve",
+					"Precedence": -1000,
+				},	
+			},
+		},
+	]
+}

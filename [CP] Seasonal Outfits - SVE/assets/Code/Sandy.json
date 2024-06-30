@@ -1,0 +1,63 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Sandy's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Sandy_Spring, Portraits/Sandy_Summer, Portraits/Sandy_Fall, Portraits/Sandy_Winter, Characters/Sandy_Spring, Characters/Sandy_Summer, Characters/Sandy_Fall, Characters/Sandy_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/Sandy/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false", //If true, do not load these as the main mod will take care of them.
+			},
+		},
+
+		//APPEARANCE DATA
+		{
+			"LogName": "Sandy Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Sandy", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.SandySpring": {
+					"Id": "{{ModId}}.SandySpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Sandy_Spring",
+					"Portrait": "Portraits/Sandy_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.SandySummer": {
+					"Id": "{{ModId}}.SandySummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Sandy_Summer",
+					"Portrait": "Portraits/Sandy_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SandyFall": {
+					"Id": "{{ModId}}.SandyFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Sandy_Fall",
+					"Portrait": "Portraits/Sandy_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SandyWinter": {
+					"Id": "{{ModId}}.SandyWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Sandy_Winter",
+					"Portrait": "Portraits/Sandy_Winter",
+					"Precedence": -120,
+				},
+			},
+			"When": {
+				"HasMod |contains=Poltergeister.SeasonalCuteCharacters": "false", //If true, do not load these as the main mod will take care of them.
+			},
+		},
+	]
+}

@@ -8,6 +8,8 @@
     "config.enabled.desc": "Whether to enable Automate features. If this is disabled, no machines will be automated and the overlay won't appear.",
     "config.automation-interval.name": "Automation interval",
     "config.automation-interval.desc": "The number of ticks between each automation process (60 for once per second, 120 for every two seconds, etc).",
+    "config.min-minutes-for-fairy-dust.name": "Min minutes for fairy dust",
+    "config.min-minutes-for-fairy-dust.desc": "The minimum machine processing time in minutes for which to apply fairy dust. For example, setting this to 30 minutes means fairy dust won't be applied if the machine would finish in 20 minutes without it.",
     "config.toggle-overlay-key.name": "Toggle overlay key",
     "config.toggle-overlay-key.desc": "The keys which toggle the automation overlay.",
     "config.warn-for-missing-bridge-mod.name": "Warn for missing bridge mod",
@@ -34,10 +36,21 @@
     "config.junimo-huts.move-into-chests": "Move from Junimo huts into chests",
     "config.junimo-huts.move-into-huts": "Move from chests into Junimo huts",
 
-    // machine overrides
-    "config.title.machine-overrides": "Machine overrides",
-    "config.override.ShippingBin-name": "Shipping Bin",
-    "config.override.MiniShippingBin-name": "Mini-Shipping Bin",
-    "config.override.desc": "Whether to enable {{machineName}} automation.",
-    "config.custom-overrides-note": "For custom overrides, see https://github.com/Pathoschild/StardewMods/tree/develop/Automate#configure for help editing the config.json file directly."
+    // per-machine settings
+    "config.title.machine-settings": "{{machineName}} settings",
+    "config.machine-settings-enabled.Name": "Enabled",
+    "config.machine-settings-enabled.desc": "Whether to enable {{machineName}} automation.",
+    "config.machine-settings-priority.name": "Priority",
+    "config.machine-settings-priority.desc": "The priority order in which {{machineName}} machines should be processed relative to other machines. Machines have a default priority of 0, with higher values processed first.",
+
+    // machine names
+    "config.machines.bush": "Bush",
+    "config.machines.fruit-tree": "Tree (Fruit Tree)",
+    "config.machines.trash-can": "Trash Can",
+    "config.machines.wild-tree": "Tree (Wild Tree)",
+    "config.machines.feed-hopper": "Hay Hopper and Silo",
+
+    // special settings for individual machines
+    "config.machines.wild-tree.collect-moss.name": "Collect Moss",
+    "config.machines.wild-tree.collect-moss.desc": "Whether to collect moss on trees. For example, keeping moss on trees will boost the quality of mushrooms from nearby mushroom logs."
 }

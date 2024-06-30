@@ -1,7 +1,7 @@
 {
 	"Name": "Strange Bun Hat",
 	"Description": "A festive hat with a slightly disconcerting odor.",
-	"PurchasePrice": 1000,
+	"CanPurchase": false,
 	"ShowHair": true,
 	"IgnoreHairstyleOffset": false
 }

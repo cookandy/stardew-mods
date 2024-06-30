@@ -12,9 +12,9 @@ Edit it -> simple Notepad is ok.
 It should look like this: 
 
 {
-  "BuildingsReplaced": "Barn, Big Barn, Big Coop, Big Shed, Coop, Deluxe Barn, Deluxe Coop, Desert Obelisk, Earth Obelisk, Fish Pond, Gold Clock, Greenhouse, House, Island Obelisk, Junimo Hut, Log Cabin, Mailbox, Mill, Plank Cabin, Shane Coop, Shipping Bin, Shed, Silo, Slime Hutch, Stable, Stone Cabin, Water Obelisk, Well",
+  "BuildingsReplaced": "Barn, Beach Cabin, Big Barn, Big Coop, Big Shed, Coop, Deluxe Barn, Deluxe Coop, Desert Obelisk, Earth Obelisk, Fish Pond, Gold Clock, Greenhouse, House, Island Obelisk, Junimo Hut, Log Cabin, Mailbox, Mill, Neighbor Cabin, Pet Bowl, Plank Cabin, Rustic Cabin, Shane Coop, Shipping Bin, Shed, Silo, Slime Hutch, Stable, Stone Cabin, Trailer Cabin, Water Obelisk, Well",
   "IslandBuildingsReplaced": "House, Farm Obelisk",
-  "houseoption": "3",
+  "houseoption": "1",
   "housefoliage": "more",
   "HousePorch": "true",
   "greenhouseoption": "1",
@@ -53,9 +53,17 @@ It should look like this:
   "cabinoption_log": "3",
   "cabinoption_plank": "4",
   "cabinoption_stone": "1",
+  "cabinoption_beach": "2",
+  "cabinoption_neighbor": "1",
+  "cabinoption_rustic": "5",
+  "cabinoption_trailer": "1",
   "cabinfoliage_log": "more",
   "cabinfoliage_plank": "more",
   "cabinfoliage_stone": "more",
+  "cabinfoliage_beach": "more",
+  "cabinfoliage_neighbor": "more",
+  "cabinfoliage_rustic": "more",
+  "cabinfoliage_trailer": "more",
   "FishPoption": "3",
   "GClockoption": "3",
   "GClockfoliage": "more",
@@ -65,8 +73,7 @@ It should look like this:
   "ShipBinExtra": "trellis, moss, flowers",
   "SpringPetals": "true",
   "FallColor": "1",
-  "RecolourOverwrite": "",
-  "MapEdit": "true"
+  "RecolourOverwrite": ""
 }
 
 ================================================================================================
@@ -126,21 +133,6 @@ All valid inputs are: Vanilla, DNEarthyRecolour, Eemie's, FoliageRedone, Starblu
 
 ================================================================================================
 
-                    MAP EDIT                           
-
-================================================================================================
-
-Because some of my farm house designs have an option to disable porch in front i needed to add a small map edit to change messy tiles under it to grass.
-They work perfectly fine with all vanilla maps and all custom maps that don't change farmhouse coordinates. 
-I added support for SVE's Grandpas Farm, Immersive Farn 2 Remastered, Immersive Farm 2 Fix and Small Beach Farm. I may add more if needed.
-If you're using a custom farm map and the grass edit is not under the house ( blocking different part of your farm ) disabling the edit:
-
-  "MapEdit": "false"
-
-If the map creator did the tiles under the farmhouse it should solve the problem, if not -> let me know and I'll add it.
-
-================================================================================================
-
                     OTHER MOD OVERWRITES THIS MOD                             
 
 ================================================================================================
@@ -155,14 +147,14 @@ Then go into my mod folder and open manifest.json inside. It should look like th
 	{
 	"Name": "Medieval_buildings",
 	"Author": "Gweniaczek",
-	"Version": "2.0",
+	"Version": "2.2",
 	"Description": "Medieval buildings set inspired by Eemie and Flower Valley",
 	"UniqueID": "Gweniaczek.Medieval_buildings",
 	"UpdateKeys": ["Nexus:4542"],
 	"ContentPackFor": 
 		{
 		"UniqueID": "Pathoschild.ContentPatcher",
-		"MinimumVersion": "1.23.0"
+		"MinimumVersion": "2.0.0"
 		},
 	"Dependencies": [
 		{
@@ -206,14 +198,14 @@ and add a dependency in the Dependencies section like this:
 	{
 	"Name": "Medieval_buildings",
 	"Author": "Gweniaczek",
-	"Version": "2.0",
+	"Version": "2.2",
 	"Description": "Medieval buildings set inspired by Eemie and Flower Valley",
 	"UniqueID": "Gweniaczek.Medieval_buildings",
 	"UpdateKeys": ["Nexus:4542"],
 	"ContentPackFor": 
 		{
 		"UniqueID": "Pathoschild.ContentPatcher",
-		"MinimumVersion": "1.23.0"
+		"MinimumVersion": "2.0.0"
 		},
 	"Dependencies": [
 		{

@@ -1,0 +1,58 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Morgan's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Morgan_Spring, Portraits/Morgan_Summer, Portraits/Morgan_Fall, Portraits/Morgan_Winter, Characters/Morgan_Spring, Characters/Morgan_Summer, Characters/Morgan_Fall, Characters/Morgan_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/Morgan/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Morgan Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Morgan", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.MorganSpring": {
+					"Id": "{{ModId}}.MorganSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Morgan_Spring",
+					"Portrait": "Portraits/Morgan_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.MorganSummer": {
+					"Id": "{{ModId}}.MorganSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Morgan_Summer",
+					"Portrait": "Portraits/Morgan_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MorganFall": {
+					"Id": "{{ModId}}.MorganFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Morgan_Fall",
+					"Portrait": "Portraits/Morgan_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MorganWinter": {
+					"Id": "{{ModId}}.MorganWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Morgan_Winter",
+					"Portrait": "Portraits/Morgan_Winter",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+			},
+		},
+	]
+}

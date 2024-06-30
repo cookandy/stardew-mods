@@ -57,6 +57,7 @@
 				},
 			}
 		},
+		/*
 		{
 			"LogName": "[Yagi] Lunna Astray in Stardew Valley - Location Support",
 			"Action": "EditData",
@@ -117,5 +118,6 @@
 				}
 			}
 		},
+		*/
 	]
 }

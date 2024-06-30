@@ -1,0 +1,68 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Isaac's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Isaac_Spring, Portraits/Isaac_Summer, Portraits/Isaac_Fall, Portraits/Isaac_Winter, Portraits/Isaac_FlowerDance, Characters/Isaac_Spring, Characters/Isaac_Summer, Characters/Isaac_Fall, Characters/Isaac_Winter, Characters/Isaac_FlowerDance",
+			"FromFile": "assets/{{TargetPathOnly}}/Isaac/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Isaac Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Isaac", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.IsaacSpring": {
+					"Id": "{{ModId}}.IsaacSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Isaac_Spring",
+					"Portrait": "Portraits/Isaac_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.IsaacSummer": {
+					"Id": "{{ModId}}.IsaacSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Isaac_Summer",
+					"Portrait": "Portraits/Isaac_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.IsaacFall": {
+					"Id": "{{ModId}}.IsaacFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Isaac_Fall",
+					"Portrait": "Portraits/Isaac_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.IsaacWinter": {
+					"Id": "{{ModId}}.IsaacWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Isaac_Winter",
+					"Portrait": "Portraits/Isaac_Winter",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.IsaacFlowerDance": {
+					"Id": "{{ModId}}.IsaacFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/Isaac_FlowerDance",
+					"Portrait": "Portraits/Isaac_FlowerDance",
+					"Precedence": -1000,
+				},	
+			},
+		},
+	]
+}

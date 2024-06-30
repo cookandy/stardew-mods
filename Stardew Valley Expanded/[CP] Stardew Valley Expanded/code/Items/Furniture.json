@@ -1,0 +1,22 @@
+{
+    "Changes": [
+        {
+            "Action": "Load", "Priority": "Low",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "assets/Items/Furniture/SVE_Portraits.png",
+        },
+            {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "FlashShifter.StardewValleyExpandedCP_ClairePortrait": "ClairePortrait/painting/2 2/2 2/1/999/-1/{{i18n:ClairePortrait}}/4/Mods\\FlashShifter.StardewValleyExpandedCP\\SVE_Portraits/true",
+                "FlashShifter.StardewValleyExpandedCP_OliviaPortrait": "OliviaPortrait/painting/2 2/2 2/1/999/-1/{{i18n:OliviaPortrait}}/2/Mods\\FlashShifter.StardewValleyExpandedCP\\SVE_Portraits/true",
+                "FlashShifter.StardewValleyExpandedCP_SophiaPortrait": "SophiaPortrait/painting/2 2/2 2/1/999/-1/{{i18n:SophiaPortrait}}/0/Mods\\FlashShifter.StardewValleyExpandedCP\\SVE_Portraits/true",
+                "FlashShifter.StardewValleyExpandedCP_LancePortrait": "LancePortrait/painting/2 2/2 2/1/999/-1/{{i18n:LancePortrait}}/10/Mods\\FlashShifter.StardewValleyExpandedCP\\SVE_Portraits/true",
+                "FlashShifter.StardewValleyExpandedCP_MagnusPortrait": "MagnusPortrait/painting/2 2/2 2/1/999/-1/{{i18n:MagnusPortrait}}/8/Mods\\FlashShifter.StardewValleyExpandedCP\\SVE_Portraits/true",
+                "FlashShifter.StardewValleyExpandedCP_VictorPortrait": "VictorPortrait/painting/2 2/2 2/1/999/-1/{{i18n:VictorPortrait}}/6/Mods\\FlashShifter.StardewValleyExpandedCP\\SVE_Portraits/true",
+                "FlashShifter.StardewValleyExpandedCP_ApplesPortrait": "ApplesPortrait/painting/2 2/2 2/1/999/-1/{{i18n:ApplesPortrait}}/12/Mods\\FlashShifter.StardewValleyExpandedCP\\SVE_Portraits/true",
+            }
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load NPC's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/NPC_Spring, Portraits/NPC_Summer, Portraits/NPC_Fall, Portraits/NPC_Winter_Outdoor, Portraits/NPC_Winter_Indoor, Portraits/NPC_FlowerDance, Portraits/NPC_SpiritsEve, Characters/NPC_Spring, Characters/NPC_Summer, Characters/NPC_Fall, Characters/NPC_Winter_Outdoor, Characters/NPC_Winter_Indoor, Characters/NPC_FlowerDance, Characters/NPC_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/NPC/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "NPC Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["NPC", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.NPCSpring": {
+					"Id": "{{ModId}}.NPCSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/NPC_Spring",
+					"Portrait": "Portraits/NPC_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.NPCSummer": {
+					"Id": "{{ModId}}.NPCSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/NPC_Summer",
+					"Portrait": "Portraits/NPC_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.NPCFall": {
+					"Id": "{{ModId}}.NPCFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/NPC_Fall",
+					"Portrait": "Portraits/NPC_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.NPCWinterIndoor": {
+					"Id": "{{ModId}}.NPCWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/NPC_Winter_Indoor",
+					"Portrait": "Portraits/NPC_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.NPCWinterOutdoor": {
+					"Id": "{{ModId}}.NPCWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/NPC_Winter_Outdoor",
+					"Portrait": "Portraits/NPC_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.NPCFlowerDance": {
+					"Id": "{{ModId}}.NPCFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/NPC_FlowerDance",
+					"Portrait": "Portraits/NPC_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.NPCSpirit": {
+					"Id": "{{ModId}}.NPCSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+					"Sprite": "Characters/NPC_SpiritsEve",
+					"Portrait": "Portraits/NPC_SpiritsEve",
+					"Precedence": -1000,
+				},
+			},
+		},
+	]
+}

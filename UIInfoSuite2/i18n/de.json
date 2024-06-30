@@ -1,4 +1,6 @@
 {
+  // GUI - Game Menu
+  "OptionsTabTooltip": "UI Info Suite 2 Optionen",
   //GUI - Billboard
   "Billboard": "Schwarzes Brett",
   "Calendar": "Kalender",
@@ -8,9 +10,29 @@
   "Days": "Tage",
   "Hours": "Stunden",
   "Minutes": "Minuten",
+  "MachineProcessing": "Verarbeitet",
+  "MachineDone": "Fertig",
   //Harvest
   "DaysToMature": "Tage bis gereift",
   "ReadyToHarvest": "Bereit zum Ernten!",
+  "With": "mit",
+  "Fertilized": "gedüngt",
+  "DoesNotProduceThisSeason": "Produziert in dieser Jahreszeit nichts",
+  //Tree
+  "Stump": "Stumpf",
+  "Tree": " Baum",
+  "stage": "Stufe",
+  "Oak": "Eiche",
+  "Maple": "Ahorn",
+  "Pine": "Kiefer",
+  "Palm": "Palme",
+  "Mushroom": "Pilz",
+  "Mahogany": "Mahagoni",
+  "PalmJungle": "Palme (Dschungel)",
+  "GreenRainType1": "Grüner Regen Type 1",
+  "GreenRainType2": "Grüner Regen Type 2",
+  "GreenRainType3": "Grüner Regen Type 3",
+  "Mystic": "Mystisch",
   //Display icons - General
   "TodaysRecipe": "Heutiges Rezept: ",
   "TravelingMerchantIsInTown": "Der reisende Händler ist im Dorf!",
@@ -19,10 +41,11 @@
   "SnowNextDay": "Es wird morgen schneien",
   "IslandRainNextDay": "Es wird morgen regnen",
   "IslandThunderstormNextDay": "Es wird morgen ein Gewitter geben",
-  "DaysUntilToolIsUpgraded": "{0} Tage bis {1} fertig verbessert wurde",
+  "DaysUntilToolIsUpgraded": "{0} Tag(e) bis {1} fertig verbessert wurde",
   "ToolIsFinishedBeingUpgraded": "{0} ist fertig!",
   "NpcBirthday": "{0}'s Geburtstag",
   "RobinBuildingStatus": "Robin wird in {0} Tage(n) mit dem Bau fertig sein",
+  "RobinHouseUpgradeStatus": "Robin wird in {0} Tage(n) mit der Hauserweiterung fertig sein",
   // Display icons - Foragables
   "CanFindSalmonberry": "Du kannst heute Lachsbeeren finden",
   "CanFindBlackberry": "Du kannst heute Brombeeren finden",

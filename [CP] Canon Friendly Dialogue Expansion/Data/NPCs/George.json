@@ -5,6 +5,12 @@
 			"Action":"EditData",
 			"Target":"Characters/Dialogue/George",
 			"Entries":{
+				"AcceptGift_(O)373":"Gold... pumpkins? Pumpkins are gold now? What'll they think of next?#$b#Still, though, it's gold...$h",
+				"AcceptGift_(O)279":"Ah, the original sugar sweet! And still the best kind! I'll take that!$h",
+				"AcceptGift_(O)797":"With your young set of lungs, you must've gone diving for this yourself! That's the spirit!$h",
+				"AcceptGift_(O)74":"This? I found dozens of these back in my days as a miner. Or I would have, if I'd had more time.#$b#But uh, I'll admit it, I'm impressed.$h",
+				"AcceptGift_(O)20":"$c 0.5#Ha! You've got taste, kid, I'll give you that!$h#Ha! Now this'll wake up the ol' taste buds. Did you wash it?$h",
+				"AcceptGift_(O)205":"Now that's what I call an honest-to-goodness meal! It's all you really need. Just mushrooms, oil...#$b#You didn't put any newfangled seasonings on it, did you?",
 				"Mon2":"All right. What is it you want from me, anyway?",
 				"Mon4":"Still haven't given up yet, huh?#$e#The farm, I mean. Still goin'?",
 				"Mon6":"I'm surprised you want to be friends with an old-timer like me.",

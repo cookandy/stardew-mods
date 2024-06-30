@@ -1,11 +1,11 @@
-﻿{
-    "CalmingHats": [
-        "Imposing Mask",
-        "Shamanic Mask",
-        "Shady Mask",
-        "Shady Bowed Mask"
-    ],
-    "Otherhats": [
-        "Strange Bun Hat"
-    ]
+{
+  "CalmingHats": [
+    "Imposing Mask",
+    "Shamanic Mask",
+    "Shady Mask",
+    "Shady Bowed Mask"
+  ],
+  "OtherHats": [
+    "Strange Bun Hat"
+  ]
 }

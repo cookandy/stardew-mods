@@ -83,7 +83,6 @@
     "skills.increase-foraging": "觅食增加1级 当前等级: {{currentLevel}}",
     "skills.increase-fishing": "钓鱼增加1级 当前等级: {{currentLevel}}",
     "skills.increase-combat": "战斗增加1级 当前等级: {{currentLevel}}",
-    "skills.reset": "重设技能!",
 
     // professions
     "professions.title": "职业",
@@ -124,6 +123,7 @@
     *********/
     "weather.title": "明日天气",
     "weather.current": "目前",
+    "weather.explanation": "点击下方按钮设置明日天气（仅限明日）。除此之外本页面不会对天气有任何影响。",
     "weather.sunny": "晴天",
     "weather.raining": "雨天",
     "weather.lightning": "雷雨",
@@ -142,6 +142,8 @@
     /*********
     ** Warps tab
     *********/
+    "warp.customized-warning": "These warps were edited by your mods. Please report warp issues to the mods which added them if applicable.", // TODO
+
     // main areas
     "warp-section.main": "主要区域",
     "warp.farm": "农场",
@@ -163,6 +165,7 @@
     // forest
     "warp-section.forest": "南部森林",
     "warp.hats": "帽子店",
+    "warp.mastery-cave": "精通山洞",
     "warp.ranch": "玛妮的牧场",
     "warp.secret-woods": "秘密森林",
     "warp.wizard-tower": "法师塔",
@@ -225,7 +228,7 @@
     "flags.unlocked.room": "{{name}} 的房间",
     "flags.unlocked-content": "解锁内容",
     "flags.unlocked-content.dyes-and-tailoring": "染色 & 缝纫",
-    "flags.unlocked-content.junimo-text": "Can read Junimo text", // TODO
+    "flags.unlocked-content.junimo-text": "可以读懂祝尼魔文字",
     "flags.community-center": "社区中心",
     "flags.community-center.door-unlocked": "社区中心解锁",
     "flags.jojamart.membership": "Joja超市会员资格",
@@ -242,5 +245,20 @@
     "controls.grow-crops": "作物立即成熟",
     "controls.grow-radius": "生长范围（相对于玩家）",
     "controls.reset-controls": "重置按键",
-    "controls.press-new-key": "绑定新按键..."
+    "controls.press-new-key": "绑定新按键...",
+
+
+    /*********
+    ** Generic Mod Config Menu UI
+    *********/
+    // TODO
+    "config.open-menu.desc": "The keybind which opens the menu (when no other menu is open).",
+    "config.freeze-time.desc": "The keybind which freezes the game clock.",
+    "config.grow-tree.desc": "The keybind held to grow trees around the player.",
+    "config.grow-crops.desc": "The keybind held to grow crops around the player.",
+
+    "config.title.other-options": "Other options",
+    "config.default-tab.name": "Default tab",
+    "config.default-tab.desc": "The tab shown by default when you open the menu.",
+    "config.other-options": "To configure cheats, press the 'open menu' key shown above in-game. Make sure you press it after loading the save, when no other menu or dialogue is open."
 }

@@ -70,6 +70,7 @@
                 },
             }
         },
+        /*
         {
             "LogName": "[Yagi] Juna - Location Support",
             "Action": "EditData",
@@ -92,5 +93,6 @@
                 }
             }
         },
+        */
     ]
 }

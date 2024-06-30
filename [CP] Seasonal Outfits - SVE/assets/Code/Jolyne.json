@@ -1,0 +1,58 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Jolyne's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Jolyne_Spring, Portraits/Jolyne_Summer, Portraits/Jolyne_Fall, Portraits/Jolyne_Winter, Characters/Jolyne_Spring, Characters/Jolyne_Summer, Characters/Jolyne_Fall, Characters/Jolyne_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/Jolyne/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Jolyne Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Jolyne", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.JolyneSpring": {
+					"Id": "{{ModId}}.JolyneSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Jolyne_Spring",
+					"Portrait": "Portraits/Jolyne_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.JolyneSummer": {
+					"Id": "{{ModId}}.JolyneSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Jolyne_Summer",
+					"Portrait": "Portraits/Jolyne_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JolyneFall": {
+					"Id": "{{ModId}}.JolyneFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Jolyne_Fall",
+					"Portrait": "Portraits/Jolyne_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JolyneWinter": {
+					"Id": "{{ModId}}.JolyneWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Jolyne_Winter",
+					"Portrait": "Portraits/Jolyne_Winter",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+			},
+		},
+	]
+}

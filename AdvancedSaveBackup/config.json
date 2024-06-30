@@ -1,6 +1,6 @@
 {
   "SaveCount": 30,
   "UseZipCompression": true,
-  "AlternateNightlySaveBackupPath": "/Users/andycook/.stardew-valley",
-  "AlternatePreplaySaveBackupPath": "/Users/andycook/.stardew-valley"
+  "AlternateNightlySaveBackupPath": "~/.stardew-valley",
+  "AlternatePreplaySaveBackupPath": "~/.stardew-valley"
 }

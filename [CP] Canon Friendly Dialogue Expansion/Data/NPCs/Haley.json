@@ -5,6 +5,11 @@
 			"Action":"EditData",
 			"Target":"Characters/Dialogue/Haley",
 			"Entries":{
+				"AcceptGift_(O)373":"You found this in the haunted maze? My hero!$l",
+				"AcceptGift_(O)797":"It's beautiful!$8#$b#And... you thought of me when you found it?$l",
+				"AcceptGift_(O)446":"*gasp* It's perfect! All the top models in Zuzu City have these on their purses and handbags these days!$h",
+				"AcceptGift_(O)610":"*gasp* Can I-$8#$b#...I can? I was just craving a fruit salad! How'd you know?$h",
+				"AcceptGift_(O)221":"It's just for me? This is my favorite kind of cake!$h#$b#You are such a gentleman.^You are such a sweetie.",
 				"Mon4":"I spent 3 hours practicing my signature today.#$e#I guess that's pretty silly, huh?",
 				"Mon6":"I used to complain about this town being so small, but I've grown to like it.#$e#If it was much bigger it wouldn't feel like a community.",
 				"Tue2":"I wonder if any nice shells washed up on the beach this morning?#$e#This isn't the best time of year for shells, though.",

@@ -4,7 +4,16 @@
 			"LogName":"Elliott",
 			"Action":"EditData",
 			"Target":"Characters/Dialogue/Elliott",
-			"Entries":{
+			"Entries":
+			{
+				"AcceptGift_(O)373":"What a curious object indeed! I wonder if we could make some kind of pumpkin ale from it?",
+				"AcceptGift_(O)279":"An old-fashioned delight! I remember visiting candy shops on the coast when I was young. This takes me back.",
+				"AcceptGift_(O)797":"Where on earth did you find this? It's exquisite!$h",
+				"AcceptGift_(O)446":"Thank you! I'll hold this tight, next time I send something off to my publisher.$h",
+				"AcceptGift_(O)732":"My my, a local delicacy!$h#$b#You simply have exquisite taste.",
+				"AcceptGift_(O)715":"Ahh, fresh steamed lobster! I enjoy my minimalistic lifestyle, but I never compromise on cuisine. Thank you!$h",
+				"AcceptGift_(O)637":"The fruit of myth and fairytale! How wonderful!#$b#It's as if it transports me to the pages of a storybook.$h",
+				"AcceptGift_(O)218":"This warms me to my soul! What a symphony of flavor!$h",
 				"Mon2":"Pelican Town is a uniquely peaceful place. I could tell that from the moment I thought of settling in.#$e#I hope you feel the same.$h",
 				"Mon4":"I hope you've come to think of this place as 'home.'",
 				"Mon6":"I am a firm believer that beauty is in the eye of the beholder.#$b#If that's true, then I'd consider writing to be the most direct pathway to where our minds create the beauty we experience.",
@@ -88,7 +97,7 @@
 				"winter_Fri10":"I can often see pieces of myself in the characters I create. But lately, I've written some vignettes that resemble you more than me.$l",
 				"winter_Sat4":"'A sheen of silky snow across the knoll#$b#Invites the lonely one to find his soul...'#$b#Ah, @, I'm just working on a little poetry to invigorate my inspiration.$h",
 				"winter_Sun6":"The cold does make my cabin feel lonelier.$s#$e#Perhaps if I could just use this loneliness as a source of inspiration...$s",
-				"winter_Sun8":"I think I'll make enough to get by for another few months!$h#$e#It's easier for me as I have so few expenses, but for a while, I was worried I would go broke.",
+				"winter_Sun8":"I think I'll make enough to get by for another few months!$h#$e#It's easier for me as I have so few expenses, but for a while, I was worried I would go broke.",	
 				"spring_1_2":"Such a beautiful morning today! Happy new year!$h",
 				"summer_27":"The moonlight jellies' visit made for a wonderful experience last year. I hope this year proves no different.#$e#And you can't beat the location of my home!$h",
 				"winter_15":"These boats made quite the entrance when they arrived this morning!",

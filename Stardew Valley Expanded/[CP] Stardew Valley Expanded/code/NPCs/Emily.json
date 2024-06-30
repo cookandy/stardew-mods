@@ -1,5 +1,45 @@
 {
 	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"LogName": "Gift tastes: Emily",
+			"TextOperations": [
+			  /*Love*/
+			  {
+				"Operation": "Append",
+				"Target": [
+				  "Fields",
+				  "Emily",
+				  1
+				],
+				"Value": "FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose",
+				"Delimiter": " "
+			  }
+			  /*Dislike*/,
+			  {
+				"Operation": "Append",
+				"Target": [
+				  "Fields",
+				  "Emily",
+				  5
+				],
+				"Value": "FlashShifter.StardewValleyExpandedCP_Stamina_Capsule FlashShifter.StardewValleyExpandedCP_Sports_Drink FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
+				"Delimiter": " "
+			  }
+			  /*Neutral*/,
+			  {
+				"Operation": "Append",
+				"Target": [
+				  "Fields",
+				  "Emily",
+				  9
+				],
+				"Value": "FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine",
+				"Delimiter": " "
+			  }
+			]
+		  },
 		{ //EMILY SCHEDULE - Sandy visits
 			"Action": "EditData",
 			"Target": "characters/schedules/Emily",
@@ -51,17 +91,17 @@
 			},
 		},
 		{ //64x160
-			"Action": "Load",
+			"Action": "Load", "Priority": "Low",
 			"Target": "Characters/EmilyTent",
 			"FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/EmilyTent.png"
 		},
 		{ //32x32
-			"Action": "Load",
+			"Action": "Load", "Priority": "Low",
 			"Target": "Characters/EmilyCampfire",
 			"FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/EmilyCampfire.png"
 		},
 		{ //32x32
-			"Action": "Load",
+			"Action": "Load", "Priority": "Low",
 			"Target": "Characters/EmilyCampingSet",
 			"FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/EmilyCampingSet.png"
 		},

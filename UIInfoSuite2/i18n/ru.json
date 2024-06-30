@@ -1,4 +1,6 @@
 {
+  // GUI - Game Menu
+  // "OptionsTabTooltip": "UI Info Suite 2 Options", // TODO
   //GUI - Billboard
   "Billboard": "Объявления",
   "Calendar": "Календарь",
@@ -23,6 +25,7 @@
   "ToolIsFinishedBeingUpgraded": "{0} улучшено!",
   "NpcBirthday": "Сегодня день рождение {0}",
   "RobinBuildingStatus": "Робин завершит строительство через {0} дн.",
+  "RobinHouseUpgradeStatus": "Робин закончит модернизацию вашего дома за {0} дн",
   // Display icons - Foragables
   "CanFindSalmonberry": "Сегодня ты можешь найти морошку",
   "CanFindBlackberry": "Сегодня ты можешь найти ежевику",

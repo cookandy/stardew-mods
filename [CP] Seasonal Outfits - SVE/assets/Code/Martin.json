@@ -1,0 +1,105 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Martin's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Martin_Spring, Portraits/Martin_Summer, Portraits/Martin_Fall, Portraits/Martin_Winter_Outdoor, Portraits/Martin_Winter_Indoor, Portraits/Martin_FlowerDance, Portraits/Martin_SpiritsEve, Portraits/Martin_Joja, Portraits/Martin_Theater, Characters/Martin_Spring, Characters/Martin_Summer, Characters/Martin_Fall, Characters/Martin_Winter_Outdoor, Characters/Martin_Winter_Indoor, Characters/Martin_FlowerDance, Characters/Martin_SpiritsEve, Characters/Martin_Joja, Characters/Martin_Theater",
+			"FromFile": "assets/{{TargetPathOnly}}/Martin/{{TargetWithoutPath}}.png"
+		},
+
+		//APPEARANCE DATA 
+		{
+			"LogName": "Martin Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Martin", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.MartinSpring": {
+					"Id": "{{ModId}}.MartinSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Martin_Spring",
+					"Portrait": "Portraits/Martin_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.MartinSummer": {
+					"Id": "{{ModId}}.MartinSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Martin_Summer",
+					"Portrait": "Portraits/Martin_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MartinFall": {
+					"Id": "{{ModId}}.MartinFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Martin_Fall",
+					"Portrait": "Portraits/Martin_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MartinWinterIndoor": {
+					"Id": "{{ModId}}.MartinWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Martin_Winter_Indoor",
+					"Portrait": "Portraits/Martin_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MartinWinterOutdoor": {
+					"Id": "{{ModId}}.MartinWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Martin_Winter_Outdoor",
+					"Portrait": "Portraits/Martin_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.MartinFlowerDance": {
+					"Id": "{{ModId}}.MartinFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/Martin_FlowerDance",
+					"Portrait": "Portraits/Martin_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.MartinSpirit": {
+					"Id": "{{ModId}}.MartinSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+					"Sprite": "Characters/Martin_SpiritsEve",
+					"Portrait": "Portraits/Martin_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Joja Outfit
+				
+				"{{ModId}}.MartinJoja": {
+					"Id": "{{ModId}}.MartinJoja",
+					"Condition": "LOCATION_NAME Target JojaMart",
+					"Sprite": "Characters/Martin_Joja",
+					"Portrait": "Portraits/Martin_Joja",
+					"Precedence": -1000,
+				},
+				
+				//Theater Outfit
+				
+				"{{ModId}}.MartinTheater": {
+					"Id": "{{ModId}}.MartinTheater",
+					"Condition": "!PLAYER_HAS_SEEN_EVENT Any 502261, LOCATION_NAME Target MovieTheater, ANY \"PLAYER_NPC_RELATIONSHIP Any Claire Married, DAY_OF_WEEK Tuesday Friday Saturday\" \"!PLAYER_NPC_RELATIONSHIP Any Claire Married, DAY_OF_WEEK Tuesday Saturday\"",
+					"Sprite": "Characters/Martin_Theater",
+					"Portrait": "Portraits/Martin_Theater",
+					"Precedence": -1000,
+				},
+			},
+		},
+	]
+}

@@ -10,14 +10,29 @@
 				"HasMod: |contains=LemurKat.EastScarpe.CP": true
 			},
 			"Entries": {
-				"Jacob": {
-					"MarkerCropOffset": -1
+				"Aideen": {
+					"MarkerCropOffset": 2
+				},
+				"Beatrice": {
+					"MarkerCropOffset": 0
 				},
 				"Eloise": {
 					"MarkerCropOffset": 7
 				},
-				"Aideen": {
-					"MarkerCropOffset": 2
+				"Eyvinder": {
+					"MarkerCropOffset": 7
+				},
+				"Jacob": {
+					"MarkerCropOffset": -1
+				},
+				"Kennedy": {
+					"MarkerCropOffset": 0
+				},
+				"ToriLK": {
+					"MarkerCropOffset": 4
+				},
+				"VivienneLK": {
+					"MarkerCropOffset": 0
 				},
 				"Dao": {
 					"MarkerCropOffset": 1
@@ -34,13 +49,19 @@
 				"Duck2NPC": {
 					"Exclude": true
 				},
-				"Kataryna": {
-					"Exclude": true
-				},
 				"RichieTheMacaw": {
 					"Exclude": true
 				},
 				"LadySheba": {
+					"Exclude": true
+				},
+				"Abyssrooster": {
+					"Exclude": true
+				},
+				"PepperPup": {
+					"Exclude": true
+				},
+				"LittleGruff": {
 					"Exclude": true
 				},
 			}
@@ -99,6 +120,53 @@
 				}
 			}
 		},
+		{
+			"LogName": "[Yagi] East Scarp - Sprite Offsets [KatarynaLK] - Before Intro Event",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true,
+				"HasSeenEvent |contains=57876001": false,
+				"HasFlag |contains=KatarynaLeavesTown": false,
+				"Relationship:KatarynaLK |contains=married": false
+			},
+			"Entries": {
+				"KatarynaLK": {
+					"Exclude": true
+				}
+			}
+		},
+		{
+			"LogName": "[Yagi] East Scarp - Sprite Offsets [KatarynaLK] - After Intro Event",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true,
+				"HasSeenEvent |contains=57876001": true,
+				"HasFlag |contains=KatarynaLeavesTown": false,
+				"Relationship:KatarynaLK |contains=married": false
+			},
+			"Entries": {
+				"KatarynaLK": {
+					"MarkerCropOffset": 0
+				}
+			}
+		},
+		{
+			"LogName": "[Yagi] East Scarp - Sprite Offsets [KatarynaLK] - After Leaves Town",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true,
+				"HasFlag |contains=KatarynaLeavesTown": true
+			},
+			"Entries": {
+				"KatarynaLK": {
+					"Exclude": true
+				}
+			}
+		},
+		/*
 		{
 			"LogName": "[Yagi] East Scarp - Location Support",
 			"Action": "EditData",
@@ -381,5 +449,6 @@
 				},
 			}
 		},
+		*/
 	]
 }

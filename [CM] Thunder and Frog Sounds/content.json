@@ -6,7 +6,7 @@
 		"File": "thunder_far2.wav",
 		"Loop": false,
 		"Ambient": true,
-		"Preload": true,
+		"Preload": false,
         "Conditions": "r .4",
 	},
     {
@@ -14,7 +14,7 @@
 		"File": "thunder_far3.wav",
 		"Loop": false,
 		"Ambient": true,
-		"Preload": true,
+		"Preload": false,
         "Conditions": "r .3",
 	},
     {
@@ -22,14 +22,14 @@
 		"File": "thunder_far1.wav",
 		"Loop": false,
 		"Ambient": true,
-		"Preload": true,
+		"Preload": false,
 	},
     {
 		"Id": "thunder_small",
 		"File": "thunder_close1.wav",
 		"Loop": false,
 		"Ambient": true,
-		"Preload": true,
+		"Preload": false,
         "Conditions": "r .2",
 	},
     {
@@ -37,7 +37,7 @@
 		"File": "thunder_close2.wav",
 		"Loop": false,
 		"Ambient": true,
-		"Preload": true,
+		"Preload": false,
 	},
     
     //rare frog sound
@@ -46,7 +46,7 @@
 		"File": "frog_croak1.wav",
 		"Loop": false,
 		"Ambient": true,
-		"Preload": true,
+		"Preload": false,
 	},
     
     //frog sounds
@@ -55,7 +55,7 @@
 		"File": "frog_croak3.wav",
 		"Loop": false,
 		"Ambient": true,
-		"Preload": true,
+		"Preload": false,
         "Conditions": "r .7",
 	},
     {
@@ -63,7 +63,7 @@
 		"File": "frog_croak4.wav",
 		"Loop": false,
 		"Ambient": true,
-		"Preload": true,
+		"Preload": false,
         "Conditions": "r .3",
 	},
     {
@@ -71,7 +71,7 @@
 		"File": "frog_croak2.wav",
 		"Loop": false,
 		"Ambient": true,
-		"Preload": true,
+		"Preload": false,
 	}  
 	]
 }

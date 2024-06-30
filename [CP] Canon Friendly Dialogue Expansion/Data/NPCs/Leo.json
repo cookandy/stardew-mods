@@ -6,7 +6,14 @@
         "Target": "Characters/Dialogue/Leo",
         "Entries":
         {
-            "Mon": "Hi... Everything okay?",
+			"AcceptGift_(O)279":"*lick* It's sweet! What a yummy treat!$h#$b#...$u#$b#That rhymed!$h",
+			"AcceptGift_(O)797":"I-is this your treasure? The parrots told me of these, but I never found any.$u#$b#Thank you!$h",
+			"AcceptGift_(O)74":"S-so nice! With this in my hand, I don't feel shy of anything!$h",
+			"AcceptGift_(O)446":"Ahh, it's nice and soft. I like it very much.",
+			"AcceptGift_(O)444":"So soft, so pretty... You are saying I may have this?#$b#Thank you!$h",
+			"AcceptGift_(O)834":"Ah! A mango! Yes, this is what I love!$h",
+			"AcceptGift_(O)289":"An ostrich egg! The parrots say ostrich is king of the birds. Did you know?#$e#I will keep it safe until it hatches, and then I will find it a home.",
+			"AcceptGift_(O)906":"You made the special meal, just like the parrots taught me!$h#$b#*slurp* Mmm, it's just like they make it.",
             "Mon2": "Did you... find some Golden Walnuts today?#$e#No... don't share them with me. My family needs them most.$3#$e#I'll find enough for myself.",
             "Mon4": "I've learned a lot from my parrot family...#$b#But I'm sure there's a lot more out there I don't know.$s",
             "Tue": "When Sun is angry, it feels good in the jungle.#$e#Sun can't find us beneath the leaves. We trick him! Haha...$h",

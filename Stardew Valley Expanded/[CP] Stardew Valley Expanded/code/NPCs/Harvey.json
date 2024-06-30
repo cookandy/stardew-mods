@@ -1,14 +1,65 @@
 {
     "Changes": [
-        { //HARVEY SCHEDULE EDITS
+        {
             "Action": "EditData",
-            "Target": "characters/schedules/Harvey",
-            "Entries": {
-                "21": "700 HarveyRoom 21 7 0/830 Hospital 6 15 2/1340 Hospital 2 5 0/1730 HarveyRoom 11 5 3 harvey_read/2200 HarveyRoom 13 4 1 harvey_sleep",
-                "summer": "700 HarveyRoom 21 7 0/830 Hospital 6 15 2/1200 Town 30 34 2 square_7_5/1730 Hospital 9 15 3/1840 HarveyRoom 11 5 3 harvey_read/2200 HarveyRoom 13 4 1 harvey_sleep",
-                "spring": "700 HarveyRoom 21 7 0/830 Hospital 6 15 2/1200 Town 10 64 2 square_5_5/1730 Hospital 9 15 3/1840 HarveyRoom 11 5 3 harvey_read/2200 HarveyRoom 13 4 1 harvey_sleep"
-            },
-        },
+            "Target": "Data/NPCGiftTastes",
+            "LogName": "Gift tastes: Harvey",
+            "TextOperations": [
+              /*Love*/
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Fields",
+                  "Harvey",
+                  1
+                ],
+                "Value": "FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Bearberrys FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine",
+                "Delimiter": " "
+              }
+              /*Like*/,
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Fields",
+                  "Harvey",
+                  3
+                ],
+                "Value": "FlashShifter.StardewValleyExpandedCP_Salal_Berry FlashShifter.StardewValleyExpandedCP_Mushroom_Colony FlashShifter.StardewValleyExpandedCP_Frog",
+                "Delimiter": " "
+              }
+              /*Dislike*/,
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Fields",
+                  "Harvey",
+                  5
+                ],
+                "Value": "FlashShifter.StardewValleyExpandedCP_Flower_Cookie FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
+                "Delimiter": " "
+              }
+              /*Hate*/,
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Fields",
+                  "Harvey",
+                  7
+                ],
+                "Value": "FlashShifter.StardewValleyExpandedCP_Dried_Sand_Dollar FlashShifter.StardewValleyExpandedCP_Daggerfish",
+                "Delimiter": " "
+              }
+            ]
+          },
+          { //HARVEY SCHEDULE EDITS
+          "Action": "EditData",
+          "Target": "characters/schedules/Harvey",
+          "Entries": {
+              "21": "700 HarveyRoom 21 7 0/830 Hospital 6 15 2/1340 Hospital 2 5 0/1730 HarveyRoom 11 5 3 harvey_read/2200 HarveyRoom 13 4 1 harvey_sleep",
+              "summer": "700 HarveyRoom 21 7 0/830 Hospital 6 15 2/1200 Town 25 30 0/1730 Hospital 9 15 3/1840 HarveyRoom 11 5 3 harvey_read/2200 HarveyRoom 13 4 1 harvey_sleep",
+              "spring": "700 HarveyRoom 21 7 0/830 Hospital 6 15 2/1200 Town 10 64 2 square_5_5/1730 Hospital 9 15 3/1840 HarveyRoom 11 5 3 harvey_read/2200 HarveyRoom 13 4 1 harvey_sleep"
+          },
+      },
         { //HARVEY EVENT
             "Action": "EditData",
             "Target": "data/events/hospital",

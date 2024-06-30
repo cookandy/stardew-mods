@@ -1,0 +1,40 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Passerby Cemetery - https://www.nexusmods.com/stardewvalley/mods/22600
+        {
+            "LogName": "[Yagi] Passerby Cemetery - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Fellowclown.PC": true
+            },
+            "Entries": {
+                "FC.Nikolai": {
+                    "MarkerCropOffset": 1
+                },
+                "FC.Kaia": {
+                    "MarkerCropOffset": 1
+                },
+                "FC.Maverick": {
+                    "MarkerCropOffset": 0
+                },
+                "FC.Grady": {
+                    "MarkerCropOffset": 1
+                },
+                "FC.Lyell": {
+                    "MarkerCropOffset": 0
+                },
+                "FC.Valerie": {
+                    "MarkerCropOffset": 4
+                },
+                "FC.Dezerie": {
+                    "MarkerCropOffset": 4
+                },
+                "FC.Alan": {
+                    "MarkerCropOffset": 4
+                },
+            },
+        }
+    ]
+}

@@ -171,6 +171,7 @@
 				}
 			}
 		},
+		/*
 		{
 			"LogName": "[Yagi] Ridgeside Village - Location Support",
 			"Action": "EditData",
@@ -277,5 +278,6 @@
 				},
 			}
 		},
+		*/
 	]
 }

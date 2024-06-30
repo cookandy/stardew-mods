@@ -8,6 +8,8 @@
     "config.enabled.desc": "เปิดใช้งานฟีเจอร์อัตโนมัติหรือไม่ หากปิดใช้งาน จะไม่มีเครื่องจักรใดทำงานอัตโนมัติและการซ้อนทับจะไม่ปรากฏ",
     "config.automation-interval.name": "ช่วงที่ทำงานอัตโนมัติ",
     "config.automation-interval.desc": "จำนวนขีดระหว่างกระบวนการอัตโนมัติแต่ละขั้นตอน (60 ครั้งต่อวินาที 120 ครั้งทุกสองวินาที ฯลฯ)",
+    "config.min-minutes-for-fairy-dust.name": "Min minutes for fairy dust", // TODO
+    "config.min-minutes-for-fairy-dust.desc": "The minimum machine processing time in minutes for which to apply fairy dust. For example, setting this to 30 minutes means fairy dust won't be applied if the machine would finish in 20 minutes without it.", // TODO
     "config.toggle-overlay-key.name": "ปุ่มสลับการซ้อนทับ",
     "config.toggle-overlay-key.desc": "ปุ่มที่สลับการซ้อนทับอัตโนมัติ",
     "config.warn-for-missing-bridge-mod.name": "คำเตือนสำหรับ mod สะพานที่หายไป",
@@ -34,10 +36,23 @@
     "config.junimo-huts.move-into-chests": "ย้ายจากกระท่อม Junimo เข้าสู่หีบ",
     "config.junimo-huts.move-into-huts": "ย้ายจากหีบสู่กระท่อม Junimo",
 
-    // machine overrides
-    "config.title.machine-overrides": "การแทนที่เครื่องจักร",
-    "config.override.ShippingBin-name": "ถังส่งของ",
-    "config.override.MiniShippingBin-name": "ถังขนส่งขนาดเล็ก",
-    "config.override.desc": "เปิดใช้งานเพื่อให้ {{machineName}} เป็นระบบอัตโนมัติ",
-    "config.custom-overrides-note": "สำหรับการแทนที่แบบกำหนดเองได้ โปรดดูที่ https://github.com/Pathoschild/StardewMods/tree/develop/Automate#configure สำหรับความช่วยเหลือในการแก้ไขไฟล์ config.json โดยตรง"
+    // per-machine settings
+    "config.title.machine-settings": "{{machineName}} พฤติกรรม",
+    "config.machine-settings-enabled.Name": "เปิดใช้งาน",
+    "config.machine-settings-enabled.desc": "เปิดใช้งานเพื่อให้ {{machineName}} เป็นระบบอัตโนมัติ",
+    "config.machine-settings-priority.name": "ลำดับความสำคัญ",
+    "config.machine-settings-priority.desc": "ลำดับความสำคัญในการประมวลผลเครื่องจักร {{machineName}} เมื่อเทียบกับเครื่องจักรอื่นๆ โดยทั่วไปเครื่องจักรจะมีค่าความสำคัญเริ่มต้นที่ 0 โดยมีค่าที่สูงกว่าจะได้รับการประมวลผลก่อน.",
+
+    // machine names
+    // TODO
+    "config.machines.bush": "Bush",
+    "config.machines.fruit-tree": "Tree (Fruit Tree)",
+    "config.machines.trash-can": "Trash Can",
+    "config.machines.wild-tree": "Tree (Wild Tree)",
+    "config.machines.feed-hopper": "ที่ใส่อาหารสัตว์และไซโล",
+
+    // special settings for individual machines
+    // TODO
+    "config.machines.wild-tree.collect-moss.name": "Collect Moss",
+    "config.machines.wild-tree.collect-moss.desc": "Whether to collect moss on trees. For example, keeping moss on trees will boost the quality of mushrooms from nearby mushroom logs."
 }

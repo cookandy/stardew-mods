@@ -1,17 +1,9 @@
 {
 	"$schema": "https://smapi.io/schemas/content-patcher.json",
-	"Format": "1.28.0",
+	"Format": "2.0.0",
 	"Changes": [
 		// Tier 1 Supported.
 		////////////////////////////////////////////////////////////////////////////////
-		// Core Stardew Valley
-		{
-			"Action": "Include",
-			"FromFile": "data/sdv.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
 		// Aspen
 		{
 			"Action": "Include",
@@ -77,42 +69,26 @@
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},
-		// Lyell
-		{
-			"Action": "Include",
-			"FromFile": "data/lyell.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
-		// Nikolai
-		{
-			"Action": "Include",
-			"FromFile": "data/nikolai.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
-		// John
-		{
-			"Action": "Include",
-			"FromFile": "data/john.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
-		// Magical Family
-		{
-			"Action": "Include",
-			"FromFile": "data/magicalfamily.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
 		// Wilford and Sable
 		{
 			"Action": "Include",
 			"FromFile": "data/wilford.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		// A New Dream
+		{
+			"Action": "Include",
+			"FromFile": "data/a_new_dream.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations"
+			}
+		},
+		// Passerby Cemetery
+		{
+			"Action": "Include",
+			"FromFile": "data/passerby.json",
 			"When": {
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
@@ -151,14 +127,14 @@
 		},
 		{
 			"Action": "Include",
-			"FromFile": "data/athanaeri.json",
+			"FromFile": "data/juna.json",
 			"When": {
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},
 		{
 			"Action": "Include",
-			"FromFile": "data/juna.json",
+			"FromFile": "data/straycatfe.json",
 			"When": {
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
@@ -174,27 +150,6 @@
 				"HasMod": "Bouhm.NPCMapLocations"
 			}
 		},		
-		{
-			"Action": "Include",
-			"FromFile": "data/garden_village.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
-		{
-			"Action": "Include",
-			"FromFile": "data/rsv_mobile.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},		
-		{
-			"Action": "Include",
-			"FromFile": "data/wttd.json",
-			"When": {
-				"HasMod": "Bouhm.NPCMapLocations"
-			}
-		},
 		{
 			"Action": "Include",
 			"FromFile": "data/cotton.json",

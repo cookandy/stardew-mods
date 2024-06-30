@@ -1,0 +1,34 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC)FlashShifter.StardewValleyExpandedCP_Statue_Of_Treasure": {
+                    "HasInput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        {
+                            "Id": "Default",
+                            "Triggers": [
+                                {
+                                    "Id": "DayUpdate",
+                                    "Trigger": "DayUpdate",
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "(O)275",
+                                    "ItemId": "(O)275",
+                                }
+                            ],
+                        }
+                    ],
+                },
+            }
+        }
+    ]
+}

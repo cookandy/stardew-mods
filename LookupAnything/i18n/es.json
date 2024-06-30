@@ -2,6 +2,10 @@
     /*********
     ** Generic translations
     *********/
+    // language info
+    "generic.list-separator": ", ", // text between listed values (like ", " in "A, B, C")
+    "generic.line-wrap-on": "",     // characters after which we can line-wrap text if needed, even if there's no space
+
     // date names
     "generic.now": "Ahora",
     "generic.tomorrow": "Mañana",
@@ -27,6 +31,7 @@
     "generic.price": "{{price}}g",
     "generic.price-for-quality": "{{price}}g ({{quality}})",
     "generic.price-for-stack": "{{price}}g por montón de {{count}}",
+    "generic.show-x-results": "show {{count}} results", // TODO
 
     // types
     "type.building": "Edificio",
@@ -44,6 +49,9 @@
     "quality.silver": "Plata",
     "quality.gold": "Oro",
     "quality.iridium": "Iridio",
+
+    // item names shown in recipes
+    "item.wild-seeds": "Wild Seeds (Any)", // TODO
 
     // NPC friendship
     "friendship-status.friendly": "Amistoso",
@@ -87,110 +95,29 @@
     "data.npc.trash-bear.description": "Un espíritu amistodo que limpia la basura.",
 
     // item types
-    "data.type.debris": "Maleza",
-    "data.type.stone": "Piedra",
     "data.type.container": "Contenedor",
 
-    // farm items
+    // override item text
     "data.item.egg-incubator.description": "Incuba huevos en pollitos y patitos.",
-    "data.item.broken-branch.name": "Rama rota",
-    "data.item.broken-branch.description": "Una rama rota. Córtala con un hacha para obtener madera.",
-    "data.item.stone.name": "Piedra",
-    "data.item.stone.description": "Una piedra gris. Rómpela para obtener piedra.",
-    "data.item.geode.name": "Nodo de geoda",
-    "data.item.geode.description": "Romper para obtener geodas.",
-    "data.item.frozen-geode.name": "Nodo de geodas congeladas",
-    "data.item.frozen-geode.description": "Romper para obtener geodas congeladas.",
-    "data.item.magma-geode.name": "Nodo de geoda de magma",
-    "data.item.magma-geode.description": "Romper para obtener geodas de magma.",
-
-    // weeds & crystals
-    "data.item.weed.name": "Hierba",
-    "data.item.weed.description": "Una hierba. Tal vez contenga fibras o semillas silvestres.",
-    "data.item.fertile-weed.name": "Hierba fértil",
-    "data.item.fertile-weed.description": "Está garantizado que va a soltar semillas silvestres.",
-    "data.item.ice-crystal.name": "Cristal de hielo",
-    "data.item.ice-crystal.description": "Un cristal de hielo. Posibilidad muy baja de contener un cuarzo refinado.",
-
-    // mine gems
-    "data.item.amethyst-node.name": "Conjunto de Amatistas",
-    "data.item.amethyst-node.description": "Romper para obtener amatistas.",
-    "data.item.aquamarine-node.name": "Nodo de Acuamarina",
-    "data.item.aquamarine-node.description": "Romper para obtener acuamarinas.",
-    "data.item.diamond-node.name": "Nodo de Diamante",
-    "data.item.diamond-node.description": "Romper para obtener diamantes.",
-    "data.item.emerald-node.name": "Nodo de Esmeralda",
-    "data.item.emerald-node.description": "Romper para obtener esmeraldas.",
-    "data.item.gem-node.name": "Nodo de Gema",
-    "data.item.gem-node.description": "Romper para obtener esmeraldas, acuamarinas, rubíes, amatistas, topacios, jades o diamantes.",
-    "data.item.jade-node.name": "Nodo de Jade",
-    "data.item.jade-node.description": "Romper para obtener jade.",
-    "data.item.mystic-stone.name": "Piedra Mística",
-    "data.item.mystic-stone.description": "Romper para obtener gemas raras o minerales, incluyendo fragmentos prismáticos.",
-    "data.item.prismatic-node.name": "Nodo Prismático",
-    "data.item.prismatic-node.description": "Romper para obtener fragmentos prismáticos.",
-    "data.item.ruby-node.name": "Nodo de Rubí",
-    "data.item.ruby-node.description": "Romper para obtener rubíes.",
-    "data.item.topaz-node.name": "Nodo de Topacio",
-    "data.item.topaz-node.description": "Romper para obtener topacio.",
-
-    // mine ores
-    "data.item.cinder-shard-node.name": "Nodo de fragmento de ceniza",
-    "data.item.cinder-shard-node.description": "Romper para obtejer fragmento de ceniza.",
-    "data.item.copper-node.name": "Nodo de cobre",
-    "data.item.copper-node.description": "Romper para obtener mineral de cobre.",
-    "data.item.gold-node.name": "Nodo de oro",
-    "data.item.gold-node.description": "Romper para obtener mineral de oro.",
-    "data.item.iridium-node.name": "Nodo de iridio",
-    "data.item.iridium-node.description": "Romper para obtener mineral de iridio.",
-    "data.item.iron-node.name": "Nodo de hierro",
-    "data.item.iron-node.description": "Romper para obtener mineral de hierro.",
-    "data.item.omni-geode-node.name": "Nodo de Omnigeoda",
-    "data.item.omni-geode-node.description": "Romper para obtener una Omnigeoda",
-
-    // mine stones
-    "data.item.colored-stone.name": "Piedra de colores",
-    "data.item.colored-stone.description": "Una piedra. Tal vez contenga piedras, minerales o geodas.",
-    "data.item.mine-stone.name": "Piedra",
-    "data.item.mine-stone.description": "Romper para obtener una piedra. Tiene una probabilidad de obtener carbón",
-
-    // other stones
-    "data.item.clay-stone.name": "Piedra de arcilla",
-    "data.item.clay-stone.description": "Romper para obtener arcilla",
-    "data.item.fossil-stone.name": "Piedra fósil",
-    "data.item.fossil-stone.description": "Romper para obtener fósiles y huesos.",
-
-    // mine containers
     "data.item.barrel.name": "Barril",
     "data.item.barrel.description": "Romper para obtener diversos bienes.",
     "data.item.box.name": "Caja",
     "data.item.box.description": "Romper para obtener diversos bienes.",
 
     // location names
-    "location.backwoods": "selvas de interior",
-    "location.beach": "playa",
     "location.beach.east-pier": "playa (en el muelle al este)",
     "location.bugLand": "guarida de los insectos mutantes",
-    "location.busStop": "parada de autobús",
-    "location.desert": "desierto",
-    "location.farm": "granja",
+    "location.desert.topPond": "desierto (estanque del norte)",
     "location.farmCave": "cueva de granja",
     "location.farmHouse": "casa de granja",
-    "location.forest": "bosque",
-    "location.forest.fish-area-0": "río de bosque",
-    "location.forest.fish-area-1": "estanque de bosque",
     "location.forest.island-tip": "río de bosque (en la punta sureña de la gran isla)",
-    "location.mountain": "montaña",
-    "location.railroad": "ferrocarril",
-    "location.sewer": "alcantarilla",
+    "location.forest.lake": "estanque de bosque",
+    "location.forest.river": "río de bosque",
     "location.submarine": "submarino del Mercado de Noche",
-    "location.town": "pueblo",
     "location.town.northmost-bridge": "pueblo (en el puente más al norte)",
-    "location.tunnel": "túnel del autobús",
     "location.undergroundMine": "minas",
     "location.undergroundMine.level": "nivel {{level}} de las minas",
     "location.witchSwamp": "pantano de la bruja",
-    "location.woods": "bosque secreto",
 
     "location.caldera": "Caldera de la isla Jengibre",
     "location.islandEast": "Este de la isla Jengibre",
@@ -199,10 +126,42 @@
     "location.islandSouthEast": "Sureste de la isla Jengibre",
     "location.islandSouthEastCave": "Cueva sureste de la isla Jengibre",
     "location.islandWest": "Oeste de la isla Jengibre",
-    "location.islandWest.fish-area-1": "Oeste de la isla Jengibre (Oceano)",
-    "location.islandWest.fish-area-2": "Oeste de la isla Jengibre (Estanque)",
+    "location.islandWest.freshwater": "Oeste de la isla Jengibre (Estanque)",
+    "location.islandWest.ocean": "Oeste de la isla Jengibre (Oceano)",
 
+    "location.fish-area": "{{locationName}} ({{areaName}})",
     "location.unknown-fish-area": "{{locationName}} (zona de pesca {{id}})",
+
+
+    /*********
+    ** Conditions & context tags
+    *********/
+    // TODO
+    "condition-or-context-tag.negate": "not {{value}}",
+
+    "condition.day-of-month": "on specific days ({{days}})",
+    "condition.day-of-month.even": "even days",
+    "condition.day-of-month.odd": "odd days",
+
+    "condition.item-type.input": "input item",
+    "condition.item-type.target": "target item",
+
+    "condition.raw-context-tag": "context tag \"{{tag}}\"",
+    "condition.raw-condition": "query \"{{tag}}\"",
+
+    "condition.item-context-tag": "{{item}} has context tag {{tags}}",
+    "condition.item-context-tags": "{{item}} has context tags {{tags}}",
+    "condition.item-context-tag.value": "'{{tag}}'", // the format of each context tag in the list (each context tag isn't translated)
+
+    "condition.item-edibility.edible": "{{item}} is edible",
+    "condition.item-edibility.min": "{{item}} has edibility of {{min}} or more",
+    "condition.item-edibility.range": "{{item}} has edibility of {{min}} to {{max}}",
+
+    "context-tag.bone": "any bone",
+    "context-tag.egg": "any egg",
+    "context-tag.large-egg": "any large egg",
+    "context-tag.preserved-item": "preserved {{name}}",
+
 
     /*********
     ** Animal lookups
@@ -251,8 +210,7 @@
     "building.output-processing": "Procesando producto", // translator note: changed 'output' to 'product' as we don't have a word with the same meaning
     "building.output-ready": "Producto listo",
     "building.slimes.summary": "{{count}} de {{max}} slimes",
-    "building.stored-hay.summary-one-silo": "{{hayCount}} heno (capacidad máxima: {{maxHay}})",
-    "building.stored-hay.summary-multiple-silos": "{{hayCount}} heno en {{siloCount}} silos (capacidad máxima: {{maxHay}})",
+    "building.stored-hay.summary": "{{hayCount}} of {{maxHayInLocation}} heno en este edificio (máxima capacidad del edificio: {{maxHayInBuilding}})",
     "building.upgrades.barn.0": "hasta 4 animales, añade vacas",
     "building.upgrades.barn.1": "hasta 8 animales, añade cabras y permite embarazos",
     "building.upgrades.barn.2": "hasta 12 animales, añade cerdos, ovejas y automatiza los comederos",
@@ -352,6 +310,7 @@
     ** Item > generic lookups
     *********/
     // labels
+    "item.custom-item": "Objeto personalizado",
     "item.contents": "Contiene",
     "item.loves-this": "Lo ama",
     "item.likes-this": "Le gusta a",
@@ -370,6 +329,7 @@
     "item.produces-dye": "Produce  tinte",
 
     // values
+    "item.custom-item.summary": "Añadido por {{modName}}",
     "item.contents.placed": "{{name}}",
     "item.contents.ready": "{{name}} listo",
     "item.contents.partial": "{{name}} en {{time}}",
@@ -382,9 +342,13 @@
     "item.needed-for.gourmet-chef": "Logro de ''gourmet chef'' (cocina {{recipes}})",
     "item.needed-for.craft-master": "Logro de ''craft master'' (crea {{recipes}})",
     "item.needed-for.quests": "Mision actual ({{quests}})",
+    "item.unknown-recipes": "{{count}} unknown recipes", // TODO
     "item.sells-to.shipping-box": "Caja de envío",
     "item.recipes-for-ingredient.entry": "{{name}} (necesita {{count}})",
     "item.recipes-for-machine.multiple-items": "{{name}} x {{count}}",
+    "item.recipes-for-machine.same-as-input": "[same as input]", // e.g. crystalarium produces same item that was put in // TODO
+    "item.recipes-for-machine.conditions": "[conditions: {{conditions}}]", // TODO
+    "item.recipes-for-machine.too-complex": "Some machine rules are too dynamic to display.", // TODO
     "item.number-owned.summary": "{{count}} ud(s)",
     "item.number-crafted.summary": "creaste {{count}} de estos",
 
@@ -447,24 +411,22 @@
     ** Item > melee weapon lookups
     *********/
     // labels
-    // TODO
-    "item.melee-weapon.accuracy": "Accuracy",
-    "item.melee-weapon.critical-chance": "Critical chance",
-    "item.melee-weapon.critical-damage": "Critical damage",
-    "item.melee-weapon.damage": "Damage",
-    "item.melee-weapon.defense": "Defense",
-    "item.melee-weapon.knockback": "Knockback",
-    "item.melee-weapon.reach": "Reach",
-    "item.melee-weapon.speed": "Attack speed",
+    "item.melee-weapon.accuracy": "Precisión",
+    "item.melee-weapon.critical-chance": "Posibilidad de crítico",
+    "item.melee-weapon.critical-damage": "Daño crítico",
+    "item.melee-weapon.damage": "Daño",
+    "item.melee-weapon.defense": "Defensa",
+    "item.melee-weapon.knockback": "Empuje",
+    "item.melee-weapon.reach": "Alcance",
+    "item.melee-weapon.speed": "Velocidad de ataque",
 
     // values
-    // TODO
-    "item.melee-weapon.critical-damage.label": "{{multiplier}} times normal damage (before player bonuses)",
-    "item.melee-weapon.defense.label": "{{amount}} while equipped",
-    "item.melee-weapon.knockback.label": "{{amount}} ({{multiplier}} times normal distance)",
-    "item.melee-weapon.reach.label": "{{amount}} pixels",
-    "item.melee-weapon.speed.shown-vs-actual": "shown: {{shownSpeed}}{{lineBreak}}actual: {{actualSpeed}}",
-    "item.melee-weapon.speed.summary": "{{speed}} ({{milliseconds}} milliseconds per swing frame, before player speed bonuses)",
+    "item.melee-weapon.critical-damage.label": "{{multiplier}} veces el daño normal (antes de bonus del jugador)",
+    "item.melee-weapon.defense.label": "{{amount}} mientras esté equipada",
+    "item.melee-weapon.knockback.label": "{{amount}} ({{multiplier}} veces la distancia normal)",
+    "item.melee-weapon.reach.label": "{{amount}} pixeles",
+    "item.melee-weapon.speed.shown-vs-actual": "muestra: {{shownSpeed}}{{lineBreak}}real: {{actualSpeed}}",
+    "item.melee-weapon.speed.summary": "{{speed}} ({{milliseconds}} milisegundos, antes de bonus del jugador)",
 
 
     /*********
@@ -535,7 +497,7 @@
     "npc.friendship.need-bouquet": "Necesitas un ramo de flores para lo siguiente",
     "npc.friendship.need-points": "siguiente en {{count}} puntos",
     "npc.undiscovered-gift-taste": "{{count}} items sin revelar",
-    "npc.unowned-gift-taste": "{{count}} unowned items", // TODO
+    "npc.unowned-gift-taste": "{{count}} objetos no obtenidos",
 
 
     /*********
@@ -606,7 +568,7 @@
 
     // values
     "puzzle.solution.solved": "Acertijo resuelto!",
-    "puzzle.solution.hidden": "Las soluciones del acertijo están ocultas en modo progresión.",
+    "puzzle.solution.hidden": "Las soluciones del acertijo están ocultas según su configuración.",
 
 
     /*********
@@ -677,7 +639,7 @@
     // labels
     "tree.stage": "Etapa de crecimiento",
     "tree.next-growth": "Evolución",
-    "tree.has-seed": "Tiene semilla",
+    "tree.seed": "Tiene semilla",
     "tree.is-fertilized": "ha sido fertilizado",
 
     // values
@@ -687,12 +649,17 @@
     "tree.name.oak": "Roble",
     "tree.name.palm": "Palmera",
     "tree.name.pine": "Pino",
+    "tree.name.mossy": "Árbol musgoso",
+    "tree.name.mystic": "Árbol místico",
     "tree.name.unknown": "Árbol desconocido",
     "tree.stage.done": "Completamente maduro",
     "tree.stage.partial": "{{stageName}} ({{step}} de {{max}})",
     "tree.next-growth.winter": "no puede crecer en invierno fuera del invernadero a menos que se fertilice",
     "tree.next-growth.adjacent-trees": "no puede crecer porque otros árboles estan muy cerca",
     "tree.next-growth.chance": "{{chance}}% de probabilidad de evolucionar a «{{stage}}» mañana",
+    "tree.seed.not-ready": "No está lista",
+    "tree.seed.probability-daily": "{{chance}}% posibilidad de {{itemName}} cada día.",
+    "tree.seed.probability-on-chop": "{{chance}}% posibilidades de que caiga {{itemName}} cuando lo tales.",
 
     // growth stages
     "tree.stages.seed": "Semilla",
@@ -708,14 +675,52 @@
     *********/
     // main options
     "config.title.main-options": "Opciones principales",
-    "config.progression-mode.name": "Modo de progresión",
-    "config.progression-mode.desc": "Si se ocultan algunos contenidos (por ejemplo, los gustos de los regalos y las soluciones de los rompecabezas) hasta que los descubras en el juego.",
+    "config.force-full-screen.name": "Forzar pantalla completa",
+    "config.force-full-screen.desc": "Si el menú debe estar siempre a pantalla completa, en lugar de centrado en la ventana. Esto es útil principalmente cuando se visualizan campos de minería de datos.",
+
+    // progression mode
+    // TODO
+    "config.title.progression": "Modo de progresión",
+
+    "config.progression.show-unknown-gift-tastes.name": "Show unknown gift tastes",
+    "config.progression.show-unknown-gift-tastes.desc": "Whether to show gift tastes you haven't learned about in-game yet (e.g. from dialogue text or experimenting).",
+
+    "config.progression.show-unknown-recipes.name": "Show unknown recipes",
+    "config.progression.show-unknown-recipes.desc": "Whether to show recipes you haven't learned in-game yet.",
+
+    "config.progression.show-puzzle-solutions.name": "Show puzzle solutions",
+    "config.progression.show-puzzle-solutions.desc": "Whether to show puzzle solutions.",
+
+    // gift tastes
+    "config.title.gift-tastes": "Gusto por los regalos",
+    "config.show-gift-tastes.loved.name": "Mostrar regalos que ama",
+    "config.show-gift-tastes.loved.desc": "Indica si mostrar regalos que ama en las búsquedas de NPC y objetos.",
+    "config.show-gift-tastes.liked.name": "Mostrar regalos que le gustan",
+    "config.show-gift-tastes.liked.desc": "Indica si mostrar regalos que le gustan en las búsquedas de NPC y objetos.",
+    "config.show-gift-tastes.neutral.name": "Mostrar regalos neutrales",
+    "config.show-gift-tastes.neutral.desc": "Indica si mostrar regalos neutrales en las búsquedas de NPC y objetos.",
+    "config.show-gift-tastes.disliked.name": "Mostrar regalos que no le gustan",
+    "config.show-gift-tastes.disliked.desc": "Indica si mostrar regalos que no le gustan en las búsquedas de NPC y objetos.",
+    "config.show-gift-tastes.hated.name": "Mostrar regalos que odia",
+    "config.show-gift-tastes.hated.desc": "Indica si mostrar regalos que odia en las búsquedas de NPC y objetos.",
+
+    "config.show-unowned-gifts.name": "Show unowned gift tastes",
+    "config.show-unowned-gifts.desc": "Whether to show gift tastes for items that the player doesn't own somewhere in the world.",
+
     "config.highlight-unrevealed-gift-tastes.name": "Destacar los gustos de los regalos no revelados",
-    "config.highlight-unrevealed-gift-tastes.desc": "Si se desea resaltar los gustos de los regalos que no han sido revelados en el perfil del NPC. Cuando se activa, los gustos de los regalos no revelados estarán en negrita y las búsquedas también mostrarán los regalos que no gustan/odian.",
-    "config.show-all-gift-tastes.name": "Mostrar todos los gustos de los regalos",
-    "config.show-all-gift-tastes.desc": "Mostrar o no todos los gustos de los regalos en las búsquedas de PNJs y objetos; cuando se desactiva, sólo se muestran los gustos más relevantes (por ejemplo, los regalos amados o gustados).",
-    "config.show-unowned-gifts.name": "Show unowned gift tastes", // TODO
-    "config.show-unowned-gifts.desc": "Whether to show gift tastes for items that the player doesn't own somewhere in the world.", // TODO
+    "config.highlight-unrevealed-gift-tastes.desc": "Si se desea resaltar los gustos de los regalos que no han sido revelados en el perfil del NPC. Cuando se activa, los gustos de los regalos no revelados estarán en negrita.",
+
+    // collapse fields
+    // TODO
+    "config.title.collapse-fields": "Collapse large fields",
+
+    "config.collapse-fields.enabled.name": "Enabled",
+    "config.collapse-fields.enabled.desc": "Whether to collapse large fields, so the lookup menu will replace the list with a clickable 'show X values' link to expand it.",
+
+    "config.collapse-fields.building-recipes.name": "Building lookup: recipes",
+    "config.collapse-fields.item-recipes.name": "Item lookup: recipes",
+    "config.collapse-fields.npc-gift-tastes.name": "NPC lookup: gift tastes",
+    "config.collapse-fields.any.desc": "If the field contains this many values, the lookup menu will replace the list with a clickable 'show X values' link to expand it.",
 
     // advanced options
     "config.title.advanced-options": "Opciones avanzadas",
@@ -723,8 +728,6 @@
     "config.tile-lookups.desc": "Si se incluyen las baldosas del mapa como objetivos de búsqueda.",
     "config.data-mining-fields.name": "Mostrar campos de minería de datos",
     "config.data-mining-fields.desc": "Si se muestran los datos sin procesar útiles para los mineros de datos (como campos separados en la parte inferior de los resultados de la búsqueda). Esta es una función avanzada que no está pensada para la mayoría de los jugadores.",
-    "config.force-full-screen.name": "Forzar pantalla completa",
-    "config.force-full-screen.desc": "Si el menú debe estar siempre a pantalla completa, en lugar de centrado en la ventana. Esto es útil principalmente cuando se visualizan campos de minería de datos.",
     "config.target-redirection.name": "Redirección de objetivos",
     "config.target-redirection.desc": "En algunos casos el juego genera una entidad temporal para representar a otra. Por ejemplo, Abigail en las minas es en realidad un NPC temporal con el nombre 'AbigailMine', por lo que buscarla allí no mostrará la información real de Abigail. Con esta opción activada, Lookup Anything buscará la Abigail original en su lugar.",
     "config.scroll-amount.name": "Cantidad de desplazamiento",

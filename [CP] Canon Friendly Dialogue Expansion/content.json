@@ -1,5 +1,5 @@
 {
-    "Format": "1.19.0",
+    "Format": "2.0.0",
     "Changes": [
         {
             "LogName": "Abigail",
@@ -177,31 +177,22 @@
             "FromFile": "Data/NPCs/Wizard.json"
         },
         {
-            "LogName": "Festival Y2",
-            "Action": "Include",
-            "FromFile": "Data/Festivals/Y2.json",
-            "When":
-            {
-                "Year": "2"
-            }
-        },
-        {
-            "LogName": "Festival Y3",
+            "LogName": "Festival Alt",
             "Action": "Include",
             "FromFile": "Data/Festivals/Y3.json",
             "When":
             {
-                "Year": "3"
+                "Year": "3, 4"
             }
         },
         {
-            "LogName": "Festival Randomized (After Y3)",
+            "LogName": "Festival Randomized (After Y4)",
             "Action": "Include",
-            "FromFile": "Data/Festivals/Y{{Random:null, 2, 3}}.json",
+            "FromFile": "Data/Festivals/Y{{Random:null, 3}}.json",
             "When":
             {
                 "HasFile:{{FromFile}}": true,
-                "Year |contains= 1, 2, 3": false
+                "Year |contains= 1, 2, 3, 4": false
             }
         },
         {

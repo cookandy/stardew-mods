@@ -1,0 +1,40 @@
+{
+
+    "Changes": [
+        {
+            "Action": "Load", "Priority": "Low",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/MorrisLedger",
+            "FromFile": "assets/CharacterFiles/Shops/Ledgers/JojaLedger.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "FlashShifter.StardewValleyExpandedCP_MorrisLedger": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+							"Dialogues": [
+                                {
+                                "Id": "FlashShifter.StardewValleyExpandedCP_Default",
+                                "Dialogue": "", 
+                                },
+							],
+                            "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\MorrisLedger"
+                        }
+                    ],
+
+                    "Items": [
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Grandpas_Farm_Morris_Property_Deed",
+                            "ItemId": "FlashShifter.StardewValleyExpandedCP_Property_Deed",
+                            "Price": 250000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Global"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,298 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Sophia's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Sophia_Spring, Portraits/Sophia_Fall, Portraits/Sophia_Winter_Indoor, Portraits/Sophia_Winter_Outdoor, Portraits/Sophia_Fall_Makeup, Portraits/Sophia_Winter_Indoor_Makeup, Portraits/Sophia_Winter_Outdoor_Makeup, Portraits/Sophia_FlowerDance, Portraits/Sophia_SpiritsEve, Characters/Sophia_Spring, Characters/Sophia_Fall, Characters/Sophia_Winter_Outdoor, Characters/Sophia_Winter_Indoor, Characters/Sophia_FlowerDance, Characters/Sophia_SpiritsEve, Portraits/Sophia_Spring_Makeup, Portraits/Sophia_Spring_Outdoor_Rain, Portraits/Sophia_Spring_Outdoor_Rain_Makeup, Portraits/Sophia_Spring_Indoor_Rain, Portraits/Sophia_Spring_Indoor_Rain_Makeup, Portraits/Sophia_Summer_Indoor_Rain, Portraits/Sophia_Summer_Indoor_Sun, Portraits/Sophia_Summer_Indoor_Rain_Makeup, Portraits/Sophia_Summer_Indoor_Sun_Makeup, Portraits/Sophia_Summer_Outdoor_Rain, Portraits/Sophia_Summer_Outdoor_Sun, Portraits/Sophia_Summer_Outdoor_Rain_Makeup, Portraits/Sophia_Summer_Outdoor_Sun_Makeup, Characters/Sophia_Spring_Outdoor_Rain, Characters/Sophia_Spring_Indoor_Rain, Characters/Sophia_Summer_Indoor_Rain, Characters/Sophia_Summer_Indoor_Sun, Characters/Sophia_Summer_Outdoor_Rain, Characters/Sophia_Summer_Outdoor_Sun, Portraits/Sophia_Luau, Portraits/Sophia_MoonlightJellies, Portraits/Sophia_EggFestival, Characters/Sophia_Luau, Characters/Sophia_MoonlightJellies, Characters/Sophia_EggFestival",
+			"FromFile": "assets/{{TargetPathOnly}}/Sophia/{{TargetWithoutPath}}.png"
+		},
+		
+		//OLDER VARIANT OVERLAY
+		
+		{
+            "LogName": "Sophia Older Overlay",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia_Spring, Portraits/Sophia_Summer, Portraits/Sophia_Fall, Portraits/Sophia_Winter_Outdoor, Portraits/Sophia_Winter_Indoor, Portraits/Sophia_FlowerDance, Portraits/Sophia_Luau, Portraits/Sophia_MoonlightJellies, Portraits/Sophia_EggFestival, Portraits/Sophia_Spring_Outdoor_Rain, Portraits/Sophia_Spring_Indoor_Rain, Portraits/Sophia_Summer_Indoor_Rain, Portraits/Sophia_Summer_Indoor_Sun, Portraits/Sophia_Summer_Outdoor_Rain, Portraits/Sophia_Summer_Outdoor_Sun",
+            "FromFile": "assets/Portraits/Sophia/Sophia_Older_Overlay.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "OlderSophia": "true",
+            }
+        },
+        {
+            "LogName": "Sophia Older Overlay Makeup",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia_Spring_Makeup, Portraits/Sophia_Fall_Makeup, Portraits/Sophia_Winter_Outdoor_Makeup, Portraits/Sophia_Winter_Indoor_Makeup, Portraits/Sophia_SpiritsEve, Portraits/Sophia_Spring_Outdoor_Rain_Makeup, Portraits/Sophia_Spring_Indoor_Rain_Makeup, Portraits/Sophia_Summer_Indoor_Rain_Makeup, Portraits/Sophia_Summer_Indoor_Sun_Makeup, Portraits/Sophia_Summer_Outdoor_Rain_Makeup, Portraits/Sophia_Summer_Outdoor_Sun_Makeup",
+            "FromFile": "assets/Portraits/Sophia/Sophia_Older_MU_Overlay.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "OlderSophia": "true",
+            }
+        },
+		
+		//Extra Glasses Overlay for Older Sophia only
+		{
+            "LogName": "Sophia Sunglasses Overlay",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia_Summer_Outdoor_Sun, Portraits/Sophia_Summer_Outdoor_Sun_Makeup, Portraits/Sophia_Luau",
+            "FromFile": "assets/Portraits/Sophia/Sophia_glasses_older_overlay.png",
+			"Update": "OnLocationChange",
+            "When":
+            {
+				"OlderSophia": "true",			
+            },
+            "PatchMode": "Overlay"
+        },	
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Sophia Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Sophia", "Appearance"],
+			"Entries": {
+				
+				//Spring Outfits
+				"{{ModId}}.SophiaSpring": {
+					"Id": "{{ModId}}.SophiaSpring",
+					"Condition": "SEASON spring, !WEATHER Target Rain Storm GreenRain",
+					"Sprite": "Characters/Sophia_Spring",
+					"Portrait": "Portraits/Sophia_Spring",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SophiaSpringMakeup": {
+					"Id": "{{ModId}}.SophiaSpringMakeup",
+					"Condition": "SEASON spring, DAY_OF_WEEK Friday Saturday Sunday, !WEATHER Target Rain Storm GreenRain",
+					"Sprite": "Characters/Sophia_Spring",
+					"Portrait": "Portraits/Sophia_Spring_Makeup",
+					"Precedence": -200,
+				},
+				
+					//Rain, Indoors
+					
+				"{{ModId}}.SophiaSpringIndoorRain": {
+					"Id": "{{ModId}}.SophiaSpringIndoorRain",
+					"Condition": "SEASON spring, WEATHER Target Rain Storm GreenRain",
+					"Sprite": "Characters/Sophia_Spring_Indoor_Rain",
+					"Portrait": "Portraits/Sophia_Spring_Indoor_Rain",
+					"Outdoors": false,
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.SophiaSpringMakeupIndoorRain": {
+					"Id": "{{ModId}}.SophiaSpringMakeupIndoorRain",
+					"Condition": "SEASON spring, DAY_OF_WEEK Friday Saturday Sunday, WEATHER Target Rain Storm GreenRain",
+					"Sprite": "Characters/Sophia_Spring_Indoor_Rain",
+					"Portrait": "Portraits/Sophia_Spring_Indoor_Rain_Makeup",
+					"Outdoors": false,
+					"Precedence": -210,
+				},
+				
+					//Rain, Outdoors
+				
+				"{{ModId}}.SophiaSpringOutdoorRain": {
+					"Id": "{{ModId}}.SophiaSpringOutdoorRain",
+					"Condition": "SEASON spring, WEATHER Target Rain Storm GreenRain",
+					"Sprite": "Characters/Sophia_Spring_Outdoor_Rain",
+					"Portrait": "Portraits/Sophia_Spring_Outdoor_Rain",
+					"Indoors": false,
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.SophiaSpringMakeupOutdoorRain": {
+					"Id": "{{ModId}}.SophiaSpringMakeupOutdoorRain",
+					"Condition": "SEASON spring, DAY_OF_WEEK Friday Saturday Sunday, WEATHER Target Rain Storm GreenRain",
+					"Sprite": "Characters/Sophia_Spring_Outdoor_Rain",
+					"Portrait": "Portraits/Sophia_Spring_Outdoor_Rain_Makeup",
+					"Indoors": false,
+					"Precedence": -210,
+				},
+				
+				//Summer Outfits
+				
+					//Sun, Indoors
+					
+				"{{ModId}}.SophiaSummerIndoorSun": {
+					"Id": "{{ModId}}.SophiaSummerIndoorSun",
+					"Condition": "SEASON summer",
+					"Sprite": "Characters/Sophia_Summer_Indoor_Sun",
+					"Portrait": "Portraits/Sophia_Summer_Indoor_Sun",
+					"Outdoors": false,
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.SophiaSummerMakeupIndoorSun": {
+					"Id": "{{ModId}}.SophiaSummerMakeupIndoorSun",
+					"Condition": "SEASON summer, DAY_OF_WEEK Friday Saturday Sunday",
+					"Sprite": "Characters/Sophia_Summer_Indoor_Sun",
+					"Portrait": "Portraits/Sophia_Summer_Indoor_Sun_Makeup",
+					"Outdoors": false,
+					"Precedence": -210,
+				},
+				
+					//Sun, Outdoors
+				
+				"{{ModId}}.SophiaSummerOutdoorSun": {
+					"Id": "{{ModId}}.SophiaSummerOutdoorSun",
+					"Condition": "SEASON summer",
+					"Sprite": "Characters/Sophia_Summer_Outdoor_Sun",
+					"Portrait": "Portraits/Sophia_Summer_Outdoor_Sun",
+					"Indoors": false,
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.SophiaSummerMakeupOutdoorSun": {
+					"Id": "{{ModId}}.SophiaSummerMakeupOutdoorSun",
+					"Condition": "SEASON summer, DAY_OF_WEEK Friday Saturday Sunday",
+					"Sprite": "Characters/Sophia_Summer_Outdoor_Sun",
+					"Portrait": "Portraits/Sophia_Summer_Outdoor_Sun_Makeup",
+					"Indoors": false,
+					"Precedence": -210,
+				},
+
+					//Rain, Indoors
+					
+				"{{ModId}}.SophiaSummerIndoorRain": {
+					"Id": "{{ModId}}.SophiaSummerIndoorRain",
+					"Condition": "SEASON summer, WEATHER Target Rain Storm GreenRain",
+					"Sprite": "Characters/Sophia_Summer_Indoor_Rain",
+					"Portrait": "Portraits/Sophia_Summer_Indoor_Rain",
+					"Outdoors": false,
+					"Precedence": -140,
+				},
+				
+				"{{ModId}}.SophiaSummerMakeupIndoorRain": {
+					"Id": "{{ModId}}.SophiaSummerMakeupIndoorRain",
+					"Condition": "SEASON summer, DAY_OF_WEEK Friday Saturday Sunday, WEATHER Target Rain Storm GreenRain",
+					"Sprite": "Characters/Sophia_Summer_Indoor_Rain",
+					"Portrait": "Portraits/Sophia_Summer_Indoor_Rain_Makeup",
+					"Outdoors": false,
+					"Precedence": -220,
+				},
+				
+					//Rain, Outdoors
+				
+				"{{ModId}}.SophiaSummerOutdoorRain": {
+					"Id": "{{ModId}}.SophiaSummerOutdoorRain",
+					"Condition": "SEASON summer, WEATHER Target Rain Storm GreenRain",
+					"Sprite": "Characters/Sophia_Summer_Outdoor_Rain",
+					"Portrait": "Portraits/Sophia_Summer_Outdoor_Rain",
+					"Indoors": false,
+					"Precedence": -140,
+				},
+				
+				"{{ModId}}.SophiaSummerMakeupOutdoorRain": {
+					"Id": "{{ModId}}.SophiaSummerMakeupOutdoorRain",
+					"Condition": "SEASON summer, DAY_OF_WEEK Friday Saturday Sunday, WEATHER Target Rain Storm GreenRain",
+					"Sprite": "Characters/Sophia_Summer_Outdoor_Rain",
+					"Portrait": "Portraits/Sophia_Summer_Outdoor_Rain_Makeup",
+					"Indoors": false,
+					"Precedence": -220,
+				},
+				
+				//Fall Outfits
+				
+				"{{ModId}}.SophiaFall": {
+					"Id": "{{ModId}}.SophiaFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Sophia_Fall",
+					"Portrait": "Portraits/Sophia_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SophiaFallMakeup": {
+					"Id": "{{ModId}}.SophiaFallMakeup",
+					"Condition": "SEASON Fall, DAY_OF_WEEK Friday Saturday Sunday",
+					"Sprite": "Characters/Sophia_Fall",
+					"Portrait": "Portraits/Sophia_Fall_Makeup",
+					"Precedence": -200,
+				},
+				
+				//Winter Outfits
+				
+				"{{ModId}}.SophiaWinterIndoor": {
+					"Id": "{{ModId}}.SophiaWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Sophia_Winter_Indoor",
+					"Portrait": "Portraits/Sophia_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SophiaWinterOutdoor": {
+					"Id": "{{ModId}}.SophiaWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Sophia_Winter_Outdoor",
+					"Portrait": "Portraits/Sophia_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SophiaWinterIndoorMakeup": {
+					"Id": "{{ModId}}.SophiaWinterIndoorMakeup",
+					"Condition": "SEASON Winter, DAY_OF_WEEK Friday Saturday Sunday",
+					"Sprite": "Characters/Sophia_Winter_Indoor",
+					"Portrait": "Portraits/Sophia_Winter_Indoor_Makeup",
+					"Outdoors": false,
+					"Precedence": -200,
+				},
+				
+				"{{ModId}}.SophiaWinterOutdoorMakeup": {
+					"Id": "{{ModId}}.SophiaWinterOutdoorMakeup",
+					"Condition": "SEASON Winter, DAY_OF_WEEK Friday Saturday Sunday",
+					"Sprite": "Characters/Sophia_Winter_Outdoor",
+					"Portrait": "Portraits/Sophia_Winter_Outdoor_Makeup",
+					"Indoors": false,
+					"Precedence": -200,
+				},
+
+				//Festival Outfits
+				
+				"{{ModId}}.SophiaEggFestival": {
+					"Id": "{{ModId}}.SophiaEggFestival",
+					"Condition": "IS_EVENT festival_spring13",
+					"Sprite": "Characters/Sophia_EggFestival",
+					"Portrait": "Portraits/Sophia_EggFestival",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SophiaFlowerDance": {
+					"Id": "{{ModId}}.SophiaFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/Sophia_FlowerDance",
+					"Portrait": "Portraits/Sophia_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SophiaLuau": {
+					"Id": "{{ModId}}.SophiaLuau",
+					"Condition": "IS_EVENT festival_summer11",
+					"Sprite": "Characters/Sophia_Luau",
+					"Portrait": "Portraits/Sophia_Luau",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SophiaJellies": {
+					"Id": "{{ModId}}.SophiaJellies",
+					"Condition": "IS_EVENT festival_summer28",
+					"Sprite": "Characters/Sophia_MoonlightJellies",
+					"Portrait": "Portraits/Sophia_MoonlightJellies",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SophiaSpirit": {
+					"Id": "{{ModId}}.SophiaSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+					"Sprite": "Characters/Sophia_SpiritsEve",
+					"Portrait": "Portraits/Sophia_SpiritsEve",
+					"Precedence": -1000,
+				},	
+			},
+		},
+	]
+}

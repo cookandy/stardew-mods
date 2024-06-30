@@ -1,0 +1,145 @@
+{
+	"Changes": [
+	
+		//ORIGINAL GUNTHER
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Gunther's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Gunther_Spring, Portraits/Gunther_Summer, Portraits/Gunther_Fall, Portraits/Gunther_Winter, Characters/Gunther_Spring, Characters/Gunther_Summer, Characters/Gunther_Fall, Characters/Gunther_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/Gunther/{{TargetWithoutPath}}.png",
+		},
+		
+		//Nose not needed for this - no relevant sprites.
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Gunther Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Gunther", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.GuntherSpring": {
+					"Id": "{{ModId}}.GuntherSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Gunther_Spring",
+					"Portrait": "Portraits/Gunther_Spring",
+					"Precedence": -130,
+				},
+
+				"{{ModId}}.GuntherSummer": {
+					"Id": "{{ModId}}.GuntherSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Gunther_Summer",
+					"Portrait": "Portraits/Gunther_Summer",
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.GuntherFall": {
+					"Id": "{{ModId}}.GuntherFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Gunther_Fall",
+					"Portrait": "Portraits/Gunther_Fall",
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.GuntherWinter": {
+					"Id": "{{ModId}}.GuntherWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Gunther_Winter",
+					"Portrait": "Portraits/Gunther_Winter",
+					"Precedence": -130,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.GuntherSpirit": {
+					"Id": "{{ModId}}.GuntherSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+					"Sprite": "Characters/Gunther_SpiritsEve",
+					"Portrait": "Portraits/Gunther_SpiritsEve",
+					"Precedence": -1001,
+				},
+			},
+		},
+		
+		//GUNTHER SILVIAN
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load SVE Gunther's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/GuntherSilvian_Spring, Portraits/GuntherSilvian_Summer, Portraits/GuntherSilvian_Fall, Portraits/GuntherSilvian_Winter, Portraits/GuntherSilvian_FlowerDance, Portraits/GuntherSilvian_SpiritsEve, Characters/GuntherSilvian_Spring, Characters/GuntherSilvian_Summer, Characters/GuntherSilvian_Fall, Characters/GuntherSilvian_Winter, Characters/GuntherSilvian_FlowerDance, Characters/GuntherSilvian_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/GuntherSilvian/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "SVE Gunther Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["GuntherSilvian", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.GuntherSilvianSpring": {
+					"Id": "{{ModId}}.GuntherSilvianSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/GuntherSilvian_Spring",
+					"Portrait": "Portraits/GuntherSilvian_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.GuntherSilvianSummer": {
+					"Id": "{{ModId}}.GuntherSilvianSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/GuntherSilvian_Summer",
+					"Portrait": "Portraits/GuntherSilvian_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.GuntherSilvianFall": {
+					"Id": "{{ModId}}.GuntherSilvianFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/GuntherSilvian_Fall",
+					"Portrait": "Portraits/GuntherSilvian_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.GuntherSilvianWinterIndoor": {
+					"Id": "{{ModId}}.GuntherSilvianWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/GuntherSilvian_Winter",
+					"Portrait": "Portraits/GuntherSilvian_Winter",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.GuntherSilvianFlowerDance": {
+					"Id": "{{ModId}}.GuntherSilvianFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/GuntherSilvian_FlowerDance",
+					"Portrait": "Portraits/GuntherSilvian_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.GuntherSilvianSpirit": {
+					"Id": "{{ModId}}.GuntherSilvianSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+					"Sprite": "Characters/GuntherSilvian_SpiritsEve",
+					"Portrait": "Portraits/GuntherSilvian_SpiritsEve",
+					"Precedence": -1000,
+				},
+			},
+		},
+	]
+}

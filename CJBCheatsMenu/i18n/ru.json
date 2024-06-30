@@ -56,7 +56,7 @@
     "farm.instant-build": "Мгновенное строительство",
     "farm.auto-feed-animals": "Автоматическая подкормка животных",
     "farm.auto-pet-animals": "Автоматическое приласкивание животных",
-    "farm.auto-pet-pets": "Auto-Pet Pets", // TODO
+    "farm.auto-pet-pets": "Автоматическое приласкивание домашних животных",
     "farm.infinite-hay": "Бесконечное сено",
 
     // fishing
@@ -83,7 +83,6 @@
     "skills.increase-foraging": "Увеличить ур. Собирательства: {{currentLevel}}",
     "skills.increase-fishing": "Увеличить ур. Рыбалки: {{currentLevel}}",
     "skills.increase-combat": "Увеличить ур. Боевых навыков: {{currentLevel}}",
-    "skills.reset": "СБРОСИТЬ ВСЕ НАВЫКИ!",
 
     // professions
     "professions.title": "Профессии",
@@ -124,6 +123,7 @@
     *********/
     "weather.title": "Погода",
     "weather.current": "Состояние погоды на завтра",
+    "weather.explanation": "Click a button below to set the weather for tomorrow (and only tomorrow). This tab has zero effect on weather otherwise.", // TODO
     "weather.sunny": "Солнечно",
     "weather.raining": "Дождь",
     "weather.lightning": "Гроза",
@@ -142,6 +142,8 @@
     /*********
     ** Warps tab
     *********/
+    "warp.customized-warning": "These warps were edited by your mods. Please report warp issues to the mods which added them if applicable.", // TODO
+
     // main areas
     "warp-section.main": "Главные локации",
     "warp.farm": "Ферма",
@@ -163,6 +165,7 @@
     // forest
     "warp-section.forest": "Лес",
     "warp.hats": "Разрушенный дом",
+    "warp.mastery-cave": "Mastery Cave", // TODO
     "warp.ranch": "Ранчо Марни",
     "warp.secret-woods": "Тайный лес",
     "warp.wizard-tower": "Башня волшебника",
@@ -225,7 +228,7 @@
     "flags.unlocked.room": "Комната: {{name}}",
     "flags.unlocked-content": "Разблокировать контент",
     "flags.unlocked-content.dyes-and-tailoring": "Перекраска и шитьё",
-    "flags.unlocked-content.junimo-text": "Can read Junimo text", // TODO
+    "flags.unlocked-content.junimo-text": "Изучен язык Джунимо",
     "flags.community-center": "Клуб",
     "flags.community-center.door-unlocked": "Открыть дверь",
     "flags.jojamart.membership": "Членство в корпорации \"ДжоджаМарт\"",
@@ -242,5 +245,20 @@
     "controls.grow-crops": "Вырастить посевные культуры",
     "controls.grow-radius": "Радиус произрастания флоры от игрока",
     "controls.reset-controls": "Сбросить настройки управления данной модификации",
-    "controls.press-new-key": "Нажмите новую клавишу..."
+    "controls.press-new-key": "Нажмите новую клавишу...",
+
+
+    /*********
+    ** Generic Mod Config Menu UI
+    *********/
+    // TODO
+    "config.open-menu.desc": "The keybind which opens the menu (when no other menu is open).",
+    "config.freeze-time.desc": "The keybind which freezes the game clock.",
+    "config.grow-tree.desc": "The keybind held to grow trees around the player.",
+    "config.grow-crops.desc": "The keybind held to grow crops around the player.",
+
+    "config.title.other-options": "Other options",
+    "config.default-tab.name": "Default tab",
+    "config.default-tab.desc": "The tab shown by default when you open the menu.",
+    "config.other-options": "To configure cheats, press the 'open menu' key shown above in-game. Make sure you press it after loading the save, when no other menu or dialogue is open."
 }

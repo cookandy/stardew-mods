@@ -27,7 +27,7 @@
     "player.instant-cooldowns": "무기 즉시 재사용 대기 시간",
     "player.inventory-size": "가방 크기",
     "player.movement-speed": "이동 속도",
-    "player.movement-speed.default": "기본",
+    "player.movement-speed.default": "기본 이동 속도",
     "player.one-hit-kill": "한방에 처치",
     "player.max-daily-luck": "매일 최상의 행운",
 
@@ -52,7 +52,7 @@
     // farm
     "farm.title": "농장",
     "farm.auto-water": "작물 자동 물주기",
-    "farm.durable-fences": "울타리 유실 방지",
+    "farm.durable-fences": "울타리 부식 방지",
     "farm.instant-build": "농장 건물 건설 즉시 완성",
     "farm.auto-feed-animals": "사료 자동 급식",
     "farm.auto-pet-animals": "애완동물 자동 물그릇",
@@ -83,7 +83,6 @@
     "skills.increase-foraging": "채집 레벨 UP: {{currentLevel}}",
     "skills.increase-fishing": "낚시 레벨 UP: {{currentLevel}}",
     "skills.increase-combat": "전투 레벨 UP: {{currentLevel}}",
-    "skills.reset": "스킬 초기화하기!",
 
     // professions
     "professions.title": "직업 변경",
@@ -124,6 +123,7 @@
     *********/
     "weather.title": "내일의 날씨",
     "weather.current": "현재 설정된 내일의 날씨",
+    "weather.explanation": "Click a button below to set the weather for tomorrow (and only tomorrow). This tab has zero effect on weather otherwise.", // TODO
     "weather.sunny": "맑음",
     "weather.raining": "비",
     "weather.lightning": "폭풍(번개)",
@@ -142,6 +142,8 @@
     /*********
     ** Warps tab
     *********/
+    "warp.customized-warning": "These warps were edited by your mods. Please report warp issues to the mods which added them if applicable.", // TODO
+
     // main areas
     "warp-section.main": "주요 지역",
     "warp.farm": "농장",
@@ -163,6 +165,7 @@
     // forest
     "warp-section.forest": "숲",
     "warp.hats": "모자쥐 상점",
+    "warp.mastery-cave": "Mastery Cave", // TODO
     "warp.ranch": "마니의 목장",
     "warp.secret-woods": "비밀의 숲",
     "warp.wizard-tower": "마법사의 탑",
@@ -224,10 +227,10 @@
     "flags.unlocked.guild": "모험가 길드",
     "flags.unlocked.room": "방: {{name}}",
     "flags.unlocked-content": "해제되지 않은 콘텐츠",
-    "flags.unlocked-content.dyes-and-tailoring": "염색&코팅",
-    "flags.unlocked-content.junimo-text": "Can read Junimo text", // TODO
+    "flags.unlocked-content.dyes-and-tailoring": "염색&재봉틀",
+    "flags.unlocked-content.junimo-text": "주니모 글씨 읽기 가능",
     "flags.community-center": "마을 회관",
-    "flags.community-center.door-unlocked": "잠긴 문 열기",
+    "flags.community-center.door-unlocked": "마을회관 잠긴 문 열기",
     "flags.jojamart.membership": "조자마트 회원권",
 
 
@@ -242,5 +245,20 @@
     "controls.grow-crops": "작물 즉시 성장",
     "controls.grow-radius": "플레이어 주변 거리 증가",
     "controls.reset-controls": "초기화 하기",
-    "controls.press-new-key": "새로운 단축키를 입력하세요..."
+    "controls.press-new-key": "새로운 단축키를 입력하세요...",
+
+
+    /*********
+    ** Generic Mod Config Menu UI
+    *********/
+    // TODO
+    "config.open-menu.desc": "The keybind which opens the menu (when no other menu is open).",
+    "config.freeze-time.desc": "The keybind which freezes the game clock.",
+    "config.grow-tree.desc": "The keybind held to grow trees around the player.",
+    "config.grow-crops.desc": "The keybind held to grow crops around the player.",
+
+    "config.title.other-options": "Other options",
+    "config.default-tab.name": "Default tab",
+    "config.default-tab.desc": "The tab shown by default when you open the menu.",
+    "config.other-options": "To configure cheats, press the 'open menu' key shown above in-game. Make sure you press it after loading the save, when no other menu or dialogue is open."
 }

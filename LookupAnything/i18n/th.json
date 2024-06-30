@@ -2,6 +2,10 @@
     /*********
     ** Generic translations
     *********/
+    // language info
+    "generic.list-separator": ", ", // text between listed values (like ", " in "A, B, C")
+    "generic.line-wrap-on": "",     // characters after which we can line-wrap text if needed, even if there's no space
+
     // date names
     "generic.now": "ขณะนี้",
     "generic.tomorrow": "พรุ่งนี้",
@@ -27,6 +31,7 @@
     "generic.price": "{{price}}g",
     "generic.price-for-quality": "{{price}}g ({{quality}})",
     "generic.price-for-stack": "{{price}}g สำหรับปริมาณ {{count}} ชิ้น",
+    "generic.show-x-results": "show {{count}} results", // TODO
 
     // types
     "type.building": "สิ่งก่อสร้าง",
@@ -44,6 +49,9 @@
     "quality.silver": "ดาวเงิน",
     "quality.gold": "ดาวทอง",
     "quality.iridium": "อิริเดียม",
+
+    // item names shown in recipes
+    "item.wild-seeds": "Wild Seeds (Any)", // TODO
 
     // NPC friendship
     "friendship-status.friendly": "เพื่อน",
@@ -87,110 +95,29 @@
     "data.npc.trash-bear.description": "วิญญาณที่แสนเป็นมิตร ผู้คอยช่วยจัดการกับขยะ",
 
     // item types
-    "data.type.debris": "ซากผุพัง",
-    "data.type.stone": "ก้อนหิน",
     "data.type.container": "ภาชนะ",
 
-    // farm items
+    // override item text
     "data.item.egg-incubator.description": "ใช้ฟักไข่ให้กลายเป็น ลูกเจี๊ยบ หรือลูกเป็ด",
-    "data.item.broken-branch.name": "กิ่งไม้หัก",
-    "data.item.broken-branch.description": "กิ่งไม้หัก เมื่อสับด้วยขวาน จะได้เป็นท่อนไม้ (Wood)",
-    "data.item.stone.name": "ก้อนหิน",
-    "data.item.stone.description": "ก้อนหินสีเทาที่ระบุประเภทไม่ได้ เมื่อทำลายมันจะได้รับ ก้อนหิน (Stone)",
-    "data.item.geode.name": "ผลึกโพรง",
-    "data.item.geode.description": "เมื่อทำลายมันจะได้รับ ผลึกโพรง (Geodes)",
-    "data.item.frozen-geode.name": "ก้อนผลึกโพรงน้ำแข็ง",
-    "data.item.frozen-geode.description": "เมื่อทำลายมันจะได้รับ ผลึกโพรงน้ำแข็ง (Frozen Geodes)",
-    "data.item.magma-geode.name": "ก้อนผลึกโพรงแม็กม่า",
-    "data.item.magma-geode.description": "เมื่อทำลายมันจะได้รับ ผลึกโพรงแม็กม่า (Magma Geodes)",
-
-    // weeds & crystals
-    "data.item.weed.name": "วัชพืช",
-    "data.item.weed.description": "วัชพืชที่ระบุประเภทไม่ได้ มีโอกาสได้รับ ใยพืช (Fibers) หรือ เมล็ดพันธุ์คละชนิด (Mixed Seeds)",
-    "data.item.fertile-weed.name": "วัชพืชเจริญพันธุ์",
-    "data.item.fertile-weed.description": "จะได้รับ เมล็ดพันธุ์คละชนิด (Mixed Seeds) ทุกครั้ง",
-    "data.item.ice-crystal.name": "คริสตัลน้ำแข็ง",
-    "data.item.ice-crystal.description": "คริสตัลน้ำแข็งที่ระบุประเภทไม่ได้ มีโอกาสเล็กน้อยที่จะได้รับควอตซ์บริสุทธิ์ (Refined Quartz)",
-
-    // mine gems
-    "data.item.amethyst-node.name": "ก้อนอเมทิสต์",
-    "data.item.amethyst-node.description": "เมื่อทำลายมันจะได้ รับอเมทิสต์ (Amethyst)",
-    "data.item.aquamarine-node.name": "ก้อนอะความารีน",
-    "data.item.aquamarine-node.description": "เมื่อทำลายมันจะได้รับ อะความารีน (Aquamarine)",
-    "data.item.diamond-node.name": "ก้อนเพชร",
-    "data.item.diamond-node.description": "เมื่อทำลายมันจะได้รับ เพชร (Diamond)",
-    "data.item.emerald-node.name": "ก้อนมรกต",
-    "data.item.emerald-node.description": "เมื่อทำลายมันจะได้รับ มรกต (Emerald)",
-    "data.item.gem-node.name": "ก้อนแร่อัญมณี",
-    "data.item.gem-node.description": "เมื่อทำลายมันจะได้รับ มรกต (Emerald), อะความารีน (Aquamarines), ทับทิม (Ruby), อเมทิสต์ (Amethyst), โทแพส (Topaz), หยก (Jade), หรือ เพชร (Diamond)",
-    "data.item.jade-node.name": "ก้อนหยก",
-    "data.item.jade-node.description": "เมื่อทำลายมันจะได้รับ หยก (Jade)",
-    "data.item.mystic-stone.name": "ก้อนหินปริศนา",
-    "data.item.mystic-stone.description": "เมื่อทำลายมันจะได้รับ อัญมณีหายาก (Rare Gems) หรือ แร่ (Ores), รวมถึง สะเก็ดแก้วปริซึม (Prismatic Shard)",
-    "data.item.prismatic-node.name": "ก้อนสะเก็ดแก้วปริซึม",
-    "data.item.prismatic-node.description": "เมื่อทำลายมันจะได้รับ (Prismatic shard)",
-    "data.item.ruby-node.name": "ก้อนทับทิม",
-    "data.item.ruby-node.description": "เมื่อทำลายมันจะได้รับ ทับทิม (Ruby)",
-    "data.item.topaz-node.name": "ก้อนโทแพส",
-    "data.item.topaz-node.description": "เมื่อทำลายมันจะได้รับ โทแพส (Topaz)",
-
-    // mine ores
-    "data.item.cinder-shard-node.name": "ก้อนสะเก็ดแม็กม่า",
-    "data.item.cinder-shard-node.description": "เมื่อทำลายมันจะได้รับ สะเก็ดแม็กม่า (Cinder Shards)",
-    "data.item.copper-node.name": "ก้อนแร่ทองแดง",
-    "data.item.copper-node.description": "เมื่อทำลายมันจะได้รับ แร่ทองแดง (Copper Ore)",
-    "data.item.gold-node.name": "ก้อนแร่ทองคำ",
-    "data.item.gold-node.description": "เมื่อทำลายมันจะได้รับ แร่ทองคำ (Gold Ore)",
-    "data.item.iridium-node.name": "ก้อนแร่อิริเดียม",
-    "data.item.iridium-node.description": "เมื่อทำลายมันจะได้รับ แร่อิริเดียม (Iridium Ore)",
-    "data.item.iron-node.name": "ก้อนแร่เหล็ก",
-    "data.item.iron-node.description": "เมื่อทำลายมันจะได้รับ แร่เหล็ก (Iron Ore)",
-    "data.item.omni-geode-node.name": "ก้อนผลึกโพรงผสม",
-    "data.item.omni-geode-node.description": "เมื่อทำลายมันจะได้รับ ผลึกโพรงผสม (Omni Geode)",
-
-    // mine stones
-    "data.item.colored-stone.name": "หินสี",
-    "data.item.colored-stone.description": "ก้อนหินที่ระบุประเภทไม่ได้ มีโอกาสได้รับ ก้อนหิน (Stone), แร่ (Ores), หรือผลึกโพรง (Geodes)",
-    "data.item.mine-stone.name": "ก้อนหิน",
-    "data.item.mine-stone.description": "เมื่อทำลายมันจะได้รับ ก้อนหิน (Stone) และมีโอกาสจะได้รับ ถ่านหิน (Coal)",
-
-    // other stones
-    "data.item.clay-stone.name": "หินโคลน",
-    "data.item.clay-stone.description": "เมื่อทำลายมันจะได้รับ ดินเหนียว (Clay)",
-    "data.item.fossil-stone.name": "หินฟอสซิล",
-    "data.item.fossil-stone.description": "เมื่อทำลายมันจะได้รับ ฟอสซิล (Fossil) และ กระดูก (Bone)",
-
-    // mine containers
     "data.item.barrel.name": "ถัง",
     "data.item.barrel.description": "เมื่อทำลายมันจะได้รับของจิปาถะ",
     "data.item.box.name": "กล่อง",
     "data.item.box.description": "เมื่อทำลายมันจะได้รับของจิปาถะ",
 
     // location names
-    "location.backwoods": "ป่าด้านหลังฟาร์ม",
-    "location.beach": "ชายหาด",
     "location.beach.east-pier": "ชายหาด (ฝั่งขวา)",
     "location.bugLand": "ลังแมลงกลายพันธุ์",
-    "location.busStop": "ป้ายรถประจำทาง",
-    "location.desert": "ทะเลทราย",
-    "location.farm": "ฟาร์ม",
+    "location.desert.topPond": "desert (north pond)", // TODO
     "location.farmCave": "ถ้ำในฟาร์ม",
     "location.farmHouse": "บ้านของเรา",
-    "location.forest": "ป่า",
-    "location.forest.fish-area-0": "แม่น้ำในป่า",
-    "location.forest.fish-area-1": "ทะลสาบในป่า",
     "location.forest.island-tip": "แม่น้ำในป่า (ปลายทางใต้สุดของเกาะใหญ่กลางแม่น้ำ)",
-    "location.mountain": "ภูเขา",
-    "location.railroad": "ทางรถไฟ",
-    "location.sewer": "ท่อระบายน้ำ",
+    "location.forest.lake": "ทะลสาบในป่า",
+    "location.forest.river": "แม่น้ำในป่า",
     "location.submarine": "เรือดำน้ำในงานตลาดกลางคืน",
-    "location.town": "เมือง",
     "location.town.northmost-bridge": "เมือง (สะพานที่อยู่ทิศเหนือสุดของเมือง)",
-    "location.tunnel": "อุโมงค์รถประจำทาง",
     "location.undergroundMine": "เหมือง",
     "location.undergroundMine.level": "เหมือง ชั้นที่ {{level}}",
     "location.witchSwamp": "บึงน้ำของแม่มด",
-    "location.woods": "ป่าลึกลับ",
 
     "location.caldera": "ปล่องภูเขาไฟของเกาะขิง",
     "location.islandEast": "เกาะขิงฝั่งตะวันออก",
@@ -199,10 +126,41 @@
     "location.islandSouthEast": "เกาะขิงฝั่งตะวันออกเฉียงใต้",
     "location.islandSouthEastCave": "ถ้ำที่เกาะขิงฝั่งตะวันออกเฉียงใต้",
     "location.islandWest": "เกาะขิงฝั่งตะวันตก",
-    "location.islandWest.fish-area-1": "เกาะขิงฝั่งตะวันตก (ทะเล)",
-    "location.islandWest.fish-area-2": "เกาะขิงฝั่งตะวันตก (ทะเลสาบ)",
+    "location.islandWest.freshwater": "เกาะขิงฝั่งตะวันตก (ทะเลสาบ)",
+    "location.islandWest.ocean": "เกาะขิงฝั่งตะวันตก (ทะเล)",
 
+    "location.fish-area": "{{locationName}} ({{areaName}})",
     "location.unknown-fish-area": "{{locationName}} (จุดตกปลา {{id}})",
+
+
+    /*********
+    ** Conditions & context tags
+    *********/
+    // TODO
+    "condition-or-context-tag.negate": "not {{value}}",
+
+    "condition.day-of-month": "on specific days ({{days}})",
+    "condition.day-of-month.even": "even days",
+    "condition.day-of-month.odd": "odd days",
+
+    "condition.item-type.input": "input item",
+    "condition.item-type.target": "target item",
+
+    "condition.raw-context-tag": "context tag \"{{tag}}\"",
+    "condition.raw-condition": "query \"{{tag}}\"",
+
+    "condition.item-context-tag": "{{item}} has context tag {{tags}}",
+    "condition.item-context-tags": "{{item}} has context tags {{tags}}",
+    "condition.item-context-tag.value": "'{{tag}}'", // the format of each context tag in the list (each context tag isn't translated)
+
+    "condition.item-edibility.edible": "{{item}} is edible",
+    "condition.item-edibility.min": "{{item}} has edibility of {{min}} or more",
+    "condition.item-edibility.range": "{{item}} has edibility of {{min}} to {{max}}",
+
+    "context-tag.bone": "any bone",
+    "context-tag.egg": "any egg",
+    "context-tag.large-egg": "any large egg",
+    "context-tag.preserved-item": "preserved {{name}}",
 
 
     /*********
@@ -252,8 +210,7 @@
     "building.output-processing": "กำลังทำผลผลิต",
     "building.output-ready": "ผลผลิตพร้อมใช้งาน",
     "building.slimes.summary": "{{count}} ตัว จากจำนวนสูงสุด {{max}} ตัว",
-    "building.stored-hay.summary-one-silo": "มี {{hayCount}} ฟาง (ความจุสูงสุด: {{maxHay}} ฟาง)",
-    "building.stored-hay.summary-multiple-silos": "มี {{hayCount}} ฟางใน {{siloCount}} ยุ้งฉาง (ความจุสูงสุด: {{maxHay}} ฟาง)",
+    "building.stored-hay.summary": "{{hayCount}} of {{maxHayInLocation}} hay in this location (max capacity in this building: {{maxHayInBuilding}})", // TODO
     "building.upgrades.barn.0": "มีสัตว์เลี้ยงสูงสุด 4 ตัว, สามารถเลี้ยงวัวได้",
     "building.upgrades.barn.1": "มีสัตว์เลี้ยงสูงสุด 8 ตัว, สัตว์เลี้ยงสามารถสืบพันธุ์ได้ และสามารถเลี้ยงแพะได้",
     "building.upgrades.barn.2": "มีสัตว์เลี้ยงสูงสุด 12 ตัว, ให้อาหารอัตโนมัติ, สามารถเลี้ยงหมูและแกะได้",
@@ -353,6 +310,7 @@
     ** Item > generic lookups
     *********/
     // labels
+    "item.custom-item": "Custom item", // TODO
     "item.contents": "รายละเอียด",
     "item.loves-this": "ชอบสิ่งนี้มากๆ",
     "item.likes-this": "ชอบสิ่งนี้",
@@ -371,6 +329,7 @@
     "item.produces-dye": "ทำสีย้อมได้",
 
     // values
+    "item.custom-item.summary": "added by {{modName}}", // TODO
     "item.contents.placed": "{{name}} วางแล้ว",
     "item.contents.ready": "{{name}} พร้อมแล้ว",
     "item.contents.partial": "{{name}} ใน {{time}}",
@@ -383,9 +342,13 @@
     "item.needed-for.gourmet-chef": "ความสำเร็จพ่อครัวหัวป่าก์ (ปรุงอาหาร {{recipes}} เมนู)",
     "item.needed-for.craft-master": "ความสำเร็จนักประดิษฐ์ (สร้าง {{recipes}} อย่าง)",
     "item.needed-for.quests": "เควสปัจจุบัน ({{quests}})",
+    "item.unknown-recipes": "{{count}} unknown recipes", // TODO
     "item.sells-to.shipping-box": "กล่องส่งสินค้า",
     "item.recipes-for-ingredient.entry": "{{name}} (ต้องใช้ {{count}})",
     "item.recipes-for-machine.multiple-items": "{{name}} x{{count}}",
+    "item.recipes-for-machine.same-as-input": "[same as input]", // e.g. crystalarium produces same item that was put in // TODO
+    "item.recipes-for-machine.conditions": "[conditions: {{conditions}}]", // TODO
+    "item.recipes-for-machine.too-complex": "Some machine rules are too dynamic to display.", // TODO
     "item.number-owned.summary": "คุณมีแล้ว {{count}} ชิ้น",
     "item.number-crafted.summary": "คุณสร้างแล้ว {{count}} ชิ้น",
 
@@ -607,7 +570,7 @@
 
     // values
     "puzzle.solution.solved": "แก้ได้แล้ว!",
-    "puzzle.solution.hidden": "เฉลยถูกซ่อนอยู่ในโหมด progression",
+    "puzzle.solution.hidden": "เฉลยถูกซ่อนอยู่ตามการตั้งค่าของคุณ",
 
 
     /*********
@@ -677,7 +640,7 @@
     // labels
     "tree.stage": "ระยะการเจริญเติบโต",
     "tree.next-growth": "การเติบโตถัดไป",
-    "tree.has-seed": "มีเมล็ด",
+    "tree.seed": "มีเมล็ด",
     "tree.is-fertilized": "ใส่ปุ๋ยแล้วหรือยัง",
 
     // values
@@ -687,12 +650,17 @@
     "tree.name.oak": "ต้นโอ๊ก (Oak Tree)",
     "tree.name.palm": "ต้นปาล์ม (Palm Tree)",
     "tree.name.pine": "ต้นสน (Pine Tree)",
+    "tree.name.mossy": "Mossy Tree", // TODO
+    "tree.name.mystic": "Mystic Tree", // TODO
     "tree.name.unknown": "ต้นไม้ไม่ทราบชนิด (Unknown Tree)",
     "tree.stage.done": "โตเต็มที่",
     "tree.stage.partial": "{{stageName}} ({{step}}/{{max}})",
     "tree.next-growth.winter": "ไม่สามารถเติบโตได้ ในสภาพอากาศหนาว ภายนอกเรือนกระจก (Green House)",
     "tree.next-growth.adjacent-trees": "ไม่สามารถเติบโตได้ เนื่องจากมีต้นไม้อยู่ใกล้ ๆ",
     "tree.next-growth.chance": "โอกาส {{chance}}% ที่จะโตเป็น{{stage}}ในวันพรุ่งนี้",
+    "tree.seed.not-ready": "Not ready", // TODO
+    "tree.seed.probability-daily": "{{chance}}% chance of {{itemName}} each day.", // TODO
+    "tree.seed.probability-on-chop": "{{chance}}% chance of dropping {{itemName}} when chopped down.", // TODO
 
     // growth stages
     "tree.stages.seed": "เมล็ดพันธุ์",
@@ -708,14 +676,53 @@
     *********/
     // main options
     "config.title.main-options": "ตัวเลือกหลัก",
-    "config.progression-mode.name": "โหมดความก้าวหน้า",
-    "config.progression-mode.desc": "ซ่อนเนื้อหาบางส่วน (เช่น รสนิยมของขวัญและการแก้ปัญหาปริศนา) จนกว่าคุณจะค้นพบในเกมหรือไม่",
+    "config.force-full-screen.name": "บังคับเต็มหน้าจอ",
+    "config.force-full-screen.desc": "เมนูควรเป็นแบบเต็มหน้าจอเสมอ แทนที่จะอยู่กึ่งกลางหน้าต่าง สิ่งนี้มีประโยชน์อย่างยิ่งเมื่อดูฟิลด์การขุดข้อมูล",
+
+    // progression mode
+    // TODO
+    "config.title.progression": "โหมดความก้าวหน้า",
+
+    "config.progression.show-unknown-gift-tastes.name": "Show unknown gift tastes",
+    "config.progression.show-unknown-gift-tastes.desc": "Whether to show gift tastes you haven't learned about in-game yet (e.g. from dialogue text or experimenting).",
+
+    "config.progression.show-unknown-recipes.name": "Show unknown recipes",
+    "config.progression.show-unknown-recipes.desc": "Whether to show recipes you haven't learned in-game yet.",
+
+    "config.progression.show-puzzle-solutions.name": "Show puzzle solutions",
+    "config.progression.show-puzzle-solutions.desc": "Whether to show puzzle solutions.",
+
+    // gift tastes
+    // TODO
+    "config.title.gift-tastes": "Gift tastes",
+    "config.show-gift-tastes.loved.name": "Show loved gifts",
+    "config.show-gift-tastes.loved.desc": "Whether to show loved gifts in NPC and item lookups.",
+    "config.show-gift-tastes.liked.name": "Show liked gifts",
+    "config.show-gift-tastes.liked.desc": "Whether to show liked gifts in NPC and item lookups.",
+    "config.show-gift-tastes.neutral.name": "Show neutral gifts",
+    "config.show-gift-tastes.neutral.desc": "Whether to show neutral gifts in NPC and item lookups.",
+    "config.show-gift-tastes.disliked.name": "Show disliked gifts",
+    "config.show-gift-tastes.disliked.desc": "Whether to show disliked gifts in NPC and item lookups.",
+    "config.show-gift-tastes.hated.name": "Show hated gifts",
+    "config.show-gift-tastes.hated.desc": "Whether to show hated gifts in NPC and item lookups.",
+
+    "config.show-unowned-gifts.name": "Show unowned gift tastes",
+    "config.show-unowned-gifts.desc": "Whether to show gift tastes for items that the player doesn't own somewhere in the world.",
+
     "config.highlight-unrevealed-gift-tastes.name": "เหตุการณ์ที่สำคัญรสนิยมของขวัญที่ยังไม่ได้เปิดเผย",
-    "config.highlight-unrevealed-gift-tastes.desc": "จะเน้นรสนิยมของขวัญของไอเท็มที่ยังไม่ได้เปิดเผยในโปรไฟล์ NPC หรือไม่ เมื่อเปิดใช้งาน รสนิยมของขวัญที่ยังไม่ได้เปิดเผยจะเป็นตัวหนา และการค้นหาจะแสดงของขวัญที่ไม่ชอบ/เกลียด",
-    "config.show-all-gift-tastes.name": "แสดงรสนิยมของขวัญทั้งหมด",
-    "config.show-all-gift-tastes.desc": "จะแสดงรสนิยมของขวัญทั้งหมดสำหรับ NPC และการค้นหารายการหรือไม่ เมื่อปิดใช้งาน จะแสดงเฉพาะรสนิยมที่เกี่ยวข้องมากที่สุด (เช่น ของขวัญที่รักหรือชอบ)",
-    "config.show-unowned-gifts.name": "Show unowned gift tastes", // TODO
-    "config.show-unowned-gifts.desc": "Whether to show gift tastes for items that the player doesn't own somewhere in the world.", // TODO
+    "config.highlight-unrevealed-gift-tastes.desc": "จะเน้นรสนิยมของขวัญของไอเท็มที่ยังไม่ได้เปิดเผยในโปรไฟล์ NPC หรือไม่ เมื่อเปิดใช้งาน รสนิยมของขวัญที่ยังไม่ได้เปิดเผยจะเป็นตัวหนา",
+
+    // collapse fields
+    // TODO
+    "config.title.collapse-fields": "Collapse large fields",
+
+    "config.collapse-fields.enabled.name": "Enabled",
+    "config.collapse-fields.enabled.desc": "Whether to collapse large fields, so the lookup menu will replace the list with a clickable 'show X values' link to expand it.",
+
+    "config.collapse-fields.building-recipes.name": "Building lookup: recipes",
+    "config.collapse-fields.item-recipes.name": "Item lookup: recipes",
+    "config.collapse-fields.npc-gift-tastes.name": "NPC lookup: gift tastes",
+    "config.collapse-fields.any.desc": "If the field contains this many values, the lookup menu will replace the list with a clickable 'show X values' link to expand it.",
 
     // advanced options
     "config.title.advanced-options": "ตัวเลือกขั้นสูง",
@@ -723,8 +730,6 @@
     "config.tile-lookups.desc": "จะรวมไทล์แผนที่เป็นเป้าหมายการค้นหาหรือไม่",
     "config.data-mining-fields.name": "แสดงเขตข้อมูลการทำเหมืองข้อมูล",
     "config.data-mining-fields.desc": "จะแสดงข้อมูลดิบที่เป็นประโยชน์สำหรับผู้ขุดข้อมูลหรือไม่ (เป็นฟิลด์แยกต่างหากที่ด้านล่างของผลลัพธ์การค้นหา) นี่เป็นคุณสมบัติขั้นสูงที่ไม่ได้มีไว้สำหรับผู้เล่นส่วนใหญ่",
-    "config.force-full-screen.name": "บังคับเต็มหน้าจอ",
-    "config.force-full-screen.desc": "เมนูควรเป็นแบบเต็มหน้าจอเสมอ แทนที่จะอยู่กึ่งกลางหน้าต่าง สิ่งนี้มีประโยชน์อย่างยิ่งเมื่อดูฟิลด์การขุดข้อมูล",
     "config.target-redirection.name": "เป้าหมายการเปลี่ยนเส้นทาง",
     "config.target-redirection.desc": "ในบางกรณี เกมจะสร้างเอนทิตีชั่วคราวเพื่อเป็นตัวแทนของอีกตัวหนึ่ง ตัวอย่างเช่น Abigail ในเหมืองเป็น NPC ชั่วคราวที่ชื่อ 'AbigailMine' ดังนั้นการมองหาเธอที่นั่นจะไม่ใช่การแสดงข้อมูลที่แท้จริงของ Abigail เมื่อเปิดใช้งานตัวเลือกนี้ Lookup Anything จะค้นหา Abigail เดิมแทน",
     "config.scroll-amount.name": "เลื่อนจำนวน",

@@ -1,0 +1,51 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // The Stray Catfe - UPDATE - https://www.nexusmods.com/stardewvalley/mods/16422
+        {
+            "LogName": "[Yagi] The Stray Catfe - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=ch20youk.TSCCP": true
+            },
+            "Entries": {
+                "Tabitha": {
+                    "MarkerCropOffset": 5
+                },
+                "Theo": {
+                    "MarkerCropOffset": 3
+                }
+            }
+        },
+        /*
+        {
+            "LogName": "[Yagi] The Stray Catfe - Location Support",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": {
+                "HasMod: |contains=ch20youk.TSCCP": true
+            },
+            "Entries": {
+                // The Stray Catfe - UPDATE - https://www.nexusmods.com/stardewvalley/mods/16422
+                "Custom_StrayCatfe_CafeOutdoors": {
+                    "MapVectors": [
+                        {
+                            "MapX": 524,
+                            "MapY": 298,
+                            "TileX": 0,
+                            "TileY": 0
+                        },
+                        {
+                            "MapX": 572,
+                            "MapY": 330,
+                            "TileX": 34,
+                            "TileY": 19
+                        }
+                    ],
+                },
+            }
+        },
+        */
+    ]
+}

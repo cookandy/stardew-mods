@@ -6,6 +6,11 @@
 			"Target":"Characters/Dialogue/Sandy",
 			"Entries":
 			{
+				"AcceptGift_(O)279":"A little sweet from my sweetie! Aren't you just the nicest? <$h",
+				"AcceptGift_(O)797":"*gasp* No! You didn't!#$b#You did? You brought me a pearl? Just because?$h#$b#Sweetie. I don't know what to say.",
+				"AcceptGift_(O)74":"Now isn't that the prettiest? I could make the best earrings ever with this!$h",
+				"AcceptGift_(O)446":"Oh, that's nice! <$h#$b#Did this come from your farm? It's awfully generous.",
+				"AcceptGift_(O)905": "*gasp* You're the sweetest, sweetie! <$h#$b#These tropical flavors take me far, far away from this dull desert.",
 				"Mon2":"You made it out here again! I'm so glad.$h#$e#What's new in the valley?",
 				"Mon4":"One time, a couple literally camped out here for their honeymoon. Whatever floats their boat, right?",
 				"Mon6":"I got lunch with Emily not too long ago! It was so great to catch up with her.$h#$e#We talked for a bit about you, actually. All good things, I promise!$h",
@@ -18,7 +23,7 @@
 				"Tue10":"Well gosh! How many times have you ridden that bus out here now?#$e#Hey, I appreciate every visit.",
 				"Wed2":"Hey there, sweetie!$h#$e#How's Emily doing? I hope Haley's not too much of a handful.",
 				"Wed6":"I see all sorts of folks out here. Sometimes, they're on road trips or they work in shipping.#$e#But most regular customers just head for the back room.",
-				"Wed8":"Isn't it expensive, coming to the desert so often like you do?#$e#You must really like to see me, huh? Hmmm... $h",
+				"Wed8":"Isn't it expensive, coming to the desert so often like you do?#$e#You must really like to see me, huh? Hmmm...$h",
 				"Wed10":"Hey, it's @! I'm glad to see you, kid. I was starting to think you'd never come back!#$e#If I didn't have this shop to run I'd come back to the valley with you for a day or two... just you and me on the old farm.$s#$e#You'll just have to visit me more often so I don't get depressed.$h",
 				"Thu4":"Hey... I think I can trust you. You can keep a secret, right?#$b#*whisper* That guy in the back... it's some kind of exclusive club. I've never been inside myself, but they pay me a generous monthly rent so I don't ask any questions.#$e#SOOOOoo! How's that Stardew Valley weather right now?",
 				"Thu6":"Those antenna-like structures northeast of here? No idea.#$e#Apparently, they were featured on an old episode of 'Mysteries of the Unknown.'#$e#They must have been built there for some reason, anyway!",
@@ -38,8 +43,13 @@
 				"Sun6":"I guess I've seen at least one guy from the back room who occasionally heads up north.#$e#I wonder if he's headed for that freakish cavern?$s",
 				"Sun8":"I took a trip to Zuzu City last month. Can't miss out on living it up at the clubs every once in a while!$h#$e#I don't waste a second. I stay out all night.#$e#There are college kids who can't even keep up with me! Heehee!$h",
 				"Sun10":"The cavern? Look, if you've been in there, I don't wanna know.$s#$e#I trust you'd stay safe if you did, though, huh?",
-				"summer_Mon10":"Are my roots showing? My hairdresser canceled on me again.$s#$e#*sigh* It's such a long journey into the city, too, I cant' just reschedule for the next day.$s",
+				"summer_Mon10":"Are my roots showing? My hairdresser canceled on me again.$s#$e#*sigh* It's such a long journey into the city, too, I can't just reschedule for the next day.$s",
 				"summer_Tue10":"How's the desert trader's camel doing? Is she up for some pets?",
+				"summer_Wed":"*sigh*... I do miss the beautiful flowers of Stardew Valley...$s",
+				"summer_Wed2":"I've heard stories about a pot of gold at the end of a rainbow.#$b#I'd love it if I even got to see a rainbow in the first place!",
+				"summer_Wed4":"I saw a hot air balloon soaring through the sky the other week. Who d'you suppose was up there?$h",
+				"summer_Wed6":"Next year's desert festival is so far away... *sigh*$s#$e#Better get used to some lonely months.$s",
+				"summer_Wed8":"I heard there used to be Pepper Rexes wandering this desert in packs, long ago. Imagine that!",
 				"summer_Wed10":"I listen to the radio sometimes. After you hear the same pop song twice an hour for a month, though, it's tough to keep it going.$s",
 				"summer_Thu10":"If you see Emily, be sure to let her know that I'm free to meet up with her at the time she mentioned.",
 				"summer_Fri6":"The desert trader came in and looked around for a bit the other day. She didn't say much. Didn't buy anything, either.#$e#What a mysterious person. I wonder what her real life is like?",
@@ -61,6 +71,7 @@
 				"winter_Fri6":"At least it's a little cooler here in the winter. That sun sure doesn't let up, though.",
 				"winter_Sat10":"Do you go fishing in that pond across the street?#$e#I've seen those fish. I can't imagine eating something like that! Blech.",
 				"winter_Sun10":"What do you think about having a store cat who lives here?#$e#The owner of the building would definitely say no, I'm sure, but I think a cat would love living in the desert.#$e#There's even a mysterious cat totem a stone's throw from here. You've seen it, yeah?",
+				"spring_13":"Wheee! ~ The desert festival starts next week!$h#$e#Things are about to get lively around here!$h"
 			}
 		}
 	]

@@ -6,6 +6,13 @@
 			"Target":"Characters/Dialogue/Robin",
 			"Entries":{
 				"cc_Begin":"Oh, that old Community Center? Yeah, I would fix it up, but Lewis hasn't really been clear with me what he wants to do with it, exactly.",
+				"AcceptGift_(O)373":"Looks like that haunted maze had quite the prize after all! I can't believe you want me to have it!$h",
+				"AcceptGift_(O)797":"@, are you sure?$h#$b#Thank you. I never expected to have a neighbor who's so generous.",
+				"AcceptGift_(O)74":"This is amazing! It'll make for the most beautiful decoration in one of my upcoming projects!$h",
+				"AcceptGift_(O)446":"Very nice! By any chance, did this come from your coop?$h",
+				"AcceptGift_(O)426": "Ooh, what a treat! I know what I'm having for my next snack!$h",
+				"AcceptGift_(O)636": "Well look at this! I always knew you'd wind up growing the very best fruit!$h",
+				"AcceptGift_(O)224": "I was just craving this! It's like you read my mind.$h",
 				"Mon":"Hey there, @.#$e#I was just daydreaming about some new carpentry projects.#$e#Are you doing OK at your place? How's the woodwork in your cottage holding up?",
 				"Mon2":"Have I told you that I built our house from the ground up?#$e#It's definitely been the highlight of my career so far.",
 				"Mon4":"Nahh, I don't go into the mines all that much. Too dark and dangerous.#$e#Let me know if you find anything neat down there, though.",

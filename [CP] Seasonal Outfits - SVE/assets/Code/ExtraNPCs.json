@@ -1,0 +1,179 @@
+{
+	"Changes": [
+		
+	//Cursors from SVE
+
+		{ 
+			"LogName": "Map Edit Cursors for SVE (Morris Joja win/ Morris builder)",
+			"Action": "EditImage",
+			"Target": "Maps/VanillaCursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/Maps/Cursors_{{season}}.png",
+			"FromArea": { "X": 0, "Y": 1387, "Width": 114, "Height": 34 },
+			"ToArea": { "X": 0, "Y": 1387, "Width": 114, "Height": 34 },
+			"When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+
+		{  
+			"LogName": "Map Edit Cursors for SVE 2 (Morris Joja win/ Morris builder)",	  
+			"Action": "EditImage",
+			"Target": "Maps/VanillaCursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/Maps/Cursors_{{season}}.png",
+			"FromArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 },
+			"ToArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 },
+			"When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+
+		{ 	 
+			"LogName": "Map Edit Cursors for SVE 3 (Morris Joja win/ Morris builder)",
+			"Action": "EditImage",
+			"Target": "Maps/VanillaCursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/Maps/Cursors_{{season}}.png",
+			"FromArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 32 },
+			"ToArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 32 },
+			"When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+
+	//Cursors from Vanilla Game
+
+		{
+			"LogName": "Map Edit Cursors for Vanilla (Morris Joja win/ Morris builder)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/Maps/Cursors_{{Season}}.png",
+			"FromArea": { "X": 0, "Y": 1387, "Width": 114, "Height": 34 },
+			"ToArea": { "X": 0, "Y": 1387, "Width": 114, "Height": 34 }
+		},
+
+		{  
+			"LogName": "Map Edit Cursors for Vanilla 2 (Morris Joja win/ Morris builder)",	  
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/Maps/Cursors_{{Season}}.png",
+			"FromArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 },
+			"ToArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 }
+		},
+
+		{ 
+			"LogName": "Map Edit Cursors for Vanilla 3 (Morris Joja win/ Morris builder)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Maps/Cursors_{{Season}}.png",
+			"FromArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 32 },
+			"ToArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 32 }
+		},
+
+
+	// Map edit Movie theaters
+
+	//Movie Theater (community center)
+	
+		{
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet",
+			"When": { "Season |contains=Spring": true },
+			"FromFile": "assets/Maps/MovieTheater_Spring.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet",
+			"When": { "Season |contains=Summer": true },
+			"FromFile": "assets/Maps/MovieTheater_Summer.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet",
+			"When": { "Season |contains=Fall": true },
+			"FromFile": "assets/Maps/MovieTheater_Fall.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_Winter",
+			"When": { "Season |contains=Winter": true },
+			"FromFile": "assets/Maps/MovieTheater_Winter.png"
+		},
+			
+	//Movie Theater (joja)
+	
+		{
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheaterJoja_TileSheet",
+			"When": { "Season |contains=Spring": true },
+			"FromFile": "assets/Maps/MovieTheaterJoja_Spring.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheaterJoja_TileSheet",
+			"When": { "Season |contains=Summer": true },
+			"FromFile": "assets/Maps/MovieTheaterJoja_Summer.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheaterJoja_TileSheet",
+			"When": { "Season |contains=Fall": true },
+			"FromFile": "assets/Maps/MovieTheaterJoja_Fall.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheaterJoja_TileSheet",
+			"When": { "Season |contains=Winter": true },
+			"FromFile": "assets/Maps/MovieTheaterJoja_Winter.png"
+		},
+			
+	//Grampleton Suburbs
+	
+		{
+			"Action": "EditImage",
+			"Target": "Maps/spring_GrampletonSuburbsTilesheet",
+			"ToArea": { "X": 192, "Y": 288, "Width": 80, "Height": 32 },
+			"FromFile": "assets/Maps/spring_GrampletonSuburbsTilesheet.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/summer_GrampletonSuburbsTilesheet",
+			"ToArea": { "X": 192, "Y": 288, "Width": 80, "Height": 32 },
+			"FromFile": "assets/Maps/summer_GrampletonSuburbsTilesheet.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/fall_GrampletonSuburbsTilesheet",
+			"ToArea": { "X": 192, "Y": 288, "Width": 80, "Height": 32 },
+			"FromFile": "assets/Maps/fall_GrampletonSuburbsTilesheet.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/winter_GrampletonSuburbsTilesheet",
+			"ToArea": { "X": 192, "Y": 288, "Width": 80, "Height": 32 },
+			"FromFile": "assets/Maps/winter_GrampletonSuburbsTilesheet.png"
+		},	
+			
+	//Season Extras
+
+		{
+			"Action": "EditImage",
+			"Target": "Maps/Spring_z_extras",
+			"FromFile": "assets/Maps/Spring_Seasonal_l.png",
+			"When": { "Season |contains=Spring": true },
+			"ToArea": { "X": 129, "Y": 913, "Width": 63, "Height": 47 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/Spring_z_extras",
+			"FromFile": "assets/Maps/Summer_Seasonal_l.png",
+			"When": { "Season |contains=Summer": true },
+			"ToArea": { "X": 129, "Y": 913, "Width": 63, "Height": 47 }
+		},
+	
+		{
+			"Action": "EditImage",
+			"Target": "Maps/Spring_z_extras",
+			"FromFile": "assets/Maps/Winter_Seasonal_l.png",
+			"When": { "Season |contains=Winter": true },
+			"ToArea": { "X": 129, "Y": 913, "Width": 63, "Height": 47 }
+		},	
+	]
+}

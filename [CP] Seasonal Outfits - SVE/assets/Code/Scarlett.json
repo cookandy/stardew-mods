@@ -1,0 +1,157 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Scarlett's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Scarlett_Spring, Portraits/Scarlett_Summer, Portraits/Scarlett_Fall, Portraits/Scarlett_Winter_Outdoor, Portraits/Scarlett_Winter_Indoor, Portraits/Scarlett_FlowerDance, Portraits/Scarlett_SpiritsEve, Characters/Scarlett_Spring, Characters/Scarlett_Summer, Characters/Scarlett_Fall, Characters/Scarlett_Winter_Outdoor, Characters/Scarlett_Winter_Indoor, Characters/Scarlett_FlowerDance, Characters/Scarlett_SpiritsEve, Portraits/Scarlett_Beach, Characters/Scarlett_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Scarlett/{{TargetWithoutPath}}.png"
+		},
+
+		//APPEARANCE DATA 
+		{
+			"LogName": "Scarlett Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Scarlett", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.ScarlettSpring": {
+					"Id": "{{ModId}}.ScarlettSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Scarlett_Spring",
+					"Portrait": "Portraits/Scarlett_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.ScarlettSummer": {
+					"Id": "{{ModId}}.ScarlettSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Scarlett_Summer",
+					"Portrait": "Portraits/Scarlett_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ScarlettFall": {
+					"Id": "{{ModId}}.ScarlettFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Scarlett_Fall",
+					"Portrait": "Portraits/Scarlett_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ScarlettWinterIndoor": {
+					"Id": "{{ModId}}.ScarlettWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Scarlett_Winter_Indoor",
+					"Portrait": "Portraits/Scarlett_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ScarlettWinterOutdoor": {
+					"Id": "{{ModId}}.ScarlettWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Scarlett_Winter_Outdoor",
+					"Portrait": "Portraits/Scarlett_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.ScarlettFlowerDance": {
+					"Id": "{{ModId}}.ScarlettFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/Scarlett_FlowerDance",
+					"Portrait": "Portraits/Scarlett_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.ScarlettSpirit": {
+					"Id": "{{ModId}}.ScarlettSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+					"Sprite": "Characters/Scarlett_SpiritsEve",
+					"Portrait": "Portraits/Scarlett_SpiritsEve",
+					"Precedence": -1000,
+				},
+
+				//Beach
+				
+				"{{ModId}}.ScarlettBeach": {
+					"Id": "{{ModId}}.ScarlettBeach",
+					"Sprite": "Characters/Scarlett_Beach",
+					"Portrait": "Portraits/Scarlett_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},	
+			},
+		},
+		
+		//APPEARANCE DATA - SCARLETTFAKE
+		{
+			"LogName": "Scarlett Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["ScarlettFake", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.ScarlettFakeSpring": {
+					"Id": "{{ModId}}.ScarlettFakeSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Scarlett_Spring",
+					"Portrait": "Portraits/Scarlett_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.ScarlettFakeSummer": {
+					"Id": "{{ModId}}.ScarlettFakeSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Scarlett_Summer",
+					"Portrait": "Portraits/Scarlett_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ScarlettFakeFall": {
+					"Id": "{{ModId}}.ScarlettFakeFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Scarlett_Fall",
+					"Portrait": "Portraits/Scarlett_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ScarlettFakeWinterIndoor": {
+					"Id": "{{ModId}}.ScarlettFakeWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Scarlett_Winter_Indoor",
+					"Portrait": "Portraits/Scarlett_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ScarlettFakeWinterOutdoor": {
+					"Id": "{{ModId}}.ScarlettFakeWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Scarlett_Winter_Outdoor",
+					"Portrait": "Portraits/Scarlett_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},				
+			},
+		},
+		
+		//MISCELLANIOUS
+		
+		{
+            "LogName": "Scarlett Barrel Temp Actor",
+            "Action": "EditImage",
+            "Target": "Characters/ScarlettBarrel",
+            "FromFile": "assets/Characters/Scarlett/{{TargetWithoutPath}}.png",
+        },
+	]
+}

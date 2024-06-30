@@ -1,4 +1,23 @@
 {
-//Meets with Lance
-"Wed": "0 Custom_Krobus_WarpRoom 3 3 2/1940 Forest 98 91 3",
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Characters/schedules/Krobus",
+      "Priority": "Low",
+      "FromFile": "assets/blank.json"
+    },
+    { //Krobus' Schedule
+        "Action": "EditData",
+        "Target": "Characters/schedules/Krobus",
+        "When": {
+            "Spouse": "Lance",
+            "Day": "10, 24",
+            "HasSeenEvent": "65360198",
+            "Date |contains = Winter 24": false
+        },
+        "Entries": { //Meets with Lance
+            "Wed": "1940 Forest 98 91 3",
+        }
+    }
+  ]
 }

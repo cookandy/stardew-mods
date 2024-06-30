@@ -1,0 +1,125 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Claire's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Claire_Spring, Portraits/Claire_Summer, Portraits/Claire_Fall, Portraits/Claire_Winter_Outdoor, Portraits/Claire_Winter_Indoor, Portraits/Claire_FlowerDance, Portraits/Claire_SpiritsEve, Portraits/Claire_Joja, Portraits/Claire_Aerobics, Portraits/Claire_Theater, Characters/Claire_Spring, Characters/Claire_Summer, Characters/Claire_Fall, Characters/Claire_Winter_Outdoor, Characters/Claire_Winter_Indoor, Characters/Claire_FlowerDance, Characters/Claire_SpiritsEve, Characters/Claire_Joja, Characters/Claire_Aerobics, Characters/Claire_Theater",
+			"FromFile": "assets/{{TargetPathOnly}}/Claire/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Claire Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Claire", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.ClaireSpring": {
+					"Id": "{{ModId}}.ClaireSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Claire_Spring",
+					"Portrait": "Portraits/Claire_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.ClaireSummer": {
+					"Id": "{{ModId}}.ClaireSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Claire_Summer",
+					"Portrait": "Portraits/Claire_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ClaireFall": {
+					"Id": "{{ModId}}.ClaireFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Claire_Fall",
+					"Portrait": "Portraits/Claire_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ClaireWinterIndoor": {
+					"Id": "{{ModId}}.ClaireWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Claire_Winter_Indoor",
+					"Portrait": "Portraits/Claire_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ClaireWinterOutdoor": {
+					"Id": "{{ModId}}.ClaireWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Claire_Winter_Outdoor",
+					"Portrait": "Portraits/Claire_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.ClaireFlowerDance": {
+					"Id": "{{ModId}}.ClaireFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/Claire_FlowerDance",
+					"Portrait": "Portraits/Claire_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.ClaireSpirit": {
+					"Id": "{{ModId}}.ClaireSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+					"Sprite": "Characters/Claire_SpiritsEve",
+					"Portrait": "Portraits/Claire_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Joja Outfit
+				
+				"{{ModId}}.ClaireJoja": {
+					"Id": "{{ModId}}.ClaireJoja",
+					"Condition": "LOCATION_NAME Target JojaMart",
+					"Sprite": "Characters/Claire_Joja",
+					"Portrait": "Portraits/Claire_Joja",
+					"Precedence": -1000,
+				},
+				
+				//Theater Outfit
+				
+				"{{ModId}}.ClaireTheater": {
+					"Id": "{{ModId}}.ClaireTheater",
+					"Condition": "!PLAYER_HAS_SEEN_EVENT Any 502261, LOCATION_NAME Target MovieTheater, ANY \"PLAYER_NPC_RELATIONSHIP Any Claire Married, DAY_OF_WEEK Monday Wednesday Thursday Sunday\" \"!PLAYER_NPC_RELATIONSHIP Any Claire Married, DAY_OF_WEEK Monday Wednesday Thursday Friday Sunday\"",
+					"Sprite": "Characters/Claire_Theater",
+					"Portrait": "Portraits/Claire_Theater",
+					"Precedence": -1000,
+				},
+				
+				//14 Heart Override
+				
+				"{{ModId}}.Claire14Heart": {
+					"Id": "{{ModId}}.Claire14Heart",
+					"Condition": "IS_EVENT 4269704",
+					"Sprite": "Characters/Claire_{{Outfit}}",
+					"Portrait": "Portraits/Claire_{{Outfit}}",
+					"Precedence": -100000,
+				},
+				
+				//Aerobics
+				
+				"{{ModId}}.ClaireAerobics": {
+					"Id": "{{ModId}}.ClaireAerobics",
+					"Condition": "ANY \"LOCATION_NAME Target SeedShop, DAY_OF_WEEK Tuesday, WEATHER Target Sun Wind Snow\" \"IS_EVENT 58\"",
+					"Sprite": "Characters/Claire_Aerobics",
+					"Portrait": "Portraits/Claire_Aerobics",
+					"Precedence": -1000,
+				},
+			},
+		},		
+	]
+}

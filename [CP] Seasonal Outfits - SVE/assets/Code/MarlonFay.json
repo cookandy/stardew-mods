@@ -1,0 +1,122 @@
+{
+	"Changes": [
+
+		// ORIGINAL MARLON
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Marlon's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Marlon_Spring, Portraits/Marlon_Summer, Portraits/Marlon_Fall, Portraits/Marlon_Winter, Characters/Marlon_Spring, Characters/Marlon_Summer, Characters/Marlon_Fall, Characters/Marlon_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/Marlon/{{TargetWithoutPath}}.png",
+		},
+		
+		// APPEARANCE DATA
+		{
+			"LogName": "Marlon Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Marlon", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.MarlonSpring": {
+					"Id": "{{ModId}}.MarlonSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Marlon_Spring",
+					"Portrait": "Portraits/Marlon_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.MarlonSummer": {
+					"Id": "{{ModId}}.MarlonSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Marlon_Summer",
+					"Portrait": "Portraits/Marlon_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MarlonFall": {
+					"Id": "{{ModId}}.MarlonFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Marlon_Fall",
+					"Portrait": "Portraits/Marlon_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MarlonWinter": {
+					"Id": "{{ModId}}.MarlonWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Marlon_Winter",
+					"Portrait": "Portraits/Marlon_Winter",
+					"Precedence": -120,
+				},
+			},
+		},
+		
+		// MARLON FAY
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load SVE Marlon's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/MarlonFay_Spring, Portraits/MarlonFay_Summer, Portraits/MarlonFay_Fall, Portraits/MarlonFay_Winter, Portraits/MarlonFay_FlowerDance, Characters/MarlonFay_Spring, Characters/MarlonFay_Summer, Characters/MarlonFay_Fall, Characters/MarlonFay_Winter, Characters/MarlonFay_FlowerDance",
+			"FromFile": "assets/{{TargetPathOnly}}/MarlonFay/{{TargetWithoutPath}}.png",
+		},
+		
+		// APPEARANCE DATA
+		{
+			"LogName": "SVE Marlon Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["MarlonFay", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.MarlonFaySpring": {
+					"Id": "{{ModId}}.MarlonFaySpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/MarlonFay_Spring",
+					"Portrait": "Portraits/MarlonFay_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.MarlonFaySummer": {
+					"Id": "{{ModId}}.MarlonFaySummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/MarlonFay_Summer",
+					"Portrait": "Portraits/MarlonFay_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MarlonFayFall": {
+					"Id": "{{ModId}}.MarlonFayFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/MarlonFay_Fall",
+					"Portrait": "Portraits/MarlonFay_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MarlonFayWinter": {
+					"Id": "{{ModId}}.MarlonFayWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/MarlonFay_Winter",
+					"Portrait": "Portraits/MarlonFay_Winter",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MarlonFayFlowerDance": {
+					"Id": "{{ModId}}.MarlonFayFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/MarlonFay_FlowerDance",
+					"Portrait": "Portraits/MarlonFay_FlowerDance",
+					"Precedence": -1000,
+				},
+			},
+		},
+	]
+}

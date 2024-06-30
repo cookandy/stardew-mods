@@ -21,6 +21,7 @@
 				},
 			}
 		},
+		/*
 		{
 			"LogName": "[Yagi] Boarding House and Bus Stop Extension - Location Support",
 			"Action": "EditData",
@@ -150,5 +151,6 @@
 				}
 			}
 		},
+		*/
 	]
 }

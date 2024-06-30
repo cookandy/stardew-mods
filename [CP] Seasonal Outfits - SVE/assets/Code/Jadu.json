@@ -1,0 +1,58 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Jadu's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Jadu_Spring, Portraits/Jadu_Summer, Portraits/Jadu_Fall, Portraits/Jadu_Winter, Characters/Jadu_Spring, Characters/Jadu_Summer, Characters/Jadu_Fall, Characters/Jadu_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/Jadu/{{TargetWithoutPath}}.png"
+		},
+
+		//APPEARANCE DATA 
+		{
+			"LogName": "Jadu Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Jadu", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.JaduSpring": {
+					"Id": "{{ModId}}.JaduSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Jadu_Spring",
+					"Portrait": "Portraits/Jadu_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.JaduSummer": {
+					"Id": "{{ModId}}.JaduSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Jadu_Summer",
+					"Portrait": "Portraits/Jadu_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JaduFall": {
+					"Id": "{{ModId}}.JaduFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Jadu_Fall",
+					"Portrait": "Portraits/Jadu_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JaduWinter": {
+					"Id": "{{ModId}}.JaduWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Jadu_Winter",
+					"Portrait": "Portraits/Jadu_Winter",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+			},
+		},
+	]
+}

@@ -1,0 +1,85 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Andy's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Andy_Spring, Portraits/Andy_Summer, Portraits/Andy_Fall, Portraits/Andy_Winter_Outdoor, Portraits/Andy_Winter_Indoor, Portraits/Andy_FlowerDance, Portraits/Andy_SpiritsEve, Characters/Andy_Spring, Characters/Andy_Summer, Characters/Andy_Fall, Characters/Andy_Winter_Outdoor, Characters/Andy_Winter_Indoor, Characters/Andy_FlowerDance, Characters/Andy_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/Andy/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Andy Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Andy", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.AndySpring": {
+					"Id": "{{ModId}}.AndySpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Andy_Spring",
+					"Portrait": "Portraits/Andy_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.AndySummer": {
+					"Id": "{{ModId}}.AndySummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Andy_Summer",
+					"Portrait": "Portraits/Andy_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.AndyFall": {
+					"Id": "{{ModId}}.AndyFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Andy_Fall",
+					"Portrait": "Portraits/Andy_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.AndyWinterIndoor": {
+					"Id": "{{ModId}}.AndyWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Andy_Winter_Indoor",
+					"Portrait": "Portraits/Andy_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.AndyWinterOutdoor": {
+					"Id": "{{ModId}}.AndyWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Andy_Winter_Outdoor",
+					"Portrait": "Portraits/Andy_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.AndyFlowerDance": {
+					"Id": "{{ModId}}.AndyFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/Andy_FlowerDance",
+					"Portrait": "Portraits/Andy_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.AndySpirit": {
+					"Id": "{{ModId}}.AndySpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+					"Sprite": "Characters/Andy_SpiritsEve",
+					"Portrait": "Portraits/Andy_SpiritsEve",
+					"Precedence": -1000,
+				},
+			},
+		},
+	]
+}

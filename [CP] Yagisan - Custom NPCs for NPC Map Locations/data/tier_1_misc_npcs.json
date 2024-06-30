@@ -48,7 +48,6 @@
                 },
             }
         },
-
         // Jade NPC - https://www.nexusmods.com/stardewvalley/mods/5559
         {
             "LogName": "[Yagi] Jade - Sprite Offsets",
@@ -101,7 +100,7 @@
             },
             "Entries": {
                 "Ayeisha": {
-                    "MarkerCropOffset": 1
+                    "MarkerCropOffset": 3
                 },
             }
         },
@@ -148,6 +147,48 @@
             "Entries": {
                 "ProfSnail": {
                     "MarkerCropOffset": 6
+                },
+            }
+        },
+        // Traveling Dreamer - https://www.nexusmods.com/stardewvalley/mods/15881
+        {
+            "LogName": "[Yagi] Traveling Dreamer - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Fellowclown.TravelingDreamer": true
+            },
+            "Entries": {
+                "Barron": {
+                    "MarkerCropOffset": -1
+                },
+            }
+        },
+        // Fievel Goes East Scarp - Hat Mouse NPC - https://www.nexusmods.com/stardewvalley/mods/17315
+        {
+            "LogName": "[Yagi] Fievel Goes East Scarp - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=EastScarp.FGES": true
+            },
+            "Entries": {
+                "Fievel": {
+                    "MarkerCropOffset": 8
+                },
+            }
+        },
+        // Nora The Herpetologist - https://www.nexusmods.com/stardewvalley/mods/18176
+        {
+            "LogName": "[Yagi] Nora - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Bagi.Nora.CP": true
+            },
+            "Entries": {
+                "Nora": {
+                    "MarkerCropOffset": 5
                 },
             }
         },

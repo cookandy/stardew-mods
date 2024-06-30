@@ -6,6 +6,15 @@
 			"Target":"Characters/Dialogue/Vincent",
 			"Entries":
 			{
+				"AcceptGift_(O)373":"*gasp* I knew it was real! The golden pumpkin is real!$h#$e#Mom didn't believe me that it's real, but it's real!",
+				"AcceptGift_(O)279":"You mean this candy will give me tons of extra energy? *crunch*#$b#...#$b#I don't feel any different.#$e#Tastes yummy, though! Thanks!$h",
+				"AcceptGift_(O)797":"Cool! A marble!",
+				"AcceptGift_(O)74":"Is this candy? It looks really good!$h",
+				"AcceptGift_(O)612": "Mom says I can't have anymore candy today, except if it's a gift from you, then it's a 'special occasion.'#$b#Yayyy!$h",
+				"AcceptGift_(O)903": "I love soda!#$b#...#$b#It makes you burp!",
+				"AcceptGift_(O)398": "These taste like purple popsicles, but not frozen! Thanks, Mr. @!^These taste like purple popsicles, but not frozen! Thanks, Ms. @!",
+				"AcceptGift_(O)221": "Wowww. That looks... amazing.$u#$b#I can't believe you're giving it to me!$h#$e#Oh yeah, thank you!",
+				"AcceptGift_(O)721": "...Cool!",
 				"Mon2":"My brother's really good at video games. I like watching him play more than I like playing against him.",
 				"Mon8_1":"Mom gave me a haircut. She's the one who usually does it.#$e#A long time ago, Sam gave me a haircut. He got in big trouble!$h",
 				"Mon8":"Mom made me stop playing just to show me Dad sleeping in.$u#$e#Then she started crying. It was really weird.$u",

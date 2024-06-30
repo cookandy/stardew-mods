@@ -1,0 +1,68 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Magnus's Outfits",
+			"Action": "Load",
+			"Priority": "High + 1",
+			"Target": "Portraits/Magnus_Spring, Portraits/Magnus_Summer, Portraits/Magnus_Fall, Portraits/Magnus_Winter, Portraits/Magnus_FlowerDance, Characters/Magnus_Spring, Characters/Magnus_Summer, Characters/Magnus_Fall, Characters/Magnus_Winter, Characters/Magnus_FlowerDance",
+			"FromFile": "assets/{{TargetPathOnly}}/Magnus/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA - HIGHER PRECEDENCE THAN SCA
+		{
+			"LogName": "Magnus Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Wizard", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.MagnusSpring": {
+					"Id": "{{ModId}}.MagnusSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Magnus_Spring",
+					"Portrait": "Portraits/Magnus_Spring",
+					"Precedence": -150,
+				},
+
+				"{{ModId}}.MagnusSummer": {
+					"Id": "{{ModId}}.MagnusSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Magnus_Summer",
+					"Portrait": "Portraits/Magnus_Summer",
+					"Precedence": -150,
+				},
+				
+				"{{ModId}}.MagnusFall": {
+					"Id": "{{ModId}}.MagnusFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Magnus_Fall",
+					"Portrait": "Portraits/Magnus_Fall",
+					"Precedence": -150,
+				},
+				
+				"{{ModId}}.MagnusWinter": {
+					"Id": "{{ModId}}.MagnusWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Magnus_Winter",
+					"Portrait": "Portraits/Magnus_Winter",
+					"Outdoors": false,
+					"Precedence": -150,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.MagnusFlowerDance": {
+					"Id": "{{ModId}}.MagnusFlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Sprite": "Characters/Magnus_FlowerDance",
+					"Portrait": "Portraits/Magnus_FlowerDance",
+					"Precedence": -10000,
+				},	
+			},
+		},
+	]
+}

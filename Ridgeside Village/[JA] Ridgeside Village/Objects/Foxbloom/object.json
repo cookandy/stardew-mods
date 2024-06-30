@@ -1,9 +1,0 @@
-{
-  "Name": "Foxbloom",
-  "Description": "A mythical flower only thought to exist in legends. It seems to give off an otherwordly aura.",
-  "Category": "Flower",
-  "ProvidesLight": true,
-  "Edibility": 100,
-  "Price": 10000,
-  "Recipe": null,
-}
