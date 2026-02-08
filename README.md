@@ -7,7 +7,6 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
   - [Instructions](#instructions)
   - [List of Mods](#list-of-mods)
   - [List of Content Patcher Additions](#list-of-content-patcher-additions)
-  - [List of Custom Music Additions](#list-of-custom-music-additions)
 
 ---
 
@@ -39,7 +38,6 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) | Loads content packs that change the game's images and data without replacing XNB files. | `2.9.0` | |
 | [Custom Companions](https://www.nexusmods.com/stardewvalley/mods/8626) | Framework for creating custom entities that can be spawned on maps or follow you around in Stardew Valley. | `5.1.0` | |
 | [Custom NPC Exclusions](https://www.nexusmods.com/stardewvalley/mods/7089) | Allows other mods to exclude NPCs from certain quests and events. | `1.6.0` | |
-| [Custom NPC Fixes](https://www.nexusmods.com/stardewvalley/mods/3849) | Fixes NPC spawning in custom locations, pathing to custom locations, and schedules for new NPCs. | `1.2.6` | |
 | [DeepWoods](https://www.nexusmods.com/stardewvalley/mods/2571) | Adds an explorable forest to the secret woods. | `4.3.1-beta` | Modified to be slightly easier. See [wiki](https://github.com/cookandy/stardew-mods/wiki/DeepWoods)|
 | [Dynamic Night Time](https://www.nexusmods.com/stardewvalley/mods/2072) | Gives Stardew Valley a more dynamic daylight cycle. | `1.3.16-beta` | |
 | [Even Better Artisan Goods Icons](https://github.com/chsiao58/EvenBetterArtisanGoodIcons/releases) | This mod makes jelly, pickles, wine, juice, and honey icons be based on the fruit, vegetable, or flower used to make them. | `1.6.6` | |
@@ -75,22 +73,14 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) | This expansion features 26 new locations, 160 new character events, 12 new NPCs, a new village, 800 location messages, and more. | `1.15.11` | Some options changed. See [wiki](https://github.com/cookandy/stardew-mods/wiki/SVE)|
 | [StardewHack](https://www.nexusmods.com/stardewvalley/mods/3213) | Library mod used by my other mods. Doesn't do much on its own. | `7.4` | |
 | [The Love of Cooking](https://www.nexusmods.com/stardewvalley/mods/6830) | A suite of changes all about cooking! | `2.0.8` | |
-| [TMXL Map Toolkit](https://www.nexusmods.com/stardewvalley/mods/1820) | Toolkit for adding/editing/replacing maps and creating buildables. | `1.24.3-alpha.20240226` | |
 | [Tractor Mod](https://www.nexusmods.com/stardewvalley/mods/1401) | Buy a tractor to more efficiently work with crops, clear twigs and rocks, etc. | `4.24.3` | |
 | [Tree Transplant (Fix)](https://www.nexusmods.com/stardewvalley/mods/20852) | Used to transplant trees on your farm. | `2.0.0` | |
-| [UI Info Suite 2 Redux](https://www.nexusmods.com/stardewvalley/mods/40226) | Provides helpful information about things around you designed to help you be aware of what's going on without feeling like you're cheating. | `3.0.2` | |
 | [Wear More Rings](https://www.nexusmods.com/stardewvalley/mods/3214) | Configure the amount of ring slots in your inventory. By default adds 6 additional ring slots. | `7.9` | |
 
 ## List of Content Patcher Additions
 
 | Name      | Description | Version    | Notes     |
 | :------------- | :---------- | :---------- | :----------- |
-| [DaisyNiko's Tilesheets](https://www.nexusmods.com/stardewvalley/mods/4736) | Adds extra tilesheets to your game for other mods to use | `1.12` | |
-| [Eemie's Map Recolors](https://www.moddrop.com/stardew-valley/mods/580620-eemies-just-a-new-map-recolour-content-patcher-edition) | Map Recolor | `1.7.2` | [1] |
-| [Flower Valley](https://www.nexusmods.com/stardewvalley/mods/2064) | Town and Farm Buildings ReDesign | `4.3.1` |
-| [Flowery Bin](https://www.nexusmods.com/stardewvalley/mods/4760) | A bin with various options of Darkwood, Birch, Joja, And plus a few more. | `1.13.5` | [1] |
-| [Lumisteria Tilesheets - Indoor](https://www.nexusmods.com/stardewvalley/mods/9599) | A resource mod for map modder adding a new tilesheet containing various furnitures to use in their map. | `1.4.0` | |
-| [Medieval Buildings](https://www.nexusmods.com/stardewvalley/mods/4542) | Medieval Modern buildings | `2.2.0` | |
 | [Seasonal Outfits - SVE](https://www.nexusmods.com/stardewvalley/mods/5975) | Gives the NPCs of Stardew Valley Expanded seasonal clothing. | `2.0.0` |
 | [Seasonal Villager Outfits](https://www.nexusmods.com/stardewvalley/mods/2449) | An outfit for every season! | `2.3.4` |
 | [Stardew Valley Dialogue Expansion](https://www.nexusmods.com/stardewvalley/mods/2544) | Adds about 2500 new lines of dialogue across all 33 characters who have a heart level. | `2.3.1` | |
@@ -99,9 +89,3 @@ This repository contains my SMAPI [mods](https://stardewcommunitywiki.com/Moddin
 | [Yellog's wood fence](https://www.nexusmods.com/stardewvalley/mods/2958) | Wood fence | `1.0` | [1] |
 
 - [1] Used by Flower Valley
-
-## List of Custom Music Additions
-
-| Name      | Description | Version    | Notes     |
-| :------------- | :---------- | :---------- | :----------- |
-| [Thunder and Frog Sounds](https://www.nexusmods.com/stardewvalley/mods/7450) | Replaces the thunder and frog sounds to be more pleasing to the ears and a bit more realistic. | `1.0.2` | |
