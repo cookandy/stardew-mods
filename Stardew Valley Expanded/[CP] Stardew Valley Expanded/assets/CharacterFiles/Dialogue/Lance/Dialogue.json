@@ -24,6 +24,8 @@
         "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Gemfish": "{{i18n:Lance.GiftGemfish}}",
         "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Torpedo_Trout": "{{i18n:Lance.GiftTorpedoTrout}}",
         "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Shard": "{{i18n:Lance.GiftVoidShard}}",
+		"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Chocolate_Truffle_Bar": "{{i18n:Lance.GiftChocolate}}",
+		"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Marsh_Tonic": "{{i18n:Lance.Gift.MarshTonic}}",
         "AcceptBirthdayGift_Positive": "{{i18n:Lance.GiftBDpos}}",
         "AcceptBirthdayGift_Negative": "{{i18n:Lance.GiftBDneg}}",
         "married_Wizard": "{{i18n:Lance.MarriedWizard}}",

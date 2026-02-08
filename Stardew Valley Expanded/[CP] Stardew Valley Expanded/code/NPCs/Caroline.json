@@ -6,7 +6,29 @@
      "Target": "Data/NPCGiftTastes",
      "LogName": "Gift tastes: Caroline",
      "TextOperations": [
-       /*Dislike*/
+       /*Love*/
+	   {
+         "Operation": "Append",
+         "Target": [
+           "Fields",
+           "Caroline",
+           1
+         ],
+         "Value": "FlashShifter.StardewValleyExpandedCP_Prismatic_Pop FlashShifter.StardewValleyExpandedCP_Golden_Goose_Egg FlashShifter.StardewValleyExpandedCP_Cucumber",
+         "Delimiter": " "
+       },
+	   /*Like*/
+	   {
+         "Operation": "Append",
+         "Target": [
+           "Fields",
+           "Caroline",
+           3
+         ],
+         "Value": "FlashShifter.StardewValleyExpandedCP_Gold_Carrot",
+         "Delimiter": " "
+       },
+	   /*Dislike*/
        {
          "Operation": "Append",
          "Target": [
@@ -16,8 +38,8 @@
          ],
          "Value": "FlashShifter.StardewValleyExpandedCP_Stamina_Capsule FlashShifter.StardewValleyExpandedCP_Sports_Drink FlashShifter.StardewValleyExpandedCP_Mushroom_Colony FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
          "Delimiter": " "
-       }
-       /*Neutral*/,
+       },
+       /*Neutral*/
        {
          "Operation": "Append",
          "Target": [
@@ -63,11 +85,11 @@
                     "HasSeenEvent": "5553210"
                },
                "Entries": {
-                    "rain": "800 BusStop 12 8 0/940 Custom_DayEnd_WarpRoom 2 2 0/2130 BusStop 12 8 2/2150 SeedShop 25 4 1 caroline_sleep",
-                    "Wed": "800 BusStop 12 8 0/940 Custom_DayEnd_WarpRoom 2 2 0/2130 BusStop 12 8 2/2150 SeedShop 25 4 1 caroline_sleep",
-                    "Sat": "800 BusStop 12 8 0/940 Custom_DayEnd_WarpRoom 2 2 0/2130 BusStop 12 8 2/2150 SeedShop 25 4 1 caroline_sleep",
-                    "Sun": "800 BusStop 12 8 0/940 Custom_DayEnd_WarpRoom 2 2 0/2130 BusStop 12 8 2/2150 SeedShop 25 4 1 caroline_sleep",
-                    "spring": "800 BusStop 12 8 0/940 Custom_DayEnd_WarpRoom 2 2 0/2130 BusStop 12 8 2/2150 SeedShop 25 4 1 caroline_sleep",
+                    "rain": "800 BusStop 22 8 0/940 Custom_DayEnd_WarpRoom 2 2 0/2130 BusStop 12 8 2/2150 SeedShop 25 4 1 caroline_sleep",
+                    "Wed": "800 BusStop 22 8 0/940 Custom_DayEnd_WarpRoom 2 2 0/2130 BusStop 12 8 2/2150 SeedShop 25 4 1 caroline_sleep",
+                    "Sat": "800 BusStop 22 8 0/940 Custom_DayEnd_WarpRoom 2 2 0/2130 BusStop 12 8 2/2150 SeedShop 25 4 1 caroline_sleep",
+                    "Sun": "800 BusStop 22 8 0/940 Custom_DayEnd_WarpRoom 2 2 0/2130 BusStop 12 8 2/2150 SeedShop 25 4 1 caroline_sleep",
+                    "spring": "800 BusStop 22 8 0/940 Custom_DayEnd_WarpRoom 2 2 0/2130 BusStop 12 8 2/2150 SeedShop 25 4 1 caroline_sleep",
                },
           },
           { //CAROLINE JOJA DIALOGUE
@@ -77,7 +99,7 @@
                     "HasSeenEvent": "5553213"
                },
                "Entries": {
-                    "BusStop_12_8": "{{i18n:Caroline.Dialogue.01}}",
+                    "BusStop_22_9": "{{i18n:Caroline.Dialogue.01}}",
                     "Sun": "{{i18n:Caroline.Dialogue.02}}",
                     "fall_Tue": "{{i18n:Caroline.Dialogue.03}}",
                     "winter_Sat": "{{i18n:Caroline.Dialogue.04}}",

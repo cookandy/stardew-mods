@@ -1,0 +1,21 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Hats sprite",
+            "Action": "Load",
+            "Target": "Hats/MouseyPounds.FOTM_Hats",
+            "FromFile": "assets/mod_hats.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Hats",
+            "Entries": {
+				"MouseyPounds.FOTM_ImposingMask_Hat": "ImposingMask/{{i18n:ImposingMask.Description}}/false/true//{{i18n:ImposingMask.DisplayName}}/0/Hats\\MouseyPounds.FOTM_Hats",
+				"MouseyPounds.FOTM_ShadyBowedMask_Hat": "ShadyBowedMask/{{i18n:ShadyBowedMask.Description}}/false/true//{{i18n:ShadyBowedMask.DisplayName}}/1/Hats\\MouseyPounds.FOTM_Hats",
+				"MouseyPounds.FOTM_ShadyMask_Hat": "ShadyMask/{{i18n:ShadyMask.Description}}/false/true//{{i18n:ShadyMask.DisplayName}}/2/Hats\\MouseyPounds.FOTM_Hats",
+				"MouseyPounds.FOTM_ShamanicMask_Hat": "ShamanicMask/{{i18n:ShamanicMask.Description}}/false/true//{{i18n:ShamanicMask.DisplayName}}/3/Hats\\MouseyPounds.FOTM_Hats",
+				"MouseyPounds.FOTM_StrangeBunHat_Hat": "StrangeBunHat/{{i18n:StrangeBunHat.Description}}/true/false//{{i18n:StrangeBunHat.DisplayName}}/4/Hats\\MouseyPounds.FOTM_Hats"
+			}
+        }
+    ]
+}

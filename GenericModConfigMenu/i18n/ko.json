@@ -8,6 +8,7 @@
     // mod list UI
     "list.editable-heading": "모드 목록",
     "list.not-editable-heading": "타이틀 화면에서 편집:",
+    "list.keybinds": "Keybinds", // TODO
 
     // mod config pages
     "config.buttons.cancel": "취소",
@@ -15,10 +16,12 @@
     "config.buttons.save": "저장",
     "config.buttons.save-and-close": "저장 후 닫기",
 
+    // keybind overlay
     "config.rebind-key.title": "단축키 설정: {{optionName}}",
     "config.rebind-key.simple-instructions": "다시 단축키 설정을 하려면 새로운 키를 입력하세요.",
     "config.rebind-key.combo-instructions": "새로운 키를 입력하여 단축키를 설정하세요.",
     "config.rebind-key.no-key": "(없음)",
+    "config.rebind-key.keybind-list": "Keybinds:", // TODO
 
 
     /*********

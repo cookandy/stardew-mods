@@ -1,10 +1,10 @@
 ﻿{
-    /*********
+    /*************************************************
     ** Generic translations
-    *********/
+    *************************************************/
     // language info
     "generic.list-separator": ", ", // text between listed values (like ", " in "A, B, C")
-    "generic.line-wrap-on": "",     // characters after which we can line-wrap text if needed, even if there's no space
+    "generic.line-wrap-on": "", // characters after which we can line-wrap text if needed, even if there's no space
 
     // date names
     "generic.now": "Сейчас",
@@ -34,10 +34,10 @@
     "generic.show-x-results": "Показать {{count}} результатов",
 
     // types
+    "type.achievement": "Achievement", // TODO
     "type.building": "Постройка",
     "type.bush": "Куст",
     "type.fruit-tree": "Фруктовое дерево",
-    "type.map-tile": "Объект",
     "type.monster": "Монстр",
     "type.player": "Игрок",
     "type.tree": "Дерево",
@@ -51,7 +51,7 @@
     "quality.iridium": "Иридиевое",
 
     // item names shown in recipes
-    "item.wild-seeds": "Wild Seeds (Any)", // TODO
+    "item.wild-seeds": "Дикие семена (Любые)",
 
     // NPC friendship
     "friendship-status.friendly": "Дружный",
@@ -61,7 +61,17 @@
     "friendship-status.divorced": "Разведены",
     "friendship-status.kicked-out": "Выгнан",
 
+    // custom content (shows which mod added an item, NPC, etc)
+    "added-by-mod": "Добавлено модом",
+    "added-by-mod.summary": "{{modName}}",
 
+    // internal ID
+    "internal-id": "Внутренний идентификатор",
+
+
+    /*************************************************
+    ** Lookup UI
+    *************************************************/
     /*********
     ** Data translations
     *********/
@@ -72,7 +82,7 @@
     "bundle-area.boiler-room": "Бойлерная",
     "bundle-area.vault": "Сейф",
     "bundle-area.bulletin-board": "Доска объявлений",
-    "bundle-area.abandoned-joja-mart": "Заброшенный Joja mart",
+    "bundle-area.abandoned-joja-mart": "Заброшенный ДжоджаМарт",
 
     // shop names
     "shop.adventure-guild": "Гильдия Приключений",
@@ -105,19 +115,23 @@
     "data.item.box.description": "Разбейте, чтобы получить разные вещи.",
 
     // location names
-    "location.beach.east-pier": "пляж (восточный пирс)",
-    "location.bugLand": "логово жуков-мутантов",
-    "location.desert.topPond": "пустыня (северный пруд)",
-    "location.farmCave": "пещера на ферме",
-    "location.farmHouse": "дом на ферме",
-    "location.forest.island-tip": "лесная река (южная часть большого острова)",
-    "location.forest.lake": "лесное озеро",
-    "location.forest.river": "лесная река",
-    "location.submarine": "ночной Рынок на подводной лодке",
-    "location.town.northmost-bridge": "город (самый северный мост)",
-    "location.undergroundMine": "шахты",
-    "location.undergroundMine.level": "уровень шахты {{level}}",
-    "location.witchSwamp": "болото ведьмы",
+    "location.beach.east-pier": "Пляж (восточный пирс)",
+    "location.bugLand": "Логово жуков-мутантов",
+    "location.desert.topPond": "Пустыня (северный пруд)",
+    "location.farmCave": "Пещера на ферме",
+    "location.farmHouse": "Дом на ферме",
+    "location.forest.island-tip": "Лесная река (южная часть большого острова)",
+    "location.forest.lake": "Лесное озеро",
+    "location.forest.river": "Лесная река",
+    "location.HarveyRoom": "Комната Харви",
+    "location.LeoTreeHouse": "Домик на дереве",
+    "location.SandyHouse": "Оазис",
+    "location.SebastianRoom": "Комната Себастьяна",
+    "location.submarine": "Ночной Рынок на подводной лодке",
+    "location.town.northmost-bridge": "Город (самый северный мост)",
+    "location.undergroundMine": "Шахты",
+    "location.undergroundMine.level": "Уровень шахты {{level}}",
+    "location.witchSwamp": "Болото ведьмы",
 
     "location.caldera": "Имбирный остров - Кратер",
     "location.islandEast": "Имбирный остров - Восток",
@@ -136,11 +150,13 @@
     /*********
     ** Conditions & context tags
     *********/
+    "conditions-summary": "[условия: {{conditions}}]", // wraps 'game state query' conditions that often can't be translated. For example: "[conditions: ITEM_ID Input (O)128]".
+
     "condition-or-context-tag.negate": "не {{value}}",
 
-    "condition.day-of-month": "on specific days ({{days}})", // TODO
-    "condition.day-of-month.even": "even days", // TODO
-    "condition.day-of-month.odd": "odd days", // TODO
+    "condition.day-of-month": "в определенные дни ({{days}})",
+    "condition.day-of-month.even": "чётные дни",
+    "condition.day-of-month.odd": "нечётные дни",
 
     "condition.item-type.input": "входной элемент",
     "condition.item-type.target": "целевой элемент",
@@ -163,6 +179,19 @@
 
 
     /*********
+    ** Achievement lookups
+    *********/
+    // TODO
+    // labels
+    "achievement.unlocked": "Unlocked",
+    "achievement.hat-shop": "Hat shop",
+
+    // values
+    "achievement.hat-shop.hats-added": "These hats are added to the Hat Mouse shop when the achievement is unlocked:",
+    "achievement.hat-shop.no-hats-added": "No hats are unlocked by this achievement.",
+
+
+    /*********
     ** Animal lookups
     *********/
     // labels
@@ -173,6 +202,7 @@
     "animal.produce-ready": "Продукция готова",
     "animal.growth": "Рост",
     "animal.sells-for": "Продаётся за",
+    "animal.golden-cracker": "Golden animal cracker", // also used for fish ponds // TODO
 
     // values
     "animal.complaints.hungry": "Кушал вчера",
@@ -181,6 +211,8 @@
     "animal.complaints.no-heater": "Не обогревался зимой",
     "animal.complaints.not-petted": "Не проявлена забота сегодня",
     "animal.complaints.wild-animal-attack": "Атакован диким животным этой ночью",
+    "animal.golden-cracker.none": "None. Add a golden animal cracker to double produced items.", // TODO
+    "animal.golden-cracker.applied": "Applied; produced items are doubled.", // TODO
 
 
     /*********
@@ -189,6 +221,7 @@
     // labels
     "building.animals": "Животные",
     "building.construction": "Строительство",
+    "building.construction-costs": "Стоимость строительства",
     "building.feed-trough": "Кормушка",
     "building.horse": "Лошадь",
     "building.horse-location": "Местоположение лошади",
@@ -300,6 +333,8 @@
     "crop.summary.drops-X-to-Y": "Сбор от {{min}} до {{max}} ({{percent}}% шанс на дополнительный сбор)",
     "crop.summary.harvest-once": "урожай через {{daysToFirstHarvest}} дн.",
     "crop.summary.harvest-multi": "урожай через {{daysToFirstHarvest}} дн., затем каждые {{daysToNextHarvests}} дн.",
+    "crop.summary.farming-xp": "даёт +{{amount}} фермерского опыта за сбор",
+    "crop.summary.foraging-xp": "даёт +{{amount}} собирательского опыта за сбор",
     "crop.summary.seasons": "сезон роста - {{seasons}}",
     "crop.summary.sells-for": "продаётся за {{price}}",
     "crop.harvest.too-late": "слишком поздно в этом сезоне для следующего сбора (урожай {{date}})",
@@ -309,7 +344,6 @@
     ** Item > generic lookups
     *********/
     // labels
-    "item.custom-item": "Пользовательский предмет",
     "item.contents": "Содержит",
     "item.loves-this": "Любят",
     "item.likes-this": "Нравится",
@@ -317,6 +351,7 @@
     "item.dislikes-this": "Не любят",
     "item.hates-this": "Ненавидят",
     "item.needed-for": "Необходим для",
+    "item.flavor": "Вкус", // links to the flavor item (e.g. 'Blueberry' for Blueberry Wine)
     "item.number-owned": "Наличие",
     "item.number-cooked": "Приготовлено",
     "item.number-crafted": "Создано",
@@ -328,7 +363,6 @@
     "item.produces-dye": "Производит краситель",
 
     // values
-    "item.custom-item.summary": "добавлен модом {{modName}}",
     "item.contents.placed": "содержит {{name}}",
     "item.contents.ready": "{{name}} готов",
     "item.contents.partial": "{{name}} через {{time}}",
@@ -336,20 +370,23 @@
     "item.undiscovered-gift-taste-appended": ", и {{count}} неизвестных жителей",
     "item.needed-for.community-center": "Общественный центр ({{bundles}})",
     "item.needed-for.full-shipment": "Достижение 'Мастер-груз' (Отгрузите 1 шт.)",
+    "item.needed-for.monoculture": "Достижение 'Монокультура' (Отгрузите ещё {{count}})",
     "item.needed-for.polyculture": "Достижение 'Севооборот' (Отгрузите {{count}} шт. или больше)",
     "item.needed-for.full-collection": "Достижение 'Полная коллекция' (Пожертвуйте музею)",
     "item.needed-for.gourmet-chef": "Достижение 'Шеф-повар' (приготовьте рецепт: {{recipes}})",
     "item.needed-for.craft-master": "Достижение 'Мастер' (создайте предмет: {{recipes}})",
     "item.needed-for.quests": "текущие квесты ({{quests}})",
+    "item.needed-for.trash-bear": "trash bear (deliver one)", // TODO
     "item.unknown-recipes": "{{count}} неизвестных рецептов",
     "item.sells-to.shipping-box": "Отгрузочный ящик",
     "item.recipes-for-ingredient.entry": "{{name}} ({{count}} шт.)",
     "item.recipes-for-machine.multiple-items": "{{name}} x{{count}}",
     "item.recipes-for-machine.same-as-input": "[то же, что и на входе]", // e.g. crystalarium produces same item that was put in 
-    "item.recipes-for-machine.conditions": "[условия: {{conditions}}]",
     "item.recipes-for-machine.too-complex": "Функции некоторого оборудования слишком сложны для отображения.",
     "item.number-owned.summary": "У вас есть {{count}} шт.",
+    "item.number-owned-flavored.summary": "вы владете {{count}} ({{name}}) или {{baseCount}} ({{baseName}})", // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
     "item.number-crafted.summary": "Вы создали {{count}} шт.",
+    "item.internal-id.summary": "{{itemId}} (глобально уникальный 'квалифицированный идентификатор': {{qualifiedItemId}})",
 
 
     /*********
@@ -396,6 +433,7 @@
     // values
     "item.fish-spawn-rules.min-fishing-level": "минимальный уровень рыбалки: {{level}}",
     "item.fish-spawn-rules.not-caught-yet": "пока не пойман (может быть пойман только один раз)",
+    "item.fish-spawn-rules.extended-family-quest-active": "квест \"Прибавление в семействе\" активен",
     "item.fish-spawn-rules.locations": "местонахождение: {{locations}}",
     "item.fish-spawn-rules.locations-by-season.label": "местонахождение:",
     "item.fish-spawn-rules.locations-by-season.season-locations": "{{season}}: {{locations}}",
@@ -404,6 +442,7 @@
     "item.fish-spawn-rules.time": "время суток: {{times}}",
     "item.fish-spawn-rules.weather-sunny": "погода: солнечно",
     "item.fish-spawn-rules.weather-rainy": "погода: дождь",
+    "item.uncaught-fish": "{{count}} непоймнанной рыбы",
 
 
     /*********
@@ -488,6 +527,7 @@
     "npc.neutral-gifts": "Равнодушен к подаркам:",
     "npc.dislikes-gifts": "Не любит подарки",
     "npc.hates-gifts": "Ненавидит подарки",
+    "npc.schedule": "Сегодняшнее расписание",
 
     // values
     "npc.can-romance.married": "Вы женаты! <", // < turns into a heart
@@ -497,6 +537,12 @@
     "npc.friendship.need-points": "след. через {{count}}",
     "npc.undiscovered-gift-taste": "{{count}} нераскрытых предметов",
     "npc.unowned-gift-taste": "{{count}} бесхозных предметов",
+    "npc.schedule.current-position": "Сейчас в {{locationName}} ({{x}}, {{y}}).",
+    "npc.schedule.no-entries": "Расписание не загружено.",
+    "npc.schedule.not-following-schedule": "В настоящее время не следует расписанию. Обычно это означает, что NPC ведет себя по-особому (например, в кинотеатре).",
+    "npc.schedule.entry": "{{time}}: идёт в {{locationName}} ({{x}}, {{y}}).",
+    "npc.schedule.farmhand.unknown-position": "В настоящее время находится в неизвестном месте на хосте.",
+    "npc.schedule.farmhand.unknown-schedule": "В многопользовательской игре жители управляются хостом, поэтому их расписание недоступно.",
 
 
     /*********
@@ -608,19 +654,30 @@
     /*********
     ** Tile lookups
     *********/
+    // Note for translators:
+    // The translations in this section are a bit more technical. Quick summary:
+    //
+    //  - A 'map' sets the layout and appearance for an in-game location (like the farmhouse).
+    //  - Each map is divided into a grid of 64x64 pixel 'tiles'. A map can have multiple 'layers' of tiles (e.g. 'Back', 'Front', 'Buildings', etc).
+    //  - Each tile's visual appearance is set by assigning it a 'tile index', which is its position in a larger texture called a 'tilesheet'.
+    //  - Each tile can be assigned 'properties'. These are metadata which tell the game about the tile (like "Type: Dirt" or "Action: OpenShop HatMouse").
+    //  - There are two property types: 'tile property' (set for a specific tile position) and 'index property' (set for all tiles which use that tile index).
+
     // labels
+    "tile.title": "Объект ({{x}}, {{y}})",
     "tile.description": "Позиция тайла на карте. Это отображается, потому что вы включили просмотр тайлов в конфигурационном файле мода.",
-    "tile.game-location": "Локация",
     "tile.map-name": "Название локации",
-    "tile.tile": "Тайл",
-    "tile.tile-index": "{{layerName}}: индекс тайла",
-    "tile.tilesheet": "{{layerName}}: таблица тайла",
-    "tile.blend-mode": "{{layerName}}: режим перекрытия",
-    "tile.index-property": "{{layerName}}: ix свойства: {{propertyName}}",
-    "tile.tile-property": "{{layerName}}: свойства: {{propertyName}}",
+    "tile.map-properties": "Свойства локации",
+    "tile.layer-tile": "{{layer}} клетки",
+    "tile.layer-tile-none": "Клетка",
 
     // values
-    "tile.tile.none-here": "здесь нет тайла",
+    "tile.map-properties.value": "{{name}}: {{value}}",
+    "tile.layer-tile.appearance": "индекс {{index}} из таблицы клеток '{{tilesheetId}}' (путь: '{{tilesheetPath}}')",
+    "tile.layer-tile.blend-mode": "режим перекрытия: {{value}}",
+    "tile.layer-tile.index-property": "свойства индекса: {{name}}: {{value}}",
+    "tile.layer-tile.tile-property": "свойства клетки: {{name}}: {{value}}",
+    "tile.layer-tile.none-here": "здесь нет клетки",
 
 
     /*********
@@ -669,15 +726,53 @@
 
 
     /*********
-    ** Generic Mod Config Menu UI
+    ** Data mining fields
     *********/
-    // main options
-    "config.title.main-options": "Основные настройки",
+    // TODO
+    "data-mining.name": "Raw data",
+    "data-mining.name.map-tile": "Raw data (map tile)",
+    "data-mining.name.map-location": "Raw data (location)",
+
+    "data-mining.section-pinned": "Pinned", // 'pinned' section has notable values (i.e. it's pinned at the top of the list)
+
+
+    /*************************************************
+    ** Search UI
+    *************************************************/
+    // screen reader text
+    // TODO
+    "search-menu.screen-reader.instructions": "Lookup Anything search menu. Search box selected. Enter text to search.",
+    "search-menu.screen-reader.search-results": "Search box. {{count}} results found for \"{{search}}\". Navigate down for results.",
+    "search-menu.screen-reader.search-no-results": "Search box. No results found for \"{{search}}\".",
+    "search-menu.screen-reader.search-empty": "Search box. Currently empty.",
+    "search-menu.screen-reader.result": "{{name}} ({{type}}).",
+
+
+    /*************************************************
+    ** Generic Mod Config Menu UI
+    *************************************************/
+    // appearance
+    // TODO
+    "config.title.appearance": "Appearance",
+
+    "config.theme.name": "Visual theme",
+    "config.theme.desc": "The appearance to apply for the lookup and search menu.",
+
+    "config.theme.values.Parchment": "Parchment",
+    "config.theme.values.Joja": "Joja",
+    "config.theme.values.MenuBox_Border": "Menu box (border)",
+    "config.theme.values.MenuBox_Inset": "Menu box (inset)",
+    "config.theme.values.MenuBox_Raised": "Menu box (raised)",
+    "config.theme.values.Plain": "Plain",
+
     "config.force-full-screen.name": "Принудительный полный экран",
     "config.force-full-screen.desc": "Всегда ли меню должно быть полноэкранным, а не размещаться по центру окна. В основном это полезно при просмотре полей с большим колличеством данных.",
 
     // progression mode
     "config.title.progression": "Режим прохождения без спойлеров",
+
+    "config.progression.show-uncaught-fish-spawn-rules.name": "Показать правила появления непойманной рыбы",
+    "config.progression.show-uncaught-fish-spawn-rules.desc": "Показывать ли условия появления рыбы, которую вы еще не поймали.",
 
     "config.progression.show-unknown-gift-tastes.name": "Показывать неизвестные предпочтения подарков",
     "config.progression.show-unknown-gift-tastes.desc": "Показывать ли предпочтения подарков, о которых вы еще не узнали в игре (например, из текста диалога или экспериментируя)",
@@ -713,7 +808,7 @@
     "config.collapse-fields.enabled.name": "Включено",
     "config.collapse-fields.enabled.desc": "Нужно ли сворачивать большие поля, чтобы меню поиска заменяло список с кликабельной ссылкой \"Показать X значений\", чтобы развернуть его.",
 
-    "config.collapse-fields.building-recipes.name": "Building lookup: рецепты", // TODO
+    "config.collapse-fields.building-recipes.name": "Поиск по постройкам: рецепты",
     "config.collapse-fields.item-recipes.name": "Поиск по предметам: рецепты",
     "config.collapse-fields.npc-gift-tastes.name": "Поиск по NPC: предпочтения подарков",
     "config.collapse-fields.any.desc": "Если поле содержит столько значений, то меню поиска заменит список ссылкой \"показать X значений\", чтобы развернуть его",
@@ -724,6 +819,8 @@
     "config.tile-lookups.desc": "Включать ли плитки карты в качестве целей поиска.",
     "config.data-mining-fields.name": "Показывать поля для добычи данных",
     "config.data-mining-fields.desc": "Показывать ли необработанные данные, полезные для специалистов по добыче данных (в виде отдельных полей внизу результатов поиска). Это продвинутая функция, не предназначенная для большинства игроков.",
+    "config.show-invalid-recipes.name": "Показывать недопустимые рецепты",
+    "config.show-invalid-recipes.desc": "Показывать ли рецепты, для которых требуются или получаются сломанные предметы.",
     "config.target-redirection.name": "Перенаправление цели",
     "config.target-redirection.desc": "В некоторых случаях игра порождает временную сущность для представления другой сущности. Например, Эбигейл в шахтах на самом деле временный NPC с именем 'AbigailMine', поэтому при поиске ее там не будет показана настоящая информация об Эбигейл. При включении этой опции функция Lookup Anything будет искать оригинальную Эбигейл.",
     "config.scroll-amount.name": "Количество прокруток",
@@ -733,9 +830,9 @@
     "config.title.controls": "Управление",
     "config.hide-on-key-up.name": "Скрывать при отпускании клавиши",
     "config.hide-on-key-up.desc": "Скрывать ли пользовательский интерфейс поиска при отпускании клавиши поиска.",
-    "config.toggle-lookup.name": "Toggle lookup", // TODO
+    "config.toggle-lookup.name": "Переключить lookup",
     "config.toggle-lookup.desc": "Клавиши, которые переключают пользовательский интерфейс для поиска чего-либо под курсором",
-    "config.toggle-search.name": "Toggle search", // TODO
+    "config.toggle-search.name": "Переключить поиск",
     "config.toggle-search.desc": "Клавиши, которые переключают пользовательский интерфейс поиска.",
     "config.scroll-up.name": "Прокрутка вверх",
     "config.scroll-up.desc": "Клавиши, которые прокручивают длинное содержимое на несколько строк вверх",
@@ -745,6 +842,13 @@
     "config.page-up.desc": "Клавиши, которые прокручивают длинное содержимое вверх на целую страницу.",
     "config.page-down.name": "Страница вниз",
     "config.page-down.desc": "Клавиши, которые прокручивают длинное содержимое вниз на целую страницу.",
-    "config.toggle-debug.name": "Toggle debug", // TODO
-    "config.toggle-debug.desc": "Клавиши, переключающие отображение отладочной информации."
+    "config.toggle-debug.name": "Переключить отладку",
+    "config.toggle-debug.desc": "Клавиши, переключающие отображение отладочной информации.",
+
+
+    /*************************************************
+    ** Iconic Framework icon
+    *************************************************/
+    "icon.toggle-search.name": "Lookup Anything",
+    "icon.toggle-search.desc": "Переключить поиск Lookup Anything"
 }

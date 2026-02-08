@@ -8,6 +8,7 @@
     // mod list UI
     "list.editable-heading": "Skonfiguruj Mody",
     "list.not-editable-heading": "Edytowalne z ekranu tytułowego:",
+    "list.keybinds": "Keybinds", // TODO
 
     // mod config pages
     "config.buttons.cancel": "Anuluj",
@@ -15,10 +16,12 @@
     "config.buttons.save": "Zapisz",
     "config.buttons.save-and-close": "Zapisz i Wyjdź",
 
+    // keybind overlay
     "config.rebind-key.title": "Przypisz: {{optionName}}",
-    "config.rebind-key.simple-instructions": "Naciśnij klawisz, aby przypisać",
-    "config.rebind-key.combo-instructions": "Naciśnij kombinację, aby przypisać",
+    "config.rebind-key.simple-instructions": "Naciśnij klawisz, aby przypisać.",
+    "config.rebind-key.combo-instructions": "Naciśnij kombinację, aby przypisać.",
     "config.rebind-key.no-key": "(Brak)",
+    "config.rebind-key.keybind-list": "Keybinds:", // TODO
 
 
     /*********

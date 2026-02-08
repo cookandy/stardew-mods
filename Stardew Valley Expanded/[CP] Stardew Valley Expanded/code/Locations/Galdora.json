@@ -1331,7 +1331,7 @@
             "Target": "LooseSprites/Cursors_1_6",
             "FromFile": "Assets/Tilesheets/Galdora_Interface.png",
             "When": {
-                "DisableGaldoranTheme": true,
+                "UseGaldoranThemeAllTimes": true
             },
             "Update": "OnLocationChange",
             "PatchMode": "Replace",
@@ -1354,7 +1354,7 @@
             "Target": "LooseSprites/Cursors_1_6",
             "FromFile": "Assets/Tilesheets/Galdora_Interface.png",
             "When": {
-                "DisableGaldoranTheme": true,
+                "UseGaldoranThemeAllTimes": true
             },
             "Update": "OnLocationChange",
             "PatchMode": "Replace",

@@ -8,7 +8,7 @@
     // mod list UI
     "list.editable-heading": "Configurar Mods",
     "list.not-editable-heading": "Editável pela tela inicial:",
-    "list.keybindings": "Teclas de Atalho",
+    "list.keybinds": "Teclas de Atalho",
 
     // mod config pages
     "config.buttons.cancel": "Cancelar",
@@ -16,10 +16,12 @@
     "config.buttons.save": "Salvar",
     "config.buttons.save-and-close": "Salvar e Fechar",
 
+    // keybind overlay
     "config.rebind-key.title": "Vinculando tecla: {{optionName}}",
-    "config.rebind-key.simple-instructions": "Pressione uma tecla para vincular",
-    "config.rebind-key.combo-instructions": "Pressione uma combinação de tecla para vincular",
+    "config.rebind-key.simple-instructions": "Pressione uma tecla para vincular.",
+    "config.rebind-key.combo-instructions": "Pressione uma combinação de tecla para vincular.",
     "config.rebind-key.no-key": "(Nenhuma)",
+    "config.rebind-key.keybind-list": "Teclas de Atalho:",
 
 
     /*********
@@ -30,4 +32,3 @@
     "options.scroll-speed.name": "Velocidade de rolagem",
     "options.scroll-speed.desc": "O número de campos para deslocar quando rolar um menu de configuração."
 }
-

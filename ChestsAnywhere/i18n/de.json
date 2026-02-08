@@ -9,8 +9,12 @@
     "default-name.shipping-bin.take": "Zurückholen",
 
     // default category names
-    "default-category.owned-cabin": "Hütte ({{owner}})",
-    "default-category.unowned-cabin": "Hütte (Leer)",
+    "default-category.cabin-owned": "Hütte ({{owner}})",
+    "default-category.cabin-unowned": "Hütte (Leer)",
+    "default-category.cellar-owned": "Keller ({{owner}})",
+    "default-category.cellar-unowned": "Keller #{{cellarNumber}}",
+    "default-category.farmhouse": "Bauernhaus",
+    "default-category.island-farmhouse": "Insel-Bauernhaus",
     "default-category.duplicate": "{{locationName}} #{{number}}",
 
     // edit-chest labels
@@ -35,6 +39,11 @@
     "button.save": "Speichern",
     "button.reset": "Zurücksetzen",
 
+    // chest search menu
+    // TODO
+    "search-box.chest-name": "Search Chest Name:",
+    "search-box.item-name": "Search Items:",
+
 
     /**********
     ** Errors
@@ -48,14 +57,28 @@
     /**********
     ** Generic Mod Config Menu UI
     **********/
-    // general options
+    /****
+    ** general options
+    ****/
     "config.title.general-options": "Allgemeine Optionen",
+
     "config.show-hover-tooltips.name": "Hover-Tooltips anzeigen",
     "config.show-hover-tooltips.desc": "Ob der Name der Truhe in einem Tooltip angezeigt werden soll, wenn man auf eine Truhe zeigt.",
+
     "config.enable-shipping-bin.name": "Versandbehälter aktivieren",
     "config.enable-shipping-bin.desc": "Ob der Zugriff auf den Versandbehälter ermöglicht werden soll.",
+
+    "config.enable-sprinkler-attachments.name": "Sprinkleraufsätze aktivieren",
+    "config.enable-sprinkler-attachments.desc": "Ob der Zugang zu Sprinkleraufsätzen wie Bereicherern ermöglicht werden soll.",
+
     "config.add-organize-player-items.name": "Button Spieler-Gegenstände Organisieren hinzufügen",
     "config.add-organize-player-items.desc": "Ob eine 'Organisieren' Taste in den Truhen UIs für das Spielerinventar hinzugefügt werden soll.",
+
+    /****
+    ** remote access
+    ****/
+    "config.title.remote-access": "Fernzugriff",
+
     "config.range.name": "Reichweite",
     "config.range.desc": "Der Abstand, in dem Truhen über das Menü zugänglich sind.",
     "config.range.unlimited": "Alle Truhen",
@@ -63,34 +86,66 @@
     "config.range.currentLocation": "Truhen innerhalb des aktuellen Ortes.",
     "config.range.none": "Keine (kann nicht aus der Entfernung auf Truhen zugreifen)",
 
-    // general controls
-    "config.title.general-controls": "Allgemeine Steuerung",
+    "config.disable-mines.name": "Deaktivieren in Minen & Schädelhöhle",
+    "config.disable-mines.desc": "Ob der Zugriff auf Truhen aus der Ferne in den Minen oder der Schädelhöhle deaktiviert werden soll.",
+
+    "config.disable-custom-names.name": "Deaktivieren bei Standortnamen",
+    "config.disable-custom-names.desc": "Die internen Namen (wie von der Debug Mode Mod angezeigt) für Orte, von denen aus der Zugriff auf Truhen aus der Ferne deaktiviert werden soll. Sie können mehrere mit Kommas getrennt auflisten.",
+
+    /****
+    ** open menu hotkey
+    ****/
+    "config.title.open-menu-hotkey": "Hotkey zum Öffnen der Truhen-UI",
+
     "config.toggle-ui-key.name": "UI umschalten",
     "config.toggle-ui-key.desc": "Die Tasten, die die UI der Truhe anzeigen oder verbergen.",
 
-    // controls when chest UI is open
+    "config.reopen-last-chest.name": "Letzte Truhe wieder öffnen",
+    "config.reopen-last-chest.desc": "Wenn du die Schaltfläche „UI umschalten“ drückst, kannst du entscheiden, ob du die letzte Truhe, die du während der aktuellen Spielsitzung ausgewählt hast, wieder öffnen möchtest.",
+
+    "config.default-category.name": "Standard-Kategorie",
+    "config.default-category.desc": "Wenn du die Schaltfläche „UI umschalten“ drückst, werden standardmäßig die Truhen in dieser Kategorie angezeigt (falls eingestellt). Dies gilt nach „Letzte Truhe wieder öffnen“.",
+
+    /****
+    ** controls when chest UI is open
+    ****/
     "config.title.menu-controls": "Steuerung, wenn die Truhen-UI geöffnet ist",
+
     "config.edit-chest.name": "Truhe bearbeiten",
     "config.edit-chest.desc": "Die Tasten zum Bearbeiten der Optionen für die aktuelle Truhe.",
-    "config.sort-items.name": "Gegenstände sortieren",
-    "config.sort-items.desc": "Die Tasten, die die Gegenstände in der aktuellen Truhe sortieren.",
+
+    "config.sort-items.name": "Spieler-Gegenstände sortieren",
+    "config.sort-items.desc": "Die Tasten zum Sortieren der Gegenstände im Inventar, während eine Truhe geöffnet ist.",
+
     "config.navigate-prev-chest.name": "Navigieren: vorherige Truhe",
     "config.navigate-prev-chest.desc": "Die Tasten, die bei offenem Menü zur vorherigen Truhe navigieren.",
+
     "config.navigate-next-chest.name": "Navigieren: nächste Truhe",
     "config.navigate-next-chest.desc": "Die Tasten, die bei offenem Menü zur nächsten Truhe navigieren.",
+
     "config.navigate-prev-category.name": "Navigieren: vorherige Kategorie",
     "config.navigate-prev-category.desc": "Die Tasten, die bei offenem Menü zur vorherigen Kategorie navigieren.",
+
     "config.navigate-next-category.name": "Navigieren: nächste Kategorie",
     "config.navigate-next-category.desc": "Die Tasten, die bei offenem Menü zur nächsten Kategorie navigieren.",
+
     "config.hold-to-scroll-categories.name": "Halten, um die Kategorien zu scrollen.",
     "config.hold-to-scroll-categories.desc": "Die Tasten, die es ermöglichen, das Dropdown-Menü der Kategorie mit dem Mausrad zu scrollen, wenn sie gehalten werden.",
+
     "config.hold-to-scroll-chests.name": "Halten, um Truhen zu scrollen",
     "config.hold-to-scroll-chests.desc": "Die Tasten, die es ermöglichen, das Dropdown-Menü der Truhen mit dem Mausrad zu scrollen, wenn sie gehalten werden.",
 
-    // disable in locations
-    "config.title.disable-in-locations": "Deaktivieren an Orten",
-    "config.disable-mines.name": "Minen und Schädelhöhle",
-    "config.disable-mines.desc": "Ob der Zugriff auf Truhen in den Minen oder der Schädelhöhle deaktiviert werden soll.",
-    "config.disable-custom-names.name": "Benutzerdefinierte Namen von Standorten",
-    "config.disable-custom-names.desc": "Die internen Namen (wie von der Debug Mode Mod angezeigt) für Orte, von denen aus der Zugriff auf Truhen deaktiviert werden soll. Sie können mehrere mit Kommas getrennt auflisten."
+    // TODO
+    "config.open-search-menu.name": "Open Search Menu",
+    "config.open-search-menu.desc": "While viewing a chest UI, the keys which open the search menu for all chests.",
+
+    "config.search-menu-preview.name": "Search Menu Preview Chest",
+    "config.search-menu-preview.desc": "While viewing the search UI, the keys which can be held to show a preview tooltip of the hovered chest's contents.",
+
+
+    /*********
+    ** Iconic Framework icon
+    *********/
+    "icon.open-menu.name": "Kisten Überall",
+    "icon.open-menu.desc": "Menü Öffnen"
 }

@@ -1,0 +1,75 @@
+{
+
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "MouseyPounds.FOTM_HatVendor": {
+                    "Owners": [
+                        {   
+                            "Name": "AnyOrNone",
+							"Dialogues": [
+                                {
+                                    "Id": "MouseyPounds.FOTM_HatVendor_Default",
+                                    "Dialogue": "{{i18n:shop-menu.message0}}"
+                                },
+                                {
+                                    "Id": "MouseyPounds.FOTM_HatVendor_Alt1",
+                                    "Dialogue": "{{i18n:shop-menu.message1}}"
+                                },
+                                {
+                                    "Id": "MouseyPounds.FOTM_HatVendor_Alt2",
+                                    "Dialogue": "{{i18n:shop-menu.message2}}"
+                                }
+							]
+                        }
+                    ],
+
+                    "Items": [
+                        {
+                            "Id": "MouseyPounds.FOTM_BlueCowboyHat",
+                            "ItemId": "(H)37",
+                            "Price": 5000
+                        }, 
+                        {
+                            "Id": "MouseyPounds.FOTM_RedCowboyHat",
+                            "ItemId": "(H)38",
+                            "Price": 5000
+                        }, 
+                        {
+                            "Id": "MouseyPounds.FOTM_PandaHat",
+                            "ItemId": "(H)36",
+                            "Price": 10000
+                        },
+                        {
+                            "Id": "MouseyPounds.FOTM_ImposingMask_Hat",
+                            "ItemId": "MouseyPounds.FOTM_ImposingMask_Hat",
+                            "Price": 750
+                        },
+						{
+                            "Id": "MouseyPounds.FOTM_ShadyBowedMask_Hat",
+                            "ItemId": "MouseyPounds.FOTM_ShadyBowedMask_Hat",
+                            "Price": 750
+                        },
+                        {
+                            "Id": "MouseyPounds.FOTM_ShadyMask_Hat",
+                            "ItemId": "MouseyPounds.FOTM_ShadyMask_Hat",
+                            "Price": 750
+                        },
+                        {
+                            "Id": "MouseyPounds.FOTM_ShamanicMask_Hat",
+                            "ItemId": "MouseyPounds.FOTM_ShamanicMask_Hat",
+                            "Price": 750
+                        },
+                        {
+                            "Id": "MouseyPounds.FOTM_StrangeBunHat_Hat",
+                            "ItemId": "MouseyPounds.FOTM_StrangeBunHat_Hat",
+                            "Price": 500
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

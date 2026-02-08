@@ -14,6 +14,7 @@
                 "Morgan": "{{i18n:Morgan.Moonlight}}",
                 "MorrisTod": "{{i18n:Morris.Midnight}}",
                 "Olivia": "{{i18n:moonlight.olivia.1}}",
+				"Scarlett": "{{i18n:Scarlett.Jellyfish}}",
                 "Sandy": "{{i18n:Sandy.Moonlight}}",
                 "Sophia": "{{i18n:moonlight.Sophia.1}}",
                 "Susan": "{{i18n:Susan.Moonlight}}",
@@ -196,6 +197,7 @@
                     "Value": "Olivia 35 36 down",
                     "Delimiter": "/"
                 },
+
                 { //Andy
                     "Operation": "Append",
                     "Target": [
@@ -606,6 +608,33 @@
                         "MainEvent_additionalCharacters_y2"
                     ],
                     "Value": "GuntherSilvian 39 35 down",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+		{ //Scarlett moonlight jellies data
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "When": {
+                "HasSeenEvent": "3691371",
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Scarlett 49 24 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Scarlett 49 24 down",
                     "Delimiter": "/"
                 }
             ]

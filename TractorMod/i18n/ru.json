@@ -67,14 +67,20 @@
     ** Audio
     ****/
     // TODO
-    "config.tractor-sounds.name": "Sound Effects",
+    "config.tractor-sounds.name": "Engine Sounds",
     "config.tractor-sounds.tooltip": "Which sound effects to play while riding the tractor. Changes may not fully take effect until you reload the save. Default {{defaultValue}}.",
     "config.tractor-sounds.value.None": "no sounds",
     "config.tractor-sounds.value.Horse": "horse sounds",
     "config.tractor-sounds.value.Tractor": "tractor sounds",
 
-    "config.tractor-volume.name": "Sound Effects Volume",
+    "config.tractor-volume.name": "Engine Sounds Volume",
     "config.tractor-volume.tooltip": "The volume level for the tractor sound effects. Default {{defaultValue}}%.",
+
+    "config.tool-use-sounds-limit.name": "Tool Use Sounds",
+    "config.tool-use-sounds-limit.tooltip": "When applying a tool to many tiles around the tractor, which tool sounds should be played. The default option is '{{defaultOption}}'. Note that '{{unlimitedOption}}' may cause errors if the '{{distanceOption}}' option is too high, due to playing too many sounds at once.",
+    "config.tool-use-sounds-limit.value.Default": "default",
+    "config.tool-use-sounds-limit.value.OncePerTick": "first tile applied",
+    "config.tool-use-sounds-limit.value.Unlimited": "play every sound (not recommended)",
 
 
     /****
@@ -88,6 +94,13 @@
 
     "config.hold-to-activate-key.name": "Кнопка действия",
     "config.hold-to-activate-key.tooltip": "Если данная опция включена, ваши инструменты будут работать только в том случае, если вы зажимаете установленную клавишу. Если данная опция отключена (кнопка не назначена), ваши инструменты будут работать автоматически.",
+
+    // TODO
+    "config.increase-distance-key.name": "Increase Distance",
+    "config.increase-distance-key.tooltip": "Temporarily increase the distance at which tools are applied around the tractor by one, up to the recommended maximum of {{maxRecommendedValue}} tiles. This applies until you reload the save.",
+
+    "config.reduce-distance-key.name": "Reduce Distance",
+    "config.reduce-distance-key.tooltip": "Temporarily reduce the distance at which tools are applied around the tractor by one, down to the recommended minimum of 1 tile. This applies until you reload the save.",
 
 
     /****
@@ -180,8 +193,12 @@
     "config.dig-seed-spots.name": "Dig Seed Spots",
     "config.dig-seed-spots.tooltip": "Whether to dig up seed spots.",
 
-    "config.clear-tilled-dirt.name": "Очистка вспаханной земли",
-    "config.clear-tilled-dirt.tooltip": "Очищает вспаханную землю от сорняков.",
+    "config.clear-dirt-without-fertilizer.name": "Очистка вспаханной земли",
+    "config.clear-dirt-without-fertilizer.tooltip": "Очищает вспаханную землю от сорняков.",
+
+    // TODO
+    "config.clear-dirt-with-fertilizer.name": "Clear Tilled Dirt (Fertilized)",
+    "config.clear-dirt-with-fertilizer.tooltip": "Whether to clear tilled dirt which has fertilizer.",
 
 
     /****
@@ -245,5 +262,13 @@
     "config.slingshot.tooltip": "Будет стрелять из рогатки в направлении курсора. (Имеет подавляющее воздействие из-за функции \"скорость трактора\", но сильно расходует боеприпасы).",
 
     "config.custom-tool-names.name": "Названия пользовательских инструментов",
-    "config.custom-tool-names.tooltip": "Пользовательские предметы/инструменты для использования во время езды на тракторе. Инструменты будут использоваться на каждой окружающей плитке, в то время как предметы будут использоваться. Если вы укажете что-то, что уже поддерживается (например топор), то это отменит все ограничения на его использование. Вы должны указать точное внутреннее название (не переведенное на ваш язык, то есть на английском), например 'Axe' или 'MegaBomb'. Возможно использовать несколько предметов, указав их через запятые."
+    "config.custom-tool-names.tooltip": "Пользовательские предметы/инструменты для использования во время езды на тракторе. Инструменты будут использоваться на каждой окружающей плитке, в то время как предметы будут использоваться. Если вы укажете что-то, что уже поддерживается (например топор), то это отменит все ограничения на его использование. Вы должны указать точное внутреннее название (не переведенное на ваш язык, то есть на английском), например 'Axe' или 'MegaBomb'. Возможно использовать несколько предметов, указав их через запятые.",
+
+
+    /*********
+    ** Iconic Framework icon
+    *********/
+    // TODO
+    "icon.summon-tractor.name": "Tractor Mod",
+    "icon.summon-tractor.desc": "Summon Tractor"
 }

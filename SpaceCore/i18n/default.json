@@ -15,5 +15,10 @@
     "interaction.gift-held": "Gift Held Item",
     "interaction.cancel": "Cancel",
 
-    "question.ask": "Ask a Question"
+    "question.ask": "Ask a Question",
+
+    "health-regen": "Health per second",
+    "stamina-regen": "Stamina per second",
+
+    "resource-clump.bad-tool-tier": "Your tool isn't strong enough to break this.",
 }

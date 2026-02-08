@@ -19,7 +19,9 @@
     "config.title.connectors": "Etkin bağlayıcılar",
     "config.connector.desc": "{{itemName}}'in makineleri ve sandıkları birbirine bağlayıp bağlamadığı.",
     "config.custom-connectors.name": "Özel bağlayıcılar",
-    "config.custom-connectors.desc": "Bitişik makineleri birbirine bağlayan öğelerin tam İngilizce adları. Birden çok öğeyi virgülle listeleyebilirsiniz.",
+
+    // TODO
+    "config.custom-connectors.desc": "The items which connect adjacent machines together. You can specify either the internal English name (like \"Wood Path\") or qualified item ID (like \"(O)405\"), and list multiple items with commas.", // note: connector names must be English even when playing in other languages
 
     // Junimo hut options
     "config.title.junimo-huts": "Junimo kulübesi davranışı",
@@ -36,9 +38,21 @@
     "config.junimo-huts.move-into-chests": "Junimo kulübelerinden sandıklara taşı",
     "config.junimo-huts.move-into-huts": "Sandıklardan Junimo kulübelerine taşı",
 
+    // per-chest settings
+    "config.title.chest-settings": "Sandık Ayarları",
+    "config.default-chest-override.name": "Varsayılan Davranış",
+    "config.default-chest-override.desc": "Sandığın varsayılan olarak etkin olup olmayacağını belirtir (Aşağıdaki sekme hariç). Etkin sandıklar otomatik olarak makinelere bağlanır. Etkin olmayanlar tamamen görmezden gelinir.",
+    "config.chest-override.name": "{{chestName}}",
+    "config.chest-override.name.take-only": "{{chestName}} (Sadece eşyaları alır)",
+    "config.chest-override.desc": "Yerleştirilen {{chestName}} eşyalarının sandık işlevi görüp görmeyeceği. '{{defaultBehaviorField}}' açıklamasını inceleyin.",
+    "config.chest-override.desc.take-only": "{{description}} (Etkin olduğunda, bu sandık tipi sadece eşyaların alınabileceği bir sandık olur.)", // {{description}} contains the previous translation line
+    "config.chest-override.values.default": "Varsayılan",
+    "config.chest-override.values.enabled": "Etkin",
+    "config.chest-override.values.disabled": "Etkin değil",
+
     // per-machine settings
     "config.title.machine-settings": "{{machineName}} Ayarları",
-    "config.machine-settings-enabled.Name": "Etkin",
+    "config.machine-settings-enabled.name": "Etkin",
     "config.machine-settings-enabled.desc": "{{machineName}} otomasyonunun etkinleştirilip etkinleştirilmeyeceği.",
     "config.machine-settings-priority.name": "Öncelik",
     "config.machine-settings-priority.desc": "Diğer makinelerle kıyasla {{machineName}} makinelerinin işlenme öncelik sırası. Makinelerin varsayılan önceliği 0'dır, daha yüksek değerler önce işlenir.",

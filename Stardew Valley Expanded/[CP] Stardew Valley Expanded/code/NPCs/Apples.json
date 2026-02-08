@@ -27,7 +27,7 @@
           "SopuseGetsJealous": false,
           "CanSocialize": true,
           "CanVisitIsland": "FALSE",
-          "ExcludeFromIntroductionsQuest": true,
+          "IntroductionsQuest": false,
           "PerfectionScore": true,
           "EndSlideShow": "TrailingGroup",
           "SpouseRoom": {
@@ -37,6 +37,19 @@
               "Y": 0,
               "Width": 6,
               "Height": 9
+            }
+          },
+		  "SpousePatio": {
+            "MapAsset": "Apples_Roommate_Area",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 4,
+              "Height": 4
+            },
+            "SpriteAnimationPixelOffset": {
+              "X": 0,
+              "Y": 0
             }
           },
           "FriendsAndFamily": {},
@@ -52,7 +65,7 @@
                 "X": 3,
                 "Y": 3
               },
-              "Direction": "left"
+              "Direction": "down"
             }
           ],
           "TextureName": null,
@@ -91,7 +104,13 @@
       "Action": "Load", "Priority": "Low",
       "Target": "Maps/Custom_ApplesRoommate",
       "FromFile": "Assets/Maps/SpouseRooms/ApplesRoommate.tbin",
-  },
+    },
+	//Roommate Patio
+    {
+      "Action": "Load", "Priority": "Low",
+      "Target": "Maps/Apples_Roommate_Area",
+      "FromFile": "Assets/Maps/SpouseRooms/Apples_Roommate_Area.tbin"
+    },
     {
       //Apples' Portraits
       "Action": "Load", "Priority": "Low",
@@ -412,7 +431,7 @@
       "Action": "EditData",
       "Target": "data/events/Custom_AuroraVineyard",
       "Entries": {
-        "7776007/e 7776006": "junimoStarSong/-500 -500/Apples 8 6 1 farmer -1000 -1000 1/addTemporaryActor Peaches 16 32 10 6 3 true character/changeLocation Custom_ApplesRoom/pause 600/viewport 9 7 true/skippable/pause 1000/jump Peaches/playSound junimoMeep1/pause 800/jump Apples/playSound junimoMeep1/pause 800/jump Peaches/playSound junimoMeep1/pause 900/jump Apples/playSound junimoMeep1/pause 700/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 600/playSound junimoMeep1/pause 400/playSound junimoMeep1/speak Peaches \"{{i18n:Apples.8hearts.01}}\"/pause 400/playSound junimoMeep1/pause 500/playSound junimoMeep1/jump Apples/pause 600/playSound junimoMeep1/pause 400/playSound junimoMeep1/speak Apples \"{{i18n:Apples.8hearts.02}}\"/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/faceDirection Apples 2 true/pause 400/playSound junimoMeep1/pause 500/playSound junimoMeep1/animate Apples false true 200 20 21 20 23/pause 600/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 600/playSound junimoMeep1/jump Peaches/pause 700/playSound junimoMeep1/pause 700/playSound junimoMeep1/pause 500/faceDirection Peaches 2 true/pause 500/playSound junimoMeep1/pause 500/animate Peaches false true 200 24 25 26 27/pause 600/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 800/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 700/playSound junimoMeep1/pause 600/playSound junimoMeep1/globalFade/viewport -1000 -1000/pause 500/end dialogue Apples \"{{i18n:Apples.8hearts.03}}\"",
+        "7776007/e 7776006": "junimoStarSong/-500 -500/Apples 8 6 1 farmer -300 -300 1/addTemporaryActor Peaches 16 32 10 6 3 true character/changeLocation Custom_ApplesRoom/pause 600/viewport 9 7 true/skippable/pause 1000/jump Peaches/playSound junimoMeep1/pause 800/jump Apples/playSound junimoMeep1/pause 800/jump Peaches/playSound junimoMeep1/pause 900/jump Apples/playSound junimoMeep1/pause 700/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 600/playSound junimoMeep1/pause 400/playSound junimoMeep1/speak Peaches \"{{i18n:Apples.8hearts.01}}\"/pause 400/playSound junimoMeep1/pause 500/playSound junimoMeep1/jump Apples/pause 600/playSound junimoMeep1/pause 400/playSound junimoMeep1/speak Apples \"{{i18n:Apples.8hearts.02}}\"/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/faceDirection Apples 2 true/pause 400/playSound junimoMeep1/pause 500/playSound junimoMeep1/animate Apples false true 200 20 21 20 23/pause 600/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 600/playSound junimoMeep1/jump Peaches/pause 700/playSound junimoMeep1/pause 700/playSound junimoMeep1/pause 500/faceDirection Peaches 2 true/pause 500/playSound junimoMeep1/pause 500/animate Peaches false true 200 24 25 26 27/pause 600/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 800/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 700/playSound junimoMeep1/pause 600/playSound junimoMeep1/globalFade/viewport -1000 -1000/pause 500/end dialogue Apples \"{{i18n:Apples.8hearts.03}}\"",
       },
     },
     { //Apples 10 heart event Part 1 - 'The Junimos'
@@ -526,6 +545,29 @@
         "7776010": "none/-500 -500/farmer 64 15 2/addTemporaryActor Junimo 16 32 -20 -20 2/addTemporaryActor WizardJunimo4 16 32 64 16 0/skippable/pause 1500/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 200/playSound junimoMeep1/pause 225/playSound junimoMeep1/speak Junimo \"{{i18n:Apples.Roommate}}\"/pause 500/globalFade/viewport -1000 -1000/end",
       }
     },
+	
+	{ //Edits NPC.cs strings when rooming with Apples
+      "Action": "EditData",
+      "Target": "Strings/StringsFromCSFiles",
+	  "When": {
+        "Roommate |contains=Apples": true
+      },
+      "Entries": {
+        "NPC.cs.4496": "{{i18n:Apples.RoommateDialogue.cs.001}}",
+		"NPC.cs.4497": "{{i18n:Apples.RoommateDialogue.cs.002}}",
+		"NPC.cs.4490": "{{i18n:Apples.RoommateDialogue.cs.003}}",
+		"NPC.cs.4489": "{{i18n:Apples.RoommateDialogue.cs.004}}",
+		"NPC.cs.4486": "{{i18n:Apples.RoommateDialogue.cs.005}}",
+		"NPC.cs.4481": "{{i18n:Apples.RoommateDialogue.cs.006}}",
+		"NPC.cs.4474": "{{i18n:Apples.RoommateDialogue.cs.007}}",
+		"NPC.cs.4470": "{{i18n:Apples.RoommateDialogue.cs.008}}",
+		"NPC.cs.4488": "{{i18n:Apples.RoommateDialogue.cs.009}}",
+		"NPC.cs.4498": "{{i18n:Apples.RoommateDialogue.cs.0010}}",
+		"NPC.cs.4499": "{{i18n:Apples.RoommateDialogue.cs.011}}",
+		"NPC.cs.4500": "{{i18n:Apples.RoommateDialogue.cs.012}}"
+      },
+    },
+	
     { //Apples - Option to restore Aurora Vineyard
       "Action": "EditData",
       "Target": "data/events/farm",
@@ -645,7 +687,7 @@
         "Height": 16
       },
       "When": {
-        "HasSeenEvent": "7776012"
+        "HasSeenEvent: anyPlayer| contains=7776012": true
       },
       "Update": "OnLocationChange"
     },

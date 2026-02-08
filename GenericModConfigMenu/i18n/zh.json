@@ -7,7 +7,8 @@
 
     // mod list UI
     "list.editable-heading": "配置 MOD",
-    "list.not-editable-heading": "Editable from the title screen:", // TODO
+    "list.not-editable-heading": "需要从主菜单设置:",
+    "list.keybinds": "Keybinds", // TODO
 
     // mod config pages
     "config.buttons.cancel": "取消",
@@ -15,10 +16,12 @@
     "config.buttons.save": "保存",
     "config.buttons.save-and-close": "保存并退出",
 
+    // keybind overlay
     "config.rebind-key.title": "重新绑定键: {{optionName}}",
     "config.rebind-key.simple-instructions": "按目标键以绑定",
     "config.rebind-key.combo-instructions": "按目标组合键以绑定",
     "config.rebind-key.no-key": "(无)",
+    "config.rebind-key.keybind-list": "Keybinds:", // TODO
 
 
     /*********

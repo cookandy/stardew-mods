@@ -25,7 +25,6 @@
       "AllowValues": "true, false",
       "Default": "false",
       "Description": "Removes pond from later game expanded area of farm",
-
     },
     "GrassCropField": {
       "AllowValues": "true, false",
@@ -44,7 +43,7 @@
     },
     "LargerGreenhouse": {
       "AllowValues": "true, false",
-      "Default": "false",
+      "Default": "true",
       "Description": "Makes the greenhouse slightly bigger, with designated fruit tree spots.",
     },
     "RemoveGreenhouseObjects": {
@@ -249,13 +248,14 @@
         "X": 0,
         "Y": 0,
         "Width": 140,
-        "Height": 85
+        "Height": 93
       }
     },
     //Load greenhouse
     {
       "Action": "Load",
       "Target": "Maps/Greenhouse,Maps",
+	  "Priority": "Low",
       "FromFile": "assets/Maps/Greenhouse_GrandpasFarm.tbin",
       "When": {
         "LargerGreenhouse": "true"
@@ -460,7 +460,7 @@
         "FarmType": "Standard"
       },
       "Entries": {
-        "2554908/t 900 1800/H": "none/-500 -500/farmer 64 15 2 Robin 64 17 0/skippable/pause 1000/speak Robin \"{{i18n:GF.Event8.01}}\"/pause 200/emote farmer 32/pause 300/speak Robin \"{{i18n:GF.Event8.02}}\"/pause 500/end"
+        "2554908/t 600 1800/H": "none/-500 -500/farmer 64 15 2 Robin 64 17 0/skippable/pause 1000/speak Robin \"{{i18n:GF.Event8.01}}\"/pause 200/emote farmer 32/pause 300/speak Robin \"{{i18n:GF.Event8.02}}\"/pause 500/end"
       },
     },
     //Event #9 - Stone Bridge    <<ID tagged by framework
@@ -709,6 +709,7 @@
       "When": {
         "HasSeenEvent": "8033758",
         "HasSeenEvent |contains=191393": true,
+        "HasFlag |contains=DeedOfLand": false,
         "HasMod": "flashshifter.GrandpasFarm",
         "FarmType": "Standard"
       },

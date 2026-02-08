@@ -13,7 +13,18 @@
 				  "Emily",
 				  1
 				],
-				"Value": "FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose",
+				"Value": "FlashShifter.StardewValleyExpandedCP_Golden_Goose_Egg FlashShifter.StardewValleyExpandedCP_Prismatic_Pop FlashShifter.StardewValleyExpandedCP_Yarn FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose",
+				"Delimiter": " "
+			  }
+			  /*Like*/,
+			  {
+				"Operation": "Append",
+				"Target": [
+				  "Fields",
+				  "Emily",
+				  3
+				],
+				"Value": "FlashShifter.StardewValleyExpandedCP_Gold_Carrot",
 				"Delimiter": " "
 			  }
 			  /*Dislike*/,

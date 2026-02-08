@@ -5,12 +5,16 @@
     // default chest names
     "default-name.fridge": "Холодильник",
     "default-name.other": "{{name}} #{{number}}",
-    "default-name.shipping-bin.store": "надіслані предмети",
-    "default-name.shipping-bin.take": "прийняті предмети",
+    "default-name.shipping-bin.store": "Надіслані предмети",
+    "default-name.shipping-bin.take": "Прийняті предмети",
 
     // default category names
-    "default-category.owned-cabin": "Будиночок гравця {{owner}}",
-    "default-category.unowned-cabin": "Будиночок (порожній)",
+    "default-category.cabin-owned": "Будиночок гравця {{owner}}",
+    "default-category.cabin-unowned": "Будиночок (порожній)",
+    "default-category.cellar-owned": "Cellar ({{owner}})", // TODO
+    "default-category.cellar-unowned": "Cellar #{{cellarNumber}}", // TODO
+    "default-category.farmhouse": "Farmhouse", // TODO
+    "default-category.island-farmhouse": "Island Farmhouse", // TODO
     "default-category.duplicate": "{{locationName}} #{{number}}",
 
     // edit-chest labels
@@ -21,7 +25,7 @@
     "label.order": "Порядок",
     "label.hide-chest": "Приховати цю скриню",
     "label.hide-chest-hidden": "Приховати цю скриню (вам потрібно знайти скриню, щоб скасувати це!)",
-    "label.automate-options": "Automate",
+    "label.automate-options": "Автоматизувати",
     "label.automate-store": "Класти предмети у цю скриню",
     "label.automate-store-first": "Спочатку класти предмети у цю скриню",
     "label.automate-store-disabled": "Ніколи не класти предмети у цю скриню",
@@ -30,16 +34,21 @@
     "label.automate-take-disabled": "Ніколи не брати предмети з цієї скрині",
 
     // button labels
-    "button.edit-chest": "редагувати скриню",
-    "button.sort-inventory": "сортувати інвентар",
-    "button.save": "зберегти",
-    "button.reset": "скинути",
+    "button.edit-chest": "Редагувати скриню",
+    "button.sort-inventory": "Сортувати інвентар",
+    "button.save": "Зберегти",
+    "button.reset": "Скинути",
+
+    // chest search menu
+    // TODO
+    "search-box.chest-name": "Search Chest Name:",
+    "search-box.item-name": "Search Items:",
 
 
     /**********
     ** Errors
     **********/
-    "errors.disabled-from-here": "не можете отримати доступ до скринь звідси.",
+    "errors.disabled-from-here": "Не можете отримати доступ до скринь звідси.",
     "errors.no-chests": "У вас немає скринь.",
     "errors.no-chests-in-location": "У вас немає скринь у цій локації.",
     "errors.no-chests-in-range": "У вас немає скринь у радіусі дії.",
@@ -48,14 +57,28 @@
     /**********
     ** Generic Mod Config Menu UI
     **********/
-    // general options
-    "config.title.general-options": "Основні налаштування",
+    /****
+    ** general options
+    ****/
+    "config.title.general-options": "Загальні налаштування",
+
     "config.show-hover-tooltips.name": "Показати підказки при наведенні курсора",
     "config.show-hover-tooltips.desc": "Показувати назву скрині у підказці, коли ви вказуєте на скриню.",
+
     "config.enable-shipping-bin.name": "Увімкнути ящик для продажу",
     "config.enable-shipping-bin.desc": "Увімкнення доступу до ящика для продажу.",
+
+    "config.enable-sprinkler-attachments.name": "Увікнути з'єднання з зрошувачем",
+    "config.enable-sprinkler-attachments.desc": "Чи увікнути доступ з'єднання з зрошувачем, як і з збагачувачами.",
+
     "config.add-organize-player-items.name": "Додати кнопку сортування предметів гравця.",
     "config.add-organize-player-items.desc": "Додавання кнопки «Сортувати» в інтерфейсах скриньки для інвентарю гравця.",
+
+    /****
+    ** remote access
+    ****/
+    "config.title.remote-access": "Віддалений доступ",
+
     "config.range.name": "Діапазон дії",
     "config.range.desc": "Діапазон, на якому скрині доступні через меню.",
     "config.range.unlimited": "Усі скрині",
@@ -63,34 +86,68 @@
     "config.range.currentLocation": "Скрині в поточної локації",
     "config.range.none": "Немає (не можна отримати доступ до скринь віддалено)",
 
-    // general controls
-    "config.title.general-controls": "Основне керування",
-    "config.toggle-ui-key.name": "Увімкнути інтерфейс користувача",
+    "config.disable-mines.name": "Вимкнути в шахті та Печері Черепа",
+    "config.disable-mines.desc": "Заборона дистанційного доступу до скринь під час перебування в шахті чи Печері Черепа.",
+
+    "config.disable-custom-names.name": "Вимкнути за назвами локацій",
+    "config.disable-custom-names.desc": "Внутрішні назви локацій (як показано в моді Debug Mode), для яких можна вимкнути дистанційний доступ до скринь. Ви можете перерахувати кілька назв через коми.",
+
+    /****
+    ** open menu hotkey
+    ****/
+    "config.title.open-menu-hotkey": "Гаряча клавіша для відкриття інтерфейсу скрині",
+
+    "config.toggle-ui-key.name": "Увімкнути інтерфейс скрині",
     "config.toggle-ui-key.desc": "Клавіші, які показують або приховують інтерфейс скрині.",
 
-    // controls when chest UI is open
+    "config.reopen-last-chest.name": "Відкривати остянню скриню",
+    "config.reopen-last-chest.desc": "Чи відкривати останню скриню, яку ви вибрали самостійно під час поточної ігрової сесії, коли ви натиснаєте кнопку 'Увімкненути інтерфейс скрині'?",
+
+    "config.default-category.name": "Категорія за замовчуванням",
+    "config.default-category.desc": "Коли ви натиснаєте кнопку 'Увімкненути інтерфейс скрині', за замовчуванням показувати скрині з цієї категорії (якщо встановленно). Це застосовується після 'Відкривати остянню скриню'.",
+
+    /****
+    ** controls when chest UI is open
+    ****/
     "config.title.menu-controls": "Елементи керування, коли відкритий інтерфейс скрині",
+
     "config.edit-chest.name": "Редагувати скриню",
     "config.edit-chest.desc": "Клавіші, які редагують налаштування для поточної скрині.",
-    "config.sort-items.name": "Сортувати предмети",
-    "config.sort-items.desc": "Клавіші, які сортують предмети в поточній скрині.",
+
+    // TODO
+    "config.sort-items.name": "Sort player items",
+    "config.sort-items.desc": "The keys which sort items in the player's inventory while a chest is open.",
+
     "config.navigate-prev-chest.name": "Навігація: попередня скриня",
     "config.navigate-prev-chest.desc": "Клавіші, які переходять до попередньої скрині, коли відкрите меню.",
+
     "config.navigate-next-chest.name": "Навігація: наступна скриня",
     "config.navigate-next-chest.desc": "Клавіші, які переходять до наступної скрині, коли відкрите меню.",
+
     "config.navigate-prev-category.name": "Навігація: попередня категорія",
     "config.navigate-prev-category.desc": "Клавіші для переходу до попередньої категорії, коли меню відкрите.",
+
     "config.navigate-next-category.name": "Навігація: наступна категорія",
     "config.navigate-next-category.desc": "Клавіші для переходу до наступної категорії, коли меню відкрите.",
+
     "config.hold-to-scroll-categories.name": "Утримувати, щоб прокрутити категорії",
     "config.hold-to-scroll-categories.desc": "Клавіші, які при утриманні дозволяють прокручувати спадний список категорії за допомогою колеса прокрутки миші.",
+
     "config.hold-to-scroll-chests.name": "Утримувати, щоб прокрутити скрині",
     "config.hold-to-scroll-chests.desc": "Клавіші, які при утриманні дозволяють прокручувати спадний список скринь за допомогою колеса прокрутки миші.",
 
-    // disable in locations
-    "config.title.disable-in-locations": "Вимкнути в локаціях",
-    "config.disable-mines.name": "Шахта та Печера Черепа",
-    "config.disable-mines.desc": "Заборона доступу до скринь під час перебування в шахті чи Печері Черепа.",
-    "config.disable-custom-names.name": "Користувацькі назви локацій",
-    "config.disable-custom-names.desc": "Внутрішні назви (як показано в моді Debug Mode) для локацій, з яких можна вимкнути доступ до скринь. Ви можете перерахувати кілька комами."
+    // TODO
+    "config.open-search-menu.name": "Open Search Menu",
+    "config.open-search-menu.desc": "While viewing a chest UI, the keys which open the search menu for all chests.",
+
+    "config.search-menu-preview.name": "Search Menu Preview Chest",
+    "config.search-menu-preview.desc": "While viewing the search UI, the keys which can be held to show a preview tooltip of the hovered chest's contents.",
+
+
+    /*********
+    ** Iconic Framework icon
+    *********/
+    // TODO
+    "icon.open-menu.name": "Chests Anywhere",
+    "icon.open-menu.desc": "Open Menu"
 }

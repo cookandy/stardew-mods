@@ -10,7 +10,7 @@
           "DisplayName": "{{i18n:Name.Susan}}",
           "BirthSeason": "Fall",
           "BirthDay": 28,
-          "HomeRegion": "Other",
+          "HomeRegion": "Town",
           "Language": "Default",
           "Gender": "Female",
           "Age": "Adult",
@@ -24,7 +24,7 @@
           "SocialTab": "HiddenUntilMet",
           "CanSocialize": "PLAYER_HAS_SEEN_EVENT Any 1000077",
           "CanVisitIsland": true,
-          "ExcludeFromIntroductionsQuest": true,
+          "IntroductionsQuest": false,
           "PerfectionScore": true,
           "EndSlideShow": "MainGroup",
           "FriendsAndFamily": {},
@@ -70,7 +70,7 @@
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",
       "Entries": {
-        "Susan": "{{i18n:Susan.Gifts.Loved}}/611 230 211 220 221 223 222 608 233 234 612 FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie/{{i18n:Susan.Gifts.Liked}}/60 709 336 335 334 373 74 446/{{i18n:Susan.Gifts.Disliked}}/346 459 303 FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed/{{i18n:Susan.Gifts.Hated}}/167 226 283 FlashShifter.StardewValleyExpandedCP_Super_Joja_Cola/{{i18n:Susan.Gifts.Neutral}}/348 350 395 -74/"
+        "Susan": "{{i18n:Susan.Gifts.Loved}}/611 230 211 220 221 223 222 608 233 234 612 FlashShifter.StardewValleyExpandedCP_Golden_Goose_Egg FlashShifter.StardewValleyExpandedCP_Prismatic_Pop FlashShifter.StardewValleyExpandedCP_Gingerbread_Man FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie/{{i18n:Susan.Gifts.Liked}}/60 709 336 335 334 373 74 446 FlashShifter.StardewValleyExpandedCP_Gold_Carrot/{{i18n:Susan.Gifts.Disliked}}/346 459 303 FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed/{{i18n:Susan.Gifts.Hated}}/167 226 283 FlashShifter.StardewValleyExpandedCP_Super_Joja_Cola/{{i18n:Susan.Gifts.Neutral}}/348 350 395 -74/"
       }
     },
     {

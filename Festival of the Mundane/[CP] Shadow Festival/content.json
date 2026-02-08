@@ -1,0 +1,13 @@
+{
+    "Format": "2.3.0",
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "code/Items/Hats.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "code/Shops/FOTMHatVendor.json"
+        }
+    ]
+ }

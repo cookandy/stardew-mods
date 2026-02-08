@@ -125,9 +125,9 @@
                "Target": "Maps/Custom_ForestWest",
                "FromFile": "assets/Maps/MapPatches/BearUnlocked.tbin",
                "ToArea": {
-                    "X": 10,
+                    "X": 9,
                     "Y": 3,
-                    "Width": 1,
+                    "Width": 3,
                     "Height": 2
                },
                "When": {
@@ -402,7 +402,7 @@
           {
                "Action": "Load",  
                "Target": "Maps/Town",
-               "FromFile": "Assets/Maps/MapPatches/Town_Joja.tmx",
+               "FromFile": "Assets/Maps/Locations/Town_Joja.tmx",
                "When": {
                     "HasSeenEvent: hostPlayer|contains=5553210": true
                }
@@ -993,11 +993,6 @@
           },
           {
                "Action": "Load",  
-               "Target": "Maps/WitchHut",
-               "FromFile": "Assets/maps/locations/WitchHut.tbin"
-          },
-          {
-               "Action": "Load",  
                "Target": "Maps/WizardHouse",
                "FromFile": "Assets/maps/locations/WizardHouse.tbin"
           },
@@ -1050,7 +1045,7 @@
                "Target": "Maps/Town-TheaterCC",
                "FromFile": "Assets/Maps/MapPatches/Town-TheaterCC.tmx",
                "When": {
-                    "HasSeenEvent |contains=5553210": false
+                    "HasSeenEvent: hostPlayer|contains=5553210": false
                }
           },
           {
@@ -1195,7 +1190,7 @@
           },
           { //Leaf patches
                "Action": "EditMap",
-               "Target": "Maps/Town",
+               "Target": "Maps/Town, Maps/Town-Fair, Maps/Town-Fair2, Maps/Town-Halloween, Maps/Town-Halloween2",
                "FromFile": "Assets/Maps/MapPatches/Town_Leaves.tbin",
                "When": {
                     "Season": "Fall",
@@ -1675,7 +1670,7 @@
                "Action": "EditMap",
                "Target": "Maps/BusStop",
                "MapProperties": {
-                    "NPCWarp": "22 8 Custom_DayEnd_WarpRoom 3 3"
+                    "NPCWarp": "22 8 Custom_DayEnd_WarpRoom 3 3 23 8 Custom_DayEnd_WarpRoom 3 3"
                }
           },
           { //Patches Grampleton Fields warps at shearwater bridge
@@ -1752,7 +1747,22 @@
                     "Height": 1
                }
           },
-          {
+		  { //Patches Witch Hut warp in wizard tower
+               "Action": "EditMap",
+               "Target": "Maps/Custom_WizardBasement",
+               "FromFile": "Assets/Maps/MapPatches/WizardBasement_WitchHut.tbin",
+               "When": {
+                    "HasWalletItem": "MagicInk"
+               },
+			   "Update": "OnLocationChange",
+               "ToArea": {
+                    "X": 11,
+                    "Y": 18,
+                    "Width": 1,
+                    "Height": 1
+               }
+          },
+          /*{
                //Overrides grampleton fields music que during rainy days
                "Action": "EditMap",
                "Target": "Maps/Custom_GrampletonFields",
@@ -1763,7 +1773,7 @@
                "MapProperties": {
                     "Music": "rain"
                }
-          },
+          },*/
           { //Removes warping ability until players see wizard basement event
                "Action": "EditMap",
                "Target": "Maps/Custom_GrampletonFields",
@@ -2969,6 +2979,96 @@
                     "Height": "400"
                }
           },
+		  
+		  //Patches different ambience and music to the Highlands
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/Custom_Highlands",
+			   "Update": "OnLocationChange",
+               "When": {
+                    "Weather |contains=Rain, Storm": false,
+                    "Time": "{{Range: 600, 1900}}"
+               },
+               "MapProperties": {
+                    "Music": "FlashShifter.StardewValleyExpandedCP_HighlandsTheme"
+               }
+          },
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/Custom_Highlands",
+			   "Update": "OnLocationChange",
+               "When": {
+                    "Weather |contains=Rain, Storm": true,
+                    "Time": "{{Range: 600, 1900}}"
+               },
+               "MapProperties": {
+                    "Music": "FlashShifter.StardewValleyExpandedCP_HighlandsTheme_Rain"
+               }
+          },
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/Custom_Highlands",
+			   "Update": "OnLocationChange",
+               "When": {
+                    "Weather |contains=Rain, Storm": true,
+                    "Time": "{{Range: 1910, 2600}}"
+               },
+               "MapProperties": {
+                    "Music": "rain"
+               }
+          },
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/Custom_Highlands",
+			   "Update": "OnLocationChange",
+               "When": {
+                    "Season |contains=Winter": true,
+                    "Time": "{{Range: 1610, 2600}}"
+               },
+               "MapProperties": {
+                    "Music": "winter_day_ambient"
+               }
+          },
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/Custom_Highlands",
+			   "Update": "OnLocationChange",
+               "When": {
+                    "Season |contains=Spring, Summer, Fall": true,
+					"Weather |contains=Rain, Storm": false,
+                    "Time": "{{Range: 1910, 2600}}"
+               },
+               "MapProperties": {
+                    "Music": "spring_night_ambient"
+               }
+          },
+		  
+		  //Patches different ambience and music to the Highlands Outpost
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/Custom_HighlandsOutpost",
+			   "Update": "OnLocationChange",
+               "When": {
+                    "Weather |contains=Rain, Storm": false,
+                    "Time": "{{Range: 600, 1900}}"
+               },
+               "MapProperties": {
+                    "Music": "FlashShifter.StardewValleyExpandedCP_HighlandsTheme"
+               }
+          },
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/Custom_HighlandsOutpost",
+			   "Update": "OnLocationChange",
+               "When": {
+                    "Weather |contains=Rain, Storm": true,
+                    "Time": "{{Range: 600, 1900}}"
+               },
+               "MapProperties": {
+                    "Music": "FlashShifter.StardewValleyExpandedCP_HighlandsTheme_Rain"
+               }
+          },
+
           { //Patches directions to player farm at bus stop
                "Action": "EditData",
                "Target": "Strings/StringsFromMaps",
@@ -2977,7 +3077,7 @@
                     "FarmType": "Standard"
                },
                "Entries": {
-                    "BusStop.1": "` {{i18n:BusStop}}^> {{i18n:PelicanTown}}^= {{FarmName}} {{i18n:Farm}}^@ {{FarmName}} {{i18n:Farm}}",
+                    "BusStop.1": "` {{i18n:BusStop}}^> {{i18n:PelicanTown}}^= {{i18n:Farm |FarmName={{FarmName}}}}^@ {{i18n:Farm |FarmName={{FarmName}}}}",
                }
           },
           {
@@ -2988,8 +3088,164 @@
                     "FarmType": "Standard"
                },
                "Entries": {
-                    "BusStop.1": "` {{i18n:BusStop}}^> {{i18n:PelicanTown}}^= {{FarmName}} {{i18n:Farm}}^@ {{FarmName}} {{i18n:Farm}}",
+                    "BusStop.1": "` {{i18n:BusStop}}^> {{i18n:PelicanTown}}^= {{i18n:Farm |FarmName={{FarmName}}}}^@ {{i18n:Farm |FarmName={{FarmName}}}}",
                }
           },
+		  
+		  //Temporarily overlays paths layer on first day of save file creation to prevent debris from ever spawning back again in these locations:
+		  
+		  //Garden
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/Custom_Garden",
+               "FromFile": "assets/Maps/MapPatches/Garden_Paths.tbin",
+			   "PatchMode": "Overlay",
+               "ToArea": {
+                 "X": 14,
+                 "Y": 14,
+                 "Width": 17,
+                 "Height": 12
+                },
+                "When": {
+				     "Year": 1,
+                     "Season": "Spring",
+				     "Day": "0, 1"
+                },
+          },
+		  
+		  //Grandpa's Shed Outside
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/Custom_GrandpasShedOutside",
+               "FromFile": "assets/Maps/GrandpasShed/GrandpasShedOutside_Paths.tbin",
+			   "PatchMode": "Overlay",
+               "ToArea": {
+                 "X": 0,
+                 "Y": 0,
+                 "Width": 34,
+                 "Height": 30
+                },
+                "When": {
+				     "Year": 1,
+                     "Season": "Spring",
+				     "Day": "0, 1"
+                },
+          },
+		  
+		  //Forbidden Maze patches
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/WitchWarpCave",
+               "FromFile": "assets/Maps/MapPatches/WitchWarpCave_Patch.tbin",
+               "ToArea": {
+                 "X": 4,
+                 "Y": 5,
+                 "Width": 1,
+                 "Height": 1
+                },
+          },
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/WitchSwamp",
+               "FromFile": "assets/Maps/MapPatches/WitchSwamp_Patch.tbin",
+               "ToArea": {
+                 "X": 20,
+                 "Y": 42,
+                 "Width": 1,
+                 "Height": 1
+                },
+          },
+		  
+		  //Adds new warp point to Wizard's warp hall
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/WitchHut",
+               "FromFile": "assets/Maps/MapPatches/WitchHut_Warp.tbin",
+               "ToArea": {
+                 "X": 11,
+                 "Y": 11,
+                 "Width": 1,
+                 "Height": 1
+                },
+          },
+		  
+		  //Adds ambient lights to witch swamp
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/WitchSwamp",
+               "When": {
+                    "HasMod |contains=Aimon111.WitchSwampOverhaulCP": false,
+               },
+               "MapProperties": {
+                    "AmbientLight": "130 110 100",
+               },
+          },
+		  
+		  //Adds light sources to witch swamp
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/WitchSwamp",
+               "FromFile": "assets/Maps/MapPatches/WitchSwamp_Light.tbin",
+			   "PatchMode": "Overlay",
+			   "When": {
+                    "HasMod |contains=Aimon111.WitchSwampOverhaulCP": false,
+               },
+               "ToArea": {
+                 "X": 20,
+                 "Y": 20,
+                 "Width": 1,
+                 "Height": 1
+                },
+          },
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/WitchSwamp",
+               "FromFile": "assets/Maps/MapPatches/WitchSwamp_Light.tbin",
+			   "PatchMode": "Overlay",
+			   "When": {
+                    "HasMod |contains=Aimon111.WitchSwampOverhaulCP": false,
+               },
+               "ToArea": {
+                 "X": 20,
+                 "Y": 42,
+                 "Width": 1,
+                 "Height": 1
+                },
+          },
+		  
+		  //Highlands Money Tree
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/Custom_Highlands",
+               "FromFile": "assets/Maps/MapPatches/Highlands_MoneyTree.tmx",
+			   "PatchMode": "Overlay",
+               "ToArea": {
+                 "X": 32,
+                 "Y": 10,
+                 "Width": 1,
+                 "Height": 1
+                },
+                "When": {
+				     "Day": "0, 1, 2"
+                },
+          },
+		  
+		  //Highlands Fruit Trees
+		  {
+               "Action": "EditMap",
+               "Target": "Maps/Custom_Highlands",
+               "FromFile": "assets/Maps/MapPatches/Highlands_FruitTrees.tmx",
+			   "PatchMode": "Overlay",
+               "ToArea": {
+                 "X": 0,
+                 "Y": 0,
+                 "Width": 156,
+                 "Height": 156
+                },
+                "When": {
+				     "Day": "0, 1, 2, 13, 14"
+                },
+          },
+		  
      ]
 }

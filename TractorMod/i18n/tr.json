@@ -64,14 +64,20 @@
     /****
     ** Audio
     ****/
-    "config.tractor-sounds.name": "Ses efektleri",
+    "config.tractor-sounds.name": "Motor Sesleri",
     "config.tractor-sounds.tooltip": "Traktörü sürerken hangi ses efektlerinin çalınacağı. Kaydı yeniden yükleyene kadar değişiklikler tam olarak etkili olmayabilir. Varsayılan {{defaultValue}}.",
     "config.tractor-sounds.value.None": "ses yok",
     "config.tractor-sounds.value.Horse": "at sesleri",
     "config.tractor-sounds.value.Tractor": "traktör sesleri",
 
-    "config.tractor-volume.name": "Ses Efekti Ses Seviyesi",
+    "config.tractor-volume.name": "Motor Sesi Ses Seviyesi",
     "config.tractor-volume.tooltip": "Ses efektlerinin ses seviyesi. Varsayılan: {{defaultValue}}%.",
+
+    "config.tool-use-sounds-limit.name": "Kullanılan Araçların Sesleri",
+    "config.tool-use-sounds-limit.tooltip": "Traktör birden çok alana kullanılan araçlardan hangisinin sesinin oynatılacağı. Varsayılan seçenek: '{{defaultOption}}'. '{{unlimitedOption}}' seçeneği büyük alanlarda hatalara sebep olabilir.", // TODO: English warning about {{unlimitedOption}} was reworded to be clearer
+    "config.tool-use-sounds-limit.value.Default": "Varsayılan",
+    "config.tool-use-sounds-limit.value.OncePerTick": "Uygulanan ilk kare",
+    "config.tool-use-sounds-limit.value.Unlimited": "Tüm sesleri oynat (tavsiye edilmez)",
 
 
     /****
@@ -85,6 +91,12 @@
 
     "config.hold-to-activate-key.name": "Etkinleştirmek için basılı tut",
     "config.hold-to-activate-key.tooltip": "Belirtilirse, traktör yalnızca siz bu düğmeyi basılı tutarken bir şey yapacaktır. Hiçbir şey belirtilmezse, siz onu sürerken traktör otomatik olarak çalışacaktır. ",
+
+    "config.increase-distance-key.name": "Mesafeyi Arttır",
+    "config.increase-distance-key.tooltip": "Traktörün aletleri uygulayacağı alanı geçici olarak 1 arttırır. Bu artış en fazla önerilen maksimum değere kadar ( {{maxRecommendedValue}} ) çıkar. Bu durum oyun kaydından çıkana kadar devam eder.",
+
+    "config.reduce-distance-key.name": "Mesafeyi Azalt",
+    "config.reduce-distance-key.tooltip": "Traktörün aletleri uygulayacağı alanı geçici olarak 1 azaltır. Bu azaltma en az önerilen minimum değere kadar ( 1 ) iner. Bu durum oyun kaydından çıkana kadar devam eder.",
 
 
     /****
@@ -174,8 +186,11 @@
     "config.dig-seed-spots.name": "Tohum Noktalarını Kaz",
     "config.dig-seed-spots.tooltip": "Tohum noktalarının kazılıp kazılmayacağı.",
 
-    "config.clear-tilled-dirt.name": "İşlenmiş Toprağı Temizle",
-    "config.clear-tilled-dirt.tooltip": "İşlenmiş toprağın temizlenip temizlenmeyeceği.",
+    "config.clear-dirt-without-fertilizer.name": "İşlenmiş Toprağı Temizle",
+    "config.clear-dirt-without-fertilizer.tooltip": "İşlenmiş toprağın temizlenip temizlenmeyeceği.",
+
+    "config.clear-dirt-with-fertilizer.name": "İşlenmiş Toprağı Temizle (Gübrelenmiş)",
+    "config.clear-dirt-with-fertilizer.tooltip": "İşlenmiş ve Gübrelenmiş toprağın temizlenip temizlenmeyeceği",
 
 
     /****
@@ -239,5 +254,12 @@
     "config.slingshot.tooltip": "Sapanın imlece doğru ateşlenip ateşlenmeyeceği. (Bu, çok güçlüdür ve traktör aletinin hızı nedeniyle açgözlü bir şekilde cephane tüketecektir.)",
 
     "config.custom-tool-names.name": "Özel Alet Adları",
-    "config.custom-tool-names.tooltip": "Traktörü sürerken etkinleştirilecek özel öğeler/aletler. Öğeler indirilirken, her bir çevreleyen karoda araçlar kullanılacaktır. Halihazırda desteklenen bir şey belirtirseniz (balta gibi), bu, kullanımındaki tüm sınırlamaları geçersiz kılar. 'Balta' veya 'Büyük Bomba' gibi tam dahili adı (çevrilmiş görünen adı değil) belirtmelisiniz. Birden çok değeri virgülle ayırın."
+    "config.custom-tool-names.tooltip": "Traktörü sürerken etkinleştirilecek özel öğeler/aletler. Öğeler indirilirken, her bir çevreleyen karoda araçlar kullanılacaktır. Halihazırda desteklenen bir şey belirtirseniz (balta gibi), bu, kullanımındaki tüm sınırlamaları geçersiz kılar. 'Balta' veya 'Büyük Bomba' gibi tam dahili adı (çevrilmiş görünen adı değil) belirtmelisiniz. Birden çok değeri virgülle ayırın.",
+
+
+    /*********
+    ** Iconic Framework icon
+    *********/
+    "icon.summon-tractor.name": "Traktör Modu",
+    "icon.summon-tractor.desc": "Traktörü Çağırır"
 }

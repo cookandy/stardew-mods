@@ -1,0 +1,47 @@
+﻿{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SeedShop", "Items" ],
+            "Entries": {
+                "{{ID}}_chocolate": {
+                    "Id": "{{ID}}_chocolate",
+                    "ItemId": "{{ID}}_chocolate",
+                    "PriceModifierMode": "Stack",
+                    "PriceModifiers": [
+                        {
+                            "Id": "{{ID}}_chocolate_pierre_cc",
+                            "Modification": "Divide",
+                            "Amount": 2,
+                            "Condition": "PLAYER_HAS_MAIL Current ccIsComplete"
+                        }
+                    ]
+                }
+            },
+            "MoveEntries": [
+                {
+                    "Id": "{{ID}}_chocolate",
+                    "AfterId": "(O)245" // Sugar
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Joja", "Items" ],
+            "Entries": {
+                "{{ID}}_chocolate": {
+                    "Id": "{{ID}}_chocolate",
+                    "ItemId": "{{ID}}_chocolate"
+                }
+            },
+            "MoveEntries": [
+                {
+                    "Id": "{{ID}}_chocolate",
+                    "AfterId": "(O)245" // Sugar
+                }
+            ]
+        }
+    ]
+}

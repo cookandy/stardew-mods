@@ -9,9 +9,11 @@
   "$schema": "https://smapi.io/schemas/manifest.json",
   "UniqueID": "spacechase0.GenericModConfigMenu",
   "Name": "Generic Mod Config Menu",
-  "Author": "spacechase0",
-  "Version": "1.12.0",
+  "Author": "kittycatcasey",
+  "Version": "1.16.0",
   "Description": "Adds an in-game UI to edit other mods' config options (for mods which support it).",
+  "MinimumApiVersion": "4.1",
+  "MinimumGameVersion": "1.6.14",
   "EntryDll": "GenericModConfigMenu.dll",
   "UpdateKeys": [
     "Nexus:5098"

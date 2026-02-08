@@ -9,8 +9,12 @@
     "default-name.shipping-bin.take": "öğeleri geri al",
 
     // default category names
-    "default-category.owned-cabin": "Baraka ({{owner}})",
-    "default-category.unowned-cabin": "Baraka (boş)",
+    "default-category.cabin-owned": "Baraka ({{owner}})",
+    "default-category.cabin-unowned": "Baraka (boş)",
+    "default-category.cellar-owned": "Kiler ({{owner}})",
+    "default-category.cellar-unowned": "Kiler #{{cellarNumber}}",
+    "default-category.farmhouse": "Çiftlik Evi",
+    "default-category.island-farmhouse": "Ada Evi",
     "default-category.duplicate": "{{locationName}} #{{number}}",
 
     // edit-chest labels
@@ -35,6 +39,10 @@
     "button.save": "kaydet",
     "button.reset": "sıfırla",
 
+    // chest search menu
+    "search-box.chest-name": "Sandık İsmi Ara:",
+    "search-box.item-name": "İtem ara:",
+
 
     /**********
     ** Errors
@@ -48,14 +56,28 @@
     /**********
     ** Generic Mod Config Menu UI
     **********/
-    // general options
+    /****
+    ** general options
+    ****/
     "config.title.general-options": "Genel Seçenekler",
+
     "config.show-hover-tooltips.name": "Vurgulu araç ipuçlarını göster",
     "config.show-hover-tooltips.desc": "Bir sandığı işaret ettiğinizde bir araç ipucunda sandık adının gösterilip gösterilmeyeceği.",
+
     "config.enable-shipping-bin.name": "Nakliye kutusunu etkinleştir",
     "config.enable-shipping-bin.desc": "Nakliye kutusuna erişimin etkinleştirilip etkinleştirilmeyeceği.",
+
+    "config.enable-sprinkler-attachments.name": "Fıskiye eklentilerini etkinleştir",
+    "config.enable-sprinkler-attachments.desc": "Gübreleyici gibi fıskiye eklentilerinin gösterilip gösterilmeyeceği.",
+
     "config.add-organize-player-items.name": "Oyuncu öğelerini düzenle düğmesi ekle",
     "config.add-organize-player-items.desc": "Oyuncu envanteri için sandık kullanıcı arayüzlerinde bir 'düzenle' düğmesi eklenip eklenmeyeceği.",
+
+    /****
+    ** remote access
+    ****/
+    "config.title.remote-access": "Erişimi Kaldır",
+
     "config.range.name": "Menzil",
     "config.range.desc": "Menüden sandıklara erişilebildiği menzil.",
     "config.range.unlimited": "Tüm sandıklar",
@@ -63,34 +85,66 @@
     "config.range.currentLocation": "Mevcut konumdaki sandıklar",
     "config.range.none": "Yok (sandıklara uzaktan erişilemez)",
 
-    // general controls
-    "config.title.general-controls": "Genel kontroller",
+    "config.disable-mines.name": "Madenler ve Kafatası Mağarasında devre dışı bırak",
+    "config.disable-mines.desc": "Madenlerde veya Kafatası Mağarasında sandıklara uzaktan erişimin devre dışı bırakılıp bırakılmayacağı.",
+
+    "config.disable-custom-names.name": "Konum adlarında devre dışı bırak",
+    "config.disable-custom-names.desc": "Sandıklara uzaktan erişimin devre dışı bırakılacağı konumların dahili adları (Debug Mode modunda gösterildiği gibi). Birden fazla konumu virgülle listeleyebilirsiniz.",
+
+    /****
+    ** open menu hotkey
+    ****/
+    "config.title.open-menu-hotkey": "Sandık arayüzünü açacak tuş",
+
     "config.toggle-ui-key.name": "Arayüzü aç/kapat",
     "config.toggle-ui-key.desc": "Sandık kullanıcı arayüzünü gösteren veya gizleyen tuşlar.",
 
-    // controls when chest UI is open
+    "config.reopen-last-chest.name": "En son açılan sandığı aç",
+    "config.reopen-last-chest.desc": "'Arayüzü aç' butonuna bastığında, mevcut oyun oturumunda açtığınız en son sandığın tekrar açılıp açılmayadağı",
+
+    "config.default-category.name": "Varsayılan Kategori",
+    "config.default-category.desc": "'Arayüzü aç' butonuna bastığında, (eğer ayarlandıysa) bu kate sandıkları göster. Bu ayar  'En son açılan sandığı aç' özelliği aktifken çalışmaz.",
+
+    /****
+    ** controls when chest UI is open
+    ****/
     "config.title.menu-controls": "Sandık kullanıcı arayüzü açıldığında kontroller",
+
     "config.edit-chest.name": "Sandığı düzenle",
     "config.edit-chest.desc": "Mevcut sandık için seçenekleri düzenleyen tuşlar.",
-    "config.sort-items.name": "Nesneleri sırala",
-    "config.sort-items.desc": "Mevcut sandıktaki eşyaları sıralayan tuşlar.",
+
+    "config.sort-items.name": "Envanterdeki Nesneleri Sırala",
+    "config.sort-items.desc": "Menü açıkken oyuncunun envanterindeki nesneleri sıralayan tuşlar",
+
     "config.navigate-prev-chest.name": "Gezin: önceki sandık",
     "config.navigate-prev-chest.desc": "Menü açıkken bir önceki sandığa giden tuşlar.",
+
     "config.navigate-next-chest.name": "Gezin: sonraki sandık",
     "config.navigate-next-chest.desc": "Menü açıkken bir sonraki sandığa giden tuşlar.",
+
     "config.navigate-prev-category.name": "Gezin: önceki kategori",
     "config.navigate-prev-category.desc": "Menü açıkken bir önceki kategoriye giden tuşlar.",
+
     "config.navigate-next-category.name": "Gezin: sonraki kategori",
     "config.navigate-next-category.desc": "Menü açıkken bir sonraki kategoriye giden tuşlar.",
+
     "config.hold-to-scroll-categories.name": "Kategorileri kaydırmak için basılı tutun",
     "config.hold-to-scroll-categories.desc": "Basılı tutulduğunda, fare kaydırma tekerleği ile kategori açılır listesinin kaydırılmasını sağlayan tuşlar.",
+
     "config.hold-to-scroll-chests.name": "Sandıkları kaydırmak için basılı tutun",
     "config.hold-to-scroll-chests.desc": "Basılı tutulduğunda, fare kaydırma tekerleği ile sandıkların aşağı doğru kaydırılmasını sağlayan tuşlar.",
 
-    // disable in locations
-    "config.title.disable-in-locations": "Konumlarda devre dışı bırak",
-    "config.disable-mines.name": "Madenler ve Kafatası Mağarası",
-    "config.disable-mines.desc": "Madenlerde veya Kafatası Mağarasındayken sandıklara erişimin devre dışı bırakılıp bırakılmayacağı.",
-    "config.disable-custom-names.name": "Özel konum adları",
-    "config.disable-custom-names.desc": "Sandıklara erişimin devre dışı bırakılacağı konumların dahili adları (Debug Mode modunda gösterildiği gibi). Virgülle birden fazla listeleyebilirsiniz."
+    "config.open-search-menu.name": "Arama menüsünü aç",
+    "config.open-search-menu.desc": " Mevcut sandık görüntülenirken, bütün sandıklar için arama menüsünü açan tuşlar.",
+
+
+    "config.search-menu-preview.name": "Arama menüsü önizlemesi",
+    "config.search-menu-preview.desc": "Arama menüsündeyken, fareyle üzerine gelinen sandığın içeriğinin önizleme araç ipucunu göstermek için basılı tutulacak tuşlar.",
+
+
+    /*********
+    ** Iconic Framework icon
+    *********/
+    "icon.open-menu.name": "Her Yerden Ulaşılabilir Sandıklar",
+    "icon.open-menu.desc": "Menüyü Aç"
 }

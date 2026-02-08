@@ -15,6 +15,7 @@
                 "Morgan": "{{i18n:Morgan.WinterStar}}",
                 "MorrisTod": "{{i18n:Morris.WinterStar}}",
                 "Sandy": "{{i18n:Sandy.WinterStar}}",
+				"Scarlett": "{{i18n:Scarlett.Christmas}}",
                 "Sophia": "{{i18n:winterstar.Sophia.1}}",
                 "Susan": "{{i18n:Susan.WinterStar}}",
                 "Victor_y2": "{{i18n:victor.Christmas2}}",
@@ -47,7 +48,7 @@
             "Action": "EditData",
             "Target": "data/festivals/winter25",
             "Entries": {
-                "Claire": "{{i18n:winterstar.claire.2}}",
+                "Claire": "{{i18n:winterstar.claire.1}}",
             },
             "When": {
                 "Spouse": "Claire"
@@ -248,6 +249,24 @@
                         "Set-Up_additionalCharacters"
                     ],
                     "Value": "MorrisTod 38 59 down",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+		{ //Scarlett christmas festival data
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "3691371",
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Scarlett 51 72 down",
                     "Delimiter": "/"
                 },
             ]

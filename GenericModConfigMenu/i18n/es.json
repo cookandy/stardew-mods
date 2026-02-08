@@ -8,6 +8,7 @@
     // mod list UI
     "list.editable-heading": "Configurar Mods",
     "list.not-editable-heading": "Editable desde la pantalla del título:",
+    "list.keybinds": "Keybinds", // TODO
 
     // mod config pages
     "config.buttons.cancel": "Cancelar",
@@ -15,10 +16,12 @@
     "config.buttons.save": "Guardar",
     "config.buttons.save-and-close": "Guardar & Cerrar",
 
+    // keybind overlay
     "config.rebind-key.title": "Reasignación de tecla: {{optionName}}",
-    "config.rebind-key.simple-instructions": "Pulse una tecla para reasignar",
-    "config.rebind-key.combo-instructions": "Pulse una combinación de teclas para reasignar",
+    "config.rebind-key.simple-instructions": "Pulse una tecla para reasignar.",
+    "config.rebind-key.combo-instructions": "Pulse una combinación de teclas para reasignar.",
     "config.rebind-key.no-key": "(Ninguna)",
+    "config.rebind-key.keybind-list": "Keybinds:", // TODO
 
 
     /*********

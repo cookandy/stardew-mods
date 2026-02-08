@@ -3,6 +3,7 @@
         {
             "Action": "EditData",
             "Target": "Data/Shops",
+            "Priority": "Early - 100",
             "TargetField": [
                 "FishShop",
                 "Items"
@@ -15,6 +16,9 @@
                     "IsRecipe": "true",
                 },
             },
+			"MoveEntries": [
+			    { "Id": "FlashShifter.StardewValleyExpandedCP_Seaweed_Salad", "BeforeId": "(O)219" },
+		    ]
         },
     ]
 }

@@ -1,10 +1,10 @@
 ﻿{
-    /*********
+    /*************************************************
     ** Generic translations
-    *********/
+    *************************************************/
     // language info
     "generic.list-separator": "、", // text between listed values (like ", " in "A, B, C")
-    "generic.line-wrap-on": "、",   // characters after which we can line-wrap text if needed, even if there's no space
+    "generic.line-wrap-on": "、", // characters after which we can line-wrap text if needed, even if there's no space
 
     // date names
     "generic.now": "今",
@@ -34,10 +34,10 @@
     "generic.show-x-results": "{{count}}個（詳細確認）",
 
     // types
+    "type.achievement": "Achievement", // TODO
     "type.building": "建物",
     "type.bush": "茂み",
     "type.fruit-tree": "果樹",
-    "type.map-tile": "マップタイル",
     "type.monster": "モンスター",
     "type.player": "プレイヤー",
     "type.tree": "樹木",
@@ -61,7 +61,18 @@
     "friendship-status.divorced": "離婚済",
     "friendship-status.kicked-out": "追い出した",
 
+    // custom content (shows which mod added an item, NPC, etc)
+    // TODO
+    "added-by-mod": "Added by mod",
+    "added-by-mod.summary": "{{modName}}",
 
+    // internal ID
+    "internal-id": "Internal ID", // TODO
+
+
+    /*************************************************
+    ** Lookup UI
+    *************************************************/
     /*********
     ** Data translations
     *********/
@@ -113,6 +124,10 @@
     "location.forest.island-tip": "森の川（南の小島の南端）",
     "location.forest.lake": "森の池",
     "location.forest.river": "森の川",
+    "location.HarveyRoom": "Harvey's Room", // TODO
+    "location.LeoTreeHouse": "Treehouse", // TODO
+    "location.SandyHouse": "Oasis", // TODO
+    "location.SebastianRoom": "Sebastian's Room", // TODO
     "location.submarine": "夜の市 潜水艦",
     "location.town.northmost-bridge": "ペリカンタウン（北端の橋）",
     "location.undergroundMine": "鉱山",
@@ -136,6 +151,8 @@
     /*********
     ** Conditions & context tags
     *********/
+    "conditions-summary": "条件：{{conditions}}", // wraps 'game state query' conditions that often can't be translated. For example: "[conditions: ITEM_ID Input (O)128]".
+
     "condition-or-context-tag.negate": "（{{value}}以外の）",
 
     "condition.day-of-month": "on specific days ({{days}})", // TODO
@@ -163,6 +180,19 @@
 
 
     /*********
+    ** Achievement lookups
+    *********/
+    // TODO
+    // labels
+    "achievement.unlocked": "Unlocked",
+    "achievement.hat-shop": "Hat shop",
+
+    // values
+    "achievement.hat-shop.hats-added": "These hats are added to the Hat Mouse shop when the achievement is unlocked:",
+    "achievement.hat-shop.no-hats-added": "No hats are unlocked by this achievement.",
+
+
+    /*********
     ** Animal lookups
     *********/
     // labels
@@ -173,6 +203,7 @@
     "animal.produce-ready": "回収可能",
     "animal.growth": "成長",
     "animal.sells-for": "売値",
+    "animal.golden-cracker": "Golden animal cracker", // also used for fish ponds // TODO
 
     // values
     "animal.complaints.hungry": "昨日エサを食べることができなかった",
@@ -181,6 +212,8 @@
     "animal.complaints.no-heater": "冬なのにヒーターがない",
     "animal.complaints.not-petted": "まだなでられていない",
     "animal.complaints.wild-animal-attack": "夜に野生動物に襲われた",
+    "animal.golden-cracker.none": "None. Add a golden animal cracker to double produced items.", // TODO
+    "animal.golden-cracker.applied": "Applied; produced items are doubled.", // TODO
 
 
     /*********
@@ -189,6 +222,7 @@
     // labels
     "building.animals": "動物",
     "building.construction": "建設",
+    "building.construction-costs": "Construction costs", // TODO
     "building.feed-trough": "給餌台",
     "building.horse": "馬",
     "building.horse-location": "馬の場所",
@@ -300,6 +334,8 @@
     "crop.summary.drops-X-to-Y": " {{min}}-{{max}}個収穫可能（{{percent}}%の確率で追加の収穫）",
     "crop.summary.harvest-once": " 植えてから{{daysToFirstHarvest}}日後に収穫可能",
     "crop.summary.harvest-multi": " 植えてから{{daysToFirstHarvest}}日後に収穫可能。また{{daysToNextHarvests}}日毎に再収穫可能",
+    "crop.summary.farming-xp": "gives +{{amount}} farming XP per harvest", // TODO
+    "crop.summary.foraging-xp": "gives +{{amount}} foraging XP per harvest", // TODO
     "crop.summary.seasons": " {{seasons}}に成長する",
     "crop.summary.sells-for": " {{price}}で売れる",
     "crop.harvest.too-late": "次の収穫には間に合わない（{{date}}で収穫可能になるため）",
@@ -309,7 +345,6 @@
     ** Item > generic lookups
     *********/
     // labels
-    "item.custom-item": "カスタムアイテム",
     "item.contents": "内容",
     "item.loves-this": "これが大好きな人",
     "item.likes-this": "これが好きな人",
@@ -317,6 +352,7 @@
     "item.dislikes-this": "これが嫌いな人",
     "item.hates-this": "これが大嫌いな人",
     "item.needed-for": "要求されるもの",
+    "item.flavor": "Flavor", // TODO // links to the flavor item (e.g. 'Blueberry' for Blueberry Wine)
     "item.number-owned": "所有数",
     "item.number-cooked": "調理数",
     "item.number-crafted": "作成数",
@@ -328,7 +364,6 @@
     "item.produces-dye": "染色",
 
     // values
-    "item.custom-item.summary": "MOD：{{modName}}による追加",
     "item.contents.placed": "{{name}}に設置",
     "item.contents.ready": "{{name}}が回収可能",
     "item.contents.partial": "{{time}}で{{name}}",
@@ -336,20 +371,23 @@
     "item.undiscovered-gift-taste-appended": ", 他{{count}}人に贈っていない",
     "item.needed-for.community-center": "コミュニティーセンター({{bundles}}）",
     "item.needed-for.full-shipment": "実績：満タン出荷箱（一つ出荷）",
+    "item.needed-for.monoculture": "monoculture achievement (ship {{count}} more)", // TODO
     "item.needed-for.polyculture": "実績：混作農業（{{count}}個出荷）",
     "item.needed-for.full-collection": "実績：コンプリートコレクション（博物館に一つ寄付）",
     "item.needed-for.gourmet-chef": "実績：グルメマスター（{{recipes}}を調理する）",
     "item.needed-for.craft-master": "実績：クラフトマスター（{{recipes}}を作成する）",
     "item.needed-for.quests": "進行中の依頼：({{quests}}）",
+    "item.needed-for.trash-bear": "trash bear (deliver one)", // TODO
     "item.unknown-recipes": "未知のレシピ：{{count}}個",
     "item.sells-to.shipping-box": "出荷箱",
     "item.recipes-for-ingredient.entry": "{{name}}（{{count}}個必要）",
     "item.recipes-for-machine.multiple-items": "{{name}} ({{count}})",
     "item.recipes-for-machine.same-as-input": "原料と同じ", // e.g. crystalarium produces same item that was put in
-    "item.recipes-for-machine.conditions": "条件：{{conditions}}",
     "item.recipes-for-machine.too-complex": "情報が多すぎるため表示することができない",
     "item.number-owned.summary": "{{count}}個持っている",
+    "item.number-owned-flavored.summary": "you own {{count}} ({{name}}) or {{baseCount}} ({{baseName}}) of these", // TODO // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
     "item.number-crafted.summary": "{{count}}個作成した",
+    "item.internal-id.summary": "{{itemId}} (globally unique 'qualified ID': {{qualifiedItemId}})", // TODO
 
 
     /*********
@@ -396,6 +434,7 @@
     // values
     "item.fish-spawn-rules.min-fishing-level": "必要釣りレベル：{{level}}",
     "item.fish-spawn-rules.not-caught-yet": "まだ釣った事がない（釣れるのは一度だけです）",
+    "item.fish-spawn-rules.extended-family-quest-active": "\"Extended Family\" quest active", // TODO
     "item.fish-spawn-rules.locations": "場所：{{locations}}",
     "item.fish-spawn-rules.locations-by-season.label": "場所：",
     "item.fish-spawn-rules.locations-by-season.season-locations": "{{season}}：{{locations}}",
@@ -404,6 +443,7 @@
     "item.fish-spawn-rules.time": "釣れる時間：{{times}}",
     "item.fish-spawn-rules.weather-sunny": "天気：晴れ",
     "item.fish-spawn-rules.weather-rainy": "天気：雨",
+    "item.uncaught-fish": "{{count}} uncaught fish", // TODO
 
 
     /*********
@@ -488,6 +528,7 @@
     "npc.neutral-gifts": "普通の贈り物",
     "npc.dislikes-gifts": "嫌いな贈り物",
     "npc.hates-gifts": "大嫌いな贈り物",
+    "npc.schedule": "Today's schedule", // TODO
 
     // values
     "npc.can-romance.married": "あなたと結婚しました！", // < turns into a heart
@@ -497,6 +538,12 @@
     "npc.friendship.need-points": "次のハートまで{{count}}ポイント必要",
     "npc.undiscovered-gift-taste": "{{count}}個の贈った事のないアイテム",
     "npc.unowned-gift-taste": "{{count}}個のアイテムは未所有",
+    "npc.schedule.current-position": "Currently at {{locationName}} ({{x}}, {{y}}).", // TODO
+    "npc.schedule.no-entries": "No schedule loaded.", // TODO
+    "npc.schedule.not-following-schedule": "Currently not following a schedule. This usually means the NPC is doing special behaviors (e.g. at the movie theater).", //  TODO
+    "npc.schedule.entry": "{{time}}: walk to {{locationName}} ({{x}}, {{y}}).", // TODO
+    "npc.schedule.farmhand.unknown-position": "Currently in an unknown location on the host.", // TODO
+    "npc.schedule.farmhand.unknown-schedule": "In multiplayer, NPCs are managed by the host so their schedule isn't available.", // TODO
 
 
     /*********
@@ -608,19 +655,30 @@
     /*********
     ** Tile lookups
     *********/
+    // Note for translators:
+    // The translations in this section are a bit more technical. Quick summary:
+    //
+    //  - A 'map' sets the layout and appearance for an in-game location (like the farmhouse).
+    //  - Each map is divided into a grid of 64x64 pixel 'tiles'. A map can have multiple 'layers' of tiles (e.g. 'Back', 'Front', 'Buildings', etc).
+    //  - Each tile's visual appearance is set by assigning it a 'tile index', which is its position in a larger texture called a 'tilesheet'.
+    //  - Each tile can be assigned 'properties'. These are metadata which tell the game about the tile (like "Type: Dirt" or "Action: OpenShop HatMouse").
+    //  - There are two property types: 'tile property' (set for a specific tile position) and 'index property' (set for all tiles which use that tile index).
+
     // labels
+    "tile.title": "マップタイル ({{x}}, {{y}})",
     "tile.description": "マップでのタイル位置です 設定で有効化されたので表示しています",
-    "tile.game-location": "場所",
     "tile.map-name": "マップ名",
-    "tile.tile": "タイル",
-    "tile.tile-index": "{{layerName}}：タイルインデックス",
-    "tile.tilesheet": "{{layerName}}：タイルシート",
-    "tile.blend-mode": "{{layerName}}：ブレンド方法",
-    "tile.index-property": "{{layerName}}: インデックスプロパティ：{{propertyName}}",
-    "tile.tile-property": "{{layerName}}: プロパティ：{{propertyName}}",
+    "tile.map-properties": "Map properties", // TODO
+    "tile.layer-tile": "{{layer}} tile", // TODO
+    "tile.layer-tile-none": "タイル",
 
     // values
-    "tile.tile.none-here": "タイルがありません",
+    "tile.map-properties.value": "{{name}}: {{value}}", // TODO
+    "tile.layer-tile.appearance": "index {{index}} from tilesheet '{{tilesheetId}}' (path: '{{tilesheetPath}}')", // TODO
+    "tile.layer-tile.blend-mode": "ブレンド方法: {{value}}",
+    "tile.layer-tile.index-property": "インデックスプロパティ: {{name}}: {{value}}",
+    "tile.layer-tile.tile-property": "プロパティ: {{name}}: {{value}}",
+    "tile.layer-tile.none-here": "タイルがありません",
 
 
     /*********
@@ -669,15 +727,53 @@
 
 
     /*********
-    ** Generic Mod Config Menu UI
+    ** Data mining fields
     *********/
-    // main options
-    "config.title.main-options": "メインオプション",
+    // TODO
+    "data-mining.name": "Raw data",
+    "data-mining.name.map-tile": "Raw data (map tile)",
+    "data-mining.name.map-location": "Raw data (location)",
+
+    "data-mining.section-pinned": "Pinned", // 'pinned' section has notable values (i.e. it's pinned at the top of the list)
+
+
+    /*************************************************
+    ** Search UI
+    *************************************************/
+    // screen reader text
+    // TODO
+    "search-menu.screen-reader.instructions": "Lookup Anything search menu. Search box selected. Enter text to search.",
+    "search-menu.screen-reader.search-results": "Search box. {{count}} results found for \"{{search}}\". Navigate down for results.",
+    "search-menu.screen-reader.search-no-results": "Search box. No results found for \"{{search}}\".",
+    "search-menu.screen-reader.search-empty": "Search box. Currently empty.",
+    "search-menu.screen-reader.result": "{{name}} ({{type}}).",
+
+
+    /*************************************************
+    ** Generic Mod Config Menu UI
+    *************************************************/
+    // appearance
+    // TODO
+    "config.title.appearance": "Appearance",
+
+    "config.theme.name": "Visual theme",
+    "config.theme.desc": "The appearance to apply for the lookup and search menu.",
+
+    "config.theme.values.Parchment": "Parchment",
+    "config.theme.values.Joja": "Joja",
+    "config.theme.values.MenuBox_Border": "Menu box (border)",
+    "config.theme.values.MenuBox_Inset": "Menu box (inset)",
+    "config.theme.values.MenuBox_Raised": "Menu box (raised)",
+    "config.theme.values.Plain": "Plain",
+
     "config.force-full-screen.name": "フルスクリーン表示",
     "config.force-full-screen.desc": "メニューを画面中央ではなく、フルスクリーンで表示。これは主に、データマイニングのフィールドを表示するときに便利です。",
 
     // progression mode
     "config.title.progression": "プログレッションモード",
+
+    "config.progression.show-uncaught-fish-spawn-rules.name": "Show uncaught fish spawn rules", // TODO
+    "config.progression.show-uncaught-fish-spawn-rules.desc": "Whether to show spawn conditions for fish you haven't caught yet.", // TODO
 
     "config.progression.show-unknown-gift-tastes.name": "未知の贈り物の好みを表示",
     "config.progression.show-unknown-gift-tastes.desc": "ゲーム内でまだ知らない贈り物の好みを表示する。",
@@ -724,6 +820,8 @@
     "config.tile-lookups.desc": "マップタイルを検索対象に含める。",
     "config.data-mining-fields.name": "データマイニングのフィールドを表示",
     "config.data-mining-fields.desc": "データマイニングに役立つライブデータを表示するかどうか（確認結果の下部に別フィールドとして表示される）。これは上級者向けの機能であり、一般的なプレーヤーを対象としたものではありません。",
+    "config.show-invalid-recipes.name": "Show invalid recipes", // TODO
+    "config.show-invalid-recipes.desc": "Whether to show recipes which require or produce broken items.", // TODO
     "config.target-redirection.name": "ターゲットのリダイレクト",
     "config.target-redirection.desc": "場合によっては、ゲームは別のエンティティを表すために一時的なエンティティを生成する。例えば、鉱山にいるアビゲイルは実際には「AbigailMine」という名前の仮のNPCなので、そこで彼女を調べてもアビゲイルの情報は表示されません。このオプションを有効にすると、Lookup Anythingが代わりにオリジナルのアビゲイルを調べます。",
     "config.scroll-amount.name": "スクロール量",
@@ -746,5 +844,13 @@
     "config.page-down.name": "ページダウン",
     "config.page-down.desc": "表示内容が多い場合、1ページ分を下にスクロールするキー設定。",
     "config.toggle-debug.name": "デバッグ表示",
-    "config.toggle-debug.desc": "デバッグ情報を表示するためのキー設定。"
+    "config.toggle-debug.desc": "デバッグ情報を表示するためのキー設定。",
+
+
+    /*************************************************
+    ** Iconic Framework icon
+    *************************************************/
+    // TODO
+    "icon.toggle-search.name": "Lookup Anything",
+    "icon.toggle-search.desc": "Toggle Lookup Anything Search"
 }

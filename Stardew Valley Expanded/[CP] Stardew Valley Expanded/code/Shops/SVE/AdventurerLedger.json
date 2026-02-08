@@ -45,6 +45,11 @@
                             "ItemId": "FlashShifter.StardewValleyExpandedCP_Fancy_Wood_Lamp-post",
                             "Price": 8000,
                         },
+						{
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Adventurer_Map",
+                            "ItemId": "FlashShifter.StardewValleyExpandedCP_Adventurer_Map",
+                            "Price": 6000,
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Adventurer_Gear",
                             "ItemId": "FlashShifter.StardewValleyExpandedCP_Adventurer_Gear",

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "UI Info Suite 2 Redux",
+  "Author": "Ekyso",
+  "Version": "3.0.3",
+  "Description": "Adds a useful information to the user interface. Based on Cdaragorn's and Annosz's excellent UI Info Suite.",
+  "UniqueID": "Ekyso.UiInfoSuite2Redux",
+  "EntryDll": "UIInfoSuite2Redux.dll",
+  "MinimumApiVersion": "4.1.0",
+  "UpdateKeys": [
+    "Nexus: 40226"
+  ]
+}

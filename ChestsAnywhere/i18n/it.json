@@ -9,8 +9,12 @@
     "default-name.shipping-bin.take": "recupera oggetti",
 
     // default category names
-    "default-category.owned-cabin": "Cabina ({{owner}})",
-    "default-category.unowned-cabin": "Cabina (vuota)",
+    "default-category.cabin-owned": "Cabina ({{owner}})",
+    "default-category.cabin-unowned": "Cabina (vuota)",
+    "default-category.cellar-owned": "Cantina ({{owner}})",
+    "default-category.cellar-unowned": "Cantina #{{cellarNumber}}",
+    "default-category.farmhouse": "Casa della fattoria",
+    "default-category.island-farmhouse": "Casa della fattoria sull'isola",
     "default-category.duplicate": "{{locationName}} n.{{number}}",
 
     // edit-chest labels
@@ -35,6 +39,11 @@
     "button.save": "salva",
     "button.reset": "ripristina",
 
+    // chest search menu
+    // TODO
+    "search-box.chest-name": "Search Chest Name:",
+    "search-box.item-name": "Search Items:",
+
 
     /**********
     ** Errors
@@ -48,14 +57,28 @@
     /**********
     ** Generic Mod Config Menu UI
     **********/
-    // general options
+    /****
+    ** general options
+    ****/
     "config.title.general-options": "Opzioni generali",
+
     "config.show-hover-tooltips.name": "Mostra consigli al passaggio del mouse",
     "config.show-hover-tooltips.desc": "Scegli se mostrare il nome del baule in un consiglio quando si indica un baule.",
+
     "config.enable-shipping-bin.name": "Abilita Cassetta delle Spedizioni",
     "config.enable-shipping-bin.desc": "Scegli se abilitare l'accesso alla cassetta delle spedizioni.",
+
+    "config.enable-sprinkler-attachments.name": "Abilita accessori per gli irrigatori",
+    "config.enable-sprinkler-attachments.desc": "Scegli se consentire l'accesso agli accessori degli irrigatori, come gli arricchitori.",
+
     "config.add-organize-player-items.name": "Aggiungi il pulsante per organizzare gli elementi del giocatore",
     "config.add-organize-player-items.desc": "Scegli se aggiungere o meno un pulsante 'organizza' nell'IU dei bauli per l'inventario del giocatore.",
+
+    /****
+    ** remote access
+    ****/
+    "config.title.remote-access": "Accesso remoto",
+
     "config.range.name": "Raggio",
     "config.range.desc": "Il raggio a cui i bauli sono accessibili attraverso il menu.",
     "config.range.unlimited": "Tutti i bauli",
@@ -63,34 +86,66 @@
     "config.range.currentLocation": "Bauli all'interno della posizione attuale",
     "config.range.none": "Nessuno (non si può accedere ai bauli da remoto)",
 
-    // general controls
-    "config.title.general-controls": "Controlli generali",
-    "config.toggle-ui-key.name": "Attiva IU",
-    "config.toggle-ui-key.desc": "I tasti che mostrano o nascondono l'interfaccia utente dello scrigno.",
+    "config.disable-mines.name": "Disabilita in miniere e Caverna del Teschio",
+    "config.disable-mines.desc": "Scegli se disabilitare l'accesso remoto ai forzieri nelle miniere o nella Caverna del Teschio.",
 
-    // controls when chest UI is open
+    "config.disable-custom-names.name": "Disabilita in nomi di luoghi",
+    "config.disable-custom-names.desc": "I nomi interni (come mostrato dalla modalità Debug) delle posizioni da cui disabilitare l'accesso remoto ai forzieri. È possibile elencarne di diversi con le virgole.",
+
+    /****
+    ** open menu hotkey
+    ****/
+    "config.title.open-menu-hotkey": "Tasto rapido per IU Baule",
+
+    "config.toggle-ui-key.name": "Attiva IU",
+    "config.toggle-ui-key.desc": "I tasti che mostrano o nascondono l'interfaccia utente del baule.",
+
+    "config.reopen-last-chest.name": "Riapri l'ultimo baule",
+    "config.reopen-last-chest.desc": "Quando premi il tasto 'Attiva IU', scegli se riaprire l'ultimo baule selezionato durante la sessione di gioco in corso.",
+
+    "config.default-category.name": "Categoria predefinita",
+    "config.default-category.desc": "Quando premi il tasto 'Attiva IU', mostra gli scrigni di questa categoria per impostazione predefinita (se impostata). Questo si applica dopo 'riapri l'ultimo scrigno'.",
+
+    /****
+    ** controls when chest UI is open
+    ****/
     "config.title.menu-controls": "Controlla quando l'interfaccia utente del baule è aperta",
+
     "config.edit-chest.name": "Modifica baule",
     "config.edit-chest.desc": "I tasti che modificano le opzioni del baule attuale.",
-    "config.sort-items.name": "Ordina gli oggetti",
-    "config.sort-items.desc": "I tasti che ordinano gli oggetti nel baule attuale.",
+
+    "config.sort-items.name": "Ordina oggetti del giocatore",
+    "config.sort-items.desc": "I tasti che ordinano gli oggetti nell'inventario del giocatore mentre il baule è aperto.",
+
     "config.navigate-prev-chest.name": "Naviga: baule precedente",
     "config.navigate-prev-chest.desc": "I tasti che consentono di passare al baule precedente quando il menu è aperto.",
+
     "config.navigate-next-chest.name": "Naviga: baule successivo",
     "config.navigate-next-chest.desc": "I tasti che consentono di passare al baule successivo quando il menu è aperto.",
+
     "config.navigate-prev-category.name": "Naviga: categoria precedente",
     "config.navigate-prev-category.desc": "I tasti che consentono di passare alla categoria precedente quando il menu è aperto.",
+
     "config.navigate-next-category.name": "Naviga: categoria successiva",
     "config.navigate-next-category.desc": "I tasti che consentono di passare alla categoria successiva quando il menu è aperto.",
+
     "config.hold-to-scroll-categories.name": "Tieni premuto per scorrere le categorie",
     "config.hold-to-scroll-categories.desc": "I tasti che, se tenuti premuti, consentono di scorrere il menu a tendina delle categorie con la rotella del mouse.",
+
     "config.hold-to-scroll-chests.name": "Tieni premuto per scorrere i bauli",
     "config.hold-to-scroll-chests.desc": "I tasti che, se tenuti premuti, consentono di scorrere il menu a tendina dei bauli con la rotella del mouse.",
 
-    // disable in locations
-    "config.title.disable-in-locations": "Disattiva nelle località",
-    "config.disable-mines.name": "Miniere e Caverna del Teschio",
-    "config.disable-mines.desc": "Scegli se disattivare l'accesso ai forzieri nelle miniere o nella Caverna del Teschio.",
-    "config.disable-custom-names.name": "Nomi personalizzati di luoghi",
-    "config.disable-custom-names.desc": "I nomi interni (come mostrato dalla modalità Debug) delle posizioni da cui disabilitare l'accesso ai forzieri. È possibile elencarne di diversi con le virgole."
+    // TODO
+    "config.open-search-menu.name": "Open Search Menu",
+    "config.open-search-menu.desc": "While viewing a chest UI, the keys which open the search menu for all chests.",
+
+    "config.search-menu-preview.name": "Search Menu Preview Chest",
+    "config.search-menu-preview.desc": "While viewing the search UI, the keys which can be held to show a preview tooltip of the hovered chest's contents.",
+
+
+    /*********
+    ** Iconic Framework icon
+    *********/
+    "icon.open-menu.name": "Chests Anywhere",
+    "icon.open-menu.desc": "Apri Menu"
 }

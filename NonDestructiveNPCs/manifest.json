@@ -1,10 +1,10 @@
 ﻿{
-  "Name": "Non Destructive NPCs",
-  "Author": "Madara Uchiha",
-  "Version": "1.0.0",
+  "Name": "Non Destructive NPCs - 1.6 Unofficial update",
+  "Author": "Madara Uchiha - IamSaulC",
+  "Version": "1.6",
   "Description": "NPCs no longer destroy placed objects in their paths. They would instead pass through them.",
-  "UniqueID": "MadaraUchiha.NonDestructiveNPCs",
+  "UniqueID": "IamSaulC.NonDestructiveNPCs",
   "EntryDll": "NonDestructiveNPCs.dll",
   "MinimumApiVersion": "3.1.0",
-  "UpdateKeys": [ "Nexus:5176" ]
+  "UpdateKeys": []
 }

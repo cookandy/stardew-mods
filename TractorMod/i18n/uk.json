@@ -66,15 +66,22 @@
     /****
     ** Audio
     ****/
-    "config.tractor-sounds.name": "Звукові ефекти",
+    "config.tractor-sounds.name": "Звуки двигуна",
     "config.tractor-sounds.tooltip": "Які звукові ефекти відтворювати під час їзди на тракторі. Зміни можуть не набути чинності до перезавантаження збереженої гри. За замовчуванням {{defaultValue}}.",
     "config.tractor-sounds.value.None": "без звуків",
     "config.tractor-sounds.value.Horse": "звуки коня",
     "config.tractor-sounds.value.Tractor": "звуки трактора",
 
     // TODO
-    "config.tractor-volume.name": "Sound Effects Volume",
+    "config.tractor-volume.name": "Engine Sounds Volume",
     "config.tractor-volume.tooltip": "The volume level for the tractor sound effects. Default {{defaultValue}}%.",
+
+    // TODO
+    "config.tool-use-sounds-limit.name": "Tool Use Sounds",
+    "config.tool-use-sounds-limit.tooltip": "When applying a tool to many tiles around the tractor, which tool sounds should be played. The default option is '{{defaultOption}}'. Note that '{{unlimitedOption}}' may cause errors if the '{{distanceOption}}' option is too high, due to playing too many sounds at once.",
+    "config.tool-use-sounds-limit.value.Default": "default",
+    "config.tool-use-sounds-limit.value.OncePerTick": "first tile applied",
+    "config.tool-use-sounds-limit.value.Unlimited": "play every sound (not recommended)",
 
 
     /****
@@ -88,6 +95,13 @@
 
     "config.hold-to-activate-key.name": "Утримувати, щоб активувати",
     "config.hold-to-activate-key.tooltip": "Якщо вказано, трактор буде робити щось лише тоді, коли ви утримуєте цю кнопку. Якщо нічого не вказано, трактор працюватиме автоматично, поки ви на ньому їздите.",
+
+    // TODO
+    "config.increase-distance-key.name": "Increase Distance",
+    "config.increase-distance-key.tooltip": "Temporarily increase the distance at which tools are applied around the tractor by one, up to the recommended maximum of {{maxRecommendedValue}} tiles. This applies until you reload the save.",
+
+    "config.reduce-distance-key.name": "Reduce Distance",
+    "config.reduce-distance-key.tooltip": "Temporarily reduce the distance at which tools are applied around the tractor by one, down to the recommended minimum of 1 tile. This applies until you reload the save.",
 
 
     /****
@@ -180,8 +194,12 @@
     "config.dig-seed-spots.name": "Dig Seed Spots",
     "config.dig-seed-spots.tooltip": "Whether to dig up seed spots.",
 
-    "config.clear-tilled-dirt.name": "Перекопати оброблений ґрунт",
-    "config.clear-tilled-dirt.tooltip": "Переконування обробленого ґрунту.",
+    "config.clear-dirt-without-fertilizer.name": "Перекопати оброблений ґрунт",
+    "config.clear-dirt-without-fertilizer.tooltip": "Переконування обробленого ґрунту.",
+
+    // TODO
+    "config.clear-dirt-with-fertilizer.name": "Clear Tilled Dirt (Fertilized)",
+    "config.clear-dirt-with-fertilizer.tooltip": "Whether to clear tilled dirt which has fertilizer.",
 
 
     /****
@@ -246,5 +264,13 @@
     "config.slingshot.tooltip": "Стрілянина з рогатки за допомогою курсору. (Це дуже сильно навантажує та споживає купу боєприпасів через швидкість трактора.)",
 
     "config.custom-tool-names.name": "Користувацькі назви предметів",
-    "config.custom-tool-names.tooltip": "Користувацькі предмети/інструменти, які можна вмикати під час їзди на тракторі. Інструменти будуть використані на кожній навколишній клітині, а предмети будуть відкладені. Якщо ви вкажете предмет, що вже підтримується (наприклад, сокира), це зніме всі обмеження щодо його використання. Ви повинні вказати точну ігрову назву (не перекладену назву), наприклад «Axe» або «Mega Bomb». Розділіть кілька значень комами."
+    "config.custom-tool-names.tooltip": "Користувацькі предмети/інструменти, які можна вмикати під час їзди на тракторі. Інструменти будуть використані на кожній навколишній клітині, а предмети будуть відкладені. Якщо ви вкажете предмет, що вже підтримується (наприклад, сокира), це зніме всі обмеження щодо його використання. Ви повинні вказати точну ігрову назву (не перекладену назву), наприклад «Axe» або «Mega Bomb». Розділіть кілька значень комами.",
+
+
+    /*********
+    ** Iconic Framework icon
+    *********/
+    // TODO
+    "icon.summon-tractor.name": "Tractor Mod",
+    "icon.summon-tractor.desc": "Summon Tractor"
 }

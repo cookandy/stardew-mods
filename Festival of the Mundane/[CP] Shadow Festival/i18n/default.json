@@ -1,0 +1,16 @@
+﻿{
+    "ImposingMask.DisplayName": "Imposing Mask",
+    "ImposingMask.Description": "It gives off an imposing aura, yet is oddly calming to those of the shadows.",
+    "ShadyBowedMask.DisplayName": "Shady Bowed Mask",
+    "ShadyBowedMask.Description": "The bow gives this creepy mask an oddly cute look that may placate those of the shadow.",
+    "ShadyMask.DisplayName": "Shady Mask",
+    "ShadyMask.Description": "You'll surely blend in with those of shadow in this.",
+    "ShamanicMask.DisplayName": "Shamanic Mask",
+    "ShamanicMask.Description": "It's imbued with an ancient magic that endears you to those of the shadow.",
+    "StrangeBunHat.DisplayName": "Strange Bun Hat",
+    "StrangeBunHat.Description": "A festive hat with a slightly disconcerting odor.",
+
+    "shop-menu.message0": "Shadow friends throw some party, eh Poke?",
+    "shop-menu.message1": "I have special hats. You have coins?",
+    "shop-menu.message2": "Hey Poke, you like boat?"
+}

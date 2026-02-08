@@ -66,15 +66,22 @@
     /****
     ** Audio
     ****/
-    "config.tractor-sounds.name": "Effets sonores",
+    "config.tractor-sounds.name": "Sons du moteur",
     "config.tractor-sounds.tooltip": "Quel effet sonore jouer en conduisant le tracteur. Les modifications peuvent ne pas prendre effet tant que vous n'avez pas rechargé la sauvegarde. {{defaultValue}} par défaut.",
     "config.tractor-sounds.value.None": "pas de bruit",
     "config.tractor-sounds.value.Horse": "bruit de cheval",
     "config.tractor-sounds.value.Tractor": "bruit de tracteur",
 
     // TODO
-    "config.tractor-volume.name": "Sound Effects Volume",
+    "config.tractor-volume.name": "Engine Sounds Volume",
     "config.tractor-volume.tooltip": "The volume level for the tractor sound effects. Default {{defaultValue}}%.",
+
+    // TODO
+    "config.tool-use-sounds-limit.name": "Tool Use Sounds",
+    "config.tool-use-sounds-limit.tooltip": "When applying a tool to many tiles around the tractor, which tool sounds should be played. The default option is '{{defaultOption}}'. Note that '{{unlimitedOption}}' may cause errors if the '{{distanceOption}}' option is too high, due to playing too many sounds at once.",
+    "config.tool-use-sounds-limit.value.Default": "default",
+    "config.tool-use-sounds-limit.value.OncePerTick": "first tile applied",
+    "config.tool-use-sounds-limit.value.Unlimited": "play every sound (not recommended)",
 
 
     /****
@@ -88,6 +95,13 @@
 
     "config.hold-to-activate-key.name": "Maintenir pour activer",
     "config.hold-to-activate-key.tooltip": "Si vous le spécifiez, le tracteur ne fera quelque chose que si vous maintenez ce bouton enfoncé. Si rien n'est spécifié, le tracteur fonctionnera automatiquement pendant que vous le conduisez.",
+
+    // TODO
+    "config.increase-distance-key.name": "Increase Distance",
+    "config.increase-distance-key.tooltip": "Temporarily increase the distance at which tools are applied around the tractor by one, up to the recommended maximum of {{maxRecommendedValue}} tiles. This applies until you reload the save.",
+
+    "config.reduce-distance-key.name": "Reduce Distance",
+    "config.reduce-distance-key.tooltip": "Temporarily reduce the distance at which tools are applied around the tractor by one, down to the recommended minimum of 1 tile. This applies until you reload the save.",
 
 
     /****
@@ -180,8 +194,12 @@
     "config.dig-seed-spots.name": "Dig Seed Spots",
     "config.dig-seed-spots.tooltip": "Whether to dig up seed spots.",
 
-    "config.clear-tilled-dirt.name": "Déblayer terre labourée",
-    "config.clear-tilled-dirt.tooltip": "S'il faut déblayer une terre labourée.",
+    "config.clear-dirt-without-fertilizer.name": "Déblayer terre labourée",
+    "config.clear-dirt-without-fertilizer.tooltip": "S'il faut déblayer une terre labourée.",
+
+    // TODO
+    "config.clear-dirt-with-fertilizer.name": "Clear Tilled Dirt (Fertilized)",
+    "config.clear-dirt-with-fertilizer.tooltip": "Whether to clear tilled dirt which has fertilizer.",
 
 
     /****
@@ -245,5 +263,12 @@
     "config.slingshot.tooltip": "Si la fronde doit être tirée vers le curseur. (Ceci est massivement surpuissant et consommera voracement des munitions en raison de la vitesse de l'outil tracteur).",
 
     "config.custom-tool-names.name": "Noms des outils personnalisés",
-    "config.custom-tool-names.tooltip": "Les objets/outils personnalisés à activer lorsque vous conduisez le tracteur. Les outils seront utilisés sur chaque tuile environnante, tandis que les objets seront posés. Si vous spécifiez quelque chose qui est déjà pris en charge (comme la hache), cela annule toutes les limitations sur son utilisation. Vous devez spécifier le nom interne exact (et non le nom d'affichage traduit), comme 'Axe' ou 'Mega Bomb'. Séparez les valeurs multiples par des virgules."
+    "config.custom-tool-names.tooltip": "Les objets/outils personnalisés à activer lorsque vous conduisez le tracteur. Les outils seront utilisés sur chaque tuile environnante, tandis que les objets seront posés. Si vous spécifiez quelque chose qui est déjà pris en charge (comme la hache), cela annule toutes les limitations sur son utilisation. Vous devez spécifier le nom interne exact (et non le nom d'affichage traduit), comme 'Axe' ou 'Mega Bomb'. Séparez les valeurs multiples par des virgules.",
+
+
+    /*********
+    ** Iconic Framework icon
+    *********/
+    "icon.summon-tractor.name": "Tractor Mod",
+    "icon.summon-tractor.desc": "Appeler le tracteur (Tractor Mod)"
 }

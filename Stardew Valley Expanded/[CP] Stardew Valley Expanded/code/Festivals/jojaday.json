@@ -707,19 +707,6 @@
 				"JojaDay1_Victor": "{{i18n:JojaDay.Dialogue.116}}",
 			}
 		},
-		{ //Victor Joja Day Marriage Dialogue
-			"Action": "EditData",
-			"Target": "characters/Dialogue/MarriageDialogueVictor",
-			"When": {
-				"HasSeenEvent": "502261",
-				"Spouse": "Victor",
-				"Day": "22"
-			},
-			"Entries": {
-				"funLeave_Victor": "{{i18n:JojaDay.Dialogue.59}}",
-				"funReturn_Victor": "{{i18n:JojaDay.Dialogue.60}}",
-			},
-		},
 		{ //OLIVIA Joja Day Schedule
 			"Action": "EditData",
 			"Target": "characters/schedules/Olivia",
@@ -751,19 +738,6 @@
 				"JojaDay1_Olivia": "{{i18n:JojaDay.Dialogue.62}}",
 				"JojaDay2_Olivia": "{{i18n:JojaDay.Dialogue.63}}",
 			}
-		},
-		{ //Olivia Joja Day Marriage Dialogue
-			"Action": "EditData",
-			"Target": "characters/Dialogue/MarriageDialogueOlivia",
-			"When": {
-				"HasSeenEvent": "502261",
-				"Spouse": "Olivia",
-				"Day": "22"
-			},
-			"Entries": {
-				"funLeave_Olivia": "{{i18n:JojaDay.Dialogue.64}}",
-				"funReturn_Olivia": "{{i18n:JojaDay.Dialogue.65}}",
-			},
 		},
 		{ //JODI Joja Day Schedule
 			"Action": "EditData",
@@ -1052,10 +1026,6 @@
 		{ //CLAIRE Joja Day Schedule - MARRIED
 			"Action": "EditData",
 			"Target": "Characters/Schedules/Claire",
-			"When": {
-				"HasSeenEvent": "502261",
-				"Day": "22"
-			},
 			"Entries": {
 				"marriage_FlashShifter.StardewValleyExpandedCP_JojaDay": "740 JojaMart 9 25 1 \"Strings\\schedules\\Claire:JojaDay_Claire\"/2000 JojaMart 12 24 1 \"Strings\\schedules\\Claire:JojaDay1_Claire\"/2110 bed"
 			}
@@ -1067,19 +1037,6 @@
 				"JojaDay_Claire": "{{i18n:JojaDay.Dialogue.93}}",
 				"JojaDay1_Claire": "{{i18n:JojaDay.Dialogue.94}}",
 			}
-		},
-		{ //Claire Joja Day Marriage Dialogue
-			"Action": "EditData",
-			"Target": "characters/Dialogue/MarriageDialogueClaire",
-			"When": {
-				"HasSeenEvent": "502261",
-				"Spouse": "Claire",
-				"Day": "22"
-			},
-			"Entries": {
-				"funLeave_Claire": "{{i18n:JojaDay.Dialogue.95}}",
-				"funReturn_Claire": "{{i18n:JojaDay.Dialogue.96}}",
-			},
 		},
 		{ //MARTIN Joja Day Schedule
 			"Action": "EditData",
@@ -1208,19 +1165,6 @@
 			"Entries": {
 				"JojaDay_Sophia": "{{i18n:JojaDay.Dialogue.112}}",
 			}
-		},
-		{ //Sophia Joja Day Marriage Dialogue
-			"Action": "EditData",
-			"Target": "characters/Dialogue/MarriageDialogueSophia",
-			"When": {
-				"HasSeenEvent": "502261",
-				"Spouse": "Sophia",
-				"Day": "22"
-			},
-			"Entries": {
-				"funLeave_Sophia": "{{i18n:JojaDay.Dialogue.113}}",
-				"funReturn_Sophia": "{{i18n:JojaDay.Dialogue.114}}",
-			},
 		},
 	]
 }

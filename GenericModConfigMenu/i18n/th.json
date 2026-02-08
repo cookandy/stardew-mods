@@ -8,7 +8,7 @@
     // mod list UI
     "list.editable-heading": "กำหนดค่าม็อด",
     "list.not-editable-heading": "แก้ไขได้จากหน้าจอเริ่มต้นเกม:",
-    "list.keybindings": "คีย์ลัด",
+    "list.keybinds": "คีย์ลัด",
 
     // mod config pages
     "config.buttons.cancel": "ยกเลิก",
@@ -16,10 +16,12 @@
     "config.buttons.save": "บันทึก",
     "config.buttons.save-and-close": "บันทึก & ปิด",
 
+    // keybind overlay
     "config.rebind-key.title": "การตั้งค่าปุ่มลัด: {{optionName}}",
-    "config.rebind-key.simple-instructions": "ป้อนคีย์ใหม่เพื่อตั้งค่าปุ่มลัดอีกครั้ง",
-    "config.rebind-key.combo-instructions": "ป้อนคีย์ใหม่เพื่อตั้งค่าปุ่มลัด",
+    "config.rebind-key.simple-instructions": "ป้อนคีย์ใหม่เพื่อตั้งค่าปุ่มลัดอีกครั้ง.",
+    "config.rebind-key.combo-instructions": "ป้อนคีย์ใหม่เพื่อตั้งค่าปุ่มลัด.",
     "config.rebind-key.no-key": "(ไม่มี)",
+    "config.rebind-key.keybind-list": "คีย์ลัด:",
 
 
     /*********

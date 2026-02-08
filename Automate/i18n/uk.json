@@ -19,7 +19,9 @@
     "config.title.connectors": "Увімкнення з'єднання",
     "config.connector.desc": "{{itemName}} з'єднуватиме машини та скрині разом.",
     "config.custom-connectors.name": "Користувацьке з'єднання",
-    "config.custom-connectors.desc": "Точні англійські назви предметів, які з'єднують сусідні машини разом. Ви можете перерахувати кілька предметів комами.", // note: connector names must be English even when playing in other languages
+
+    // TODO
+    "config.custom-connectors.desc": "The items which connect adjacent machines together. You can specify either the internal English name (like \"Wood Path\") or qualified item ID (like \"(O)405\"), and list multiple items with commas.", // note: connector names must be English even when playing in other languages
 
     // Junimo hut options
     "config.title.junimo-huts": "Поведінка хатинок джунімо",
@@ -36,9 +38,22 @@
     "config.junimo-huts.move-into-chests": "Переміщувати з хатинок джунімо до скринь",
     "config.junimo-huts.move-into-huts": "Переміщувати зі скринь до хатинок джунімо",
 
+    // per-chest settings
+    // TODO
+    "config.title.chest-settings": "Chest settings",
+    "config.default-chest-override.name": "Default behavior",
+    "config.default-chest-override.desc": "Whether chests should be enabled or disabled by default (except those you set below). Enabled chests will automate connected machines, while disabled ones are ignored entirely.",
+    "config.chest-override.name": "{{chestName}}",
+    "config.chest-override.name.take-only": "{{chestName}} (take items only)",
+    "config.chest-override.desc": "Whether placed {{chestName}} items should be enabled as chests. See the tooltip on '{{defaultBehaviorField}}'.",
+    "config.chest-override.desc.take-only": "{{description}} (When enabled, this chest type only allows taking items out of the chest.)", // {{description}} contains the previous translation line
+    "config.chest-override.values.default": "Default",
+    "config.chest-override.values.enabled": "Enable",
+    "config.chest-override.values.disabled": "Disable",
+
     // per-machine settings
     "config.title.machine-settings": "{{machineName}} Поведінка",
-    "config.machine-settings-enabled.Name": "Увімкнено",
+    "config.machine-settings-enabled.name": "Увімкнено",
     "config.machine-settings-enabled.desc": "Увімкнення автоматизації машини \"{{machineName}}\".",
     "config.machine-settings-priority.name": "Пріоритет",
     "config.machine-settings-priority.desc": "Порядок пріоритету, у якому машини {{machineName}} мають оброблятися в порівнянні з іншими машинами. Машини мають стандартний пріоритет 0, при цьому спочатку обробляються машини з вищими значеннями.",

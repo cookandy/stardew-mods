@@ -37,6 +37,12 @@
     "tools.one-hit-break": "Разрушение с одного удара",
     "tools.harvest-with-scythe": "Сбор культур серпом",
 
+    // tool enchantments
+    "tool-enchantments.title": "Чары для инструментов",
+    "tool-enchantments.select-tool": "Выберите инструмент на панели быстрого доступа, чтобы редактировать чары.",
+    "tool-enchantments.none-for-tool": "Для {{toolName}} чары недоступны.",
+    "tool-enchantments.for-tool": "Для {{toolName}}.",
+
     // money
     "add.money": "Деньги",
     "add.casino-coins": "Клубные монеты",
@@ -51,7 +57,8 @@
     *********/
     // farm
     "farm.title": "Ферма",
-    "farm.auto-water": "Автополиваемые культуры",
+    "farm.auto-water-crops": "Автополиваемые культуры",
+    "farm.auto-water-pet-bowls": "Auto-Water Pet Bowls", // TODO
     "farm.durable-fences": "Прочные ограждения",
     "farm.instant-build": "Мгновенное строительство",
     "farm.auto-feed-animals": "Автоматическая подкормка животных",
@@ -78,56 +85,25 @@
     *********/
     // skills
     "skills.title": "Навыки",
-    "skills.increase-farming": "Увеличить ур. Фермерства: {{currentLevel}}",
-    "skills.increase-mining": "Увеличить ур. Горного дела: {{currentLevel}}",
-    "skills.increase-foraging": "Увеличить ур. Собирательства: {{currentLevel}}",
-    "skills.increase-fishing": "Увеличить ур. Рыбалки: {{currentLevel}}",
-    "skills.increase-combat": "Увеличить ур. Боевых навыков: {{currentLevel}}",
+    "skills.increase-skill": "Увеличить ур. {{skillName}}: {{currentLevel}}",
 
     // professions
     "professions.title": "Профессии",
-    "professions.combat.fighter": "Боевые навыки ур. 5 - Боец",
-    "professions.combat.scout": "Боевые навыки ур. 5 - Разведчик",
-    "professions.combat.acrobat": "Боевые навыки ур. 10 - Акробат",
-    "professions.combat.brute": "Боевые навыки ур. 10 - Воротила",
-    "professions.combat.defender": "Боевые навыки ур. 10 - Защитник",
-    "professions.combat.desperado": "Боевые навыки ур. 10 - Сорвиголова",
-    "professions.farming.rancher": "Фермерство ур. 5 - Животновод",
-    "professions.farming.tiller": "Фермерство ур. 5 - Культиватор",
-    "professions.farming.agriculturist": "Фермерство ур. 10 - Земледелец",
-    "professions.farming.artisan": "Фермерство ур. 10 - Золотые руки",
-    "professions.farming.coopmaster": "Фермерство ур. 10 - Птицевод",
-    "professions.farming.shepherd": "Фермерство ур. 10 - Пастух",
-    "professions.fishing.fisher": "Рыбалка ур. 5 - Рыбак",
-    "professions.fishing.trapper": "Рыбалка ур. 5 - Краболов",
-    "professions.fishing.angler": "Рыбалка ур. 10 - Рыболов",
-    "professions.fishing.luremaster": "Рыбалка ур. 10 - Мастер по наживке",
-    "professions.fishing.mariner": "Рыбалка ур. 10 - Мореход",
-    "professions.fishing.pirate": "Рыбалка ур. 10 - Пират",
-    "professions.foraging.forester": "Собирательство ур. 5 - Лесник",
-    "professions.foraging.gatherer": "Собирательство ур. 5 - Собиратель",
-    "professions.foraging.botanist": "Собирательство ур. 10 - Ботаник",
-    "professions.foraging.lumberjack": "Собирательство ур. 10 - Дровосек",
-    "professions.foraging.tapper": "Собирательство ур. 10 - Вздымщик",
-    "professions.foraging.tracker": "Собирательство ур. 10 - Сыщик",
-    "professions.mining.geologist": "Горное дело ур. 5 - Геолог",
-    "professions.mining.miner": "Горное дело ур. 5 - Шахтер",
-    "professions.mining.blacksmith": "Горное дело ур. 10 - Кузнец",
-    "professions.mining.excavator": "Горное дело ур. 10 - Землекоп",
-    "professions.mining.gemologist": "Горное дело ур. 10 - Геммолог",
-    "professions.mining.prospector": "Горное дело ур. 10 - Старатель",
+    "professions.profession": "{{skillName}} ур. {{level}} - {{professionName}}",
 
 
     /*********
     ** Weather tab
     *********/
     "weather.title": "Погода",
-    "weather.current": "Состояние погоды на завтра",
-    "weather.explanation": "Click a button below to set the weather for tomorrow (and only tomorrow). This tab has zero effect on weather otherwise.", // TODO
+    "weather.current-value": "Погода на завтра установлена на {{weather}}.",
+    "weather.explanation": "Нажмите кнопку ниже, чтобы установить погоду на завтра (только на завтра). Эта вкладка не влияет на погоду в другое время.",
+    "weather.cannot-change-weather": "The game forces tomorrow's weather to {{weather}}, so it can't be changed.", // TODO
     "weather.sunny": "Солнечно",
     "weather.raining": "Дождь",
     "weather.lightning": "Гроза",
     "weather.snowing": "Снегопад",
+    "weather.green-rain": "Зелёный дождь",
 
 
     /*********
@@ -142,7 +118,7 @@
     /*********
     ** Warps tab
     *********/
-    "warp.customized-warning": "These warps were edited by your mods. Please report warp issues to the mods which added them if applicable.", // TODO
+    "warp.customized-warning": "Эти телепорты были изменены вашими модами. Пожалуйста, сообщайте о проблемах с телепортами модам, которые их добавили, если это возможно.",
 
     // main areas
     "warp-section.main": "Главные локации",
@@ -165,7 +141,7 @@
     // forest
     "warp-section.forest": "Лес",
     "warp.hats": "Разрушенный дом",
-    "warp.mastery-cave": "Mastery Cave", // TODO
+    "warp.mastery-cave": "Пещера Мастерства",
     "warp.ranch": "Ранчо Марни",
     "warp.secret-woods": "Тайный лес",
     "warp.wizard-tower": "Башня волшебника",
@@ -206,6 +182,7 @@
     "time.freeze-inside": "Остановить время в помещениях",
     "time.freeze-caves": "Остановить время в пещерах",
     "time.freeze-everywhere": "Остановить время в любых местах",
+    "time.fade-time-frozen-message": "Скрывать '{{timeFrozen}}' через несколько секунд",
     "time.time": "Текущее время",
     "time.time-frozen-message": "Время остановлено",
 
@@ -229,6 +206,7 @@
     "flags.unlocked-content": "Разблокировать контент",
     "flags.unlocked-content.dyes-and-tailoring": "Перекраска и шитьё",
     "flags.unlocked-content.junimo-text": "Изучен язык Джунимо",
+    "flags.unlocked-content.perfection": "Совершенство достигнуто",
     "flags.community-center": "Клуб",
     "flags.community-center.door-unlocked": "Открыть дверь",
     "flags.jojamart.membership": "Членство в корпорации \"ДжоджаМарт\"",
@@ -251,14 +229,16 @@
     /*********
     ** Generic Mod Config Menu UI
     *********/
-    // TODO
-    "config.open-menu.desc": "The keybind which opens the menu (when no other menu is open).",
-    "config.freeze-time.desc": "The keybind which freezes the game clock.",
-    "config.grow-tree.desc": "The keybind held to grow trees around the player.",
-    "config.grow-crops.desc": "The keybind held to grow crops around the player.",
+    "config.open-menu.desc": "Кнопка открытия меню (когда нет других открытых меню).",
+    "config.freeze-time.desc": "Кнопка остановки времени.",
+    "config.grow-tree.desc": "Кнопка, которую нужно удерживать, чтобы вырастить деревья вокруг игрока",
+    "config.grow-crops.desc": "Кнопка, которую нужно удерживать, чтобы вырастить посевные культуры вокруг игрока.",
 
-    "config.title.other-options": "Other options",
-    "config.default-tab.name": "Default tab",
-    "config.default-tab.desc": "The tab shown by default when you open the menu.",
-    "config.other-options": "To configure cheats, press the 'open menu' key shown above in-game. Make sure you press it after loading the save, when no other menu or dialogue is open."
+    "controls.reload-config": "Перезагрузить настройки из файла",
+    "controls.reload-config.desc": "Кнопка, которая перезагружает настройки мода из файла config.json мода. Если меню открыто в данный момент, изменения вступят в силу только после повторного его открытия.",
+
+    "config.title.other-options": "Другое",
+    "config.default-tab.name": "Вкладка по умолчанию",
+    "config.default-tab.desc": "Вкладка, показываемая по умолчанию",
+    "config.other-options": "Чтобы настроить читы, нажмите кнопку 'Открыть меню', указанную выше в игре. Убедитесь, что вы нажимаете её после загрузки сохранения, когда никакое другое меню или диалог не открыт."
 }

@@ -1,10 +1,10 @@
 ﻿{
-    /*********
+    /*************************************************
     ** Generic translations
-    *********/
+    *************************************************/
     // language info
     "generic.list-separator": ", ", // text between listed values (like ", " in "A, B, C")
-    "generic.line-wrap-on": "",     // characters after which we can line-wrap text if needed, even if there's no space
+    "generic.line-wrap-on": "", // characters after which we can line-wrap text if needed, even if there's no space
 
     // date names
     "generic.now": "now",
@@ -34,10 +34,10 @@
     "generic.show-x-results": "show {{count}} results",
 
     // types
+    "type.achievement": "Achievement",
     "type.building": "Building",
     "type.bush": "Bush",
     "type.fruit-tree": "Fruit tree",
-    "type.map-tile": "Map tile",
     "type.monster": "Monster",
     "type.player": "Player",
     "type.tree": "Tree",
@@ -61,7 +61,17 @@
     "friendship-status.divorced": "Divorced",
     "friendship-status.kicked-out": "Kicked out",
 
+    // custom content (shows which mod added an item, NPC, etc)
+    "added-by-mod": "Added by mod",
+    "added-by-mod.summary": "{{modName}}",
 
+    // internal ID
+    "internal-id": "Internal ID",
+
+
+    /*************************************************
+    ** Lookup UI
+    *************************************************/
     /*********
     ** Data translations
     *********/
@@ -113,6 +123,10 @@
     "location.forest.island-tip": "{{locationName}} (river near south tip of large island)",
     "location.forest.lake": "{{locationName}} (pond)",
     "location.forest.river": "{{locationName}} (river)",
+    "location.HarveyRoom": "Harvey's Room",
+    "location.LeoTreeHouse": "Treehouse",
+    "location.SandyHouse": "Oasis",
+    "location.SebastianRoom": "Sebastian's Room",
     "location.submarine": "Night Market Submarine",
     "location.town.northmost-bridge": "{{locationName}} (northmost bridge)",
     "location.undergroundMine": "Mines",
@@ -136,6 +150,8 @@
     /*********
     ** Conditions & context tags
     *********/
+    "conditions-summary": "[conditions: {{conditions}}]", // wraps 'game state query' conditions that often can't be translated. For example: "[conditions: ITEM_ID Input (O)128]".
+
     "condition-or-context-tag.negate": "not {{value}}",
 
     "condition.day-of-month": "on specific days ({{days}})",
@@ -163,6 +179,18 @@
 
 
     /*********
+    ** Achievement lookups
+    *********/
+    // labels
+    "achievement.unlocked": "Unlocked",
+    "achievement.hat-shop": "Hat shop",
+
+    // values
+    "achievement.hat-shop.hats-added": "These hats are added to the Hat Mouse shop when the achievement is unlocked:",
+    "achievement.hat-shop.no-hats-added": "No hats are unlocked by this achievement.",
+
+
+    /*********
     ** Animal lookups
     *********/
     // labels
@@ -173,6 +201,7 @@
     "animal.produce-ready": "Produce ready",
     "animal.growth": "Growth",
     "animal.sells-for": "Sells for",
+    "animal.golden-cracker": "Golden animal cracker", // also used for fish ponds
 
     // values
     "animal.complaints.hungry": "wasn't fed yesterday",
@@ -181,6 +210,8 @@
     "animal.complaints.no-heater": "no heater in winter",
     "animal.complaints.not-petted": "hasn't been petted today",
     "animal.complaints.wild-animal-attack": "attacked by wild animals during the night",
+    "animal.golden-cracker.none": "None. Add a golden animal cracker to double produced items.",
+    "animal.golden-cracker.applied": "Applied; produced items are doubled.",
 
 
     /*********
@@ -189,6 +220,7 @@
     // labels
     "building.animals": "Animals",
     "building.construction": "Construction",
+    "building.construction-costs": "Construction costs",
     "building.feed-trough": "Feed trough",
     "building.horse": "Horse",
     "building.horse-location": "Horse location",
@@ -300,6 +332,8 @@
     "crop.summary.drops-X-to-Y": "drops {{min}} to {{max}} ({{percent}}% chance of extra crops)",
     "crop.summary.harvest-once": "harvest after {{daysToFirstHarvest}} days",
     "crop.summary.harvest-multi": "harvest after {{daysToFirstHarvest}} days, then every {{daysToNextHarvests}} days",
+    "crop.summary.farming-xp": "gives +{{amount}} farming XP per harvest",
+    "crop.summary.foraging-xp": "gives +{{amount}} foraging XP per harvest",
     "crop.summary.seasons": "grows in {{seasons}}",
     "crop.summary.sells-for": "sells for {{price}}",
     "crop.harvest.too-late": "too late in the season for the next harvest (would be on {{date}})",
@@ -309,7 +343,6 @@
     ** Item > generic lookups
     *********/
     // labels
-    "item.custom-item": "Custom item",
     "item.contents": "Contents",
     "item.loves-this": "Loves this",
     "item.likes-this": "Likes this",
@@ -317,6 +350,7 @@
     "item.dislikes-this": "Dislikes this",
     "item.hates-this": "Hates this",
     "item.needed-for": "Needed for",
+    "item.flavor": "Flavor", // links to the flavor item (e.g. 'Blueberry' for Blueberry Wine)
     "item.number-owned": "Owned",
     "item.number-cooked": "Cooked",
     "item.number-crafted": "Crafted",
@@ -328,7 +362,6 @@
     "item.produces-dye": "Produces dye",
 
     // values
-    "item.custom-item.summary": "added by {{modName}}",
     "item.contents.placed": "{{name}} placed",
     "item.contents.ready": "{{name}} ready",
     "item.contents.partial": "{{name}} in {{time}}",
@@ -336,20 +369,23 @@
     "item.undiscovered-gift-taste-appended": ", and {{count}} unrevealed villagers",
     "item.needed-for.community-center": "community center ({{bundles}})",
     "item.needed-for.full-shipment": "full shipment achievement (ship one)",
+    "item.needed-for.monoculture": "monoculture achievement (ship {{count}} more)",
     "item.needed-for.polyculture": "polyculture achievement (ship {{count}} more)",
     "item.needed-for.full-collection": "full collection achievement (donate one to museum)",
     "item.needed-for.gourmet-chef": "gourmet chef achievement (cook {{recipes}})",
     "item.needed-for.craft-master": "craft master achievement (make {{recipes}})",
     "item.needed-for.quests": "current quests ({{quests}})",
+    "item.needed-for.trash-bear": "trash bear (deliver one)",
     "item.unknown-recipes": "{{count}} unknown recipes",
     "item.sells-to.shipping-box": "shipping box",
     "item.recipes-for-ingredient.entry": "{{name}} (needs {{count}})",
     "item.recipes-for-machine.multiple-items": "{{name}} x{{count}}",
     "item.recipes-for-machine.same-as-input": "[same as input]", // e.g. crystalarium produces same item that was put in
-    "item.recipes-for-machine.conditions": "[conditions: {{conditions}}]",
     "item.recipes-for-machine.too-complex": "Some machine rules are too dynamic to display.",
     "item.number-owned.summary": "you own {{count}} of these",
+    "item.number-owned-flavored.summary": "you own {{count}} ({{name}}) or {{baseCount}} ({{baseName}}) of these", // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
     "item.number-crafted.summary": "you made {{count}} of these",
+    "item.internal-id.summary": "{{itemId}} (globally unique 'qualified ID': {{qualifiedItemId}})",
 
 
     /*********
@@ -396,6 +432,7 @@
     // values
     "item.fish-spawn-rules.min-fishing-level": "min fishing level: {{level}}",
     "item.fish-spawn-rules.not-caught-yet": "not caught yet (can only be caught once)",
+    "item.fish-spawn-rules.extended-family-quest-active": "\"Extended Family\" quest active",
     "item.fish-spawn-rules.locations": "locations: {{locations}}",
     "item.fish-spawn-rules.locations-by-season.label": "locations:",
     "item.fish-spawn-rules.locations-by-season.season-locations": "{{season}}: {{locations}}",
@@ -404,6 +441,7 @@
     "item.fish-spawn-rules.time": "time of day: {{times}}",
     "item.fish-spawn-rules.weather-sunny": "weather: sunny",
     "item.fish-spawn-rules.weather-rainy": "weather: raining",
+    "item.uncaught-fish": "{{count}} uncaught fish",
 
 
     /*********
@@ -488,6 +526,7 @@
     "npc.neutral-gifts": "Neutral gifts",
     "npc.dislikes-gifts": "Dislikes gifts",
     "npc.hates-gifts": "Hates gifts",
+    "npc.schedule": "Today's schedule",
 
     // values
     "npc.can-romance.married": "You're married! <", // < turns into a heart
@@ -497,6 +536,12 @@
     "npc.friendship.need-points": "next in {{count}} pts",
     "npc.undiscovered-gift-taste": "{{count}} unrevealed items",
     "npc.unowned-gift-taste": "{{count}} unowned items",
+    "npc.schedule.current-position": "Currently at {{locationName}} ({{x}}, {{y}}).",
+    "npc.schedule.no-entries": "No schedule loaded.",
+    "npc.schedule.not-following-schedule": "Currently not following a schedule. This usually means the NPC is doing special behaviors (e.g. at the movie theater).",
+    "npc.schedule.entry": "{{time}}: walk to {{locationName}} ({{x}}, {{y}}).",
+    "npc.schedule.farmhand.unknown-position": "Currently in an unknown location on the host.",
+    "npc.schedule.farmhand.unknown-schedule": "In multiplayer, NPCs are managed by the host so their schedule isn't available.",
 
 
     /*********
@@ -608,19 +653,30 @@
     /*********
     ** Tile lookups
     *********/
+    // Note for translators:
+    // The translations in this section are a bit more technical. Quick summary:
+    //
+    //  - A 'map' sets the layout and appearance for an in-game location (like the farmhouse).
+    //  - Each map is divided into a grid of 64x64 pixel 'tiles'. A map can have multiple 'layers' of tiles (e.g. 'Back', 'Front', 'Buildings', etc).
+    //  - Each tile's visual appearance is set by assigning it a 'tile index', which is its position in a larger texture called a 'tilesheet'.
+    //  - Each tile can be assigned 'properties'. These are metadata which tell the game about the tile (like "Type: Dirt" or "Action: OpenShop HatMouse").
+    //  - There are two property types: 'tile property' (set for a specific tile position) and 'index property' (set for all tiles which use that tile index).
+
     // labels
+    "tile.title": "Map tile ({{x}}, {{y}})",
     "tile.description": "A tile position on the map. This is displayed because you enabled tile lookups in the configuration.",
-    "tile.game-location": "Location",
     "tile.map-name": "Map name",
-    "tile.tile": "Tile",
-    "tile.tile-index": "{{layerName}}: tile index",
-    "tile.tilesheet": "{{layerName}}: tilesheet",
-    "tile.blend-mode": "{{layerName}}: blend mode",
-    "tile.index-property": "{{layerName}}: ix props: {{propertyName}}",
-    "tile.tile-property": "{{layerName}}: props: {{propertyName}}",
+    "tile.map-properties": "Map properties",
+    "tile.layer-tile": "{{layer}} tile",
+    "tile.layer-tile-none": "Tile",
 
     // values
-    "tile.tile.none-here": "no tile here",
+    "tile.map-properties.value": "{{name}}: {{value}}",
+    "tile.layer-tile.appearance": "index {{index}} from tilesheet '{{tilesheetId}}' (path: '{{tilesheetPath}}')",
+    "tile.layer-tile.blend-mode": "blend mode: {{value}}",
+    "tile.layer-tile.index-property": "index property: {{name}}: {{value}}",
+    "tile.layer-tile.tile-property": "tile property: {{name}}: {{value}}",
+    "tile.layer-tile.none-here": "no tile here",
 
 
     /*********
@@ -669,15 +725,50 @@
 
 
     /*********
-    ** Generic Mod Config Menu UI
+    ** Data mining fields
     *********/
-    // main options
-    "config.title.main-options": "Main options",
+    "data-mining.name": "Raw data",
+    "data-mining.name.map-tile": "Raw data (map tile)",
+    "data-mining.name.map-location": "Raw data (location)",
+
+    "data-mining.section-pinned": "Pinned", // 'pinned' section has notable values (i.e. it's pinned at the top of the list)
+
+
+    /*************************************************
+    ** Search UI
+    *************************************************/
+    // screen reader text
+    "search-menu.screen-reader.instructions": "Lookup Anything search menu. Search box selected. Enter text to search.",
+    "search-menu.screen-reader.search-results": "Search box. {{count}} results found for \"{{search}}\". Navigate down for results.",
+    "search-menu.screen-reader.search-no-results": "Search box. No results found for \"{{search}}\".",
+    "search-menu.screen-reader.search-empty": "Search box. Currently empty.",
+    "search-menu.screen-reader.result": "{{name}} ({{type}}).",
+
+
+    /*************************************************
+    ** Generic Mod Config Menu UI
+    *************************************************/
+    // appearance
+    "config.title.appearance": "Appearance",
+
+    "config.theme.name": "Visual theme",
+    "config.theme.desc": "The appearance to apply for the lookup and search menu.",
+
+    "config.theme.values.Parchment": "Parchment",
+    "config.theme.values.Joja": "Joja",
+    "config.theme.values.MenuBox_Border": "Menu box (border)",
+    "config.theme.values.MenuBox_Inset": "Menu box (inset)",
+    "config.theme.values.MenuBox_Raised": "Menu box (raised)",
+    "config.theme.values.Plain": "Plain",
+
     "config.force-full-screen.name": "Force full screen",
     "config.force-full-screen.desc": "Whether the menu should always be full-screen, instead of centered in the window. This is mainly useful when viewing data mining fields.",
 
     // progression mode
     "config.title.progression": "Progression mode",
+
+    "config.progression.show-uncaught-fish-spawn-rules.name": "Show uncaught fish spawn rules",
+    "config.progression.show-uncaught-fish-spawn-rules.desc": "Whether to show spawn conditions for fish you haven't caught yet.",
 
     "config.progression.show-unknown-gift-tastes.name": "Show unknown gift tastes",
     "config.progression.show-unknown-gift-tastes.desc": "Whether to show gift tastes you haven't learned about in-game yet (e.g. from dialogue text or experimenting).",
@@ -724,6 +815,8 @@
     "config.tile-lookups.desc": "Whether to include map tiles as lookup targets.",
     "config.data-mining-fields.name": "Show data mining fields",
     "config.data-mining-fields.desc": "Whether to show raw data useful for data miners (as separate fields at the bottom of lookup results). This is an advanced feature not intended for most players.",
+    "config.show-invalid-recipes.name": "Show invalid recipes",
+    "config.show-invalid-recipes.desc": "Whether to show recipes which require or produce broken items.",
     "config.target-redirection.name": "Target redirection",
     "config.target-redirection.desc": "In some cases the game spawns a temporary entity to represent another one. For example, Abigail in the mines is actually a temporary NPC with the name 'AbigailMine', so looking her up there won't show Abigail's real info. With this option enabled, Lookup Anything will look up the original Abigail instead.",
     "config.scroll-amount.name": "Scroll amount",
@@ -746,5 +839,12 @@
     "config.page-down.name": "Page down",
     "config.page-down.desc": "The keys which scroll down long content by a full page.",
     "config.toggle-debug.name": "Toggle debug",
-    "config.toggle-debug.desc": "The keys which toggle the display of debug information."
+    "config.toggle-debug.desc": "The keys which toggle the display of debug information.",
+
+
+    /*************************************************
+    ** Iconic Framework icon
+    *************************************************/
+    "icon.toggle-search.name": "Lookup Anything",
+    "icon.toggle-search.desc": "Toggle Lookup Anything Search"
 }

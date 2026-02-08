@@ -8,6 +8,7 @@
     // mod list UI
     "list.editable-heading": "Konfiguriere Mods",
     "list.not-editable-heading": "Änderbar über den Titelbildschirm:",
+    "list.keybinds": "Keybinds", // TODO
 
     // mod config pages
     "config.buttons.cancel": "Abbrechen",
@@ -15,10 +16,12 @@
     "config.buttons.save": "Speichern",
     "config.buttons.save-and-close": "Speichern & Schließen",
 
+    // keybind overlay
     "config.rebind-key.title": "Taste zuweisen: {{optionName}}",
-    "config.rebind-key.simple-instructions": "Drücke eine Taste um sie zuzuweisen",
-    "config.rebind-key.combo-instructions": "Drücke eine Tastenkombination um sie zuzuweisen",
+    "config.rebind-key.simple-instructions": "Drücke eine Taste um sie zuzuweisen.",
+    "config.rebind-key.combo-instructions": "Drücke eine Tastenkombination um sie zuzuweisen.",
     "config.rebind-key.no-key": "(keine)",
+    "config.rebind-key.keybind-list": "Keybinds:", // TODO
 
 
     /*********

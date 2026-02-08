@@ -235,10 +235,20 @@
             "Target": "Characters/Monsters/BadlandsSerpent",
             "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/BadlandsSerpent.png"
         },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/RoyalBadlandsSerpent",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/RoyalBadlandsSerpent.png"
+        },
         {
             "Action": "Load", "Priority": "Low",
             "Target": "Characters/Monsters/Apophis",
             "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/Apophis.png"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/SandScorpion",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/SandScorpion.png"
         },
         {
             "Action": "Load", "Priority": "Low",
@@ -330,6 +340,69 @@
             "Target": "Characters/Monsters/WildernessGolemWinter",
             "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/WildernessGolemWinter.png"
         },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/Poltergeist",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/Poltergeist.png"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/SwampGolem",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/SwampGolem.png"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/ToxicBubble",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/ToxicBubble.png"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/ToxicBubble_Variant",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/ToxicBubble_Variant.png"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/SwampLurk",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/SwampLurk.png"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/SwampFlowerCrab",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/SwampFlowerCrab.png"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/DangerousMetalHead",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/DangerousMetalHead.png"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/DangerousBat",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/DangerousBat.png"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/SwampPutridGhost",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/SwampPutridGhost.png"
+        },
+		
+		//Legendary Monsters
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/LegendaryPurpleMushroomCrab",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/LegendaryPurpleMushroomCrab.png"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/LegendarySandScorpion",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/LegendarySandScorpion.png"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Characters/Monsters/LegendarySlime",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Monsters/LegendarySlime.png"
+        },
+		
         //ADD SECRET NOTES
         {
             "Action": "EditImage",
@@ -337,7 +410,8 @@
             "FromFile": "assets/SecretNotes/SecretNotesImages.png",
             "PatchMode": "Overlay"
         },
-        //EVENT XNB LOADS
+		
+        //EVENT XNB LOADS <<<Should be moved to its own json file
         {
             "Action": "Load", "Priority": "Low",
             "Target": "Data/Events/AdventureGuild",
@@ -572,6 +646,31 @@
             "Action": "Load", "Priority": "Low",
             "Target": "Data/Events/Blacksmith",
             "FromFile": "assets/XNBs/Blacksmith.xnb"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Data/Events/Custom_ForbiddenMaze",
+            "FromFile": "assets/XNBs/ForbiddenMaze.xnb"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Data/Events/Custom_HenchmanHouse",
+            "FromFile": "assets/XNBs/HenchmanHouse.xnb"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Data/Events/Custom_HighlandsOutpost",
+            "FromFile": "assets/XNBs/HighlandsOutpost.xnb"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Data/Events/Custom_CastleVillageOutpost",
+            "FromFile": "assets/XNBs/CastleVillageOutpost.xnb"
+        },
+		{
+            "Action": "Load", "Priority": "Low",
+            "Target": "Data/Events/WitchSwamp",
+            "FromFile": "assets/XNBs/CastleVillageOutpost.xnb"
         },
     ]
 }

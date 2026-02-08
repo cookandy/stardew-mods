@@ -1,10 +1,10 @@
 ﻿{
-    /*********
+    /*************************************************
     ** Generic translations
-    *********/
+    *************************************************/
     // language info
     "generic.list-separator": ", ", // text between listed values (like ", " in "A, B, C")
-    "generic.line-wrap-on": "",     // characters after which we can line-wrap text if needed, even if there's no space
+    "generic.line-wrap-on": "", // characters after which we can line-wrap text if needed, even if there's no space
 
     // date names
     "generic.now": "зараз",
@@ -34,10 +34,10 @@
     "generic.show-x-results": "show {{count}} results", // TODO
 
     // types
+    "type.achievement": "Achievement", // TODO
     "type.building": "Будівля",
     "type.bush": "Кущ",
     "type.fruit-tree": "Фруктове дерево",
-    "type.map-tile": "Об'єкт",
     "type.monster": "Монстр",
     "type.player": "Гравець",
     "type.tree": "Дерево",
@@ -61,7 +61,18 @@
     "friendship-status.divorced": "Розійшлися",
     "friendship-status.kicked-out": "Вигнаний",
 
+    // custom content (shows which mod added an item, NPC, etc)
+    // TODO
+    "added-by-mod": "Added by mod",
+    "added-by-mod.summary": "{{modName}}",
 
+    // internal ID
+    "internal-id": "Internal ID", // TODO
+
+
+    /*************************************************
+    ** Lookup UI
+    *************************************************/
     /*********
     ** Data translations
     *********/
@@ -113,6 +124,10 @@
     "location.forest.island-tip": "Лісова річка (південна частина великого острова)",
     "location.forest.lake": "Лісове озеро",
     "location.forest.river": "Лісова річка",
+    "location.HarveyRoom": "Harvey's Room", // TODO
+    "location.LeoTreeHouse": "Treehouse", // TODO
+    "location.SandyHouse": "Oasis", // TODO
+    "location.SebastianRoom": "Sebastian's Room", // TODO
     "location.submarine": "Підводний човен Нічного ринку",
     "location.town.northmost-bridge": "Місто (найпівнічніший міст)",
     "location.undergroundMine": "Шахта",
@@ -137,6 +152,8 @@
     ** Conditions & context tags
     *********/
     // TODO
+    "conditions-summary": "[conditions: {{conditions}}]", // wraps 'game state query' conditions that often can't be translated. For example: "[conditions: ITEM_ID Input (O)128]".
+
     "condition-or-context-tag.negate": "not {{value}}",
 
     "condition.day-of-month": "on specific days ({{days}})",
@@ -164,6 +181,19 @@
 
 
     /*********
+    ** Achievement lookups
+    *********/
+    // TODO
+    // labels
+    "achievement.unlocked": "Unlocked",
+    "achievement.hat-shop": "Hat shop",
+
+    // values
+    "achievement.hat-shop.hats-added": "These hats are added to the Hat Mouse shop when the achievement is unlocked:",
+    "achievement.hat-shop.no-hats-added": "No hats are unlocked by this achievement.",
+
+
+    /*********
     ** Animal lookups
     *********/
     // labels
@@ -174,6 +204,7 @@
     "animal.produce-ready": "Продукція готова",
     "animal.growth": "Ріст",
     "animal.sells-for": "Продається за",
+    "animal.golden-cracker": "Golden animal cracker", // also used for fish ponds // TODO
 
     // values
     "animal.complaints.hungry": "Вчора без їжі",
@@ -182,6 +213,8 @@
     "animal.complaints.no-heater": "Без обігріву взимку",
     "animal.complaints.not-petted": "Не пестили сьогодні",
     "animal.complaints.wild-animal-attack": "Атакували дикі тварини цієї ночі",
+    "animal.golden-cracker.none": "None. Add a golden animal cracker to double produced items.", // TODO
+    "animal.golden-cracker.applied": "Applied; produced items are doubled.", // TODO
 
 
     /*********
@@ -190,6 +223,7 @@
     // labels
     "building.animals": "Тварини",
     "building.construction": "Будівництво",
+    "building.construction-costs": "Construction costs", // TODO
     "building.feed-trough": "Кормо-роздавач",
     "building.horse": "Кінь",
     "building.horse-location": "Місцезнаходження коня",
@@ -301,6 +335,8 @@
     "crop.summary.drops-X-to-Y": "Збір з {{min}} до {{max}} ({{percent}}% на додатковий збір)",
     "crop.summary.harvest-once": "Врожай через {{daysToFirstHarvest}} дн.",
     "crop.summary.harvest-multi": "Врожай через {{daysToFirstHarvest}} дн., потім кожні {{daysToNextHarvests}} дн.",
+    "crop.summary.farming-xp": "gives +{{amount}} farming XP per harvest", // TODO
+    "crop.summary.foraging-xp": "gives +{{amount}} foraging XP per harvest", // TODO
     "crop.summary.seasons": "Сезон росту : {{seasons}}",
     "crop.summary.sells-for": "Продається за {{price}}",
     "crop.harvest.too-late": "Занадто пізно цього сезону для наступного збору (врожай {{date}})",
@@ -310,7 +346,6 @@
     ** Item > generic lookups
     *********/
     // labels
-    "item.custom-item": "Custom item", // TODO
     "item.contents": "Містить",
     "item.loves-this": "Любить",
     "item.likes-this": "Подобається",
@@ -318,6 +353,7 @@
     "item.dislikes-this": "Не подобається",
     "item.hates-this": "Ненавидить",
     "item.needed-for": "Необхідно для",
+    "item.flavor": "Flavor", // TODO // links to the flavor item (e.g. 'Blueberry' for Blueberry Wine)
     "item.number-owned": "Наявність",
     "item.number-cooked": "Приготовано",
     "item.number-crafted": "Створено",
@@ -329,7 +365,6 @@
     "item.produces-dye": "Продукує барвник",
 
     // values
-    "item.custom-item.summary": "додано модом {{modName}}",
     "item.contents.placed": "Містить {{name}}",
     "item.contents.ready": "{{name}} готово",
     "item.contents.partial": "{{name}} за {{time}}",
@@ -337,20 +372,23 @@
     "item.undiscovered-gift-taste-appended": " та {{count}} незнайомих містян",
     "item.needed-for.community-center": "Громадський клуб ({{bundles}})",
     "item.needed-for.full-shipment": "Досягнення «Майстер-вантаж» (Надішліть на продаж 1 од.)",
+    "item.needed-for.monoculture": "monoculture achievement (ship {{count}} more)", // TODO
     "item.needed-for.polyculture": "Досягнення «Сівозміна» (Надішліть на продаж {{count}} од. або більше)",
     "item.needed-for.full-collection": "Досягнення «Повна колекція» (Пожертвуйте музею артефакт чи мінерал)",
     "item.needed-for.gourmet-chef": "Досягнення «Шеф-кухар» (Приготуйте страву : {{recipes}})",
     "item.needed-for.craft-master": "Досягнення «Найкращий з ремісників» (Створіть предмет : {{recipes}})",
     "item.needed-for.quests": "Завдання наразі ({{quests}})",
+    "item.needed-for.trash-bear": "trash bear (deliver one)", // TODO
     "item.unknown-recipes": "{{count}} unknown recipes", // TODO
     "item.sells-to.shipping-box": "Ящик для продажу",
     "item.recipes-for-ingredient.entry": "{{name}} ({{count}} од.)",
     "item.recipes-for-machine.multiple-items": "{{name}} {{count}} од.",
     "item.recipes-for-machine.same-as-input": "[same as input]", // e.g. crystalarium produces same item that was put in // TODO
-    "item.recipes-for-machine.conditions": "[conditions: {{conditions}}]", // TODO
     "item.recipes-for-machine.too-complex": "Some machine rules are too dynamic to display.", // TODO
     "item.number-owned.summary": "Ви маєте {{count}} од.",
+    "item.number-owned-flavored.summary": "you own {{count}} ({{name}}) or {{baseCount}} ({{baseName}}) of these", // TODO // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
     "item.number-crafted.summary": "Ви створили {{count}} од.",
+    "item.internal-id.summary": "{{itemId}} (globally unique 'qualified ID': {{qualifiedItemId}})", // TODO
 
 
     /*********
@@ -397,6 +435,7 @@
     // values
     "item.fish-spawn-rules.min-fishing-level": "Мінімальний рівень рибальства: {{level}}",
     "item.fish-spawn-rules.not-caught-yet": "Поки-що не зловлено (Можна зловити лише один раз)",
+    "item.fish-spawn-rules.extended-family-quest-active": "\"Extended Family\" quest active", // TODO
     "item.fish-spawn-rules.locations": "Місцезнаходження: {{locations}}",
     "item.fish-spawn-rules.locations-by-season.label": "Місцезнаходження:",
     "item.fish-spawn-rules.locations-by-season.season-locations": "{{season}}: {{locations}}",
@@ -405,6 +444,7 @@
     "item.fish-spawn-rules.time": "Час: {{times}}",
     "item.fish-spawn-rules.weather-sunny": "Сонячна погода",
     "item.fish-spawn-rules.weather-rainy": "Дощова погода",
+    "item.uncaught-fish": "{{count}} uncaught fish", // TODO
 
 
     /*********
@@ -489,6 +529,7 @@
     "npc.neutral-gifts": "Байдуже ставиться до :",
     "npc.dislikes-gifts": "Не любить подарунки",
     "npc.hates-gifts": "Ненавидить подарунки",
+    "npc.schedule": "Today's schedule", // TODO
 
     // values
     "npc.can-romance.married": "Ви одружені! <", // < turns into a heart
@@ -498,6 +539,12 @@
     "npc.friendship.need-points": "Наступн. за {{count}}",
     "npc.undiscovered-gift-taste": "{{count}} незвіданих предметів",
     "npc.unowned-gift-taste": "{{count}} предметів, якими ви ніколи не володіли",
+    "npc.schedule.current-position": "Currently at {{locationName}} ({{x}}, {{y}}).", // TODO
+    "npc.schedule.no-entries": "No schedule loaded.", // TODO
+    "npc.schedule.not-following-schedule": "Currently not following a schedule. This usually means the NPC is doing special behaviors (e.g. at the movie theater).", //  TODO
+    "npc.schedule.entry": "{{time}}: walk to {{locationName}} ({{x}}, {{y}}).", // TODO
+    "npc.schedule.farmhand.unknown-position": "Currently in an unknown location on the host.", // TODO
+    "npc.schedule.farmhand.unknown-schedule": "In multiplayer, NPCs are managed by the host so their schedule isn't available.", // TODO
 
 
     /*********
@@ -609,19 +656,30 @@
     /*********
     ** Tile lookups
     *********/
+    // Note for translators:
+    // The translations in this section are a bit more technical. Quick summary:
+    //
+    //  - A 'map' sets the layout and appearance for an in-game location (like the farmhouse).
+    //  - Each map is divided into a grid of 64x64 pixel 'tiles'. A map can have multiple 'layers' of tiles (e.g. 'Back', 'Front', 'Buildings', etc).
+    //  - Each tile's visual appearance is set by assigning it a 'tile index', which is its position in a larger texture called a 'tilesheet'.
+    //  - Each tile can be assigned 'properties'. These are metadata which tell the game about the tile (like "Type: Dirt" or "Action: OpenShop HatMouse").
+    //  - There are two property types: 'tile property' (set for a specific tile position) and 'index property' (set for all tiles which use that tile index).
+
     // labels
+    "tile.title": "Об'єкт ({{x}}, {{y}})",
     "tile.description": "Позиція клітини на мапі. Це відображається, бо ви ввімкнули перегляд клітин у файлі сурисування моду.",
-    "tile.game-location": "Назва локації",
     "tile.map-name": "Назва мапи",
-    "tile.tile": "Клітина",
-    "tile.tile-index": "{{layerName}}: індекс клітини",
-    "tile.tilesheet": "{{layerName}}: таблиця клітини",
-    "tile.blend-mode": "{{layerName}}: режим перекриття",
-    "tile.index-property": "{{layerName}}: їх властивості : {{propertyName}}",
-    "tile.tile-property": "{{layerName}}: властивості : {{propertyName}}",
+    "tile.map-properties": "Map properties", // TODO
+    "tile.layer-tile": "{{layer}} tile", // TODO
+    "tile.layer-tile-none": "Клітина",
 
     // values
-    "tile.tile.none-here": "Тут немає клітини",
+    "tile.map-properties.value": "{{name}}: {{value}}", // TODO
+    "tile.layer-tile.appearance": "index {{index}} from tilesheet '{{tilesheetId}}' (path: '{{tilesheetPath}}')", // TODO
+    "tile.layer-tile.blend-mode": "режим перекриття: {{value}}",
+    "tile.layer-tile.index-property": "їх властивості: {{name}}: {{value}}",
+    "tile.layer-tile.tile-property": "властивості: {{name}}: {{value}}",
+    "tile.layer-tile.none-here": "Тут немає клітини",
 
 
     /*********
@@ -670,16 +728,54 @@
 
 
     /*********
-    ** Generic Mod Config Menu UI
+    ** Data mining fields
     *********/
-    // main options
-    "config.title.main-options": "Основні налаштування",
+    // TODO
+    "data-mining.name": "Raw data",
+    "data-mining.name.map-tile": "Raw data (map tile)",
+    "data-mining.name.map-location": "Raw data (location)",
+
+    "data-mining.section-pinned": "Pinned", // 'pinned' section has notable values (i.e. it's pinned at the top of the list)
+
+
+    /*************************************************
+    ** Search UI
+    *************************************************/
+    // screen reader text
+    // TODO
+    "search-menu.screen-reader.instructions": "Lookup Anything search menu. Search box selected. Enter text to search.",
+    "search-menu.screen-reader.search-results": "Search box. {{count}} results found for \"{{search}}\". Navigate down for results.",
+    "search-menu.screen-reader.search-no-results": "Search box. No results found for \"{{search}}\".",
+    "search-menu.screen-reader.search-empty": "Search box. Currently empty.",
+    "search-menu.screen-reader.result": "{{name}} ({{type}}).",
+
+
+    /*************************************************
+    ** Generic Mod Config Menu UI
+    *************************************************/
+    // appearance
+    // TODO
+    "config.title.appearance": "Appearance",
+
+    "config.theme.name": "Visual theme",
+    "config.theme.desc": "The appearance to apply for the lookup and search menu.",
+
+    "config.theme.values.Parchment": "Parchment",
+    "config.theme.values.Joja": "Joja",
+    "config.theme.values.MenuBox_Border": "Menu box (border)",
+    "config.theme.values.MenuBox_Inset": "Menu box (inset)",
+    "config.theme.values.MenuBox_Raised": "Menu box (raised)",
+    "config.theme.values.Plain": "Plain",
+
     "config.force-full-screen.name": "Примусово на весь екран",
     "config.force-full-screen.desc": "Меню завжди буде повноекранним, а не центрованим у вікні. Це в основному корисно під час перегляду даних.",
 
     // progression mode
     // TODO
     "config.title.progression": "Режим прогресу",
+
+    "config.progression.show-uncaught-fish-spawn-rules.name": "Show uncaught fish spawn rules", // TODO
+    "config.progression.show-uncaught-fish-spawn-rules.desc": "Whether to show spawn conditions for fish you haven't caught yet.", // TODO
 
     "config.progression.show-unknown-gift-tastes.name": "Show unknown gift tastes",
     "config.progression.show-unknown-gift-tastes.desc": "Whether to show gift tastes you haven't learned about in-game yet (e.g. from dialogue text or experimenting).",
@@ -727,6 +823,8 @@
     "config.tile-lookups.desc": "Включення фрагменту світу як ціль пошуку.",
     "config.data-mining-fields.name": "Показати поле аналізу даних",
     "config.data-mining-fields.desc": "Показ необроблених даних, корисних для шукачів даних (Як окремі поля внизу результатів пошуку). Це розширена функція, яка не призначена для більшості гравців.",
+    "config.show-invalid-recipes.name": "Show invalid recipes", // TODO
+    "config.show-invalid-recipes.desc": "Whether to show recipes which require or produce broken items.", // TODO
     "config.target-redirection.name": "Цільове переспрямування",
     "config.target-redirection.desc": "У деяких випадках гра породжує тимчасову сутність, яка представляє іншу. Наприклад, Абіґейл в шахтах насправді є тимчасовим НП на ім'я «AbigailMine», тому пошук її не покаже справжню інформацію про Абіґейл. Якщо цей параметр увімкнено, Lookup Anything шукатиме оригінальну Абіґейл.",
     "config.scroll-amount.name": "Число прокрутки",
@@ -749,5 +847,13 @@
     "config.page-down.name": "Прокрутка сторінки вниз",
     "config.page-down.desc": "Клавіші, які прокручують довгий вміст на всю сторінку вниз.",
     "config.toggle-debug.name": "Увімкнути налагодження",
-    "config.toggle-debug.desc": "Клавіші, які перемикають відображення інформації налагодження."
+    "config.toggle-debug.desc": "Клавіші, які перемикають відображення інформації налагодження.",
+
+
+    /*************************************************
+    ** Iconic Framework icon
+    *************************************************/
+    // TODO
+    "icon.toggle-search.name": "Lookup Anything",
+    "icon.toggle-search.desc": "Toggle Lookup Anything Search"
 }

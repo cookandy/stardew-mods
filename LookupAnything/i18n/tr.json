@@ -1,10 +1,10 @@
 ﻿{
-    /*********
+    /*************************************************
     ** Generic translations
-    *********/
+    *************************************************/
     // language info
     "generic.list-separator": ", ", // text between listed values (like ", " in "A, B, C")
-    "generic.line-wrap-on": "",     // characters after which we can line-wrap text if needed, even if there's no space
+    "generic.line-wrap-on": "", // characters after which we can line-wrap text if needed, even if there's no space
 
     // date names
     "generic.now": "şimdi",
@@ -34,10 +34,10 @@
     "generic.show-x-results": "{{count}} sonuçlarını göster",
 
     // types
+    "type.achievement": "Achievement", // TODO
     "type.building": "Bina",
     "type.bush": "Çalı",
     "type.fruit-tree": "Meyve Ağacı",
-    "type.map-tile": "Harita karosu",
     "type.monster": "Canavar",
     "type.player": "Oyuncu",
     "type.tree": "Ağaç",
@@ -51,7 +51,7 @@
     "quality.iridium": "iridyum",
 
     // item names shown in recipes
-    "item.wild-seeds": "Wild Seeds (Any)", // TODO
+    "item.wild-seeds": "Yabani Tohumlar (Herhangi biri)",
 
     // NPC friendship
     "friendship-status.friendly": "Arkadaş",
@@ -61,7 +61,17 @@
     "friendship-status.divorced": "Boşanmış",
     "friendship-status.kicked-out": "Terk edilmiş",
 
+    // custom content (shows which mod added an item, NPC, etc)
+    "added-by-mod": "Mod tarafından eklendi",
+    "added-by-mod.summary": "{{modName}}",
 
+    // internal ID
+    "internal-id": "Dahili ID",
+
+
+    /*************************************************
+    ** Lookup UI
+    *************************************************/
     /*********
     ** Data translations
     *********/
@@ -113,6 +123,10 @@
     "location.forest.island-tip": "Orman Nehri (büyük adanın güney ucu)",
     "location.forest.lake": "Orman Göleti",
     "location.forest.river": "Orman Nehri",
+    "location.HarveyRoom": "Harvey'in Odası",
+    "location.LeoTreeHouse": "Ağaç Ev",
+    "location.SandyHouse": "Vaha",
+    "location.SebastianRoom": "Sebastiyan'ın Odası",
     "location.submarine": "Akşam Pazarı Denizaltısı",
     "location.town.northmost-bridge": "Kasaba (en kuzeydeki köprü)",
     "location.undergroundMine": "Maden",
@@ -136,11 +150,13 @@
     /*********
     ** Conditions & context tags
     *********/
+    "conditions-summary": "[Şartlar: {{conditions}}]", // wraps 'game state query' conditions that often can't be translated. For example: "[conditions: ITEM_ID Input (O)128]".
+
     "condition-or-context-tag.negate": "{{value}} değil",
 
-    "condition.day-of-month": "on specific days ({{days}})", // TODO
-    "condition.day-of-month.even": "even days", // TODO
-    "condition.day-of-month.odd": "odd days", // TODO
+    "condition.day-of-month": "ayın spesifik günlerde ({{days}})",
+    "condition.day-of-month.even": "çift sayılı günlerde",
+    "condition.day-of-month.odd": "tek sayılı günlerde",
 
     "condition.item-type.input": "girilen nesne",
     "condition.item-type.target": "hedef nesne",
@@ -163,6 +179,19 @@
 
 
     /*********
+    ** Achievement lookups
+    *********/
+    // TODO
+    // labels
+    "achievement.unlocked": "Unlocked",
+    "achievement.hat-shop": "Hat shop",
+
+    // values
+    "achievement.hat-shop.hats-added": "These hats are added to the Hat Mouse shop when the achievement is unlocked:",
+    "achievement.hat-shop.no-hats-added": "No hats are unlocked by this achievement.",
+
+
+    /*********
     ** Animal lookups
     *********/
     // labels
@@ -173,6 +202,7 @@
     "animal.produce-ready": "Ürün hazır",
     "animal.growth": "Büyüme",
     "animal.sells-for": "Karşılığında sat",
+    "animal.golden-cracker": "Altın Hayvan Krakeri", // also used for fish ponds
 
     // values
     "animal.complaints.hungry": "dün beslenmedi",
@@ -181,6 +211,8 @@
     "animal.complaints.no-heater": "kış için ısıtıcı yok",
     "animal.complaints.not-petted": "bugün henüz sevilmedi",
     "animal.complaints.wild-animal-attack": "gece vahşi hayvanların saldırısına uğradı",
+    "animal.golden-cracker.none": "Yok. Üretimi ikiye katlamak için Altın Hayvan Krakeri kullanın",
+    "animal.golden-cracker.applied": "Uygulandı. Üretilen ürünler artık ikişer tane gelecek",
 
 
     /*********
@@ -189,6 +221,7 @@
     // labels
     "building.animals": "Hayvanlar",
     "building.construction": "İnşaat",
+    "building.construction-costs": "İnşaa maliyeti",
     "building.feed-trough": "Yemlik",
     "building.horse": "At",
     "building.horse-location": "At konumu",
@@ -245,7 +278,7 @@
     ** Bush lookups
     *********/
     // labels
-    "bush.name.berry": "Yemiş Çalısı",
+    "bush.name.berry": "Böğürtlen Çalısı",
     "bush.name.plain": "Ova Çalısı",
     "bush.name.tea": "Çay Çalısı",
     "bush.description.berry": "Ahududu ve böğürtlen yetiştiren bir çalı.",
@@ -300,6 +333,8 @@
     "crop.summary.drops-X-to-Y": "{{min}}'den {{max}} taneye kadar düşer ({{percent}}% ekstra mahsul şansı)",
     "crop.summary.harvest-once": "{{daysToFirstHarvest}} gün sonra hasat edilir",
     "crop.summary.harvest-multi": "{{daysToFirstHarvest}} günün ardından her {{daysToNextHarvests}} günde bir hasat edilir",
+    "crop.summary.farming-xp": "Hasat başına +{{amount}} çiftçilik tecrübesi kazandırır.",
+    "crop.summary.foraging-xp": "Hasat başına +{{amount}} toplayıcılık tecrübesi kazandırır.",
     "crop.summary.seasons": "{{seasons}} mevsiminde büyür",
     "crop.summary.sells-for": "{{price}} satılır",
     "crop.harvest.too-late": "sonraki hasat için sezon çok geç (muhtemelen {{date}})",
@@ -309,7 +344,6 @@
     ** Item > generic lookups
     *********/
     // labels
-    "item.custom-item": "Özel eşya",
     "item.contents": "İçindekiler",
     "item.loves-this": "Bunu seviyor",
     "item.likes-this": "Bunu beğeniyor",
@@ -317,6 +351,7 @@
     "item.dislikes-this": "Bunu beğenmez",
     "item.hates-this": "Bundan nefret eder",
     "item.needed-for": "Şunun için lazım",
+    "item.flavor": "Aroma", // links to the flavor item (e.g. 'Blueberry' for Blueberry Wine)
     "item.number-owned": "Sahip",
     "item.number-cooked": "Pişmiş",
     "item.number-crafted": "Yapılmış",
@@ -328,7 +363,6 @@
     "item.produces-dye": "Boya üretir",
 
     // values
-    "item.custom-item.summary": "{{modName}} tarafından eklendi",
     "item.contents.placed": "{{name}} yerleştirildi",
     "item.contents.ready": "{{name}} hazır",
     "item.contents.partial": "{{name}} içinde {{time}}",
@@ -336,20 +370,23 @@
     "item.undiscovered-gift-taste-appended": ", ve {{count}} gizli köylüler",
     "item.needed-for.community-center": "halkevi ({{bundles}})",
     "item.needed-for.full-shipment": "tam sevkiyat başarısı (herşeyden bir tane gönder)",
-    "item.needed-for.polyculture": "polikültür başarısı (her ekinden {{count}}'den fazla gönder)",
+    "item.needed-for.monoculture": "tekli tarım başarısı (bir ekinden {{count}}'den fazla gönder)",
+    "item.needed-for.polyculture": "çoklu tarım başarısı (her ekinden {{count}}'den fazla gönder)",
     "item.needed-for.full-collection": "tam koleksiyon başarısı (müze koleksiyonunu tamamla)",
     "item.needed-for.gourmet-chef": "gurme şef başarısı (pişir {{recipes}})",
     "item.needed-for.craft-master": "zanaat ustası başarısı (yap {{recipes}})",
     "item.needed-for.quests": "şuanki görevler ({{quests}})",
+    "item.needed-for.trash-bear": "Çöp Ayısı (bir tane teslim et)",
     "item.unknown-recipes": "{{count}} adet bilinmeyen tarif",
     "item.sells-to.shipping-box": "gönderi kutusu",
     "item.recipes-for-ingredient.entry": "{{name}} (lazım {{count}})",
     "item.recipes-for-machine.multiple-items": "{{name}} x{{count}}",
     "item.recipes-for-machine.same-as-input": "[içine koyulan nesne ile aynı]", // e.g. crystalarium produces same item that was put in 
-    "item.recipes-for-machine.conditions": "[Şartlar: {{conditions}}]",
     "item.recipes-for-machine.too-complex": "Bazı makinelerin işlevleri gösterilemeyecek kadar karmaşık",
     "item.number-owned.summary": "bundan {{count}} tane sahipsin",
+    "item.number-owned-flavored.summary": "Elinizde {{count}} adet ({{name}}) veya {{baseCount}} adet ({{baseName}}) var", // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
     "item.number-crafted.summary": "bundan {{count}} tane yaptın",
+    "item.internal-id.summary": "{{itemId}} (evrensel olarak benzersiz 'nitelikli ID': {{qualifiedItemId}})",
 
 
     /*********
@@ -396,6 +433,7 @@
     // values
     "item.fish-spawn-rules.min-fishing-level": "minimum balıkçılık seviyesi: {{level}}",
     "item.fish-spawn-rules.not-caught-yet": "henüz yakalanmamış (sadece bir defa yakalanabilir)",
+    "item.fish-spawn-rules.extended-family-quest-active": "\"Geniş aile\" görevi aktif",
     "item.fish-spawn-rules.locations": "bölgeler: {{locations}}",
     "item.fish-spawn-rules.locations-by-season.label": "bölgeler:",
     "item.fish-spawn-rules.locations-by-season.season-locations": "{{season}}: {{locations}}",
@@ -404,6 +442,7 @@
     "item.fish-spawn-rules.time": "günün saati: {{times}}",
     "item.fish-spawn-rules.weather-sunny": "hava: güneşli",
     "item.fish-spawn-rules.weather-rainy": "hava: yağmurlu",
+    "item.uncaught-fish": "{{count}} tane yakalanmamış balık",
 
 
     /*********
@@ -488,6 +527,7 @@
     "npc.neutral-gifts": "Nötr hediyeler",
     "npc.dislikes-gifts": "Beğenilmeyen hediyeler",
     "npc.hates-gifts": "Nefret edilen hediyeler",
+    "npc.schedule": "Bugünün takvimi",
 
     // values
     "npc.can-romance.married": "Evlisin! <", // < turns into a heart
@@ -497,6 +537,12 @@
     "npc.friendship.need-points": "{{count}} puana gelişir",
     "npc.undiscovered-gift-taste": "{{count}} gizli nesneler",
     "npc.unowned-gift-taste": "{{count}} sahipsiz öğe",
+    "npc.schedule.current-position": "Şu anda şurada: {{locationName}} ({{x}}, {{y}}).",
+    "npc.schedule.no-entries": "Hiçbir program yüklenmedi.",
+    "npc.schedule.not-following-schedule": "Şuan takvimini takip etmiyor. Bu genellikle NPC özel bir aktivite yapıyor demektir. (ör. Tiyatroda film izliyor).",
+    "npc.schedule.entry": "{{time}}: saatinde şurada olacak {{locationName}} ({{x}}, {{y}}).",
+    "npc.schedule.farmhand.unknown-position": "Şu anda ana bilgisayarda (host) bilinmeyen bir konumda.",
+    "npc.schedule.farmhand.unknown-schedule": "Çok oyunculu modda NPC'ler oda sahibi (host) tarafından yönetilir, bu nedenle günlük programlarına erişilemiyor.",
 
 
     /*********
@@ -608,19 +654,30 @@
     /*********
     ** Tile lookups
     *********/
+    // Note for translators:
+    // The translations in this section are a bit more technical. Quick summary:
+    //
+    //  - A 'map' sets the layout and appearance for an in-game location (like the farmhouse).
+    //  - Each map is divided into a grid of 64x64 pixel 'tiles'. A map can have multiple 'layers' of tiles (e.g. 'Back', 'Front', 'Buildings', etc).
+    //  - Each tile's visual appearance is set by assigning it a 'tile index', which is its position in a larger texture called a 'tilesheet'.
+    //  - Each tile can be assigned 'properties'. These are metadata which tell the game about the tile (like "Type: Dirt" or "Action: OpenShop HatMouse").
+    //  - There are two property types: 'tile property' (set for a specific tile position) and 'index property' (set for all tiles which use that tile index).
+
     // labels
+    "tile.title": "Harita karosu ({{x}}, {{y}})",
     "tile.description": "Bir karonun haritadaki konumu. Bu gösteriliyor çünkü konfigürasyonda karo gösterimini etkinleştirdin.",
-    "tile.game-location": "Konum",
     "tile.map-name": "Harita ismi",
-    "tile.tile": "Karo",
-    "tile.tile-index": "{{layerName}}: karo indeksi",
-    "tile.tilesheet": "{{layerName}}: karo seti",
-    "tile.blend-mode": "{{layerName}}: karışım modu",
-    "tile.index-property": "{{layerName}}: ix destekleri: {{propertyName}}",
-    "tile.tile-property": "{{layerName}}: destekler: {{propertyName}}",
+    "tile.map-properties": "Harita Özellikleri",
+    "tile.layer-tile": "{{layer}} Karo",
+    "tile.layer-tile-none": "Karo",
 
     // values
-    "tile.tile.none-here": "burada karo yok",
+    "tile.map-properties.value": "{{name}}: {{value}}",
+    "tile.layer-tile.appearance": "Döşeme Levhası (Tilesheet) '{{tilesheetId}}' (yol: '{{tilesheetPath}}') içindeki indeks {{index}}",
+    "tile.layer-tile.blend-mode": "karışım modu: {{value}}",
+    "tile.layer-tile.index-property": "ix destekleri: {{name}}: {{value}}",
+    "tile.layer-tile.tile-property": "destekler: {{name}}: {{value}}",
+    "tile.layer-tile.none-here": "burada karo yok",
 
 
     /*********
@@ -669,15 +726,51 @@
 
 
     /*********
-    ** Generic Mod Config Menu UI
+    ** Data mining fields
     *********/
-    // main options
-    "config.title.main-options": "Ana seçenekler",
+    "data-mining.name": "İşlenmemiş veri",
+    "data-mining.name.map-tile": "İşlenmemiş veri (harita döşemesi)",
+    "data-mining.name.map-location": "İşlenmemiş veri (konum)",
+
+    "data-mining.section-pinned": "Sabitlendi", // 'pinned' section has notable values (i.e. it's pinned at the top of the list)
+
+
+    /*************************************************
+    ** Search UI
+    *************************************************/
+    // screen reader text
+    // TODO
+    "search-menu.screen-reader.instructions": "Lookup Anything search menu. Search box selected. Enter text to search.",
+    "search-menu.screen-reader.search-results": "Search box. {{count}} results found for \"{{search}}\". Navigate down for results.",
+    "search-menu.screen-reader.search-no-results": "Search box. No results found for \"{{search}}\".",
+    "search-menu.screen-reader.search-empty": "Search box. Currently empty.",
+    "search-menu.screen-reader.result": "{{name}} ({{type}}).",
+
+
+    /*************************************************
+    ** Generic Mod Config Menu UI
+    *************************************************/
+    // appearance
+    "config.title.appearance": "Görünüş",
+
+    "config.theme.name": "Görsel Tema",
+    "config.theme.desc": "Lookup ve Arama menüsüne uygulanacak olan görsel tema",
+
+    "config.theme.values.Parchment": "Parşömen",
+    "config.theme.values.Joja": "Joja",
+    "config.theme.values.MenuBox_Border": "Menü Kutusu (kenar)",
+    "config.theme.values.MenuBox_Inset": "Menü Kutusu (içe basık)",
+    "config.theme.values.MenuBox_Raised": "Menü Kutusu (kabartmalı)",
+    "config.theme.values.Plain": "Düz",
+
     "config.force-full-screen.name": "Tam ekranı zorla",
     "config.force-full-screen.desc": "Menünün pencerede ortalanmak yerine her zaman tam ekran olup olmayacağı. Bu, özellikle veri madenciliği alanlarını görüntülerken kullanışlıdır.",
 
     // progression mode
     "config.title.progression": "İlerleme modu",
+
+    "config.progression.show-uncaught-fish-spawn-rules.name": "Yakalanmamış balıkların doğma kurallarını göster",
+    "config.progression.show-uncaught-fish-spawn-rules.desc": "Daha yakalanmamış balıkların doğma kurallarının gösterilip gösterilmeyeceği. Etkinleştirildiğinde, yakalanmayan balıkların doğma kuralları görünür hale gelecek.",
 
     "config.progression.show-unknown-gift-tastes.name": "Bilinmeyen hediye zevklerini göster",
     "config.progression.show-unknown-gift-tastes.desc": "NPC'lerin hediye zevklerini gösterirken bilinmeyenleri gösterip göstermeyeceği. Etkinleştirildiğinde, bilinmeyen hediye zevkleri gösterilecek.",
@@ -724,6 +817,8 @@
     "config.tile-lookups.desc": "Harita karolarının arama hedefleri olarak dahil edilip edilmeyeceği.",
     "config.data-mining-fields.name": "Veri madenciliği alanlarını göster",
     "config.data-mining-fields.desc": "Veri madencileri için yararlı olan ham verilerin gösterilip gösterilmeyeceği (arama sonuçlarının altında ayrı alanlar olarak). Bu, çoğu oyuncu için tasarlanmayan gelişmiş bir özelliktir.",
+    "config.show-invalid-recipes.name": "Geçersizleri göster",
+    "config.show-invalid-recipes.desc": "Geçersiz bir şey üretecek veya geerektirecek tariflerin gösterilip gösterilmeyeceği.",
     "config.target-redirection.name": "Hedef yönlendirme",
     "config.target-redirection.desc": "Bazı durumlarda oyun, bir başkasını temsil etmek için geçici bir varlık yaratır. Örneğin, madendeki Abigail aslında 'AbigailMine' adında geçici bir NPC'dir, bu yüzden ona orada bakmak Abigail'in gerçek bilgilerini göstermez. Bu seçenek etkinleştirildiğinde, Lookup Anything, bunun yerine orijinal Abigail'i arayacaktır.",
     "config.scroll-amount.name": "Kaydırma miktarı",
@@ -746,5 +841,12 @@
     "config.page-down.name": "Sayfayı aşağı kaydır",
     "config.page-down.desc": "Uzun içeriği tam sayfa aşağı kaydıran tuşlar.",
     "config.toggle-debug.name": "Hata ayıklamayı aç/kapat",
-    "config.toggle-debug.desc": "Hata ayıklama bilgilerinin görüntülenmesini değiştiren tuşlar."
+    "config.toggle-debug.desc": "Hata ayıklama bilgilerinin görüntülenmesini değiştiren tuşlar.",
+
+
+    /*************************************************
+    ** Iconic Framework icon
+    *************************************************/
+    "icon.toggle-search.name": "Her Şeye Bak",
+    "icon.toggle-search.desc": "Her Şeye Bak aramasını açar"
 }

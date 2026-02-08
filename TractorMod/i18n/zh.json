@@ -64,14 +64,20 @@
     /****
     ** Audio
     ****/
-    "config.tractor-sounds.name": "音效",
+    "config.tractor-sounds.name": "引擎音效",
     "config.tractor-sounds.tooltip": "驾驶拖拉机时播放的音效。在重新加载存档之前，更改可能不会完全生效。默认{{defaultValue}}。",
     "config.tractor-sounds.value.None": "无",
     "config.tractor-sounds.value.Horse": "马蹄",
     "config.tractor-sounds.value.Tractor": "拖拉机",
 
-    "config.tractor-volume.name": "音效大小",
+    "config.tractor-volume.name": "引擎音效大小",
     "config.tractor-volume.tooltip": "拖拉机声音效果的大小。默认值：{{defaultValue}}%。",
+
+    "config.tool-use-sounds-limit.name": "使用工具时播放音效",
+    "config.tool-use-sounds-limit.tooltip": "当使用拖拉机对周围的地块使用工具时，应播放哪些工具的声音。默认{{defaultOption}}。请注意，“{{unlimitedOption}}”可能会导致较大范围的错误。", // TODO: English warning about {{unlimitedOption}} was reworded to be clearer
+    "config.tool-use-sounds-limit.value.Default": "默认",
+    "config.tool-use-sounds-limit.value.OncePerTick": "仅播放首次音效",
+    "config.tool-use-sounds-limit.value.Unlimited": "播放所有音效（不推荐）",
 
 
     /****
@@ -85,6 +91,12 @@
 
     "config.hold-to-activate-key.name": "按住以激活功能",
     "config.hold-to-activate-key.tooltip": "如果有指定键位，只有按住此键时才能激活拖拉机功能。",
+
+    "config.increase-distance-key.name": "增加范围",
+    "config.increase-distance-key.tooltip": "临时增加拖拉机周围工具应用的距离一格，直到达到推荐的最大值 {{maxRecommendedValue}} 格。此设置将在重新加载存档后失效。",
+
+    "config.reduce-distance-key.name": "减少范围",
+    "config.reduce-distance-key.tooltip": "临时减少拖拉机周围工具应用的距离一格，直到达到推荐的最小值 1 格。此设置将在重新加载存档后失效。",
 
 
     /****
@@ -174,8 +186,11 @@
     "config.dig-seed-spots.name": "挖掘种子斑点",
     "config.dig-seed-spots.tooltip": "是否挖掘种子斑点。",
 
-    "config.clear-tilled-dirt.name": "填平耕地",
-    "config.clear-tilled-dirt.tooltip": "是否填平已耕的地块。",
+    "config.clear-dirt-without-fertilizer.name": "填平耕地",
+    "config.clear-dirt-without-fertilizer.tooltip": "是否填平已耕的地块。",
+
+    "config.clear-dirt-with-fertilizer.name": "填平施肥过的耕地",
+    "config.clear-dirt-with-fertilizer.tooltip": "是否填平施肥过的耕地地块。",
 
 
     /****
@@ -239,5 +254,12 @@
     "config.slingshot.tooltip": "是否能够发射弹弓。（由于拖拉机的攻速，基本上开了就无敌了，但是会消耗大量弹药）",
 
     "config.custom-tool-names.name": "自定义工具名称",
-    "config.custom-tool-names.tooltip": "自定义的工具/物品。工具将被用于周围的每个方格；而物品将会被放置。如果指定了已经支持的东西，比如斧头，那么将会覆盖它的所有使用限制。你必须指定确切的内部名称（而不是翻译后的显示名称），比如'Axe'或'Mega Bomb'。多个值之间用逗号分隔。"
+    "config.custom-tool-names.tooltip": "自定义的工具/物品。工具将被用于周围的每个方格；而物品将会被放置。如果指定了已经支持的东西，比如斧头，那么将会覆盖它的所有使用限制。你必须指定确切的内部名称（而不是翻译后的显示名称），比如'Axe'或'Mega Bomb'。多个值之间用逗号分隔。",
+
+
+    /*********
+    ** Iconic Framework icon
+    *********/
+    "icon.summon-tractor.name": "拖拉机",
+    "icon.summon-tractor.desc": "任意地点召唤拖拉机"
 }

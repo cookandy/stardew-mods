@@ -1,10 +1,10 @@
 {
-  "Name": "Tree Transplant",
-  "Author": "LeonBlade",
-  "Version": "1.0.13",
-  "Description": "Allows you to transplant trees in game.",
-  "UniqueID": "TreeTransplant",
+  "Name": "Tree Transplant(Fix)",
+  "Author": "LeonBlade/Siweipancc",
+  "Version": "2.0.0",
+  "Description": "(Fix Version)Allows you to transplant trees in game.",
+  "UniqueID": "Siweipancc.TreeTransplant",
   "EntryDll": "TreeTransplant.dll",
-  "MinimumApiVersion": "3.8.1",
-  "UpdateKeys": [ "Github:LeonBlade/TreeTransplant" ]
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Github:siweipancc/TreeTransplant" ]
 }

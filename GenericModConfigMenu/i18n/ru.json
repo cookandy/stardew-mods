@@ -8,6 +8,7 @@
     // mod list UI
     "list.editable-heading": "Настройка модов",
     "list.not-editable-heading": "Editable from the title screen:", // TODO
+    "list.keybinds": "Keybinds", // TODO
 
     // mod config pages
     "config.buttons.cancel": "Отмена",
@@ -15,10 +16,12 @@
     "config.buttons.save": "Сохранить",
     "config.buttons.save-and-close": "Сохр. и закрыть",
 
+    // keybind overlay
     "config.rebind-key.title": "Привязка клавиш: {{optionName}}",
-    "config.rebind-key.simple-instructions": "Нажмите на клавишу для привязки",
-    "config.rebind-key.combo-instructions": "Нажмите на комбинацию клавиш для привязки",
+    "config.rebind-key.simple-instructions": "Нажмите на клавишу для привязки.",
+    "config.rebind-key.combo-instructions": "Нажмите на комбинацию клавиш для привязки.",
     "config.rebind-key.no-key": "(Ничего)",
+    "config.rebind-key.keybind-list": "Keybinds:", // TODO
 
 
     /*********

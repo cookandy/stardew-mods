@@ -16,7 +16,8 @@
                 "HasFlag": "galaxySword",
                 "HasSeenEvent |contains=7502582": true,
                 "HasSeenEvent |contains=8050109": true,
-                "HasSeenEvent |contains=6951319": true
+                "HasSeenEvent |contains=6951319": true,
+                "DayEvent |contains=wedding, egg festival, dance of the moonlight jellies, feast of the winter star, flower dance, luau, stardew valley fair, spirit's eve": false
             }, //player has galaxy sword, cleared the railroad boulder, saw Alesia's event, beat the volcano dungeon
             "Entries": {
                 "908070/t 600 900": "continue/95 49/farmer 21 20 1 Wizard 20 20 0/skippable/pause 1000/speak Wizard \"{{i18n:EnchantedGrove1.01}}\"/pause 500/emote farmer 8 true/pause 800/speak Wizard \"{{i18n:EnchantedGrove1.02}}\"/pause 850/faceDirection Wizard 1 true/pause 225/faceDirection Wizard 2 true/pause 650/showFrame Wizard 16 true/pause 400/shake Wizard 500/pause 500/screenFlash 1/playSound wand/warp Wizard -50 -50/pause 1000/end",
@@ -447,6 +448,7 @@
             "LogName": "Statue Warp Graphic",
             "Action": "EditMap",
             "Target": "Maps/{{SelectedWarpMap}}",
+			"Priority": "Late",
             "FromFile": "assets/Maps/MapPatches/EnchantedGrove_Farm.tbin",
             "ToArea": {
                 "X": "{{Query: {{Ench_Grove_X}}-1}}",
@@ -458,12 +460,13 @@
                 "HasSeenEvent: anyPlayer| contains=908074": true
             },
             "Update": "OnLocationChange",
-            "PatchMode": "Overlay"
+            "PatchMode": "Overlay",
         },
         {
             "LogName": "Patches warp point on farm",
             "Action": "EditMap",
             "Target": "Maps/{{SelectedWarpMap}}",
+			"Priority": "Late",
             "When": {
                 "HasSeenEvent: anyPlayer| contains=908074": true,
             },
@@ -485,6 +488,7 @@
             "LogName": "Statue Light",
             "Action": "EditMap",
             "Target": "Maps/{{SelectedWarpMap}}",
+			"Priority": "Late",
             "When": {
                 "HasSeenEvent: anyPlayer| contains=908074": true,
             },
@@ -505,8 +509,9 @@
             "LogName": "Patches Warp point at enchanted grove - to farm",
             "Action": "EditMap",
             "Target": "Maps/Custom_EnchantedGrove",
+			"Priority": "Late",
             "When": {
-                "SelectedWarpMap |contains=Custom_GrandpasShedOutside": false
+                "SelectedWarpMap": "{{FarmMapAsset}}"
             },
             "Update": "OnLocationChange",
             "MapTiles": [
@@ -526,6 +531,7 @@
             "LogName": "Patches Warp point at enchanted grove - to Grandpa's Shed",
             "Action": "EditMap",
             "Target": "Maps/Custom_EnchantedGrove",
+			"Priority": "Late",
             "When": {
                 "SelectedWarpMap": "Custom_GrandpasShedOutside"
             },
@@ -738,9 +744,9 @@
                 "Height": 4
             },
             "When": {
-                "HasSeenEvent|contains=908072": true,
-                "HasSeenEvent|contains=908090": false,
-                "HasFlag |contains=jojaMember": true
+                "HasSeenEvent: anyPlayer| contains=908072": true,
+                "HasSeenEvent: anyPlayer| contains=908090": false,
+                "HasFlag: anyPlayer| contains=jojaMember": true
             },
             "Update": "OnLocationChange"
         },
@@ -755,8 +761,8 @@
                 "Height": 4
             },
             "When": {
-                "HasSeenEvent|contains=908090": true,
-                "HasFlag |contains=jojaMember": true
+                "HasSeenEvent: anyPlayer| contains=908090": true,
+                "HasFlag: anyPlayer| contains=jojaMember": true
             },
             "Update": "OnLocationChange"
         },
@@ -771,8 +777,8 @@
                 "Height": 10
             },
             "When": {
-                "HasSeenEvent|contains=908090": true,
-                "HasFlag |contains=jojaMember": true
+                "HasSeenEvent: anyPlayer| contains=908090": true,
+                "HasFlag: anyPlayer| contains=jojaMember": true
             },
             "Update": "OnLocationChange"
         },
@@ -787,8 +793,8 @@
                 "Height": 5
             },
             "When": {
-                "HasSeenEvent": "908090",
-                "HasFlag |contains=jojaMember": true
+                "HasSeenEvent: anyPlayer| contains=908090": true,
+                "HasFlag: anyPlayer| contains=jojaMember": true
             },
             "Update": "OnLocationChange"
         },
@@ -804,7 +810,7 @@
                 "Height": 4
             },
             "When": {
-                "HasSeenEvent|contains=7776012": true
+                "HasSeenEvent: anyPlayer| contains=7776012": true
             },
             "Update": "OnLocationChange"
         },
@@ -819,7 +825,7 @@
                 "Height": 4
             },
             "When": {
-                "HasSeenEvent|contains=7776012": true
+                "HasSeenEvent: anyPlayer| contains=7776012": true
             },
             "Update": "OnLocationChange"
         },
@@ -834,7 +840,7 @@
                 "Height": 10
             },
             "When": {
-                "HasSeenEvent|contains=7776012": true
+                "HasSeenEvent: anyPlayer| contains=7776012": true
             },
             "Update": "OnLocationChange"
         },
@@ -849,7 +855,7 @@
                 "Height": 5
             },
             "When": {
-                "HasSeenEvent|contains=7776012": true
+                "HasSeenEvent: anyPlayer| contains=7776012": true
             },
             "Update": "OnLocationChange"
         },
@@ -858,10 +864,10 @@
             "Action": "EditData",
             "Target": "data/events/Custom_SpriteSpring2",
             "When": {
-                "HasSeenEvent |contains=1111200": true
+                "HasSeenEvent: anyPlayer| contains=1111200": true
             },
             "Entries": {
-                "908076/e 908072": "none/-500 -500/farmer 11 23 1/pause 1000/playMusic FlashShifter.StardewValleyExpandedCP_GrenvilleFalls/pause 800/viewport 16 23 clamp true/skippable/move farmer 5 0 1/pause 500/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 200/faceDirection farmer 0 true/pause 200/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 400/message \"{{i18n:EnchantedGrove.Sprite.01}}\"/pause 600/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 400/message \"{{i18n:EnchantedGrove.Sprite.02}}\"/pause 500/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 400/message \"{{i18n:EnchantedGrove.Sprite.03}}\"/pause 750/playSound pickUpItem/pause 1250/faceDirection farmer 1 true/pause 250/faceDirection farmer 2 true/pause 300/showFrame farmer 57 true/itemAboveHead joja/pause 3300/faceDirection farmer 2 true/pause 750/playSound junimoMeep1/pause 300/playSound junimoMeep1/pause 400/playSound junimoMeep1/faceDirection farmer 1 true/pause 250/faceDirection farmer 0 true/pause 400/playSound junimoMeep1/pause 400/playSound junimoMeep1/pause 400/message \"{{i18n:EnchantedGrove.Sprite.04}}\"/pause 850/faceDirection farmer 1 true/pause 500/globalFade/viewport -1000 -1000/pause 650/playSound pullItemFromWater/pause 800/playSound waterSlosh/pause 500/playSound waterSlosh/pause 500/playSound waterSlosh/pause 500/playSound waterSlosh/pause 500/playSound waterSlosh/pause 500/playSound waterSlosh/pause 250/warp farmer 52 19/faceDirection farmer 2 true/pause 1000/viewport 52 20 clamp true/pause 2250/showFrame farmer 1 true/pause 125/startJittering/addTemporaryActor TulipBouquetObject 16 32 52 20 2 false/playSound stoneStep/pause 400/stopJittering/showFrame farmer 0/pause 1135/showFrame farmer 3 true/pause 950/screenFlash 2/playSound wand/playSound wand/addTemporaryActor MagicWarp 48 48 51 21 2 false/warp TulipBouquetObject -20 -20/addLantern 1000 52 20 1/pause 700/faceDirection farmer 2 true/playSound secret1/pause 2500/globalFade/viewport -1000 -1000/pause 1000/end warpOut",
+                "908076/e 908072": "none/-500 -500/farmer 11 23 1/pause 1000/playMusic FlashShifter.StardewValleyExpandedCP_GrenvilleFalls/pause 650/playSound pullItemFromWater/pause 800/playSound waterSlosh/pause 500/playSound waterSlosh/pause 500/playSound waterSlosh/pause 500/playSound waterSlosh/pause 500/playSound waterSlosh/pause 500/playSound waterSlosh/pause 250/warp farmer 52 19/faceDirection farmer 2 true/pause 1000/viewport 52 20 clamp true/pause 2250/showFrame farmer 1 true/pause 125/startJittering/addTemporaryActor TulipBouquetObject 16 32 52 20 2 false/playSound stoneStep/pause 400/stopJittering/showFrame farmer 0/pause 1135/showFrame farmer 3 true/pause 950/screenFlash 2/playSound wand/playSound wand/addTemporaryActor MagicWarp 48 48 51 21 2 false/warp TulipBouquetObject -20 -20/addLantern 1000 52 20 1/pause 700/faceDirection farmer 2 true/playSound secret1/pause 2500/globalFade/viewport -1000 -1000/pause 1000/end warpOut",
             }
         },
         { //Tulip Bouquet [16x16] temp actor load
@@ -1017,7 +1023,7 @@
                 "Height": 3
             },
             "When": {
-                "HasSeenEvent": "908091"
+                "HasSeenEvent: anyPlayer| contains=908091": true
             },
             "Update": "OnLocationChange"
         },
@@ -1025,7 +1031,7 @@
             "Action": "EditMap",
             "Target": "Maps/Town",
             "When": {
-                "HasSeenEvent": "908091"
+                "HasSeenEvent: anyPlayer| contains=908091": true
             },
             "Update": "OnLocationChange",
             "TextOperations": [
@@ -1051,7 +1057,7 @@
                 "Height": 11
             },
             "When": {
-                "HasFlag |contains=jojaMember": true
+                "HasFlag: anyPlayer| contains=jojaMember": true
             },
             "Update": "OnLocationChange"
         },
@@ -1066,7 +1072,7 @@
                 "Height": 5
             },
             "When": {
-                "HasSeenEvent": "908091"
+                "HasSeenEvent: anyPlayer| contains=908091": true
             },
             "Update": "OnLocationChange"
         },
@@ -1202,7 +1208,7 @@
             "Action": "EditMap",
             "Target": "Maps/Custom_JunimoWoods",
             "When": {
-                "HasSeenEvent": "908077"
+                "HasSeenEvent: anyPlayer| contains=908077": true
             },
             "Update": "OnLocationChange",
             "TextOperations": [
@@ -1370,7 +1376,14 @@
             "Action": "EditData",
             "Target": "data/events/custom_desertrailway",
             "Entries": {
-                "908079/": "FlashShifter.StardewValleyExpandedCP_OminousCavern/-500 -500/farmer 21 14 3/addTemporaryActor Alesia 16 32 15 9 1 true/addTemporaryActor Isaac 16 32 17 9 3 true/pause 1200/viewport 16 11 true/skippable/move farmer -3 0 0/move farmer 0 -2 3/move farmer -2 0 0 true/pause 200/faceDirection Alesia 2 true/pause 1000/faceDirection Isaac 2 true/pause 400/speak Alesia \"{{i18n:EnchantedGrove.Badlands.01}}\"/pause 300/speak Isaac \"{{i18n:EnchantedGrove.Badlands.02}}\"/pause 500/shake Alesia 400/pause 150/speak Alesia \"{{i18n:EnchantedGrove.Badlands.03}}\"/pause 600/faceDirection Alesia 1 true/pause 400/speak Alesia \"{{i18n:EnchantedGrove.Badlands.04}}\"/pause 700/speed Isaac 1/move Isaac 0 1 2/pause 300/speak Isaac \"{{i18n:EnchantedGrove.Badlands.05}}\"/pause 600/faceDirection Alesia 2/pause 300/move Alesia 0 1 2/pause 300/shake Alesia 300/pause 50/speak Alesia \"{{i18n:EnchantedGrove.Badlands.06}}\"/pause 600/faceDirection Alesia 1 true/pause 650/faceDirection Isaac 3 true/pause 500/speak Alesia \"{{i18n:EnchantedGrove.Badlands.07}}\"/pause 600/faceDirection Alesia 2 true/pause 400/shake Alesia 300/pause 100/speak Alesia \"{{i18n:EnchantedGrove.Badlands.08}}\"/pause 500/playSound warrior/showFrame Alesia 18/pause 300/showFrame Alesia 20/pause 300/showFrame Alesia 21/pause 400/playSound wand/playSound wand/screenFlash 2/warp Alesia -300 -300/pause 1500/speed Isaac 1/move Isaac -1 0 2 true/pause 1100/shake Isaac 400/pause 300/speak Isaac \"{{i18n:EnchantedGrove.Badlands.12}}\"/pause 650/playSound warrior/showFrame Isaac 20/pause 300/showFrame Isaac 22/pause 300/showFrame Isaac 18/pause 300/playSound wand/screenFlash 2/warp Isaac -200 -200/pause 1000/globalFade/viewport -1000 -1000/end position 16 12"
+                "908079": "FlashShifter.StardewValleyExpandedCP_OminousCavern/-500 -500/farmer 21 14 3/addTemporaryActor Alesia 16 32 15 9 1 true/addTemporaryActor Isaac 16 32 17 9 3 true/pause 1200/viewport 16 11 true/skippable/move farmer -3 0 0/move farmer 0 -2 3/move farmer -2 0 0 true/pause 200/faceDirection Alesia 2 true/pause 1000/faceDirection Isaac 2 true/pause 400/speak Alesia \"{{i18n:EnchantedGrove.Badlands.01}}\"/pause 300/speak Isaac \"{{i18n:EnchantedGrove.Badlands.02}}\"/pause 500/shake Alesia 400/pause 150/speak Alesia \"{{i18n:EnchantedGrove.Badlands.03}}\"/pause 600/faceDirection Alesia 1 true/pause 400/speak Alesia \"{{i18n:EnchantedGrove.Badlands.04}}\"/pause 700/speed Isaac 1/move Isaac 0 1 2/pause 300/speak Isaac \"{{i18n:EnchantedGrove.Badlands.05}}\"/pause 600/faceDirection Alesia 2/pause 300/move Alesia 0 1 2/pause 300/shake Alesia 300/pause 50/speak Alesia \"{{i18n:EnchantedGrove.Badlands.06}}\"/pause 600/faceDirection Alesia 1 true/pause 650/faceDirection Isaac 3 true/pause 500/speak Alesia \"{{i18n:EnchantedGrove.Badlands.07}}\"/pause 600/faceDirection Alesia 2 true/pause 400/shake Alesia 300/pause 100/speak Alesia \"{{i18n:EnchantedGrove.Badlands.08}}\"/pause 500/playSound warrior/showFrame Alesia 18/pause 300/showFrame Alesia 20/pause 300/showFrame Alesia 21/pause 400/playSound wand/playSound wand/screenFlash 2/warp Alesia -300 -300/pause 1500/speed Isaac 1/move Isaac -1 0 2 true/pause 1100/shake Isaac 400/pause 300/speak Isaac \"{{i18n:EnchantedGrove.Badlands.12}}\"/pause 650/playSound warrior/showFrame Isaac 20/pause 300/showFrame Isaac 22/pause 300/showFrame Isaac 18/pause 300/playSound wand/screenFlash 2/warp Isaac -200 -200/pause 1000/globalFade/viewport -1000 -1000/end position 16 12"
+            },
+        },
+		{ //Prevents castle village outpost vendor schedule chest from spawning again if FTM data folder is deleted
+            "Action": "EditData",
+            "Target": "data/events/custom_desertrailway",
+            "Entries": {
+                "9514263": "continue/-500 -500/farmer 1 1 1/pause 10/end"
             },
         },
         { //Crimson Badlands Warp
@@ -1384,7 +1397,7 @@
                 "Height": 15
             },
             "When": {
-                "HasSeenEvent |contains=908078": false
+                "HasSeenEvent: anyPlayer| contains=908078": false
             },
             "Update": "OnLocationChange"
         },
@@ -1399,7 +1412,7 @@
                 "Height": 5
             },
             "When": {
-                "HasSeenEvent": "908078"
+                "HasSeenEvent: anyPlayer| contains=908078": true
             },
             "Update": "OnLocationChange"
         },

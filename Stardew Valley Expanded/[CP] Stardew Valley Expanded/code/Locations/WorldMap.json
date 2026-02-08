@@ -50,6 +50,16 @@
       "Target": "Mods/FlashShifter.StardewValleyExpandedCP/winter_Highlands",
       "FromFile": "assets/Maps/WorldMaps/Highlands/winter_Highlands_WorldMap.png"
     },
+	
+	//Edits Adventurer Guild open time on the world map
+	{
+      "Action": "EditData",
+      "Target": "Strings/StringsFromCSFiles",
+      "Entries": {
+	    "MapPage.cs.11100": "{{i18n:AdventureGuild.Hours}}",
+      }
+    },
+	
     {
       "Action": "EditData",
       "Target": "Data/WorldMap",
@@ -145,36 +155,16 @@
         }
       },
     },
-    {
+	
+	{
       "Action": "EditData",
       "Target": "Data/WorldMap",
+	  "When": { "FarmType |contains=FrontierFarm": false },
       "TargetField": [
         "Valley",
         "MapAreas",
       ],
       "Entries": {
-        "FlashShifter.StardewValleyExpanded_TownMap_GrandpasShedOutside": {
-          "Id": "Custom_GrandpasShedOutside",
-          "PixelArea": {
-            "X": 0,
-            "Y": 0,
-            "Width": 300,
-            "Height": 180
-          },
-		  "ScrollText": "{{i18n:NPCMapLocation.GrandpaShed}}",
-          "WorldPositions": [
-            {
-              "Id": "Custom_GrandpasShedOutside",
-              "LocationName": "Custom_GrandpasShedOutside",
-              "MapPixelArea": {
-                "X": 131,
-                "Y": 81,
-                "Width": 0,
-                "Height": 0
-              },
-            }
-          ]
-        },
         "FlashShifter.StardewValleyExpanded_IndoorTownMap_GrandpasShedRuins": {
           "Id": "Custom_GrandpasShedRuins",
           "PixelArea": {
@@ -232,6 +222,39 @@
             {
               "Id": "Custom_GrandpasShedGreenhouse",
               "LocationName": "Custom_GrandpasShedGreenhouse",
+              "MapPixelArea": {
+                "X": 131,
+                "Y": 81,
+                "Width": 0,
+                "Height": 0
+              },
+            }
+          ]
+        },
+      },
+    },
+	
+    {
+      "Action": "EditData",
+      "Target": "Data/WorldMap",
+      "TargetField": [
+        "Valley",
+        "MapAreas",
+      ],
+      "Entries": {
+        "FlashShifter.StardewValleyExpanded_TownMap_GrandpasShedOutside": {
+          "Id": "Custom_GrandpasShedOutside",
+          "PixelArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 300,
+            "Height": 180
+          },
+		  "ScrollText": "{{i18n:NPCMapLocation.GrandpaShed}}",
+          "WorldPositions": [
+            {
+              "Id": "Custom_GrandpasShedOutside",
+              "LocationName": "Custom_GrandpasShedOutside",
               "MapPixelArea": {
                 "X": 131,
                 "Y": 81,
@@ -321,8 +344,8 @@
               "Id": "Custom_Garden",
               "LocationName": "Custom_Garden",
               "MapPixelArea": {
-                "X": 285,
-                "Y": 99,
+                "X": 245,
+                "Y": 113,
                 "Width": 0,
                 "Height": 0
               },
@@ -653,6 +676,48 @@
               "MapPixelArea": {
                 "X": 19,
                 "Y": 157,
+                "Width": 0,
+                "Height": 0
+              },
+            }
+          ]
+        },
+		"FlashShifter.StardewValleyExpanded_TownMap_ForbiddenMaze": {
+          "Id": "Custom_ForbiddenMaze",
+          "PixelArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 300,
+            "Height": 180
+          },
+		  "ScrollText": "{{i18n:LocationData.ForbiddenMaze}}",
+          "WorldPositions": [
+            {
+              "Id": "Custom_ForbiddenMaze",
+              "LocationName": "Custom_ForbiddenMaze",
+              "MapPixelArea": {
+                "X": 175,
+                "Y": 6,
+                "Width": 0,
+                "Height": 0
+              },
+            },
+			{
+              "Id": "Custom_HenchmanHouse",
+              "LocationName": "Custom_HenchmanHouse",
+              "MapPixelArea": {
+                "X": 175,
+                "Y": 6,
+                "Width": 0,
+                "Height": 0
+              },
+            },
+			{
+              "Id": "Custom_HenchmanBackyard",
+              "LocationName": "Custom_HenchmanBackyard",
+              "MapPixelArea": {
+                "X": 175,
+                "Y": 6,
                 "Width": 0,
                 "Height": 0
               },
@@ -1486,6 +1551,21 @@
                 }
               ]
             },
+			{
+              "Id": "Custom_BullyRex",
+              "Tooltips": [
+                {
+                  "Id": "Custom_BullyRex",
+                  "Text": "Bully Rex",
+                  "PixelArea": {
+                    "X": 93,
+                    "Y": 10,
+                    "Width": 17,
+                    "Height": 10
+                  }
+                }
+              ]
+            },
             {
               "Id": "Custom_HighlandsOutpost",
               "PixelArea": {
@@ -1554,7 +1634,41 @@
                 }
               ]
             },
-            {
+			{
+              "Id": "Custom_DiamondCavern",
+              "PixelArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 300,
+                "Height": 180
+              },
+              "ScrollText": "{{i18n:DisplayName.DiamondCavern}}",
+              "Tooltips": [
+                {
+                  "Id": "Custom_DiamondCavern",
+                  "Text": "Diamond Cavern",
+                  "PixelArea": {
+                    "X": 85,
+                    "Y": 29,
+                    "Width": 7,
+                    "Height": 6
+                  }
+                },
+              ],
+              "WorldPositions": [
+                {
+                  "Id": "Custom_DiamondCavern",
+                  "LocationName": "Custom_DiamondCavern",
+                  "MapPixelArea": {
+                    "X": 87,
+                    "Y": 31,
+                    "Width": 1,
+                    "Height": 1
+                  },
+                }
+              ]
+            },
+			{
               "Id": "Custom_HighlandsCavernPrison",
               "PixelArea": {
                 "X": 0,
@@ -1565,7 +1679,14 @@
               "ScrollText": "{{i18n:DisplayName.HighlandsCavern}}",
               "Tooltips": [
                 {
-                  "Text": "Highlands Cavern"
+                  "Id": "Custom_HighlandsCavernPrison",
+                  "Text": "Highlands Cavern Prison",
+                  "PixelArea": {
+                    "X": 107,
+                    "Y": 35,
+                    "Width": 10,
+                    "Height": 10
+                  }
                 },
               ],
               "WorldPositions": [

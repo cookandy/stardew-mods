@@ -1,7 +1,7 @@
 {
   "Changes": [
     {
-      //Lance's schedule
+      "LogName": "Lance's schedule",
       "Action": "EditData",
       "Target": "Characters/schedules/Lance",
       "When": {
@@ -28,7 +28,11 @@
         //Adventure Guild
         "marriage_Tue": "700 Custom_AdventurerSummit 40 27 1 \"Strings\\schedules\\Lance:marriage.000\"/1500 Custom_AdventurerSummit 31 22 2 \"Strings\\schedules\\Lance:marriage.001\"/1700 bed",
         //The First Slash
-        "marriage_Wed": "700 Custom_FableReef 45 45 2 \"Strings\\schedules\\Lance:marriage.004\"/1500 Custom_FirstSlashGuild 15 16 0 \"Strings\\schedules\\Lance:marriage.005\"/1830 Custom_FirstSlashGuild 20 17 1 \"Strings\\schedules\\Lance:marriage.006\"/2130 Custom_FirstSlashGuestRoom 7 5 3/2200 Custom_FirstSlashGuestRoom 7 5 3 lance_sleep",
+        "marriage_Wed": "700 Custom_FableReef 45 45 2 \"Strings\\schedules\\Lance:marriage.FableReef.1\"/1500 Custom_FirstSlashGuild 15 16 0 \"Strings\\schedules\\Lance:marriage.FableReef.2\"/1830 Custom_FirstSlashGuild 20 17 1 \"Strings\\schedules\\Lance:marriage.FableReef.3\"/2130 Custom_FirstSlashGuestRoom 7 5 3/2200 Custom_FirstSlashGuestRoom 7 5 3 lance_sleep",
+        "marriage_{{season}}_4": "MAIL LanceMeetsKrobus/GOTO NO_SCHEDULE/GOTO KrobusMeet",
+        "marriage_{{season}}_18": "MAIL LanceMeetsKrobus/GOTO NO_SCHEDULE/GOTO KrobusMeet",
+        "KrobusMeet": "1700 Forest 96 91 1 \"Strings\\schedules\\Lance:KrobusDialogue\"/2550 Forest 96 91 1",
+        
         //Highlands
         "marriage_Sun": "700 Custom_Highlands 122 111 3 \"Strings\\schedules\\Lance:marriage.002\"/1430 Custom_Highlands 122 111 3 \"Strings\\schedules\\Lance:marriage.003\"/1600 bed",
         //Desert Festival

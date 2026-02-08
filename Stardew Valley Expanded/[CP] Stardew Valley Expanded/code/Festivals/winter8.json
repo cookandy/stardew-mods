@@ -14,6 +14,7 @@
         "MarlonFay": "{{i18n:Marlon.Ice}}",
         "Morgan": "{{i18n:Morgan.Ice}}",
         "MorrisTod": "{{i18n:Morris.Ice}}",
+		"Scarlett": "{{i18n:Scarlett.Ice}}",
         "Olivia": "{{i18n:Ice.Olivia.1}}",
         "Sandy": "{{i18n:Sandy.Ice}}",
         "Sophia": "{{i18n:ice.Sophia.1}}",
@@ -88,7 +89,7 @@
     },
     {
       "Action": "EditData",
-      "Target": "data/festivals/winter25",
+      "Target": "data/festivals/winter8",
       "Entries": {
         "Olivia": "{{i18n:Ice.Olivia.2}}",
       },
@@ -98,7 +99,7 @@
     },
     {
       "Action": "EditData",
-      "Target": "data/festivals/winter25",
+      "Target": "data/festivals/winter8",
       "Entries": {
         "Victor": "{{i18n:Ice.victor.2}}"
       },
@@ -159,7 +160,7 @@
     },
     {
       "Action": "EditData",
-      "Target": "data/festivals/winter25",
+      "Target": "data/festivals/winter8",
       "Entries": {
         "Olivia_y2": "{{i18n:Ice.Olivia.2}}",
       },
@@ -169,7 +170,7 @@
     },
     {
       "Action": "EditData",
-      "Target": "data/festivals/winter25",
+      "Target": "data/festivals/winter8",
       "Entries": {
         "Victor_y2": "{{i18n:Ice.victor.2}}"
       },
@@ -341,6 +342,33 @@
             "Main-Event_additionalCharacters"
           ],
           "Value": "Claire 79 26 down",
+          "Delimiter": "/"
+        },
+      ]
+    },
+	{ //Scarlett ice festival data
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "When": {
+        "HasSeenEvent": "3691371",
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Scarlett 58 19 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Main-Event_additionalCharacters"
+          ],
+          "Value": "Scarlett 57 39 right",
           "Delimiter": "/"
         },
       ]

@@ -1,0 +1,2026 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpaceCore</name>
+    </assembly>
+    <members>
+        <member name="M:SpaceCore.IApi.GetCustomSkills">
+            <summary>
+            Returns a list of all currently loaded skill's string IDs
+            </summary>
+            <returns>An array of skill IDs</returns>
+        </member>
+        <member name="M:SpaceCore.IApi.GetLevelForCustomSkill(StardewValley.Farmer,System.String)">
+            <summary>
+            Gets the Base level of the custom skill for the farmer.
+            </summary>
+            <param name="farmer"> The farmer who you want to get the skill level for.</param>
+            <param name="skill"> The string ID of the skill you want the level of.</param>
+            <returns>Int</returns>
+        </member>
+        <member name="M:SpaceCore.IApi.GetBuffLevelForCustomSkill(StardewValley.Farmer,System.String)">
+            <summary>
+            Gets the Buff level of the custom skill for the farmer.
+            </summary>
+            <param name="farmer"> The farmer who you want to get the skill level for.</param>
+            <param name="skill"> The string ID of the skill you want the level of.</param>
+            <returns>Int</returns>
+        </member>
+        <member name="M:SpaceCore.IApi.GetTotalLevelForCustomSkill(StardewValley.Farmer,System.String)">
+            <summary>
+            Gets the Base + Buff level of the custom skill for the farmer.
+            </summary>
+            <param name="farmer"> The farmer who you want to get the skill level for.</param>
+            <param name="skill"> The string ID of the skill you want the level of.</param>
+            <returns>Int</returns>
+        </member>
+        <member name="M:SpaceCore.IApi.GetExperienceForCustomSkill(StardewValley.Farmer,System.String)">
+            <summary>
+            Gets the total exp the skill has
+            </summary>
+            <param name="farmer"> The farmer who you want to get the skill level for.</param>
+            <param name="skill"> The string ID of the skill you want the level of.</param>
+            <returns>Int</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SpaceCore.IApi.GetExperienceAndLevelsForCustomSkill(StardewValley.Farmer)" -->
+        <member name="M:SpaceCore.IApi.AddExperienceForCustomSkill(StardewValley.Farmer,System.String,System.Int32)">
+            <summary>
+            Add EXP to a custom skill
+            </summary>
+            <param name="farmer"> The farmer who you want to give exp to</param>
+            <param name="skill"> The string ID of the custom skill</param>
+            <param name="amt"> The int Amount you want to give</param>
+        </member>
+        <member name="M:SpaceCore.IApi.GetDisplayNameOfCustomSkill(System.String)">
+            <summary>
+            Gets the display name of the skill
+            </summary>
+            <param name="skill"> The ID of the skill you want to get</param>
+            <returns>Texture2D</returns>
+        </member>
+        <member name="M:SpaceCore.IApi.GetSkillPageIconForCustomSkill(System.String)">
+            <summary>
+            Gets the 10x10 icon of the skill that shows up on the skill page
+            </summary>
+            <param name="skill"> The ID of the skill you want to get</param>
+            <returns>Texture2D</returns>
+        </member>
+        <member name="M:SpaceCore.IApi.GetSkillIconForCustomSkill(System.String)">
+            <summary>
+            Gets the 16x16 icon of the skill that shows up in the level up menu.
+            </summary>
+            <param name="skill"> The ID of the skill you want to get</param>
+            <returns>Texture2D</returns>
+        </member>
+        <member name="M:SpaceCore.IApi.GetProfessionId(System.String,System.String)">
+            <summary>
+            Get the profession ID for the custom skill
+            </summary>
+            <param name="skill"></param>
+            <param name="profession"></param>
+            <returns>int profession ID</returns>
+        </member>
+        <member name="M:SpaceCore.IApi.RegisterSerializerType(System.Type)">
+            Must have [XmlType("Mods_SOMETHINGHERE")] attribute (required to start with "Mods_")
+        </member>
+        <member name="E:SpaceCore.Events.SpaceEvents.OnBlankSave">
+            <summary>This occurs before loading starts.</summary>
+            Locations should be added here so that SaveData.loadDataToLocations picks them up
+        </member>
+        <member name="E:SpaceCore.Events.SpaceEvents.ShowNightEndMenus">
+            <summary>When the shipping menu pops up, level up menus, ...</summary>
+        </member>
+        <member name="E:SpaceCore.Events.SpaceEvents.ChooseNightlyFarmEvent">
+            <summary>Lets you hook into Utillity.pickFarmEvent</summary>
+        </member>
+        <member name="E:SpaceCore.Events.SpaceEvents.OnItemEaten">
+            <summary>When the player is done eating an item.</summary>
+            Check what item using player.itemToEat
+        </member>
+        <member name="E:SpaceCore.Events.SpaceEvents.ServerGotClient">
+            <summary>Server side, when a client joins</summary>
+        </member>
+        <member name="E:SpaceCore.Events.SpaceEvents.BeforeGiftGiven">
+            <summary>Right before a gift is given to someone. Sender is farmer.</summary>
+        </member>
+        <member name="E:SpaceCore.Events.SpaceEvents.AfterGiftGiven">
+            <summary>When a gift is given to someone. Sender is farmer.</summary>
+        </member>
+        <member name="E:SpaceCore.Events.SpaceEvents.BeforeWarp">
+            B<summary>efore the player is about to warp. Can cancel warping or change the target location.</summary>
+        </member>
+        <member name="E:SpaceCore.Events.SpaceEvents.BombExploded">
+            <summary>When a bomb explodes</summary>
+        </member>
+        <member name="E:SpaceCore.Events.SpaceEvents.OnEventFinished">
+            <summary>When an event finishes. Use Game1.CurrentEvent to check which one.</summary>
+        </member>
+        <member name="E:SpaceCore.Events.SpaceEvents.AddWalletItems">
+            <summary>Event for adding wallet items to NewSkillsPage, before the controller-pickable logic needs to run</summary>
+        </member>
+        <member name="M:SpaceCore.Framework.Commands.DumpSkills(System.String[])">
+            <summary>Show a report of currently registered skills and professions.</summary>
+            <param name="args">The command arguments.</param>
+        </member>
+        <member name="P:SpaceCore.Framework.Configuration.CustomSkillPage">
+            <summary>Whether to show the custom skill page. This will move the wallet so that there is room for more skills.</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.Configuration.SupportAllProfessionsMod">
+            <summary>When All Professions is installed, whether to automatically apply custom professions registered through SpaceCore when their level is reached.</summary>
+        </member>
+        <member name="M:SpaceCore.Framework.Extensions.StringExtensions.GetNthChunk(System.String,System.Char,System.Int32)">
+            <summary>
+            Faster replacement for str.Split()[index];.
+            </summary>
+            <param name="str">String to search in.</param>
+            <param name="deliminator">deliminator to use.</param>
+            <param name="index">index of the chunk to get.</param>
+            <returns>a readonlyspan char with the chunk, or an empty readonlyspan for failure.</returns>
+        </member>
+        <member name="M:SpaceCore.Framework.Extensions.StringExtensions.GetNthChunk(System.String,System.Char[],System.Int32)">
+            <summary>
+            Faster replacement for str.Split()[index];.
+            </summary>
+            <param name="str">String to search in.</param>
+            <param name="deliminators">deliminators to use.</param>
+            <param name="index">index of the chunk to get.</param>
+            <returns>a readonlyspan char with the chunk, or an empty readonlyspan for failure.</returns>
+            <remarks>Inspired by the lovely Wren.</remarks>
+        </member>
+        <member name="T:SpaceCore.Framework.LegacyDataMigrator">
+            <summary>Handles migrating legacy data for a save file.</summary>
+        </member>
+        <member name="F:SpaceCore.Framework.LegacyDataMigrator.DataHelper">
+            <summary>An API for reading and storing local mod data.</summary>
+        </member>
+        <member name="F:SpaceCore.Framework.LegacyDataMigrator.Monitor">
+            <summary>Encapsulates monitoring and logging.</summary>
+        </member>
+        <member name="M:SpaceCore.Framework.LegacyDataMigrator.#ctor(StardewModdingAPI.IDataHelper,StardewModdingAPI.IMonitor)">
+            <summary>Construct an instance.</summary>
+            <param name="dataHelper"><inheritdoc cref="F:SpaceCore.Framework.LegacyDataMigrator.DataHelper" path="/summary"/></param>
+            <param name="monitor"><inheritdoc cref="F:SpaceCore.Framework.LegacyDataMigrator.Monitor" path="/summary"/></param>
+        </member>
+        <member name="M:SpaceCore.Framework.LegacyDataMigrator.OnSaveLoaded">
+            <summary>Raised after the player loads a save slot.</summary>
+        </member>
+        <member name="M:SpaceCore.Framework.LegacyDataMigrator.GetKnownProfessions">
+            <summary>Get the custom professions which may need to be migrated.</summary>
+        </member>
+        <member name="T:SpaceCore.Framework.LegacyDataMigrator.KnownProfession">
+            <summary>A profession that may have been registered through SpaceCore 1.6.2 or earlier.</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.LegacyDataMigrator.KnownProfession.SkillId">
+            <summary>The unique ID for the custom skill.</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.LegacyDataMigrator.KnownProfession.ProfessionId">
+            <summary>The unique ID for the custom profession.</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.LegacyDataMigrator.KnownProfession.OldVanillaId">
+            <summary>The save ID for the profession as generated by SpaceCore 1.6.2 or earlier.</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.LegacyDataMigrator.KnownProfession.NewVanillaId">
+            <summary>The save ID for the profession as generated by SpaceCore 1.6.3 or later.</summary>
+            <remarks>Derived from <see cref="M:SpaceCore.Skills.Skill.Profession.GetVanillaId"/>.</remarks>
+        </member>
+        <member name="M:SpaceCore.Framework.LegacyDataMigrator.KnownProfession.#ctor(System.String,System.String,System.Int32)">
+            <summary>Construct an instance.</summary>
+            <param name="skillId">The unique ID for the custom skill.</param>
+            <param name="professionId">The unique ID for the custom profession.</param>
+            <param name="oldVanillaId">The save ID for the profession as generated by SpaceCore 1.6.2 or earlier.</param>
+        </member>
+        <member name="T:SpaceCore.Framework.Serialization.OptimizedModNode">
+            <summary>An optimized view of an XML mod node stored in the <see cref="F:SpaceCore.Framework.SerializerManager.FarmerFilename"/> or <see cref="F:SpaceCore.Framework.SerializerManager.Filename"/> file.</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.Serialization.OptimizedModNode.XmlNode">
+            <summary>The raw XML of the node to insert.</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.Serialization.OptimizedModNode.Path">
+            <summary>The raw 'node path' which indicates where to insert the <see cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.XmlNode"/> in the save file. This consists of slash-delimited positions within the XML tree. For example, "/1/3/5" means "insert into the 5th position under the 3rd child of the root".</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.Serialization.OptimizedModNode.ParentPath">
+            <summary>The <see cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.Path"/> of the parent element into which to insert the <see cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.XmlNode"/>.</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.Serialization.OptimizedModNode.AncestorPaths">
+            <summary>A set of every ancestor node's <see cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.Path"/> which contains this XML node. For example, given a <see cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.Path"/> of "/1/3/5", this would contain "/1" and "/1/3".</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.Serialization.OptimizedModNode.Index">
+            <summary>The index at which to insert the <see cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.XmlNode"/> within the <see cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.ParentPath"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Framework.Serialization.OptimizedModNode.#ctor(System.String,System.String)">
+            <summary>Construct an instance.</summary>
+            <param name="xmlNode"><inheritdoc cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.XmlNode" path="/summary"/></param>
+            <param name="path"><inheritdoc cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.Path" path="/summary"/></param>
+        </member>
+        <member name="M:SpaceCore.Framework.Serialization.OptimizedModNode.ParsePath(System.String,System.Collections.Generic.ISet{System.String}@,System.String@,System.Int32@)">
+            <summary>Parse an arbitrary path into its component metadata.</summary>
+            <param name="path"><inheritdoc cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.Path" path="/summary"/></param>
+            <param name="ancestorPaths"><inheritdoc cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.AncestorPaths" path="/summary"/></param>
+            <param name="parentPath"><inheritdoc cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.ParentPath" path="/summary"/></param>
+            <param name="index"><inheritdoc cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.Index" path="/summary"/></param>
+        </member>
+        <member name="T:SpaceCore.Framework.Serialization.OptimizedModNodeList">
+            <summary>An optimized view of all the XML mod nodes stored in the <see cref="F:SpaceCore.Framework.SerializerManager.FarmerFilename"/> or <see cref="F:SpaceCore.Framework.SerializerManager.Filename"/> file.</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.Serialization.OptimizedModNodeList.ModNodes">
+            <summary>The mod nodes in the file.</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.Serialization.OptimizedModNodeList.AncestorPaths">
+            <summary>The <see cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.Path"/> value for every element in the save which contains one or more mod nodes.</summary>
+        </member>
+        <member name="P:SpaceCore.Framework.Serialization.OptimizedModNodeList.ModNodesByParent">
+            <summary>The mod nodes to insert grouped by their immediate parent node's <see cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.Path"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Framework.Serialization.OptimizedModNodeList.#ctor(SpaceCore.Framework.Serialization.OptimizedModNode[])">
+            <summary>Construct an instance.</summary>
+            <param name="modNodes">The mod nodes in the file.</param>
+        </member>
+        <member name="M:SpaceCore.Framework.Serialization.OptimizedModNodeList.LoadFromFile(System.String)">
+            <summary>Load a <see cref="T:SpaceCore.Framework.Serialization.OptimizedModNodeList"/> representation from a raw data file.</summary>
+            <param name="path">The absolute path to the file to load.</param>
+        </member>
+        <member name="T:SpaceCore.Framework.SerializerManager">
+            <summary>Manages the serialization for <see cref="T:SpaceCore.Patches.LoadGameMenuPatcher"/> and <see cref="T:SpaceCore.Patches.SaveGamePatcher"/>.</summary>
+        </member>
+        <member name="F:SpaceCore.Framework.SerializerManager.HasPyTk">
+            <summary>Whether PyTK is installed.</summary>
+        </member>
+        <member name="F:SpaceCore.Framework.SerializerManager.InitializedSerializers">
+            <summary>Whether SpaceCore's custom types have been added to the <see cref="T:StardewValley.SaveGame"/> serializers.</summary>
+        </member>
+        <member name="F:SpaceCore.Framework.SerializerManager.LoadFileContext">
+            <summary>The save filename currently being loaded, if any.</summary>
+        </member>
+        <member name="M:SpaceCore.Framework.SerializerManager.#ctor(StardewModdingAPI.IModRegistry)">
+            <summary>Construct an instance.</summary>
+            <param name="modRegistry">The mod registry to check for installed mods.</param>
+        </member>
+        <member name="M:SpaceCore.Framework.SerializerManager.NotifyPyTk(System.Xml.Serialization.XmlSerializer)">
+            <summary>Notify PyTK that the serializers were changed, if it's installed.</summary>
+            <param name="serializer">The XML serializer which changed.</param>
+        </member>
+        <member name="T:SpaceCore.Patches.CraftingRecipePatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.CraftingRecipe"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.CraftingRecipePatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.CraftingRecipePatcher.Before_CraftingRecipe_ConsumeIngredients(StardewValley.CraftingRecipe,System.Collections.Generic.List{StardewValley.Inventories.IInventory})">
+            <summary>The method to call before <see cref="M:StardewValley.CraftingRecipe.consumeIngredients(System.Collections.Generic.List{StardewValley.Inventories.IInventory})"/>.</summary>
+            <returns>Returns whether to run the original method.</returns>
+        </member>
+        <member name="M:SpaceCore.Patches.CraftingRecipePatcher.Transpile_CraftingPage_LayoutRecipes(System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase,System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>The method which transpiles <see cref="!:CraftingPage.layoutRecipes"/>.</summary>
+            <returns>Returns whether to run the original method.</returns>
+        </member>
+        <member name="M:SpaceCore.Patches.CraftingRecipePatcher.Transpile_CraftingPage_SetupRecipes(System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase,System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>The method which transpiles <see cref="!:CraftingPage.layoutRecipes"/>.</summary>
+            <returns>Returns whether to run the original method.</returns>
+        </member>
+        <member name="M:SpaceCore.Patches.CraftingRecipePatcher.Transpile_CollectionsPage_CreateDescription(System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase,System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>The method which transpiles <see cref="M:StardewValley.Menus.CollectionsPage.createDescription(System.String)"/>.</summary>
+            <returns>Returns whether to run the original method.</returns>
+        </member>
+        <member name="T:SpaceCore.Patches.FarmerPatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.Farmer"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.FarmerPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.FarmerPatcher.After_DoneEating(StardewValley.Farmer)">
+            <summary>The method to call after <see cref="M:StardewValley.Farmer.doneEating"/>.</summary>
+        </member>
+        <member name="T:SpaceCore.Patches.ForgeMenuPatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.Menus.ForgeMenu"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.ForgeMenuPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.ForgeMenuPatcher.After_GenerateHighlightDictionary(StardewValley.Menus.ForgeMenu)">
+            <summary>The method to call before <see cref="M:StardewValley.Menus.ForgeMenu.GenerateHighlightDictionary"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.ForgeMenuPatcher.Before_IsValidCraft(StardewValley.Menus.ForgeMenu,StardewValley.Item,StardewValley.Item,System.Boolean@)">
+            <summary>The method to call before <see cref="M:StardewValley.Menus.ForgeMenu.IsValidCraft(StardewValley.Item,StardewValley.Item)"/>.</summary>
+            <returns>Returns whether to run the original method.</returns>
+        </member>
+        <member name="M:SpaceCore.Patches.ForgeMenuPatcher.Before_SpendLeftItem(StardewValley.Menus.ForgeMenu)">
+            <summary>The method to call before <see cref="M:StardewValley.Menus.ForgeMenu.SpendLeftItem"/>.</summary>
+            <returns>Returns whether to run the original method.</returns>
+        </member>
+        <member name="M:SpaceCore.Patches.ForgeMenuPatcher.Before_SpendRightItem(StardewValley.Menus.ForgeMenu)">
+            <summary>The method to call before <see cref="M:StardewValley.Menus.ForgeMenu.SpendLeftItem"/>.</summary>
+            <returns>Returns whether to run the original method.</returns>
+        </member>
+        <member name="M:SpaceCore.Patches.ForgeMenuPatcher.Before_CraftItem(StardewValley.Menus.ForgeMenu,StardewValley.Item,StardewValley.Item,System.Boolean,StardewValley.Item@)">
+            <summary>The method to call before <see cref="M:StardewValley.Menus.ForgeMenu.CraftItem(StardewValley.Item,StardewValley.Item,System.Boolean)"/>.</summary>
+            <returns>Returns whether to run the original method.</returns>
+        </member>
+        <member name="M:SpaceCore.Patches.ForgeMenuPatcher.Before_GetForgeCost(StardewValley.Menus.ForgeMenu,StardewValley.Item,StardewValley.Item,System.Int32@)">
+            <summary>The method to call before <see cref="M:StardewValley.Menus.ForgeMenu.GetForgeCost(StardewValley.Item,StardewValley.Item)"/>.</summary>
+            <returns>Returns whether to run the original method.</returns>
+        </member>
+        <member name="M:SpaceCore.Patches.ForgeMenuPatcher.Transpile__leftIngredientSpotClicked(System.Reflection.MethodBase,System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.Emit.ILGenerator)">
+            <summary>The method which transpiles <see cref="M:StardewValley.Menus.ForgeMenu.draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.ForgeMenuPatcher.Transpile_Draw(System.Reflection.MethodBase,System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.Emit.ILGenerator)">
+            <summary>The method which transpiles <see cref="M:StardewValley.Menus.ForgeMenu.draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)"/>.</summary>
+        </member>
+        <member name="T:SpaceCore.Patches.Game1Patcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.Game1"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.Game1Patcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.Game1Patcher.Before_EventFinished">
+            <summary>The method to call before <see cref="M:StardewValley.Game1.eventFinished"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.Game1Patcher.After_LoadForNewGame(System.Boolean)">
+            <summary>The method to call after <see cref="M:StardewValley.Game1.loadForNewGame(System.Boolean)"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.Game1Patcher.Transpile_ShowEndOfNightStuff(System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase,System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>The method which transpiles <see cref="M:StardewValley.Game1.showEndOfNightStuff"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.Game1Patcher.Before_WarpFarmer(StardewValley.LocationRequest@,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>The method to call before <see cref="M:StardewValley.Game1.warpFarmer(StardewValley.LocationRequest,System.Int32,System.Int32,System.Int32)"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.Game1Patcher.TryGetEndOfNightMethod(StardewModdingAPI.IMonitor,System.Reflection.MethodInfo@)">
+            <summary>Get the <see cref="M:StardewValley.Game1.showEndOfNightStuff"/> method with support for both Linux/macOS and Windows.</summary>
+            <param name="monitor">The monitor with which to log any errors.</param>
+            <param name="method">The method reference, if found.</param>
+            <returns>Returns whether the method was successfully found.</returns>
+        </member>
+        <member name="T:SpaceCore.Patches.GameLocationPatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.GameLocation"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.GameLocationPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.GameLocationPatcher.After_Explode(StardewValley.GameLocation,Microsoft.Xna.Framework.Vector2,System.Int32,StardewValley.Farmer)">
+            <summary>The method to call after <see cref="M:StardewValley.GameLocation.explode(Microsoft.Xna.Framework.Vector2,System.Int32,StardewValley.Farmer,System.Boolean,System.Int32,System.Boolean)"/>.</summary>
+        </member>
+        <member name="T:SpaceCore.Patches.GameServerPatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.Network.GameServer"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.GameServerPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.GameServerPatcher.After_SendServerIntroduction(StardewValley.Network.GameServer,System.Int64)">
+            <summary>The method to call before <see cref="M:StardewValley.Network.GameServer.sendServerIntroduction(System.Int64)"/>.</summary>
+        </member>
+        <member name="T:SpaceCore.Patches.HoeDirtPatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.TerrainFeatures.HoeDirt"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.HoeDirtPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.HoeDirtPatcher.Transpile_DayUpdate(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>The method which transpiles <see cref="M:StardewValley.TerrainFeatures.HoeDirt.dayUpdate"/> to remove the <see cref="M:StardewValley.TerrainFeatures.HoeDirt.destroyCrop(System.Boolean)"/> call.</summary>
+            <remarks>Withering isn't needed here since crops will wither separately if needed, so this simplifies Json Assets' winter crop logic elsewhere.</remarks>
+        </member>
+        <member name="M:SpaceCore.Patches.HoeDirtPatcher.DestroyCrop(System.Boolean)">
+            <summary>An implementation of <see cref="M:StardewValley.TerrainFeatures.HoeDirt.destroyCrop(System.Boolean)"/> that does nothing.</summary>
+        </member>
+        <member name="T:SpaceCore.Patches.LoadGameMenuPatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.Menus.LoadGameMenu"/>.</summary>
+        </member>
+        <member name="F:SpaceCore.Patches.LoadGameMenuPatcher.SerializerManager">
+            <summary>Manages the custom save serialization.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.LoadGameMenuPatcher.#ctor(SpaceCore.Framework.SerializerManager)">
+            <summary>Construct an instance.</summary>
+            <param name="serializerManager">Manages the custom save serialization.</param>
+        </member>
+        <member name="M:SpaceCore.Patches.LoadGameMenuPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.LoadGameMenuPatcher.Before_FindSaveGames">
+            <summary>The method to call before <see cref="!:LoadGameMenu.FindSaveGames"/>.</summary>
+        </member>
+        <member name="T:SpaceCore.Patches.MultiplayerPatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.Multiplayer"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.MultiplayerPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.MultiplayerPatcher.Before_ProcessIncomingMessage(StardewValley.Multiplayer,StardewValley.Network.IncomingMessage)">
+            <summary>The method to call before <see cref="M:StardewValley.Multiplayer.processIncomingMessage(StardewValley.Network.IncomingMessage)"/>.</summary>
+        </member>
+        <member name="T:SpaceCore.Patches.NpcPatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.NPC"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.NpcPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.NpcPatcher.Before_TryToReceiveActiveObject(StardewValley.NPC,StardewValley.Farmer,System.Boolean)">
+            <summary>The method to call before <see cref="M:StardewValley.NPC.tryToReceiveActiveObject(StardewValley.Farmer,System.Boolean)"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.NpcPatcher.After_ReceiveGift(StardewValley.NPC,StardewValley.Object,StardewValley.Farmer,System.Boolean,System.Single,System.Boolean)">
+            <summary>The method to call after <see cref="M:StardewValley.NPC.receiveGift(StardewValley.Object,StardewValley.Farmer,System.Boolean,System.Single,System.Boolean)"/>.</summary>
+        </member>
+        <member name="T:SpaceCore.Patches.SaveGamePatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.SaveGame"/>.</summary>
+        </member>
+        <member name="F:SpaceCore.Patches.SaveGamePatcher.SerializerManager">
+            <summary>Manages the custom save serialization.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SaveGamePatcher.#ctor(SpaceCore.Framework.SerializerManager)">
+            <summary>Construct an instance.</summary>
+            <param name="serializerManager">Manages the custom save serialization.</param>
+        </member>
+        <member name="M:SpaceCore.Patches.SaveGamePatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.SaveGamePatcher.GetLoadEnumeratorMethods">
+            <summary>Get the <see cref="M:StardewValley.SaveGame.getLoadEnumerator(System.String)"/> methods that should be patched.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SaveGamePatcher.GetSaveEnumeratorMethods">
+            <summary>Get the <see cref="M:StardewValley.SaveGame.getSaveEnumerator"/> methods that should be patched.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SaveGamePatcher.Before_GetSerializer(System.Type,System.Xml.Serialization.XmlSerializer@)">
+            <summary>The method to call before <see cref="!:SaveGame.GetSerializer"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SaveGamePatcher.Before_Load(System.String)">
+            <summary>The method to call before <see cref="M:StardewValley.SaveGame.Load(System.String)"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SaveGamePatcher.Before_Save">
+            <summary>The method to call before <see cref="M:StardewValley.SaveGame.Save"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SaveGamePatcher.Before_LoadDataToLocations(System.Collections.Generic.List{StardewValley.GameLocation})">
+            <summary>The method to call before <see cref="M:StardewValley.SaveGame.loadDataToLocations(System.Collections.Generic.List{StardewValley.GameLocation})"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SaveGamePatcher.Transpile_SaveGameMenuUpdate(System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase,System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>The method which transpiles <see cref="M:StardewValley.SaveGame.Save"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SaveGamePatcher.Transpile_GetLoadEnumerator(System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase,System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>The method which transpiles <see cref="M:StardewValley.SaveGame.getLoadEnumerator(System.String)"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SaveGamePatcher.Transpile_GetSaveEnumerator(System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase,System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>The method which transpiles <see cref="M:StardewValley.SaveGame.getSaveEnumerator"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SaveGamePatcher.RestoreModNodes(System.Xml.XmlDocument,System.Xml.XmlNode,SpaceCore.Framework.Serialization.OptimizedModNodeList,System.String)">
+            <summary>Recursively restore custom mod types in the save XML.</summary>
+            <param name="doc">The XML document to scan.</param>
+            <param name="node">The subtree node from which to scan.</param>
+            <param name="modNodes">The custom mod elements to insert.</param>
+            <param name="curPath">The <see cref="P:SpaceCore.Framework.Serialization.OptimizedModNode.Path"/> value for the current subtree root.</param>
+        </member>
+        <member name="T:SpaceCore.Patches.SerializationPatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.Utility"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SerializationPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.SerializationPatcher.After_GetMemberInfos(System.Object,System.Reflection.MemberInfo[]@)">
+            <summary>The method to call after <see cref="!:StructModel.GetMemberInfos"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SerializationPatcher.After_GetPropertyModel(System.Object,System.Reflection.PropertyInfo,System.Object@)">
+            <summary>The method to call after <see cref="!:StructModel.GetPropertyModel"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SkillBuffPatcher.DrawCustomSkillBuffEffects(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Graphics.SpriteFont,StardewValley.Item,System.Int32,System.Int32)">
+            <summary>
+            For items with basic buff attributes, draws custom skill buff effects, or does nothing if no custom skill effects are found.
+            </summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SkillBuffPatcher.DrawAdditionalBuffEffects(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Graphics.SpriteFont,StardewValley.Item,System.Int32,System.Int32)">
+            <summary>
+            For all items, draws any SpaceCore additional buff effects, or does nothing if no additional effects are found.
+            </summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SkillBuffPatcher.DrawCustomSkillBuffEffectsIfNoBasicEffects(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Graphics.SpriteFont,StardewValley.Item,System.Int32,System.Int32,System.Int32,System.String[],StardewValley.CraftingRecipe)">
+            <summary>
+            For hovered items without basic buff attributes, draws a divider and custom skill buff effects, or does nothing if no custom skill effects are found..
+            </summary>
+        </member>
+        <member name="T:SpaceCore.Patches.SpriteBatchPatcher">
+            <summary>Applies Harmony patches to <see cref="T:Microsoft.Xna.Framework.Graphics.SpriteBatch"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SpriteBatchPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.SpriteBatchPatcher.Before_Draw_1(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Graphics.Texture2D@,Microsoft.Xna.Framework.Rectangle,System.Nullable{Microsoft.Xna.Framework.Rectangle}@,Microsoft.Xna.Framework.Color,System.Single,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Graphics.SpriteEffects,System.Single)">
+            <summary>The method to call before <see cref="M:Microsoft.Xna.Framework.Graphics.SpriteBatch.Draw(Microsoft.Xna.Framework.Graphics.Texture2D,Microsoft.Xna.Framework.Rectangle,System.Nullable{Microsoft.Xna.Framework.Rectangle},Microsoft.Xna.Framework.Color,System.Single,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Graphics.SpriteEffects,System.Single)"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SpriteBatchPatcher.Before_Draw_2(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Graphics.Texture2D@,Microsoft.Xna.Framework.Rectangle,System.Nullable{Microsoft.Xna.Framework.Rectangle}@,Microsoft.Xna.Framework.Color)">
+            <summary>The method to call before <see cref="M:Microsoft.Xna.Framework.Graphics.SpriteBatch.Draw(Microsoft.Xna.Framework.Graphics.Texture2D,Microsoft.Xna.Framework.Rectangle,System.Nullable{Microsoft.Xna.Framework.Rectangle},Microsoft.Xna.Framework.Color)"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SpriteBatchPatcher.Before_Draw_3(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Graphics.Texture2D@,Microsoft.Xna.Framework.Vector2,System.Nullable{Microsoft.Xna.Framework.Rectangle}@,Microsoft.Xna.Framework.Color,System.Single,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Graphics.SpriteEffects,System.Single)">
+            <summary>The method to call before <see cref="M:Microsoft.Xna.Framework.Graphics.SpriteBatch.Draw(Microsoft.Xna.Framework.Graphics.Texture2D,Microsoft.Xna.Framework.Vector2,System.Nullable{Microsoft.Xna.Framework.Rectangle},Microsoft.Xna.Framework.Color,System.Single,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Graphics.SpriteEffects,System.Single)"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SpriteBatchPatcher.Before_Draw_4(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Graphics.Texture2D@,Microsoft.Xna.Framework.Vector2,System.Nullable{Microsoft.Xna.Framework.Rectangle}@,Microsoft.Xna.Framework.Color,System.Single,Microsoft.Xna.Framework.Vector2,System.Single,Microsoft.Xna.Framework.Graphics.SpriteEffects,System.Single)">
+            <summary>The method to call before <see cref="M:Microsoft.Xna.Framework.Graphics.SpriteBatch.Draw(Microsoft.Xna.Framework.Graphics.Texture2D,Microsoft.Xna.Framework.Vector2,System.Nullable{Microsoft.Xna.Framework.Rectangle},Microsoft.Xna.Framework.Color,System.Single,Microsoft.Xna.Framework.Vector2,System.Single,Microsoft.Xna.Framework.Graphics.SpriteEffects,System.Single)"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SpriteBatchPatcher.Before_Draw_5(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Graphics.Texture2D@,Microsoft.Xna.Framework.Vector2,System.Nullable{Microsoft.Xna.Framework.Rectangle}@,Microsoft.Xna.Framework.Color)">
+            <summary>The method to call before <see cref="M:Microsoft.Xna.Framework.Graphics.SpriteBatch.Draw(Microsoft.Xna.Framework.Graphics.Texture2D,Microsoft.Xna.Framework.Vector2,System.Nullable{Microsoft.Xna.Framework.Rectangle},Microsoft.Xna.Framework.Color)"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.SpriteBatchPatcher.TryOverride(Microsoft.Xna.Framework.Graphics.Texture2D@,Microsoft.Xna.Framework.Rectangle@,Microsoft.Xna.Framework.Graphics.Texture2D,System.Collections.Generic.IDictionary{Microsoft.Xna.Framework.Rectangle,SpaceCore.TexturedRect})">
+            <summary>Override the texture being drawn if it matches a target texture and the source rectangle matches an override for that type.</summary>
+            <param name="currentTexture">The texture being drawn to the sprite batch.</param>
+            <param name="currentSourceRect">The source rectangle being drawn to the sprite batch.</param>
+            <param name="fromTexture">The target texture to detect.</param>
+            <param name="overrides">The texture overrides to apply.</param>
+            <returns>Returns whether the texture was overridden.</returns>
+        </member>
+        <member name="T:SpaceCore.Patches.ToolDataDefinitionPatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.ItemTypeDefinitions.ToolDataDefinition"/></summary>
+        </member>
+        <member name="M:SpaceCore.Patches.ToolDataDefinitionPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.ToolDataDefinitionPatcher.After_CreateToolInstance(StardewValley.Tool,StardewValley.GameData.Tools.ToolData)">
+            <summary>The method to call after <see cref="M:StardewValley.ItemTypeDefinitions.ToolDataDefinition.CreateToolInstance(StardewValley.ItemTypeDefinitions.ParsedItemData,StardewValley.GameData.Tools.ToolData)"/>.</summary>
+            <param name="tool">The original result.</param>
+            <param name="toolData">The data used to create the tool.</param>
+            <returns>The original tool if it is valid, a custom tool if it is registered with <see cref="M:SpaceCore.Api.RegisterSerializerType(System.Type)"/>,
+            or an error tool if neither is true</returns>
+        </member>
+        <member name="T:SpaceCore.Patches.UtilityPatcher">
+            <summary>Applies Harmony patches to <see cref="T:StardewValley.Utility"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Patches.UtilityPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.Patches.UtilityPatcher.After_PickFarmEvent(StardewValley.Events.FarmEvent@)">
+            <summary>The method to call after <see cref="M:StardewValley.Utility.pickFarmEvent"/>.</summary>
+        </member>
+        <member name="M:SpaceCore.Skills.Skill.GetExtraLevelUpInfo(System.Int32)">
+            
+            Got Rid of the level up Dictionaries.
+            Now when the player levels up, custom skills will search all the recipes for recipes with thier ID and level
+            So now it's easier for people to add new recipies to skills through like content patcher
+            
+        </member>
+        <member name="M:SpaceCore.Skills.SkillBuff.TryGetAdditionalBuffEffects(System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Int32}@,System.Single@,System.Single@)">
+            <summary>
+            Parses a given dictionary, probably a <c>CustomFields</c> field, for any SpaceCore additional buff effects.
+            </summary>
+            <param name="dict"></param>
+            <param name="skills">Map of SpaceCore <see cref="T:SpaceCore.Skills.Skill"/> IDs to their respective values, or an empty dictionary if none are found.</param>
+            <param name="health">Float value of health regenerated per second.</param>
+            <param name="stamina">Float value of energy regenerated per second.</param>
+            <returns>Returns whether any additional buff effects were found with tangible (non-zero or non-empty) values.</returns>
+        </member>
+        <member name="M:SpaceCore.Skills.SkillBuff.FormattedBuffEffect(System.Single,System.String)">
+            <summary>
+            Formats a buff effect value into a signed label.
+            </summary>
+            <param name="value">Buff effect value.</param>
+            <param name="label">Translated label.</param>
+        </member>
+        <member name="M:SpaceCore.Skills.SkillBuff.DrawBuffEffect(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Vector2,System.Single,System.String,Microsoft.Xna.Framework.Graphics.SpriteFont,Microsoft.Xna.Framework.Graphics.Texture2D,System.Nullable{Microsoft.Xna.Framework.Rectangle},System.Single,System.Int32,System.Single)">
+            <summary>
+            Draws a buff icon and formatted buff effect value label.
+            </summary>
+            <param name="position">Local display pixel draw position.</param>
+            <param name="value">Buff effect value.</param>
+            <param name="label">Translated label. Will be formatted into a standardised style when drawn.</param>
+            <param name="font">Font used to draw label. Defaults to <see cref="F:StardewValley.Game1.smallFont"/>.</param>
+            <param name="icon">Texture used for buff icon.</param>
+            <param name="iconSource">Area in icon texture used for buff icon when drawn. Defaults to entire texture.</param>
+            <param name="alpha">Opacity of icon and label when drawn.</param>
+            <param name="spacing">Display pixel spacing between icon and text.</param>
+            <param name="shadowAlpha">Relative opacity of shadow when drawn.</param>
+        </member>
+        <member name="M:SpaceCore.Skills.SkillBuff.DrawHealthRegenBuffEffect(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Vector2,System.Single,System.Boolean,Microsoft.Xna.Framework.Graphics.SpriteFont,System.Single,System.Int32,System.Single)">
+            <summary>
+            Draws a buff icon and formatted buff effect value label in the style of a SpaceCore <see cref="P:SpaceCore.Skills.SkillBuff.HealthRegen"/> buff.
+            </summary>
+            <param name="position">Local display pixel draw position.</param>
+            <param name="value">Health regeneration value.</param>
+            <param name="drawText">Whether to draw label in addition to buff effect value.</param>
+            <param name="font">Font used to draw label. Defaults to <see cref="F:StardewValley.Game1.smallFont"/>.</param>
+            <param name="alpha">Opacity of icon and label when drawn.</param>
+            <param name="spacing">Display pixel spacing between icon and text.</param>
+            <param name="shadowAlpha">Relative opacity of shadow when drawn.</param>
+        </member>
+        <member name="M:SpaceCore.Skills.SkillBuff.DrawStaminaRegenBuffEffect(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Vector2,System.Single,System.Boolean,Microsoft.Xna.Framework.Graphics.SpriteFont,System.Single,System.Int32,System.Single)">
+            <summary>
+            Draws a buff icon and formatted buff effect value label in the style of a SpaceCore <see cref="P:SpaceCore.Skills.SkillBuff.StaminaRegen"/> buff.
+            </summary>
+            <param name="position">Local display pixel draw position.</param>
+            <param name="value">Stamina regeneration value.</param>
+            <param name="drawText">Whether to draw label in addition to buff effect value.</param>
+            <param name="font">Font used to draw label. Defaults to <see cref="F:StardewValley.Game1.smallFont"/>.</param>
+            <param name="alpha">Opacity of icon and label when drawn.</param>
+            <param name="spacing">Display pixel spacing between icon and text.</param>
+            <param name="shadowAlpha">Relative opacity of shadow when drawn.</param>
+        </member>
+        <member name="M:SpaceCore.Skills.OnSaveLoaded(System.Object,StardewModdingAPI.Events.SaveLoadedEventArgs)">
+            <summary>Raised after the player loads a save slot.</summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="M:SpaceCore.Skills.OnSaving(System.Object,StardewModdingAPI.Events.SavingEventArgs)">
+            <summary>Raised before the game begins writes data to the save file (except the initial save creation).</summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="M:SpaceCore.Skills.OnSaved(System.Object,StardewModdingAPI.Events.SavedEventArgs)">
+            <summary>Raised after the game finishes writing data to the save file (except the initial save creation).</summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="M:SpaceCore.Skills.OnMenuChanged(System.Object,StardewModdingAPI.Events.MenuChangedEventArgs)">
+            <summary>Raised after a game menu is opened, closed, or replaced.</summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="M:SpaceCore.Skills.OnWarped(System.Object,StardewModdingAPI.Events.WarpedEventArgs)">
+            <summary>Raised after a player warps to a new location.</summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event arguments.</param>
+            <remarks>Used to set all professions for All Professions, matching their code.</remarks>
+        </member>
+        <member name="M:SpaceCore.Skills.OnRenderedHud(System.Object,StardewModdingAPI.Events.RenderedHudEventArgs)">
+            <summary>Raised after drawing the HUD (item toolbar, clock, etc) to the sprite batch, but before it's rendered to the screen. The vanilla HUD may be hidden at this point (e.g. because a menu is open).</summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="T:SpaceCore.SpaceCore">
+            <summary>The mod entry class.</summary>
+        </member>
+        <member name="F:SpaceCore.SpaceCore.LegacyDataMigrator">
+            <summary>Handles migrating legacy data for a save file.</summary>
+        </member>
+        <member name="F:SpaceCore.SpaceCore.IsFirstTick">
+            <summary>Whether the current update tick is the first one raised by SMAPI.</summary>
+        </member>
+        <member name="M:SpaceCore.SpaceCore.Entry(StardewModdingAPI.IModHelper)">
+            <summary>The mod entry point, called after the mod is first loaded.</summary>
+            <param name="helper">Provides simplified APIs for writing mods.</param>
+        </member>
+        <member name="M:SpaceCore.SpaceCore.GetApi">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.SpaceCore.OnGameLaunched(System.Object,StardewModdingAPI.Events.GameLaunchedEventArgs)">
+            <inheritdoc cref="E:StardewModdingAPI.Events.IGameLoopEvents.GameLaunched"/>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="M:SpaceCore.SpaceCore.OnUpdateTicked(System.Object,StardewModdingAPI.Events.UpdateTickedEventArgs)">
+            <inheritdoc cref="E:StardewModdingAPI.Events.IGameLoopEvents.UpdateTicked"/>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="M:SpaceCore.SpaceCore.OnSaveLoaded(System.Object,StardewModdingAPI.Events.SaveLoadedEventArgs)">
+            <inheritdoc cref="E:StardewModdingAPI.Events.IGameLoopEvents.SaveLoaded"/>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="T:SpaceCore.VanillaAssetExpansion.TextureAnimation">
+            <summary>A texture animation.</summary>
+        </member>
+        <member name="P:SpaceCore.VanillaAssetExpansion.TextureAnimation.Frames">
+            <summary>The individual frames in the animation.</summary>
+        </member>
+        <member name="P:SpaceCore.VanillaAssetExpansion.TextureAnimation.Duration">
+            <summary>The number of game ticks needed to fully play the animation before it repeats.</summary>
+        </member>
+        <member name="P:SpaceCore.VanillaAssetExpansion.TextureAnimation.Descriptor">
+            <summary>A standardized descriptor for the animation.</summary>
+        </member>
+        <member name="P:SpaceCore.VanillaAssetExpansion.TextureAnimation.Empty">
+            <summary>A singleton instance for an empty animation.</summary>
+        </member>
+        <member name="M:SpaceCore.VanillaAssetExpansion.TextureAnimation.#ctor(System.Collections.Generic.IEnumerable{SpaceCore.VanillaAssetExpansion.TextureAnimationFrame})">
+            <summary>Construct an instance.</summary>
+            <param name="frames">The individual frames in the animation.</param>
+        </member>
+        <member name="M:SpaceCore.VanillaAssetExpansion.TextureAnimation.GetCurrentFrame(System.Int32)">
+            <summary>Get the current animation frame to display based on the game tick value.</summary>
+            <param name="tick">The current game tick.</param>
+        </member>
+        <member name="M:SpaceCore.VanillaAssetExpansion.TextureAnimation.ParseFrom(System.String)">
+            <summary>Parse an animation descriptor.</summary>
+            <param name="descriptor">The animation descriptor. See 'texture animations' in the DGA author guide for a description of the format.</param>
+        </member>
+        <member name="T:SpaceCore.VanillaAssetExpansion.TextureAnimationFrame">
+            <summary>A single frame in a texture animation.</summary>
+        </member>
+        <member name="P:SpaceCore.VanillaAssetExpansion.TextureAnimationFrame.FilePath">
+            <summary>The texture's relative file path in the content pack.</summary>
+        </member>
+        <member name="P:SpaceCore.VanillaAssetExpansion.TextureAnimationFrame.SpriteIndex">
+            <summary>The index within the texture to display.</summary>
+        </member>
+        <member name="P:SpaceCore.VanillaAssetExpansion.TextureAnimationFrame.Duration">
+            <summary>The frame duration in game ticks.</summary>
+        </member>
+        <member name="P:SpaceCore.VanillaAssetExpansion.TextureAnimationFrame.Descriptor">
+            <summary>A standardized descriptor for the frame.</summary>
+        </member>
+        <member name="M:SpaceCore.VanillaAssetExpansion.TextureAnimationFrame.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>Construct an instance.</summary>
+            <param name="filePath">The texture's relative file path in the content pack.</param>
+            <param name="spriteIndex">The index within the texture to display.</param>
+            <param name="duration">The frame duration in game ticks.</param>
+        </member>
+        <member name="P:SpaceCore.UI.Button.Width">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Button.Height">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Button.HoveredSound">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Button.Update(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Button.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Checkbox.Width">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Checkbox.Height">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Checkbox.ClickedSound">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Checkbox.Update(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Checkbox.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Container.UpdateChildren">
+            <summary>Whether to update the <see cref="P:SpaceCore.UI.Container.Children"/> when <see cref="M:SpaceCore.UI.Container.Update(System.Boolean)"/> is called.</summary>
+        </member>
+        <member name="M:SpaceCore.UI.Container.Update(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Container.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Dropdown.Width">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Dropdown.Height">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Dropdown.ClickedSound">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Dropdown.Update(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="F:SpaceCore.UI.Element.ForceHide">
+            <summary>Whether to disable the element so it's invisible and can't be interacted with.</summary>
+        </member>
+        <member name="M:SpaceCore.UI.Element.Update(System.Boolean)">
+            <summary>Update the element for the current game tick.</summary>
+            <param name="isOffScreen">Whether the element is currently off-screen.</param>
+        </member>
+        <member name="M:SpaceCore.UI.Element.IsHidden(System.Boolean)">
+            <summary>Get whether the element is hidden based on <see cref="F:SpaceCore.UI.Element.ForceHide"/> or its position relative to the screen.</summary>
+            <param name="isOffScreen">Whether the element is currently off-screen.</param>
+        </member>
+        <member name="M:SpaceCore.UI.Floatbox.ReceiveInput(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Image.Texture">
+            <summary>The image texture to display.</summary>
+        </member>
+        <member name="P:SpaceCore.UI.Image.TexturePixelArea">
+            <summary>The pixel area within the texture to display, or <c>null</c> to show the entire image.</summary>
+        </member>
+        <member name="P:SpaceCore.UI.Image.Scale">
+            <summary>The zoom factor to apply to the image.</summary>
+        </member>
+        <member name="P:SpaceCore.UI.Image.Width">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Image.Height">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Image.HoveredSound">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Image.Update(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Image.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Intbox.ReceiveInput(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Label.Width">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Label.Height">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Label.HoveredSound">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Label.Update(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Label.Measure">
+            <summary>Measure the label's rendered dialogue text size.</summary>
+        </member>
+        <member name="M:SpaceCore.UI.Label.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Label.MeasureString(System.String,System.Boolean,System.Single,Microsoft.Xna.Framework.Graphics.SpriteFont)">
+            <summary>Measure the rendered dialogue text size for the given text.</summary>
+            <param name="text">The text to measure.</param>
+            <param name="bold">Whether the font is bold.</param>
+            <param name="scale">The scale to apply to the size.</param>
+            <param name="font">The font to measure. Defaults to <see cref="F:StardewValley.Game1.dialogueFont"/> if <c>null</c>.</param>
+        </member>
+        <member name="M:SpaceCore.UI.RootElement.Update(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.RootElement.GetRootImpl">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Scrollbar.Width">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Scrollbar.Height">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Scrollbar.Update(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Scrollbar.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.ScrollContainer.Width">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.ScrollContainer.Height">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.ScrollContainer.Update(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.ScrollContainer.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.ScrollContainer.IsElementOffScreen(SpaceCore.UI.Element)">
+            <summary>Get whether a child element is outside the table's current display area.</summary>
+            <param name="element">The child element to check.</param>
+        </member>
+        <member name="P:SpaceCore.UI.Slider.Width">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Slider.Height">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Slider.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Slider`1.Update(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Slider`1.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Table.Width">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Table.Height">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Table.Update(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Table.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Table.IsElementOffScreen(SpaceCore.UI.Element)">
+            <summary>Get whether a child element is outside the table's current display area.</summary>
+            <param name="element">The child element to check.</param>
+        </member>
+        <member name="P:SpaceCore.UI.Textbox.Width">
+            <inheritdoc />
+        </member>
+        <member name="P:SpaceCore.UI.Textbox.Height">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Textbox.Update(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Textbox.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Textbox.RecieveTextInput(System.Char)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Textbox.RecieveTextInput(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Textbox.RecieveCommandInput(System.Char)">
+            <inheritdoc />
+        </member>
+        <member name="M:SpaceCore.UI.Textbox.RecieveSpecialInput(Microsoft.Xna.Framework.Input.Keys)">
+            <inheritdoc />
+        </member>
+        <member name="T:SpaceCore.I18n">
+            <summary>Get translations from the mod's <c>i18n</c> folder.</summary>
+            <remarks>This is auto-generated from the <c>i18n/default.json</c> file when the project is compiled.</remarks>
+        </member>
+        <member name="F:SpaceCore.I18n.Translations">
+            <summary>The mod's translation helper.</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.Init(StardewModdingAPI.ITranslationHelper)">
+            <summary>Construct an instance.</summary>
+            <param name="translations">The mod's translation helper.</param>
+        </member>
+        <member name="M:SpaceCore.I18n.Config_CustomSkillPage_Name">
+            <summary>Get a translation equivalent to "Custom Skill Page".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.Config_CustomSkillPage_Tooltip">
+            <summary>Get a translation equivalent to "Whether to show the custom skill page.\nThis will move the wallet so that there is room for more skills.".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.Config_SupportAllProfessionsMod_Name">
+            <summary>Get a translation equivalent to "Support All Professions Mod".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.Config_SupportAllProfessionsMod_Tooltip">
+            <summary>Get a translation equivalent to "When All Professions is installed, whether to automatically apply custom professions registered through SpaceCore when their level is reached.".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.Config_AdvancedSocialInteractions">
+            <summary>Get a translation equivalent to "Advanced Social Interactions".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.Config_AlwaysTrigger_Name">
+            <summary>Get a translation equivalent to "Always Trigger".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.Config_AlwaysTrigger_Description">
+            <summary>Get a translation equivalent to "If the menu should always trigger when interacting with an NPC.".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.Config_TriggerModifier_Name">
+            <summary>Get a translation equivalent to "Trigger Modifier".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.Config_TriggerModifier_Description">
+            <summary>Get a translation equivalent to "The key to hold when interacting with someone to trigger the advanced interaction menu.".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.InteractionWith(System.Object)">
+            <summary>Get a translation equivalent to "Interaction with {{npc}}".</summary>
+            <param name="npc">The value to inject for the <c>{{npc}}</c> token.</param>
+        </member>
+        <member name="M:SpaceCore.I18n.Interaction_Chat">
+            <summary>Get a translation equivalent to "Chat".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.Interaction_GiftHeld">
+            <summary>Get a translation equivalent to "Gift Held Item".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.Interaction_Cancel">
+            <summary>Get a translation equivalent to "Cancel".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.Question_Ask">
+            <summary>Get a translation equivalent to "Ask a Question".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.HealthRegen">
+            <summary>Get a translation equivalent to "Health per second".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.StaminaRegen">
+            <summary>Get a translation equivalent to "Stamina per second".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.ResourceClump_BadToolTier">
+            <summary>Get a translation equivalent to "Your tool isn't strong enough to break this.".</summary>
+        </member>
+        <member name="M:SpaceCore.I18n.GetByKey(System.String,System.Object)">
+            <summary>Get a translation by its key.</summary>
+            <param name="key">The translation key.</param>
+            <param name="tokens">An object containing token key/value pairs. This can be an anonymous object (like <c>new { value = 42, name = "Cranberries" }</c>), a dictionary, or a class instance.</param>
+        </member>
+        <member name="T:ExperimentalLagReduction.HarmonyPatches.Rescheduler">
+            <summary>
+            Re-does the scheduler so it's faster.
+            </summary>
+        </member>
+        <member name="P:ExperimentalLagReduction.HarmonyPatches.Rescheduler.CacheCount">
+            <summary>
+            Gets the number of paths cached.
+            </summary>
+        </member>
+        <member name="M:ExperimentalLagReduction.HarmonyPatches.Rescheduler.ClearNulls">
+            <inheritdoc cref="!:IExperimentalLagReductionAPI.ClearPathNulls"/>
+        </member>
+        <member name="M:ExperimentalLagReduction.HarmonyPatches.Rescheduler.ClearCache">
+            <inheritdoc cref="!:IExperimentalLagReductionAPI.ClearMacroCache"/>
+        </member>
+        <member name="M:ExperimentalLagReduction.HarmonyPatches.Rescheduler.PrefetchWorker(System.Object)">
+            <summary>
+            Tries to pre-populate the cache if player config allows and the cache has not been previously populated.
+            </summary>
+            <param name="parallel">whether or not to try to run off the main thread.</param>
+            <returns>True if runs, false otherwise. </returns>
+        </member>
+        <member name="M:ExperimentalLagReduction.HarmonyPatches.Rescheduler.TryGetPathFromCache(System.String,System.String,StardewValley.Gender,System.String[]@)">
+            <summary>
+            Given the start, end, and a Gender constraint, grab the path from the cache, or null if not found.
+            </summary>
+            <param name="start">Start location.</param>
+            <param name="end">End location.</param>
+            <param name="Gender">Gender constraint, or <see cref="F:StardewValley.Gender.Undefined"/> for not constrained.</param>
+            <param name="path">The path, if found.</param>
+            <returns>True if cached, false otherwise.</returns>
+            <remarks>Returning true with path as null represents an INVALID path.</remarks>
+        </member>
+        <member name="M:ExperimentalLagReduction.HarmonyPatches.Rescheduler.GetPathFor(StardewValley.GameLocation,StardewValley.GameLocation,StardewValley.Gender,System.Boolean,System.Int32)">
+            <summary>
+            Calculates the path between one game location to another, getting it from the cache if necessary.
+            </summary>
+            <param name="start">Start location.</param>
+            <param name="end">End location.</param>
+            <param name="Gender">Gender constraints (use <see cref="F:StardewValley.Gender.Undefined"/> for no constraints).</param>
+            <param name="allowPartialPaths">Whether or not to allow piecing together paths to make a full path. This can make the algo pick a less-optimal path, but it's unlikely and is much faster.</param>
+            <param name="limit">Search limit.</param>
+            <returns>Path, or null if not found.</returns>
+        </member>
+        <member name="M:ExperimentalLagReduction.HarmonyPatches.Rescheduler.FindWarpsFrom(ExperimentalLagReduction.HarmonyPatches.Rescheduler.MacroNode,StardewValley.GameLocation,System.Collections.Generic.HashSet{System.String},System.Nullable{StardewValley.Gender},System.Collections.Generic.Queue{ExperimentalLagReduction.HarmonyPatches.Rescheduler.MacroNode})">
+            <summary>
+            Gets the locations leaving a specific place, keeping in mind the locations already visited.
+            </summary>
+            <param name="node">Node to start from.</param>
+            <param name="location">Location to look at.</param>
+            <param name="visited">Previous visited locations.</param>
+            <param name="Gender">Current Gender constraint for the path.</param>
+            <param name="queue">Queue to add to.</param>
+        </member>
+        <member name="M:ExperimentalLagReduction.HarmonyPatches.Rescheduler.GetActualLocation(System.String)">
+            <summary>
+            Gets the actual location a warp name corresponds to, or null if it should be blacklisted from scheduling.
+            </summary>
+            <param name="name">Location to start from.</param>
+            <returns>The actual location name for a specific location.</returns>
+        </member>
+        <member name="M:ExperimentalLagReduction.HarmonyPatches.Rescheduler.GetPathfindingGenderConstraint(System.String)">
+            <summary>
+            Given a map, get its Gender restrictions.
+            </summary>
+            <param name="name">Name of map.</param>
+            <returns>Gender to restrict to.</returns>
+        </member>
+        <member name="M:ExperimentalLagReduction.HarmonyPatches.Rescheduler.GetTightestPathfindingGenderConstraint(System.Nullable{StardewValley.Gender},System.Nullable{StardewValley.Gender})">
+            <summary>
+            Given two Gender constraints, return the tighter of the two.
+            </summary>
+            <param name="first">First Gender constraint.</param>
+            <param name="second">Second Gender constraint.</param>
+            <returns>Gender constraint, using Gender.Undefined for unsatisfiable.</returns>
+        </member>
+        <member name="T:ExperimentalLagReduction.HarmonyPatches.PathSet">
+            <summary>
+            Represents a set of paths.
+            </summary>
+            <remarks>If a field is set to null, that means we have no info on it. If a field set to Array.Empty, that means there is no valid path.</remarks>
+        </member>
+        <member name="M:ExperimentalLagReduction.HarmonyPatches.PathSet.#ctor(System.String[],System.String[],System.String[])">
+            <summary>
+            Represents a set of paths.
+            </summary>
+            <remarks>If a field is set to null, that means we have no info on it. If a field set to Array.Empty, that means there is no valid path.</remarks>
+        </member>
+        <member name="T:SpaceShared.CommonExtensions">
+            <summary>Provides common extensions for general mod logic.</summary>
+        </member>
+        <member name="M:SpaceShared.CommonExtensions.GetDeterministicHashCode(System.String)">
+            <summary>
+            Apparently, in .NET Core, a hash code for a given string will be different between runs.
+            https://andrewlock.net/why-is-string-gethashcode-different-each-time-i-run-my-program-in-net-core/
+            This gets one that will be the same.
+            </summary>
+            <param name="str">The string to get the hash code of.</param>
+            <returns>The deterministic hash code.</returns>
+        </member>
+        <member name="M:SpaceShared.CommonExtensions.TryGetIndex``1(``0[],System.Int32,``0@)">
+            <summary>Get a value from an array if it's in range.</summary>
+            <typeparam name="T">The value type.</typeparam>
+            <param name="array">The array to search.</param>
+            <param name="index">The index of the value within the array to find.</param>
+            <param name="value">The value at the given index, if found.</param>
+            <returns>Returns whether the index was within the array bounds.</returns>
+        </member>
+        <member name="M:SpaceShared.CommonExtensions.GetOrDefault``1(``0[],System.Int32,``0)">
+            <summary>Get a value from an array if it's in range, else get the default value.</summary>
+            <typeparam name="T">The value type.</typeparam>
+            <param name="array">The array to search.</param>
+            <param name="index">The index of the value within the array to find.</param>
+            <param name="defaultValue">The default value if the value isn't in range.</param>
+        </member>
+        <member name="M:SpaceShared.CommonExtensions.GetOrDefault``2(``0[],System.Int32,System.Func{``0,``1},``1)">
+            <summary>Get a value from an array if it's in range and can be parsed, else get the default value.</summary>
+            <typeparam name="TRaw">The raw value type.</typeparam>
+            <typeparam name="TParsed">The parsed value type.</typeparam>
+            <param name="array">The array to search.</param>
+            <param name="index">The index of the value within the array to find.</param>
+            <param name="tryParse">Try to parse the raw value</param>
+            <param name="defaultValue">The default value if the value isn't in range or isn't valid.</param>
+        </member>
+        <member name="M:SpaceShared.CommonExtensions.GetOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)">
+            <summary>Get a value from a dictionary if it exists, else get the default value.</summary>
+            <typeparam name="TKey">The dictionary key type.</typeparam>
+            <typeparam name="TValue">The dictionary value type.</typeparam>
+            <param name="dictionary">The dictionary to search.</param>
+            <param name="key">The key within the dictionary to find.</param>
+            <param name="defaultValue">The default value if the value isn't in range.</param>
+        </member>
+        <member name="M:SpaceShared.CommonExtensions.GetOrDefault``3(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``1,``2},``2)">
+            <summary>Get a value from a dictionary if it exists, else get the default value.</summary>
+            <typeparam name="TKey">The dictionary key type.</typeparam>
+            <typeparam name="TValue">The dictionary value type.</typeparam>
+            <typeparam name="TParsed">The parsed value type.</typeparam>
+            <param name="dictionary">The dictionary to search.</param>
+            <param name="key">The key within the dictionary to find.</param>
+            <param name="tryParse">Try to parse the raw value</param>
+            <param name="defaultValue">The default value if the value isn't in range.</param>
+        </member>
+        <member name="T:SpaceShared.APIs.ITabContextMenuEvent">
+            <summary>
+            A tab context menu event is emitted whenever the user right-clicks
+            on a tab in the game menu.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.ITabContextMenuEvent.Menu">
+            <summary>
+            The Better Game Menu instance involved in the event. You
+            can use <see cref="M:SpaceShared.APIs.IBetterGameMenuApi.AsMenu(StardewValley.Menus.IClickableMenu)"/>
+            to get a more useful interface for this menu.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.ITabContextMenuEvent.IsCurrentTab">
+            <summary>
+            Whether or not the tab is the currently selected tab of
+            the game menu.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.ITabContextMenuEvent.Tab">
+            <summary>
+            The id of the tab the context menu is opening for.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.ITabContextMenuEvent.Page">
+            <summary>
+            The page instance associated with the tab, if one has been
+            created. This may be <c>null</c> if the user hasn't visited
+            the tab yet.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.ITabContextMenuEvent.Entries">
+            <summary>
+            A list of context menu entries to display. You can freely add
+            or remove entries. An entry with a null <c>OnSelect</c> will
+            appear disabled.
+            </summary>
+        </member>
+        <member name="M:SpaceShared.APIs.ITabContextMenuEvent.CreateEntry(System.String,System.Action,SpaceShared.APIs.IBetterGameMenuApi.DrawDelegate)">
+            <summary>
+            Create a new context menu entry.
+            </summary>
+            <param name="label">The string to display.</param>
+            <param name="onSelect">The action to perform when this entry is selected.</param>
+            <param name="icon">An icon to display alongside this entry.</param>
+        </member>
+        <member name="T:SpaceShared.APIs.ITabContextMenuEntry">
+            <summary>
+            An entry in a tab context menu.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.ITabContextMenuEntry.Label">
+            <summary>The string to display for this entry.</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.ITabContextMenuEntry.OnSelect">
+            <summary>
+            An action to perform when this entry is selected. If this is
+            <c>null</c>, the entry will be disabled.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.ITabContextMenuEntry.Icon">
+            <summary>An optional icon to display to the left of this entry.</summary>
+        </member>
+        <member name="T:SpaceShared.APIs.IPageCreatedEvent">
+            <summary>
+            A page created event is emitted whenever a new page
+            is created for a tab by Better Game Menu.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IPageCreatedEvent.Menu">
+            <summary>
+            The Better Game Menu instance involved in the event. You
+            can use <see cref="M:SpaceShared.APIs.IBetterGameMenuApi.AsMenu(StardewValley.Menus.IClickableMenu)"/>
+            to get a more useful interface for this menu.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IPageCreatedEvent.Tab">
+            <summary>
+            The id of the tab the page was created for.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IPageCreatedEvent.Source">
+            <summary>
+            The id of the provider the page was created with.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IPageCreatedEvent.Page">
+            <summary>
+            The new page that was just created.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IPageCreatedEvent.OldPage">
+            <summary>
+            If the page was previously created and is being replaced,
+            this will be the old page instance. Otherwise, this will
+            be <c>null</c>.
+            </summary>
+        </member>
+        <member name="T:SpaceShared.APIs.IBetterGameMenu">
+            <summary>
+            This interface represents a Better Game Menu. 
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IBetterGameMenu.Menu">
+            <summary>
+            The <see cref="T:StardewValley.Menus.IClickableMenu"/> instance for this game menu. This is
+            the same object, but with a different type. This property is included
+            for convenience due to how API proxying works.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IBetterGameMenu.Invisible">
+            <summary>
+            Whether or not the menu is currently drawing itself. This is typically
+            always <c>false</c> except when viewing the <c>Map</c> tab.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IBetterGameMenu.VisibleTabs">
+            <summary>
+            A list of ids of the currently visible tabs.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IBetterGameMenu.CurrentTab">
+            <summary>
+            The id of the currently active tab.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IBetterGameMenu.CurrentPage">
+            <summary>
+            The <see cref="T:StardewValley.Menus.IClickableMenu"/> instance for the currently active tab.
+            This may be <c>null</c> if the page instance for the currently active
+            tab is still being initialized.
+            </summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IBetterGameMenu.CurrentTabHasErrored">
+            <summary>
+            Whether or not the currently displayed page is an error page. Error
+            pages are used when a tab implementation's GetPageInstance method
+            throws an exception.
+            </summary>
+        </member>
+        <member name="M:SpaceShared.APIs.IBetterGameMenu.TryGetSource(System.String,System.String@)">
+            <summary>
+            Try to get the source for the specific tab.
+            </summary>
+            <param name="target">The id of the tab to get the source of.</param>
+            <param name="source">The unique ID of the mod that registered the
+            implementation being used, or <c>stardew</c> if the base game's
+            implementation is being used.</param>
+            <returns>Whether or not the tab is registered with the system.</returns>
+        </member>
+        <member name="M:SpaceShared.APIs.IBetterGameMenu.TryGetPage(System.String,StardewValley.Menus.IClickableMenu@,System.Boolean)">
+            <summary>
+            Try to get the <see cref="T:StardewValley.Menus.IClickableMenu"/> instance for a specific tab.
+            </summary>
+            <param name="target">The id of the tab to get the page for.</param>
+            <param name="page">The page instance, if one exists.</param>
+            <param name="forceCreation">If set to true, an instance will attempt to
+            be created if one has not already been created.</param>
+            <returns>Whether or not a page instance for that tab exists.</returns>
+        </member>
+        <member name="M:SpaceShared.APIs.IBetterGameMenu.TryChangeTab(System.String,System.Boolean)">
+            <summary>
+            Attempt to change the currently active tab to the target tab.
+            </summary>
+            <param name="target">The id of the tab to change to.</param>
+            <param name="playSound">Whether or not to play a sound.</param>
+            <returns>Whether or not the tab was changed successfully.</returns>
+        </member>
+        <member name="M:SpaceShared.APIs.IBetterGameMenu.UpdateTabs(System.String)">
+            <summary>
+            Force the menu to recalculate the visible tabs. This will not recreate
+            <see cref="T:StardewValley.Menus.IClickableMenu"/> instances, but can be used to cause an
+            inactive tab to be removed, or a previously hidden tab to be added.
+            This can also be used to update tab decorations if necessary.
+            </summary>
+            <param name="target">Optionally, a specific tab to update rather than
+            updating all tabs.</param>
+        </member>
+        <member name="T:SpaceShared.APIs.BetterGameMenuTabs">
+            <summary>
+            This enum is included for reference and has the order value for
+            all the default tabs from the base game. These values are intentionally
+            spaced out to allow for modded tabs to be inserted at specific points.
+            </summary>
+        </member>
+        <member name="T:SpaceShared.APIs.IBetterGameMenuApi.DrawDelegate">
+            <summary>
+            A delegate for drawing something onto the screen.
+            </summary>
+            <param name="batch">The <see cref="T:Microsoft.Xna.Framework.Graphics.SpriteBatch"/> to draw with.</param>
+            <param name="bounds">The region where the thing should be drawn.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IBetterGameMenuApi.RegisterImplementation(System.String,System.Int32,System.Func{StardewValley.Menus.IClickableMenu,StardewValley.Menus.IClickableMenu},System.Func{SpaceShared.APIs.IBetterGameMenuApi.DrawDelegate},System.Func{System.Boolean},System.Func{System.Boolean},System.Func{System.Int32,System.Int32},System.Func{System.Int32,System.Int32},System.Func{System.ValueTuple{StardewValley.Menus.IClickableMenu,StardewValley.Menus.IClickableMenu},StardewValley.Menus.IClickableMenu},System.Action{StardewValley.Menus.IClickableMenu})">
+            <summary>
+            Register a tab implementation for an existing tab. This can be used
+            to override an existing vanilla game tab.
+            </summary>
+            <param name="id">The id of the tab to register an implementation for.
+            The keys for the vanilla game tabs are the same as those in the
+            <see cref="T:SpaceShared.APIs.BetterGameMenuTabs"/> enum.</param>
+            <param name="priority">The priority of this page instance provider
+            for this tab. When multiple page instance providers are
+            registered, and the user hasn't explicitly chosen one, then the
+            one with the highest priority is used. Please note that a given
+            mod can only register one provider for any given tab.</param>
+            <param name="getPageInstance">A method that returns a page instance
+            for the tab. This should never return a <c>null</c> value.</param>
+            <param name="getDecoration">A method that returns a decoration for
+            the tab UI for this tab. This can be used to, for example, add a
+            sparkle to a tab to indicate that new content is available. The
+            expected output is either <c>null</c> if no decoration should be
+            displayed, or a texture, rectangle, number of animation frames
+            to display, and delay between frame advancements. Please note that
+            the decoration will be automatically cleared when the user navigates
+            to the tab.</param>
+            <param name="getTabVisible">A method that returns whether or not the
+            tab should be visible in the menu. This is called whenever a menu is
+            opened, as well as when <see cref="M:SpaceShared.APIs.IBetterGameMenu.UpdateTabs(System.String)"/>
+            is called.</param>
+            <param name="getMenuInvisible">A method that returns the value that the
+            game menu should set its <see cref="P:SpaceShared.APIs.IBetterGameMenu.Invisible"/> flag
+            to when this is the active tab.</param>
+            <param name="getWidth">A method that returns a specific width to use when
+            rendering this tab, in case the page instance requires a different width
+            than the standard value.</param>
+            <param name="getHeight">A method that returns a specific height to use
+            when rendering this tab, in case the page instance requires a different
+            height than the standard value.</param>
+            <param name="onResize">A method that is called when the game window is
+            resized, in addition to the standard <see cref="M:StardewValley.Menus.IClickableMenu.gameWindowSizeChanged(Microsoft.Xna.Framework.Rectangle,Microsoft.Xna.Framework.Rectangle)"/>.
+            This can be used to recreate a menu page if necessary by returning a
+            new <see cref="T:StardewValley.Menus.IClickableMenu"/> instance. Several menus in the vanilla
+            game use this logic.</param>
+            <param name="onClose">A method that is called whenever a page instance
+            is cleaned up. The standard Game Menu doesn't call <see cref="M:StardewValley.Menus.IClickableMenu.cleanupBeforeExit"/>
+            of its pages, and only calls <see cref="M:StardewValley.Menus.IClickableMenu.emergencyShutDown"/>
+            of the currently active tab, and we're keeping that behavior for
+            compatibility. This method will always be called. This includes calling
+            it for menus that were replaced by the <c>onResize</c> method.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IBetterGameMenuApi.AsMenu(StardewValley.Menus.IClickableMenu)">
+            <summary>
+            Attempt to cast the provided menu into an <see cref="T:SpaceShared.APIs.IBetterGameMenu"/>.
+            This can be useful if you're working with a menu that isn't currently
+            assigned to <see cref="P:StardewValley.Game1.activeClickableMenu"/>.
+            </summary>
+            <param name="menu">The menu to attempt to cast</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IBetterGameMenuApi.OnTabContextMenu(SpaceShared.APIs.IBetterGameMenuApi.TabContextMenuDelegate,StardewModdingAPI.Events.EventPriority)">
+            <summary>
+            This event fires whenever the user opens a context menu for a menu tab
+            by right-clicking on it.
+            </summary>
+        </member>
+        <member name="M:SpaceShared.APIs.IBetterGameMenuApi.OffTabContextMenu(SpaceShared.APIs.IBetterGameMenuApi.TabContextMenuDelegate)">
+            <summary>
+            Unregister a handler for the TabContextMenu event.
+            </summary>
+        </member>
+        <member name="M:SpaceShared.APIs.IBetterGameMenuApi.OnPageCreated(SpaceShared.APIs.IBetterGameMenuApi.PageCreatedDelegate,StardewModdingAPI.Events.EventPriority)">
+            <summary>
+            This event fires whenever a new page instance is created. This can happen
+            the first time a page is accessed, whenever something calls
+            <see cref="!:TryGetPage(string, out IClickableMenu?, bool)"/> with the
+            <c>forceCreation</c> flag set to true, or when the menu has been resized
+            and the tab implementation's <c>OnResize</c> method returned a new
+            page instance.
+            </summary>
+        </member>
+        <member name="M:SpaceShared.APIs.IBetterGameMenuApi.OffPageCreated(SpaceShared.APIs.IBetterGameMenuApi.PageCreatedDelegate)">
+            <summary>
+            Unregister a handler for the PageCreated event.
+            </summary>
+        </member>
+        <member name="T:SpaceShared.APIs.IBugNetApi">
+            <summary>The BugNet API which other mods can access.</summary>
+        </member>
+        <member name="M:SpaceShared.APIs.IBugNetApi.RegisterCritter(StardewModdingAPI.IManifest,System.String,Microsoft.Xna.Framework.Graphics.Texture2D,Microsoft.Xna.Framework.Rectangle,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Func{System.Int32,System.Int32,StardewValley.BellsAndWhistles.Critter},System.Func{StardewValley.BellsAndWhistles.Critter,System.Boolean})">
+            <summary>Add a new critter which can be caught.</summary>
+            <param name="manifest">The manifest of the mod registering the critter.</param>
+            <param name="critterId">The unique critter ID.</param>
+            <param name="texture">The texture to show in the critter cage.</param>
+            <param name="textureArea">The pixel area within the <paramref name="texture"/> to show in the critter cage.</param>
+            <param name="defaultCritterName">The default English critter name.</param>
+            <param name="translatedCritterNames">The translated critter names in each available locale.</param>
+            <param name="makeCritter">Create a critter instance at the given X and Y tile position.</param>
+            <param name="isThisCritter">Get whether a given critter instance matches this critter.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.ICookingSkillApi.ModifyCookedItem(StardewValley.CraftingRecipe,StardewValley.Item,System.Collections.Generic.List{StardewValley.Objects.Chest})">
+            <summary>
+            Modify a cooked item based on the player's cooking skill.
+            Returns if ingredients should be consumed or not.
+            </summary>
+            <param name="recipe">The crafting recipe.</param>
+            <param name="craftedItem">The crafted item from the recipe. Nothing is changed if the recipe isn't cooking.</param>
+            <param name="additionalIngredients">The additional places to draw ingredients from.</param>
+            <returns>If ingredients should be consumed or not.</returns>
+        </member>
+        <member name="M:SpaceShared.APIs.IExpandedPreconditionsUtilityApi.Initialize(System.Boolean,System.String)">
+            <summary>
+            Must be called before any condition checking is done. Verbose mode will turn on logging for every step of the condition checking process
+            </summary>
+            <param name="verbose">Turning verbose mode true will log every step of the condition checking process. Useful for debugging but spams the debug log. It is recommended to have this false during release, or provided in a config set to a default of false.</param>
+            <param name="uniqueId">The unique ID of your mod. Will be prepended to all logs so it is clear which mod called the condition checking</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IExpandedPreconditionsUtilityApi.CheckConditions(System.String[])">
+            <summary>
+            Checks an array of condition strings. Each string will be evaluated as true if every single condition provided is true. All the strings together will evaluate as true if any string is true
+            </summary>
+            <param name="conditions">An array of condition strings.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpaceShared.APIs.IExpandedPreconditionsUtilityApi.CheckConditions(System.String)">
+            <summary>
+            Checks a single condition string. The string will be evaluated as true if every single condition provided is true.
+            </summary>
+            <param name="conditions"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SpaceShared.APIs.IManagedConditions">
+            <summary>A set of parsed conditions linked to the Content Patcher context. These conditions are <strong>per-screen</strong>, so the result depends on the screen that's active when calling the members.</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedConditions.IsValid">
+            <summary>Whether the conditions were parsed successfully (regardless of whether they're in scope currently).</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedConditions.ValidationError">
+            <summary>If <see cref="P:SpaceShared.APIs.IManagedConditions.IsValid"/> is false, an error phrase indicating why the conditions failed to parse, formatted like this: <c>'seasonz' isn't a valid token name; must be one of &lt;token list&gt;</c>. If the conditions are valid, this is <c>null</c>.</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedConditions.IsReady">
+            <summary>Whether the conditions' tokens are all valid in the current context. For example, this would be false if the conditions use <c>Season</c> and a save isn't loaded yet.</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedConditions.IsMatch">
+            <summary>Whether <see cref="P:SpaceShared.APIs.IManagedConditions.IsReady"/> is true, and the conditions all match in the current context.</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedConditions.IsMutable">
+            <summary>Whether <see cref="P:SpaceShared.APIs.IManagedConditions.IsMatch"/> may change depending on the context. For example, <c>Season</c> is mutable since it depends on the in-game season. <c>HasMod</c> is not mutable, since it can't change after the game is launched.</summary>
+        </member>
+        <member name="M:SpaceShared.APIs.IManagedConditions.UpdateContext">
+            <summary>Update the conditions based on Content Patcher's current context for every active screen. It's safe to call this as often as you want, but it has no effect if the Content Patcher context hasn't changed since you last called it.</summary>
+            <returns>Returns the screens for which <see cref="P:SpaceShared.APIs.IManagedConditions.IsMatch"/> changed value. To check if the current screen changed, you can check <c>UpdateContext()</c></returns>
+        </member>
+        <member name="M:SpaceShared.APIs.IManagedConditions.GetReasonNotMatched">
+            <summary>If <see cref="P:SpaceShared.APIs.IManagedConditions.IsMatch"/> is false, analyze the conditions/context and get a human-readable reason phrase explaining why the conditions don't match the context. For example: <c>conditions don't match: season</c>. If the conditions do match, this returns <c>null</c>.</summary>
+        </member>
+        <member name="T:SpaceShared.APIs.IManagedValue">
+            <summary>A set of parsed values linked to the Content Patcher context. These values are <strong>per-screen</strong>, so the result depends on the screen that's active when calling the members.</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedValue.IsValid">
+            <summary>Whether the conditions were parsed successfully (regardless of whether they're in scope currently).</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedValue.ValidationError">
+            <summary>If <see cref="P:SpaceShared.APIs.IManagedValue.IsValid"/> is false, an error phrase indicating why the conditions failed to parse, formatted like this: <c>'seasonz' isn't a valid token name; must be one of &lt;token list&gt;</c>. If the conditions are valid, this is <c>null</c>.</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedValue.IsReady">
+            <summary>Whether the conditions' tokens are all valid in the current context. For example, this would be false if the conditions use <c>Season</c> and a save isn't loaded yet.</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedValue.Value">
+            <summary>The value(s) provided at the current context.</summary>
+        </member>
+        <member name="M:SpaceShared.APIs.IManagedValue.UpdateContext">
+            <summary>Update the conditions based on Content Patcher's current context for every active screen. It's safe to call this as often as you want, but it has no effect if the Content Patcher context hasn't changed since you last called it.</summary>
+            <returns>Returns the screens for which <see cref="!:Values"/> changed value. To check if the current screen changed, you can check <c>UpdateContext()</c></returns>
+        </member>
+        <member name="T:SpaceShared.APIs.IManagedTokenString">
+            <summary>A parsed string which may contain Content Patcher tokens matched against Content Patcher's internal context for an API consumer. This value is <strong>per-screen</strong>, so the result depends on the screen that's active when calling the members.</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedTokenString.IsValid">
+            <summary>Whether the token string was parsed successfully (regardless of whether its tokens are in scope currently).</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedTokenString.ValidationError">
+            <summary>If <see cref="P:SpaceShared.APIs.IManagedTokenString.IsValid"/> is false, an error phrase indicating why the token string failed to parse, formatted like this: <c>'seasonz' isn't a valid token name; must be one of &lt;token list&gt;</c>. If the token string is valid, this is <c>null</c>.</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedTokenString.IsReady">
+            <summary>Whether the token string's tokens are all valid in the current context. For example, this would be false if the token string use <c>{{Season}}</c> and a save isn't loaded yet.</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IManagedTokenString.Value">
+            <summary>The parsed value for the current context.</summary>
+        </member>
+        <member name="M:SpaceShared.APIs.IManagedTokenString.UpdateContext">
+            <summary>Update the token string based on Content Patcher's current context for every active screen. It's safe to call this as often as you want, but it has no effect if the Content Patcher context hasn't changed since you last called it.</summary>
+            <returns>Returns the screens for which <see cref="P:SpaceShared.APIs.IManagedTokenString.Value"/> changed.</returns>
+        </member>
+        <member name="T:SpaceShared.APIs.IContentPatcherApi">
+            <summary>The Content Patcher API which other mods can access.</summary>
+        </member>
+        <member name="P:SpaceShared.APIs.IContentPatcherApi.IsConditionsApiReady">
+            <summary>Whether the conditions API is initialized and ready for use.</summary>
+            <remarks>Due to the Content Patcher lifecycle, the conditions API becomes available roughly two ticks after the <see cref="!:IGameLoopEvents.GameLaunched"/> event.</remarks>
+        </member>
+        <member name="M:SpaceShared.APIs.IContentPatcherApi.ParseConditions(StardewModdingAPI.IManifest,System.Collections.Generic.IDictionary{System.String,System.String},StardewModdingAPI.ISemanticVersion,System.String[])">
+            <summary>Get a set of managed conditions which are matched against Content Patcher's internal context.</summary>
+            <param name="manifest">The manifest of the mod parsing the conditions (see <see cref="P:StardewModdingAPI.Mod.ModManifest"/> in your entry class).</param>
+            <param name="rawConditions">The conditions to parse, in the same format as <c>When</c> blocks in Content Patcher content packs.</param>
+            <param name="formatVersion">The format version for which to parse conditions, used to ensure forward compatibility with future Content Patcher versions. See <c>Format</c> in the Content Patcher token documentation.</param>
+            <param name="assumeModIds">
+            <para>The unique IDs of mods whose custom tokens to allow in the <paramref name="rawConditions"/>. You don't need to list the mod identified by <paramref name="manifest"/>, mods listed as a required dependency in the <paramref name="manifest"/>, or mods identified by a <c>HasMod</c> condition in the <paramref name="rawConditions"/>.</para>
+            <para>NOTE: this is meant to prevent mods from breaking if a player doesn't have a required mod installed. You shouldn't simply list all installed mods, and parsing conditions will still fail if a mod isn't installed regardless of the listed mod IDs.</para>
+            </param>
+        </member>
+        <member name="M:SpaceShared.APIs.IContentPatcherApi.ParseTokenString(StardewModdingAPI.IManifest,System.String,StardewModdingAPI.ISemanticVersion,System.String[])">
+            <summary>Get a managed string which may contain Content Patcher tokens matched against Content Patcher's internal context.</summary>
+            <param name="manifest">The manifest of the mod parsing the token string (see <see cref="P:StardewModdingAPI.Mod.ModManifest"/> in your entry class).</param>
+            <param name="rawValue">The token string to parse, in the same format as strings in Content Patcher content packs.</param>
+            <param name="formatVersion">The format version for which to parse the token string, used to ensure forward compatibility with future Content Patcher versions. See <c>Format</c> in the Content Patcher token documentation.</param>
+            <param name="assumeModIds">
+            <para>The unique IDs of mods whose custom tokens to allow in the <paramref name="rawValue"/>. You don't need to list the mod identified by <paramref name="manifest"/> or mods listed as a required dependency in the <paramref name="manifest"/>.</para>
+            <para>NOTE: this is meant to prevent mods from breaking if a player doesn't have a required mod installed. You shouldn't simply list all installed mods, and parsing conditions will still fail if a mod isn't installed regardless of the listed mod IDs.</para>
+            </param>
+        </member>
+        <member name="M:SpaceShared.APIs.IContentPatcherApi.RegisterToken(StardewModdingAPI.IManifest,System.String,System.Func{System.Collections.Generic.IEnumerable{System.String}})">
+            <summary>Register a simple token.</summary>
+            <param name="mod">The manifest of the mod defining the token (see <see cref="P:StardewModdingAPI.Mod.ModManifest"/> in your entry class).</param>
+            <param name="name">The token name. This only needs to be unique for your mod; Content Patcher will prefix it with your mod ID automatically, like <c>YourName.ExampleMod/SomeTokenName</c>.</param>
+            <param name="getValue">A function which returns the current token value. If this returns a null or empty list, the token is considered unavailable in the current context and any patches or dynamic tokens using it are disabled.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IContentPatcherApi.RegisterToken(StardewModdingAPI.IManifest,System.String,System.Object)">
+            <summary>Register a complex token. This is an advanced API; only use this method if you've read the documentation and are aware of the consequences.</summary>
+            <param name="mod">The manifest of the mod defining the token (see <see cref="P:StardewModdingAPI.Mod.ModManifest"/> in your entry class).</param>
+            <param name="name">The token name. This only needs to be unique for your mod; Content Patcher will prefix it with your mod ID automatically, like <c>YourName.ExampleMod/SomeTokenName</c>.</param>
+            <param name="token">An arbitrary class with one or more methods from <see cref="!:ConventionDelegates"/>.</param>
+        </member>
+        <member name="T:SpaceShared.APIs.IGenericModConfigMenuApi">
+            <summary>The API which lets other mods add a config UI through Generic Mod Config Menu.</summary>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.Register(StardewModdingAPI.IManifest,System.Action,System.Action,System.Boolean)">
+            <summary>Register a mod whose config can be edited through the UI.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="reset">Reset the mod's config to its default values.</param>
+            <param name="save">Save the mod's current config to the <c>config.json</c> file.</param>
+            <param name="titleScreenOnly">Whether the options can only be edited from the title screen.</param>
+            <remarks>Each mod can only be registered once, unless it's deleted via <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.Unregister(StardewModdingAPI.IManifest)"/> before calling this again.</remarks>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddSectionTitle(StardewModdingAPI.IManifest,System.Func{System.String},System.Func{System.String})">
+            <summary>Add a section title at the current position in the form.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="text">The title text shown in the form.</param>
+            <param name="tooltip">The tooltip text shown when the cursor hovers on the title, or <c>null</c> to disable the tooltip.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddParagraph(StardewModdingAPI.IManifest,System.Func{System.String})">
+            <summary>Add a paragraph of text at the current position in the form.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="text">The paragraph text to display.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddImage(StardewModdingAPI.IManifest,System.Func{Microsoft.Xna.Framework.Graphics.Texture2D},System.Nullable{Microsoft.Xna.Framework.Rectangle},System.Int32)">
+            <summary>Add an image at the current position in the form.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="texture">The image texture to display.</param>
+            <param name="texturePixelArea">The pixel area within the texture to display, or <c>null</c> to show the entire image.</param>
+            <param name="scale">The zoom factor to apply to the image.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddBoolOption(StardewModdingAPI.IManifest,System.Func{System.Boolean},System.Action{System.Boolean},System.Func{System.String},System.Func{System.String},System.String)">
+            <summary>Add a boolean option at the current position in the form.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="getValue">Get the current value from the mod config.</param>
+            <param name="setValue">Set a new value in the mod config.</param>
+            <param name="name">The label text to show in the form.</param>
+            <param name="tooltip">The tooltip text shown when the cursor hovers on the field, or <c>null</c> to disable the tooltip.</param>
+            <param name="fieldId">The unique field ID for use with <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.OnFieldChanged(StardewModdingAPI.IManifest,System.Action{System.String,System.Object})"/>, or <c>null</c> to auto-generate a randomized ID.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddNumberOption(StardewModdingAPI.IManifest,System.Func{System.Int32},System.Action{System.Int32},System.Func{System.String},System.Func{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Func{System.Int32,System.String},System.String)">
+            <summary>Add an integer option at the current position in the form.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="getValue">Get the current value from the mod config.</param>
+            <param name="setValue">Set a new value in the mod config.</param>
+            <param name="name">The label text to show in the form.</param>
+            <param name="tooltip">The tooltip text shown when the cursor hovers on the field, or <c>null</c> to disable the tooltip.</param>
+            <param name="min">The minimum allowed value, or <c>null</c> to allow any.</param>
+            <param name="max">The maximum allowed value, or <c>null</c> to allow any.</param>
+            <param name="interval">The interval of values that can be selected.</param>
+            <param name="formatValue">Get the display text to show for a value, or <c>null</c> to show the number as-is.</param>
+            <param name="fieldId">The unique field ID for use with <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.OnFieldChanged(StardewModdingAPI.IManifest,System.Action{System.String,System.Object})"/>, or <c>null</c> to auto-generate a randomized ID.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddNumberOption(StardewModdingAPI.IManifest,System.Func{System.Single},System.Action{System.Single},System.Func{System.String},System.Func{System.String},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Func{System.Single,System.String},System.String)">
+            <summary>Add a float option at the current position in the form.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="getValue">Get the current value from the mod config.</param>
+            <param name="setValue">Set a new value in the mod config.</param>
+            <param name="name">The label text to show in the form.</param>
+            <param name="tooltip">The tooltip text shown when the cursor hovers on the field, or <c>null</c> to disable the tooltip.</param>
+            <param name="min">The minimum allowed value, or <c>null</c> to allow any.</param>
+            <param name="max">The maximum allowed value, or <c>null</c> to allow any.</param>
+            <param name="interval">The interval of values that can be selected.</param>
+            <param name="formatValue">Get the display text to show for a value, or <c>null</c> to show the number as-is.</param>
+            <param name="fieldId">The unique field ID for use with <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.OnFieldChanged(StardewModdingAPI.IManifest,System.Action{System.String,System.Object})"/>, or <c>null</c> to auto-generate a randomized ID.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddTextOption(StardewModdingAPI.IManifest,System.Func{System.String},System.Action{System.String},System.Func{System.String},System.Func{System.String},System.String[],System.Func{System.String,System.String},System.String)">
+            <summary>Add a string option at the current position in the form.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="getValue">Get the current value from the mod config.</param>
+            <param name="setValue">Set a new value in the mod config.</param>
+            <param name="name">The label text to show in the form.</param>
+            <param name="tooltip">The tooltip text shown when the cursor hovers on the field, or <c>null</c> to disable the tooltip.</param>
+            <param name="allowedValues">The values that can be selected, or <c>null</c> to allow any.</param>
+            <param name="formatAllowedValue">Get the display text to show for a value from <paramref name="allowedValues"/>, or <c>null</c> to show the values as-is.</param>
+            <param name="fieldId">The unique field ID for use with <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.OnFieldChanged(StardewModdingAPI.IManifest,System.Action{System.String,System.Object})"/>, or <c>null</c> to auto-generate a randomized ID.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddKeybind(StardewModdingAPI.IManifest,System.Func{StardewModdingAPI.SButton},System.Action{StardewModdingAPI.SButton},System.Func{System.String},System.Func{System.String},System.String)">
+            <summary>Add a keybind at the current position in the form.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="getValue">Get the current value from the mod config.</param>
+            <param name="setValue">Set a new value in the mod config.</param>
+            <param name="name">The label text to show in the form.</param>
+            <param name="tooltip">The tooltip text shown when the cursor hovers on the field, or <c>null</c> to disable the tooltip.</param>
+            <param name="fieldId">The unique field ID for use with <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.OnFieldChanged(StardewModdingAPI.IManifest,System.Action{System.String,System.Object})"/>, or <c>null</c> to auto-generate a randomized ID.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddKeybindList(StardewModdingAPI.IManifest,System.Func{StardewModdingAPI.Utilities.KeybindList},System.Action{StardewModdingAPI.Utilities.KeybindList},System.Func{System.String},System.Func{System.String},System.String)">
+            <summary>Add a keybind list at the current position in the form.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="getValue">Get the current value from the mod config.</param>
+            <param name="setValue">Set a new value in the mod config.</param>
+            <param name="name">The label text to show in the form.</param>
+            <param name="tooltip">The tooltip text shown when the cursor hovers on the field, or <c>null</c> to disable the tooltip.</param>
+            <param name="fieldId">The unique field ID for use with <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.OnFieldChanged(StardewModdingAPI.IManifest,System.Action{System.String,System.Object})"/>, or <c>null</c> to auto-generate a randomized ID.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddPage(StardewModdingAPI.IManifest,System.String,System.Func{System.String})">
+            <summary>Start a new page in the mod's config UI, or switch to that page if it already exists. All options registered after this will be part of that page.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="pageId">The unique page ID.</param>
+            <param name="pageTitle">The page title shown in its UI, or <c>null</c> to show the <paramref name="pageId"/> value.</param>
+            <remarks>You must also call <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddPageLink(StardewModdingAPI.IManifest,System.String,System.Func{System.String},System.Func{System.String})"/> to make the page accessible. This is only needed to set up a multi-page config UI. If you don't call this method, all options will be part of the mod's main config UI instead.</remarks>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddPageLink(StardewModdingAPI.IManifest,System.String,System.Func{System.String},System.Func{System.String})">
+            <summary>Add a link to a page added via <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddPage(StardewModdingAPI.IManifest,System.String,System.Func{System.String})"/> at the current position in the form.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="pageId">The unique ID of the page to open when the link is clicked.</param>
+            <param name="text">The link text shown in the form.</param>
+            <param name="tooltip">The tooltip text shown when the cursor hovers on the link, or <c>null</c> to disable the tooltip.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.AddComplexOption(StardewModdingAPI.IManifest,System.Func{System.String},System.Action{Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Vector2},System.Func{System.String},System.Action,System.Action,System.Action,System.Action,System.Action,System.Action,System.Func{System.Int32},System.String)">
+            <summary>Add an option at the current position in the form using custom rendering logic.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="name">The label text to show in the form.</param>
+            <param name="draw">Draw the option in the config UI. This is called with the sprite batch being rendered and the pixel position at which to start drawing.</param>
+            <param name="tooltip">The tooltip text shown when the cursor hovers on the field, or <c>null</c> to disable the tooltip.</param>
+            <param name="beforeMenuOpened">A callback raised just before the menu containing this option is opened.</param>
+            <param name="beforeSave">A callback raised before the form's current values are saved to the config (i.e. before the <c>save</c> callback passed to <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.Register(StardewModdingAPI.IManifest,System.Action,System.Action,System.Boolean)"/>).</param>
+            <param name="afterSave">A callback raised after the form's current values are saved to the config (i.e. after the <c>save</c> callback passed to <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.Register(StardewModdingAPI.IManifest,System.Action,System.Action,System.Boolean)"/>).</param>
+            <param name="beforeReset">A callback raised before the form is reset to its default values (i.e. before the <c>reset</c> callback passed to <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.Register(StardewModdingAPI.IManifest,System.Action,System.Action,System.Boolean)"/>).</param>
+            <param name="afterReset">A callback raised after the form is reset to its default values (i.e. after the <c>reset</c> callback passed to <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.Register(StardewModdingAPI.IManifest,System.Action,System.Action,System.Boolean)"/>).</param>
+            <param name="beforeMenuClosed">A callback raised just before the menu containing this option is closed.</param>
+            <param name="height">The pixel height to allocate for the option in the form, or <c>null</c> for a standard input-sized option. This is called and cached each time the form is opened.</param>
+            <param name="fieldId">The unique field ID for use with <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.OnFieldChanged(StardewModdingAPI.IManifest,System.Action{System.String,System.Object})"/>, or <c>null</c> to auto-generate a randomized ID.</param>
+            <remarks>The custom logic represented by the callback parameters is responsible for managing its own state if needed. For example, you can store state in a static field or use closures to use a state variable.</remarks>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.SetTitleScreenOnlyForNextOptions(StardewModdingAPI.IManifest,System.Boolean)">
+            <summary>Set whether the options registered after this point can only be edited from the title screen.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="titleScreenOnly">Whether the options can only be edited from the title screen.</param>
+            <remarks>This lets you have different values per-field. Most mods should just set it once in <see cref="M:SpaceShared.APIs.IGenericModConfigMenuApi.Register(StardewModdingAPI.IManifest,System.Action,System.Action,System.Boolean)"/>.</remarks>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.OnFieldChanged(StardewModdingAPI.IManifest,System.Action{System.String,System.Object})">
+            <summary>Register a method to notify when any option registered by this mod is edited through the config UI.</summary>
+            <param name="mod">The mod's manifest.</param>
+            <param name="onChange">The method to call with the option's unique field ID and new value.</param>
+            <remarks>Options use a randomized ID by default; you'll likely want to specify the <c>fieldId</c> argument when adding options if you use this.</remarks>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.OpenModMenu(StardewModdingAPI.IManifest)">
+            <summary>Open the config UI for a specific mod.</summary>
+            <param name="mod">The mod's manifest.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.TryGetCurrentMenu(StardewModdingAPI.IManifest@,System.String@)">
+            <summary>Get the currently-displayed mod config menu, if any.</summary>
+            <param name="mod">The manifest of the mod whose config menu is being shown, or <c>null</c> if not applicable.</param>
+            <param name="page">The page ID being shown for the current config menu, or <c>null</c> if not applicable. This may be <c>null</c> even if a mod config menu is shown (e.g. because the mod doesn't have pages).</param>
+            <returns>Returns whether a mod config menu is being shown.</returns>
+        </member>
+        <member name="M:SpaceShared.APIs.IGenericModConfigMenuApi.Unregister(StardewModdingAPI.IManifest)">
+            <summary>Remove a mod from the config UI and delete all its options and pages.</summary>
+            <param name="mod">The mod's manifest.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IJsonAssetsApi.LoadAssets(System.String)">
+            <summary>Load a folder as a Json Assets content pack.</summary>
+            <param name="path">The absolute path to the content pack folder.</param>
+        </member>
+        <member name="M:SpaceShared.APIs.IJsonAssetsApi.LoadAssets(System.String,StardewModdingAPI.ITranslationHelper)">
+            <summary>Load a folder as a Json Assets content pack.</summary>
+            <param name="path">The absolute path to the content pack folder.</param>
+            <param name="translations">The translations to use for <c>TranslationKey</c> fields, or <c>null</c> to load the content pack's <c>i18n</c> folder if present.</param>
+        </member>
+        <member name="M:SpaceShared.IDynamicGameAssetsApi.GetDGAItemId(System.Object)">
+            <summary>
+            Get the DGA item ID of this item, if it has one.
+            </summary>
+            <param name="item">The item to get the DGA item ID of.</param>
+            <returns>The DGA item ID if it has one, otherwise null.</returns>
+        </member>
+        <member name="M:SpaceShared.IDynamicGameAssetsApi.SpawnDGAItem(System.String,System.Nullable{Microsoft.Xna.Framework.Color})">
+            <summary>
+            Spawn a DGA item, referenced with its full ID ("mod.id/ItemId").
+            Some items, such as crafting recipes or crops, don't have an item representation.
+            </summary>
+            <param name="fullId">The full ID of the item to spawn.</param>
+            <param name="color">The color of the item.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpaceShared.IDynamicGameAssetsApi.SpawnDGAItem(System.String)">
+            <summary>
+            Spawn a DGA item, referenced with its full ID ("mod.id/ItemId").
+            Some items, such as crafting recipes or crops, don't have an item representation.
+            </summary>
+            <param name="fullId">The full ID of the item to spawn.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpaceShared.IDynamicGameAssetsApi.AddEmbeddedPack(StardewModdingAPI.IManifest,System.String)">
+            <summary>
+            Register a DGA pack embedded in another mod.
+            Needs the standard DGA fields in the manifest. (See documentation.)
+            Probably shouldn't use config-schema.json for these, because if you do it will overwrite your mod's config.json.
+            </summary>
+            <param name="manifest">The mod manifest.</param>
+            <param name="dir">The absolute path to the directory of the pack.</param>
+        </member>
+        <member name="T:SpaceShared.ModExtensions">
+            <summary>Provides common extensions for general mod logic.</summary>
+        </member>
+        <member name="M:SpaceShared.ModExtensions.GetApi``1(StardewModdingAPI.IModRegistry,System.String,System.String,System.String,StardewModdingAPI.IMonitor)">
+            <inheritdoc cref="M:StardewModdingAPI.IModRegistry.GetApi``1(System.String)"/>
+            <param name="modRegistry">The mod registry to extend.</param>
+            <param name="uniqueId">The mod's unique ID.</param>
+            <param name="label">A human-readable name for the mod.</param>
+            <param name="minVersion">The minimum supported version of the API.</param>
+            <param name="monitor">The monitor with which to log errors.</param>
+        </member>
+        <member name="M:SpaceShared.ModExtensions.GetGenericModConfigMenuApi(StardewModdingAPI.IModRegistry,StardewModdingAPI.IMonitor)">
+            <summary>Get the mod API for Generic Mod Config Menu, if it's loaded and compatible.</summary>
+            <param name="modRegistry">The mod registry to extend.</param>
+            <param name="monitor">The monitor with which to log errors.</param>
+            <returns>Returns the API instance if available, else <c>null</c>.</returns>
+        </member>
+        <member name="T:SpaceShared.CommonHelper">
+            <summary>Provides common utility methods for interacting with the game code.</summary>
+        </member>
+        <member name="M:SpaceShared.CommonHelper.GetLocations(System.Boolean)">
+            <summary>Get all game locations.</summary>
+            <param name="includeTempLevels">Whether to include temporary mine/dungeon locations.</param>
+        </member>
+        <member name="M:SpaceShared.CommonHelper.GetPositionFromAnchor(System.Int32,System.Int32,System.Int32,System.Int32,SpaceShared.PositionAnchor,System.Nullable{System.Boolean},System.Int32)">
+            <summary>Get the top-left pixel coordinate for a rectangle so that it renders flush against the given anchor position, with an optional offset.</summary>
+            <param name="offsetX">The X pixel offset from the anchor position, with positive numbers moving inwards from the screen edge.</param>
+            <param name="offsetY">The Y pixel offset from the anchor position, with positive numbers moving inwards from the screen edge.</param>
+            <param name="width">The rectangle width to position.</param>
+            <param name="height">The rectangle height to position.</param>
+            <param name="anchor">The screen position from which to offset the rectangle.</param>
+            <param name="uiScale">Whether to apply UI scaling, or <c>null</c> to use the game's current UI scaling mode.</param>
+            <param name="zoom">The zoom factor to apply to the <paramref name="width"/> and <paramref name="height"/> values.</param>
+        </member>
+        <member name="T:SpaceShared.ConsoleCommands.ConsoleCommand">
+            <summary>The base implementation for a console command.</summary>
+        </member>
+        <member name="P:SpaceShared.ConsoleCommands.ConsoleCommand.Name">
+            <summary>The command name the user must type.</summary>
+        </member>
+        <member name="P:SpaceShared.ConsoleCommands.ConsoleCommand.Description">
+            <summary>The command description.</summary>
+        </member>
+        <member name="M:SpaceShared.ConsoleCommands.ConsoleCommand.Handle(StardewModdingAPI.IMonitor,System.String,System.String[])">
+            <summary>Handle the command.</summary>
+            <param name="monitor">Writes messages to the console and log file.</param>
+            <param name="command">The command name.</param>
+            <param name="args">The command arguments.</param>
+        </member>
+        <member name="M:SpaceShared.ConsoleCommands.ConsoleCommand.#ctor(System.String,System.String)">
+            <summary>Construct an instance.</summary>
+            <param name="name">The command name the user must type.</param>
+            <param name="description">The command description.</param>
+        </member>
+        <member name="M:SpaceShared.ConsoleCommands.ConsoleCommand.LogUsageError(StardewModdingAPI.IMonitor,System.String)">
+            <summary>Log an error indicating incorrect usage.</summary>
+            <param name="monitor">Writes messages to the console and log file.</param>
+            <param name="error">A sentence explaining the problem.</param>
+        </member>
+        <member name="T:SpaceShared.ConsoleCommands.ConsoleCommandHelper">
+            <summary>Provides helper methods for implementing SMAPI console commands.</summary>
+        </member>
+        <member name="M:SpaceShared.ConsoleCommands.ConsoleCommandHelper.FindCommandsInAssembly(StardewModdingAPI.Mod)">
+            <summary>Find all console commands in the mod's assembly.</summary>
+            <param name="mod">The mod whose assembly to scan.</param>
+        </member>
+        <member name="M:SpaceShared.ConsoleCommands.ConsoleCommandHelper.RegisterCommandsInAssembly(StardewModdingAPI.Mod)">
+            <summary>Find all console commands in the mod's assembly and register them with SMAPI.</summary>
+            <param name="mod">The mod whose assembly to scan.</param>
+        </member>
+        <member name="T:SpaceShared.ConsoleCommands.IConsoleCommand">
+            <summary>A console command to register.</summary>
+        </member>
+        <member name="P:SpaceShared.ConsoleCommands.IConsoleCommand.Name">
+            <summary>The command name the user must type.</summary>
+        </member>
+        <member name="P:SpaceShared.ConsoleCommands.IConsoleCommand.Description">
+            <summary>The command description.</summary>
+        </member>
+        <member name="M:SpaceShared.ConsoleCommands.IConsoleCommand.Handle(StardewModdingAPI.IMonitor,System.String,System.String[])">
+            <summary>Handle the command.</summary>
+            <param name="monitor">Writes messages to the console and log file.</param>
+            <param name="command">The command name.</param>
+            <param name="args">The command arguments.</param>
+        </member>
+        <member name="T:SpaceShared.DiagnosticMessages">
+            <summary>Contains common diagnostic messages for use with <see cref="T:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute"/>.</summary>
+        </member>
+        <member name="F:SpaceShared.DiagnosticMessages.CopiedFromGameCode">
+            <summary>The code was copied from the decompiled game, so we should avoid refactoring to simplify future updates.</summary>
+        </member>
+        <member name="F:SpaceShared.DiagnosticMessages.IsUsedViaReflection">
+            <summary>The class or member is used via reflection.</summary>
+        </member>
+        <member name="F:SpaceShared.DiagnosticMessages.IsPublicApi">
+            <summary>The class is part of a mod's API, so we can't make breaking changes.</summary>
+        </member>
+        <member name="F:SpaceShared.DiagnosticMessages.NamedForHarmony">
+            <summary>The parameter names must match the convention defined by Harmony so it can find them.</summary>
+        </member>
+        <member name="F:SpaceShared.DiagnosticMessages.DisposableOutlivesScope">
+            <summary>The disposable object can't be disposed since it survives past the end of this scope.</summary>
+        </member>
+        <member name="T:SpaceShared.Migrations.PyTkMigrator">
+            <summary>Provides utility methods to migrate custom items saved through PyTK.</summary>
+        </member>
+        <member name="M:SpaceShared.Migrations.PyTkMigrator.MigrateBuildings(StardewValley.SaveGame,System.Collections.Generic.Dictionary{System.String,System.Func{StardewValley.Buildings.Building,System.Collections.Generic.IDictionary{System.String,System.String},StardewValley.Buildings.Building}})">
+            <summary>Migrate all constructed buildings in the parsed save file which match the custom type. This must be called during the <see cref="F:StardewModdingAPI.Enums.LoadStage.SaveParsed"/> step.</summary>
+            <param name="loaded">The save data to migrate.</param>
+            <param name="getReplacements">The migration logic indexed by PyTK type identifier.</param>
+        </member>
+        <member name="M:SpaceShared.Migrations.PyTkMigrator.MigrateItems(System.String,System.Func{System.Collections.Generic.IDictionary{System.String,System.String},StardewValley.Item})">
+            <summary>Migrate all items in the world which match the custom type.</summary>
+            <param name="type">The custom type identifier.</param>
+            <param name="getReplacement">Get the replacement for the given PyTK fields.</param>
+        </member>
+        <member name="M:SpaceShared.Migrations.PyTkMigrator.TryMigrate(System.Collections.Generic.IList{StardewValley.Item},System.String,System.Func{System.Collections.Generic.IDictionary{System.String,System.String},StardewValley.Item})">
+            <summary>Replace matched custom items found starting from the given items.</summary>
+            <param name="items">The items to scan.</param>
+            <param name="type">The custom type identifier.</param>
+            <param name="getReplacement">Get the replacement for the given PyTK fields.</param>
+        </member>
+        <member name="M:SpaceShared.Migrations.PyTkMigrator.TryMigrate(StardewValley.Item,System.String,System.Func{System.Collections.Generic.IDictionary{System.String,System.String},StardewValley.Item},StardewValley.Item@)">
+            <summary>Replace matched custom items found starting from the given item.</summary>
+            <param name="item">The item to scan.</param>
+            <param name="type">The custom type identifier.</param>
+            <param name="getReplacement">Get the replacement for the given PyTK fields.</param>
+            <param name="replaceWith">The new item, if applicable.</param>
+            <returns>Returns whether the item should be replaced with <paramref name="replaceWith"/>.</returns>
+        </member>
+        <member name="M:SpaceShared.Migrations.PyTkMigrator.TryParseSerializedString(System.String,System.String@,System.Collections.Generic.IDictionary{System.String,System.String}@)">
+            <summary>Parse the serialized data string for a PyTK object.</summary>
+            <param name="serialized">The serialized data string.</param>
+            <param name="type">The object type that was serialized.</param>
+            <param name="customData">The custom data attributes, if any.</param>
+        </member>
+        <member name="T:SpaceShared.ModDataHelper">
+            <summary>Provides common utility methods for reading and writing to <see cref="T:StardewValley.Mods.ModDataDictionary"/> fields.</summary>
+        </member>
+        <member name="M:SpaceShared.ModDataHelper.GetBool(StardewValley.Mods.ModDataDictionary,System.String,System.Boolean)">
+            <summary>Read a boolean value from the mod data if it exists and is valid, else get the default value.</summary>
+            <param name="data">The mod data dictionary.</param>
+            <param name="key">The data key within the <paramref name="data"/>.</param>
+            <param name="default">The default value if the field is missing or invalid.</param>
+        </member>
+        <member name="M:SpaceShared.ModDataHelper.SetBool(StardewValley.Mods.ModDataDictionary,System.String,System.Boolean,System.Boolean)">
+            <summary>Write a boolean value into the mod data, or remove it if it matches the <paramref name="default"/>.</summary>
+            <param name="data">The mod data dictionary.</param>
+            <param name="key">The data key within the <paramref name="data"/>.</param>
+            <param name="value">The value to write.</param>
+            <param name="default">The default value if the field is missing or invalid. If the value matches the default, it won't be written to the data to avoid unneeded serialization and network sync.</param>
+        </member>
+        <member name="M:SpaceShared.ModDataHelper.GetFloat(StardewValley.Mods.ModDataDictionary,System.String,System.Single,System.Nullable{System.Single})">
+            <summary>Read a float value from the mod data if it exists and is valid, else get the default value.</summary>
+            <param name="data">The mod data dictionary.</param>
+            <param name="key">The data key within the <paramref name="data"/>.</param>
+            <param name="default">The default value if the field is missing or invalid.</param>
+            <param name="min">The minimum value to consider valid, or <c>null</c> to allow any value.</param>
+        </member>
+        <member name="M:SpaceShared.ModDataHelper.SetFloat(StardewValley.Mods.ModDataDictionary,System.String,System.Single,System.Single,System.Nullable{System.Single},System.Nullable{System.Single})">
+            <summary>Write a float value into the mod data, or remove it if it matches the <paramref name="default"/>.</summary>
+            <param name="data">The mod data dictionary.</param>
+            <param name="key">The data key within the <paramref name="data"/>.</param>
+            <param name="value">The value to write.</param>
+            <param name="default">The default value if the field is missing or invalid. If the value matches the default, it won't be written to the data to avoid unneeded serialization and network sync.</param>
+            <param name="min">The minimum value to consider valid, or <c>null</c> to allow any value.</param>
+            <param name="max">The maximum value to consider valid, or <c>null</c> to allow any value.</param>
+        </member>
+        <member name="M:SpaceShared.ModDataHelper.GetInt(StardewValley.Mods.ModDataDictionary,System.String,System.Int32,System.Nullable{System.Int32})">
+            <summary>Read an integer value from the mod data if it exists and is valid, else get the default value.</summary>
+            <param name="data">The mod data dictionary.</param>
+            <param name="key">The data key within the <paramref name="data"/>.</param>
+            <param name="default">The default value if the field is missing or invalid.</param>
+            <param name="min">The minimum value to consider valid, or <c>null</c> to allow any value.</param>
+        </member>
+        <member name="M:SpaceShared.ModDataHelper.SetInt(StardewValley.Mods.ModDataDictionary,System.String,System.Int32,System.Int32,System.Nullable{System.Int32})">
+            <summary>Write an integer value into the mod data, or remove it if it matches the <paramref name="default"/>.</summary>
+            <param name="data">The mod data dictionary.</param>
+            <param name="key">The data key within the <paramref name="data"/>.</param>
+            <param name="value">The value to write.</param>
+            <param name="default">The default value if the field is missing or invalid. If the value matches the default, it won't be written to the data to avoid unneeded serialization and network sync.</param>
+            <param name="min">The minimum value to consider valid, or <c>null</c> to allow any value.</param>
+        </member>
+        <member name="M:SpaceShared.ModDataHelper.GetCustom``1(StardewValley.Mods.ModDataDictionary,System.String,System.Func{System.String,``0},``0,System.Boolean)">
+            <summary>Read a value from the mod data with custom parsing if it exists and can be parsed, else get the default value.</summary>
+            <typeparam name="T">The value type.</typeparam>
+            <param name="data">The mod data dictionary.</param>
+            <param name="key">The data key within the <paramref name="data"/>.</param>
+            <param name="parse">Parse the raw value.</param>
+            <param name="default">The default value if the field is missing or invalid.</param>
+            <param name="suppressError">Whether to return the default value if <paramref name="parse"/> throws an exception; else rethrow it.</param>
+        </member>
+        <member name="M:SpaceShared.ModDataHelper.SetCustom``1(StardewValley.Mods.ModDataDictionary,System.String,``0,System.Func{``0,System.String})">
+            <summary>Write a value into the mod data with custom serialization, or remove it if it serializes to null or an empty string.</summary>
+            <typeparam name="T">The value type.</typeparam>
+            <param name="data">The mod data dictionary.</param>
+            <param name="key">The field key.</param>
+            <param name="value">The value to save.</param>
+            <param name="serialize">Serialize the value to its string representation.</param>
+        </member>
+        <member name="T:SpaceShared.PositionAnchor">
+            <summary>The screen area from which a position is relative.</summary>
+        </member>
+        <member name="F:SpaceShared.PositionAnchor.BottomLeft">
+            <summary>The bottom-left corner of the screen.</summary>
+        </member>
+        <member name="F:SpaceShared.PositionAnchor.BottomRight">
+            <summary>The bottom-right corner of the screen.</summary>
+        </member>
+        <member name="F:SpaceShared.PositionAnchor.TopLeft">
+            <summary>The top-left corner of the screen.</summary>
+        </member>
+        <member name="F:SpaceShared.PositionAnchor.TopRight">
+            <summary>The top-right corner of the screen.</summary>
+        </member>
+        <member name="T:Spacechase.Shared.Patching.BasePatcher">
+            <summary>Provides base implementation logic for <see cref="T:Spacechase.Shared.Patching.IPatcher"/> instances.</summary>
+        </member>
+        <member name="M:Spacechase.Shared.Patching.BasePatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <inheritdoc />
+        </member>
+        <member name="M:Spacechase.Shared.Patching.BasePatcher.RequireConstructor``1(System.Type[])">
+            <summary>Get a method and assert that it was found.</summary>
+            <typeparam name="TTarget">The type containing the method.</typeparam>
+            <param name="parameters">The method parameter types, or <c>null</c> if it's not overloaded.</param>
+        </member>
+        <member name="M:Spacechase.Shared.Patching.BasePatcher.RequireMethod``1(System.String,System.Type[],System.Type[])">
+            <summary>Get a method and assert that it was found.</summary>
+            <typeparam name="TTarget">The type containing the method.</typeparam>
+            <param name="name">The method name.</param>
+            <param name="parameters">The method parameter types, or <c>null</c> if it's not overloaded.</param>
+            <param name="generics">The method generic types, or <c>null</c> if it's not generic.</param>
+        </member>
+        <member name="M:Spacechase.Shared.Patching.BasePatcher.GetHarmonyMethod(System.String,System.Nullable{System.Int32},System.String,System.String)">
+            <summary>Get a Harmony patch method on the current patcher instance.</summary>
+            <param name="name">The method name.</param>
+            <param name="priority">The patch priority to apply, usually specified using Harmony's <see cref="T:HarmonyLib.Priority"/> enum, or <c>null</c> to keep the default value.</param>
+            <param name="before">The Harmony patch ID before which this patch should be applied, if any.</param>
+        </member>
+        <member name="T:Spacechase.Shared.Patching.HarmonyPatcher">
+            <summary>Simplifies applying <see cref="T:Spacechase.Shared.Patching.IPatcher"/> instances to the game.</summary>
+        </member>
+        <member name="M:Spacechase.Shared.Patching.HarmonyPatcher.Apply(StardewModdingAPI.Mod,Spacechase.Shared.Patching.IPatcher[])">
+            <summary>Apply the given Harmony patchers.</summary>
+            <param name="mod">The mod applying the patchers.</param>
+            <param name="patchers">The patchers to apply.</param>
+        </member>
+        <member name="T:Spacechase.Shared.Patching.IPatcher">
+            <summary>A set of Harmony patches to apply.</summary>
+        </member>
+        <member name="M:Spacechase.Shared.Patching.IPatcher.Apply(HarmonyLib.Harmony,StardewModdingAPI.IMonitor)">
+            <summary>Apply the Harmony patches for this instance.</summary>
+            <param name="harmony">The Harmony instance.</param>
+            <param name="monitor">The monitor with which to log any errors.</param>
+        </member>
+        <member name="T:Spacechase.Shared.Patching.PatchHelper">
+            <summary>Provides utility methods for patching game code with Harmony.</summary>
+        </member>
+        <member name="M:Spacechase.Shared.Patching.PatchHelper.RequireConstructor``1(System.Type[])">
+            <summary>Get a constructor and assert that it was found.</summary>
+            <typeparam name="TTarget">The type containing the method.</typeparam>
+            <param name="parameters">The method parameter types, or <c>null</c> if it's not overloaded.</param>
+            <exception cref="T:System.InvalidOperationException">The type has no matching constructor.</exception>
+        </member>
+        <member name="M:Spacechase.Shared.Patching.PatchHelper.RequireMethod``1(System.String,System.Type[],System.Type[])">
+            <summary>Get a method and assert that it was found.</summary>
+            <typeparam name="TTarget">The type containing the method.</typeparam>
+            <param name="name">The method name.</param>
+            <param name="parameters">The method parameter types, or <c>null</c> if it's not overloaded.</param>
+            <param name="generics">The method generic types, or <c>null</c> if it's not generic.</param>
+            <exception cref="T:System.InvalidOperationException">The type has no matching method.</exception>
+        </member>
+        <member name="M:Spacechase.Shared.Patching.PatchHelper.GetMethodString(System.Type,System.String,System.Type[],System.Type[])">
+            <summary>Get a human-readable representation of a method target.</summary>
+            <param name="type">The type containing the method.</param>
+            <param name="name">The method name, or <c>null</c> for a constructor.</param>
+            <param name="parameters">The method parameter types, or <c>null</c> if it's not overloaded.</param>
+            <param name="generics">The method generic types, or <c>null</c> if it's not generic.</param>
+        </member>
+    </members>
+</doc>

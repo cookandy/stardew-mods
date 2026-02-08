@@ -3,7 +3,7 @@
     ** Main translations
     *********/
     // mod name shown in the menu
-    "mod-name": "CJB Cheats Menu",
+    "mod-name": "Menú de Trucos CJB",
 
     // tab names
     "tabs.player-and-tools": "Jugador & Herramientas",
@@ -37,12 +37,19 @@
     "tools.one-hit-break": "Romper de Un Golpe",
     "tools.harvest-with-scythe": "Cosechar con Guadaña",
 
+    // tool enchantments
+    // TODO
+    "tool-enchantments.title": "Tool Enchantments",
+    "tool-enchantments.select-tool": "Select a tool on your toolbar to edit enchantments.",
+    "tool-enchantments.none-for-tool": "No enchantments available for selected {{toolName}}.",
+    "tool-enchantments.for-tool": "For the selected {{toolName}}.",
+
     // money
     "add.money": "Dinero",
     "add.casino-coins": "Monedas Del Casino",
     "add.golden-walnuts": "Nueces De Oro",
     "add.qi-gems": "Gemas Qi",
-    "add.amount-gold": "Añadir {{amount}}g",
+    "add.amount-gold": "Añadir {{amount}}o",
     "add.amount-other": "Añadir {{amount}}",
 
 
@@ -51,10 +58,11 @@
     *********/
     // farm
     "farm.title": "Granja",
-    "farm.auto-water": "Regar Cultivos Automáticamente",
+    "farm.auto-water-crops": "Regar Cultivos Automáticamente",
+    "farm.auto-water-pet-bowls": "Auto-Water Pet Bowls", // TODO
     "farm.durable-fences": "Vallas Duraderas",
     "farm.instant-build": "Construcciones Instantáneas",
-    "farm.auto-feed-animals": "Siempre Auto Alimentar",
+    "farm.auto-feed-animals": "Alimentar Animales Automáticamente",
     "farm.auto-pet-animals": "Acariciar Animales Automáticamente",
     "farm.auto-pet-pets": "Acariciar Mascotas Automáticamente",
     "farm.infinite-hay": "Heno Infinito",
@@ -68,7 +76,7 @@
     "fishing.durable-tackles": "Aparejos Duraderos",
 
     // fast machines
-    "fast-machines.title": "Procesamiento Rápido de las Máquinas",
+    "fast-machines.title": "Procesamiento Rápido de Máquinas",
     "fast-machines.fruit-trees": "Árboles Frutales",
     "fast-machines.ready-in-the-morning": "{{machineName}} (lista por la mañana)",
 
@@ -78,56 +86,25 @@
     *********/
     // skills
     "skills.title": "Habilidades",
-    "skills.increase-farming": "Incr. Agricultura Lvl: {{currentLevel}}",
-    "skills.increase-mining": "Incr. Minería Lvl: {{currentLevel}}",
-    "skills.increase-foraging": "Incr. Recolección Lvl: {{currentLevel}}",
-    "skills.increase-fishing": "Incr. Pesca Lvl: {{currentLevel}}",
-    "skills.increase-combat": "Incr. Combate Lvl: {{currentLevel}}",
+    "skills.increase-skill": "{{skillName}} Lvl +1: {{currentLevel}}",
 
     // professions
     "professions.title": "Profesiones",
-    "professions.combat.fighter": "Combate lvl 5 - Luchador",
-    "professions.combat.scout": "Combate lvl 5 - Explorador",
-    "professions.combat.acrobat": "Combate lvl 10 - Acróbata",
-    "professions.combat.brute": "Combate lvl 10 - Bestia",
-    "professions.combat.defender": "Combate lvl 10 - Defensor",
-    "professions.combat.desperado": "Combate lvl 10 - Berserker",
-    "professions.farming.rancher": "Agricultura lvl 5 - Ranchero",
-    "professions.farming.tiller": "Agricultura lvl 5 - Labrador",
-    "professions.farming.agriculturist": "Agricultura lvl 10 - Agricultor",
-    "professions.farming.artisan": "Agricultura lvl 10 - Artesano",
-    "professions.farming.coopmaster": "Agricultura lvl 10 - Corralero",
-    "professions.farming.shepherd": "Agricultura lvl 10 - Pastor",
-    "professions.fishing.fisher": "Pesca lvl 5 - Pescador",
-    "professions.fishing.trapper": "Pesca lvl 5 - Trampero",
-    "professions.fishing.angler": "Pesca lvl 10 - Pesquero",
-    "professions.fishing.luremaster": "Pesca lvl 10 - As del señuelo",
-    "professions.fishing.mariner": "Pesca lvl 10 - Marino",
-    "professions.fishing.pirate": "Pesca lvl 10 - Pirata",
-    "professions.foraging.forester": "Recolección lvl 5 - Guardabosques",
-    "professions.foraging.gatherer": "Recolección lvl 5 - Recolector",
-    "professions.foraging.botanist": "Recolección lvl 10 - Botánico",
-    "professions.foraging.lumberjack": "Recolección lvl 10 - Leñador",
-    "professions.foraging.tapper": "Recolección lvl 10 - Resinador",
-    "professions.foraging.tracker": "Recolección lvl 10 - Rastreador",
-    "professions.mining.geologist": "Minería lvl 5 - Geólogo",
-    "professions.mining.miner": "Minería lvl 5 - Minero",
-    "professions.mining.blacksmith": "Minería lvl 10 - Herrero",
-    "professions.mining.excavator": "Minería lvl 10 - Excavador",
-    "professions.mining.gemologist": "Minería lvl 10 - Gemólogo",
-    "professions.mining.prospector": "Minería lvl 10 - Buscador",
+    "professions.profession": "{{skillName}} lvl {{level}} - {{professionName}}",
 
 
     /*********
     ** Weather tab
     *********/
-    "weather.title": "Tiempo Mañana",
-    "weather.current": "Actual",
-    "weather.explanation": "Click a button below to set the weather for tomorrow (and only tomorrow). This tab has zero effect on weather otherwise.", // TODO
-    "weather.sunny": "Soleado",
-    "weather.raining": "Lluvioso",
-    "weather.lightning": "Tormentoso",
-    "weather.snowing": "Nevado",
+    "weather.title": "Clima para Mañana",
+    "weather.current-value": "Tomorrow's weather is set to {{weather}}.", // TODO
+    "weather.explanation": "Haz clic en un botón para establecer el clima para mañana (y sólo para MAÑANA). Esto no tiene ningún efecto sobre el clima de hoy.",
+    "weather.cannot-change-weather": "The game forces tomorrow's weather to {{weather}}, so it can't be changed.", // TODO
+    "weather.sunny": "Sol",
+    "weather.raining": "Lluvia",
+    "weather.lightning": "Tormenta",
+    "weather.snowing": "Nieve",
+    "weather.green-rain": "Green Raining", // TODO
 
 
     /*********
@@ -142,7 +119,7 @@
     /*********
     ** Warps tab
     *********/
-    "warp.customized-warning": "These warps were edited by your mods. Please report warp issues to the mods which added them if applicable.", // TODO
+    "warp.customized-warning": "Estos teletransportes han sido añadidos por tus Mods. Debes informar de los problemas al creador del Mod que los añadieron, sólo si procede.",
 
     // main areas
     "warp-section.main": "Áreas Principales",
@@ -150,7 +127,7 @@
     "warp.carpenter": "Carpintería",
     "warp.desert": "Desierto de Calico",
     "warp.mines": "Minas",
-    "warp.pierre-shop": "Tienda Pierre's",
+    "warp.pierre-shop": "Tienda de Pierre",
 
     // town
     "warp-section.town": "Pueblo",
@@ -165,7 +142,7 @@
     // forest
     "warp-section.forest": "Bosque",
     "warp.hats": "Sombreros",
-    "warp.mastery-cave": "Mastery Cave", // TODO
+    "warp.mastery-cave": "Cueva de la Maestría",
     "warp.ranch": "Rancho de Marnie",
     "warp.secret-woods": "Bosque Secreto",
     "warp.wizard-tower": "Torre del Mago",
@@ -174,7 +151,7 @@
     "warp-section.mountain": "Montaña",
     "warp.adventurers-guild": "Gremio de Aventureros",
     "warp.bathhouse": "Spa",
-    "warp.mutant-bug-lair": "Madriguera de bichos mutantes",
+    "warp.mutant-bug-lair": "Madriguera de Bichos Mutantes",
     "warp.quarry": "Cantera",
     "warp.witch-swamp": "Pantano de la Bruja",
 
@@ -194,7 +171,7 @@
     // desert
     "warp-section.desert": "Desierto",
     "warp.casino": "Casino",
-    "warp.sandy-shop": "Tienda Sandy's",
+    "warp.sandy-shop": "Tienda de Sandy",
     "warp.skull-cavern": "Caverna Calavera",
 
 
@@ -203,15 +180,16 @@
     *********/
     // time
     "time.title": "Tiempo",
-    "time.freeze-inside": "Parar el Tiempo Dentro",
-    "time.freeze-caves": "Parar el Tiempo en Cuevas",
-    "time.freeze-everywhere": "Parar el Tiempo en Todas Partes",
-    "time.time": "Tiempo",
-    "time.time-frozen-message": "Tiempo Parado",
+    "time.freeze-inside": "Detener Tiempo en Interiores",
+    "time.freeze-caves": "Detener Tiempo en Cuevas & Minas",
+    "time.freeze-everywhere": "Detener Tiempo en Todas Partes",
+    "time.fade-time-frozen-message": "Hide '{{timeFrozen}}' After a Few Seconds", // TODO
+    "time.time": "Hora",
+    "time.time-frozen-message": "Tiempo Detenido",
 
     // date
     "date.title": "Fecha",
-    "date.warning": "Muchas actualizaciones no pasarán hasta que haya pasado una noche.",
+    "date.warning": "Algunas cosas no se actualizarán hasta que duermas.",
     "date.year": "Año",
     "date.season": "Estación",
     "date.day": "Día",
@@ -220,15 +198,16 @@
     /*********
     ** Advanced tab
     *********/
-    "flags.warning": "Utiliza esta sección bajo tu propio riesgo!\nEsto puede causar inconvenientes como que se omiten eventos, misiones o correo.",
+    "flags.warning": "¡Utiliza esta sección bajo tu propio riesgo!\nUsar estas opciones puede causar ciertos problemas como correo, eventos o misiones omitidos.",
     "flags.quests": "Completar Misiones",
     "flags.wallet": "Objetos del Monedero",
-    "flags.unlocked": "Áreas Desbloqueadas",
+    "flags.unlocked": "Desbloquear Áreas",
     "flags.unlocked.guild": "Gremio de Aventureros",
-    "flags.unlocked.room": "Habitación: {{name}}",
-    "flags.unlocked-content": "Contenido desbloqueado",
+    "flags.unlocked.room": "Habitación de: {{name}}",
+    "flags.unlocked-content": "Contenido Desbloqueado",
     "flags.unlocked-content.dyes-and-tailoring": "Tintes y sastrería",
-    "flags.unlocked-content.junimo-text": "Can read Junimo text", // TODO
+    "flags.unlocked-content.junimo-text": "Leer Texto Junimo",
+    "flags.unlocked-content.perfection": "Perfection achieved", // TODO
     "flags.community-center": "Centro Cívico",
     "flags.community-center.door-unlocked": "Puerta Abierta",
     "flags.jojamart.membership": "Membresía de MercaJoja",
@@ -238,12 +217,12 @@
     ** Controls tab
     *********/
     "controls.title": "Controles",
-    "controls.android-config-note": "Puedes cambiar los botones en pantalla desde los archivos de configuración de los mods CJB Cheats Menu y Virtual Keyboard.",
+    "controls.android-config-note": "Puedes cambiar los botones en pantalla en los archivos de configuración de los mods CJB Cheats Menu y Virtual Keyboard.",
     "controls.open-menu": "Abrir Menú",
-    "controls.freeze-time": "Parar el Tiempo",
-    "controls.grow-tree": "Hacer Crecer Árboles",
-    "controls.grow-crops": "Hacer Crecer Cultivos",
-    "controls.grow-radius": "Distancia de crecimiento alrededor del jugador",
+    "controls.freeze-time": "Detener Tiempo",
+    "controls.grow-tree": "Crecer Árboles",
+    "controls.grow-crops": "Crecer Cultivos",
+    "controls.grow-radius": "Área Efectiva de Crecimiento",
     "controls.reset-controls": "Restablecer",
     "controls.press-new-key": "Presione Nueva Tecla...",
 
@@ -251,14 +230,16 @@
     /*********
     ** Generic Mod Config Menu UI
     *********/
-    // TODO
-    "config.open-menu.desc": "The keybind which opens the menu (when no other menu is open).",
-    "config.freeze-time.desc": "The keybind which freezes the game clock.",
-    "config.grow-tree.desc": "The keybind held to grow trees around the player.",
-    "config.grow-crops.desc": "The keybind held to grow crops around the player.",
+    "config.open-menu.desc": "La tecla que abre el menú (cuando no hay ningún otro menú abierto).",
+    "config.freeze-time.desc": "La tecla que detiene el reloj del juego.",
+    "config.grow-tree.desc": "La tecla que hace crecer los árboles alrededor del jugador.",
+    "config.grow-crops.desc": "La tecla que hace crecer los cultivos alrededor del jugador.",
 
-    "config.title.other-options": "Other options",
-    "config.default-tab.name": "Default tab",
-    "config.default-tab.desc": "The tab shown by default when you open the menu.",
-    "config.other-options": "To configure cheats, press the 'open menu' key shown above in-game. Make sure you press it after loading the save, when no other menu or dialogue is open."
+    "controls.reload-config": "Recargar Configuración desde Archivo",
+    "controls.reload-config.desc": "La tecla que recarga la configuración del mod desde el archivo config.json. Si el menú está abierto, los cambios podrían aplicarse solo al volver a abrirlo.",
+
+    "config.title.other-options": "Otras Opciones",
+    "config.default-tab.name": "Pestaña predeterminada",
+    "config.default-tab.desc": "La pestaña que se muestra por defecto al abrir el menú.",
+    "config.other-options": "Para configurar trampas, presiona la tecla 'abrir menú' indicada arriba en el juego. Asegúrate de hacerlo después de cargar la partida, cuando no haya otro menú o diálogo abierto."
 }

@@ -1,10 +1,10 @@
 ﻿{
-    /*********
+    /*************************************************
     ** Generic translations
-    *********/
+    *************************************************/
     // language info
     "generic.list-separator": ", ", // text between listed values (like ", " in "A, B, C")
-    "generic.line-wrap-on": "",     // characters after which we can line-wrap text if needed, even if there's no space
+    "generic.line-wrap-on": "", // characters after which we can line-wrap text if needed, even if there's no space
 
     // date names
     "generic.now": "ขณะนี้",
@@ -34,10 +34,10 @@
     "generic.show-x-results": "show {{count}} results", // TODO
 
     // types
+    "type.achievement": "Achievement", // TODO
     "type.building": "สิ่งก่อสร้าง",
     "type.bush": "พุ่มไม้",
     "type.fruit-tree": "ต้นผลไม้",
-    "type.map-tile": "Map tile",
     "type.monster": "มอนสเตอร์",
     "type.player": "ผู้เล่น",
     "type.tree": "ต้นไม้",
@@ -61,7 +61,18 @@
     "friendship-status.divorced": "หย่าร้าง",
     "friendship-status.kicked-out": "ถูกขับไส",
 
+    // custom content (shows which mod added an item, NPC, etc)
+    // TODO
+    "added-by-mod": "Added by mod",
+    "added-by-mod.summary": "{{modName}}",
 
+    // internal ID
+    "internal-id": "Internal ID", // TODO
+
+
+    /*************************************************
+    ** Lookup UI
+    *************************************************/
     /*********
     ** Data translations
     *********/
@@ -113,6 +124,10 @@
     "location.forest.island-tip": "แม่น้ำในป่า (ปลายทางใต้สุดของเกาะใหญ่กลางแม่น้ำ)",
     "location.forest.lake": "ทะลสาบในป่า",
     "location.forest.river": "แม่น้ำในป่า",
+    "location.HarveyRoom": "Harvey's Room", // TODO
+    "location.LeoTreeHouse": "Treehouse", // TODO
+    "location.SandyHouse": "Oasis", // TODO
+    "location.SebastianRoom": "Sebastian's Room", // TODO
     "location.submarine": "เรือดำน้ำในงานตลาดกลางคืน",
     "location.town.northmost-bridge": "เมือง (สะพานที่อยู่ทิศเหนือสุดของเมือง)",
     "location.undergroundMine": "เหมือง",
@@ -137,6 +152,8 @@
     ** Conditions & context tags
     *********/
     // TODO
+    "conditions-summary": "[conditions: {{conditions}}]", // wraps 'game state query' conditions that often can't be translated. For example: "[conditions: ITEM_ID Input (O)128]".
+
     "condition-or-context-tag.negate": "not {{value}}",
 
     "condition.day-of-month": "on specific days ({{days}})",
@@ -164,6 +181,19 @@
 
 
     /*********
+    ** Achievement lookups
+    *********/
+    // TODO
+    // labels
+    "achievement.unlocked": "Unlocked",
+    "achievement.hat-shop": "Hat shop",
+
+    // values
+    "achievement.hat-shop.hats-added": "These hats are added to the Hat Mouse shop when the achievement is unlocked:",
+    "achievement.hat-shop.no-hats-added": "No hats are unlocked by this achievement.",
+
+
+    /*********
     ** Animal lookups
     *********/
     // labels
@@ -174,6 +204,7 @@
     "animal.produce-ready": "พร้อมให้ผลผลิต",
     "animal.growth": "การเติบโต",
     "animal.sells-for": "ราคาขาย",
+    "animal.golden-cracker": "Golden animal cracker", // also used for fish ponds // TODO
 
     // values
     "animal.complaints.hungry": "ไม่มีอะไรตกถึงท้อง ตั้งแต่เมื่อวาน",
@@ -182,6 +213,8 @@
     "animal.complaints.no-heater": "ไม่มีฮีตเตอร์ให้อบอุ่น ในอากาศหนาวเหน็บ",
     "animal.complaints.not-petted": "ยังไม่ถูกลูบหัวเลยนะวันนี้",
     "animal.complaints.wild-animal-attack": "ถูกโจมตีจากสัตว์ป่าเมื่อกลางดึกที่ผ่านมา",
+    "animal.golden-cracker.none": "None. Add a golden animal cracker to double produced items.", // TODO
+    "animal.golden-cracker.applied": "Applied; produced items are doubled.", // TODO
 
 
     /*********
@@ -190,6 +223,7 @@
     // labels
     "building.animals": "จำนวนสัตว์เลี้ยง",
     "building.construction": "กำลังก่อสร้าง",
+    "building.construction-costs": "Construction costs", // TODO
     "building.feed-trough": "การให้อาหาร",
     "building.horse": "ม้าชื่อ",
     "building.horse-location": "ตำแหน่งของม้า",
@@ -301,6 +335,8 @@
     "crop.summary.drops-X-to-Y": "ได้รับ {{min}}-{{max}} ({{percent}}% โอกาสของพืชผลพิเศษ)",
     "crop.summary.harvest-once": "เก็บเกี่ยวได้หลังผ่านไป {{daysToFirstHarvest}} วัน",
     "crop.summary.harvest-multi": "เก็บเกี่ยวได้หลังผ่านไป {{daysToFirstHarvest}} วัน, แล้วก็ทุก {{daysToNextHarvests}} วัน",
+    "crop.summary.farming-xp": "gives +{{amount}} farming XP per harvest", // TODO
+    "crop.summary.foraging-xp": "gives +{{amount}} foraging XP per harvest", // TODO
     "crop.summary.seasons": "เติบโตใน{{seasons}}",
     "crop.summary.sells-for": "ขายได้ {{price}}",
     "crop.harvest.too-late": "สายเกินไปสำหรับฤดูเก็บเกี่ยวครั้งถัดไป (จะอยู่ถึงวันที่ {{date}})",
@@ -310,7 +346,6 @@
     ** Item > generic lookups
     *********/
     // labels
-    "item.custom-item": "Custom item", // TODO
     "item.contents": "รายละเอียด",
     "item.loves-this": "ชอบสิ่งนี้มากๆ",
     "item.likes-this": "ชอบสิ่งนี้",
@@ -318,6 +353,7 @@
     "item.dislikes-this": "ไม่ชอบสิ่งนี้",
     "item.hates-this": "เกลียดสิ่งนี้",
     "item.needed-for": "ต้องใช้สำหรับ",
+    "item.flavor": "Flavor", // TODO // links to the flavor item (e.g. 'Blueberry' for Blueberry Wine)
     "item.number-owned": "มีแล้ว",
     "item.number-cooked": "ปรุงแล้ว",
     "item.number-crafted": "สร้างแล้ว",
@@ -329,7 +365,6 @@
     "item.produces-dye": "ทำสีย้อมได้",
 
     // values
-    "item.custom-item.summary": "added by {{modName}}", // TODO
     "item.contents.placed": "{{name}} วางแล้ว",
     "item.contents.ready": "{{name}} พร้อมแล้ว",
     "item.contents.partial": "{{name}} ใน {{time}}",
@@ -337,20 +372,23 @@
     "item.undiscovered-gift-taste-appended": ", และชาวบ้านอีก {{count}} คนยังไม่เปิดเผย",
     "item.needed-for.community-center": "({{bundles}}) ของศูนย์ชุมชน",
     "item.needed-for.full-shipment": "ความสำเร็จส่งขายครบทุกรายการ (ส่งหนึ่งชิ้น)",
+    "item.needed-for.monoculture": "monoculture achievement (ship {{count}} more)", // TODO
     "item.needed-for.polyculture": "ความสำเร็จพหุวัฒนธรรม (ส่งอีก {{count}} ชิ้น)",
     "item.needed-for.full-collection": "ความสำเร็จเก็บสะสมครบ (บริจาคหนึ่งชิ้นให้พิพิธภัณฑ์)",
     "item.needed-for.gourmet-chef": "ความสำเร็จพ่อครัวหัวป่าก์ (ปรุงอาหาร {{recipes}} เมนู)",
     "item.needed-for.craft-master": "ความสำเร็จนักประดิษฐ์ (สร้าง {{recipes}} อย่าง)",
     "item.needed-for.quests": "เควสปัจจุบัน ({{quests}})",
+    "item.needed-for.trash-bear": "trash bear (deliver one)", // TODO
     "item.unknown-recipes": "{{count}} unknown recipes", // TODO
     "item.sells-to.shipping-box": "กล่องส่งสินค้า",
     "item.recipes-for-ingredient.entry": "{{name}} (ต้องใช้ {{count}})",
     "item.recipes-for-machine.multiple-items": "{{name}} x{{count}}",
     "item.recipes-for-machine.same-as-input": "[same as input]", // e.g. crystalarium produces same item that was put in // TODO
-    "item.recipes-for-machine.conditions": "[conditions: {{conditions}}]", // TODO
     "item.recipes-for-machine.too-complex": "Some machine rules are too dynamic to display.", // TODO
     "item.number-owned.summary": "คุณมีแล้ว {{count}} ชิ้น",
+    "item.number-owned-flavored.summary": "you own {{count}} ({{name}}) or {{baseCount}} ({{baseName}}) of these", // TODO // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
     "item.number-crafted.summary": "คุณสร้างแล้ว {{count}} ชิ้น",
+    "item.internal-id.summary": "{{itemId}} (globally unique 'qualified ID': {{qualifiedItemId}})", // TODO
 
 
     /*********
@@ -397,6 +435,7 @@
     // values
     "item.fish-spawn-rules.min-fishing-level": "เลเวลตกปลาขั้นต่ำ: {{level}}",
     "item.fish-spawn-rules.not-caught-yet": "ยังตกไม่ได้ (ตกได้ครั้งเดียว)",
+    "item.fish-spawn-rules.extended-family-quest-active": "\"Extended Family\" quest active", // TODO
     "item.fish-spawn-rules.locations": "สถานที่: {{locations}}",
     "item.fish-spawn-rules.locations-by-season.label": "สถานที่:",
     "item.fish-spawn-rules.locations-by-season.season-locations": "{{season}}: {{locations}}",
@@ -405,6 +444,7 @@
     "item.fish-spawn-rules.time": "ช่วงเวลา: {{times}}",
     "item.fish-spawn-rules.weather-sunny": "สภาพอากาศ: แดดสดใส",
     "item.fish-spawn-rules.weather-rainy": "สภาพอากาศ: ฝนตก",
+    "item.uncaught-fish": "{{count}} uncaught fish", // TODO
 
 
     /*********
@@ -491,6 +531,7 @@
     "npc.neutral-gifts": "ของขวัญที่เฉยๆ",
     "npc.dislikes-gifts": "ของขวัญที่ไม่ชอบ",
     "npc.hates-gifts": "ของขวัญที่เกลียด",
+    "npc.schedule": "Today's schedule", // TODO
 
     // values
     "npc.can-romance.married": "คุณแต่งงานกันแล้ว! <3", // < turns into a heart
@@ -500,6 +541,12 @@
     "npc.friendship.need-points": "เลื่อนขั้นใน {{count}} แต้ม",
     "npc.undiscovered-gift-taste": "{{count}} ชิ้นที่ยังไม่เปิดเผย",
     "npc.unowned-gift-taste": "{{count}} unowned items", // TODO
+    "npc.schedule.current-position": "Currently at {{locationName}} ({{x}}, {{y}}).", // TODO
+    "npc.schedule.no-entries": "No schedule loaded.", // TODO
+    "npc.schedule.not-following-schedule": "Currently not following a schedule. This usually means the NPC is doing special behaviors (e.g. at the movie theater).", //  TODO
+    "npc.schedule.entry": "{{time}}: walk to {{locationName}} ({{x}}, {{y}}).", // TODO
+    "npc.schedule.farmhand.unknown-position": "Currently in an unknown location on the host.", // TODO
+    "npc.schedule.farmhand.unknown-schedule": "In multiplayer, NPCs are managed by the host so their schedule isn't available.", // TODO
 
 
     /*********
@@ -611,19 +658,30 @@
     /*********
     ** Tile lookups
     *********/
+    // Note for translators:
+    // The translations in this section are a bit more technical. Quick summary:
+    //
+    //  - A 'map' sets the layout and appearance for an in-game location (like the farmhouse).
+    //  - Each map is divided into a grid of 64x64 pixel 'tiles'. A map can have multiple 'layers' of tiles (e.g. 'Back', 'Front', 'Buildings', etc).
+    //  - Each tile's visual appearance is set by assigning it a 'tile index', which is its position in a larger texture called a 'tilesheet'.
+    //  - Each tile can be assigned 'properties'. These are metadata which tell the game about the tile (like "Type: Dirt" or "Action: OpenShop HatMouse").
+    //  - There are two property types: 'tile property' (set for a specific tile position) and 'index property' (set for all tiles which use that tile index).
+
     // labels
+    "tile.title": "Map tile ({{x}}, {{y}})",
     "tile.description": "ตำแหน่งไทล์บนแผนที่ สิ่งนี้แสดงขึ้นเนื่องจากคุณเปิดใช้งานการค้นหาไทล์ในการกำหนดค่า",
-    "tile.game-location": "ตำแหน่งที่ตั้ง",
     "tile.map-name": "ชื่อแผนที่",
-    "tile.tile": "ไทล์",
-    "tile.tile-index": "{{layerName}}: ไทล์ index",
-    "tile.tilesheet": "{{layerName}}: แผ่นไทล์",
-    "tile.blend-mode": "{{layerName}}: โหมดผสมผสาน",
-    "tile.index-property": "{{layerName}}: ix คุณสมบัติ: {{propertyName}}",
-    "tile.tile-property": "{{layerName}}: คุณสมบัติ: {{propertyName}}",
+    "tile.map-properties": "Map properties", // TODO
+    "tile.layer-tile": "{{layer}} tile", // TODO
+    "tile.layer-tile-none": "ไทล์",
 
     // values
-    "tile.tile.none-here": "ไม่มีไทล์ที่นี้",
+    "tile.map-properties.value": "{{name}}: {{value}}", // TODO
+    "tile.layer-tile.appearance": "index {{index}} from tilesheet '{{tilesheetId}}' (path: '{{tilesheetPath}}')", // TODO
+    "tile.layer-tile.blend-mode": "โหมดผสมผสาน: {{value}}",
+    "tile.layer-tile.index-property": "ix คุณสมบัติ: {{name}}: {{value}}",
+    "tile.layer-tile.tile-property": "คุณสมบัติ: {{name}}: {{value}}",
+    "tile.layer-tile.none-here": "ไม่มีไทล์ที่นี้",
 
 
     /*********
@@ -672,16 +730,54 @@
 
 
     /*********
-    ** Generic Mod Config Menu UI
+    ** Data mining fields
     *********/
-    // main options
-    "config.title.main-options": "ตัวเลือกหลัก",
+    // TODO
+    "data-mining.name": "Raw data",
+    "data-mining.name.map-tile": "Raw data (map tile)",
+    "data-mining.name.map-location": "Raw data (location)",
+
+    "data-mining.section-pinned": "Pinned", // 'pinned' section has notable values (i.e. it's pinned at the top of the list)
+
+
+    /*************************************************
+    ** Search UI
+    *************************************************/
+    // screen reader text
+    // TODO
+    "search-menu.screen-reader.instructions": "Lookup Anything search menu. Search box selected. Enter text to search.",
+    "search-menu.screen-reader.search-results": "Search box. {{count}} results found for \"{{search}}\". Navigate down for results.",
+    "search-menu.screen-reader.search-no-results": "Search box. No results found for \"{{search}}\".",
+    "search-menu.screen-reader.search-empty": "Search box. Currently empty.",
+    "search-menu.screen-reader.result": "{{name}} ({{type}}).",
+
+
+    /*************************************************
+    ** Generic Mod Config Menu UI
+    *************************************************/
+    // appearance
+    // TODO
+    "config.title.appearance": "Appearance",
+
+    "config.theme.name": "Visual theme",
+    "config.theme.desc": "The appearance to apply for the lookup and search menu.",
+
+    "config.theme.values.Parchment": "Parchment",
+    "config.theme.values.Joja": "Joja",
+    "config.theme.values.MenuBox_Border": "Menu box (border)",
+    "config.theme.values.MenuBox_Inset": "Menu box (inset)",
+    "config.theme.values.MenuBox_Raised": "Menu box (raised)",
+    "config.theme.values.Plain": "Plain",
+
     "config.force-full-screen.name": "บังคับเต็มหน้าจอ",
     "config.force-full-screen.desc": "เมนูควรเป็นแบบเต็มหน้าจอเสมอ แทนที่จะอยู่กึ่งกลางหน้าต่าง สิ่งนี้มีประโยชน์อย่างยิ่งเมื่อดูฟิลด์การขุดข้อมูล",
 
     // progression mode
     // TODO
     "config.title.progression": "โหมดความก้าวหน้า",
+
+    "config.progression.show-uncaught-fish-spawn-rules.name": "Show uncaught fish spawn rules", // TODO
+    "config.progression.show-uncaught-fish-spawn-rules.desc": "Whether to show spawn conditions for fish you haven't caught yet.", // TODO
 
     "config.progression.show-unknown-gift-tastes.name": "Show unknown gift tastes",
     "config.progression.show-unknown-gift-tastes.desc": "Whether to show gift tastes you haven't learned about in-game yet (e.g. from dialogue text or experimenting).",
@@ -730,6 +826,8 @@
     "config.tile-lookups.desc": "จะรวมไทล์แผนที่เป็นเป้าหมายการค้นหาหรือไม่",
     "config.data-mining-fields.name": "แสดงเขตข้อมูลการทำเหมืองข้อมูล",
     "config.data-mining-fields.desc": "จะแสดงข้อมูลดิบที่เป็นประโยชน์สำหรับผู้ขุดข้อมูลหรือไม่ (เป็นฟิลด์แยกต่างหากที่ด้านล่างของผลลัพธ์การค้นหา) นี่เป็นคุณสมบัติขั้นสูงที่ไม่ได้มีไว้สำหรับผู้เล่นส่วนใหญ่",
+    "config.show-invalid-recipes.name": "Show invalid recipes", // TODO
+    "config.show-invalid-recipes.desc": "Whether to show recipes which require or produce broken items.", // TODO
     "config.target-redirection.name": "เป้าหมายการเปลี่ยนเส้นทาง",
     "config.target-redirection.desc": "ในบางกรณี เกมจะสร้างเอนทิตีชั่วคราวเพื่อเป็นตัวแทนของอีกตัวหนึ่ง ตัวอย่างเช่น Abigail ในเหมืองเป็น NPC ชั่วคราวที่ชื่อ 'AbigailMine' ดังนั้นการมองหาเธอที่นั่นจะไม่ใช่การแสดงข้อมูลที่แท้จริงของ Abigail เมื่อเปิดใช้งานตัวเลือกนี้ Lookup Anything จะค้นหา Abigail เดิมแทน",
     "config.scroll-amount.name": "เลื่อนจำนวน",
@@ -752,5 +850,13 @@
     "config.page-down.name": "Page down",
     "config.page-down.desc": "ปุ่มที่เลื่อนลงมาตามเนื้อหายาวๆเต็มหน้า",
     "config.toggle-debug.name": "สลับดีบัก",
-    "config.toggle-debug.desc": "ปุ่มที่สลับการแสดงข้อมูลดีบัก"
+    "config.toggle-debug.desc": "ปุ่มที่สลับการแสดงข้อมูลดีบัก",
+
+
+    /*************************************************
+    ** Iconic Framework icon
+    *************************************************/
+    // TODO
+    "icon.toggle-search.name": "Lookup Anything",
+    "icon.toggle-search.desc": "Toggle Lookup Anything Search"
 }

@@ -19,7 +19,9 @@
     "config.title.connectors": "Connettori abilitati",
     "config.connector.desc": "Scegli se {{itemName}} collega tra loro macchinari e bauli.",
     "config.custom-connectors.name": "Connettori personalizzati",
-    "config.custom-connectors.desc": "I nomi inglesi esatti degli elementi che collegano tra loro macchinari adiacenti. È possibile elencare più elementi con le virgole.", // note: connector names must be English even when playing in other languages
+
+    // TODO
+    "config.custom-connectors.desc": "The items which connect adjacent machines together. You can specify either the internal English name (like \"Wood Path\") or qualified item ID (like \"(O)405\"), and list multiple items with commas.", // note: connector names must be English even when playing in other languages
 
     // Junimo hut options
     "config.title.junimo-huts": "Comportamento capanno Junimo",
@@ -36,9 +38,21 @@
     "config.junimo-huts.move-into-chests": "Sposta dai capanni Junimo alle casse",
     "config.junimo-huts.move-into-huts": "Sposta dalle casse ai capanni Junimo",
 
+    // per-chest settings
+    "config.title.chest-settings": "Impostazioni baule",
+    "config.default-chest-override.name": "Comportamento predefinito",
+    "config.default-chest-override.desc": "Scegli se i bauli devono essere abilitati o disabilitati per impostazione predefinita (tranne quelli impostati di seguito). I bauli abilitati automatizzeranno le macchine collegate, mentre quelli disabilitati saranno completamente ignorati.",
+    "config.chest-override.name": "{{chestName}}",
+    "config.chest-override.name.take-only": "{{chestName}} (oggetti solo estraibili)",
+    "config.chest-override.desc": "Scegli se gli oggetti {{chestName}} posizionati devono essere abilitati come bauli. Vedi i consigli su '{{defaultBehaviorField}}'.",
+    "config.chest-override.desc.take-only": "{{description}} (Quando abilitato, questo tipo di baule permette solo di tirare fuori gli oggetti da esso.)", // {{description}} contains the previous translation line
+    "config.chest-override.values.default": "Predefinito",
+    "config.chest-override.values.enabled": "Abilita",
+    "config.chest-override.values.disabled": "Disabilita",
+
     // per-machine settings
     "config.title.machine-settings": "Comportamento di: {{machineName}}",
-    "config.machine-settings-enabled.Name": "Abilitata",
+    "config.machine-settings-enabled.name": "Abilitata",
     "config.machine-settings-enabled.desc": "Scegli se abilitare l'automazione di: {{machineName}}.",
     "config.machine-settings-priority.name": "Priorità",
     "config.machine-settings-priority.desc": "L'ordine di priorità con cui le macchine: {{machineName}} dovrebbero essere processate rispetto ad altre macchine. Le macchine hanno una priorità predefinita di 0, con valori più alti processati per primi.",

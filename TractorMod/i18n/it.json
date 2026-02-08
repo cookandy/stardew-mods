@@ -64,14 +64,20 @@
     /****
     ** Audio
     ****/
-    "config.tractor-sounds.name": "Effetti Sonori",
+    "config.tractor-sounds.name": "Suoni del motore",
     "config.tractor-sounds.tooltip": "Quali effetti sonori riprodurre durante la guida del trattore. Le modifiche potrebbero non avere effetto fino a quando non si ricarica il salvataggio. Predefinito {{defaultValue}}.",
     "config.tractor-sounds.value.None": "nessun rumore",
     "config.tractor-sounds.value.Horse": "rumore di cavalli",
     "config.tractor-sounds.value.Tractor": "rumore di trattore",
 
-    "config.tractor-volume.name": "Volume effetti sonori",
+    "config.tractor-volume.name": "Volume suoni del motore",
     "config.tractor-volume.tooltip": "Intensità del volume degli effetti sonori del trattore. Predefinito {{defaultValue}}%.",
+
+    "config.tool-use-sounds-limit.name": "Suoni di utilizzo degli attrezzi",
+    "config.tool-use-sounds-limit.tooltip": "Quando si applica un attrezzo a molte caselle intorno al trattore, il suono di quale attrezzo va riprodotto? L'opzione predefinita è '{{defaultOption}}'. Nota che '{{unlimitedOption}}' può causare errori con una portata più ampia.", // TODO: English warning about {{unlimitedOption}} was reworded to be clearer
+    "config.tool-use-sounds-limit.value.Default": "predefinito",
+    "config.tool-use-sounds-limit.value.OncePerTick": "prima casella",
+    "config.tool-use-sounds-limit.value.Unlimited": "riproduci ogni suono (non consigliato)",
 
 
     /****
@@ -85,6 +91,12 @@
 
     "config.hold-to-activate-key.name": "Tieni premuto per attivare",
     "config.hold-to-activate-key.tooltip": "Se specificato, il trattore agirà solo quando si tiene premuto questo pulsante. Se non viene specificato nulla, il trattore funzionerà automaticamente durante la guida.",
+
+    "config.increase-distance-key.name": "Aumenta la distanza",
+    "config.increase-distance-key.tooltip": "Aumenta temporaneamente di uno la distanza a cui vengono applicati gli strumenti intorno al trattore, fino al massimo consigliato di {{maxRecommendedValue}} caselle. Questo vale fino a quando non si ricarica il salvataggio.",
+
+    "config.reduce-distance-key.name": "Riduci la distanza",
+    "config.reduce-distance-key.tooltip": "Riduce temporaneamente di uno la distanza a cui vengono applicati gli strumenti intorno al trattore, fino al minimo consigliato di 1 casella. Questo vale fino a quando non si ricarica il salvataggio.",
 
 
     /****
@@ -174,8 +186,11 @@
     "config.dig-seed-spots.name": "Scava nei punti di semina",
     "config.dig-seed-spots.tooltip": "Scegli se vuoi scavare nei punti di semina.",
 
-    "config.clear-tilled-dirt.name": "Elimina terra dissodata",
-    "config.clear-tilled-dirt.tooltip": "Scegli se vuoi eliminare la terra dissodata.",
+    "config.clear-dirt-without-fertilizer.name": "Elimina terra dissodata",
+    "config.clear-dirt-without-fertilizer.tooltip": "Scegli se vuoi eliminare la terra dissodata.",
+
+    "config.clear-dirt-with-fertilizer.name": "Elimina terra dissodata (Fertilizzata)",
+    "config.clear-dirt-with-fertilizer.tooltip": "Scegli se vuoi eliminare la terra dissodata e fertilizzata.",
 
 
     /****
@@ -239,5 +254,12 @@
     "config.slingshot.tooltip": "Scegli se vuoi sparare la fionda verso il cursore. (Si tratta di un'opzione estremamente potente, che consuma voracemente le munizioni a causa della velocità del trattore).",
 
     "config.custom-tool-names.name": "Nomi degli attrezzi personalizzati",
-    "config.custom-tool-names.tooltip": "Gli oggetti/strumenti personalizzati da attivare mentre si guida il trattore. Gli strumenti saranno utilizzati su ogni casella circostante, mentre gli oggetti saranno posizionati a terra. Se si specifica qualcosa che è già supportato (come l'ascia), questo annulla tutte le limitazioni sul suo utilizzo. È necessario specificare il nome interno esatto (non il nome visualizzato tradotto), come 'Axe' o 'Mega Bomb'. Separare i valori multipli con le virgole."
+    "config.custom-tool-names.tooltip": "Gli oggetti/strumenti personalizzati da attivare mentre si guida il trattore. Gli strumenti saranno utilizzati su ogni casella circostante, mentre gli oggetti saranno posizionati a terra. Se si specifica qualcosa che è già supportato (come l'ascia), questo annulla tutte le limitazioni sul suo utilizzo. È necessario specificare il nome interno esatto (non il nome visualizzato tradotto), come 'Axe' o 'Mega Bomb'. Separare i valori multipli con le virgole.",
+
+
+    /*********
+    ** Iconic Framework icon
+    *********/
+    "icon.summon-tractor.name": "Tractor Mod",
+    "icon.summon-tractor.desc": "Evoca Trattore"
 }
